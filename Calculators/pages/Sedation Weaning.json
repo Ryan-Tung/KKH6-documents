@@ -1,0 +1,17 @@
+{
+  "nested" : false,
+  "image" : {
+    "custom" : {
+      "_0" : "person.waking.double.bed.fill"
+    }
+  },
+  "name" : "Sedation Weaning",
+  "color" : {
+    "red" : 0.19607843137254902,
+    "green" : 0.6784313725490196,
+    "blue" : 0.9019607843137255
+  },
+  "groups" : [
+
+  ]
+}

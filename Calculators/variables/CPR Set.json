@@ -1,0 +1,46 @@
+[
+  {
+    "displayName" : "Defibrillation Joules:",
+    "referenceName" : "defibrillation",
+    "decimals" : 1,
+    "startingValue" : 0,
+    "unit" : {
+      "name" : "joules",
+      "conversionScale" : 1
+    },
+    "formula" : {
+      "equation" : {
+        "linear" : {
+          "gradient" : {
+            "rangeConstant" : {
+              "value" : {
+                "boundaryValue" : 4,
+                "value" : 0.5
+              }
+            }
+          },
+          "constant" : {
+            "constant" : {
+              "value" : 0
+            }
+          },
+          "target" : {
+            "variable" : {
+              "referenceName" : "weight"
+            }
+          }
+        }
+      },
+      "roundingMethod" : "nearest",
+      "parameters" : [
+        "weight"
+      ]
+    },
+    "alternateUnits" : [
+      {
+        "name" : "joules",
+        "conversionScale" : 1
+      }
+    ]
+  }
+]

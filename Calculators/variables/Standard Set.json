@@ -1,0 +1,101 @@
+[
+  {
+    "unit" : {
+      "name" : "years",
+      "conversionScale" : 1
+    },
+    "referenceName" : "age",
+    "decimals" : 0,
+    "startingValue" : 0,
+    "alternateUnits" : [
+      {
+        "name" : "months",
+        "conversionScale" : 12
+      },
+      {
+        "name" : "years",
+        "conversionScale" : 1
+      }
+    ],
+    "displayName" : "Age"
+  },
+  {
+    "displayName" : "Weight",
+    "referenceName" : "weight",
+    "decimals" : 1,
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "kg"
+    },
+    "formula" : {
+      "equation" : {
+        "conditional" : {
+          "_0" : [
+            {
+              "condition" : {
+                "defaultState" : true,
+                "comparison" : {
+                  "greaterThanOrEqualTo" : {
+                    "_0" : 1
+                  }
+                },
+                "variableReference" : "age"
+              },
+              "component" : {
+                "linear" : {
+                  "target" : {
+                    "variable" : {
+                      "referenceName" : "age"
+                    }
+                  },
+                  "constant" : {
+                    "constant" : {
+                      "value" : 8
+                    }
+                  },
+                  "gradient" : {
+                    "constant" : {
+                      "value" : 2
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "component" : {
+                "linear" : {
+                  "gradient" : {
+                    "constant" : {
+                      "value" : 6
+                    }
+                  },
+                  "target" : {
+                    "variable" : {
+                      "referenceName" : "age"
+                    }
+                  },
+                  "constant" : {
+                    "constant" : {
+                      "value" : 4
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "roundingMethod" : "nearest",
+      "parameters" : [
+        "age"
+      ]
+    },
+    "alternateUnits" : [
+      {
+        "name" : "kg",
+        "conversionScale" : 1
+      }
+    ]
+  }
+]

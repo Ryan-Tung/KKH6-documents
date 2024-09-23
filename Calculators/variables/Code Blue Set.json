@@ -1,0 +1,2532 @@
+[
+  {
+    "displayName" : "ETT Uncuffed",
+    "referenceName" : "ettUncuffed",
+    "decimals" : 1,
+    "startingValue" : 0,
+    "unit" : {
+      "name" : "mm",
+      "conversionScale" : 1
+    },
+    "formula" : {
+      "roundingMethod" : "nearest",
+      "parameters" : [
+        "age",
+        "weight"
+      ],
+      "equation" : {
+        "conditional" : {
+          "_0" : [
+            {
+              "condition" : {
+                "defaultState" : true,
+                "comparison" : {
+                  "greaterThanOrEqualTo" : {
+                    "_0" : 1
+                  }
+                },
+                "variableReference" : "age"
+              },
+              "component" : {
+                "linear" : {
+                  "gradient" : {
+                    "constant" : {
+                      "value" : 0.25
+                    }
+                  },
+                  "target" : {
+                    "variable" : {
+                      "referenceName" : "age"
+                    }
+                  },
+                  "constant" : {
+                    "constant" : {
+                      "value" : 4
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "component" : {
+                "conditional" : {
+                  "_0" : [
+                    {
+                      "condition" : {
+                        "comparison" : {
+                          "lessThan" : {
+                            "_0" : 0.25
+                          }
+                        },
+                        "defaultState" : true,
+                        "variableReference" : "age"
+                      },
+                      "component" : {
+                        "conditional" : {
+                          "_0" : [
+                            {
+                              "component" : {
+                                "constant" : {
+                                  "value" : 2.5
+                                }
+                              },
+                              "condition" : {
+                                "comparison" : {
+                                  "lessThan" : {
+                                    "_0" : 1
+                                  }
+                                },
+                                "variableReference" : "weight",
+                                "defaultState" : true
+                              }
+                            },
+                            {
+                              "component" : {
+                                "constant" : {
+                                  "value" : 3
+                                }
+                              },
+                              "condition" : {
+                                "defaultState" : true,
+                                "variableReference" : "weight",
+                                "comparison" : {
+                                  "lessThan" : {
+                                    "_0" : 3.5
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "component" : {
+                                "constant" : {
+                                  "value" : 3.5
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "component" : {
+                        "constant" : {
+                          "value" : 3.5
+                        }
+                      },
+                      "condition" : {
+                        "comparison" : {
+                          "lessThan" : {
+                            "_0" : 8
+                          }
+                        },
+                        "defaultState" : true,
+                        "variableReference" : "weight"
+                      }
+                    },
+                    {
+                      "component" : {
+                        "constant" : {
+                          "value" : 4
+                        }
+                      },
+                      "condition" : {
+                        "variableReference" : "weight",
+                        "comparison" : {
+                          "lessThan" : {
+                            "_0" : 10
+                          }
+                        },
+                        "defaultState" : true
+                      }
+                    },
+                    {
+                      "component" : {
+                        "constant" : {
+                          "value" : 4.5
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mm"
+      }
+    ]
+  },
+  {
+    "displayName" : "ETT Cuffed",
+    "decimals" : 1,
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mm"
+    },
+    "formula" : {
+      "roundingMethod" : "nearest",
+      "parameters" : [
+        "age"
+      ],
+      "equation" : {
+        "conditional" : {
+          "_0" : [
+            {
+              "component" : {
+                "linear" : {
+                  "target" : {
+                    "variable" : {
+                      "referenceName" : "age"
+                    }
+                  },
+                  "constant" : {
+                    "constant" : {
+                      "value" : 3.5
+                    }
+                  },
+                  "gradient" : {
+                    "constant" : {
+                      "value" : 0.5
+                    }
+                  }
+                }
+              },
+              "condition" : {
+                "variableReference" : "age",
+                "comparison" : {
+                  "greaterThanOrEqualTo" : {
+                    "_0" : 1
+                  }
+                },
+                "defaultState" : true
+              }
+            },
+            {
+              "component" : {
+                "nilConstant" : {
+
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "referenceName" : "ettCuffed",
+    "alternateUnits" : [
+      {
+        "name" : "mm",
+        "conversionScale" : 1
+      }
+    ]
+  },
+  {
+    "formula" : {
+      "roundingMethod" : "nearest",
+      "parameters" : [
+        "age",
+        "weight"
+      ],
+      "equation" : {
+        "conditional" : {
+          "_0" : [
+            {
+              "component" : {
+                "linear" : {
+                  "gradient" : {
+                    "constant" : {
+                      "value" : 0.5
+                    }
+                  },
+                  "target" : {
+                    "variable" : {
+                      "referenceName" : "age"
+                    }
+                  },
+                  "constant" : {
+                    "constant" : {
+                      "value" : 12
+                    }
+                  }
+                }
+              },
+              "condition" : {
+                "variableReference" : "age",
+                "comparison" : {
+                  "greaterThanOrEqualTo" : {
+                    "_0" : 1
+                  }
+                },
+                "defaultState" : true
+              }
+            },
+            {
+              "component" : {
+                "conditional" : {
+                  "_0" : [
+                    {
+                      "condition" : {
+                        "variableReference" : "age",
+                        "comparison" : {
+                          "greaterThanOrEqualTo" : {
+                            "_0" : 0.25
+                          }
+                        },
+                        "defaultState" : true
+                      },
+                      "component" : {
+                        "linear" : {
+                          "target" : {
+                            "variable" : {
+                              "referenceName" : "weight"
+                            }
+                          },
+                          "constant" : {
+                            "constant" : {
+                              "value" : 8
+                            }
+                          },
+                          "gradient" : {
+                            "constant" : {
+                              "value" : 0.2
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "component" : {
+                        "conditional" : {
+                          "_0" : [
+                            {
+                              "condition" : {
+                                "defaultState" : true,
+                                "comparison" : {
+                                  "lessThan" : {
+                                    "_0" : 1
+                                  }
+                                },
+                                "variableReference" : "weight"
+                              },
+                              "component" : {
+                                "constant" : {
+                                  "value" : 5.5
+                                }
+                              }
+                            },
+                            {
+                              "condition" : {
+                                "variableReference" : "weight",
+                                "comparison" : {
+                                  "lessThanOrEqualTo" : {
+                                    "_0" : 3.5
+                                  }
+                                },
+                                "defaultState" : true
+                              },
+                              "component" : {
+                                "rangeConstant" : {
+                                  "value" : {
+                                    "value" : 6,
+                                    "boundaryValue" : 9
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "component" : {
+                                "constant" : {
+                                  "value" : 9
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "displayName" : "ETT Depth for Oral Intubation",
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "cm"
+    },
+    "decimals" : 1,
+    "alternateUnits" : [
+      {
+        "name" : "cm",
+        "conversionScale" : 1
+      }
+    ],
+    "startingValue" : 0,
+    "referenceName" : "ettOralIntubationDepth"
+  },
+  {
+    "unit" : {
+      "name" : "cm",
+      "conversionScale" : 1
+    },
+    "alternateUnits" : [
+      {
+        "name" : "cm",
+        "conversionScale" : 1
+      }
+    ],
+    "displayName" : "ETT Depth for Nasal Intubation",
+    "startingValue" : 0,
+    "decimals" : 1,
+    "formula" : {
+      "roundingMethod" : "nearest",
+      "parameters" : [
+        "age",
+        "weight"
+      ],
+      "equation" : {
+        "conditional" : {
+          "_0" : [
+            {
+              "component" : {
+                "linear" : {
+                  "gradient" : {
+                    "constant" : {
+                      "value" : 0.5
+                    }
+                  },
+                  "constant" : {
+                    "constant" : {
+                      "value" : 14
+                    }
+                  },
+                  "target" : {
+                    "variable" : {
+                      "referenceName" : "age"
+                    }
+                  }
+                }
+              },
+              "condition" : {
+                "variableReference" : "age",
+                "comparison" : {
+                  "greaterThanOrEqualTo" : {
+                    "_0" : 1
+                  }
+                },
+                "defaultState" : true
+              }
+            },
+            {
+              "component" : {
+                "conditional" : {
+                  "_0" : [
+                    {
+                      "component" : {
+                        "linear" : {
+                          "gradient" : {
+                            "constant" : {
+                              "value" : 0.5
+                            }
+                          },
+                          "target" : {
+                            "variable" : {
+                              "referenceName" : "weight"
+                            }
+                          },
+                          "constant" : {
+                            "constant" : {
+                              "value" : 9
+                            }
+                          }
+                        }
+                      },
+                      "condition" : {
+                        "variableReference" : "age",
+                        "comparison" : {
+                          "greaterThanOrEqualTo" : {
+                            "_0" : 0.25
+                          }
+                        },
+                        "defaultState" : true
+                      }
+                    },
+                    {
+                      "component" : {
+                        "conditional" : {
+                          "_0" : [
+                            {
+                              "condition" : {
+                                "variableReference" : "weight",
+                                "defaultState" : true,
+                                "comparison" : {
+                                  "lessThan" : {
+                                    "_0" : 1
+                                  }
+                                }
+                              },
+                              "component" : {
+                                "constant" : {
+                                  "value" : 7
+                                }
+                              }
+                            },
+                            {
+                              "condition" : {
+                                "defaultState" : true,
+                                "variableReference" : "weight",
+                                "comparison" : {
+                                  "lessThanOrEqualTo" : {
+                                    "_0" : 3.5
+                                  }
+                                }
+                              },
+                              "component" : {
+                                "rangeConstant" : {
+                                  "value" : {
+                                    "value" : 7.5,
+                                    "boundaryValue" : 11
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "component" : {
+                                "constant" : {
+                                  "value" : 11
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "referenceName" : "ettNasalIntubationDepth"
+  },
+  {
+    "startingValue" : 0,
+    "formula" : {
+      "parameters" : [
+        "weight"
+      ],
+      "roundingMethod" : "nearest",
+      "equation" : {
+        "conditional" : {
+          "_0" : [
+            {
+              "condition" : {
+                "defaultState" : true,
+                "comparison" : {
+                  "lessThan" : {
+                    "_0" : 10
+                  }
+                },
+                "variableReference" : "weight"
+              },
+              "component" : {
+                "constant" : {
+                  "value" : 4
+                }
+              }
+            },
+            {
+              "condition" : {
+                "defaultState" : true,
+                "comparison" : {
+                  "lessThan" : {
+                    "_0" : 20
+                  }
+                },
+                "variableReference" : "weight"
+              },
+              "component" : {
+                "constant" : {
+                  "value" : 4.5
+                }
+              }
+            },
+            {
+              "condition" : {
+                "comparison" : {
+                  "equalTo" : {
+                    "_0" : 20
+                  }
+                },
+                "defaultState" : true,
+                "variableReference" : "weight"
+              },
+              "component" : {
+                "rangeConstant" : {
+                  "value" : {
+                    "value" : 4.5,
+                    "boundaryValue" : 5.5
+                  }
+                }
+              }
+            },
+            {
+              "component" : {
+                "constant" : {
+                  "value" : 5.5
+                }
+              },
+              "condition" : {
+                "comparison" : {
+                  "lessThanOrEqualTo" : {
+                    "_0" : 40
+                  }
+                },
+                "variableReference" : "weight",
+                "defaultState" : true
+              }
+            },
+            {
+              "component" : {
+                "constant" : {
+                  "value" : 7
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "unit" : {
+      "name" : "French",
+      "conversionScale" : 1
+    },
+    "decimals" : 1,
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "French"
+      }
+    ],
+    "referenceName" : "centralVenousCatheterSize",
+    "displayName" : "Central Venous Catheter Size"
+  },
+  {
+    "decimals" : 1,
+    "startingValue" : 0,
+    "unit" : {
+      "name" : "French",
+      "conversionScale" : 1
+    },
+    "displayName" : "Vascular Catheter Size",
+    "alternateUnits" : [
+      {
+        "name" : "French",
+        "conversionScale" : 1
+      }
+    ],
+    "formula" : {
+      "parameters" : [
+        "weight"
+      ],
+      "roundingMethod" : "nearest",
+      "equation" : {
+        "conditional" : {
+          "_0" : [
+            {
+              "condition" : {
+                "defaultState" : true,
+                "variableReference" : "weight",
+                "comparison" : {
+                  "lessThan" : {
+                    "_0" : 6
+                  }
+                }
+              },
+              "component" : {
+                "constant" : {
+                  "value" : 6.5
+                }
+              }
+            },
+            {
+              "component" : {
+                "rangeConstant" : {
+                  "value" : {
+                    "value" : 6.5,
+                    "boundaryValue" : 8
+                  }
+                }
+              },
+              "condition" : {
+                "defaultState" : true,
+                "variableReference" : "weight",
+                "comparison" : {
+                  "equalTo" : {
+                    "_0" : 6
+                  }
+                }
+              }
+            },
+            {
+              "condition" : {
+                "comparison" : {
+                  "lessThan" : {
+                    "_0" : 15
+                  }
+                },
+                "defaultState" : true,
+                "variableReference" : "weight"
+              },
+              "component" : {
+                "constant" : {
+                  "value" : 8
+                }
+              }
+            },
+            {
+              "condition" : {
+                "variableReference" : "weight",
+                "comparison" : {
+                  "lessThanOrEqualTo" : {
+                    "_0" : 30
+                  }
+                },
+                "defaultState" : true
+              },
+              "component" : {
+                "constant" : {
+                  "value" : -1
+                }
+              }
+            },
+            {
+              "component" : {
+                "rangeConstant" : {
+                  "value" : {
+                    "value" : 11.5,
+                    "boundaryValue" : 13
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "referenceName" : "vascularCatheterSize_all"
+  },
+  {
+    "formula" : {
+      "roundingMethod" : "nearest",
+      "parameters" : [
+        "weight"
+      ],
+      "equation" : {
+        "conditional" : {
+          "_0" : [
+            {
+              "condition" : {
+                "defaultState" : true,
+                "variableReference" : "weight",
+                "comparison" : {
+                  "equalTo" : {
+                    "_0" : 15
+                  }
+                }
+              },
+              "component" : {
+                "rangeConstant" : {
+                  "value" : {
+                    "value" : 8,
+                    "boundaryValue" : 9
+                  }
+                }
+              }
+            },
+            {
+              "condition" : {
+                "defaultState" : true,
+                "comparison" : {
+                  "greaterThan" : {
+                    "_0" : 15
+                  }
+                },
+                "variableReference" : "weight"
+              },
+              "component" : {
+                "conditional" : {
+                  "_0" : [
+                    {
+                      "component" : {
+                        "constant" : {
+                          "value" : 9
+                        }
+                      },
+                      "condition" : {
+                        "variableReference" : "weight",
+                        "comparison" : {
+                          "lessThanOrEqualTo" : {
+                            "_0" : 30
+                          }
+                        },
+                        "defaultState" : true
+                      }
+                    },
+                    {
+                      "component" : {
+                        "constant" : {
+                          "value" : -1
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "component" : {
+                "constant" : {
+                  "value" : -1
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "decimals" : 1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "French"
+    },
+    "referenceName" : "vascularCatheterSize_medcomp",
+    "displayName" : "Vascular Catheter Size (Medcomp)",
+    "alternateUnits" : [
+      {
+        "name" : "French",
+        "conversionScale" : 1
+      }
+    ],
+    "startingValue" : 0
+  },
+  {
+    "alternateUnits" : [
+      {
+        "name" : "French",
+        "conversionScale" : 1
+      }
+    ],
+    "decimals" : 1,
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "French"
+    },
+    "displayName" : "Vascular Catheter Size (Covidien)",
+    "formula" : {
+      "roundingMethod" : "nearest",
+      "parameters" : [
+        "weight"
+      ],
+      "equation" : {
+        "conditional" : {
+          "_0" : [
+            {
+              "component" : {
+                "rangeConstant" : {
+                  "value" : {
+                    "boundaryValue" : 10,
+                    "value" : 8
+                  }
+                }
+              },
+              "condition" : {
+                "comparison" : {
+                  "equalTo" : {
+                    "_0" : 15
+                  }
+                },
+                "variableReference" : "weight",
+                "defaultState" : true
+              }
+            },
+            {
+              "condition" : {
+                "comparison" : {
+                  "greaterThan" : {
+                    "_0" : 15
+                  }
+                },
+                "defaultState" : true,
+                "variableReference" : "weight"
+              },
+              "component" : {
+                "conditional" : {
+                  "_0" : [
+                    {
+                      "component" : {
+                        "constant" : {
+                          "value" : 10
+                        }
+                      },
+                      "condition" : {
+                        "variableReference" : "weight",
+                        "comparison" : {
+                          "lessThanOrEqualTo" : {
+                            "_0" : 30
+                          }
+                        },
+                        "defaultState" : true
+                      }
+                    },
+                    {
+                      "component" : {
+                        "constant" : {
+                          "value" : -1
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "component" : {
+                "constant" : {
+                  "value" : -1
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "referenceName" : "vascularCatheterSize_covidien"
+  },
+  {
+    "startingValue" : 0,
+    "formula" : {
+      "roundingMethod" : "nearest",
+      "parameters" : [
+        "age"
+      ],
+      "equation" : {
+        "conditional" : {
+          "_0" : [
+            {
+              "component" : {
+                "rangeConstant" : {
+                  "value" : {
+                    "value" : 90,
+                    "boundaryValue" : 180
+                  }
+                }
+              },
+              "condition" : {
+                "defaultState" : true,
+                "variableReference" : "age",
+                "comparison" : {
+                  "lessThan" : {
+                    "_0" : 0
+                  }
+                }
+              }
+            },
+            {
+              "component" : {
+                "rangeConstant" : {
+                  "value" : {
+                    "boundaryValue" : 160,
+                    "value" : 80
+                  }
+                }
+              },
+              "condition" : {
+                "comparison" : {
+                  "lessThan" : {
+                    "_0" : 0
+                  }
+                },
+                "variableReference" : "age",
+                "defaultState" : true
+              }
+            },
+            {
+              "component" : {
+                "rangeConstant" : {
+                  "value" : {
+                    "boundaryValue" : 140,
+                    "value" : 80
+                  }
+                }
+              },
+              "condition" : {
+                "defaultState" : true,
+                "variableReference" : "age",
+                "comparison" : {
+                  "lessThan" : {
+                    "_0" : 1
+                  }
+                }
+              }
+            },
+            {
+              "condition" : {
+                "comparison" : {
+                  "lessThan" : {
+                    "_0" : 6
+                  }
+                },
+                "variableReference" : "age",
+                "defaultState" : true
+              },
+              "component" : {
+                "rangeConstant" : {
+                  "value" : {
+                    "boundaryValue" : 130,
+                    "value" : 75
+                  }
+                }
+              }
+            },
+            {
+              "component" : {
+                "rangeConstant" : {
+                  "value" : {
+                    "value" : 70,
+                    "boundaryValue" : 110
+                  }
+                }
+              },
+              "condition" : {
+                "variableReference" : "age",
+                "comparison" : {
+                  "lessThan" : {
+                    "_0" : 10
+                  }
+                },
+                "defaultState" : true
+              }
+            },
+            {
+              "component" : {
+                "rangeConstant" : {
+                  "value" : {
+                    "boundaryValue" : 90,
+                    "value" : 60
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "decimals" : 0,
+    "referenceName" : "heartRate",
+    "unit" : {
+      "name" : "\/min",
+      "conversionScale" : 1
+    },
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "\/min"
+      }
+    ],
+    "displayName" : "Heart Rate"
+  },
+  {
+    "alternateUnits" : [
+      {
+        "name" : "\/min",
+        "conversionScale" : 1
+      }
+    ],
+    "formula" : {
+      "roundingMethod" : "nearest",
+      "parameters" : [
+        "age"
+      ],
+      "equation" : {
+        "conditional" : {
+          "_0" : [
+            {
+              "condition" : {
+                "defaultState" : true,
+                "variableReference" : "age",
+                "comparison" : {
+                  "lessThan" : {
+                    "_0" : 0
+                  }
+                }
+              },
+              "component" : {
+                "rangeConstant" : {
+                  "value" : {
+                    "boundaryValue" : 60,
+                    "value" : 30
+                  }
+                }
+              }
+            },
+            {
+              "component" : {
+                "rangeConstant" : {
+                  "value" : {
+                    "value" : 25,
+                    "boundaryValue" : 45
+                  }
+                }
+              },
+              "condition" : {
+                "variableReference" : "age",
+                "comparison" : {
+                  "lessThan" : {
+                    "_0" : 1
+                  }
+                },
+                "defaultState" : true
+              }
+            },
+            {
+              "condition" : {
+                "defaultState" : true,
+                "variableReference" : "age",
+                "comparison" : {
+                  "lessThan" : {
+                    "_0" : 6
+                  }
+                }
+              },
+              "component" : {
+                "rangeConstant" : {
+                  "value" : {
+                    "boundaryValue" : 30,
+                    "value" : 20
+                  }
+                }
+              }
+            },
+            {
+              "component" : {
+                "rangeConstant" : {
+                  "value" : {
+                    "boundaryValue" : 24,
+                    "value" : 16
+                  }
+                }
+              },
+              "condition" : {
+                "variableReference" : "age",
+                "comparison" : {
+                  "lessThan" : {
+                    "_0" : 10
+                  }
+                },
+                "defaultState" : true
+              }
+            },
+            {
+              "component" : {
+                "rangeConstant" : {
+                  "value" : {
+                    "boundaryValue" : 20,
+                    "value" : 14
+                  }
+                }
+              },
+              "condition" : {
+                "variableReference" : "age",
+                "comparison" : {
+                  "lessThan" : {
+                    "_0" : 15
+                  }
+                },
+                "defaultState" : true
+              }
+            },
+            {
+              "component" : {
+                "rangeConstant" : {
+                  "value" : {
+                    "value" : 12,
+                    "boundaryValue" : 16
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "displayName" : "Respiratory Rate",
+    "decimals" : 0,
+    "startingValue" : 0,
+    "unit" : {
+      "name" : "\/min",
+      "conversionScale" : 1
+    },
+    "referenceName" : "respiratoryRate"
+  },
+  {
+    "formula" : {
+      "equation" : {
+        "rangeConstant" : {
+          "value" : {
+            "value" : 0.1
+          }
+        }
+      },
+      "parameters" : [
+
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "Adrenaline_Dose",
+    "displayName" : "Dose",
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL\/kg"
+      }
+    ],
+    "startingValue" : 0,
+    "decimals" : 2,
+    "unit" : {
+      "name" : "mL\/kg",
+      "conversionScale" : 1
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "name" : "mL",
+        "conversionScale" : 1
+      }
+    ],
+    "formula" : {
+      "equation" : {
+        "linear" : {
+          "target" : {
+            "variable" : {
+              "referenceName" : "Adrenaline_Dose"
+            }
+          },
+          "constant" : {
+            "constant" : {
+              "value" : 0
+            }
+          },
+          "gradient" : {
+            "variable" : {
+              "referenceName" : "weight"
+            }
+          }
+        }
+      },
+      "roundingMethod" : "nearest",
+      "parameters" : [
+        "Adrenaline_Dose",
+        "weight"
+      ]
+    },
+    "referenceName" : "Adrenaline_Calc_Dose",
+    "unit" : {
+      "name" : "mL",
+      "conversionScale" : 1
+    },
+    "displayName" : "Calculated Dose",
+    "decimals" : 2,
+    "startingValue" : 0
+  },
+  {
+    "displayName" : "Calculated Amount",
+    "startingValue" : 0,
+    "decimals" : 2,
+    "referenceName" : "Adrenaline_Calc_Amt",
+    "alternateUnits" : [
+      {
+        "name" : "mL",
+        "conversionScale" : 1
+      }
+    ],
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
+    "formula" : {
+      "roundingMethod" : "nearest",
+      "parameters" : [
+        "Adrenaline_Calc_Dose"
+      ],
+      "equation" : {
+        "linear" : {
+          "gradient" : {
+            "variable" : {
+              "referenceName" : "Adrenaline_Calc_Dose"
+            }
+          },
+          "target" : {
+            "constant" : {
+              "value" : 1
+            }
+          },
+          "constant" : {
+            "constant" : {
+              "value" : 0
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "decimals" : 2,
+    "startingValue" : 0,
+    "referenceName" : "Atropine Sulfate_Dose",
+    "displayName" : "Dose",
+    "alternateUnits" : [
+      {
+        "name" : "mg\/kg",
+        "conversionScale" : 1
+      }
+    ],
+    "formula" : {
+      "equation" : {
+        "rangeConstant" : {
+          "value" : {
+            "value" : 0.02
+          }
+        }
+      },
+      "parameters" : [
+
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "unit" : {
+      "name" : "mg\/kg",
+      "conversionScale" : 1
+    }
+  },
+  {
+    "decimals" : 2,
+    "formula" : {
+      "parameters" : [
+        "Atropine Sulfate_Dose",
+        "weight"
+      ],
+      "equation" : {
+        "linear" : {
+          "constant" : {
+            "constant" : {
+              "value" : 0
+            }
+          },
+          "target" : {
+            "variable" : {
+              "referenceName" : "Atropine Sulfate_Dose"
+            }
+          },
+          "gradient" : {
+            "variable" : {
+              "referenceName" : "weight"
+            }
+          }
+        }
+      },
+      "roundingMethod" : "nearest"
+    },
+    "startingValue" : 0,
+    "displayName" : "Calculated Dose",
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mg"
+      }
+    ],
+    "referenceName" : "Atropine Sulfate_Calc_Dose",
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mg"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 2,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
+    "startingValue" : 0,
+    "displayName" : "Calculated Amount",
+    "referenceName" : "Atropine Sulfate_Calc_Amt",
+    "formula" : {
+      "parameters" : [
+        "Atropine Sulfate_Calc_Dose"
+      ],
+      "equation" : {
+        "linear" : {
+          "gradient" : {
+            "variable" : {
+              "referenceName" : "Atropine Sulfate_Calc_Dose"
+            }
+          },
+          "constant" : {
+            "constant" : {
+              "value" : 0
+            }
+          },
+          "target" : {
+            "constant" : {
+              "value" : 1.6666666666666667
+            }
+          }
+        }
+      },
+      "roundingMethod" : "nearest"
+    }
+  },
+  {
+    "decimals" : 2,
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL\/kg"
+      }
+    ],
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL\/kg"
+    },
+    "displayName" : "Dose",
+    "formula" : {
+      "roundingMethod" : "nearest",
+      "parameters" : [
+
+      ],
+      "equation" : {
+        "rangeConstant" : {
+          "value" : {
+            "boundaryValue" : 20,
+            "value" : 10
+          }
+        }
+      }
+    },
+    "referenceName" : "Albumin_Dose",
+    "startingValue" : 0
+  },
+  {
+    "displayName" : "Calculated Dose",
+    "referenceName" : "Albumin_Calc_Dose",
+    "unit" : {
+      "name" : "mL",
+      "conversionScale" : 1
+    },
+    "formula" : {
+      "roundingMethod" : "nearest",
+      "parameters" : [
+        "Albumin_Dose",
+        "weight"
+      ],
+      "equation" : {
+        "linear" : {
+          "gradient" : {
+            "variable" : {
+              "referenceName" : "weight"
+            }
+          },
+          "target" : {
+            "variable" : {
+              "referenceName" : "Albumin_Dose"
+            }
+          },
+          "constant" : {
+            "constant" : {
+              "value" : 0
+            }
+          }
+        }
+      }
+    },
+    "decimals" : 2,
+    "alternateUnits" : [
+      {
+        "name" : "mL",
+        "conversionScale" : 1
+      }
+    ],
+    "startingValue" : 0
+  },
+  {
+    "displayName" : "Calculated Amount",
+    "referenceName" : "Albumin_Calc_Amt",
+    "formula" : {
+      "parameters" : [
+        "Albumin_Calc_Dose"
+      ],
+      "equation" : {
+        "linear" : {
+          "constant" : {
+            "constant" : {
+              "value" : 0
+            }
+          },
+          "gradient" : {
+            "variable" : {
+              "referenceName" : "Albumin_Calc_Dose"
+            }
+          },
+          "target" : {
+            "constant" : {
+              "value" : 1
+            }
+          }
+        }
+      },
+      "roundingMethod" : "nearest"
+    },
+    "startingValue" : 0,
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
+    "decimals" : 2
+  },
+  {
+    "formula" : {
+      "roundingMethod" : "nearest",
+      "parameters" : [
+
+      ],
+      "equation" : {
+        "rangeConstant" : {
+          "value" : {
+            "value" : 0.2
+          }
+        }
+      }
+    },
+    "decimals" : 2,
+    "unit" : {
+      "name" : "mL\/kg",
+      "conversionScale" : 1
+    },
+    "referenceName" : "Calcium Chloride_Dose",
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL\/kg"
+      }
+    ],
+    "startingValue" : 0,
+    "displayName" : "Dose"
+  },
+  {
+    "alternateUnits" : [
+      {
+        "name" : "mL",
+        "conversionScale" : 1
+      }
+    ],
+    "startingValue" : 0,
+    "unit" : {
+      "name" : "mL",
+      "conversionScale" : 1
+    },
+    "decimals" : 2,
+    "displayName" : "Calculated Dose",
+    "referenceName" : "Calcium Chloride_Calc_Dose",
+    "formula" : {
+      "parameters" : [
+        "Calcium Chloride_Dose",
+        "weight"
+      ],
+      "equation" : {
+        "linear" : {
+          "gradient" : {
+            "variable" : {
+              "referenceName" : "weight"
+            }
+          },
+          "target" : {
+            "variable" : {
+              "referenceName" : "Calcium Chloride_Dose"
+            }
+          },
+          "constant" : {
+            "constant" : {
+              "value" : 0
+            }
+          }
+        }
+      },
+      "roundingMethod" : "nearest"
+    }
+  },
+  {
+    "referenceName" : "Calcium Chloride_Calc_Amt",
+    "displayName" : "Calculated Amount",
+    "unit" : {
+      "name" : "mL",
+      "conversionScale" : 1
+    },
+    "decimals" : 2,
+    "formula" : {
+      "equation" : {
+        "linear" : {
+          "target" : {
+            "constant" : {
+              "value" : 1
+            }
+          },
+          "constant" : {
+            "constant" : {
+              "value" : 0
+            }
+          },
+          "gradient" : {
+            "variable" : {
+              "referenceName" : "Calcium Chloride_Calc_Dose"
+            }
+          }
+        }
+      },
+      "parameters" : [
+        "Calcium Chloride_Calc_Dose"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "alternateUnits" : [
+      {
+        "name" : "mL",
+        "conversionScale" : 1
+      }
+    ],
+    "startingValue" : 0
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL\/kg"
+      }
+    ],
+    "decimals" : 2,
+    "startingValue" : 0,
+    "unit" : {
+      "name" : "mL\/kg",
+      "conversionScale" : 1
+    },
+    "referenceName" : "Dextrose_Dose",
+    "formula" : {
+      "equation" : {
+        "rangeConstant" : {
+          "value" : {
+            "value" : 2
+          }
+        }
+      },
+      "roundingMethod" : "nearest",
+      "parameters" : [
+
+      ]
+    },
+    "displayName" : "Dose"
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 2,
+    "formula" : {
+      "equation" : {
+        "linear" : {
+          "target" : {
+            "variable" : {
+              "referenceName" : "Dextrose_Dose"
+            }
+          },
+          "constant" : {
+            "constant" : {
+              "value" : 0
+            }
+          },
+          "gradient" : {
+            "variable" : {
+              "referenceName" : "weight"
+            }
+          }
+        }
+      },
+      "roundingMethod" : "nearest",
+      "parameters" : [
+        "Dextrose_Dose",
+        "weight"
+      ]
+    },
+    "displayName" : "Calculated Dose",
+    "referenceName" : "Dextrose_Calc_Dose",
+    "unit" : {
+      "name" : "mL",
+      "conversionScale" : 1
+    },
+    "startingValue" : 0
+  },
+  {
+    "displayName" : "Calculated Amount",
+    "referenceName" : "Dextrose_Calc_Amt",
+    "alternateUnits" : [
+      {
+        "name" : "mL",
+        "conversionScale" : 1
+      }
+    ],
+    "startingValue" : 0,
+    "decimals" : 2,
+    "unit" : {
+      "name" : "mL",
+      "conversionScale" : 1
+    },
+    "formula" : {
+      "roundingMethod" : "nearest",
+      "parameters" : [
+        "Dextrose_Calc_Dose"
+      ],
+      "equation" : {
+        "linear" : {
+          "target" : {
+            "constant" : {
+              "value" : 1
+            }
+          },
+          "constant" : {
+            "constant" : {
+              "value" : 0
+            }
+          },
+          "gradient" : {
+            "variable" : {
+              "referenceName" : "Dextrose_Calc_Dose"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "startingValue" : 0,
+    "decimals" : 2,
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL\/kg"
+      }
+    ],
+    "formula" : {
+      "equation" : {
+        "rangeConstant" : {
+          "value" : {
+            "boundaryValue" : 20,
+            "value" : 10
+          }
+        }
+      },
+      "roundingMethod" : "nearest",
+      "parameters" : [
+
+      ]
+    },
+    "displayName" : "Dose",
+    "referenceName" : "Sodium Chloride_Dose",
+    "unit" : {
+      "name" : "mL\/kg",
+      "conversionScale" : 1
+    }
+  },
+  {
+    "startingValue" : 0,
+    "referenceName" : "Sodium Chloride_Calc_Dose",
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "unit" : {
+      "name" : "mL",
+      "conversionScale" : 1
+    },
+    "displayName" : "Calculated Dose",
+    "decimals" : 2,
+    "formula" : {
+      "roundingMethod" : "nearest",
+      "parameters" : [
+        "Sodium Chloride_Dose",
+        "weight"
+      ],
+      "equation" : {
+        "linear" : {
+          "constant" : {
+            "constant" : {
+              "value" : 0
+            }
+          },
+          "gradient" : {
+            "variable" : {
+              "referenceName" : "weight"
+            }
+          },
+          "target" : {
+            "variable" : {
+              "referenceName" : "Sodium Chloride_Dose"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "formula" : {
+      "roundingMethod" : "nearest",
+      "equation" : {
+        "linear" : {
+          "gradient" : {
+            "variable" : {
+              "referenceName" : "Sodium Chloride_Calc_Dose"
+            }
+          },
+          "constant" : {
+            "constant" : {
+              "value" : 0
+            }
+          },
+          "target" : {
+            "constant" : {
+              "value" : 1
+            }
+          }
+        }
+      },
+      "parameters" : [
+        "Sodium Chloride_Calc_Dose"
+      ]
+    },
+    "referenceName" : "Sodium Chloride_Calc_Amt",
+    "displayName" : "Calculated Amount",
+    "alternateUnits" : [
+      {
+        "name" : "mL",
+        "conversionScale" : 1
+      }
+    ],
+    "startingValue" : 0,
+    "decimals" : 2,
+    "unit" : {
+      "name" : "mL",
+      "conversionScale" : 1
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mmol\/kg"
+      }
+    ],
+    "startingValue" : 0,
+    "referenceName" : "Sodium Bicarbonate 8.4%_Dose",
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mmol\/kg"
+    },
+    "decimals" : 2,
+    "formula" : {
+      "roundingMethod" : "nearest",
+      "parameters" : [
+
+      ],
+      "equation" : {
+        "rangeConstant" : {
+          "value" : {
+            "value" : 1
+          }
+        }
+      }
+    },
+    "displayName" : "Dose"
+  },
+  {
+    "displayName" : "Calculated Dose",
+    "decimals" : 2,
+    "unit" : {
+      "name" : "mmol",
+      "conversionScale" : 1
+    },
+    "startingValue" : 0,
+    "alternateUnits" : [
+      {
+        "name" : "mmol",
+        "conversionScale" : 1
+      }
+    ],
+    "formula" : {
+      "roundingMethod" : "nearest",
+      "parameters" : [
+        "Sodium Bicarbonate 8.4%_Dose",
+        "weight"
+      ],
+      "equation" : {
+        "linear" : {
+          "gradient" : {
+            "variable" : {
+              "referenceName" : "weight"
+            }
+          },
+          "constant" : {
+            "constant" : {
+              "value" : 0
+            }
+          },
+          "target" : {
+            "variable" : {
+              "referenceName" : "Sodium Bicarbonate 8.4%_Dose"
+            }
+          }
+        }
+      }
+    },
+    "referenceName" : "Sodium Bicarbonate 8.4%_Calc_Dose"
+  },
+  {
+    "alternateUnits" : [
+      {
+        "name" : "mL",
+        "conversionScale" : 1
+      }
+    ],
+    "decimals" : 2,
+    "referenceName" : "Sodium Bicarbonate 8.4%_Calc_Amt",
+    "formula" : {
+      "parameters" : [
+        "Sodium Bicarbonate 8.4%_Calc_Dose"
+      ],
+      "equation" : {
+        "linear" : {
+          "gradient" : {
+            "variable" : {
+              "referenceName" : "Sodium Bicarbonate 8.4%_Calc_Dose"
+            }
+          },
+          "constant" : {
+            "constant" : {
+              "value" : 0
+            }
+          },
+          "target" : {
+            "constant" : {
+              "value" : 1
+            }
+          }
+        }
+      },
+      "roundingMethod" : "nearest"
+    },
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
+    "displayName" : "Calculated Amount",
+    "startingValue" : 0
+  },
+  {
+    "decimals" : 2,
+    "referenceName" : "Sodium Bicarbonate 4.2%_Dose",
+    "displayName" : "Dose",
+    "startingValue" : 0,
+    "unit" : {
+      "name" : "mmol\/kg",
+      "conversionScale" : 1
+    },
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mmol\/kg"
+      }
+    ],
+    "formula" : {
+      "roundingMethod" : "nearest",
+      "parameters" : [
+
+      ],
+      "equation" : {
+        "rangeConstant" : {
+          "value" : {
+            "value" : 1
+          }
+        }
+      }
+    }
+  },
+  {
+    "displayName" : "Calculated Dose",
+    "alternateUnits" : [
+      {
+        "name" : "mmol",
+        "conversionScale" : 1
+      }
+    ],
+    "startingValue" : 0,
+    "referenceName" : "Sodium Bicarbonate 4.2%_Calc_Dose",
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mmol"
+    },
+    "formula" : {
+      "roundingMethod" : "nearest",
+      "equation" : {
+        "linear" : {
+          "target" : {
+            "variable" : {
+              "referenceName" : "Sodium Bicarbonate 4.2%_Dose"
+            }
+          },
+          "gradient" : {
+            "variable" : {
+              "referenceName" : "weight"
+            }
+          },
+          "constant" : {
+            "constant" : {
+              "value" : 0
+            }
+          }
+        }
+      },
+      "parameters" : [
+        "Sodium Bicarbonate 4.2%_Dose",
+        "weight"
+      ]
+    },
+    "decimals" : 2
+  },
+  {
+    "decimals" : 2,
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
+    "startingValue" : 0,
+    "referenceName" : "Sodium Bicarbonate 4.2%_Calc_Amt",
+    "displayName" : "Calculated Amount",
+    "formula" : {
+      "roundingMethod" : "nearest",
+      "parameters" : [
+        "Sodium Bicarbonate 4.2%_Calc_Dose"
+      ],
+      "equation" : {
+        "linear" : {
+          "gradient" : {
+            "variable" : {
+              "referenceName" : "Sodium Bicarbonate 4.2%_Calc_Dose"
+            }
+          },
+          "constant" : {
+            "constant" : {
+              "value" : 0
+            }
+          },
+          "target" : {
+            "constant" : {
+              "value" : 2
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "formula" : {
+      "parameters" : [
+
+      ],
+      "equation" : {
+        "rangeConstant" : {
+          "value" : {
+            "boundaryValue" : 2,
+            "value" : 1
+          }
+        }
+      },
+      "roundingMethod" : "nearest"
+    },
+    "decimals" : 2,
+    "referenceName" : "Suxamethonium Chloride_Dose",
+    "displayName" : "Dose",
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mg\/kg"
+    },
+    "alternateUnits" : [
+      {
+        "name" : "mg\/kg",
+        "conversionScale" : 1
+      }
+    ],
+    "startingValue" : 0
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mg"
+      }
+    ],
+    "displayName" : "Calculated Dose",
+    "decimals" : 2,
+    "formula" : {
+      "roundingMethod" : "nearest",
+      "parameters" : [
+        "Suxamethonium Chloride_Dose",
+        "weight"
+      ],
+      "equation" : {
+        "linear" : {
+          "constant" : {
+            "constant" : {
+              "value" : 0
+            }
+          },
+          "gradient" : {
+            "variable" : {
+              "referenceName" : "weight"
+            }
+          },
+          "target" : {
+            "variable" : {
+              "referenceName" : "Suxamethonium Chloride_Dose"
+            }
+          }
+        }
+      }
+    },
+    "referenceName" : "Suxamethonium Chloride_Calc_Dose",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mg"
+    }
+  },
+  {
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
+    "referenceName" : "Suxamethonium Chloride_Calc_Amt",
+    "formula" : {
+      "parameters" : [
+        "Suxamethonium Chloride_Calc_Dose"
+      ],
+      "roundingMethod" : "nearest",
+      "equation" : {
+        "linear" : {
+          "gradient" : {
+            "variable" : {
+              "referenceName" : "Suxamethonium Chloride_Calc_Dose"
+            }
+          },
+          "target" : {
+            "constant" : {
+              "value" : 0.02
+            }
+          },
+          "constant" : {
+            "constant" : {
+              "value" : 0
+            }
+          }
+        }
+      }
+    },
+    "displayName" : "Calculated Amount",
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "startingValue" : 0,
+    "decimals" : 2
+  },
+  {
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mg\/kg"
+    },
+    "displayName" : "Dose",
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mg\/kg"
+      }
+    ],
+    "referenceName" : "Midazolam_Dose",
+    "formula" : {
+      "parameters" : [
+
+      ],
+      "equation" : {
+        "rangeConstant" : {
+          "value" : {
+            "value" : 0.1,
+            "boundaryValue" : 0.3
+          }
+        }
+      },
+      "roundingMethod" : "nearest"
+    },
+    "decimals" : 2,
+    "startingValue" : 0
+  },
+  {
+    "displayName" : "Calculated Dose",
+    "startingValue" : 0,
+    "unit" : {
+      "name" : "mg",
+      "conversionScale" : 1
+    },
+    "referenceName" : "Midazolam_Calc_Dose",
+    "formula" : {
+      "equation" : {
+        "linear" : {
+          "gradient" : {
+            "variable" : {
+              "referenceName" : "weight"
+            }
+          },
+          "target" : {
+            "variable" : {
+              "referenceName" : "Midazolam_Dose"
+            }
+          },
+          "constant" : {
+            "constant" : {
+              "value" : 0
+            }
+          }
+        }
+      },
+      "parameters" : [
+        "Midazolam_Dose",
+        "weight"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "decimals" : 2,
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mg"
+      }
+    ]
+  },
+  {
+    "referenceName" : "Midazolam_Calc_Amt",
+    "unit" : {
+      "name" : "mL",
+      "conversionScale" : 1
+    },
+    "decimals" : 2,
+    "formula" : {
+      "roundingMethod" : "nearest",
+      "parameters" : [
+        "Midazolam_Calc_Dose"
+      ],
+      "equation" : {
+        "linear" : {
+          "constant" : {
+            "constant" : {
+              "value" : 0
+            }
+          },
+          "gradient" : {
+            "variable" : {
+              "referenceName" : "Midazolam_Calc_Dose"
+            }
+          },
+          "target" : {
+            "constant" : {
+              "value" : 0.2
+            }
+          }
+        }
+      }
+    },
+    "alternateUnits" : [
+      {
+        "name" : "mL",
+        "conversionScale" : 1
+      }
+    ],
+    "displayName" : "Calculated Amount",
+    "startingValue" : 0
+  },
+  {
+    "unit" : {
+      "name" : "mg\/kg",
+      "conversionScale" : 1
+    },
+    "displayName" : "Dose",
+    "startingValue" : 0,
+    "formula" : {
+      "parameters" : [
+
+      ],
+      "equation" : {
+        "rangeConstant" : {
+          "value" : {
+            "value" : 0.1
+          }
+        }
+      },
+      "roundingMethod" : "nearest"
+    },
+    "decimals" : 2,
+    "referenceName" : "Morphine Sulfate_Dose",
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mg\/kg"
+      }
+    ]
+  },
+  {
+    "startingValue" : 0,
+    "unit" : {
+      "name" : "mg",
+      "conversionScale" : 1
+    },
+    "decimals" : 2,
+    "formula" : {
+      "parameters" : [
+        "Morphine Sulfate_Dose",
+        "weight"
+      ],
+      "equation" : {
+        "linear" : {
+          "constant" : {
+            "constant" : {
+              "value" : 0
+            }
+          },
+          "gradient" : {
+            "variable" : {
+              "referenceName" : "weight"
+            }
+          },
+          "target" : {
+            "variable" : {
+              "referenceName" : "Morphine Sulfate_Dose"
+            }
+          }
+        }
+      },
+      "roundingMethod" : "nearest"
+    },
+    "displayName" : "Calculated Dose",
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mg"
+      }
+    ],
+    "referenceName" : "Morphine Sulfate_Calc_Dose"
+  },
+  {
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
+    "displayName" : "Calculated Amount",
+    "decimals" : 2,
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "startingValue" : 0,
+    "formula" : {
+      "equation" : {
+        "linear" : {
+          "constant" : {
+            "constant" : {
+              "value" : 0
+            }
+          },
+          "gradient" : {
+            "variable" : {
+              "referenceName" : "Morphine Sulfate_Calc_Dose"
+            }
+          },
+          "target" : {
+            "constant" : {
+              "value" : 0.1
+            }
+          }
+        }
+      },
+      "roundingMethod" : "nearest",
+      "parameters" : [
+        "Morphine Sulfate_Calc_Dose"
+      ]
+    },
+    "referenceName" : "Morphine Sulfate_Calc_Amt"
+  },
+  {
+    "displayName" : "Dose",
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mg\/kg"
+    },
+    "decimals" : 2,
+    "referenceName" : "Rocuronium_Dose",
+    "startingValue" : 0,
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mg\/kg"
+      }
+    ],
+    "formula" : {
+      "parameters" : [
+
+      ],
+      "roundingMethod" : "nearest",
+      "equation" : {
+        "rangeConstant" : {
+          "value" : {
+            "value" : 1
+          }
+        }
+      }
+    }
+  },
+  {
+    "decimals" : 2,
+    "startingValue" : 0,
+    "alternateUnits" : [
+      {
+        "name" : "mg",
+        "conversionScale" : 1
+      }
+    ],
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mg"
+    },
+    "referenceName" : "Rocuronium_Calc_Dose",
+    "displayName" : "Calculated Dose",
+    "formula" : {
+      "equation" : {
+        "linear" : {
+          "constant" : {
+            "constant" : {
+              "value" : 0
+            }
+          },
+          "gradient" : {
+            "variable" : {
+              "referenceName" : "weight"
+            }
+          },
+          "target" : {
+            "variable" : {
+              "referenceName" : "Rocuronium_Dose"
+            }
+          }
+        }
+      },
+      "roundingMethod" : "nearest",
+      "parameters" : [
+        "Rocuronium_Dose",
+        "weight"
+      ]
+    }
+  },
+  {
+    "displayName" : "Calculated Amount",
+    "referenceName" : "Rocuronium_Calc_Amt",
+    "unit" : {
+      "name" : "mL",
+      "conversionScale" : 1
+    },
+    "formula" : {
+      "equation" : {
+        "linear" : {
+          "constant" : {
+            "constant" : {
+              "value" : 0
+            }
+          },
+          "gradient" : {
+            "variable" : {
+              "referenceName" : "Rocuronium_Calc_Dose"
+            }
+          },
+          "target" : {
+            "constant" : {
+              "value" : 0.1
+            }
+          }
+        }
+      },
+      "roundingMethod" : "nearest",
+      "parameters" : [
+        "Rocuronium_Calc_Dose"
+      ]
+    },
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "startingValue" : 0,
+    "decimals" : 2
+  }
+]

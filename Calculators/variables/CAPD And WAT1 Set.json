@@ -1,0 +1,930 @@
+[
+  {
+    "referenceName" : "capdQuestionOne",
+    "displayName" : "1. Does the child make eye contact with the caregiver?",
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    },
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "startingValue" : -1
+  },
+  {
+    "referenceName" : "capdQuestionTwo",
+    "unit" : {
+      "name" : "",
+      "conversionScale" : 1
+    },
+    "startingValue" : -1,
+    "alternateUnits" : [
+      {
+        "name" : "",
+        "conversionScale" : 1
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "2. Are the child's actions purposeful?"
+  },
+  {
+    "decimals" : 0,
+    "displayName" : "3. Is the child aware of his\/her surroundings?",
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "startingValue" : -1,
+    "referenceName" : "capdQuestionThree",
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "displayName" : "4. Does the child communicate needs and wants?",
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "unit" : {
+      "name" : "",
+      "conversionScale" : 1
+    },
+    "referenceName" : "capdQuestionFour",
+    "startingValue" : -1
+  },
+  {
+    "referenceName" : "capdQuestionFive",
+    "decimals" : 0,
+    "displayName" : "5. Is the child restless?",
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "startingValue" : -1,
+    "unit" : {
+      "name" : "",
+      "conversionScale" : 1
+    }
+  },
+  {
+    "startingValue" : -1,
+    "decimals" : 0,
+    "referenceName" : "capdQuestionSix",
+    "displayName" : "6. Is the child inconsolable?",
+    "unit" : {
+      "name" : "",
+      "conversionScale" : 1
+    },
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ]
+  },
+  {
+    "alternateUnits" : [
+      {
+        "name" : "",
+        "conversionScale" : 1
+      }
+    ],
+    "referenceName" : "capdQuestionSeven",
+    "displayName" : "7. Is the child underactive - very little movement when awake?",
+    "unit" : {
+      "name" : "",
+      "conversionScale" : 1
+    },
+    "decimals" : 0,
+    "startingValue" : -1
+  },
+  {
+    "referenceName" : "capdQuestionEight",
+    "alternateUnits" : [
+      {
+        "name" : "",
+        "conversionScale" : 1
+      }
+    ],
+    "unit" : {
+      "name" : "",
+      "conversionScale" : 1
+    },
+    "decimals" : 0,
+    "displayName" : "8. Does it take the child a long time to respond to interactions?",
+    "startingValue" : -1
+  },
+  {
+    "unit" : {
+      "name" : "",
+      "conversionScale" : 1
+    },
+    "displayName" : "CAPD Score:",
+    "formula" : {
+      "roundingMethod" : "nearest",
+      "parameters" : [
+        "capdQuestionEight",
+        "capdQuestionFive",
+        "capdQuestionFour",
+        "capdQuestionOne",
+        "capdQuestionSeven",
+        "capdQuestionSix",
+        "capdQuestionThree",
+        "capdQuestionTwo"
+      ],
+      "equation" : {
+        "sum" : {
+          "_0" : [
+            {
+              "conditional" : {
+                "_0" : [
+                  {
+                    "condition" : {
+                      "defaultState" : true,
+                      "variableReference" : "capdQuestionOne",
+                      "comparison" : {
+                        "notEqualTo" : {
+                          "_0" : -1
+                        }
+                      }
+                    },
+                    "component" : {
+                      "variable" : {
+                        "referenceName" : "capdQuestionOne"
+                      }
+                    }
+                  },
+                  {
+                    "component" : {
+                      "nilConstant" : {
+
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "conditional" : {
+                "_0" : [
+                  {
+                    "component" : {
+                      "variable" : {
+                        "referenceName" : "capdQuestionTwo"
+                      }
+                    },
+                    "condition" : {
+                      "defaultState" : true,
+                      "comparison" : {
+                        "notEqualTo" : {
+                          "_0" : -1
+                        }
+                      },
+                      "variableReference" : "capdQuestionTwo"
+                    }
+                  },
+                  {
+                    "component" : {
+                      "nilConstant" : {
+
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "conditional" : {
+                "_0" : [
+                  {
+                    "condition" : {
+                      "comparison" : {
+                        "notEqualTo" : {
+                          "_0" : -1
+                        }
+                      },
+                      "defaultState" : true,
+                      "variableReference" : "capdQuestionThree"
+                    },
+                    "component" : {
+                      "variable" : {
+                        "referenceName" : "capdQuestionThree"
+                      }
+                    }
+                  },
+                  {
+                    "component" : {
+                      "nilConstant" : {
+
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "conditional" : {
+                "_0" : [
+                  {
+                    "condition" : {
+                      "defaultState" : true,
+                      "variableReference" : "capdQuestionFour",
+                      "comparison" : {
+                        "notEqualTo" : {
+                          "_0" : -1
+                        }
+                      }
+                    },
+                    "component" : {
+                      "variable" : {
+                        "referenceName" : "capdQuestionFour"
+                      }
+                    }
+                  },
+                  {
+                    "component" : {
+                      "nilConstant" : {
+
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "conditional" : {
+                "_0" : [
+                  {
+                    "condition" : {
+                      "comparison" : {
+                        "notEqualTo" : {
+                          "_0" : -1
+                        }
+                      },
+                      "defaultState" : true,
+                      "variableReference" : "capdQuestionFive"
+                    },
+                    "component" : {
+                      "variable" : {
+                        "referenceName" : "capdQuestionFive"
+                      }
+                    }
+                  },
+                  {
+                    "component" : {
+                      "nilConstant" : {
+
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "conditional" : {
+                "_0" : [
+                  {
+                    "condition" : {
+                      "variableReference" : "capdQuestionSix",
+                      "comparison" : {
+                        "notEqualTo" : {
+                          "_0" : -1
+                        }
+                      },
+                      "defaultState" : true
+                    },
+                    "component" : {
+                      "variable" : {
+                        "referenceName" : "capdQuestionSix"
+                      }
+                    }
+                  },
+                  {
+                    "component" : {
+                      "nilConstant" : {
+
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "conditional" : {
+                "_0" : [
+                  {
+                    "component" : {
+                      "variable" : {
+                        "referenceName" : "capdQuestionSeven"
+                      }
+                    },
+                    "condition" : {
+                      "variableReference" : "capdQuestionSeven",
+                      "comparison" : {
+                        "notEqualTo" : {
+                          "_0" : -1
+                        }
+                      },
+                      "defaultState" : true
+                    }
+                  },
+                  {
+                    "component" : {
+                      "nilConstant" : {
+
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "conditional" : {
+                "_0" : [
+                  {
+                    "condition" : {
+                      "defaultState" : true,
+                      "comparison" : {
+                        "notEqualTo" : {
+                          "_0" : -1
+                        }
+                      },
+                      "variableReference" : "capdQuestionEight"
+                    },
+                    "component" : {
+                      "variable" : {
+                        "referenceName" : "capdQuestionEight"
+                      }
+                    }
+                  },
+                  {
+                    "component" : {
+                      "nilConstant" : {
+
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    },
+    "decimals" : 0,
+    "alternateUnits" : [
+      {
+        "name" : "",
+        "conversionScale" : 1
+      }
+    ],
+    "startingValue" : 0,
+    "referenceName" : "capdScore"
+  },
+  {
+    "startingValue" : -1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    },
+    "referenceName" : "wat1QuestionOne",
+    "displayName" : "Any loose\/watery stools",
+    "alternateUnits" : [
+      {
+        "name" : "",
+        "conversionScale" : 1
+      }
+    ],
+    "decimals" : 0
+  },
+  {
+    "startingValue" : -1,
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "unit" : {
+      "name" : "",
+      "conversionScale" : 1
+    },
+    "decimals" : 0,
+    "referenceName" : "wat1QuestionTwo",
+    "displayName" : "Any vomiting\/retching\/gagging"
+  },
+  {
+    "startingValue" : -1,
+    "alternateUnits" : [
+      {
+        "name" : "",
+        "conversionScale" : 1
+      }
+    ],
+    "unit" : {
+      "name" : "",
+      "conversionScale" : 1
+    },
+    "displayName" : "Temperature > 37.8°C",
+    "decimals" : 0,
+    "referenceName" : "wat1QuestionThree"
+  },
+  {
+    "startingValue" : -1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    },
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "displayName" : "State",
+    "referenceName" : "wat1QuestionFour",
+    "decimals" : 0
+  },
+  {
+    "decimals" : 0,
+    "referenceName" : "wat1QuestionFive",
+    "unit" : {
+      "name" : "",
+      "conversionScale" : 1
+    },
+    "alternateUnits" : [
+      {
+        "name" : "",
+        "conversionScale" : 1
+      }
+    ],
+    "startingValue" : -1,
+    "displayName" : "Tremor"
+  },
+  {
+    "alternateUnits" : [
+      {
+        "name" : "",
+        "conversionScale" : 1
+      }
+    ],
+    "startingValue" : -1,
+    "displayName" : "Any sweating",
+    "decimals" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    },
+    "referenceName" : "wat1QuestionSix"
+  },
+  {
+    "displayName" : "Uncoordinated\/repetitive movement",
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    },
+    "decimals" : 0,
+    "startingValue" : -1,
+    "referenceName" : "wat1QuestionSeven"
+  },
+  {
+    "decimals" : 0,
+    "referenceName" : "wat1QuestionEight",
+    "displayName" : "Yawning or sneezing",
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    },
+    "alternateUnits" : [
+      {
+        "name" : "",
+        "conversionScale" : 1
+      }
+    ],
+    "startingValue" : -1
+  },
+  {
+    "startingValue" : -1,
+    "decimals" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    },
+    "referenceName" : "wat1QuestionNine",
+    "displayName" : "Startle to touch",
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ]
+  },
+  {
+    "referenceName" : "wat1QuestionTen",
+    "startingValue" : -1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    },
+    "displayName" : "Muscle tone",
+    "alternateUnits" : [
+      {
+        "name" : "",
+        "conversionScale" : 1
+      }
+    ],
+    "decimals" : 0
+  },
+  {
+    "unit" : {
+      "name" : "",
+      "conversionScale" : 1
+    },
+    "displayName" : "Time to gain calm state",
+    "startingValue" : -1,
+    "referenceName" : "wat1QuestionEleven",
+    "decimals" : 0,
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ]
+  },
+  {
+    "alternateUnits" : [
+      {
+        "name" : "",
+        "conversionScale" : 1
+      }
+    ],
+    "unit" : {
+      "name" : "",
+      "conversionScale" : 1
+    },
+    "referenceName" : "wat1Score",
+    "startingValue" : 0,
+    "formula" : {
+      "roundingMethod" : "nearest",
+      "parameters" : [
+        "wat1QuestionEight",
+        "wat1QuestionEleven",
+        "wat1QuestionFive",
+        "wat1QuestionFour",
+        "wat1QuestionNine",
+        "wat1QuestionOne",
+        "wat1QuestionSeven",
+        "wat1QuestionSix",
+        "wat1QuestionTen",
+        "wat1QuestionThree",
+        "wat1QuestionTwo"
+      ],
+      "equation" : {
+        "sum" : {
+          "_0" : [
+            {
+              "conditional" : {
+                "_0" : [
+                  {
+                    "condition" : {
+                      "variableReference" : "wat1QuestionOne",
+                      "defaultState" : true,
+                      "comparison" : {
+                        "notEqualTo" : {
+                          "_0" : -1
+                        }
+                      }
+                    },
+                    "component" : {
+                      "variable" : {
+                        "referenceName" : "wat1QuestionOne"
+                      }
+                    }
+                  },
+                  {
+                    "component" : {
+                      "nilConstant" : {
+
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "conditional" : {
+                "_0" : [
+                  {
+                    "condition" : {
+                      "defaultState" : true,
+                      "comparison" : {
+                        "notEqualTo" : {
+                          "_0" : -1
+                        }
+                      },
+                      "variableReference" : "wat1QuestionTwo"
+                    },
+                    "component" : {
+                      "variable" : {
+                        "referenceName" : "wat1QuestionTwo"
+                      }
+                    }
+                  },
+                  {
+                    "component" : {
+                      "nilConstant" : {
+
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "conditional" : {
+                "_0" : [
+                  {
+                    "component" : {
+                      "variable" : {
+                        "referenceName" : "wat1QuestionThree"
+                      }
+                    },
+                    "condition" : {
+                      "comparison" : {
+                        "notEqualTo" : {
+                          "_0" : -1
+                        }
+                      },
+                      "defaultState" : true,
+                      "variableReference" : "wat1QuestionThree"
+                    }
+                  },
+                  {
+                    "component" : {
+                      "nilConstant" : {
+
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "conditional" : {
+                "_0" : [
+                  {
+                    "condition" : {
+                      "defaultState" : true,
+                      "variableReference" : "wat1QuestionFour",
+                      "comparison" : {
+                        "notEqualTo" : {
+                          "_0" : -1
+                        }
+                      }
+                    },
+                    "component" : {
+                      "variable" : {
+                        "referenceName" : "wat1QuestionFour"
+                      }
+                    }
+                  },
+                  {
+                    "component" : {
+                      "nilConstant" : {
+
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "conditional" : {
+                "_0" : [
+                  {
+                    "component" : {
+                      "variable" : {
+                        "referenceName" : "wat1QuestionFive"
+                      }
+                    },
+                    "condition" : {
+                      "variableReference" : "wat1QuestionFive",
+                      "comparison" : {
+                        "notEqualTo" : {
+                          "_0" : -1
+                        }
+                      },
+                      "defaultState" : true
+                    }
+                  },
+                  {
+                    "component" : {
+                      "nilConstant" : {
+
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "conditional" : {
+                "_0" : [
+                  {
+                    "component" : {
+                      "variable" : {
+                        "referenceName" : "wat1QuestionSix"
+                      }
+                    },
+                    "condition" : {
+                      "defaultState" : true,
+                      "variableReference" : "wat1QuestionSix",
+                      "comparison" : {
+                        "notEqualTo" : {
+                          "_0" : -1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "component" : {
+                      "nilConstant" : {
+
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "conditional" : {
+                "_0" : [
+                  {
+                    "condition" : {
+                      "comparison" : {
+                        "notEqualTo" : {
+                          "_0" : -1
+                        }
+                      },
+                      "variableReference" : "wat1QuestionSeven",
+                      "defaultState" : true
+                    },
+                    "component" : {
+                      "variable" : {
+                        "referenceName" : "wat1QuestionSeven"
+                      }
+                    }
+                  },
+                  {
+                    "component" : {
+                      "nilConstant" : {
+
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "conditional" : {
+                "_0" : [
+                  {
+                    "component" : {
+                      "variable" : {
+                        "referenceName" : "wat1QuestionEight"
+                      }
+                    },
+                    "condition" : {
+                      "defaultState" : true,
+                      "variableReference" : "wat1QuestionEight",
+                      "comparison" : {
+                        "notEqualTo" : {
+                          "_0" : -1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "component" : {
+                      "nilConstant" : {
+
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "conditional" : {
+                "_0" : [
+                  {
+                    "condition" : {
+                      "defaultState" : true,
+                      "comparison" : {
+                        "notEqualTo" : {
+                          "_0" : -1
+                        }
+                      },
+                      "variableReference" : "wat1QuestionNine"
+                    },
+                    "component" : {
+                      "variable" : {
+                        "referenceName" : "wat1QuestionNine"
+                      }
+                    }
+                  },
+                  {
+                    "component" : {
+                      "nilConstant" : {
+
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "conditional" : {
+                "_0" : [
+                  {
+                    "component" : {
+                      "variable" : {
+                        "referenceName" : "wat1QuestionTen"
+                      }
+                    },
+                    "condition" : {
+                      "defaultState" : true,
+                      "comparison" : {
+                        "notEqualTo" : {
+                          "_0" : -1
+                        }
+                      },
+                      "variableReference" : "wat1QuestionTen"
+                    }
+                  },
+                  {
+                    "component" : {
+                      "nilConstant" : {
+
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "conditional" : {
+                "_0" : [
+                  {
+                    "condition" : {
+                      "defaultState" : true,
+                      "comparison" : {
+                        "notEqualTo" : {
+                          "_0" : -1
+                        }
+                      },
+                      "variableReference" : "wat1QuestionEleven"
+                    },
+                    "component" : {
+                      "variable" : {
+                        "referenceName" : "wat1QuestionEleven"
+                      }
+                    }
+                  },
+                  {
+                    "component" : {
+                      "nilConstant" : {
+
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    },
+    "decimals" : 0,
+    "displayName" : "WAT-1 Score:"
+  }
+]
