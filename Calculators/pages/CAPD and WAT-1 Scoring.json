@@ -1,8 +1,12 @@
 {
+  "name" : "CAPD and WAT-1 Scoring",
   "color" : {
     "green" : 0.5568627450980392,
     "blue" : 0.5764705882352941,
     "red" : 0.5568627450980392
+  },
+  "image" : {
+    "custom" : "cognitive.deficit"
   },
   "groups" : [
     {
@@ -18,101 +22,22 @@
       "showName" : true
     },
     {
-      "name" : "Cornell Assessment of Paediatric Delirium (CAPD)",
-      "showName" : true,
       "components" : [
         {
           "discreteInput" : {
+            "presentationStyle" : "menu",
             "variableInfo" : {
+              "variableReference" : "capdQuestionOne",
               "color" : {
-                "red" : 0,
                 "blue" : 0,
+                "red" : 0,
                 "green" : 0
-              },
-              "variableReference" : "capdQuestionOne"
+              }
             },
             "values" : [
               {
                 "displayName" : "Select",
                 "value" : -1
-              },
-              {
-                "displayName" : "Never",
-                "value" : 4
-              },
-              {
-                "displayName" : "Rarely",
-                "value" : 3
-              },
-              {
-                "value" : 2,
-                "displayName" : "Sometimes"
-              },
-              {
-                "displayName" : "Often",
-                "value" : 1
-              },
-              {
-                "displayName" : "Always",
-                "value" : 0
-              }
-            ],
-            "presentationStyle" : "menu"
-          }
-        },
-        {
-          "discreteInput" : {
-            "presentationStyle" : "menu",
-            "variableInfo" : {
-              "color" : {
-                "green" : 0,
-                "red" : 0,
-                "blue" : 0
-              },
-              "variableReference" : "capdQuestionTwo"
-            },
-            "values" : [
-              {
-                "value" : -1,
-                "displayName" : "Select"
-              },
-              {
-                "displayName" : "Never",
-                "value" : 4
-              },
-              {
-                "value" : 3,
-                "displayName" : "Rarely"
-              },
-              {
-                "displayName" : "Sometimes",
-                "value" : 2
-              },
-              {
-                "displayName" : "Often",
-                "value" : 1
-              },
-              {
-                "displayName" : "Always",
-                "value" : 0
-              }
-            ]
-          }
-        },
-        {
-          "discreteInput" : {
-            "variableInfo" : {
-              "color" : {
-                "green" : 0,
-                "blue" : 0,
-                "red" : 0
-              },
-              "variableReference" : "capdQuestionThree"
-            },
-            "values" : [
-              {
-                "value" : -1,
-                "displayName" : "Select"
               },
               {
                 "value" : 4,
@@ -131,18 +56,16 @@
                 "value" : 1
               },
               {
-                "value" : 0,
-                "displayName" : "Always"
+                "displayName" : "Always",
+                "value" : 0
               }
-            ],
-            "presentationStyle" : "menu"
+            ]
           }
         },
         {
           "discreteInput" : {
-            "presentationStyle" : "menu",
             "variableInfo" : {
-              "variableReference" : "capdQuestionFour",
+              "variableReference" : "capdQuestionTwo",
               "color" : {
                 "blue" : 0,
                 "green" : 0,
@@ -163,81 +86,82 @@
                 "value" : 3
               },
               {
-                "displayName" : "Sometimes",
-                "value" : 2
-              },
-              {
-                "displayName" : "Often",
-                "value" : 1
-              },
-              {
-                "value" : 0,
-                "displayName" : "Always"
-              }
-            ]
-          }
-        },
-        {
-          "discreteInput" : {
-            "presentationStyle" : "menu",
-            "values" : [
-              {
-                "displayName" : "Select",
-                "value" : -1
-              },
-              {
-                "displayName" : "Never",
-                "value" : 0
-              },
-              {
-                "displayName" : "Rarely",
-                "value" : 1
-              },
-              {
                 "value" : 2,
                 "displayName" : "Sometimes"
               },
               {
                 "displayName" : "Often",
-                "value" : 3
+                "value" : 1
               },
               {
                 "displayName" : "Always",
-                "value" : 4
+                "value" : 0
               }
             ],
-            "variableInfo" : {
-              "variableReference" : "capdQuestionFive",
-              "color" : {
-                "red" : 0,
-                "green" : 0,
-                "blue" : 0
-              }
-            }
+            "presentationStyle" : "menu"
           }
         },
         {
           "discreteInput" : {
             "variableInfo" : {
+              "variableReference" : "capdQuestionThree",
               "color" : {
                 "red" : 0,
                 "green" : 0,
                 "blue" : 0
-              },
-              "variableReference" : "capdQuestionSix"
+              }
             },
-            "presentationStyle" : "menu",
             "values" : [
               {
-                "displayName" : "Select",
-                "value" : -1
+                "value" : -1,
+                "displayName" : "Select"
               },
               {
                 "displayName" : "Never",
-                "value" : 0
+                "value" : 4
+              },
+              {
+                "displayName" : "Rarely",
+                "value" : 3
+              },
+              {
+                "value" : 2,
+                "displayName" : "Sometimes"
               },
               {
                 "value" : 1,
+                "displayName" : "Often"
+              },
+              {
+                "displayName" : "Always",
+                "value" : 0
+              }
+            ],
+            "presentationStyle" : "menu"
+          }
+        },
+        {
+          "discreteInput" : {
+            "variableInfo" : {
+              "variableReference" : "capdQuestionFour",
+              "color" : {
+                "green" : 0,
+                "red" : 0,
+                "blue" : 0
+              }
+            },
+            "presentationStyle" : "menu",
+            "values" : [
+              {
+                "displayName" : "Select",
+                "value" : -1
+              },
+              {
+                "value" : 4,
+                "displayName" : "Never"
+              },
+              {
+                "value" : 3,
                 "displayName" : "Rarely"
               },
               {
@@ -246,62 +170,23 @@
               },
               {
                 "displayName" : "Often",
-                "value" : 3
+                "value" : 1
               },
               {
-                "value" : 4,
-                "displayName" : "Always"
+                "displayName" : "Always",
+                "value" : 0
               }
             ]
           }
         },
         {
           "discreteInput" : {
-            "presentationStyle" : "menu",
             "variableInfo" : {
-              "variableReference" : "capdQuestionSeven",
+              "variableReference" : "capdQuestionFive",
               "color" : {
                 "green" : 0,
                 "blue" : 0,
                 "red" : 0
-              }
-            },
-            "values" : [
-              {
-                "displayName" : "Select",
-                "value" : -1
-              },
-              {
-                "value" : 0,
-                "displayName" : "Never"
-              },
-              {
-                "displayName" : "Rarely",
-                "value" : 1
-              },
-              {
-                "value" : 2,
-                "displayName" : "Sometimes"
-              },
-              {
-                "displayName" : "Often",
-                "value" : 3
-              },
-              {
-                "displayName" : "Always",
-                "value" : 4
-              }
-            ]
-          }
-        },
-        {
-          "discreteInput" : {
-            "variableInfo" : {
-              "variableReference" : "capdQuestionEight",
-              "color" : {
-                "red" : 0,
-                "green" : 0,
-                "blue" : 0
               }
             },
             "presentationStyle" : "menu",
@@ -319,8 +204,8 @@
                 "value" : 1
               },
               {
-                "value" : 2,
-                "displayName" : "Sometimes"
+                "displayName" : "Sometimes",
+                "value" : 2
               },
               {
                 "value" : 3,
@@ -334,15 +219,142 @@
           }
         },
         {
-          "discreteInput" : "capdScore"
+          "discreteInput" : {
+            "values" : [
+              {
+                "displayName" : "Select",
+                "value" : -1
+              },
+              {
+                "value" : 0,
+                "displayName" : "Never"
+              },
+              {
+                "displayName" : "Rarely",
+                "value" : 1
+              },
+              {
+                "displayName" : "Sometimes",
+                "value" : 2
+              },
+              {
+                "value" : 3,
+                "displayName" : "Often"
+              },
+              {
+                "displayName" : "Always",
+                "value" : 4
+              }
+            ],
+            "presentationStyle" : "menu",
+            "variableInfo" : {
+              "color" : {
+                "green" : 0,
+                "blue" : 0,
+                "red" : 0
+              },
+              "variableReference" : "capdQuestionSix"
+            }
+          }
+        },
+        {
+          "discreteInput" : {
+            "variableInfo" : {
+              "variableReference" : "capdQuestionSeven",
+              "color" : {
+                "green" : 0,
+                "red" : 0,
+                "blue" : 0
+              }
+            },
+            "presentationStyle" : "menu",
+            "values" : [
+              {
+                "displayName" : "Select",
+                "value" : -1
+              },
+              {
+                "displayName" : "Never",
+                "value" : 0
+              },
+              {
+                "value" : 1,
+                "displayName" : "Rarely"
+              },
+              {
+                "displayName" : "Sometimes",
+                "value" : 2
+              },
+              {
+                "displayName" : "Often",
+                "value" : 3
+              },
+              {
+                "value" : 4,
+                "displayName" : "Always"
+              }
+            ]
+          }
+        },
+        {
+          "discreteInput" : {
+            "values" : [
+              {
+                "displayName" : "Select",
+                "value" : -1
+              },
+              {
+                "value" : 0,
+                "displayName" : "Never"
+              },
+              {
+                "displayName" : "Rarely",
+                "value" : 1
+              },
+              {
+                "value" : 2,
+                "displayName" : "Sometimes"
+              },
+              {
+                "displayName" : "Often",
+                "value" : 3
+              },
+              {
+                "displayName" : "Always",
+                "value" : 4
+              }
+            ],
+            "variableInfo" : {
+              "variableReference" : "capdQuestionEight",
+              "color" : {
+                "red" : 0,
+                "green" : 0,
+                "blue" : 0
+              }
+            },
+            "presentationStyle" : "menu"
+          }
+        },
+        {
+          "output" : "capdScore"
         }
-      ]
+      ],
+      "name" : "Cornell Assessment of Paediatric Delirium (CAPD)",
+      "showName" : true
     },
     {
-      "name" : "Withdrawal Assessment Tool - Version 1 (WAT-1)",
       "components" : [
         {
           "discreteInput" : {
+            "variableInfo" : {
+              "variableReference" : "wat1QuestionOne",
+              "color" : {
+                "red" : 0,
+                "blue" : 0,
+                "green" : 0
+              }
+            },
+            "presentationStyle" : "menu",
             "values" : [
               {
                 "displayName" : "Select",
@@ -356,10 +368,55 @@
                 "value" : 0,
                 "displayName" : "No"
               }
-            ],
+            ]
+          }
+        },
+        {
+          "discreteInput" : {
             "presentationStyle" : "menu",
             "variableInfo" : {
-              "variableReference" : "wat1QuestionOne",
+              "variableReference" : "wat1QuestionTwo",
+              "color" : {
+                "green" : 0,
+                "red" : 0,
+                "blue" : 0
+              }
+            },
+            "values" : [
+              {
+                "displayName" : "Select",
+                "value" : -1
+              },
+              {
+                "displayName" : "Yes",
+                "value" : 1
+              },
+              {
+                "displayName" : "No",
+                "value" : 0
+              }
+            ]
+          }
+        },
+        {
+          "discreteInput" : {
+            "presentationStyle" : "menu",
+            "values" : [
+              {
+                "value" : -1,
+                "displayName" : "Select"
+              },
+              {
+                "value" : 1,
+                "displayName" : "Yes"
+              },
+              {
+                "value" : 0,
+                "displayName" : "No"
+              }
+            ],
+            "variableInfo" : {
+              "variableReference" : "wat1QuestionThree",
               "color" : {
                 "green" : 0,
                 "red" : 0,
@@ -370,80 +427,26 @@
         },
         {
           "discreteInput" : {
-            "variableInfo" : {
-              "variableReference" : "wat1QuestionTwo",
-              "color" : {
-                "blue" : 0,
-                "red" : 0,
-                "green" : 0
-              }
-            },
-            "values" : [
-              {
-                "value" : -1,
-                "displayName" : "Select"
-              },
-              {
-                "displayName" : "Yes",
-                "value" : 1
-              },
-              {
-                "displayName" : "No",
-                "value" : 0
-              }
-            ],
-            "presentationStyle" : "menu"
-          }
-        },
-        {
-          "discreteInput" : {
             "presentationStyle" : "menu",
-            "variableInfo" : {
-              "variableReference" : "wat1QuestionThree",
-              "color" : {
-                "blue" : 0,
-                "green" : 0,
-                "red" : 0
-              }
-            },
-            "values" : [
-              {
-                "value" : -1,
-                "displayName" : "Select"
-              },
-              {
-                "displayName" : "Yes",
-                "value" : 1
-              },
-              {
-                "value" : 0,
-                "displayName" : "No"
-              }
-            ]
-          }
-        },
-        {
-          "discreteInput" : {
             "values" : [
               {
                 "displayName" : "Select",
                 "value" : -1
               },
               {
-                "displayName" : "SBS<0 or asleep\/awake\/calm",
-                "value" : 0
+                "value" : 0,
+                "displayName" : "SBS<0 or asleep\/awake\/calm"
               },
               {
-                "displayName" : "SBS>+1 or awake\/distressed",
-                "value" : 1
+                "value" : 1,
+                "displayName" : "SBS>+1 or awake\/distressed"
               }
             ],
-            "presentationStyle" : "menu",
             "variableInfo" : {
               "variableReference" : "wat1QuestionFour",
               "color" : {
-                "green" : 0,
                 "blue" : 0,
+                "green" : 0,
                 "red" : 0
               }
             }
@@ -452,41 +455,32 @@
         {
           "discreteInput" : {
             "presentationStyle" : "menu",
-            "variableInfo" : {
-              "variableReference" : "wat1QuestionFive",
-              "color" : {
-                "blue" : 0,
-                "red" : 0,
-                "green" : 0
-              }
-            },
             "values" : [
               {
-                "displayName" : "Select",
-                "value" : -1
+                "value" : -1,
+                "displayName" : "Select"
               },
               {
-                "value" : 0,
-                "displayName" : "None\/Mild"
+                "displayName" : "None\/Mild",
+                "value" : 0
               },
               {
                 "displayName" : "Moderate\/Severe",
                 "value" : 1
               }
-            ]
+            ],
+            "variableInfo" : {
+              "variableReference" : "wat1QuestionFive",
+              "color" : {
+                "red" : 0,
+                "blue" : 0,
+                "green" : 0
+              }
+            }
           }
         },
         {
           "discreteInput" : {
-            "presentationStyle" : "menu",
-            "variableInfo" : {
-              "variableReference" : "wat1QuestionSix",
-              "color" : {
-                "blue" : 0,
-                "green" : 0,
-                "red" : 0
-              }
-            },
             "values" : [
               {
                 "displayName" : "Select",
@@ -500,78 +494,25 @@
                 "displayName" : "No",
                 "value" : 0
               }
-            ]
-          }
-        },
-        {
-          "discreteInput" : {
-            "presentationStyle" : "menu",
-            "values" : [
-              {
-                "displayName" : "Select",
-                "value" : -1
-              },
-              {
-                "value" : 0,
-                "displayName" : "None\/Mild"
-              },
-              {
-                "displayName" : "Moderate\/Severe",
-                "value" : 1
-              }
             ],
             "variableInfo" : {
-              "color" : {
-                "blue" : 0,
-                "green" : 0,
-                "red" : 0
-              },
-              "variableReference" : "wat1QuestionSeven"
-            }
-          }
-        },
-        {
-          "discreteInput" : {
-            "variableInfo" : {
+              "variableReference" : "wat1QuestionSix",
               "color" : {
                 "green" : 0,
                 "red" : 0,
                 "blue" : 0
-              },
-              "variableReference" : "wat1QuestionEight"
-            },
-            "values" : [
-              {
-                "displayName" : "Select",
-                "value" : -1
-              },
-              {
-                "displayName" : "None or 1",
-                "value" : 0
-              },
-              {
-                "value" : 1,
-                "displayName" : ">2"
               }
-            ],
+            },
             "presentationStyle" : "menu"
           }
         },
         {
           "discreteInput" : {
-            "variableInfo" : {
-              "variableReference" : "wat1QuestionNine",
-              "color" : {
-                "blue" : 0,
-                "green" : 0,
-                "red" : 0
-              }
-            },
             "presentationStyle" : "menu",
             "values" : [
               {
-                "displayName" : "Select",
-                "value" : -1
+                "value" : -1,
+                "displayName" : "Select"
               },
               {
                 "displayName" : "None\/Mild",
@@ -581,77 +522,136 @@
                 "value" : 1,
                 "displayName" : "Moderate\/Severe"
               }
-            ]
-          }
-        },
-        {
-          "discreteInput" : {
-            "variableInfo" : {
-              "variableReference" : "wat1QuestionTen",
-              "color" : {
-                "blue" : 0,
-                "red" : 0,
-                "green" : 0
-              }
-            },
-            "values" : [
-              {
-                "value" : -1,
-                "displayName" : "Select"
-              },
-              {
-                "displayName" : "Normal",
-                "value" : 0
-              },
-              {
-                "displayName" : "Increased",
-                "value" : 1
-              }
             ],
-            "presentationStyle" : "menu"
-          }
-        },
-        {
-          "discreteInput" : {
-            "presentationStyle" : "menu",
             "variableInfo" : {
               "color" : {
                 "green" : 0,
                 "blue" : 0,
                 "red" : 0
               },
-              "variableReference" : "wat1QuestionEleven"
-            },
+              "variableReference" : "wat1QuestionSeven"
+            }
+          }
+        },
+        {
+          "discreteInput" : {
             "values" : [
               {
                 "displayName" : "Select",
                 "value" : -1
               },
               {
-                "displayName" : "<2",
+                "value" : 0,
+                "displayName" : "None or 1"
+              },
+              {
+                "value" : 1,
+                "displayName" : ">2"
+              }
+            ],
+            "presentationStyle" : "menu",
+            "variableInfo" : {
+              "variableReference" : "wat1QuestionEight",
+              "color" : {
+                "green" : 0,
+                "red" : 0,
+                "blue" : 0
+              }
+            }
+          }
+        },
+        {
+          "discreteInput" : {
+            "presentationStyle" : "menu",
+            "values" : [
+              {
+                "value" : -1,
+                "displayName" : "Select"
+              },
+              {
+                "displayName" : "None\/Mild",
                 "value" : 0
               },
               {
                 "value" : 1,
-                "displayName" : "2-5"
-              },
-              {
-                "displayName" : ">5",
-                "value" : 2
+                "displayName" : "Moderate\/Severe"
               }
-            ]
+            ],
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0,
+                "red" : 0,
+                "green" : 0
+              },
+              "variableReference" : "wat1QuestionNine"
+            }
           }
         },
         {
-          "discreteInput" : "wat1Score"
+          "discreteInput" : {
+            "values" : [
+              {
+                "value" : -1,
+                "displayName" : "Select"
+              },
+              {
+                "value" : 0,
+                "displayName" : "Normal"
+              },
+              {
+                "displayName" : "Increased",
+                "value" : 1
+              }
+            ],
+            "variableInfo" : {
+              "variableReference" : "wat1QuestionTen",
+              "color" : {
+                "green" : 0,
+                "blue" : 0,
+                "red" : 0
+              }
+            },
+            "presentationStyle" : "menu"
+          }
+        },
+        {
+          "discreteInput" : {
+            "values" : [
+              {
+                "value" : -1,
+                "displayName" : "Select"
+              },
+              {
+                "value" : 0,
+                "displayName" : "<2"
+              },
+              {
+                "displayName" : "2-5",
+                "value" : 1
+              },
+              {
+                "value" : 2,
+                "displayName" : ">5"
+              }
+            ],
+            "presentationStyle" : "menu",
+            "variableInfo" : {
+              "variableReference" : "wat1QuestionEleven",
+              "color" : {
+                "blue" : 0,
+                "red" : 0,
+                "green" : 0
+              }
+            }
+          }
+        },
+        {
+          "output" : "wat1Score"
         }
       ],
+      "name" : "Withdrawal Assessment Tool - Version 1 (WAT-1)",
       "showName" : true
     }
   ],
-  "name" : "CAPD and WAT-1 Scoring",
-  "image" : {
-    "custom" : "cognitive.deficit"
-  },
   "nested" : false
 }

@@ -1,44 +1,49 @@
 {
+  "name" : "Weaning Calculator",
+  "nested" : true,
   "color" : {
     "green" : 0.33725490196078434,
     "red" : 0.34509803921568627,
     "blue" : 0.8392156862745098
   },
+  "image" : {
+    "sfSymbol" : "figure.child.circle.fill"
+  },
   "groups" : [
     {
+      "showName" : false,
+      "name" : "Weight Input",
       "components" : [
         {
           "inputPrimary" : {
             "variableInfo" : {
+              "variableReference" : "weight",
               "color" : {
                 "green" : 0.33725490196078434,
                 "red" : 0.34509803921568627,
                 "blue" : 0.8392156862745098
-              },
-              "variableReference" : "weight"
+              }
             },
             "allowsNegative" : false
           }
         }
-      ],
-      "name" : "Weight Input",
-      "showName" : false
+      ]
     },
     {
-      "name" : "Opioid Weaning Calculator",
       "notes" : "*Morphine infusion rate at the start of wean",
+      "name" : "Opioid Weaning Calculator",
       "components" : [
         {
           "inputSingle" : {
-            "allowsNegative" : false,
             "variableInfo" : {
               "color" : {
                 "green" : 0.5843137254901961,
-                "blue" : 0,
-                "red" : 1
+                "red" : 1,
+                "blue" : 0
               },
               "variableReference" : "initialIVMorphineInfusionRate"
-            }
+            },
+            "allowsNegative" : false
           }
         },
         {
@@ -46,12 +51,12 @@
         },
         {
           "nested" : {
-            "discreteInput" : "weaningIVMorphineInfusion20Wean"
+            "output" : "weaningIVMorphineInfusion20Wean"
           }
         },
         {
           "nested" : {
-            "discreteInput" : "weaningIVMorphineInfusion10Wean"
+            "output" : "weaningIVMorphineInfusion10Wean"
           }
         },
         {
@@ -59,12 +64,12 @@
         },
         {
           "nested" : {
-            "discreteInput" : "weaningPOMorphineQ6H20Wean"
+            "output" : "weaningPOMorphineQ6H20Wean"
           }
         },
         {
           "nested" : {
-            "discreteInput" : "weaningPOMorphineQ6H10Wean"
+            "output" : "weaningPOMorphineQ6H10Wean"
           }
         },
         {
@@ -72,30 +77,29 @@
         },
         {
           "nested" : {
-            "discreteInput" : "weaningPOMorphineQ4H20Wean"
+            "output" : "weaningPOMorphineQ4H20Wean"
           }
         },
         {
           "nested" : {
-            "discreteInput" : "weaningPOMorphineQ4H10Wean"
+            "output" : "weaningPOMorphineQ4H10Wean"
           }
         }
       ],
       "showName" : true
     },
     {
-      "showName" : true,
       "notes" : "*Midazolam infusion rate at the start of wean",
-      "name" : "Benzodiazepine Weaning Calculator",
+      "showName" : true,
       "components" : [
         {
           "inputSingle" : {
             "variableInfo" : {
               "variableReference" : "initialIVMidazolamInfusionRate",
               "color" : {
+                "red" : 1,
                 "green" : 0.5843137254901961,
-                "blue" : 0,
-                "red" : 1
+                "blue" : 0
               }
             },
             "allowsNegative" : false
@@ -106,12 +110,12 @@
         },
         {
           "nested" : {
-            "discreteInput" : "weaningIVMidazolamInfusion20Wean"
+            "output" : "weaningIVMidazolamInfusion20Wean"
           }
         },
         {
           "nested" : {
-            "discreteInput" : "weaningIVMidazolamInfusion10Wean"
+            "output" : "weaningIVMidazolamInfusion10Wean"
           }
         },
         {
@@ -119,20 +123,16 @@
         },
         {
           "nested" : {
-            "discreteInput" : "weaningPOLorazepamQ6H20Wean"
+            "output" : "weaningPOLorazepamQ6H20Wean"
           }
         },
         {
           "nested" : {
-            "discreteInput" : "weaningPOLorazepamQ6H10Wean"
+            "output" : "weaningPOLorazepamQ6H10Wean"
           }
         }
-      ]
+      ],
+      "name" : "Benzodiazepine Weaning Calculator"
     }
-  ],
-  "image" : {
-    "sfSymbol" : "figure.child.circle.fill"
-  },
-  "name" : "Weaning Calculator",
-  "nested" : true
+  ]
 }

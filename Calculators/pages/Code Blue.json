@@ -1,106 +1,76 @@
 {
   "nested" : false,
-  "image" : {
-    "custom" : "code.blue"
-  },
   "groups" : [
     {
-      "name" : "CPR Metronome",
-      "notes" : "Turn off silent mode and increase your volume to hear auditory cues",
       "showName" : false,
+      "notes" : "Turn off silent mode and increase your volume to hear auditory cues",
       "components" : [
         {
           "special" : "cprMetronome"
         }
-      ]
+      ],
+      "name" : "CPR Metronome"
     },
     {
+      "showName" : false,
+      "name" : "Age and Weight Input",
+      "notes" : "If weight is not provided, it is estimated based on age",
       "components" : [
         {
           "inputDual" : {
             "rhs" : {
+              "allowsNegative" : false,
               "variableInfo" : {
                 "color" : {
-                  "red" : 0.34509803921568627,
                   "green" : 0.33725490196078434,
+                  "red" : 0.34509803921568627,
                   "blue" : 0.8392156862745098
                 },
                 "variableReference" : "weight"
-              },
-              "allowsNegative" : false
+              }
             },
             "lhs" : {
               "allowsNegative" : false,
               "variableInfo" : {
                 "variableReference" : "age",
                 "color" : {
-                  "green" : 0.6784313725490196,
                   "blue" : 0.9019607843137255,
-                  "red" : 0.19607843137254902
+                  "red" : 0.19607843137254902,
+                  "green" : 0.6784313725490196
                 }
               }
             }
           }
         }
-      ],
-      "showName" : false,
-      "name" : "Age and Weight Input",
-      "notes" : "If weight is not provided, it is estimated based on age"
-    },
-    {
-      "name" : "Airway Equipment",
-      "showName" : true,
-      "components" : [
-        {
-          "discreteInput" : "ettUncuffed"
-        },
-        {
-          "discreteInput" : "ettCuffed"
-        },
-        {
-          "discreteInput" : "ettOralIntubationDepth"
-        },
-        {
-          "discreteInput" : "ettNasalIntubationDepth"
-        }
       ]
     },
     {
+      "name" : "Airway Equipment",
+      "components" : [
+        {
+          "output" : "ettUncuffed"
+        },
+        {
+          "output" : "ettCuffed"
+        },
+        {
+          "output" : "ettOralIntubationDepth"
+        },
+        {
+          "output" : "ettNasalIntubationDepth"
+        }
+      ],
+      "showName" : true
+    },
+    {
+      "name" : "Circulation",
       "showName" : true,
       "components" : [
         {
           "special" : "aplsAlgorithms"
         },
         {
-          "discreteInput" : "centralVenousCatheterSize"
-        },
-        {
-          "conditional" : {
-            "component" : {
-              "discreteInput" : "vascularCatheterSize_all"
-            },
-            "condition" : {
-              "comparison" : {
-                "notEqualTo" : -1
-              },
-              "variableReference" : "vascularCatheterSize_all",
-              "defaultState" : true
-            }
-          }
-        },
-        {
-          "conditional" : {
-            "condition" : {
-              "variableReference" : "vascularCatheterSize_all",
-              "comparison" : {
-                "equalTo" : -1
-              },
-              "defaultState" : true
-            },
-            "component" : {
-              "discreteInput" : "vascularCatheterSize_medcomp"
-            }
-          }
+          "output" : "centralVenousCatheterSize"
         },
         {
           "conditional" : {
@@ -108,31 +78,59 @@
               "defaultState" : true,
               "variableReference" : "vascularCatheterSize_all",
               "comparison" : {
-                "equalTo" : -1
+                "notEqualTo" : -1
               }
             },
             "component" : {
-              "discreteInput" : "vascularCatheterSize_covidien"
+              "output" : "vascularCatheterSize_all"
+            }
+          }
+        },
+        {
+          "conditional" : {
+            "condition" : {
+              "comparison" : {
+                "equalTo" : -1
+              },
+              "defaultState" : true,
+              "variableReference" : "vascularCatheterSize_all"
+            },
+            "component" : {
+              "output" : "vascularCatheterSize_medcomp"
+            }
+          }
+        },
+        {
+          "conditional" : {
+            "condition" : {
+              "variableReference" : "vascularCatheterSize_all",
+              "comparison" : {
+                "equalTo" : -1
+              },
+              "defaultState" : true
+            },
+            "component" : {
+              "output" : "vascularCatheterSize_covidien"
             }
           }
         }
-      ],
-      "name" : "Circulation"
+      ]
     },
     {
-      "showName" : true,
       "components" : [
         {
-          "discreteInput" : "heartRate"
+          "output" : "heartRate"
         },
         {
-          "discreteInput" : "respiratoryRate"
+          "output" : "respiratoryRate"
         }
       ],
-      "name" : "Vitals"
+      "name" : "Vitals",
+      "showName" : true
     },
     {
       "showName" : true,
+      "name" : "Fluids",
       "components" : [
         {
           "detailedOutput" : {
@@ -141,27 +139,24 @@
               "Albumin_Calc_Dose",
               "Albumin_Calc_Amt"
             ],
-            "primaryVarReference" : "Albumin_Calc_Amt",
-            "name" : "Albumin 5% Solution"
+            "name" : "Albumin 5% Solution",
+            "primaryVarReference" : "Albumin_Calc_Amt"
           }
         },
         {
           "detailedOutput" : {
             "primaryVarReference" : "Sodium Chloride_Calc_Amt",
-            "name" : "Sodium Chloride 0.9% Infusion",
             "detailVarReferences" : [
               "Sodium Chloride_Dose",
               "Sodium Chloride_Calc_Dose",
               "Sodium Chloride_Calc_Amt"
-            ]
+            ],
+            "name" : "Sodium Chloride 0.9% Infusion"
           }
         }
-      ],
-      "name" : "Fluids"
+      ]
     },
     {
-      "name" : "Drugs",
-      "showName" : true,
       "components" : [
         {
           "detailedOutput" : {
@@ -176,9 +171,9 @@
         },
         {
           "detailedOutput" : {
-            "primaryVarReference" : "Atropine Sulfate_Calc_Amt",
             "name" : "Atropine Sulfate 600mcg\/mL Injection",
             "notes" : "Minimum dose: 100mcg (0.17 mL)\nMaximum dose: 600mcg (1 mL)",
+            "primaryVarReference" : "Atropine Sulfate_Calc_Amt",
             "detailVarReferences" : [
               "Atropine Sulfate_Dose",
               "Atropine Sulfate_Calc_Dose",
@@ -193,15 +188,15 @@
               "Calcium Chloride_Calc_Dose",
               "Calcium Chloride_Calc_Amt"
             ],
-            "primaryVarReference" : "Calcium Chloride_Calc_Amt",
+            "name" : "Calcium Chloride 10% (5.5mmol\/10mL) Injection",
             "notes" : "Use Large or Central vein",
-            "name" : "Calcium Chloride 10% (5.5mmol\/10mL) Injection"
+            "primaryVarReference" : "Calcium Chloride_Calc_Amt"
           }
         },
         {
           "detailedOutput" : {
-            "name" : "Dextrose 25% Infusion",
             "notes" : "Dilute Dextrose 50% with same amount of WFI (1:1) to get 25% solution",
+            "name" : "Dextrose 25% Infusion",
             "primaryVarReference" : "Dextrose_Calc_Amt",
             "detailVarReferences" : [
               "Dextrose_Dose",
@@ -212,48 +207,48 @@
         },
         {
           "detailedOutput" : {
-            "primaryVarReference" : "Sodium Bicarbonate 8.4%_Calc_Amt",
-            "name" : "Sodium Bicarbonate 8.4% (1mmol\/mL) Infusion",
             "detailVarReferences" : [
               "Sodium Bicarbonate 8.4%_Dose",
               "Sodium Bicarbonate 8.4%_Calc_Dose",
               "Sodium Bicarbonate 8.4%_Calc_Amt"
             ],
+            "primaryVarReference" : "Sodium Bicarbonate 8.4%_Calc_Amt",
+            "name" : "Sodium Bicarbonate 8.4% (1mmol\/mL) Infusion",
             "notes" : "8.4% - Infuse in Central Vein only"
           }
         },
         {
           "detailedOutput" : {
-            "name" : "Sodium Bicarbonate 4.2% (0.5mmol\/mL) Infusion",
-            "primaryVarReference" : "Sodium Bicarbonate 4.2%_Calc_Amt",
             "notes" : "4.2% - Safe for peripheral vein infusion\nDilute NaHCO3 8.4% with same amount of WFI (1:1) to get 4.2% solution",
+            "primaryVarReference" : "Sodium Bicarbonate 4.2%_Calc_Amt",
             "detailVarReferences" : [
               "Sodium Bicarbonate 4.2%_Dose",
               "Sodium Bicarbonate 4.2%_Calc_Dose",
               "Sodium Bicarbonate 4.2%_Calc_Amt"
-            ]
+            ],
+            "name" : "Sodium Bicarbonate 4.2% (0.5mmol\/mL) Infusion"
           }
         },
         {
           "detailedOutput" : {
-            "name" : "Suxamethonium Chloride 100mg\/2mL Injection",
-            "primaryVarReference" : "Suxamethonium Chloride_Calc_Amt",
             "detailVarReferences" : [
               "Suxamethonium Chloride_Dose",
               "Suxamethonium Chloride_Calc_Dose",
               "Suxamethonium Chloride_Calc_Amt"
-            ]
+            ],
+            "primaryVarReference" : "Suxamethonium Chloride_Calc_Amt",
+            "name" : "Suxamethonium Chloride 100mg\/2mL Injection"
           }
         },
         {
           "detailedOutput" : {
+            "name" : "Midazolam 5mg\/mL Injection",
+            "primaryVarReference" : "Midazolam_Calc_Amt",
             "detailVarReferences" : [
               "Midazolam_Dose",
               "Midazolam_Calc_Dose",
               "Midazolam_Calc_Amt"
-            ],
-            "name" : "Midazolam 5mg\/mL Injection",
-            "primaryVarReference" : "Midazolam_Calc_Amt"
+            ]
           }
         },
         {
@@ -263,28 +258,33 @@
               "Morphine Sulfate_Calc_Dose",
               "Morphine Sulfate_Calc_Amt"
             ],
-            "name" : "Morphine Sulfate 10mg\/mL Injection",
-            "primaryVarReference" : "Morphine Sulfate_Calc_Amt"
+            "primaryVarReference" : "Morphine Sulfate_Calc_Amt",
+            "name" : "Morphine Sulfate 10mg\/mL Injection"
           }
         },
         {
           "detailedOutput" : {
-            "primaryVarReference" : "Rocuronium_Calc_Amt",
+            "name" : "Rocuronium Br 50mg\/5mL Injection",
             "detailVarReferences" : [
               "Rocuronium_Dose",
               "Rocuronium_Calc_Dose",
               "Rocuronium_Calc_Amt"
             ],
-            "name" : "Rocuronium Br 50mg\/5mL Injection"
+            "primaryVarReference" : "Rocuronium_Calc_Amt"
           }
         }
-      ]
+      ],
+      "showName" : true,
+      "name" : "Drugs"
     }
   ],
+  "image" : {
+    "custom" : "code.blue"
+  },
   "name" : "Code Blue",
   "color" : {
-    "red" : 0,
+    "green" : 0.47843137254901963,
     "blue" : 1,
-    "green" : 0.47843137254901963
+    "red" : 0
   }
 }
