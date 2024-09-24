@@ -1,23 +1,21 @@
 {
-  "image" : {
-    "sfSymbol" : {
-      "_0" : "syringe.fill"
-    }
-  },
-  "color" : {
-    "red" : 1,
-    "blue" : 0.18823529411764706,
-    "green" : 0.23137254901960785
-  },
   "name" : "Peripheral Drug Administration Dilution",
+  "color" : {
+    "green" : 0.23137254901960785,
+    "blue" : 0.18823529411764706,
+    "red" : 1
+  },
+  "nested" : false,
+  "image" : {
+    "sfSymbol" : "syringe.fill"
+  },
   "groups" : [
     {
+      "showName" : true,
+      "name" : "NOT IMPLEMENTED YET",
       "components" : [
 
-      ],
-      "name" : "NOT IMPLEMENTED YET",
-      "showName" : true
+      ]
     }
-  ],
-  "nested" : false
+  ]
 }

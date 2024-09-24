@@ -1,5 +1,7 @@
 [
   {
+    "decimals" : 2,
+    "referenceName" : "input_ivMorphineInfusionRate",
     "displayName" : "IV Morphine Infusion Rate",
     "alternateUnits" : [
       {
@@ -7,307 +9,217 @@
         "name" : "mcg\/kg\/hr"
       }
     ],
-    "decimals" : 2,
     "startingValue" : 0,
-    "referenceName" : "input_ivMorphineInfusionRate",
     "unit" : {
       "conversionScale" : 1,
       "name" : "mcg\/kg\/hr"
     }
   },
   {
-    "decimals" : 2,
-    "formula" : {
-      "parameters" : [
-        "input_ivMorphineInfusionRate",
-        "weight"
-      ],
-      "equation" : {
-        "linear" : {
-          "constant" : {
-            "constant" : {
-              "value" : 0
-            }
-          },
-          "gradient" : {
-            "linear" : {
-              "constant" : {
-                "constant" : {
-                  "value" : 0
-                }
-              },
-              "gradient" : {
-                "variable" : {
-                  "referenceName" : "input_ivMorphineInfusionRate"
-                }
-              },
-              "target" : {
-                "variable" : {
-                  "referenceName" : "weight"
-                }
-              }
-            }
-          },
-          "target" : {
-            "constant" : {
-              "value" : 0.072
-            }
-          }
-        }
-      },
-      "roundingMethod" : "nearest"
-    },
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "mg\/24hrs"
-    },
-    "displayName" : "Total PO Morphine dose over 24 hrs",
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : "mg\/24hrs"
-      }
-    ],
+    "referenceName" : "ivMorphine_totalPOMorphineDoseOver24Hours",
     "startingValue" : 0,
-    "referenceName" : "ivMorphine_totalPOMorphineDoseOver24Hours"
-  },
-  {
-    "alternateUnits" : [
-      {
-        "name" : "mg",
-        "conversionScale" : 1
-      }
-    ],
-    "decimals" : 2,
-    "formula" : {
-      "equation" : {
-        "linear" : {
-          "gradient" : {
-            "linear" : {
-              "constant" : {
-                "constant" : {
-                  "value" : 0
-                }
-              },
-              "target" : {
-                "variable" : {
-                  "referenceName" : "weight"
-                }
-              },
-              "gradient" : {
-                "variable" : {
-                  "referenceName" : "input_ivMorphineInfusionRate"
-                }
-              }
-            }
-          },
-          "constant" : {
-            "constant" : {
-              "value" : 0
-            }
-          },
-          "target" : {
-            "constant" : {
-              "value" : 0.018
-            }
-          }
-        }
-      },
-      "parameters" : [
-        "input_ivMorphineInfusionRate",
-        "weight"
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "unit" : {
-      "name" : "mg",
-      "conversionScale" : 1
-    },
-    "startingValue" : 0,
-    "displayName" : "PO Morphine Q6H Dose",
-    "referenceName" : "ivMorphine_poMorphineQ6HDose"
-  },
-  {
-    "alternateUnits" : [
-      {
-        "name" : "mg",
-        "conversionScale" : 1
-      }
-    ],
-    "formula" : {
-      "roundingMethod" : "nearest",
-      "parameters" : [
-        "input_ivMorphineInfusionRate",
-        "weight"
-      ],
-      "equation" : {
-        "linear" : {
-          "target" : {
-            "constant" : {
-              "value" : 0.011999999999999999
-            }
-          },
-          "gradient" : {
-            "linear" : {
-              "gradient" : {
-                "variable" : {
-                  "referenceName" : "input_ivMorphineInfusionRate"
-                }
-              },
-              "target" : {
-                "variable" : {
-                  "referenceName" : "weight"
-                }
-              },
-              "constant" : {
-                "constant" : {
-                  "value" : 0
-                }
-              }
-            }
-          },
-          "constant" : {
-            "constant" : {
-              "value" : 0
-            }
-          }
-        }
-      }
-    },
-    "unit" : {
-      "name" : "mg",
-      "conversionScale" : 1
-    },
-    "referenceName" : "ivMorphine_poMorphineQ4HDose",
-    "decimals" : 2,
-    "startingValue" : 0,
-    "displayName" : "PO Morphine Q4H Dose"
-  },
-  {
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "mcg\/kg\/hr"
-    },
-    "displayName" : "IV Fentanyl Infusion Rate",
-    "decimals" : 2,
-    "startingValue" : 0,
-    "referenceName" : "ivFentanylInfusionRate",
-    "alternateUnits" : [
-      {
-        "name" : "mcg\/kg\/hr",
-        "conversionScale" : 1
-      }
-    ]
-  },
-  {
-    "formula" : {
-      "equation" : {
-        "linear" : {
-          "constant" : {
-            "constant" : {
-              "value" : 0
-            }
-          },
-          "target" : {
-            "constant" : {
-              "value" : 25
-            }
-          },
-          "gradient" : {
-            "variable" : {
-              "referenceName" : "ivFentanylInfusionRate"
-            }
-          }
-        }
-      },
-      "parameters" : [
-        "ivFentanylInfusionRate"
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "output_ivMorphineInfusionRate",
-    "decimals" : 2,
-    "startingValue" : 0,
-    "alternateUnits" : [
-      {
-        "name" : "mcg\/kg\/hr",
-        "conversionScale" : 1
-      }
-    ],
-    "unit" : {
-      "name" : "mcg\/kg\/hr",
-      "conversionScale" : 1
-    },
-    "displayName" : "IV Morphine Infusion Rate"
-  },
-  {
     "decimals" : 2,
     "displayName" : "Total PO Morphine dose over 24 hrs",
-    "formula" : {
-      "roundingMethod" : "nearest",
-      "parameters" : [
-        "ivFentanylInfusionRate",
-        "weight"
-      ],
-      "equation" : {
-        "linear" : {
-          "gradient" : {
-            "linear" : {
-              "gradient" : {
-                "variable" : {
-                  "referenceName" : "ivFentanylInfusionRate"
-                }
-              },
-              "constant" : {
-                "constant" : {
-                  "value" : 0
-                }
-              },
-              "target" : {
-                "variable" : {
-                  "referenceName" : "weight"
-                }
-              }
-            }
-          },
-          "target" : {
-            "constant" : {
-              "value" : 2.4000000000000004
-            }
-          },
-          "constant" : {
-            "constant" : {
-              "value" : 0
-            }
-          }
-        }
-      }
-    },
-    "referenceName" : "ivFentanyl_totalPOMorphineDoseOver24Hours",
     "unit" : {
       "name" : "mg\/24hrs",
       "conversionScale" : 1
     },
+    "formula" : {
+      "roundingMethod" : "nearest",
+      "parameters" : [
+        "input_ivMorphineInfusionRate",
+        "weight"
+      ],
+      "equation" : {
+        "product" : [
+          "input_ivMorphineInfusionRate",
+          "weight",
+          24,
+          {
+            "division" : {
+              "denominator" : 1000,
+              "numerator" : 3
+            }
+          }
+        ]
+      }
+    },
     "alternateUnits" : [
       {
         "conversionScale" : 1,
         "name" : "mg\/24hrs"
       }
-    ],
-    "startingValue" : 0
+    ]
   },
   {
+    "startingValue" : 0,
+    "displayName" : "PO Morphine Q6H Dose",
+    "formula" : {
+      "roundingMethod" : "nearest",
+      "equation" : {
+        "product" : [
+          "input_ivMorphineInfusionRate",
+          "weight",
+          24,
+          {
+            "division" : {
+              "numerator" : {
+                "division" : {
+                  "numerator" : 3,
+                  "denominator" : 1000
+                }
+              },
+              "denominator" : 4
+            }
+          }
+        ]
+      },
+      "parameters" : [
+        "input_ivMorphineInfusionRate",
+        "weight"
+      ]
+    },
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mg"
+    },
+    "alternateUnits" : [
+      {
+        "name" : "mg",
+        "conversionScale" : 1
+      }
+    ],
+    "referenceName" : "ivMorphine_poMorphineQ6HDose",
+    "decimals" : 2
+  },
+  {
+    "displayName" : "PO Morphine Q4H Dose",
+    "startingValue" : 0,
     "decimals" : 2,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mg"
+    },
+    "referenceName" : "ivMorphine_poMorphineQ4HDose",
+    "formula" : {
+      "roundingMethod" : "nearest",
+      "parameters" : [
+        "input_ivMorphineInfusionRate",
+        "weight"
+      ],
+      "equation" : {
+        "product" : [
+          "input_ivMorphineInfusionRate",
+          "weight",
+          24,
+          {
+            "division" : {
+              "numerator" : {
+                "division" : {
+                  "numerator" : 3,
+                  "denominator" : 1000
+                }
+              },
+              "denominator" : 6
+            }
+          }
+        ]
+      }
+    },
     "alternateUnits" : [
       {
         "conversionScale" : 1,
         "name" : "mg"
       }
+    ]
+  },
+  {
+    "referenceName" : "ivFentanylInfusionRate",
+    "decimals" : 2,
+    "startingValue" : 0,
+    "displayName" : "IV Fentanyl Infusion Rate",
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mcg\/kg\/hr"
+    },
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mcg\/kg\/hr"
+      }
+    ]
+  },
+  {
+    "referenceName" : "output_ivMorphineInfusionRate",
+    "displayName" : "IV Morphine Infusion Rate",
+    "formula" : {
+      "roundingMethod" : "nearest",
+      "equation" : {
+        "product" : [
+          "ivFentanylInfusionRate",
+          25
+        ]
+      },
+      "parameters" : [
+        "ivFentanylInfusionRate"
+      ]
+    },
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mcg\/kg\/hr"
+      }
     ],
+    "startingValue" : 0,
+    "unit" : {
+      "name" : "mcg\/kg\/hr",
+      "conversionScale" : 1
+    },
+    "decimals" : 2
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mg\/24hrs"
+      }
+    ],
+    "startingValue" : 0,
+    "referenceName" : "ivFentanyl_totalPOMorphineDoseOver24Hours",
+    "displayName" : "Total PO Morphine dose over 24 hrs",
+    "unit" : {
+      "name" : "mg\/24hrs",
+      "conversionScale" : 1
+    },
+    "decimals" : 2,
+    "formula" : {
+      "roundingMethod" : "nearest",
+      "equation" : {
+        "product" : [
+          "ivFentanylInfusionRate",
+          "weight",
+          24,
+          0.1
+        ]
+      },
+      "parameters" : [
+        "ivFentanylInfusionRate",
+        "weight"
+      ]
+    }
+  },
+  {
     "unit" : {
       "name" : "mg",
       "conversionScale" : 1
     },
+    "referenceName" : "ivFentanyl_poMorphineQ6HDose",
+    "alternateUnits" : [
+      {
+        "name" : "mg",
+        "conversionScale" : 1
+      }
+    ],
     "formula" : {
       "roundingMethod" : "nearest",
       "parameters" : [
@@ -315,88 +227,46 @@
         "weight"
       ],
       "equation" : {
-        "linear" : {
-          "target" : {
-            "constant" : {
-              "value" : 0.6000000000000001
-            }
-          },
-          "gradient" : {
-            "linear" : {
-              "target" : {
-                "variable" : {
-                  "referenceName" : "weight"
-                }
-              },
-              "gradient" : {
-                "variable" : {
-                  "referenceName" : "ivFentanylInfusionRate"
-                }
-              },
-              "constant" : {
-                "constant" : {
-                  "value" : 0
-                }
-              }
-            }
-          },
-          "constant" : {
-            "constant" : {
-              "value" : 0
+        "product" : [
+          "ivFentanylInfusionRate",
+          "weight",
+          24,
+          {
+            "division" : {
+              "numerator" : 0.1,
+              "denominator" : 4
             }
           }
-        }
+        ]
       }
     },
-    "referenceName" : "ivFentanyl_poMorphineQ6HDose",
     "displayName" : "PO Morphine Q6H Dose",
-    "startingValue" : 0
+    "startingValue" : 0,
+    "decimals" : 2
   },
   {
-    "unit" : {
-      "name" : "mg",
-      "conversionScale" : 1
-    },
+    "displayName" : "PO Morphine Q4H Dose",
     "formula" : {
-      "equation" : {
-        "linear" : {
-          "gradient" : {
-            "linear" : {
-              "target" : {
-                "variable" : {
-                  "referenceName" : "weight"
-                }
-              },
-              "constant" : {
-                "constant" : {
-                  "value" : 0
-                }
-              },
-              "gradient" : {
-                "variable" : {
-                  "referenceName" : "ivFentanylInfusionRate"
-                }
-              }
-            }
-          },
-          "constant" : {
-            "constant" : {
-              "value" : 0
-            }
-          },
-          "target" : {
-            "constant" : {
-              "value" : 0.4000000000000001
-            }
-          }
-        }
-      },
-      "roundingMethod" : "nearest",
       "parameters" : [
         "ivFentanylInfusionRate",
         "weight"
-      ]
+      ],
+      "equation" : {
+        "product" : [
+          "ivFentanylInfusionRate",
+          "weight",
+          24,
+          {
+            "division" : {
+              "denominator" : 6,
+              "numerator" : 0.1
+            }
+          }
+        ]
+      },
+      "roundingMethod" : "nearest"
     },
+    "decimals" : 2,
     "alternateUnits" : [
       {
         "name" : "mg",
@@ -405,70 +275,54 @@
     ],
     "startingValue" : 0,
     "referenceName" : "ivFentanyl_poMorphineQ4HDose",
-    "decimals" : 2,
-    "displayName" : "PO Morphine Q4H Dose"
-  },
-  {
     "unit" : {
       "conversionScale" : 1,
-      "name" : "mcg\/kg\/min"
-    },
-    "decimals" : 2,
-    "startingValue" : 0,
-    "referenceName" : "ivMidazolamInfusionRate",
+      "name" : "mg"
+    }
+  },
+  {
     "displayName" : "IV Midazolam Infusion Rate",
+    "referenceName" : "ivMidazolamInfusionRate",
     "alternateUnits" : [
       {
         "conversionScale" : 1,
         "name" : "mcg\/kg\/min"
       }
-    ]
+    ],
+    "decimals" : 2,
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mcg\/kg\/min"
+    }
   },
   {
-    "unit" : {
-      "name" : "mg\/24hrs",
-      "conversionScale" : 1
-    },
     "referenceName" : "totalPOLorazepamDoseOver24Hours",
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mg\/24hrs"
+    },
+    "decimals" : 2,
     "formula" : {
-      "roundingMethod" : "nearest",
-      "equation" : {
-        "linear" : {
-          "gradient" : {
-            "linear" : {
-              "target" : {
-                "variable" : {
-                  "referenceName" : "weight"
-                }
-              },
-              "gradient" : {
-                "variable" : {
-                  "referenceName" : "ivMidazolamInfusionRate"
-                }
-              },
-              "constant" : {
-                "constant" : {
-                  "value" : 0
-                }
-              }
-            }
-          },
-          "target" : {
-            "constant" : {
-              "value" : 0.144
-            }
-          },
-          "constant" : {
-            "constant" : {
-              "value" : 0
-            }
-          }
-        }
-      },
       "parameters" : [
         "ivMidazolamInfusionRate",
         "weight"
-      ]
+      ],
+      "equation" : {
+        "product" : [
+          "ivMidazolamInfusionRate",
+          "weight",
+          60,
+          {
+            "division" : {
+              "denominator" : 1000,
+              "numerator" : 24
+            }
+          },
+          0.1
+        ]
+      },
+      "roundingMethod" : "nearest"
     },
     "alternateUnits" : [
       {
@@ -476,18 +330,10 @@
         "name" : "mg\/24hrs"
       }
     ],
-    "startingValue" : 0,
-    "decimals" : 2,
-    "displayName" : "Total PO Lorazepam dose over 24 hrs"
+    "displayName" : "Total PO Lorazepam dose over 24 hrs",
+    "startingValue" : 0
   },
   {
-    "decimals" : 2,
-    "referenceName" : "poLorazepamQ6HDose",
-    "displayName" : "PO Lorazepam Q6H Dose",
-    "unit" : {
-      "name" : "mg",
-      "conversionScale" : 1
-    },
     "startingValue" : 0,
     "alternateUnits" : [
       {
@@ -495,45 +341,38 @@
         "conversionScale" : 1
       }
     ],
+    "referenceName" : "poLorazepamQ6HDose",
     "formula" : {
       "roundingMethod" : "nearest",
+      "equation" : {
+        "product" : [
+          "ivMidazolamInfusionRate",
+          "weight",
+          60,
+          {
+            "division" : {
+              "numerator" : 24,
+              "denominator" : 1000
+            }
+          },
+          {
+            "division" : {
+              "numerator" : 0.1,
+              "denominator" : 4
+            }
+          }
+        ]
+      },
       "parameters" : [
         "ivMidazolamInfusionRate",
         "weight"
-      ],
-      "equation" : {
-        "linear" : {
-          "gradient" : {
-            "linear" : {
-              "constant" : {
-                "constant" : {
-                  "value" : 0
-                }
-              },
-              "gradient" : {
-                "variable" : {
-                  "referenceName" : "ivMidazolamInfusionRate"
-                }
-              },
-              "target" : {
-                "variable" : {
-                  "referenceName" : "weight"
-                }
-              }
-            }
-          },
-          "target" : {
-            "constant" : {
-              "value" : 0.036
-            }
-          },
-          "constant" : {
-            "constant" : {
-              "value" : 0
-            }
-          }
-        }
-      }
-    }
+      ]
+    },
+    "decimals" : 2,
+    "unit" : {
+      "name" : "mg",
+      "conversionScale" : 1
+    },
+    "displayName" : "PO Lorazepam Q6H Dose"
   }
 ]

@@ -1,46 +1,35 @@
 [
   {
-    "displayName" : "Defibrillation Joules:",
     "referenceName" : "defibrillation",
-    "decimals" : 1,
-    "startingValue" : 0,
     "unit" : {
-      "name" : "joules",
-      "conversionScale" : 1
+      "conversionScale" : 1,
+      "name" : "joules"
     },
-    "formula" : {
-      "equation" : {
-        "linear" : {
-          "gradient" : {
-            "rangeConstant" : {
-              "value" : {
-                "boundaryValue" : 4,
-                "value" : 0.5
-              }
-            }
-          },
-          "constant" : {
-            "constant" : {
-              "value" : 0
-            }
-          },
-          "target" : {
-            "variable" : {
-              "referenceName" : "weight"
-            }
-          }
-        }
-      },
-      "roundingMethod" : "nearest",
-      "parameters" : [
-        "weight"
-      ]
-    },
+    "decimals" : 1,
     "alternateUnits" : [
       {
         "name" : "joules",
         "conversionScale" : 1
       }
-    ]
+    ],
+    "displayName" : "Defibrillation Joules:",
+    "startingValue" : 0,
+    "formula" : {
+      "parameters" : [
+        "weight"
+      ],
+      "equation" : {
+        "product" : [
+          {
+            "rangeConstant" : {
+              "value" : 0.5,
+              "boundaryValue" : 4
+            }
+          },
+          "weight"
+        ]
+      },
+      "roundingMethod" : "nearest"
+    }
   }
 ]

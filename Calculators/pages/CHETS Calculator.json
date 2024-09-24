@@ -1,23 +1,21 @@
 {
-  "image" : {
-    "custom" : {
-      "_0" : "ambulance.fill"
-    }
+  "color" : {
+    "blue" : 0.18823529411764706,
+    "green" : 0.23137254901960785,
+    "red" : 1
   },
   "name" : "CHETS Calculator",
-  "color" : {
-    "green" : 0.23137254901960785,
-    "red" : 1,
-    "blue" : 0.18823529411764706
-  },
   "nested" : false,
+  "image" : {
+    "custom" : "ambulance.fill"
+  },
   "groups" : [
     {
-      "name" : "NOT IMPLEMENTED YET",
-      "showName" : true,
       "components" : [
 
-      ]
+      ],
+      "showName" : true,
+      "name" : "NOT IMPLEMENTED YET"
     }
   ]
 }

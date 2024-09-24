@@ -1,276 +1,241 @@
 [
   {
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "mcg\/kg\/hr"
-    },
+    "startingValue" : 0,
     "referenceName" : "initialIVMorphineInfusionRate",
     "decimals" : 2,
-    "startingValue" : 0,
+    "displayName" : "*Initial IV Morphine Infusion Rate",
+    "unit" : {
+      "name" : "mcg\/kg\/hr",
+      "conversionScale" : 1
+    },
     "alternateUnits" : [
       {
         "conversionScale" : 1,
         "name" : "mcg\/kg\/hr"
       }
-    ],
-    "displayName" : "*Initial IV Morphine Infusion Rate"
+    ]
   },
   {
+    "subtitle" : "Reduce IV dose by:",
+    "alternateUnits" : [
+      {
+        "name" : "",
+        "conversionScale" : 1
+      }
+    ],
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    },
     "decimals" : 2,
     "startingValue" : 0,
     "referenceName" : "weaningIVMorphineInfusion20Wean",
-    "unit" : {
-      "name" : "",
-      "conversionScale" : 1
-    },
+    "displayName" : "20% wean\/day",
     "formula" : {
       "roundingMethod" : "nearest",
       "parameters" : [
         "initialIVMorphineInfusionRate"
       ],
       "equation" : {
-        "linear" : {
-          "constant" : {
-            "constant" : {
-              "value" : 0
-            }
-          },
-          "gradient" : {
-            "variable" : {
-              "referenceName" : "initialIVMorphineInfusionRate"
-            }
-          },
-          "target" : {
-            "constant" : {
-              "value" : 0.2
-            }
-          }
-        }
+        "product" : [
+          "initialIVMorphineInfusionRate",
+          0.2
+        ]
       }
+    }
+  },
+  {
+    "unit" : {
+      "name" : "",
+      "conversionScale" : 1
     },
-    "displayName" : "20% wean\/day",
     "alternateUnits" : [
       {
-        "name" : "",
-        "conversionScale" : 1
+        "conversionScale" : 1,
+        "name" : ""
       }
     ],
+    "formula" : {
+      "equation" : {
+        "product" : [
+          "initialIVMorphineInfusionRate",
+          0.1
+        ]
+      },
+      "roundingMethod" : "nearest",
+      "parameters" : [
+        "initialIVMorphineInfusionRate"
+      ]
+    },
+    "startingValue" : 0,
+    "decimals" : 2,
+    "displayName" : "10% wean\/day",
+    "referenceName" : "weaningIVMorphineInfusion10Wean",
     "subtitle" : "Reduce IV dose by:"
   },
   {
-    "referenceName" : "weaningIVMorphineInfusion10Wean",
-    "startingValue" : 0,
-    "displayName" : "10% wean\/day",
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : ""
-    },
-    "subtitle" : "Reduce IV dose by:",
-    "decimals" : 2,
+    "displayName" : "20% wean\/day",
     "alternateUnits" : [
       {
         "conversionScale" : 1,
         "name" : ""
       }
     ],
+    "subtitle" : "Reduce PO dose by:",
+    "startingValue" : 0,
     "formula" : {
-      "parameters" : [
-        "initialIVMorphineInfusionRate"
-      ],
-      "equation" : {
-        "linear" : {
-          "target" : {
-            "constant" : {
-              "value" : 0.1
-            }
-          },
-          "constant" : {
-            "constant" : {
-              "value" : 0
-            }
-          },
-          "gradient" : {
-            "variable" : {
-              "referenceName" : "initialIVMorphineInfusionRate"
-            }
-          }
-        }
-      },
-      "roundingMethod" : "nearest"
-    }
-  },
-  {
-    "referenceName" : "weaningPOMorphineQ6H20Wean",
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : ""
-    },
-    "decimals" : 2,
-    "formula" : {
-      "equation" : {
-        "linear" : {
-          "target" : {
-            "constant" : {
-              "value" : 0.0048
-            }
-          },
-          "constant" : {
-            "constant" : {
-              "value" : 0
-            }
-          },
-          "gradient" : {
-            "linear" : {
-              "gradient" : {
-                "variable" : {
-                  "referenceName" : "weight"
-                }
-              },
-              "target" : {
-                "variable" : {
-                  "referenceName" : "initialIVMorphineInfusionRate"
-                }
-              },
-              "constant" : {
-                "constant" : {
-                  "value" : 0
-                }
-              }
-            }
-          }
-        }
-      },
       "roundingMethod" : "nearest",
       "parameters" : [
         "initialIVMorphineInfusionRate",
         "weight"
-      ]
+      ],
+      "equation" : {
+        "product" : [
+          "weight",
+          "initialIVMorphineInfusionRate",
+          24,
+          {
+            "division" : {
+              "numerator" : {
+                "division" : {
+                  "denominator" : 1000,
+                  "numerator" : 3
+                }
+              },
+              "denominator" : 3
+            }
+          },
+          0.2
+        ]
+      }
+    },
+    "decimals" : 2,
+    "unit" : {
+      "name" : "",
+      "conversionScale" : 1
+    },
+    "referenceName" : "weaningPOMorphineQ6H20Wean"
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "startingValue" : 0,
+    "formula" : {
+      "roundingMethod" : "nearest",
+      "parameters" : [
+        "initialIVMorphineInfusionRate",
+        "weight"
+      ],
+      "equation" : {
+        "product" : [
+          "weight",
+          "initialIVMorphineInfusionRate",
+          24,
+          {
+            "division" : {
+              "numerator" : {
+                "division" : {
+                  "denominator" : 1000,
+                  "numerator" : 3
+                }
+              },
+              "denominator" : 3
+            }
+          },
+          0.2
+        ]
+      }
+    },
+    "referenceName" : "weaningPOMorphineQ6H10Wean",
+    "displayName" : "10% wean\/day",
+    "decimals" : 2,
+    "subtitle" : "Reduce PO dose by:",
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "subtitle" : "Reduce PO dose by:",
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    },
+    "startingValue" : 0,
+    "formula" : {
+      "roundingMethod" : "nearest",
+      "parameters" : [
+        "initialIVMorphineInfusionRate",
+        "weight"
+      ],
+      "equation" : {
+        "product" : [
+          "weight",
+          "initialIVMorphineInfusionRate",
+          24,
+          {
+            "division" : {
+              "numerator" : {
+                "division" : {
+                  "numerator" : 3,
+                  "denominator" : 1000
+                }
+              },
+              "denominator" : 6
+            }
+          },
+          0.2
+        ]
+      }
     },
     "displayName" : "20% wean\/day",
     "alternateUnits" : [
       {
-        "name" : "",
-        "conversionScale" : 1
-      }
-    ],
-    "subtitle" : "Reduce PO dose by:",
-    "startingValue" : 0
-  },
-  {
-    "alternateUnits" : [
-      {
         "conversionScale" : 1,
         "name" : ""
       }
     ],
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : ""
-    },
-    "subtitle" : "Reduce PO dose by:",
-    "referenceName" : "weaningPOMorphineQ6H10Wean",
     "decimals" : 2,
-    "displayName" : "10% wean\/day",
-    "startingValue" : 0,
-    "formula" : {
-      "roundingMethod" : "nearest",
-      "equation" : {
-        "linear" : {
-          "gradient" : {
-            "linear" : {
-              "constant" : {
-                "constant" : {
-                  "value" : 0
-                }
-              },
-              "target" : {
-                "variable" : {
-                  "referenceName" : "initialIVMorphineInfusionRate"
-                }
-              },
-              "gradient" : {
-                "variable" : {
-                  "referenceName" : "weight"
-                }
-              }
-            }
-          },
-          "constant" : {
-            "constant" : {
-              "value" : 0
-            }
-          },
-          "target" : {
-            "constant" : {
-              "value" : 0.0018
-            }
-          }
-        }
-      },
-      "parameters" : [
-        "initialIVMorphineInfusionRate",
-        "weight"
-      ]
-    }
+    "referenceName" : "weaningPOMorphineQ4H20Wean"
   },
   {
-    "subtitle" : "Reduce PO dose by:",
     "startingValue" : 0,
-    "decimals" : 2,
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : ""
-      }
-    ],
-    "referenceName" : "weaningPOMorphineQ4H20Wean",
-    "formula" : {
-      "equation" : {
-        "linear" : {
-          "target" : {
-            "constant" : {
-              "value" : 0.0024
-            }
-          },
-          "constant" : {
-            "constant" : {
-              "value" : 0
-            }
-          },
-          "gradient" : {
-            "linear" : {
-              "gradient" : {
-                "variable" : {
-                  "referenceName" : "weight"
-                }
-              },
-              "constant" : {
-                "constant" : {
-                  "value" : 0
-                }
-              },
-              "target" : {
-                "variable" : {
-                  "referenceName" : "initialIVMorphineInfusionRate"
-                }
-              }
-            }
-          }
-        }
-      },
-      "parameters" : [
-        "initialIVMorphineInfusionRate",
-        "weight"
-      ],
-      "roundingMethod" : "nearest"
-    },
     "unit" : {
       "name" : "",
       "conversionScale" : 1
     },
-    "displayName" : "20% wean\/day"
-  },
-  {
+    "formula" : {
+      "roundingMethod" : "nearest",
+      "parameters" : [
+        "initialIVMorphineInfusionRate",
+        "weight"
+      ],
+      "equation" : {
+        "product" : [
+          "weight",
+          "initialIVMorphineInfusionRate",
+          24,
+          {
+            "division" : {
+              "denominator" : 6,
+              "numerator" : {
+                "division" : {
+                  "numerator" : 3,
+                  "denominator" : 1000
+                }
+              }
+            }
+          },
+          0.1
+        ]
+      }
+    },
+    "subtitle" : "Reduce PO dose by:",
+    "displayName" : "10% wean\/day",
     "decimals" : 2,
     "alternateUnits" : [
       {
@@ -278,146 +243,44 @@
         "conversionScale" : 1
       }
     ],
-    "displayName" : "10% wean\/day",
-    "referenceName" : "weaningPOMorphineQ4H10Wean",
-    "startingValue" : 0,
-    "unit" : {
-      "name" : "",
-      "conversionScale" : 1
-    },
-    "subtitle" : "Reduce PO dose by:",
-    "formula" : {
-      "parameters" : [
-        "initialIVMorphineInfusionRate",
-        "weight"
-      ],
-      "roundingMethod" : "nearest",
-      "equation" : {
-        "linear" : {
-          "constant" : {
-            "constant" : {
-              "value" : 0
-            }
-          },
-          "gradient" : {
-            "linear" : {
-              "constant" : {
-                "constant" : {
-                  "value" : 0
-                }
-              },
-              "gradient" : {
-                "variable" : {
-                  "referenceName" : "weight"
-                }
-              },
-              "target" : {
-                "variable" : {
-                  "referenceName" : "initialIVMorphineInfusionRate"
-                }
-              }
-            }
-          },
-          "target" : {
-            "constant" : {
-              "value" : 0.0012
-            }
-          }
-        }
-      }
-    }
+    "referenceName" : "weaningPOMorphineQ4H10Wean"
   },
   {
-    "decimals" : 2,
+    "referenceName" : "initialIVMidazolamInfusionRate",
     "unit" : {
       "conversionScale" : 1,
       "name" : "mcg\/kg\/min"
     },
-    "startingValue" : 0,
+    "decimals" : 2,
     "displayName" : "*Initial IV Midazolam Infusion Rate",
     "alternateUnits" : [
       {
-        "name" : "mcg\/kg\/min",
-        "conversionScale" : 1
+        "conversionScale" : 1,
+        "name" : "mcg\/kg\/min"
       }
     ],
-    "referenceName" : "initialIVMidazolamInfusionRate"
-  },
-  {
-    "decimals" : 2,
-    "displayName" : "20% wean\/day",
-    "referenceName" : "weaningIVMidazolamInfusion20Wean",
-    "startingValue" : 0,
-    "formula" : {
-      "parameters" : [
-        "initialIVMidazolamInfusionRate"
-      ],
-      "equation" : {
-        "linear" : {
-          "constant" : {
-            "constant" : {
-              "value" : 0
-            }
-          },
-          "target" : {
-            "constant" : {
-              "value" : 0.2
-            }
-          },
-          "gradient" : {
-            "variable" : {
-              "referenceName" : "initialIVMidazolamInfusionRate"
-            }
-          }
-        }
-      },
-      "roundingMethod" : "nearest"
-    },
-    "alternateUnits" : [
-      {
-        "name" : "",
-        "conversionScale" : 1
-      }
-    ],
-    "unit" : {
-      "name" : "",
-      "conversionScale" : 1
-    },
-    "subtitle" : "Reduce IV dose by:"
+    "startingValue" : 0
   },
   {
     "decimals" : 2,
     "subtitle" : "Reduce IV dose by:",
-    "referenceName" : "weaningIVMidazolamInfusion10Wean",
-    "displayName" : "10% wean\/day",
+    "formula" : {
+      "roundingMethod" : "nearest",
+      "equation" : {
+        "product" : [
+          "initialIVMidazolamInfusionRate",
+          0.2
+        ]
+      },
+      "parameters" : [
+        "initialIVMidazolamInfusionRate"
+      ]
+    },
+    "displayName" : "20% wean\/day",
+    "referenceName" : "weaningIVMidazolamInfusion20Wean",
     "unit" : {
       "name" : "",
       "conversionScale" : 1
-    },
-    "formula" : {
-      "parameters" : [
-        "initialIVMidazolamInfusionRate"
-      ],
-      "equation" : {
-        "linear" : {
-          "constant" : {
-            "constant" : {
-              "value" : 0
-            }
-          },
-          "gradient" : {
-            "variable" : {
-              "referenceName" : "initialIVMidazolamInfusionRate"
-            }
-          },
-          "target" : {
-            "constant" : {
-              "value" : 0.1
-            }
-          }
-        }
-      },
-      "roundingMethod" : "nearest"
     },
     "alternateUnits" : [
       {
@@ -428,10 +291,7 @@
     "startingValue" : 0
   },
   {
-    "displayName" : "20% wean\/day",
-    "subtitle" : "Reduce PO dose by:",
-    "referenceName" : "weaningPOLorazepamQ6H20Wean",
-    "decimals" : 2,
+    "subtitle" : "Reduce IV dose by:",
     "alternateUnits" : [
       {
         "name" : "",
@@ -440,45 +300,20 @@
     ],
     "startingValue" : 0,
     "formula" : {
-      "parameters" : [
-        "initialIVMidazolamInfusionRate",
-        "weight"
-      ],
       "equation" : {
-        "linear" : {
-          "target" : {
-            "constant" : {
-              "value" : 0.0072
-            }
-          },
-          "gradient" : {
-            "linear" : {
-              "gradient" : {
-                "variable" : {
-                  "referenceName" : "weight"
-                }
-              },
-              "target" : {
-                "variable" : {
-                  "referenceName" : "initialIVMidazolamInfusionRate"
-                }
-              },
-              "constant" : {
-                "constant" : {
-                  "value" : 0
-                }
-              }
-            }
-          },
-          "constant" : {
-            "constant" : {
-              "value" : 0
-            }
-          }
-        }
+        "product" : [
+          "initialIVMidazolamInfusionRate",
+          0.1
+        ]
       },
+      "parameters" : [
+        "initialIVMidazolamInfusionRate"
+      ],
       "roundingMethod" : "nearest"
     },
+    "displayName" : "10% wean\/day",
+    "decimals" : 2,
+    "referenceName" : "weaningIVMidazolamInfusion10Wean",
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
@@ -486,59 +321,90 @@
   },
   {
     "formula" : {
-      "roundingMethod" : "nearest",
-      "equation" : {
-        "linear" : {
-          "target" : {
-            "constant" : {
-              "value" : 0.0036
-            }
-          },
-          "gradient" : {
-            "linear" : {
-              "gradient" : {
-                "variable" : {
-                  "referenceName" : "weight"
-                }
-              },
-              "constant" : {
-                "constant" : {
-                  "value" : 0
-                }
-              },
-              "target" : {
-                "variable" : {
-                  "referenceName" : "initialIVMidazolamInfusionRate"
-                }
-              }
-            }
-          },
-          "constant" : {
-            "constant" : {
-              "value" : 0
-            }
-          }
-        }
-      },
       "parameters" : [
         "initialIVMidazolamInfusionRate",
         "weight"
-      ]
+      ],
+      "roundingMethod" : "nearest",
+      "equation" : {
+        "product" : [
+          "weight",
+          "initialIVMidazolamInfusionRate",
+          60,
+          {
+            "division" : {
+              "numerator" : 24,
+              "denominator" : 1000
+            }
+          },
+          {
+            "division" : {
+              "denominator" : 4,
+              "numerator" : 0.1
+            }
+          },
+          0.2
+        ]
+      }
     },
     "unit" : {
-      "conversionScale" : 1,
-      "name" : ""
+      "name" : "",
+      "conversionScale" : 1
     },
     "startingValue" : 0,
     "alternateUnits" : [
       {
-        "conversionScale" : 1,
-        "name" : ""
+        "name" : "",
+        "conversionScale" : 1
       }
     ],
+    "decimals" : 2,
+    "displayName" : "20% wean\/day",
     "subtitle" : "Reduce PO dose by:",
+    "referenceName" : "weaningPOLorazepamQ6H20Wean"
+  },
+  {
+    "alternateUnits" : [
+      {
+        "name" : "",
+        "conversionScale" : 1
+      }
+    ],
+    "startingValue" : 0,
     "referenceName" : "weaningPOLorazepamQ6H10Wean",
+    "formula" : {
+      "roundingMethod" : "nearest",
+      "parameters" : [
+        "initialIVMidazolamInfusionRate",
+        "weight"
+      ],
+      "equation" : {
+        "product" : [
+          "weight",
+          "initialIVMidazolamInfusionRate",
+          60,
+          {
+            "division" : {
+              "numerator" : 24,
+              "denominator" : 1000
+            }
+          },
+          {
+            "division" : {
+              "numerator" : 0.1,
+              "denominator" : 4
+            }
+          },
+          0.1
+        ]
+      }
+    },
+    "subtitle" : "Reduce PO dose by:",
+    "decimals" : 2,
     "displayName" : "10% wean\/day",
-    "decimals" : 2
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
   }
 ]
