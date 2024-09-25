@@ -668,7 +668,7 @@
     },
     "referenceName" : "defibrillation",
     "startingValue" : 0,
-    "subtitle" : "Please round up to the nearest available value on the defibrillator",
+    "subtitle" : "Round up to the nearest available value on the defibrillator",
     "unit" : {
       "conversionScale" : 1,
       "name" : "joules"
