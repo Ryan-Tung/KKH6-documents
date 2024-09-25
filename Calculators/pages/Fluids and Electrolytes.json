@@ -1,0 +1,21 @@
+{
+  "name" : "Fluids and Electrolytes",
+  "image" : {
+    "sfSymbol" : "drop.halffull"
+  },
+  "color" : {
+    "green" : 0.47843137254901963,
+    "red" : 0,
+    "blue" : 1
+  },
+  "groups" : [
+    {
+      "showName" : true,
+      "components" : [
+
+      ],
+      "name" : "NOT IMPLEMENTED YET"
+    }
+  ],
+  "nested" : false
+}

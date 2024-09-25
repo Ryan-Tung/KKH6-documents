@@ -1,0 +1,38 @@
+{
+    "categories": [
+        {
+            "name": "Emergency",
+            "calculators": [
+                "Code Blue",
+                "CHETS Calculator"
+            ]
+        },
+        {
+            "name": "Medical",
+            "calculators": [
+                "Fluids and Electrolytes",
+                "Sedation Weaning",
+                "Conversion Calculator",
+                "Weaning Calculator",
+            ]
+        },
+        {
+            "name": "Nursing",
+            "calculators": [
+                "CRRT Fluid Withdrawal",
+                "Feeding Protocol (Bolus and Continuous Feeds)",
+                "Peripheral Drug Administration Dilution",
+                "CAPD and WAT-1 Scoring"
+            ]
+        },
+        {
+            "name": "Severity Scores",
+            "calculators": [
+                "PIM3",
+                "PELOD2",
+                "pSofa",
+                "Phoenix Sepsis Score"
+            ]
+        }
+    ]
+}

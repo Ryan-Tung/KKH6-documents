@@ -1,0 +1,117 @@
+{
+  "image" : {
+    "sfSymbol" : "arrow.left.arrow.right.circle.fill"
+  },
+  "color" : {
+    "red" : 1,
+    "blue" : 0,
+    "green" : 0.5843137254901961
+  },
+  "name" : "Conversion Calculator",
+  "nested" : true,
+  "groups" : [
+    {
+      "showName" : false,
+      "components" : [
+        {
+          "inputPrimary" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0.8392156862745098,
+                "green" : 0.33725490196078434,
+                "red" : 0.34509803921568627
+              },
+              "variableReference" : "weight"
+            }
+          }
+        }
+      ],
+      "name" : "Weight Input"
+    },
+    {
+      "name" : "IV Morphine to PO Morphine",
+      "showName" : true,
+      "components" : [
+        {
+          "inputSingle" : {
+            "variableInfo" : {
+              "color" : {
+                "red" : 1,
+                "blue" : 0,
+                "green" : 0.5843137254901961
+              },
+              "variableReference" : "input_ivMorphineInfusionRate"
+            },
+            "allowsNegative" : false
+          }
+        },
+        {
+          "output" : "ivMorphine_totalPOMorphineDoseOver24Hours"
+        },
+        {
+          "output" : "ivMorphine_poMorphineQ4HDose"
+        },
+        {
+          "output" : "ivMorphine_poMorphineQ6HDose"
+        }
+      ]
+    },
+    {
+      "components" : [
+        {
+          "inputSingle" : {
+            "variableInfo" : {
+              "variableReference" : "ivFentanylInfusionRate",
+              "color" : {
+                "blue" : 0,
+                "green" : 0.5843137254901961,
+                "red" : 1
+              }
+            },
+            "allowsNegative" : false
+          }
+        },
+        {
+          "output" : "output_ivMorphineInfusionRate"
+        },
+        {
+          "output" : "ivFentanyl_totalPOMorphineDoseOver24Hours"
+        },
+        {
+          "output" : "ivFentanyl_poMorphineQ6HDose"
+        },
+        {
+          "output" : "ivFentanyl_poMorphineQ4HDose"
+        }
+      ],
+      "name" : "IV Fentanyl to IV\/PO Morphine",
+      "showName" : true
+    },
+    {
+      "name" : "IV Midazolam to PO Lorazepam",
+      "components" : [
+        {
+          "inputSingle" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "green" : 0.5843137254901961,
+                "blue" : 0,
+                "red" : 1
+              },
+              "variableReference" : "ivMidazolamInfusionRate"
+            }
+          }
+        },
+        {
+          "output" : "totalPOLorazepamDoseOver24Hours"
+        },
+        {
+          "output" : "poLorazepamQ6HDose"
+        }
+      ],
+      "showName" : true
+    }
+  ]
+}

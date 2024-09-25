@@ -1,0 +1,138 @@
+{
+  "name" : "Weaning Calculator",
+  "nested" : true,
+  "color" : {
+    "green" : 0.33725490196078434,
+    "red" : 0.34509803921568627,
+    "blue" : 0.8392156862745098
+  },
+  "image" : {
+    "sfSymbol" : "figure.child.circle.fill"
+  },
+  "groups" : [
+    {
+      "showName" : false,
+      "name" : "Weight Input",
+      "components" : [
+        {
+          "inputPrimary" : {
+            "variableInfo" : {
+              "variableReference" : "weight",
+              "color" : {
+                "green" : 0.33725490196078434,
+                "red" : 0.34509803921568627,
+                "blue" : 0.8392156862745098
+              }
+            },
+            "allowsNegative" : false
+          }
+        }
+      ]
+    },
+    {
+      "notes" : "*Morphine infusion rate at the start of wean",
+      "name" : "Opioid Weaning Calculator",
+      "components" : [
+        {
+          "inputSingle" : {
+            "variableInfo" : {
+              "color" : {
+                "green" : 0.5843137254901961,
+                "red" : 1,
+                "blue" : 0
+              },
+              "variableReference" : "initialIVMorphineInfusionRate"
+            },
+            "allowsNegative" : false
+          }
+        },
+        {
+          "subsectionTitle" : "Weaning IV Morphine Infusion:"
+        },
+        {
+          "nested" : {
+            "output" : "weaningIVMorphineInfusion20Wean"
+          }
+        },
+        {
+          "nested" : {
+            "output" : "weaningIVMorphineInfusion10Wean"
+          }
+        },
+        {
+          "subsectionTitle" : "Weaning PO Morphine (Q6H) (After enteral conversion):"
+        },
+        {
+          "nested" : {
+            "output" : "weaningPOMorphineQ6H20Wean"
+          }
+        },
+        {
+          "nested" : {
+            "output" : "weaningPOMorphineQ6H10Wean"
+          }
+        },
+        {
+          "subsectionTitle" : "Weaning PO Morphine (Q4H) (After enteral conversion):"
+        },
+        {
+          "nested" : {
+            "output" : "weaningPOMorphineQ4H20Wean"
+          }
+        },
+        {
+          "nested" : {
+            "output" : "weaningPOMorphineQ4H10Wean"
+          }
+        }
+      ],
+      "showName" : true
+    },
+    {
+      "notes" : "*Midazolam infusion rate at the start of wean",
+      "showName" : true,
+      "components" : [
+        {
+          "inputSingle" : {
+            "variableInfo" : {
+              "variableReference" : "initialIVMidazolamInfusionRate",
+              "color" : {
+                "red" : 1,
+                "green" : 0.5843137254901961,
+                "blue" : 0
+              }
+            },
+            "allowsNegative" : false
+          }
+        },
+        {
+          "subsectionTitle" : "Weaning IV Midazolam Infusion:"
+        },
+        {
+          "nested" : {
+            "output" : "weaningIVMidazolamInfusion20Wean"
+          }
+        },
+        {
+          "nested" : {
+            "output" : "weaningIVMidazolamInfusion10Wean"
+          }
+        },
+        {
+          "subsectionTitle" : "Weaning PO Lorazepam (Q6H) (After enteral conversion):"
+        },
+        {
+          "nested" : {
+            "output" : "weaningPOLorazepamQ6H20Wean"
+          }
+        },
+        {
+          "nested" : {
+            "output" : "weaningPOLorazepamQ6H10Wean"
+          }
+        }
+      ],
+      "name" : "Benzodiazepine Weaning Calculator"
+    }
+  ]
+}
