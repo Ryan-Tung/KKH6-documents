@@ -22,7 +22,8 @@
                 "CRRT Fluid Withdrawal",
                 "Feeding Protocol (Bolus and Continuous Feeds)",
                 "Peripheral Drug Administration Dilution",
-                "CAPD and WAT-1 Scoring"
+                "CAPD and WAT-1 Scoring",
+		"Peripheral Line Max Concentration"
             ]
         },
         {
@@ -30,7 +31,7 @@
             "calculators": [
                 "PIM3",
                 "PELOD2",
-                "pSofa",
+                "pSOFA",
                 "Phoenix Sepsis Score"
             ]
         }
