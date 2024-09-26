@@ -1,0 +1,464 @@
+[
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Feed Type",
+    "referenceName" : "feedType",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "Fluid Balance Aim",
+    "referenceName" : "fluidBalanceAim",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "Current Balance",
+    "referenceName" : "currentBalance",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "feeds"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "Number of feedings left",
+    "referenceName" : "numberOfFeedingsLeft",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "feeds"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "Amount of milk\/feeding",
+    "referenceName" : "amountOfMilkFeeding",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "ml\/hr"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "Feeding Rate",
+    "referenceName" : "feedingRate",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "ml\/hr"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "Feed Volume",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : {
+              "product" : [
+                "numberOfFeedingsLeft",
+                "amountOfMilkFeeding"
+              ]
+            },
+            "condition" : {
+              "comparison" : {
+                "equalTo" : 0
+              },
+              "defaultState" : true,
+              "variableReference" : "feedType"
+            }
+          },
+          {
+            "component" : {
+              "product" : [
+                "feedingRate",
+                "numberOfHoursUntil6am"
+              ]
+            }
+          }
+        ]
+      },
+      "parameters" : [
+        "amountOfMilkFeeding",
+        "feedType",
+        "feedingRate",
+        "numberOfFeedingsLeft",
+        "numberOfHoursUntil6am"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "feedVolume",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "ml\/hr"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "Side + Main drip (incl. Calcium)\/hr",
+    "referenceName" : "sideAndMainDripPerHour",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "ml\/hr"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "hr"
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Number of hours until 6am",
+    "referenceName" : "numberOfHoursUntil6am",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "hr"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "Total Drip Volume",
+    "formula" : {
+      "equation" : {
+        "product" : [
+          "sideAndMainDripPerHour",
+          "numberOfHoursUntil6am"
+        ]
+      },
+      "parameters" : [
+        "numberOfHoursUntil6am",
+        "sideAndMainDripPerHour"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "totalDripVolume",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "IV Medications",
+    "referenceName" : "ivMedications",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "Miscellaneous Volume",
+    "referenceName" : "miscVolume",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "Intake (over remaining hours)",
+    "formula" : {
+      "equation" : {
+        "sum" : [
+          "ivMedications",
+          "feedVolume",
+          "totalDripVolume",
+          "miscVolume"
+        ]
+      },
+      "parameters" : [
+        "feedVolume",
+        "ivMedications",
+        "miscVolume",
+        "totalDripVolume"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "intakeOverRemainingHours",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "Chest Tube (per hour)",
+    "referenceName" : "chestTube",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "Urine Output (per hour)",
+    "referenceName" : "urineOutput",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "NG Losses (per hour)",
+    "referenceName" : "ngLosses",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "Drains (per hour)",
+    "referenceName" : "drains",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "Miscellaneous Volume Output (per hour)",
+    "referenceName" : "miscVolumeOutput",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "Estimated Output (over remaining hours)",
+    "formula" : {
+      "equation" : {
+        "product" : [
+          {
+            "sum" : [
+              "chestTube",
+              "urineOutput",
+              "ngLosses",
+              "drains",
+              "miscVolumeOutput"
+            ]
+          },
+          "numberOfHoursUntil6am"
+        ]
+      },
+      "parameters" : [
+        "chestTube",
+        "drains",
+        "miscVolumeOutput",
+        "ngLosses",
+        "numberOfHoursUntil6am",
+        "urineOutput"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "estimatedOutputOverRemainingHours",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "Total Fluid to Withdraw",
+    "formula" : {
+      "equation" : {
+        "sum" : [
+          "currentBalance",
+          "intakeOverRemainingHours",
+          {
+            "negative" : "estimatedOutputOverRemainingHours"
+          },
+          {
+            "negative" : "fluidBalanceAim"
+          }
+        ]
+      },
+      "parameters" : [
+        "currentBalance",
+        "estimatedOutputOverRemainingHours",
+        "fluidBalanceAim",
+        "intakeOverRemainingHours"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "totalFluidToWithdraw",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "ml\/hr"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "Amount to Withdraw Per Hour",
+    "formula" : {
+      "equation" : {
+        "division" : {
+          "denominator" : "numberOfHoursUntil6am",
+          "numerator" : "totalFluidToWithdraw"
+        }
+      },
+      "parameters" : [
+        "numberOfHoursUntil6am",
+        "totalFluidToWithdraw"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "amountToWithdrawPerHour",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "ml\/hr"
+    }
+  }
+]

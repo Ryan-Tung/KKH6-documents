@@ -1,24 +1,29 @@
 {
+  "color" : {
+    "blue" : 1,
+    "green" : 0.47843137254901963,
+    "red" : 0
+  },
   "groups" : [
     {
       "components" : [
         {
           "discreteInput" : {
+            "presentationStyle" : "segmented",
             "values" : [
               {
-                "value" : 0,
-                "displayName" : "Bolus"
+                "displayName" : "Bolus",
+                "value" : 0
               },
               {
                 "displayName" : "Continuous",
                 "value" : 1
               }
             ],
-            "presentationStyle" : "segmented",
             "variableInfo" : {
               "color" : {
-                "green" : 0,
                 "blue" : 0,
+                "green" : 0,
                 "red" : 0
               },
               "variableReference" : "feedType"
@@ -26,79 +31,77 @@
           }
         }
       ],
-      "showName" : false,
-      "name" : "Feed Type"
+      "name" : "Feed Type",
+      "showName" : false
     },
     {
-      "showName" : false,
-      "name" : "Balance",
       "components" : [
         {
           "inputDual" : {
-            "rhs" : {
-              "variableInfo" : {
-                "variableReference" : "currentBalance",
-                "color" : {
-                  "green" : 0.5843137254901961,
-                  "red" : 1,
-                  "blue" : 0
-                }
-              },
-              "allowsNegative" : true
-            },
             "lhs" : {
               "allowsNegative" : true,
               "variableInfo" : {
-                "variableReference" : "fluidBalanceAim",
                 "color" : {
                   "blue" : 0.18823529411764706,
-                  "red" : 1,
-                  "green" : 0.23137254901960785
-                }
+                  "green" : 0.23137254901960785,
+                  "red" : 1
+                },
+                "variableReference" : "fluidBalanceAim"
+              }
+            },
+            "rhs" : {
+              "allowsNegative" : true,
+              "variableInfo" : {
+                "color" : {
+                  "blue" : 0,
+                  "green" : 0.5843137254901961,
+                  "red" : 1
+                },
+                "variableReference" : "currentBalance"
               }
             }
           }
         }
-      ]
+      ],
+      "name" : "Balance",
+      "showName" : false
     },
     {
-      "name" : "Feeding",
-      "showName" : false,
       "components" : [
         {
           "conditional" : {
-            "condition" : {
-              "comparison" : {
-                "equalTo" : 0
-              },
-              "variableReference" : "feedType",
-              "defaultState" : true
-            },
             "component" : {
               "inputDual" : {
-                "rhs" : {
+                "lhs" : {
+                  "allowsNegative" : false,
                   "variableInfo" : {
-                    "variableReference" : "amountOfMilkFeeding",
+                    "color" : {
+                      "blue" : 0,
+                      "green" : 0.8,
+                      "red" : 1
+                    },
+                    "variableReference" : "numberOfFeedingsLeft"
+                  }
+                },
+                "rhs" : {
+                  "allowsNegative" : false,
+                  "variableInfo" : {
                     "color" : {
                       "blue" : 0.34901960784313724,
                       "green" : 0.7803921568627451,
                       "red" : 0.20392156862745098
-                    }
-                  },
-                  "allowsNegative" : false
-                },
-                "lhs" : {
-                  "allowsNegative" : false,
-                  "variableInfo" : {
-                    "variableReference" : "numberOfFeedingsLeft",
-                    "color" : {
-                      "blue" : 0,
-                      "red" : 1,
-                      "green" : 0.8
-                    }
+                    },
+                    "variableReference" : "amountOfMilkFeeding"
                   }
                 }
               }
+            },
+            "condition" : {
+              "comparison" : {
+                "equalTo" : 0
+              },
+              "defaultState" : true,
+              "variableReference" : "feedType"
             }
           }
         },
@@ -108,12 +111,12 @@
               "inputSingle" : {
                 "allowsNegative" : false,
                 "variableInfo" : {
-                  "variableReference" : "feedingRate",
                   "color" : {
                     "blue" : 0,
-                    "red" : 1,
-                    "green" : 0.8
-                  }
+                    "green" : 0.8,
+                    "red" : 1
+                  },
+                  "variableReference" : "feedingRate"
                 }
               }
             },
@@ -129,33 +132,35 @@
         {
           "output" : "feedVolume"
         }
-      ]
+      ],
+      "name" : "Feeding",
+      "showName" : false
     },
     {
       "components" : [
         {
           "inputDual" : {
-            "rhs" : {
-              "variableInfo" : {
-                "variableReference" : "numberOfHoursUntil6am",
-                "color" : {
-                  "red" : 0.19607843137254902,
-                  "green" : 0.6784313725490196,
-                  "blue" : 0.9019607843137255
-                }
-              },
-              "allowsNegative" : false
-            },
             "lhs" : {
+              "allowsNegative" : false,
               "variableInfo" : {
                 "color" : {
-                  "green" : 0.7803921568627451,
                   "blue" : 0.7450980392156863,
+                  "green" : 0.7803921568627451,
                   "red" : 0
                 },
                 "variableReference" : "sideAndMainDripPerHour"
-              },
-              "allowsNegative" : false
+              }
+            },
+            "rhs" : {
+              "allowsNegative" : false,
+              "variableInfo" : {
+                "color" : {
+                  "blue" : 0.9019607843137255,
+                  "green" : 0.6784313725490196,
+                  "red" : 0.19607843137254902
+                },
+                "variableReference" : "numberOfHoursUntil6am"
+              }
             }
           }
         },
@@ -163,34 +168,33 @@
           "output" : "totalDripVolume"
         }
       ],
-      "showName" : false,
-      "name" : "Drip Rate"
+      "name" : "Drip Rate",
+      "showName" : false
     },
     {
-      "name" : "Other Volume",
       "components" : [
         {
           "inputDual" : {
             "lhs" : {
               "allowsNegative" : false,
               "variableInfo" : {
-                "variableReference" : "ivMedications",
                 "color" : {
-                  "red" : 0,
+                  "blue" : 1,
                   "green" : 0.47843137254901963,
-                  "blue" : 1
-                }
+                  "red" : 0
+                },
+                "variableReference" : "ivMedications"
               }
             },
             "rhs" : {
               "allowsNegative" : false,
               "variableInfo" : {
-                "variableReference" : "miscVolume",
                 "color" : {
-                  "red" : 0.34509803921568627,
+                  "blue" : 0.8392156862745098,
                   "green" : 0.33725490196078434,
-                  "blue" : 0.8392156862745098
-                }
+                  "red" : 0.34509803921568627
+                },
+                "variableReference" : "miscVolume"
               }
             }
           }
@@ -199,23 +203,85 @@
           "output" : "intakeOverRemainingHours"
         }
       ],
+      "name" : "Other Volume",
       "showName" : false
     },
     {
       "components" : [
         {
           "inputSingle" : {
+            "allowsNegative" : false,
             "variableInfo" : {
-              "variableReference" : "estimatedOutputOverRemainingHours",
               "color" : {
-                "green" : 0.3215686274509804,
-                "blue" : 0.8705882352941177,
-                "red" : 0.6862745098039216
-              }
-            },
-            "allowsNegative" : false
+                "blue" : 0.3686274509803922,
+                "green" : 0.5176470588235295,
+                "red" : 0.6352941176470588
+              },
+              "variableReference" : "chestTube"
+            }
           }
         },
+        {
+          "inputSingle" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0.3686274509803922,
+                "green" : 0.5176470588235295,
+                "red" : 0.6352941176470588
+              },
+              "variableReference" : "urineOutput"
+            }
+          }
+        },
+        {
+          "inputSingle" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0.3686274509803922,
+                "green" : 0.5176470588235295,
+                "red" : 0.6352941176470588
+              },
+              "variableReference" : "ngLosses"
+            }
+          }
+        },
+        {
+          "inputSingle" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0.3686274509803922,
+                "green" : 0.5176470588235295,
+                "red" : 0.6352941176470588
+              },
+              "variableReference" : "drains"
+            }
+          }
+        },
+        {
+          "inputSingle" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0.3686274509803922,
+                "green" : 0.5176470588235295,
+                "red" : 0.6352941176470588
+              },
+              "variableReference" : "miscVolumeOutput"
+            }
+          }
+        },
+        {
+          "output" : "estimatedOutputOverRemainingHours"
+        }
+      ],
+      "name" : "Estimated Output",
+      "showName" : false
+    },
+    {
+      "components" : [
         {
           "output" : "totalFluidToWithdraw"
         },
@@ -223,18 +289,13 @@
           "output" : "amountToWithdrawPerHour"
         }
       ],
-      "showName" : false,
-      "name" : "Fluid Draw"
+      "name" : "Fluid Draw",
+      "showName" : false
     }
   ],
-  "color" : {
-    "red" : 0,
-    "green" : 0.47843137254901963,
-    "blue" : 1
-  },
   "image" : {
     "sfSymbol" : "drop.degreesign.slash.fill"
   },
-  "nested" : false,
-  "name" : "CRRT Fluid Withdrawal"
+  "name" : "CRRT Fluid Withdrawal",
+  "nested" : false
 }

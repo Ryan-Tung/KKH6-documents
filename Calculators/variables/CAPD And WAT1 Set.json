@@ -2,53 +2,52 @@
   {
     "alternateUnits" : [
       {
-        "name" : "",
-        "conversionScale" : 1
+        "conversionScale" : 1,
+        "name" : ""
       }
     ],
-    "startingValue" : -1,
-    "unit" : {
-      "name" : "",
-      "conversionScale" : 1
-    },
-    "referenceName" : "capdQuestionOne",
+    "decimals" : 0,
     "displayName" : "1. Does the child make eye contact with the caregiver?",
-    "decimals" : 0
-  },
-  {
+    "referenceName" : "capdQuestionOne",
     "startingValue" : -1,
     "unit" : {
-      "name" : "",
-      "conversionScale" : 1
-    },
-    "referenceName" : "capdQuestionTwo",
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
     "displayName" : "2. Are the child's actions purposeful?",
+    "referenceName" : "capdQuestionTwo",
+    "startingValue" : -1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
     "alternateUnits" : [
       {
         "conversionScale" : 1,
         "name" : ""
       }
     ],
-    "decimals" : 0
-  },
-  {
-    "startingValue" : -1,
     "decimals" : 0,
-    "referenceName" : "capdQuestionThree",
     "displayName" : "3. Is the child aware of his\/her surroundings?",
+    "referenceName" : "capdQuestionThree",
+    "startingValue" : -1,
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
-    },
-    "alternateUnits" : [
-      {
-        "name" : "",
-        "conversionScale" : 1
-      }
-    ]
+    }
   },
   {
-    "displayName" : "4. Does the child communicate needs and wants?",
     "alternateUnits" : [
       {
         "conversionScale" : 1,
@@ -56,93 +55,101 @@
       }
     ],
     "decimals" : 0,
+    "displayName" : "4. Does the child communicate needs and wants?",
+    "referenceName" : "capdQuestionFour",
     "startingValue" : -1,
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
-    },
-    "referenceName" : "capdQuestionFour"
+    }
   },
   {
-    "startingValue" : -1,
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
     "displayName" : "5. Is the child restless?",
     "referenceName" : "capdQuestionFive",
+    "startingValue" : -1,
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
-    },
-    "alternateUnits" : [
-      {
-        "name" : "",
-        "conversionScale" : 1
-      }
-    ],
-    "decimals" : 0
+    }
   },
   {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
     "decimals" : 0,
     "displayName" : "6. Is the child inconsolable?",
-    "startingValue" : -1,
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : ""
-      }
-    ],
     "referenceName" : "capdQuestionSix",
-    "unit" : {
-      "name" : "",
-      "conversionScale" : 1
-    }
-  },
-  {
+    "startingValue" : -1,
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
-    },
+    }
+  },
+  {
     "alternateUnits" : [
       {
         "conversionScale" : 1,
         "name" : ""
       }
     ],
-    "startingValue" : -1,
+    "decimals" : 0,
+    "displayName" : "7. Is the child underactive - very little movement when awake?",
     "referenceName" : "capdQuestionSeven",
-    "decimals" : 0,
-    "displayName" : "7. Is the child underactive - very little movement when awake?"
-  },
-  {
     "startingValue" : -1,
-    "referenceName" : "capdQuestionEight",
-    "decimals" : 0,
-    "alternateUnits" : [
-      {
-        "name" : "",
-        "conversionScale" : 1
-      }
-    ],
-    "displayName" : "8. Does it take the child a long time to respond to interactions?",
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
     }
   },
   {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
     "decimals" : 0,
+    "displayName" : "8. Does it take the child a long time to respond to interactions?",
+    "referenceName" : "capdQuestionEight",
+    "startingValue" : -1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "CAPD Score:",
     "formula" : {
       "equation" : {
         "sum" : [
           {
             "conditional" : [
               {
+                "component" : "capdQuestionOne",
                 "condition" : {
-                  "variableReference" : "capdQuestionOne",
-                  "defaultState" : true,
                   "comparison" : {
                     "notEqualTo" : -1
-                  }
-                },
-                "component" : "capdQuestionOne"
+                  },
+                  "defaultState" : true,
+                  "variableReference" : "capdQuestionOne"
+                }
               },
               {
                 "component" : {
@@ -156,11 +163,11 @@
               {
                 "component" : "capdQuestionTwo",
                 "condition" : {
-                  "variableReference" : "capdQuestionTwo",
-                  "defaultState" : true,
                   "comparison" : {
                     "notEqualTo" : -1
-                  }
+                  },
+                  "defaultState" : true,
+                  "variableReference" : "capdQuestionTwo"
                 }
               },
               {
@@ -173,14 +180,14 @@
           {
             "conditional" : [
               {
+                "component" : "capdQuestionThree",
                 "condition" : {
                   "comparison" : {
                     "notEqualTo" : -1
                   },
                   "defaultState" : true,
                   "variableReference" : "capdQuestionThree"
-                },
-                "component" : "capdQuestionThree"
+                }
               },
               {
                 "component" : {
@@ -230,14 +237,14 @@
           {
             "conditional" : [
               {
+                "component" : "capdQuestionSix",
                 "condition" : {
-                  "variableReference" : "capdQuestionSix",
                   "comparison" : {
                     "notEqualTo" : -1
                   },
-                  "defaultState" : true
-                },
-                "component" : "capdQuestionSix"
+                  "defaultState" : true,
+                  "variableReference" : "capdQuestionSix"
+                }
               },
               {
                 "component" : {
@@ -249,14 +256,14 @@
           {
             "conditional" : [
               {
+                "component" : "capdQuestionSeven",
                 "condition" : {
                   "comparison" : {
                     "notEqualTo" : -1
                   },
-                  "variableReference" : "capdQuestionSeven",
-                  "defaultState" : true
-                },
-                "component" : "capdQuestionSeven"
+                  "defaultState" : true,
+                  "variableReference" : "capdQuestionSeven"
+                }
               },
               {
                 "component" : {
@@ -273,8 +280,8 @@
                   "comparison" : {
                     "notEqualTo" : -1
                   },
-                  "variableReference" : "capdQuestionEight",
-                  "defaultState" : true
+                  "defaultState" : true,
+                  "variableReference" : "capdQuestionEight"
                 }
               },
               {
@@ -286,7 +293,6 @@
           }
         ]
       },
-      "roundingMethod" : "nearest",
       "parameters" : [
         "capdQuestionEight",
         "capdQuestionFive",
@@ -296,214 +302,202 @@
         "capdQuestionSix",
         "capdQuestionThree",
         "capdQuestionTwo"
-      ]
+      ],
+      "roundingMethod" : "nearest"
     },
     "referenceName" : "capdScore",
-    "displayName" : "CAPD Score:",
     "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : ""
-    },
-    "alternateUnits" : [
-      {
-        "name" : "",
-        "conversionScale" : 1
-      }
-    ]
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : ""
-      }
-    ],
-    "referenceName" : "wat1QuestionOne",
-    "displayName" : "Any loose\/watery stools",
-    "startingValue" : -1,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : ""
-    },
-    "decimals" : 0
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : ""
-      }
-    ],
-    "unit" : {
-      "name" : "",
-      "conversionScale" : 1
-    },
-    "referenceName" : "wat1QuestionTwo",
-    "decimals" : 0,
-    "startingValue" : -1,
-    "displayName" : "Any vomiting\/retching\/gagging"
-  },
-  {
-    "displayName" : "Temperature > 37.8°C",
-    "decimals" : 0,
-    "alternateUnits" : [
-      {
-        "name" : "",
-        "conversionScale" : 1
-      }
-    ],
-    "unit" : {
-      "name" : "",
-      "conversionScale" : 1
-    },
-    "startingValue" : -1,
-    "referenceName" : "wat1QuestionThree"
-  },
-  {
-    "referenceName" : "wat1QuestionFour",
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : ""
-      }
-    ],
-    "decimals" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : ""
-    },
-    "displayName" : "State",
-    "startingValue" : -1
-  },
-  {
-    "referenceName" : "wat1QuestionFive",
-    "displayName" : "Tremor",
-    "unit" : {
-      "name" : "",
-      "conversionScale" : 1
-    },
-    "decimals" : 0,
-    "startingValue" : -1,
-    "alternateUnits" : [
-      {
-        "name" : "",
-        "conversionScale" : 1
-      }
-    ]
-  },
-  {
-    "displayName" : "Any sweating",
-    "decimals" : 0,
-    "referenceName" : "wat1QuestionSix",
-    "startingValue" : -1,
-    "unit" : {
-      "name" : "",
-      "conversionScale" : 1
-    },
-    "alternateUnits" : [
-      {
-        "name" : "",
-        "conversionScale" : 1
-      }
-    ]
-  },
-  {
-    "alternateUnits" : [
-      {
-        "name" : "",
-        "conversionScale" : 1
-      }
-    ],
-    "displayName" : "Uncoordinated\/repetitive movement",
-    "unit" : {
-      "name" : "",
-      "conversionScale" : 1
-    },
-    "startingValue" : -1,
-    "decimals" : 0,
-    "referenceName" : "wat1QuestionSeven"
-  },
-  {
-    "displayName" : "Yawning or sneezing",
-    "referenceName" : "wat1QuestionEight",
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : ""
-      }
-    ],
-    "unit" : {
-      "name" : "",
-      "conversionScale" : 1
-    },
-    "decimals" : 0,
-    "startingValue" : -1
-  },
-  {
-    "displayName" : "Startle to touch",
-    "referenceName" : "wat1QuestionNine",
-    "unit" : {
-      "name" : "",
-      "conversionScale" : 1
-    },
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : ""
-      }
-    ],
-    "startingValue" : -1,
-    "decimals" : 0
-  },
-  {
-    "startingValue" : -1,
-    "decimals" : 0,
-    "alternateUnits" : [
-      {
-        "name" : "",
-        "conversionScale" : 1
-      }
-    ],
-    "displayName" : "Muscle tone",
-    "referenceName" : "wat1QuestionTen",
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
     }
   },
   {
-    "startingValue" : -1,
-    "unit" : {
-      "name" : "",
-      "conversionScale" : 1
-    },
     "alternateUnits" : [
       {
-        "name" : "",
-        "conversionScale" : 1
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Any loose\/watery stools",
+    "referenceName" : "wat1QuestionOne",
+    "startingValue" : -1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Any vomiting\/retching\/gagging",
+    "referenceName" : "wat1QuestionTwo",
+    "startingValue" : -1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Temperature > 37.8°C",
+    "referenceName" : "wat1QuestionThree",
+    "startingValue" : -1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "State",
+    "referenceName" : "wat1QuestionFour",
+    "startingValue" : -1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Tremor",
+    "referenceName" : "wat1QuestionFive",
+    "startingValue" : -1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Any sweating",
+    "referenceName" : "wat1QuestionSix",
+    "startingValue" : -1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Uncoordinated\/repetitive movement",
+    "referenceName" : "wat1QuestionSeven",
+    "startingValue" : -1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Yawning or sneezing",
+    "referenceName" : "wat1QuestionEight",
+    "startingValue" : -1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Startle to touch",
+    "referenceName" : "wat1QuestionNine",
+    "startingValue" : -1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Muscle tone",
+    "referenceName" : "wat1QuestionTen",
+    "startingValue" : -1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
       }
     ],
     "decimals" : 0,
     "displayName" : "Time to gain calm state",
-    "referenceName" : "wat1QuestionEleven"
+    "referenceName" : "wat1QuestionEleven",
+    "startingValue" : -1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
   },
   {
-    "startingValue" : 0,
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "WAT-1 Score:",
     "formula" : {
-      "parameters" : [
-        "wat1QuestionEight",
-        "wat1QuestionEleven",
-        "wat1QuestionFive",
-        "wat1QuestionFour",
-        "wat1QuestionNine",
-        "wat1QuestionOne",
-        "wat1QuestionSeven",
-        "wat1QuestionSix",
-        "wat1QuestionTen",
-        "wat1QuestionThree",
-        "wat1QuestionTwo"
-      ],
       "equation" : {
         "sum" : [
           {
@@ -511,11 +505,11 @@
               {
                 "component" : "wat1QuestionOne",
                 "condition" : {
-                  "variableReference" : "wat1QuestionOne",
                   "comparison" : {
                     "notEqualTo" : -1
                   },
-                  "defaultState" : true
+                  "defaultState" : true,
+                  "variableReference" : "wat1QuestionOne"
                 }
               },
               {
@@ -528,14 +522,14 @@
           {
             "conditional" : [
               {
+                "component" : "wat1QuestionTwo",
                 "condition" : {
-                  "variableReference" : "wat1QuestionTwo",
                   "comparison" : {
                     "notEqualTo" : -1
                   },
-                  "defaultState" : true
-                },
-                "component" : "wat1QuestionTwo"
+                  "defaultState" : true,
+                  "variableReference" : "wat1QuestionTwo"
+                }
               },
               {
                 "component" : {
@@ -549,11 +543,11 @@
               {
                 "component" : "wat1QuestionThree",
                 "condition" : {
-                  "defaultState" : true,
-                  "variableReference" : "wat1QuestionThree",
                   "comparison" : {
                     "notEqualTo" : -1
-                  }
+                  },
+                  "defaultState" : true,
+                  "variableReference" : "wat1QuestionThree"
                 }
               },
               {
@@ -568,11 +562,11 @@
               {
                 "component" : "wat1QuestionFour",
                 "condition" : {
-                  "variableReference" : "wat1QuestionFour",
-                  "defaultState" : true,
                   "comparison" : {
                     "notEqualTo" : -1
-                  }
+                  },
+                  "defaultState" : true,
+                  "variableReference" : "wat1QuestionFour"
                 }
               },
               {
@@ -587,11 +581,11 @@
               {
                 "component" : "wat1QuestionFive",
                 "condition" : {
-                  "variableReference" : "wat1QuestionFive",
                   "comparison" : {
                     "notEqualTo" : -1
                   },
-                  "defaultState" : true
+                  "defaultState" : true,
+                  "variableReference" : "wat1QuestionFive"
                 }
               },
               {
@@ -606,10 +600,10 @@
               {
                 "component" : "wat1QuestionSix",
                 "condition" : {
-                  "defaultState" : true,
                   "comparison" : {
                     "notEqualTo" : -1
                   },
+                  "defaultState" : true,
                   "variableReference" : "wat1QuestionSix"
                 }
               },
@@ -625,11 +619,11 @@
               {
                 "component" : "wat1QuestionSeven",
                 "condition" : {
-                  "variableReference" : "wat1QuestionSeven",
-                  "defaultState" : true,
                   "comparison" : {
                     "notEqualTo" : -1
-                  }
+                  },
+                  "defaultState" : true,
+                  "variableReference" : "wat1QuestionSeven"
                 }
               },
               {
@@ -642,14 +636,14 @@
           {
             "conditional" : [
               {
+                "component" : "wat1QuestionEight",
                 "condition" : {
                   "comparison" : {
                     "notEqualTo" : -1
                   },
-                  "variableReference" : "wat1QuestionEight",
-                  "defaultState" : true
-                },
-                "component" : "wat1QuestionEight"
+                  "defaultState" : true,
+                  "variableReference" : "wat1QuestionEight"
+                }
               },
               {
                 "component" : {
@@ -661,14 +655,14 @@
           {
             "conditional" : [
               {
+                "component" : "wat1QuestionNine",
                 "condition" : {
                   "comparison" : {
                     "notEqualTo" : -1
                   },
                   "defaultState" : true,
                   "variableReference" : "wat1QuestionNine"
-                },
-                "component" : "wat1QuestionNine"
+                }
               },
               {
                 "component" : {
@@ -680,14 +674,14 @@
           {
             "conditional" : [
               {
+                "component" : "wat1QuestionTen",
                 "condition" : {
-                  "defaultState" : true,
-                  "variableReference" : "wat1QuestionTen",
                   "comparison" : {
                     "notEqualTo" : -1
-                  }
-                },
-                "component" : "wat1QuestionTen"
+                  },
+                  "defaultState" : true,
+                  "variableReference" : "wat1QuestionTen"
+                }
               },
               {
                 "component" : {
@@ -699,14 +693,14 @@
           {
             "conditional" : [
               {
+                "component" : "wat1QuestionEleven",
                 "condition" : {
-                  "defaultState" : true,
-                  "variableReference" : "wat1QuestionEleven",
                   "comparison" : {
                     "notEqualTo" : -1
-                  }
-                },
-                "component" : "wat1QuestionEleven"
+                  },
+                  "defaultState" : true,
+                  "variableReference" : "wat1QuestionEleven"
+                }
               },
               {
                 "component" : {
@@ -717,20 +711,26 @@
           }
         ]
       },
+      "parameters" : [
+        "wat1QuestionEight",
+        "wat1QuestionEleven",
+        "wat1QuestionFive",
+        "wat1QuestionFour",
+        "wat1QuestionNine",
+        "wat1QuestionOne",
+        "wat1QuestionSeven",
+        "wat1QuestionSix",
+        "wat1QuestionTen",
+        "wat1QuestionThree",
+        "wat1QuestionTwo"
+      ],
       "roundingMethod" : "nearest"
     },
     "referenceName" : "wat1Score",
-    "alternateUnits" : [
-      {
-        "name" : "",
-        "conversionScale" : 1
-      }
-    ],
-    "decimals" : 0,
+    "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
-    },
-    "displayName" : "WAT-1 Score:"
+    }
   }
 ]
