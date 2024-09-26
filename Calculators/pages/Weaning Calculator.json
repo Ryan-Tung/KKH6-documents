@@ -1,49 +1,42 @@
 {
-  "name" : "Weaning Calculator",
-  "nested" : true,
   "color" : {
+    "blue" : 0.8392156862745098,
     "green" : 0.33725490196078434,
-    "red" : 0.34509803921568627,
-    "blue" : 0.8392156862745098
-  },
-  "image" : {
-    "sfSymbol" : "figure.child.circle.fill"
+    "red" : 0.34509803921568627
   },
   "groups" : [
     {
-      "showName" : false,
-      "name" : "Weight Input",
       "components" : [
         {
           "inputPrimary" : {
+            "allowsNegative" : false,
             "variableInfo" : {
-              "variableReference" : "weight",
               "color" : {
+                "blue" : 0.8392156862745098,
                 "green" : 0.33725490196078434,
-                "red" : 0.34509803921568627,
-                "blue" : 0.8392156862745098
-              }
-            },
-            "allowsNegative" : false
+                "red" : 0.34509803921568627
+              },
+              "variableReference" : "weight"
+            }
           }
         }
-      ]
+      ],
+      "name" : "Weight Input",
+      "showName" : false
     },
     {
-      "notes" : "*Morphine infusion rate at the start of wean",
-      "name" : "Opioid Weaning Calculator",
       "components" : [
         {
           "inputSingle" : {
+            "allowsNegative" : false,
             "variableInfo" : {
               "color" : {
+                "blue" : 0,
                 "green" : 0.5843137254901961,
-                "red" : 1,
-                "blue" : 0
+                "red" : 1
               },
               "variableReference" : "initialIVMorphineInfusionRate"
-            },
-            "allowsNegative" : false
+            }
           }
         },
         {
@@ -86,23 +79,23 @@
           }
         }
       ],
+      "name" : "Opioid Weaning Calculator",
+      "notes" : "*Morphine infusion rate at the start of wean",
       "showName" : true
     },
     {
-      "notes" : "*Midazolam infusion rate at the start of wean",
-      "showName" : true,
       "components" : [
         {
           "inputSingle" : {
+            "allowsNegative" : false,
             "variableInfo" : {
-              "variableReference" : "initialIVMidazolamInfusionRate",
               "color" : {
-                "red" : 1,
+                "blue" : 0,
                 "green" : 0.5843137254901961,
-                "blue" : 0
-              }
-            },
-            "allowsNegative" : false
+                "red" : 1
+              },
+              "variableReference" : "initialIVMidazolamInfusionRate"
+            }
           }
         },
         {
@@ -132,7 +125,14 @@
           }
         }
       ],
-      "name" : "Benzodiazepine Weaning Calculator"
+      "name" : "Benzodiazepine Weaning Calculator",
+      "notes" : "*Midazolam infusion rate at the start of wean",
+      "showName" : true
     }
-  ]
+  ],
+  "image" : {
+    "sfSymbol" : "figure.child.circle.fill"
+  },
+  "name" : "Weaning Calculator",
+  "nested" : true
 }

@@ -118,32 +118,15 @@
     "displayName" : "ETT Cuffed",
     "formula" : {
       "equation" : {
-        "conditional" : [
+        "sum" : [
+          "ettUncuffed",
           {
-            "component" : {
-              "linear" : {
-                "constant" : 3.5,
-                "gradient" : 0.5,
-                "target" : "age"
-              }
-            },
-            "condition" : {
-              "comparison" : {
-                "greaterThanOrEqualTo" : 1
-              },
-              "defaultState" : true,
-              "variableReference" : "age"
-            }
-          },
-          {
-            "component" : {
-              "nilConstant" : null
-            }
+            "negative" : 0.5
           }
         ]
       },
       "parameters" : [
-        "age"
+        "ettUncuffed"
       ],
       "roundingMethod" : "nearest"
     },
@@ -668,7 +651,7 @@
     },
     "referenceName" : "defibrillation",
     "startingValue" : 0,
-    "subtitle" : "Round up to the nearest available value on the defibrillator",
+    "subtitle" : "Please round up to the nearest available value on the defibrillator",
     "unit" : {
       "conversionScale" : 1,
       "name" : "joules"
@@ -705,6 +688,145 @@
     "unit" : {
       "conversionScale" : 1,
       "name" : "joules"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mmHg"
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Systolic Blood Pressure (Minimum)",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : 61,
+            "condition" : {
+              "comparison" : {
+                "lessThan" : 0.08333333333333333
+              },
+              "defaultState" : true,
+              "variableReference" : "age"
+            }
+          },
+          {
+            "component" : 71,
+            "condition" : {
+              "comparison" : {
+                "lessThan" : 1
+              },
+              "defaultState" : true,
+              "variableReference" : "age"
+            }
+          },
+          {
+            "component" : 72,
+            "condition" : {
+              "comparison" : {
+                "lessThan" : 2
+              },
+              "defaultState" : true,
+              "variableReference" : "age"
+            }
+          },
+          {
+            "component" : 74,
+            "condition" : {
+              "comparison" : {
+                "lessThan" : 3
+              },
+              "defaultState" : true,
+              "variableReference" : "age"
+            }
+          },
+          {
+            "component" : 76,
+            "condition" : {
+              "comparison" : {
+                "lessThan" : 4
+              },
+              "defaultState" : true,
+              "variableReference" : "age"
+            }
+          },
+          {
+            "component" : 78,
+            "condition" : {
+              "comparison" : {
+                "lessThan" : 5
+              },
+              "defaultState" : true,
+              "variableReference" : "age"
+            }
+          },
+          {
+            "component" : 81,
+            "condition" : {
+              "comparison" : {
+                "lessThan" : 6
+              },
+              "defaultState" : true,
+              "variableReference" : "age"
+            }
+          },
+          {
+            "component" : 82,
+            "condition" : {
+              "comparison" : {
+                "lessThan" : 7
+              },
+              "defaultState" : true,
+              "variableReference" : "age"
+            }
+          },
+          {
+            "component" : 84,
+            "condition" : {
+              "comparison" : {
+                "lessThan" : 8
+              },
+              "defaultState" : true,
+              "variableReference" : "age"
+            }
+          },
+          {
+            "component" : 86,
+            "condition" : {
+              "comparison" : {
+                "lessThan" : 9
+              },
+              "defaultState" : true,
+              "variableReference" : "age"
+            }
+          },
+          {
+            "component" : 91,
+            "condition" : {
+              "comparison" : {
+                "lessThan" : 15
+              },
+              "defaultState" : true,
+              "variableReference" : "age"
+            }
+          },
+          {
+            "component" : 96
+          }
+        ]
+      },
+      "parameters" : [
+        "age"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "systolicBloodPressure",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mmHg"
     }
   },
   {
@@ -923,1002 +1045,6 @@
     "unit" : {
       "conversionScale" : 1,
       "name" : "\/min"
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : "mL\/kg"
-      }
-    ],
-    "decimals" : 2,
-    "displayName" : "Dose",
-    "formula" : {
-      "equation" : {
-        "rangeConstant" : 0.1
-      },
-      "parameters" : [
-
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "Adrenaline_Dose",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "mL\/kg"
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : "mL"
-      }
-    ],
-    "decimals" : 2,
-    "displayName" : "Calculated Dose",
-    "formula" : {
-      "equation" : {
-        "product" : [
-          "weight",
-          "Adrenaline_Dose"
-        ]
-      },
-      "parameters" : [
-        "Adrenaline_Dose",
-        "weight"
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "Adrenaline_Calc_Dose",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "mL"
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : "mL"
-      }
-    ],
-    "decimals" : 2,
-    "displayName" : "Calculated Amount",
-    "formula" : {
-      "equation" : {
-        "product" : [
-          "Adrenaline_Calc_Dose",
-          1
-        ]
-      },
-      "parameters" : [
-        "Adrenaline_Calc_Dose"
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "Adrenaline_Calc_Amt",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "mL"
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : "mg\/kg"
-      }
-    ],
-    "decimals" : 2,
-    "displayName" : "Dose",
-    "formula" : {
-      "equation" : {
-        "rangeConstant" : 0.02
-      },
-      "parameters" : [
-
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "Atropine Sulfate_Dose",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "mg\/kg"
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : "mg"
-      }
-    ],
-    "decimals" : 2,
-    "displayName" : "Calculated Dose",
-    "formula" : {
-      "equation" : {
-        "product" : [
-          "weight",
-          "Atropine Sulfate_Dose"
-        ]
-      },
-      "parameters" : [
-        "Atropine Sulfate_Dose",
-        "weight"
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "Atropine Sulfate_Calc_Dose",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "mg"
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : "mL"
-      }
-    ],
-    "decimals" : 2,
-    "displayName" : "Calculated Amount",
-    "formula" : {
-      "equation" : {
-        "product" : [
-          "Atropine Sulfate_Calc_Dose",
-          1.6666666666666667
-        ]
-      },
-      "parameters" : [
-        "Atropine Sulfate_Calc_Dose"
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "Atropine Sulfate_Calc_Amt",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "mL"
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : "mL\/kg"
-      }
-    ],
-    "decimals" : 2,
-    "displayName" : "Dose",
-    "formula" : {
-      "equation" : {
-        "rangeConstant" : {
-          "boundaryValue" : 20,
-          "value" : 10
-        }
-      },
-      "parameters" : [
-
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "Albumin_Dose",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "mL\/kg"
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : "mL"
-      }
-    ],
-    "decimals" : 2,
-    "displayName" : "Calculated Dose",
-    "formula" : {
-      "equation" : {
-        "product" : [
-          "weight",
-          "Albumin_Dose"
-        ]
-      },
-      "parameters" : [
-        "Albumin_Dose",
-        "weight"
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "Albumin_Calc_Dose",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "mL"
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : "mL"
-      }
-    ],
-    "decimals" : 2,
-    "displayName" : "Calculated Amount",
-    "formula" : {
-      "equation" : {
-        "product" : [
-          "Albumin_Calc_Dose",
-          1
-        ]
-      },
-      "parameters" : [
-        "Albumin_Calc_Dose"
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "Albumin_Calc_Amt",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "mL"
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : "mL\/kg"
-      }
-    ],
-    "decimals" : 2,
-    "displayName" : "Dose",
-    "formula" : {
-      "equation" : {
-        "rangeConstant" : 0.2
-      },
-      "parameters" : [
-
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "Calcium Chloride_Dose",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "mL\/kg"
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : "mL"
-      }
-    ],
-    "decimals" : 2,
-    "displayName" : "Calculated Dose",
-    "formula" : {
-      "equation" : {
-        "product" : [
-          "weight",
-          "Calcium Chloride_Dose"
-        ]
-      },
-      "parameters" : [
-        "Calcium Chloride_Dose",
-        "weight"
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "Calcium Chloride_Calc_Dose",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "mL"
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : "mL"
-      }
-    ],
-    "decimals" : 2,
-    "displayName" : "Calculated Amount",
-    "formula" : {
-      "equation" : {
-        "product" : [
-          "Calcium Chloride_Calc_Dose",
-          1
-        ]
-      },
-      "parameters" : [
-        "Calcium Chloride_Calc_Dose"
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "Calcium Chloride_Calc_Amt",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "mL"
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : "mL\/kg"
-      }
-    ],
-    "decimals" : 2,
-    "displayName" : "Dose",
-    "formula" : {
-      "equation" : {
-        "rangeConstant" : 2
-      },
-      "parameters" : [
-
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "Dextrose_Dose",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "mL\/kg"
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : "mL"
-      }
-    ],
-    "decimals" : 2,
-    "displayName" : "Calculated Dose",
-    "formula" : {
-      "equation" : {
-        "product" : [
-          "weight",
-          "Dextrose_Dose"
-        ]
-      },
-      "parameters" : [
-        "Dextrose_Dose",
-        "weight"
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "Dextrose_Calc_Dose",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "mL"
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : "mL"
-      }
-    ],
-    "decimals" : 2,
-    "displayName" : "Calculated Amount",
-    "formula" : {
-      "equation" : {
-        "product" : [
-          "Dextrose_Calc_Dose",
-          1
-        ]
-      },
-      "parameters" : [
-        "Dextrose_Calc_Dose"
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "Dextrose_Calc_Amt",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "mL"
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : "mL\/kg"
-      }
-    ],
-    "decimals" : 2,
-    "displayName" : "Dose",
-    "formula" : {
-      "equation" : {
-        "rangeConstant" : {
-          "boundaryValue" : 20,
-          "value" : 10
-        }
-      },
-      "parameters" : [
-
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "Sodium Chloride_Dose",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "mL\/kg"
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : "mL"
-      }
-    ],
-    "decimals" : 2,
-    "displayName" : "Calculated Dose",
-    "formula" : {
-      "equation" : {
-        "product" : [
-          "weight",
-          "Sodium Chloride_Dose"
-        ]
-      },
-      "parameters" : [
-        "Sodium Chloride_Dose",
-        "weight"
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "Sodium Chloride_Calc_Dose",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "mL"
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : "mL"
-      }
-    ],
-    "decimals" : 2,
-    "displayName" : "Calculated Amount",
-    "formula" : {
-      "equation" : {
-        "product" : [
-          "Sodium Chloride_Calc_Dose",
-          1
-        ]
-      },
-      "parameters" : [
-        "Sodium Chloride_Calc_Dose"
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "Sodium Chloride_Calc_Amt",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "mL"
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : "mmol\/kg"
-      }
-    ],
-    "decimals" : 2,
-    "displayName" : "Dose",
-    "formula" : {
-      "equation" : {
-        "rangeConstant" : 1
-      },
-      "parameters" : [
-
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "Sodium Bicarbonate 8.4%_Dose",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "mmol\/kg"
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : "mmol"
-      }
-    ],
-    "decimals" : 2,
-    "displayName" : "Calculated Dose",
-    "formula" : {
-      "equation" : {
-        "product" : [
-          "weight",
-          "Sodium Bicarbonate 8.4%_Dose"
-        ]
-      },
-      "parameters" : [
-        "Sodium Bicarbonate 8.4%_Dose",
-        "weight"
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "Sodium Bicarbonate 8.4%_Calc_Dose",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "mmol"
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : "mL"
-      }
-    ],
-    "decimals" : 2,
-    "displayName" : "Calculated Amount",
-    "formula" : {
-      "equation" : {
-        "product" : [
-          "Sodium Bicarbonate 8.4%_Calc_Dose",
-          1
-        ]
-      },
-      "parameters" : [
-        "Sodium Bicarbonate 8.4%_Calc_Dose"
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "Sodium Bicarbonate 8.4%_Calc_Amt",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "mL"
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : "mmol\/kg"
-      }
-    ],
-    "decimals" : 2,
-    "displayName" : "Dose",
-    "formula" : {
-      "equation" : {
-        "rangeConstant" : 1
-      },
-      "parameters" : [
-
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "Sodium Bicarbonate 4.2%_Dose",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "mmol\/kg"
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : "mmol"
-      }
-    ],
-    "decimals" : 2,
-    "displayName" : "Calculated Dose",
-    "formula" : {
-      "equation" : {
-        "product" : [
-          "weight",
-          "Sodium Bicarbonate 4.2%_Dose"
-        ]
-      },
-      "parameters" : [
-        "Sodium Bicarbonate 4.2%_Dose",
-        "weight"
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "Sodium Bicarbonate 4.2%_Calc_Dose",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "mmol"
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : "mL"
-      }
-    ],
-    "decimals" : 2,
-    "displayName" : "Calculated Amount",
-    "formula" : {
-      "equation" : {
-        "product" : [
-          "Sodium Bicarbonate 4.2%_Calc_Dose",
-          2
-        ]
-      },
-      "parameters" : [
-        "Sodium Bicarbonate 4.2%_Calc_Dose"
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "Sodium Bicarbonate 4.2%_Calc_Amt",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "mL"
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : "mg\/kg"
-      }
-    ],
-    "decimals" : 2,
-    "displayName" : "Dose",
-    "formula" : {
-      "equation" : {
-        "rangeConstant" : {
-          "boundaryValue" : 2,
-          "value" : 1
-        }
-      },
-      "parameters" : [
-
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "Suxamethonium Chloride_Dose",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "mg\/kg"
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : "mg"
-      }
-    ],
-    "decimals" : 2,
-    "displayName" : "Calculated Dose",
-    "formula" : {
-      "equation" : {
-        "product" : [
-          "weight",
-          "Suxamethonium Chloride_Dose"
-        ]
-      },
-      "parameters" : [
-        "Suxamethonium Chloride_Dose",
-        "weight"
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "Suxamethonium Chloride_Calc_Dose",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "mg"
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : "mL"
-      }
-    ],
-    "decimals" : 2,
-    "displayName" : "Calculated Amount",
-    "formula" : {
-      "equation" : {
-        "product" : [
-          "Suxamethonium Chloride_Calc_Dose",
-          0.02
-        ]
-      },
-      "parameters" : [
-        "Suxamethonium Chloride_Calc_Dose"
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "Suxamethonium Chloride_Calc_Amt",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "mL"
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : "mg\/kg"
-      }
-    ],
-    "decimals" : 2,
-    "displayName" : "Dose",
-    "formula" : {
-      "equation" : {
-        "rangeConstant" : {
-          "boundaryValue" : 0.3,
-          "value" : 0.1
-        }
-      },
-      "parameters" : [
-
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "Midazolam_Dose",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "mg\/kg"
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : "mg"
-      }
-    ],
-    "decimals" : 2,
-    "displayName" : "Calculated Dose",
-    "formula" : {
-      "equation" : {
-        "product" : [
-          "weight",
-          "Midazolam_Dose"
-        ]
-      },
-      "parameters" : [
-        "Midazolam_Dose",
-        "weight"
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "Midazolam_Calc_Dose",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "mg"
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : "mL"
-      }
-    ],
-    "decimals" : 2,
-    "displayName" : "Calculated Amount",
-    "formula" : {
-      "equation" : {
-        "product" : [
-          "Midazolam_Calc_Dose",
-          0.2
-        ]
-      },
-      "parameters" : [
-        "Midazolam_Calc_Dose"
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "Midazolam_Calc_Amt",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "mL"
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : "mg\/kg"
-      }
-    ],
-    "decimals" : 2,
-    "displayName" : "Dose",
-    "formula" : {
-      "equation" : {
-        "rangeConstant" : 0.1
-      },
-      "parameters" : [
-
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "Morphine Sulfate_Dose",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "mg\/kg"
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : "mg"
-      }
-    ],
-    "decimals" : 2,
-    "displayName" : "Calculated Dose",
-    "formula" : {
-      "equation" : {
-        "product" : [
-          "weight",
-          "Morphine Sulfate_Dose"
-        ]
-      },
-      "parameters" : [
-        "Morphine Sulfate_Dose",
-        "weight"
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "Morphine Sulfate_Calc_Dose",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "mg"
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : "mL"
-      }
-    ],
-    "decimals" : 2,
-    "displayName" : "Calculated Amount",
-    "formula" : {
-      "equation" : {
-        "product" : [
-          "Morphine Sulfate_Calc_Dose",
-          0.1
-        ]
-      },
-      "parameters" : [
-        "Morphine Sulfate_Calc_Dose"
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "Morphine Sulfate_Calc_Amt",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "mL"
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : "mg\/kg"
-      }
-    ],
-    "decimals" : 2,
-    "displayName" : "Dose",
-    "formula" : {
-      "equation" : {
-        "rangeConstant" : 1
-      },
-      "parameters" : [
-
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "Rocuronium_Dose",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "mg\/kg"
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : "mg"
-      }
-    ],
-    "decimals" : 2,
-    "displayName" : "Calculated Dose",
-    "formula" : {
-      "equation" : {
-        "product" : [
-          "weight",
-          "Rocuronium_Dose"
-        ]
-      },
-      "parameters" : [
-        "Rocuronium_Dose",
-        "weight"
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "Rocuronium_Calc_Dose",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "mg"
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : "mL"
-      }
-    ],
-    "decimals" : 2,
-    "displayName" : "Calculated Amount",
-    "formula" : {
-      "equation" : {
-        "product" : [
-          "Rocuronium_Calc_Dose",
-          0.1
-        ]
-      },
-      "parameters" : [
-        "Rocuronium_Calc_Dose"
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "Rocuronium_Calc_Amt",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "mL"
     }
   }
 ]

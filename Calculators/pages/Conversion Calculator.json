@@ -1,17 +1,11 @@
 {
-  "image" : {
-    "sfSymbol" : "arrow.left.arrow.right.circle.fill"
-  },
   "color" : {
-    "red" : 1,
     "blue" : 0,
-    "green" : 0.5843137254901961
+    "green" : 0.5843137254901961,
+    "red" : 1
   },
-  "name" : "Conversion Calculator",
-  "nested" : true,
   "groups" : [
     {
-      "showName" : false,
       "components" : [
         {
           "inputPrimary" : {
@@ -27,23 +21,22 @@
           }
         }
       ],
-      "name" : "Weight Input"
+      "name" : "Weight Input",
+      "showName" : false
     },
     {
-      "name" : "IV Morphine to PO Morphine",
-      "showName" : true,
       "components" : [
         {
           "inputSingle" : {
+            "allowsNegative" : false,
             "variableInfo" : {
               "color" : {
-                "red" : 1,
                 "blue" : 0,
-                "green" : 0.5843137254901961
+                "green" : 0.5843137254901961,
+                "red" : 1
               },
               "variableReference" : "input_ivMorphineInfusionRate"
-            },
-            "allowsNegative" : false
+            }
           }
         },
         {
@@ -55,21 +48,23 @@
         {
           "output" : "ivMorphine_poMorphineQ6HDose"
         }
-      ]
+      ],
+      "name" : "IV Morphine to PO Morphine",
+      "showName" : true
     },
     {
       "components" : [
         {
           "inputSingle" : {
+            "allowsNegative" : false,
             "variableInfo" : {
-              "variableReference" : "ivFentanylInfusionRate",
               "color" : {
                 "blue" : 0,
                 "green" : 0.5843137254901961,
                 "red" : 1
-              }
-            },
-            "allowsNegative" : false
+              },
+              "variableReference" : "ivFentanylInfusionRate"
+            }
           }
         },
         {
@@ -89,15 +84,14 @@
       "showName" : true
     },
     {
-      "name" : "IV Midazolam to PO Lorazepam",
       "components" : [
         {
           "inputSingle" : {
             "allowsNegative" : false,
             "variableInfo" : {
               "color" : {
-                "green" : 0.5843137254901961,
                 "blue" : 0,
+                "green" : 0.5843137254901961,
                 "red" : 1
               },
               "variableReference" : "ivMidazolamInfusionRate"
@@ -111,7 +105,13 @@
           "output" : "poLorazepamQ6HDose"
         }
       ],
+      "name" : "IV Midazolam to PO Lorazepam",
       "showName" : true
     }
-  ]
+  ],
+  "image" : {
+    "sfSymbol" : "arrow.left.arrow.right.circle.fill"
+  },
+  "name" : "Conversion Calculator",
+  "nested" : true
 }

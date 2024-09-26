@@ -1,8 +1,5 @@
 [
   {
-    "decimals" : 0,
-    "referenceName" : "age",
-    "displayName" : "Age",
     "alternateUnits" : [
       {
         "conversionScale" : 12,
@@ -13,61 +10,64 @@
         "name" : "years"
       }
     ],
+    "decimals" : 0,
+    "displayName" : "Age",
+    "referenceName" : "age",
     "startingValue" : 0,
     "unit" : {
-      "name" : "years",
-      "conversionScale" : 1
+      "conversionScale" : 1,
+      "name" : "years"
     }
   },
   {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "kg"
+      }
+    ],
     "decimals" : 1,
+    "displayName" : "Weight",
     "formula" : {
-      "parameters" : [
-        "age"
-      ],
       "equation" : {
         "conditional" : [
           {
-            "condition" : {
-              "comparison" : {
-                "greaterThanOrEqualTo" : 1
-              },
-              "defaultState" : true,
-              "variableReference" : "age"
-            },
             "component" : {
               "linear" : {
                 "constant" : 8,
                 "gradient" : 2,
                 "target" : "age"
               }
+            },
+            "condition" : {
+              "comparison" : {
+                "greaterThanOrEqualTo" : 1
+              },
+              "defaultState" : true,
+              "variableReference" : "age"
             }
           },
           {
             "component" : {
               "linear" : {
-                "gradient" : 6,
                 "constant" : 4,
+                "gradient" : 6,
                 "target" : "age"
               }
             }
           }
         ]
       },
+      "parameters" : [
+        "age"
+      ],
       "roundingMethod" : "nearest"
     },
+    "referenceName" : "weight",
+    "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : "kg"
-    },
-    "alternateUnits" : [
-      {
-        "name" : "kg",
-        "conversionScale" : 1
-      }
-    ],
-    "startingValue" : 0,
-    "displayName" : "Weight",
-    "referenceName" : "weight"
+    }
   }
 ]

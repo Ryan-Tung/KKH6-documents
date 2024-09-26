@@ -1,0 +1,187 @@
+[
+  {
+    "calcDoseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
+    "conversionFactor" : 1,
+    "displayName" : "Adrenaline [Epinephrine] 1:10,000 (1mg\/10ml) Injection",
+    "dose" : 0.1,
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL\/kg"
+    },
+    "referenceName" : "Adrenaline"
+  },
+  {
+    "calcDoseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg"
+    },
+    "conversionFactor" : 1.6666666666666667,
+    "displayName" : "Atropine Sulfate 600mcg\/mL Injection",
+    "dose" : 0.02,
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg\/kg"
+    },
+    "notes" : "Minimum dose: 100mcg (0.17 mL)\nMaximum dose: 600mcg (1 mL)",
+    "referenceName" : "Atropine Sulfate"
+  },
+  {
+    "calcDoseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
+    "conversionFactor" : 1,
+    "displayName" : "Albumin 5% Solution",
+    "dose" : {
+      "boundaryValue" : 20,
+      "value" : 10
+    },
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL\/kg"
+    },
+    "referenceName" : "Albumin"
+  },
+  {
+    "calcDoseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
+    "conversionFactor" : 1,
+    "displayName" : "Calcium Chloride 10% (5.5mmol\/10mL) Injection",
+    "dose" : 0.2,
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL\/kg"
+    },
+    "notes" : "Use Large or Central vein",
+    "referenceName" : "Calcium Chloride"
+  },
+  {
+    "calcDoseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
+    "conversionFactor" : 1,
+    "displayName" : "Dextrose 25% Infusion",
+    "dose" : 2,
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL\/kg"
+    },
+    "notes" : "Dilute Dextrose 50% with same amount of WFI (1:1) to get 25% solution",
+    "referenceName" : "Dextrose"
+  },
+  {
+    "calcDoseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
+    "conversionFactor" : 1,
+    "displayName" : "Sodium Chloride 0.9% Infusion",
+    "dose" : {
+      "boundaryValue" : 20,
+      "value" : 10
+    },
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL\/kg"
+    },
+    "referenceName" : "Sodium Chloride"
+  },
+  {
+    "calcDoseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mmol"
+    },
+    "conversionFactor" : 1,
+    "displayName" : "Sodium Bicarbonate 8.4% (1mmol\/mL) Infusion",
+    "dose" : 1,
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mmol\/kg"
+    },
+    "notes" : "8.4% - Infuse in Central Vein only",
+    "referenceName" : "Sodium Bicarbonate 8.4%"
+  },
+  {
+    "calcDoseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mmol"
+    },
+    "conversionFactor" : 2,
+    "displayName" : "Sodium Bicarbonate 4.2% (0.5mmol\/mL) Infusion",
+    "dose" : 1,
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mmol\/kg"
+    },
+    "notes" : "4.2% - Safe for peripheral vein infusion\nDilute NaHCO3 8.4% with same amount of WFI (1:1) to get 4.2% solution",
+    "referenceName" : "Sodium Bicarbonate 4.2%"
+  },
+  {
+    "calcDoseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg"
+    },
+    "conversionFactor" : 0.02,
+    "displayName" : "Suxamethonium Chloride 100mg\/2mL Injection",
+    "dose" : {
+      "boundaryValue" : 2,
+      "value" : 1
+    },
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg\/kg"
+    },
+    "referenceName" : "Suxamethonium Chloride"
+  },
+  {
+    "calcDoseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg"
+    },
+    "conversionFactor" : 0.2,
+    "displayName" : "Midazolam 5mg\/mL Injection",
+    "dose" : {
+      "boundaryValue" : 0.3,
+      "value" : 0.1
+    },
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg\/kg"
+    },
+    "referenceName" : "Midazolam"
+  },
+  {
+    "calcDoseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg"
+    },
+    "conversionFactor" : 0.1,
+    "displayName" : "Morphine Sulfate 10mg\/mL Injection",
+    "dose" : 0.1,
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg\/kg"
+    },
+    "referenceName" : "Morphine Sulfate"
+  },
+  {
+    "calcDoseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg"
+    },
+    "conversionFactor" : 0.1,
+    "displayName" : "Rocuronium Br 50mg\/5mL Injection",
+    "dose" : 1,
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg\/kg"
+    },
+    "referenceName" : "Rocuronium"
+  }
+]

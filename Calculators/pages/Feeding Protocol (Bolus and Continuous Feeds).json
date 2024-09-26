@@ -1,21 +1,21 @@
 {
-  "nested" : false,
+  "color" : {
+    "blue" : 0.5764705882352941,
+    "green" : 0.5568627450980392,
+    "red" : 0.5568627450980392
+  },
   "groups" : [
     {
       "components" : [
 
       ],
-      "showName" : true,
-      "name" : "NOT IMPLEMENTED YET"
+      "name" : "NOT IMPLEMENTED YET",
+      "showName" : true
     }
   ],
   "image" : {
     "sfSymbol" : "fork.knife"
   },
   "name" : "Feeding Protocol (Bolus and Continuous Feeds)",
-  "color" : {
-    "green" : 0.5568627450980392,
-    "red" : 0.5568627450980392,
-    "blue" : 0.5764705882352941
-  }
+  "nested" : false
 }

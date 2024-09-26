@@ -133,9 +133,12 @@
         },
         {
           "output" : "respiratoryRate"
+        },
+        {
+          "output" : "systolicBloodPressure"
         }
       ],
-      "name" : "Vitals",
+      "name" : "Vitals (Reference Range)",
       "showName" : true
     },
     {
