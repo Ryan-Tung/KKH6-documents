@@ -119,7 +119,7 @@
     }
   ],
   "image" : {
-    "sfSymbol" : "waterbottle.fill"
+    "custom" : "waterbottle.fill"
   },
   "name" : "Fluids",
   "nested" : true

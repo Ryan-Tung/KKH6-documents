@@ -8,7 +8,7 @@
 
   ],
   "image" : {
-    "sfSymbol" : "drop.halffull"
+    "custom" : "drop.halffull"
   },
   "name" : "Fluids And Electrolytes",
   "nested" : false

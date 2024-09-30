@@ -131,7 +131,7 @@
     }
   ],
   "image" : {
-    "sfSymbol" : "figure.child.circle.fill"
+    "custom" : "figure.child.circle.fill"
   },
   "name" : "Weaning Calculator",
   "nested" : true
