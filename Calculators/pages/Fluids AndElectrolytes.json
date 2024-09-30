@@ -5,17 +5,11 @@
     "red" : 0
   },
   "groups" : [
-    {
-      "components" : [
 
-      ],
-      "name" : "NOT IMPLEMENTED YET",
-      "showName" : true
-    }
   ],
   "image" : {
     "sfSymbol" : "drop.halffull"
   },
-  "name" : "Fluids and Electrolytes",
+  "name" : "Fluids AndElectrolytes",
   "nested" : false
 }

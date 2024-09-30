@@ -343,20 +343,10 @@
       }
     ],
     "decimals" : 0,
-    "displayName" : "Laryngoscope Size",
+    "displayName" : "Laryngoscope Size (Miller)",
     "formula" : {
       "equation" : {
         "conditional" : [
-          {
-            "component" : 0.5,
-            "condition" : {
-              "comparison" : {
-                "equalTo" : 0
-              },
-              "defaultState" : true,
-              "variableReference" : "age"
-            }
-          },
           {
             "component" : {
               "rangeConstant" : {
@@ -366,36 +356,24 @@
             },
             "condition" : {
               "comparison" : {
-                "lessThanOrEqualTo" : 3
+                "lessThan" : 0.08333333333333333
               },
               "defaultState" : true,
               "variableReference" : "age"
             }
           },
           {
-            "component" : 2,
+            "component" : 1,
             "condition" : {
               "comparison" : {
-                "lessThanOrEqualTo" : 5
+                "lessThanOrEqualTo" : 2
               },
               "defaultState" : true,
               "variableReference" : "age"
             }
           },
           {
-            "component" : {
-              "rangeConstant" : {
-                "boundaryValue" : 3,
-                "value" : 2
-              }
-            },
-            "condition" : {
-              "comparison" : {
-                "lessThanOrEqualTo" : 12
-              },
-              "defaultState" : true,
-              "variableReference" : "age"
-            }
+            "component" : 2
           }
         ]
       },
@@ -404,7 +382,7 @@
       ],
       "roundingMethod" : "nearest"
     },
-    "referenceName" : "laryngoscopeSize",
+    "referenceName" : "laryngoscopeMiller",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
@@ -419,22 +397,32 @@
       }
     ],
     "decimals" : 0,
-    "displayName" : "Laryngoscope Brand",
+    "displayName" : "Laryngoscope Size (Mac)",
     "formula" : {
       "equation" : {
         "conditional" : [
           {
-            "component" : 0,
+            "component" : -1,
             "condition" : {
               "comparison" : {
-                "lessThanOrEqualTo" : 3
+                "lessThan" : 1
               },
               "defaultState" : true,
               "variableReference" : "age"
             }
           },
           {
-            "component" : 1
+            "component" : 2,
+            "condition" : {
+              "comparison" : {
+                "lessThanOrEqualTo" : 6
+              },
+              "defaultState" : true,
+              "variableReference" : "age"
+            }
+          },
+          {
+            "component" : 3
           }
         ]
       },
@@ -443,7 +431,7 @@
       ],
       "roundingMethod" : "nearest"
     },
-    "referenceName" : "laryngoscopeBrand",
+    "referenceName" : "laryngoscopeMacintosh",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,

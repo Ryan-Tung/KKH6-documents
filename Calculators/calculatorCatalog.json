@@ -11,6 +11,8 @@
             "name": "Medical",
             "calculators": [
                 "Fluids and Electrolytes",
+                "Fluids",
+                "Electrolytes",
                 "Sedation Weaning",
                 "Conversion Calculator",
                 "Weaning Calculator",

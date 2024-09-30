@@ -1,0 +1,219 @@
+{
+  "color" : {
+    "blue" : 0,
+    "green" : 0.8,
+    "red" : 1
+  },
+  "groups" : [
+    {
+      "components" : [
+        {
+          "inputPrimary" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0.8392156862745098,
+                "green" : 0.33725490196078434,
+                "red" : 0.34509803921568627
+              },
+              "variableReference" : "weight"
+            }
+          }
+        }
+      ],
+      "name" : "",
+      "showName" : true
+    },
+    {
+      "components" : [
+        {
+          "subsectionTitle" : "Corrected Sodium Level (if hyperglycemic)"
+        },
+        {
+          "nested" : {
+            "inputSingle" : {
+              "allowsNegative" : false,
+              "variableInfo" : {
+                "color" : {
+                  "blue" : 0,
+                  "green" : 0.5843137254901961,
+                  "red" : 1
+                },
+                "variableReference" : "serumSodium"
+              }
+            }
+          }
+        },
+        {
+          "nested" : {
+            "inputSingle" : {
+              "allowsNegative" : false,
+              "variableInfo" : {
+                "color" : {
+                  "blue" : 0,
+                  "green" : 0.5843137254901961,
+                  "red" : 1
+                },
+                "variableReference" : "glucose"
+              }
+            }
+          }
+        },
+        {
+          "nested" : {
+            "output" : "correctedSodiumLevel"
+          }
+        },
+        {
+          "subsectionTitle" : "Free Water Deficit (if hypernatremic)"
+        },
+        {
+          "nested" : {
+            "output" : "freeWaterDeficit"
+          }
+        },
+        {
+          "text" : "Consider replacing free water deficit volume over 2-3 days"
+        },
+        {
+          "subsectionTitle" : "Sodium Deficit"
+        },
+        {
+          "nested" : {
+            "output" : "sodiumDeficit"
+          }
+        },
+        {
+          "text" : "Correction of hyponatremia should occur slowly, at a rate no faster than 0.5 - 1 mmol\/L per hour"
+        },
+        {
+          "subsectionTitle" : "Sodium Bicarbonate Correction"
+        },
+        {
+          "nested" : {
+            "inputSingle" : {
+              "allowsNegative" : false,
+              "variableInfo" : {
+                "color" : {
+                  "blue" : 0,
+                  "green" : 0.5843137254901961,
+                  "red" : 1
+                },
+                "variableReference" : "baseExcess"
+              }
+            }
+          }
+        },
+        {
+          "output" : "sodiumBicarbonateCorrection"
+        },
+        {
+          "subsectionTitle" : "Symptomatic Hyponatremia"
+        },
+        {
+          "nested" : {
+            "output" : "threePercentNaCl"
+          }
+        },
+        {
+          "text" : "Administer 3%NaCl (3-5ml\/kg) in a central venous line or large bore peripheral venous cannula over 30-60 min"
+        },
+        {
+          "subsectionTitle" : "Estimated Serum Osmolality"
+        },
+        {
+          "nested" : {
+            "inputSingle" : {
+              "allowsNegative" : false,
+              "variableInfo" : {
+                "color" : {
+                  "blue" : 0,
+                  "green" : 0.5843137254901961,
+                  "red" : 1
+                },
+                "variableReference" : "sodium"
+              }
+            }
+          }
+        },
+        {
+          "nested" : {
+            "inputSingle" : {
+              "allowsNegative" : false,
+              "variableInfo" : {
+                "color" : {
+                  "blue" : 0,
+                  "green" : 0.5843137254901961,
+                  "red" : 1
+                },
+                "variableReference" : "glucose"
+              }
+            }
+          }
+        },
+        {
+          "nested" : {
+            "inputSingle" : {
+              "allowsNegative" : false,
+              "variableInfo" : {
+                "color" : {
+                  "blue" : 0,
+                  "green" : 0.5843137254901961,
+                  "red" : 1
+                },
+                "variableReference" : "urea"
+              }
+            }
+          }
+        },
+        {
+          "nested" : {
+            "output" : "estimatedSerumOsmolality"
+          }
+        }
+      ],
+      "name" : "Sodium",
+      "showName" : true
+    },
+    {
+      "components" : [
+        {
+          "inputSingle" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0,
+                "green" : 0.5843137254901961,
+                "red" : 1
+              },
+              "variableReference" : "currentPotassium"
+            }
+          }
+        },
+        {
+          "inputSingle" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0,
+                "green" : 0.5843137254901961,
+                "red" : 1
+              },
+              "variableReference" : "desiredPotassium"
+            }
+          }
+        },
+        {
+          "output" : "potassiumDeficit"
+        }
+      ],
+      "name" : "Potassium",
+      "showName" : true
+    }
+  ],
+  "image" : {
+    "sfSymbol" : "bolt.fill"
+  },
+  "name" : "Electrolytes",
+  "nested" : true
+}

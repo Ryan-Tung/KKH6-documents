@@ -1,0 +1,126 @@
+{
+  "color" : {
+    "blue" : 1,
+    "green" : 0.47843137254901963,
+    "red" : 0
+  },
+  "groups" : [
+    {
+      "components" : [
+        {
+          "inputPrimary" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0.8392156862745098,
+                "green" : 0.33725490196078434,
+                "red" : 0.34509803921568627
+              },
+              "variableReference" : "weight"
+            }
+          }
+        }
+      ],
+      "name" : "",
+      "showName" : true
+    },
+    {
+      "components" : [
+        {
+          "inputSingle" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0,
+                "green" : 0.5843137254901961,
+                "red" : 1
+              },
+              "variableReference" : "dextrosity"
+            }
+          }
+        },
+        {
+          "inputSingle" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0,
+                "green" : 0.5843137254901961,
+                "red" : 1
+              },
+              "variableReference" : "fluidInfusionRate"
+            }
+          }
+        },
+        {
+          "output" : "glucoseInfusionRate"
+        }
+      ],
+      "name" : "Glucose",
+      "showName" : true
+    },
+    {
+      "components" : [
+        {
+          "inputSingle" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0,
+                "green" : 0.5843137254901961,
+                "red" : 1
+              },
+              "variableReference" : "dehydration"
+            }
+          }
+        },
+        {
+          "output" : "fluidDeficit"
+        }
+      ],
+      "name" : "Fluids",
+      "showName" : true
+    },
+    {
+      "components" : [
+        {
+          "inputSingle" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0,
+                "green" : 0.5843137254901961,
+                "red" : 1
+              },
+              "variableReference" : "height"
+            }
+          }
+        },
+        {
+          "inputSingle" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0,
+                "green" : 0.5843137254901961,
+                "red" : 1
+              },
+              "variableReference" : "baselineCreatinine"
+            }
+          }
+        },
+        {
+          "output" : "baselineGFR"
+        }
+      ],
+      "name" : "Renal Function",
+      "notes" : "Consider renal dose adjustment if GFR < 60",
+      "showName" : true
+    }
+  ],
+  "image" : {
+    "sfSymbol" : "waterbottle.fill"
+  },
+  "name" : "Fluids",
+  "nested" : true
+}

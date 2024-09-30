@@ -63,29 +63,20 @@
           "output" : "ettNasalIntubationDepth"
         },
         {
-          "discreteOutput" : {
-            "values" : [
-              {
-                "displayName" : "00",
-                "value" : 0.5
-              }
-            ],
-            "variableReference" : "laryngoscopeSize"
-          }
+          "output" : "laryngoscopeMiller"
         },
         {
-          "discreteOutput" : {
-            "values" : [
-              {
-                "displayName" : "Miller",
-                "value" : 0
+          "conditional" : {
+            "component" : {
+              "output" : "laryngoscopeMacintosh"
+            },
+            "condition" : {
+              "comparison" : {
+                "greaterThan" : 0
               },
-              {
-                "displayName" : "Macintosh",
-                "value" : 1
-              }
-            ],
-            "variableReference" : "laryngoscopeBrand"
+              "defaultState" : true,
+              "variableReference" : "laryngoscopeMacintosh"
+            }
           }
         }
       ],
