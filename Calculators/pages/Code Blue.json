@@ -46,7 +46,7 @@
         {
           "conditional" : {
             "component" : {
-              "text" : "The calculators on this page are not for preterm neonates (<2kg). Results are likely to be inaccurate."
+              "text" : "The calculators on this page are not for preterm neonates (<2kg)"
             },
             "condition" : {
               "comparison" : {
