@@ -22,7 +22,7 @@
             "name": "Nursing",
             "calculators": [
                 "CRRT Fluid Withdrawal",
-                "Feeding Protocol (Bolus and Continuous Feeds)",
+                "CICU Feeding Protocol",
                 "Peripheral Drug Administration Dilution",
                 "CAPD and WAT-1 Scoring",
 		"Peripheral Line Max Concentration"

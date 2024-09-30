@@ -16,6 +16,6 @@
   "image" : {
     "sfSymbol" : "fork.knife"
   },
-  "name" : "Feeding Protocol (Bolus and Continuous Feeds)",
+  "name" : "CICU Feeding Protocol",
   "nested" : false
 }
