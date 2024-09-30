@@ -22,157 +22,167 @@
         }
       ],
       "name" : "",
+      "showName" : false
+    },
+    {
+      "components" : [
+        {
+          "inputSingle" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0,
+                "green" : 0.5843137254901961,
+                "red" : 1
+              },
+              "variableReference" : "serumSodium"
+            }
+          }
+        },
+        {
+          "inputSingle" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0,
+                "green" : 0.5843137254901961,
+                "red" : 1
+              },
+              "variableReference" : "glucose"
+            }
+          }
+        },
+        {
+          "output" : "correctedSodiumLevel"
+        }
+      ],
+      "name" : "Corrected Sodium Level (if hyperglycemic)",
       "showName" : true
     },
     {
       "components" : [
         {
-          "subsectionTitle" : "Corrected Sodium Level (if hyperglycemic)"
-        },
-        {
-          "nested" : {
-            "inputSingle" : {
-              "allowsNegative" : false,
-              "variableInfo" : {
-                "color" : {
-                  "blue" : 0,
-                  "green" : 0.5843137254901961,
-                  "red" : 1
-                },
-                "variableReference" : "serumSodium"
-              }
+          "inputSingle" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0,
+                "green" : 0.5843137254901961,
+                "red" : 1
+              },
+              "variableReference" : "serumSodium"
             }
           }
         },
         {
-          "nested" : {
-            "inputSingle" : {
-              "allowsNegative" : false,
-              "variableInfo" : {
-                "color" : {
-                  "blue" : 0,
-                  "green" : 0.5843137254901961,
-                  "red" : 1
-                },
-                "variableReference" : "glucose"
-              }
-            }
-          }
-        },
+          "output" : "freeWaterDeficit"
+        }
+      ],
+      "name" : "Free Water Deficit (if hypernatremic)",
+      "notes" : "Consider replacing free water deficit volume over 2-3 days",
+      "showName" : true
+    },
+    {
+      "components" : [
         {
-          "nested" : {
-            "output" : "correctedSodiumLevel"
-          }
-        },
-        {
-          "subsectionTitle" : "Free Water Deficit (if hypernatremic)"
-        },
-        {
-          "nested" : {
-            "output" : "freeWaterDeficit"
-          }
-        },
-        {
-          "text" : "Consider replacing free water deficit volume over 2-3 days"
-        },
-        {
-          "subsectionTitle" : "Sodium Deficit"
-        },
-        {
-          "nested" : {
-            "output" : "sodiumDeficit"
-          }
-        },
-        {
-          "text" : "Correction of hyponatremia should occur slowly, at a rate no faster than 0.5 - 1 mmol\/L per hour"
-        },
-        {
-          "subsectionTitle" : "Sodium Bicarbonate Correction"
-        },
-        {
-          "nested" : {
-            "inputSingle" : {
-              "allowsNegative" : false,
-              "variableInfo" : {
-                "color" : {
-                  "blue" : 0,
-                  "green" : 0.5843137254901961,
-                  "red" : 1
-                },
-                "variableReference" : "baseExcess"
-              }
+          "inputSingle" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0,
+                "green" : 0.5843137254901961,
+                "red" : 1
+              },
+              "variableReference" : "baseExcess"
             }
           }
         },
         {
           "output" : "sodiumBicarbonateCorrection"
-        },
-        {
-          "subsectionTitle" : "Symptomatic Hyponatremia"
-        },
-        {
-          "nested" : {
-            "output" : "threePercentNaCl"
-          }
-        },
-        {
-          "text" : "Administer 3%NaCl (3-5ml\/kg) in a central venous line or large bore peripheral venous cannula over 30-60 min"
-        },
-        {
-          "subsectionTitle" : "Estimated Serum Osmolality"
-        },
-        {
-          "nested" : {
-            "inputSingle" : {
-              "allowsNegative" : false,
-              "variableInfo" : {
-                "color" : {
-                  "blue" : 0,
-                  "green" : 0.5843137254901961,
-                  "red" : 1
-                },
-                "variableReference" : "sodium"
-              }
-            }
-          }
-        },
-        {
-          "nested" : {
-            "inputSingle" : {
-              "allowsNegative" : false,
-              "variableInfo" : {
-                "color" : {
-                  "blue" : 0,
-                  "green" : 0.5843137254901961,
-                  "red" : 1
-                },
-                "variableReference" : "glucose"
-              }
-            }
-          }
-        },
-        {
-          "nested" : {
-            "inputSingle" : {
-              "allowsNegative" : false,
-              "variableInfo" : {
-                "color" : {
-                  "blue" : 0,
-                  "green" : 0.5843137254901961,
-                  "red" : 1
-                },
-                "variableReference" : "urea"
-              }
-            }
-          }
-        },
-        {
-          "nested" : {
-            "output" : "estimatedSerumOsmolality"
-          }
         }
       ],
-      "name" : "Sodium",
+      "name" : "Sodium Bicarbonate Correction",
+      "showName" : true
+    },
+    {
+      "components" : [
+        {
+          "output" : "threePercentNaCl"
+        }
+      ],
+      "name" : "Symptomatic Hyponatremia",
+      "notes" : "Administer 3%NaCl (3-5ml\/kg) in a central venous line or large bore peripheral venous cannula over 30-60 min",
+      "showName" : true
+    },
+    {
+      "components" : [
+        {
+          "inputSingle" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0,
+                "green" : 0.5843137254901961,
+                "red" : 1
+              },
+              "variableReference" : "serumSodium"
+            }
+          }
+        },
+        {
+          "output" : "sodiumDeficit"
+        }
+      ],
+      "name" : "Sodium Deficit",
+      "notes" : "Correction of hyponatremia should occur slowly, at a rate no faster than 0.5 - 1 mmol\/L per hour",
+      "showName" : true
+    },
+    {
+      "components" : [
+        {
+          "inputSingle" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0,
+                "green" : 0.5843137254901961,
+                "red" : 1
+              },
+              "variableReference" : "sodium"
+            }
+          }
+        },
+        {
+          "inputSingle" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0,
+                "green" : 0.5843137254901961,
+                "red" : 1
+              },
+              "variableReference" : "glucose"
+            }
+          }
+        },
+        {
+          "inputSingle" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0,
+                "green" : 0.5843137254901961,
+                "red" : 1
+              },
+              "variableReference" : "urea"
+            }
+          }
+        },
+        {
+          "output" : "estimatedSerumOsmolality"
+        }
+      ],
+      "name" : "Estimated Serum Osmolality",
       "showName" : true
     },
     {

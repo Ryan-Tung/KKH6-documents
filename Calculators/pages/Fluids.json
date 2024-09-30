@@ -22,7 +22,7 @@
         }
       ],
       "name" : "",
-      "showName" : true
+      "showName" : false
     },
     {
       "components" : [

@@ -31,46 +31,20 @@
             "component" : {
               "conditional" : [
                 {
-                  "component" : {
-                    "conditional" : [
-                      {
-                        "component" : 2.5,
-                        "condition" : {
-                          "comparison" : {
-                            "lessThan" : 1
-                          },
-                          "defaultState" : true,
-                          "variableReference" : "weight"
-                        }
-                      },
-                      {
-                        "component" : 3,
-                        "condition" : {
-                          "comparison" : {
-                            "lessThan" : 3.5
-                          },
-                          "defaultState" : true,
-                          "variableReference" : "weight"
-                        }
-                      },
-                      {
-                        "component" : 3.5
-                      }
-                    ]
-                  },
+                  "component" : 3,
                   "condition" : {
                     "comparison" : {
-                      "lessThan" : 0.25
+                      "lessThanOrEqualTo" : 3
                     },
                     "defaultState" : true,
-                    "variableReference" : "age"
+                    "variableReference" : "weight"
                   }
                 },
                 {
                   "component" : 3.5,
                   "condition" : {
                     "comparison" : {
-                      "lessThan" : 8
+                      "lessThanOrEqualTo" : 6
                     },
                     "defaultState" : true,
                     "variableReference" : "weight"
@@ -80,7 +54,7 @@
                   "component" : 4,
                   "condition" : {
                     "comparison" : {
-                      "lessThan" : 10
+                      "lessThanOrEqualTo" : 8
                     },
                     "defaultState" : true,
                     "variableReference" : "weight"
@@ -169,54 +143,37 @@
             "component" : {
               "conditional" : [
                 {
-                  "component" : {
-                    "linear" : {
-                      "constant" : 8,
-                      "gradient" : 0.2,
-                      "target" : "weight"
-                    }
-                  },
+                  "component" : 8,
                   "condition" : {
                     "comparison" : {
-                      "greaterThanOrEqualTo" : 0.25
+                      "lessThanOrEqualTo" : 3
                     },
                     "defaultState" : true,
-                    "variableReference" : "age"
+                    "variableReference" : "weight"
                   }
                 },
                 {
-                  "component" : {
-                    "conditional" : [
-                      {
-                        "component" : 5.5,
-                        "condition" : {
-                          "comparison" : {
-                            "lessThan" : 1
-                          },
-                          "defaultState" : true,
-                          "variableReference" : "weight"
-                        }
-                      },
-                      {
-                        "component" : {
-                          "rangeConstant" : {
-                            "boundaryValue" : 9,
-                            "value" : 6
-                          }
-                        },
-                        "condition" : {
-                          "comparison" : {
-                            "lessThanOrEqualTo" : 3.5
-                          },
-                          "defaultState" : true,
-                          "variableReference" : "weight"
-                        }
-                      },
-                      {
-                        "component" : 9
-                      }
-                    ]
+                  "component" : 9,
+                  "condition" : {
+                    "comparison" : {
+                      "lessThanOrEqualTo" : 4
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "weight"
                   }
+                },
+                {
+                  "component" : 10,
+                  "condition" : {
+                    "comparison" : {
+                      "lessThanOrEqualTo" : 8
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "weight"
+                  }
+                },
+                {
+                  "component" : 11
                 }
               ]
             }
@@ -251,7 +208,7 @@
           {
             "component" : {
               "linear" : {
-                "constant" : 14,
+                "constant" : 15,
                 "gradient" : 0.5,
                 "target" : "age"
               }
@@ -268,54 +225,47 @@
             "component" : {
               "conditional" : [
                 {
-                  "component" : {
-                    "linear" : {
-                      "constant" : 9,
-                      "gradient" : 0.5,
-                      "target" : "weight"
-                    }
-                  },
+                  "component" : 10,
                   "condition" : {
                     "comparison" : {
-                      "greaterThanOrEqualTo" : 0.25
+                      "lessThanOrEqualTo" : 3
                     },
                     "defaultState" : true,
-                    "variableReference" : "age"
+                    "variableReference" : "weight"
                   }
                 },
                 {
-                  "component" : {
-                    "conditional" : [
-                      {
-                        "component" : 7,
-                        "condition" : {
-                          "comparison" : {
-                            "lessThan" : 1
-                          },
-                          "defaultState" : true,
-                          "variableReference" : "weight"
-                        }
-                      },
-                      {
-                        "component" : {
-                          "rangeConstant" : {
-                            "boundaryValue" : 11,
-                            "value" : 7.5
-                          }
-                        },
-                        "condition" : {
-                          "comparison" : {
-                            "lessThanOrEqualTo" : 3.5
-                          },
-                          "defaultState" : true,
-                          "variableReference" : "weight"
-                        }
-                      },
-                      {
-                        "component" : 11
-                      }
-                    ]
+                  "component" : 11,
+                  "condition" : {
+                    "comparison" : {
+                      "lessThanOrEqualTo" : 4
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "weight"
                   }
+                },
+                {
+                  "component" : 12,
+                  "condition" : {
+                    "comparison" : {
+                      "lessThanOrEqualTo" : 6
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "weight"
+                  }
+                },
+                {
+                  "component" : 13,
+                  "condition" : {
+                    "comparison" : {
+                      "lessThanOrEqualTo" : 8
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "weight"
+                  }
+                },
+                {
+                  "component" : 14
                 }
               ]
             }
@@ -806,7 +756,7 @@
       "equation" : {
         "conditional" : [
           {
-            "component" : 61,
+            "component" : 60,
             "condition" : {
               "comparison" : {
                 "lessThan" : 0.08333333333333333
@@ -816,107 +766,23 @@
             }
           },
           {
-            "component" : 71,
+            "component" : 90,
             "condition" : {
               "comparison" : {
-                "lessThan" : 1
+                "greaterThan" : 10
               },
               "defaultState" : true,
               "variableReference" : "age"
             }
           },
           {
-            "component" : 72,
-            "condition" : {
-              "comparison" : {
-                "lessThan" : 2
-              },
-              "defaultState" : true,
-              "variableReference" : "age"
+            "component" : {
+              "linear" : {
+                "constant" : 70,
+                "gradient" : 2,
+                "target" : "age"
+              }
             }
-          },
-          {
-            "component" : 74,
-            "condition" : {
-              "comparison" : {
-                "lessThan" : 3
-              },
-              "defaultState" : true,
-              "variableReference" : "age"
-            }
-          },
-          {
-            "component" : 76,
-            "condition" : {
-              "comparison" : {
-                "lessThan" : 4
-              },
-              "defaultState" : true,
-              "variableReference" : "age"
-            }
-          },
-          {
-            "component" : 78,
-            "condition" : {
-              "comparison" : {
-                "lessThan" : 5
-              },
-              "defaultState" : true,
-              "variableReference" : "age"
-            }
-          },
-          {
-            "component" : 81,
-            "condition" : {
-              "comparison" : {
-                "lessThan" : 6
-              },
-              "defaultState" : true,
-              "variableReference" : "age"
-            }
-          },
-          {
-            "component" : 82,
-            "condition" : {
-              "comparison" : {
-                "lessThan" : 7
-              },
-              "defaultState" : true,
-              "variableReference" : "age"
-            }
-          },
-          {
-            "component" : 84,
-            "condition" : {
-              "comparison" : {
-                "lessThan" : 8
-              },
-              "defaultState" : true,
-              "variableReference" : "age"
-            }
-          },
-          {
-            "component" : 86,
-            "condition" : {
-              "comparison" : {
-                "lessThan" : 9
-              },
-              "defaultState" : true,
-              "variableReference" : "age"
-            }
-          },
-          {
-            "component" : 91,
-            "condition" : {
-              "comparison" : {
-                "lessThan" : 15
-              },
-              "defaultState" : true,
-              "variableReference" : "age"
-            }
-          },
-          {
-            "component" : 96
           }
         ]
       },
