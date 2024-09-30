@@ -1,0 +1,21 @@
+{
+  "color" : {
+    "blue" : 1,
+    "green" : 0.47843137254901963,
+    "red" : 0
+  },
+  "groups" : [
+    {
+      "components" : [
+
+      ],
+      "name" : "NOT IMPLEMENTED YET",
+      "showName" : true
+    }
+  ],
+  "image" : {
+    "sfSymbol" : "questionmark.square.dashed"
+  },
+  "name" : "Peripheral Line Max Concentration",
+  "nested" : false
+}
