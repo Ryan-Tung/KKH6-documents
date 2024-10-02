@@ -228,7 +228,7 @@
       "roundingMethod" : "nearest"
     },
     "referenceName" : "pupilScore",
-    "startingValue" : 0,
+    "startingValue" : -1,
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
