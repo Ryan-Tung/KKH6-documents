@@ -1,20 +1,278 @@
 {
   "color" : {
-    "blue" : 1,
-    "green" : 0.47843137254901963,
-    "red" : 0
+    "blue" : 0.83921575546264648,
+    "green" : 0.33725488185882568,
+    "red" : 0.34509801864624023
   },
   "groups" : [
     {
       "components" : [
-
+        {
+          "inputPrimary" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0.33333331346511841,
+                "green" : 0.17647057771682739,
+                "red" : 0.99999994039535522
+              },
+              "variableReference" : "age"
+            }
+          }
+        }
       ],
-      "name" : "NOT IMPLEMENTED YET",
+      "name" : "Age Input",
+      "showName" : false
+    },
+    {
+      "components" : [
+        {
+          "inputSingle" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0.99999994039535522,
+                "green" : 0.47843140363693237,
+                "red" : 0
+              },
+              "variableReference" : "neurologicGCS"
+            }
+          }
+        },
+        {
+          "output" : "gcsScore"
+        },
+        {
+          "discreteInput" : {
+            "presentationStyle" : "menu",
+            "values" : [
+              {
+                "displayName" : "Select",
+                "value" : -1
+              },
+              {
+                "displayName" : "Reactive",
+                "value" : 1
+              },
+              {
+                "displayName" : "Non-reative",
+                "value" : 0
+              }
+            ],
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0.18823528289794922,
+                "green" : 0.23137253522872925,
+                "red" : 0.99999994039535522
+              },
+              "variableReference" : "pupilReaction"
+            }
+          }
+        },
+        {
+          "output" : "pupilScore"
+        }
+      ],
+      "name" : "Neurologic",
+      "showName" : true
+    },
+    {
+      "components" : [
+        {
+          "inputSingle" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0.83921575546264648,
+                "green" : 0.33725488185882568,
+                "red" : 0.34509801864624023
+              },
+              "variableReference" : "pelodLactate"
+            }
+          }
+        },
+        {
+          "output" : "lactateScore"
+        },
+        {
+          "inputSingle" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0.83921575546264648,
+                "green" : 0.33725488185882568,
+                "red" : 0.34509801864624023
+              },
+              "variableReference" : "cardioMAP"
+            }
+          }
+        },
+        {
+          "output" : "mapScore"
+        }
+      ],
+      "name" : "Cardiovascular",
+      "showName" : true
+    },
+    {
+      "components" : [
+        {
+          "inputSingle" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0,
+                "green" : 0.58431375026702881,
+                "red" : 0.99999994039535522
+              },
+              "variableReference" : "renalCreatinine"
+            }
+          }
+        },
+        {
+          "output" : "creatinineScore"
+        }
+      ],
+      "name" : "Renal",
+      "showName" : true
+    },
+    {
+      "components" : [
+        {
+          "discreteInput" : {
+            "presentationStyle" : "menu",
+            "values" : [
+              {
+                "displayName" : "Select",
+                "value" : -1
+              },
+              {
+                "displayName" : "Yes",
+                "value" : 1
+              },
+              {
+                "displayName" : "No",
+                "value" : 0
+              }
+            ],
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0.18823528289794922,
+                "green" : 0.23137253522872925,
+                "red" : 0.99999994039535522
+              },
+              "variableReference" : "invasiveVentilation"
+            }
+          }
+        },
+        {
+          "output" : "ventilationScore"
+        },
+        {
+          "inputDual" : {
+            "lhs" : {
+              "allowsNegative" : false,
+              "variableInfo" : {
+                "color" : {
+                  "blue" : 0,
+                  "green" : 0.80000001192092896,
+                  "red" : 0.99999994039535522
+                },
+                "variableReference" : "fiO2"
+              }
+            },
+            "rhs" : {
+              "allowsNegative" : false,
+              "variableInfo" : {
+                "color" : {
+                  "blue" : 0.34901958703994751,
+                  "green" : 0.78039216995239258,
+                  "red" : 0.20392152667045593
+                },
+                "variableReference" : "paO2"
+              }
+            }
+          }
+        },
+        {
+          "output" : "o2Ratio"
+        },
+        {
+          "output" : "ratioScore"
+        },
+        {
+          "inputSingle" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0.99999994039535522,
+                "green" : 0.47843140363693237,
+                "red" : 0
+              },
+              "variableReference" : "pCO2"
+            }
+          }
+        },
+        {
+          "output" : "pcO2Score"
+        }
+      ],
+      "name" : "Respiratory System",
+      "showName" : true
+    },
+    {
+      "components" : [
+        {
+          "inputSingle" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0.99999994039535522,
+                "green" : 0.47843140363693237,
+                "red" : 0
+              },
+              "variableReference" : "leucocytes"
+            }
+          }
+        },
+        {
+          "output" : "leucocytesScore"
+        },
+        {
+          "inputSingle" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0.99999994039535522,
+                "green" : 0.47843140363693237,
+                "red" : 0
+              },
+              "variableReference" : "platelets"
+            }
+          }
+        },
+        {
+          "output" : "plateletsScore"
+        }
+      ],
+      "name" : "Hematological System",
+      "showName" : true
+    },
+    {
+      "components" : [
+        {
+          "output" : "aPELOD2Score"
+        },
+        {
+          "output" : "mortalityRiskEstimate"
+        }
+      ],
+      "name" : "Overall",
       "showName" : true
     }
   ],
   "image" : {
-    "sfSymbol" : "questionmark.square.dashed"
+    "sfSymbol" : "person.crop.circle.badge.exclamationmark"
   },
   "name" : "PELOD2",
   "nested" : false

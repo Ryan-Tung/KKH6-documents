@@ -1,15 +1,419 @@
 {
   "color" : {
-    "blue" : 0.18823529411764706,
-    "green" : 0.23137254901960785,
-    "red" : 1
+    "blue" : 0.18823528289794922,
+    "green" : 0.23137253522872925,
+    "red" : 0.99999994039535522
   },
   "groups" : [
     {
       "components" : [
+        {
+          "special" : "cprMetronome"
+        }
+      ],
+      "name" : "CPR Metronome",
+      "notes" : "Turn off silent mode and increase your volume to hear auditory cues",
+      "showName" : false
+    },
+    {
+      "components" : [
+        {
+          "inputDual" : {
+            "lhs" : {
+              "allowsNegative" : false,
+              "variableInfo" : {
+                "color" : {
+                  "blue" : 0.90196079015731812,
+                  "green" : 0.67843139171600342,
+                  "red" : 0.19607838988304138
+                },
+                "variableReference" : "age"
+              }
+            },
+            "rhs" : {
+              "allowsNegative" : false,
+              "variableInfo" : {
+                "color" : {
+                  "blue" : 0.83921575546264648,
+                  "green" : 0.33725488185882568,
+                  "red" : 0.34509801864624023
+                },
+                "variableReference" : "weight"
+              }
+            }
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "text" : "The calculators on this page are not for preterm neonates (<2kg)"
+            },
+            "condition" : {
+              "comparison" : {
+                "lessThan" : 2
+              },
+              "defaultState" : true,
+              "variableReference" : "weight"
+            }
+          }
+        }
+      ],
+      "name" : "Age and Weight Input",
+      "notes" : "If weight is not provided, it is estimated based on age",
+      "showName" : false
+    },
+    {
+      "components" : [
+        {
+          "output" : "ettUncuffed"
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "output" : "ettCuffed"
+            },
+            "condition" : {
+              "comparison" : {
+                "greaterThanOrEqualTo" : 3.5
+              },
+              "defaultState" : true,
+              "variableReference" : "weight"
+            }
+          }
+        },
+        {
+          "output" : "ettOralIntubationDepth"
+        },
+        {
+          "output" : "ettNasalIntubationDepth"
+        }
+      ],
+      "name" : "Intubation",
+      "showName" : true
+    },
+    {
+      "components" : [
+        {
+          "output" : "defibrillation"
+        },
+        {
+          "output" : "synchronisedCardioversion"
+        }
+      ],
+      "name" : "Shock",
+      "showName" : true
+    },
+    {
+      "components" : [
+        {
+          "detailedOutput" : {
+            "detailVarReferences" : [
+              "Adenosine_Dose",
+              "Adenosine_Calc_Dose",
+              "Adenosine_Calc_Amt"
+            ],
+            "name" : "Adenosine (6mg\/2mL)",
+            "notes" : "Maximum dose: 6mg (2ml)\nRoute: IV rapid bolus",
+            "primaryVarReference" : "Adenosine_Calc_Amt"
+          }
+        },
+        {
+          "detailedOutput" : {
+            "detailVarReferences" : [
+              "Adrenaline_Dose",
+              "Adrenaline_Calc_Dose",
+              "Adrenaline_Calc_Amt"
+            ],
+            "name" : "Adrenaline [Epinephrine] 1:10,000 (1mg\/10ml) Injection",
+            "notes" : "Maximum dose: 1mg (10mL)",
+            "primaryVarReference" : "Adrenaline_Calc_Amt"
+          }
+        },
+        {
+          "detailedOutput" : {
+            "detailVarReferences" : [
+              "Amiodarone_Dose",
+              "Amiodarone_Calc_Dose",
+              "Amiodarone_Calc_Amt"
+            ],
+            "name" : "Amiodarone (150mg\/3mL)",
+            "notes" : "Maximum dose: 300mg (6ml)\nRoute: IV bolus",
+            "primaryVarReference" : "Amiodarone_Calc_Amt"
+          }
+        },
+        {
+          "detailedOutput" : {
+            "detailVarReferences" : [
+              "Atropine Sulfate_Dose",
+              "Atropine Sulfate_Calc_Dose",
+              "Atropine Sulfate_Calc_Amt"
+            ],
+            "name" : "Atropine Sulfate 600mcg\/mL Injection",
+            "notes" : "Minimum dose: 100mcg (0.17 mL)\nMaximum dose: 600mcg (1 mL)",
+            "primaryVarReference" : "Atropine Sulfate_Calc_Amt"
+          }
+        },
+        {
+          "detailedOutput" : {
+            "detailVarReferences" : [
+              "Calcium Chloride_Dose",
+              "Calcium Chloride_Calc_Dose",
+              "Calcium Chloride_Calc_Amt"
+            ],
+            "name" : "Calcium Chloride 10% (5.5mmol\/10mL) Injection",
+            "notes" : "Use Large or Central vein.\nMaximum dose: 20mL",
+            "primaryVarReference" : "Calcium Chloride_Calc_Amt"
+          }
+        },
+        {
+          "detailedOutput" : {
+            "detailVarReferences" : [
+              "Calcium Gluconate_Dose",
+              "Calcium Gluconate_Calc_Dose",
+              "Calcium Gluconate_Calc_Amt"
+            ],
+            "name" : "Calcium Gluconate 10% (2.3mmol\/10mL)",
+            "notes" : "Maximum dose: 30ml\nRoute: IV slow bolus",
+            "primaryVarReference" : "Calcium Gluconate_Calc_Amt"
+          }
+        },
+        {
+          "detailedOutput" : {
+            "detailVarReferences" : [
+              "Dextrose Hypoglycemia_Dose",
+              "Dextrose Hypoglycemia_Calc_Dose",
+              "Dextrose Hypoglycemia_Calc_Amt"
+            ],
+            "name" : "Dextrose 10% (Hypoglycemia)",
+            "notes" : "Maximum dose: 250ml\nRoute: IV bolus",
+            "primaryVarReference" : "Dextrose Hypoglycemia_Calc_Amt"
+          }
+        },
+        {
+          "detailedOutput" : {
+            "detailVarReferences" : [
+              "Dextrose Hyperkalemia_Dose",
+              "Dextrose Hyperkalemia_Calc_Dose",
+              "Dextrose Hyperkalemia_Calc_Amt"
+            ],
+            "name" : "Dextrose 10% (Hyperkalemia)",
+            "notes" : "Maximum dose: 250ml\nRoute: IV bolus",
+            "primaryVarReference" : "Dextrose Hyperkalemia_Calc_Amt"
+          }
+        },
+        {
+          "detailedOutput" : {
+            "detailVarReferences" : [
+              "Dextrose_Dose",
+              "Dextrose_Calc_Dose",
+              "Dextrose_Calc_Amt"
+            ],
+            "name" : "Dextrose 25% Infusion",
+            "notes" : "Dilute Dextrose 50% with same amount of WFI (1:1) to get 25% solution.\nMaximum dose: 100ml",
+            "primaryVarReference" : "Dextrose_Calc_Amt"
+          }
+        },
+        {
+          "detailedOutput" : {
+            "detailVarReferences" : [
+              "Diazepam_Dose",
+              "Diazepam_Calc_Dose",
+              "Diazepam_Calc_Amt"
+            ],
+            "name" : "Diazepam (10mg\/2mL)",
+            "notes" : "Maximum dose: 10mg (2ml)\nRoute: IV bolus",
+            "primaryVarReference" : "Diazepam_Calc_Amt"
+          }
+        },
+        {
+          "detailedOutput" : {
+            "detailVarReferences" : [
+              "Diphenydramine_Dose",
+              "Diphenydramine_Calc_Dose",
+              "Diphenydramine_Calc_Amt"
+            ],
+            "name" : "Diphenydramine (50mg\/mL)",
+            "notes" : "Maximum dose: 50mg (1ml)\nRoute: IV bolus",
+            "primaryVarReference" : "Diphenydramine_Calc_Amt"
+          }
+        },
+        {
+          "detailedOutput" : {
+            "detailVarReferences" : [
+              "Flumazenil_Dose",
+              "Flumazenil_Calc_Dose",
+              "Flumazenil_Calc_Amt"
+            ],
+            "name" : "Flumazenil (0.5mg\/5mL)",
+            "notes" : "Maximum dose: 200mcg (2ml)\nRoute: IV bolus",
+            "primaryVarReference" : "Flumazenil_Calc_Amt"
+          }
+        },
+        {
+          "detailedOutput" : {
+            "detailVarReferences" : [
+              "Hydrocortisone_Dose",
+              "Hydrocortisone_Calc_Dose",
+              "Hydrocortisone_Calc_Amt"
+            ],
+            "name" : "Hydrocortisone (100mg)",
+            "notes" : "Maximum dose: 100mg (2ml)\nRoute: IV bolus",
+            "primaryVarReference" : "Hydrocortisone_Calc_Amt"
+          }
+        },
+        {
+          "detailedOutput" : {
+            "detailVarReferences" : [
+              "Hydrocortisone Stress Dose_Dose",
+              "Hydrocortisone Stress Dose_Calc_Dose",
+              "Hydrocortisone Stress Dose_Calc_Amt"
+            ],
+            "name" : "Hydrocortisone (100mg) [PHYSIOLOGICAL STRESS DOSE]",
+            "notes" : "Maximum dose: 100mg (2ml)\nRoute: IV bolus",
+            "primaryVarReference" : "Hydrocortisone Stress Dose_Calc_Amt"
+          }
+        },
+        {
+          "detailedOutput" : {
+            "detailVarReferences" : [
+              "Ketamine_Dose",
+              "Ketamine_Calc_Dose",
+              "Ketamine_Calc_Amt"
+            ],
+            "name" : "Ketamine (100mg\/2mL)",
+            "notes" : "Maximum dose: 50mg (1ml)\nRoute: IV bolus",
+            "primaryVarReference" : "Ketamine_Calc_Amt"
+          }
+        },
+        {
+          "detailedOutput" : {
+            "detailVarReferences" : [
+              "Midazolam_Dose",
+              "Midazolam_Calc_Dose",
+              "Midazolam_Calc_Amt"
+            ],
+            "name" : "Midazolam 5mg\/mL Injection",
+            "notes" : "Dilute 1ml (5mg) to final volume 5ml NS (1mg\/ml)\nMaximum dose: 5mg (5ml)",
+            "primaryVarReference" : "Midazolam_Calc_Amt"
+          }
+        },
+        {
+          "detailedOutput" : {
+            "detailVarReferences" : [
+              "Morphine Sulfate_Dose",
+              "Morphine Sulfate_Calc_Dose",
+              "Morphine Sulfate_Calc_Amt"
+            ],
+            "name" : "Morphine Sulfate 10mg\/mL Injection",
+            "notes" : "Dilute 1ml (10mg) to final volume 10ml NS (1mg\/ml)\nMaximum dose: 5mg (5ml)",
+            "primaryVarReference" : "Morphine Sulfate_Calc_Amt"
+          }
+        },
+        {
+          "detailedOutput" : {
+            "detailVarReferences" : [
+              "Naloxone_Dose",
+              "Naloxone_Calc_Dose",
+              "Naloxone_Calc_Amt"
+            ],
+            "name" : "Naloxone (0.4mg\/mL) *OPIOID OVERDOSE*",
+            "notes" : "Maximum dose: 2mg (5ml)\nRoute: IV bolus",
+            "primaryVarReference" : "Naloxone_Calc_Amt"
+          }
+        },
+        {
+          "detailedOutput" : {
+            "detailVarReferences" : [
+              "Phenobarbitone_Dose",
+              "Phenobarbitone_Calc_Dose",
+              "Phenobarbitone_Calc_Amt"
+            ],
+            "name" : "Phenobarbitone (200mg\/mL) *LOADING dose*",
+            "notes" : "Maximum dose: 1000mg (50ml)\nRoute: IV intermittent",
+            "primaryVarReference" : "Phenobarbitone_Calc_Amt"
+          }
+        },
+        {
+          "detailedOutput" : {
+            "detailVarReferences" : [
+              "Rocuronium_Dose",
+              "Rocuronium_Calc_Dose",
+              "Rocuronium_Calc_Amt"
+            ],
+            "name" : "Rocuronium Br 50mg\/5mL Injection",
+            "notes" : "Maximum dose: 50mg (5ml)\nRoute: IV bolus",
+            "primaryVarReference" : "Rocuronium_Calc_Amt"
+          }
+        },
+        {
+          "detailedOutput" : {
+            "detailVarReferences" : [
+              "Sodium Bicarbonate 8.4%_Dose",
+              "Sodium Bicarbonate 8.4%_Calc_Dose",
+              "Sodium Bicarbonate 8.4%_Calc_Amt"
+            ],
+            "name" : "Sodium Bicarbonate 8.4% (1mmol\/mL) Infusion",
+            "notes" : "8.4% - Infuse in Central Vein only\nMaximum dose: 50mmol (50ml)",
+            "primaryVarReference" : "Sodium Bicarbonate 8.4%_Calc_Amt"
+          }
+        },
+        {
+          "detailedOutput" : {
+            "detailVarReferences" : [
+              "Sodium Chloride 3%_Dose",
+              "Sodium Chloride 3%_Calc_Dose",
+              "Sodium Chloride 3%_Calc_Amt"
+            ],
+            "name" : "Sodium Chloride 3%",
+            "notes" : "Maximum dose: 200ml\nRoute: IV intermittent",
+            "primaryVarReference" : "Sodium Chloride 3%_Calc_Amt"
+          }
+        },
+        {
+          "detailedOutput" : {
+            "detailVarReferences" : [
+              "Suxamethonium Chloride First Dose_Dose",
+              "Suxamethonium Chloride First Dose_Calc_Dose",
+              "Suxamethonium Chloride First Dose_Calc_Amt"
+            ],
+            "name" : "Suxamethonium Chloride (100mg\/2mL) *FIRST Dose*",
+            "notes" : "Maximum dose: 24mg (2.4ml)\nRoute: IV bolus",
+            "primaryVarReference" : "Suxamethonium Chloride First Dose_Calc_Amt"
+          }
+        },
+        {
+          "detailedOutput" : {
+            "detailVarReferences" : [
+              "Salbutamol Inhaler_Dose",
+              "Salbutamol Inhaler_Calc_Dose",
+              "Salbutamol Inhaler_Calc_Amt"
+            ],
+            "name" : "Salbutamol Inhaler",
+            "notes" : "Maximum dose: 10 puffs\nRoute: 3.6 puffs",
+            "primaryVarReference" : "Salbutamol Inhaler_Calc_Amt"
+          }
+        },
+        {
+          "detailedOutput" : {
+            "detailVarReferences" : [
+              "Salbutamol Soluation_Dose",
+              "Salbutamol Soluation_Calc_Dose",
+              "Salbutamol Soluation_Calc_Amt"
+            ],
+            "name" : "Salbutamol 0.5% NEBULIZER Solution",
+            "notes" : "Maximum dose: 1ml\nRoute: Nebs",
+            "primaryVarReference" : "Salbutamol Soluation_Calc_Amt"
+          }
+        }
+      ],
+      "name" : "Bolus Drugs",
+      "showName" : true
+    },
+    {
+      "components" : [
 
       ],
-      "name" : "NOT IMPLEMENTED YET",
+      "name" : "Infusions",
       "showName" : true
     }
   ],

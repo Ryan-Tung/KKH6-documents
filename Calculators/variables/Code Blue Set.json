@@ -7,7 +7,7 @@
       }
     ],
     "decimals" : 1,
-    "displayName" : "ETT Uncuffed",
+    "displayName" : "Uncuffed ETT",
     "formula" : {
       "equation" : {
         "conditional" : [
@@ -89,7 +89,7 @@
       }
     ],
     "decimals" : 1,
-    "displayName" : "ETT Cuffed",
+    "displayName" : "Cuffed ETT",
     "formula" : {
       "equation" : {
         "sum" : [
@@ -306,7 +306,7 @@
             },
             "condition" : {
               "comparison" : {
-                "lessThan" : 0.08333333333333333
+                "lessThan" : 0.083333333333333329
               },
               "defaultState" : true,
               "variableReference" : "age"
@@ -692,9 +692,14 @@
     "displayName" : "Defibrillation:",
     "formula" : {
       "equation" : {
-        "product" : [
-          4,
-          "weight"
+        "smallest" : [
+          200,
+          {
+            "product" : [
+              4,
+              "weight"
+            ]
+          }
         ]
       },
       "parameters" : [
@@ -759,7 +764,7 @@
             "component" : 60,
             "condition" : {
               "comparison" : {
-                "lessThan" : 0.08333333333333333
+                "lessThan" : 0.083333333333333329
               },
               "defaultState" : true,
               "variableReference" : "age"

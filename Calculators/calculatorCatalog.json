@@ -1,41 +1,40 @@
 {
-    "categories": [
-        {
-            "name": "Emergency",
-            "calculators": [
-                "Code Blue",
-                "CHETS Calculator"
-            ]
-        },
-        {
-            "name": "Medical",
-            "calculators": [
-                "Fluids And Electrolytes",
-                "Fluids",
-                "Electrolytes",
-                "Sedation Weaning",
-                "Conversion Calculator",
-                "Weaning Calculator",
-            ]
-        },
-        {
-            "name": "Nursing",
-            "calculators": [
-                "CRRT Fluid Withdrawal",
-                "CICU Feeding Protocol",
-                "Peripheral Drug Administration Dilution",
-                "CAPD and WAT-1 Scoring",
-		"Peripheral Line Max Concentration"
-            ]
-        },
-        {
-            "name": "Severity Scores",
-            "calculators": [
-                "PIM3",
-                "PELOD2",
-                "pSOFA",
-                "Phoenix Sepsis Score"
-            ]
-        }
-    ]
+  "categories" : [
+    {
+      "calculators" : [
+        "Code Blue",
+        "CHETS Calculator"
+      ],
+      "name" : "Emergency"
+    },
+    {
+      "calculators" : [
+        "Fluids And Electrolytes",
+        "Fluids",
+        "Electrolytes",
+        "Sedation Weaning",
+        "Conversion Calculator",
+        "Weaning Calculator"
+      ],
+      "name" : "Medical"
+    },
+    {
+      "calculators" : [
+        "CRRT Fluid Withdrawal",
+        "CICU Feeding Protocol",
+        "Peripheral Line Max Concentration",
+        "CAPD and WAT-1 Scoring"
+      ],
+      "name" : "Nursing"
+    },
+    {
+      "calculators" : [
+        "PIM3",
+        "PELOD2",
+        "pSOFA",
+        "Phoenix Sepsis Score"
+      ],
+      "name" : "Severity Scores"
+    }
+  ]
 }

@@ -10,7 +10,7 @@
         "name" : "years"
       }
     ],
-    "decimals" : 0,
+    "decimals" : 1,
     "displayName" : "Age",
     "referenceName" : "age",
     "startingValue" : 0,

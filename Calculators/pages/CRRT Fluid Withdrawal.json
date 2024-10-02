@@ -1,7 +1,7 @@
 {
   "color" : {
-    "blue" : 1,
-    "green" : 0.47843137254901963,
+    "blue" : 0.99999994039535522,
+    "green" : 0.47843140363693237,
     "red" : 0
   },
   "groups" : [
@@ -42,9 +42,9 @@
               "allowsNegative" : true,
               "variableInfo" : {
                 "color" : {
-                  "blue" : 0.18823529411764706,
-                  "green" : 0.23137254901960785,
-                  "red" : 1
+                  "blue" : 0.18823528289794922,
+                  "green" : 0.23137253522872925,
+                  "red" : 0.99999994039535522
                 },
                 "variableReference" : "fluidBalanceAim"
               }
@@ -54,8 +54,8 @@
               "variableInfo" : {
                 "color" : {
                   "blue" : 0,
-                  "green" : 0.5843137254901961,
-                  "red" : 1
+                  "green" : 0.58431375026702881,
+                  "red" : 0.99999994039535522
                 },
                 "variableReference" : "currentBalance"
               }
@@ -77,8 +77,8 @@
                   "variableInfo" : {
                     "color" : {
                       "blue" : 0,
-                      "green" : 0.8,
-                      "red" : 1
+                      "green" : 0.80000001192092896,
+                      "red" : 0.99999994039535522
                     },
                     "variableReference" : "numberOfFeedingsLeft"
                   }
@@ -87,9 +87,9 @@
                   "allowsNegative" : false,
                   "variableInfo" : {
                     "color" : {
-                      "blue" : 0.34901960784313724,
-                      "green" : 0.7803921568627451,
-                      "red" : 0.20392156862745098
+                      "blue" : 0.34901958703994751,
+                      "green" : 0.78039216995239258,
+                      "red" : 0.20392152667045593
                     },
                     "variableReference" : "amountOfMilkFeeding"
                   }
@@ -113,8 +113,8 @@
                 "variableInfo" : {
                   "color" : {
                     "blue" : 0,
-                    "green" : 0.8,
-                    "red" : 1
+                    "green" : 0.80000001192092896,
+                    "red" : 0.99999994039535522
                   },
                   "variableReference" : "feedingRate"
                 }
@@ -144,8 +144,8 @@
               "allowsNegative" : false,
               "variableInfo" : {
                 "color" : {
-                  "blue" : 0.7450980392156863,
-                  "green" : 0.7803921568627451,
+                  "blue" : 0.7450980544090271,
+                  "green" : 0.78039216995239258,
                   "red" : 0
                 },
                 "variableReference" : "sideAndMainDripPerHour"
@@ -155,9 +155,9 @@
               "allowsNegative" : false,
               "variableInfo" : {
                 "color" : {
-                  "blue" : 0.9019607843137255,
-                  "green" : 0.6784313725490196,
-                  "red" : 0.19607843137254902
+                  "blue" : 0.90196079015731812,
+                  "green" : 0.67843139171600342,
+                  "red" : 0.19607838988304138
                 },
                 "variableReference" : "numberOfHoursUntil6am"
               }
@@ -179,8 +179,8 @@
               "allowsNegative" : false,
               "variableInfo" : {
                 "color" : {
-                  "blue" : 1,
-                  "green" : 0.47843137254901963,
+                  "blue" : 0.99999994039535522,
+                  "green" : 0.47843140363693237,
                   "red" : 0
                 },
                 "variableReference" : "ivMedications"
@@ -190,9 +190,9 @@
               "allowsNegative" : false,
               "variableInfo" : {
                 "color" : {
-                  "blue" : 0.8392156862745098,
-                  "green" : 0.33725490196078434,
-                  "red" : 0.34509803921568627
+                  "blue" : 0.83921575546264648,
+                  "green" : 0.33725488185882568,
+                  "red" : 0.34509801864624023
                 },
                 "variableReference" : "miscVolume"
               }
@@ -213,9 +213,9 @@
             "allowsNegative" : false,
             "variableInfo" : {
               "color" : {
-                "blue" : 0.3686274509803922,
-                "green" : 0.5176470588235295,
-                "red" : 0.6352941176470588
+                "blue" : 0.36862745881080627,
+                "green" : 0.51764702796936035,
+                "red" : 0.63529413938522339
               },
               "variableReference" : "chestTube"
             }
@@ -226,9 +226,9 @@
             "allowsNegative" : false,
             "variableInfo" : {
               "color" : {
-                "blue" : 0.3686274509803922,
-                "green" : 0.5176470588235295,
-                "red" : 0.6352941176470588
+                "blue" : 0.36862745881080627,
+                "green" : 0.51764702796936035,
+                "red" : 0.63529413938522339
               },
               "variableReference" : "urineOutput"
             }
@@ -239,9 +239,9 @@
             "allowsNegative" : false,
             "variableInfo" : {
               "color" : {
-                "blue" : 0.3686274509803922,
-                "green" : 0.5176470588235295,
-                "red" : 0.6352941176470588
+                "blue" : 0.36862745881080627,
+                "green" : 0.51764702796936035,
+                "red" : 0.63529413938522339
               },
               "variableReference" : "ngLosses"
             }
@@ -252,9 +252,9 @@
             "allowsNegative" : false,
             "variableInfo" : {
               "color" : {
-                "blue" : 0.3686274509803922,
-                "green" : 0.5176470588235295,
-                "red" : 0.6352941176470588
+                "blue" : 0.36862745881080627,
+                "green" : 0.51764702796936035,
+                "red" : 0.63529413938522339
               },
               "variableReference" : "drains"
             }
@@ -265,9 +265,9 @@
             "allowsNegative" : false,
             "variableInfo" : {
               "color" : {
-                "blue" : 0.3686274509803922,
-                "green" : 0.5176470588235295,
-                "red" : 0.6352941176470588
+                "blue" : 0.36862745881080627,
+                "green" : 0.51764702796936035,
+                "red" : 0.63529413938522339
               },
               "variableReference" : "miscVolumeOutput"
             }

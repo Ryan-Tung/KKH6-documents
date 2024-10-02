@@ -1,0 +1,503 @@
+[
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Pupil Reaction",
+    "referenceName" : "pupilReaction",
+    "startingValue" : -1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Elective Admission",
+    "referenceName" : "electiveAdmission",
+    "startingValue" : -1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Mechanical ventilation",
+    "referenceName" : "mechanicalVentilation",
+    "startingValue" : -1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mmHg"
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Systolic blood pressure",
+    "referenceName" : "pim3SystolicBloodPressure",
+    "startingValue" : 120,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mmHg"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "FiO2",
+    "referenceName" : "fiO2",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mmHg"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "PaO2",
+    "referenceName" : "paO2",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mmHg"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Recovery",
+    "referenceName" : "recovery",
+    "startingValue" : -1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Weighted Diagnosis",
+    "referenceName" : "weightedDiagnosis",
+    "startingValue" : -1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 3,
+    "displayName" : "PIM3 Score",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : {
+              "nilConstant" : null
+            },
+            "condition" : {
+              "comparison" : {
+                "lessThan" : 0
+              },
+              "defaultState" : true,
+              "variableReference" : "pupilReaction"
+            }
+          },
+          {
+            "component" : {
+              "sum" : [
+                {
+                  "product" : [
+                    "pupilReaction",
+                    3.8233090000000001
+                  ]
+                },
+                {
+                  "product" : [
+                    {
+                      "conditional" : [
+                        {
+                          "component" : {
+                            "nilConstant" : null
+                          },
+                          "condition" : {
+                            "comparison" : {
+                              "lessThan" : 0
+                            },
+                            "defaultState" : true,
+                            "variableReference" : "electiveAdmission"
+                          }
+                        },
+                        {
+                          "component" : "electiveAdmission"
+                        }
+                      ]
+                    },
+                    -0.53780159999999999
+                  ]
+                },
+                {
+                  "product" : [
+                    {
+                      "conditional" : [
+                        {
+                          "component" : {
+                            "nilConstant" : null
+                          },
+                          "condition" : {
+                            "comparison" : {
+                              "lessThan" : 0
+                            },
+                            "defaultState" : true,
+                            "variableReference" : "mechanicalVentilation"
+                          }
+                        },
+                        {
+                          "component" : "mechanicalVentilation"
+                        }
+                      ]
+                    },
+                    0.97634529999999997
+                  ]
+                },
+                {
+                  "product" : [
+                    {
+                      "division" : {
+                        "denominator" : 1000,
+                        "numerator" : {
+                          "power" : {
+                            "base" : {
+                              "conditional" : [
+                                {
+                                  "component" : 120,
+                                  "condition" : {
+                                    "comparison" : {
+                                      "equalTo" : 0
+                                    },
+                                    "defaultState" : true,
+                                    "variableReference" : "pim3SystolicBloodPressure"
+                                  }
+                                },
+                                {
+                                  "component" : "pim3SystolicBloodPressure"
+                                }
+                              ]
+                            },
+                            "exponent" : 2
+                          }
+                        }
+                      }
+                    },
+                    0.1715711
+                  ]
+                },
+                {
+                  "product" : [
+                    {
+                      "conditional" : [
+                        {
+                          "component" : 120,
+                          "condition" : {
+                            "comparison" : {
+                              "equalTo" : 0
+                            },
+                            "defaultState" : true,
+                            "variableReference" : "pim3SystolicBloodPressure"
+                          }
+                        },
+                        {
+                          "component" : "pim3SystolicBloodPressure"
+                        }
+                      ]
+                    },
+                    -0.043076799999999998
+                  ]
+                },
+                {
+                  "product" : [
+                    {
+                      "conditional" : [
+                        {
+                          "component" : 0.23000000000000001,
+                          "condition" : {
+                            "comparison" : {
+                              "equalTo" : 0
+                            },
+                            "defaultState" : true,
+                            "variableReference" : "fiO2"
+                          }
+                        },
+                        {
+                          "component" : 0.23000000000000001,
+                          "condition" : {
+                            "comparison" : {
+                              "equalTo" : 0
+                            },
+                            "defaultState" : true,
+                            "variableReference" : "paO2"
+                          }
+                        },
+                        {
+                          "component" : {
+                            "division" : {
+                              "denominator" : "paO2",
+                              "numerator" : {
+                                "product" : [
+                                  "fiO2",
+                                  100
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    0.42139939999999998
+                  ]
+                },
+                {
+                  "conditional" : [
+                    {
+                      "component" : 0,
+                      "condition" : {
+                        "comparison" : {
+                          "equalTo" : 0
+                        },
+                        "defaultState" : true,
+                        "variableReference" : "recovery"
+                      }
+                    },
+                    {
+                      "component" : -1.5164029999999999,
+                      "condition" : {
+                        "comparison" : {
+                          "equalTo" : 1
+                        },
+                        "defaultState" : true,
+                        "variableReference" : "recovery"
+                      }
+                    },
+                    {
+                      "component" : -0.87618479999999999,
+                      "condition" : {
+                        "comparison" : {
+                          "equalTo" : 2
+                        },
+                        "defaultState" : true,
+                        "variableReference" : "recovery"
+                      }
+                    },
+                    {
+                      "component" : -1.224559,
+                      "condition" : {
+                        "comparison" : {
+                          "equalTo" : 3
+                        },
+                        "defaultState" : true,
+                        "variableReference" : "recovery"
+                      }
+                    },
+                    {
+                      "component" : {
+                        "nilConstant" : null
+                      }
+                    }
+                  ]
+                },
+                {
+                  "conditional" : [
+                    {
+                      "component" : 0,
+                      "condition" : {
+                        "comparison" : {
+                          "equalTo" : 0
+                        },
+                        "defaultState" : true,
+                        "variableReference" : "weightedDiagnosis"
+                      }
+                    },
+                    {
+                      "component" : -2.1766489999999998,
+                      "condition" : {
+                        "comparison" : {
+                          "equalTo" : 1
+                        },
+                        "defaultState" : true,
+                        "variableReference" : "weightedDiagnosis"
+                      }
+                    },
+                    {
+                      "component" : 1.0725420000000001,
+                      "condition" : {
+                        "comparison" : {
+                          "equalTo" : 2
+                        },
+                        "defaultState" : true,
+                        "variableReference" : "weightedDiagnosis"
+                      }
+                    },
+                    {
+                      "component" : 1.622484,
+                      "condition" : {
+                        "comparison" : {
+                          "equalTo" : 3
+                        },
+                        "defaultState" : true,
+                        "variableReference" : "weightedDiagnosis"
+                      }
+                    },
+                    {
+                      "component" : {
+                        "nilConstant" : null
+                      }
+                    }
+                  ]
+                },
+                {
+                  "conditional" : [
+                    {
+                      "component" : 0,
+                      "condition" : {
+                        "comparison" : {
+                          "equalTo" : 0
+                        },
+                        "defaultState" : true,
+                        "variableReference" : "baseExcess"
+                      }
+                    },
+                    {
+                      "component" : {
+                        "product" : [
+                          {
+                            "largest" : [
+                              "baseExcess",
+                              {
+                                "negative" : "baseExcess"
+                              }
+                            ]
+                          },
+                          0.067125500000000005
+                        ]
+                      }
+                    }
+                  ]
+                },
+                -1.7927930000000001
+              ]
+            }
+          }
+        ]
+      },
+      "parameters" : [
+        "baseExcess",
+        "electiveAdmission",
+        "fiO2",
+        "mechanicalVentilation",
+        "paO2",
+        "pim3SystolicBloodPressure",
+        "pupilReaction",
+        "recovery",
+        "weightedDiagnosis"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "pim3Score",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 3,
+    "displayName" : "Probability",
+    "formula" : {
+      "equation" : {
+        "division" : {
+          "denominator" : {
+            "sum" : [
+              1,
+              {
+                "power" : {
+                  "base" : 2.7182818284590451,
+                  "exponent" : "pim3Score"
+                }
+              }
+            ]
+          },
+          "numerator" : {
+            "power" : {
+              "base" : 2.7182818284590451,
+              "exponent" : "pim3Score"
+            }
+          }
+        }
+      },
+      "parameters" : [
+        "pim3Score"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "pim3Probability",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  }
+]

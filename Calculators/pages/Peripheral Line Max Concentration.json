@@ -1,8 +1,8 @@
 {
   "color" : {
-    "blue" : 1,
-    "green" : 0.47843137254901963,
-    "red" : 0
+    "blue" : 0.18823528289794922,
+    "green" : 0.23137253522872925,
+    "red" : 0.99999994039535522
   },
   "groups" : [
     {
@@ -14,7 +14,7 @@
     }
   ],
   "image" : {
-    "sfSymbol" : "questionmark.square.dashed"
+    "sfSymbol" : "syringe.fill"
   },
   "name" : "Peripheral Line Max Concentration",
   "nested" : false

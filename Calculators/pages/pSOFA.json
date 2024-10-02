@@ -1,20 +1,412 @@
 {
   "color" : {
-    "blue" : 1,
-    "green" : 0.47843137254901963,
-    "red" : 0
+    "blue" : 0.18823528289794922,
+    "green" : 0.23137253522872925,
+    "red" : 0.99999994039535522
   },
   "groups" : [
     {
       "components" : [
-
+        {
+          "inputPrimary" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0.83921575546264648,
+                "green" : 0.33725488185882568,
+                "red" : 0.34509801864624023
+              },
+              "variableReference" : "age"
+            }
+          }
+        }
       ],
-      "name" : "NOT IMPLEMENTED YET",
+      "name" : "",
+      "showName" : false
+    },
+    {
+      "components" : [
+        {
+          "discreteInput" : {
+            "presentationStyle" : "segmented",
+            "values" : [
+              {
+                "displayName" : "PaO2 : FiO2",
+                "value" : 0
+              },
+              {
+                "displayName" : "SpO2 : FiO2",
+                "value" : 1
+              }
+            ],
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0.90196079015731812,
+                "green" : 0.67843139171600342,
+                "red" : 0.19607838988304138
+              },
+              "variableReference" : "respiratoryInputType"
+            }
+          }
+        },
+        {
+          "inputSingle" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0.99999994039535522,
+                "green" : 0.47843140363693237,
+                "red" : 0
+              },
+              "variableReference" : "respiratoryInput"
+            }
+          }
+        },
+        {
+          "output" : "respiratoryOutput"
+        }
+      ],
+      "name" : "Respiratory",
+      "showName" : true
+    },
+    {
+      "components" : [
+        {
+          "inputSingle" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0.99999994039535522,
+                "green" : 0.47843140363693237,
+                "red" : 0
+              },
+              "variableReference" : "coagulationPlatelets"
+            }
+          }
+        },
+        {
+          "output" : "coagulationOutput"
+        }
+      ],
+      "name" : "Coagulation",
+      "notes" : "Note: x10⁹\/L = x10³\/uL",
+      "showName" : true
+    },
+    {
+      "components" : [
+        {
+          "inputSingle" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0.99999994039535522,
+                "green" : 0.47843140363693237,
+                "red" : 0
+              },
+              "variableReference" : "pSOFABilirubin"
+            }
+          }
+        },
+        {
+          "output" : "bilirubinOutput"
+        }
+      ],
+      "name" : "Hepatic",
+      "notes" : "Note: to convert from mg\/dL to µmol\/L, multiply by 17.1",
+      "showName" : true
+    },
+    {
+      "components" : [
+        {
+          "toggle" : {
+            "color" : {
+              "blue" : 0.99999994039535522,
+              "green" : 0.47843140363693237,
+              "red" : 0
+            },
+            "variableReference" : "cardiovascularOnInotropes"
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "inputSingle" : {
+                "allowsNegative" : false,
+                "variableInfo" : {
+                  "color" : {
+                    "blue" : 0.99999994039535522,
+                    "green" : 0.47843140363693237,
+                    "red" : 0
+                  },
+                  "variableReference" : "cardioMAP"
+                }
+              }
+            },
+            "condition" : {
+              "comparison" : {
+                "equalTo" : 0
+              },
+              "defaultState" : true,
+              "variableReference" : "cardiovascularOnInotropes"
+            }
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "output" : "cardiovascularOutput"
+            },
+            "condition" : {
+              "comparison" : {
+                "equalTo" : 0
+              },
+              "defaultState" : true,
+              "variableReference" : "cardiovascularOnInotropes"
+            }
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "discreteInput" : {
+                "presentationStyle" : "menu",
+                "values" : [
+                  {
+                    "displayName" : "Select",
+                    "value" : -1
+                  },
+                  {
+                    "displayName" : "Yes",
+                    "value" : 1
+                  },
+                  {
+                    "displayName" : "No",
+                    "value" : 0
+                  }
+                ],
+                "variableInfo" : {
+                  "color" : {
+                    "blue" : 0.99999994039535522,
+                    "green" : 0.47843140363693237,
+                    "red" : 0
+                  },
+                  "variableReference" : "inotropeQuestionOne"
+                }
+              }
+            },
+            "condition" : {
+              "comparison" : {
+                "equalTo" : 1
+              },
+              "defaultState" : true,
+              "variableReference" : "cardiovascularOnInotropes"
+            }
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "output" : "inotropeQuestionOneOutput"
+            },
+            "condition" : {
+              "comparison" : {
+                "equalTo" : 1
+              },
+              "defaultState" : true,
+              "variableReference" : "cardiovascularOnInotropes"
+            }
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "discreteInput" : {
+                "presentationStyle" : "menu",
+                "values" : [
+                  {
+                    "displayName" : "Select",
+                    "value" : -1
+                  },
+                  {
+                    "displayName" : "Yes",
+                    "value" : 1
+                  },
+                  {
+                    "displayName" : "No",
+                    "value" : 0
+                  }
+                ],
+                "variableInfo" : {
+                  "color" : {
+                    "blue" : 0.99999994039535522,
+                    "green" : 0.47843140363693237,
+                    "red" : 0
+                  },
+                  "variableReference" : "inotropeQuestionTwo"
+                }
+              }
+            },
+            "condition" : {
+              "comparison" : {
+                "equalTo" : 1
+              },
+              "defaultState" : true,
+              "variableReference" : "cardiovascularOnInotropes"
+            }
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "output" : "inotropeQuestionTwoOutput"
+            },
+            "condition" : {
+              "comparison" : {
+                "equalTo" : 1
+              },
+              "defaultState" : true,
+              "variableReference" : "cardiovascularOnInotropes"
+            }
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "discreteInput" : {
+                "presentationStyle" : "menu",
+                "values" : [
+                  {
+                    "displayName" : "Select",
+                    "value" : -1
+                  },
+                  {
+                    "displayName" : "Yes",
+                    "value" : 1
+                  },
+                  {
+                    "displayName" : "No",
+                    "value" : 0
+                  }
+                ],
+                "variableInfo" : {
+                  "color" : {
+                    "blue" : 0.99999994039535522,
+                    "green" : 0.47843140363693237,
+                    "red" : 0
+                  },
+                  "variableReference" : "inotropeQuestionThree"
+                }
+              }
+            },
+            "condition" : {
+              "comparison" : {
+                "equalTo" : 1
+              },
+              "defaultState" : true,
+              "variableReference" : "cardiovascularOnInotropes"
+            }
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "output" : "inotropeQuestionThreeOutput"
+            },
+            "condition" : {
+              "comparison" : {
+                "equalTo" : 1
+              },
+              "defaultState" : true,
+              "variableReference" : "cardiovascularOnInotropes"
+            }
+          }
+        }
+      ],
+      "name" : "Cardiovascular",
+      "showName" : true
+    },
+    {
+      "components" : [
+        {
+          "inputSingle" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0.99999994039535522,
+                "green" : 0.47843140363693237,
+                "red" : 0
+              },
+              "variableReference" : "neurologicGCS"
+            }
+          }
+        },
+        {
+          "output" : "neurlogicalOutput"
+        }
+      ],
+      "name" : "Neurological",
+      "showName" : true
+    },
+    {
+      "components" : [
+        {
+          "inputSingle" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0.99999994039535522,
+                "green" : 0.47843140363693237,
+                "red" : 0
+              },
+              "variableReference" : "pSOFARenalCreatinine"
+            }
+          }
+        },
+        {
+          "output" : "renalOutput"
+        }
+      ],
+      "name" : "Renal",
+      "notes" : "Note: to convert from mg\/dL to µmol\/L, multiply by 88.4",
+      "showName" : true
+    },
+    {
+      "components" : [
+        {
+          "conditional" : {
+            "component" : {
+              "output" : "pSOFAScoreNonInotrope"
+            },
+            "condition" : {
+              "comparison" : {
+                "equalTo" : 0
+              },
+              "defaultState" : true,
+              "variableReference" : "cardiovascularOnInotropes"
+            }
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "output" : "pSOFAScoreInotrope"
+            },
+            "condition" : {
+              "comparison" : {
+                "equalTo" : 1
+              },
+              "defaultState" : true,
+              "variableReference" : "cardiovascularOnInotropes"
+            }
+          }
+        }
+      ],
+      "name" : "pSOFA Score",
       "showName" : true
     }
   ],
   "image" : {
-    "sfSymbol" : "questionmark.square.dashed"
+    "sfSymbol" : "heart.slash.fill"
   },
   "name" : "pSOFA",
   "nested" : false

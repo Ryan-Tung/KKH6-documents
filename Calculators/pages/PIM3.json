@@ -1,20 +1,234 @@
 {
   "color" : {
-    "blue" : 1,
-    "green" : 0.47843137254901963,
+    "blue" : 0.7450980544090271,
+    "green" : 0.78039216995239258,
     "red" : 0
   },
   "groups" : [
     {
       "components" : [
-
+        {
+          "discreteInput" : {
+            "presentationStyle" : "menu",
+            "values" : [
+              {
+                "displayName" : "Select",
+                "value" : -1
+              },
+              {
+                "displayName" : ">3 mm and both fixed",
+                "value" : 1
+              },
+              {
+                "displayName" : "Other or unknown",
+                "value" : 0
+              }
+            ],
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0.18823528289794922,
+                "green" : 0.23137253522872925,
+                "red" : 0.99999994039535522
+              },
+              "variableReference" : "pupilReaction"
+            }
+          }
+        },
+        {
+          "discreteInput" : {
+            "presentationStyle" : "menu",
+            "values" : [
+              {
+                "displayName" : "Select",
+                "value" : -1
+              },
+              {
+                "displayName" : "Yes",
+                "value" : 1
+              },
+              {
+                "displayName" : "No",
+                "value" : 0
+              }
+            ],
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0,
+                "green" : 0.58431375026702881,
+                "red" : 0.99999994039535522
+              },
+              "variableReference" : "electiveAdmission"
+            }
+          }
+        },
+        {
+          "discreteInput" : {
+            "presentationStyle" : "menu",
+            "values" : [
+              {
+                "displayName" : "Select",
+                "value" : -1
+              },
+              {
+                "displayName" : "Yes",
+                "value" : 1
+              },
+              {
+                "displayName" : "No",
+                "value" : 0
+              }
+            ],
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0,
+                "green" : 0.80000001192092896,
+                "red" : 0.99999994039535522
+              },
+              "variableReference" : "mechanicalVentilation"
+            }
+          }
+        },
+        {
+          "inputSingle" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0.34901958703994751,
+                "green" : 0.78039216995239258,
+                "red" : 0.20392152667045593
+              },
+              "variableReference" : "baseExcess"
+            }
+          }
+        },
+        {
+          "inputSingle" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0.90196079015731812,
+                "green" : 0.67843139171600342,
+                "red" : 0.19607838988304138
+              },
+              "variableReference" : "pim3SystolicBloodPressure"
+            }
+          }
+        },
+        {
+          "inputDual" : {
+            "lhs" : {
+              "allowsNegative" : false,
+              "variableInfo" : {
+                "color" : {
+                  "blue" : 0.99999994039535522,
+                  "green" : 0.47843140363693237,
+                  "red" : 0
+                },
+                "variableReference" : "fiO2"
+              }
+            },
+            "rhs" : {
+              "allowsNegative" : false,
+              "variableInfo" : {
+                "color" : {
+                  "blue" : 0.83921575546264648,
+                  "green" : 0.33725488185882568,
+                  "red" : 0.34509801864624023
+                },
+                "variableReference" : "paO2"
+              }
+            }
+          }
+        },
+        {
+          "discreteInput" : {
+            "presentationStyle" : "menu",
+            "values" : [
+              {
+                "displayName" : "Select",
+                "value" : -1
+              },
+              {
+                "displayName" : "No",
+                "value" : 0
+              },
+              {
+                "displayName" : "Yes, recovery from non-cardiac procedure",
+                "value" : 1
+              },
+              {
+                "displayName" : "Yes, recovery from non-bypass cardiac procedure",
+                "value" : 2
+              },
+              {
+                "displayName" : "Yes, recovery from a bypass procedure",
+                "value" : 3
+              }
+            ],
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0.18823528289794922,
+                "green" : 0.23137253522872925,
+                "red" : 0.99999994039535522
+              },
+              "variableReference" : "recovery"
+            }
+          }
+        },
+        {
+          "discreteInput" : {
+            "presentationStyle" : "menu",
+            "values" : [
+              {
+                "displayName" : "Select",
+                "value" : -1
+              },
+              {
+                "displayName" : "No",
+                "value" : 0
+              },
+              {
+                "displayName" : "Low Risk",
+                "value" : 1
+              },
+              {
+                "displayName" : "High Risk",
+                "value" : 2
+              },
+              {
+                "displayName" : "Very High Risk",
+                "value" : 3
+              }
+            ],
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0.87058824300765991,
+                "green" : 0.32156863808631897,
+                "red" : 0.68627452850341797
+              },
+              "variableReference" : "weightedDiagnosis"
+            }
+          }
+        }
       ],
-      "name" : "NOT IMPLEMENTED YET",
+      "name" : "Input",
+      "showName" : true
+    },
+    {
+      "components" : [
+        {
+          "output" : "pim3Score"
+        },
+        {
+          "output" : "pim3Probability"
+        }
+      ],
+      "name" : "Score",
       "showName" : true
     }
   ],
   "image" : {
-    "sfSymbol" : "questionmark.square.dashed"
+    "sfSymbol" : "percent"
   },
   "name" : "PIM3",
   "nested" : false

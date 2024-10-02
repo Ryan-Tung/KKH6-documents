@@ -1,8 +1,8 @@
 {
   "color" : {
-    "blue" : 0.8392156862745098,
-    "green" : 0.33725490196078434,
-    "red" : 0.34509803921568627
+    "blue" : 0.83921575546264648,
+    "green" : 0.33725488185882568,
+    "red" : 0.34509801864624023
   },
   "groups" : [
     {
@@ -12,9 +12,9 @@
             "allowsNegative" : false,
             "variableInfo" : {
               "color" : {
-                "blue" : 0.8392156862745098,
-                "green" : 0.33725490196078434,
-                "red" : 0.34509803921568627
+                "blue" : 0.83921575546264648,
+                "green" : 0.33725488185882568,
+                "red" : 0.34509801864624023
               },
               "variableReference" : "weight"
             }
@@ -32,8 +32,8 @@
             "variableInfo" : {
               "color" : {
                 "blue" : 0,
-                "green" : 0.5843137254901961,
-                "red" : 1
+                "green" : 0.58431375026702881,
+                "red" : 0.99999994039535522
               },
               "variableReference" : "initialIVMorphineInfusionRate"
             }
@@ -91,8 +91,8 @@
             "variableInfo" : {
               "color" : {
                 "blue" : 0,
-                "green" : 0.5843137254901961,
-                "red" : 1
+                "green" : 0.58431375026702881,
+                "red" : 0.99999994039535522
               },
               "variableReference" : "initialIVMidazolamInfusionRate"
             }

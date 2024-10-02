@@ -1,0 +1,1489 @@
+[
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Input Type",
+    "referenceName" : "respiratoryInputType",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "ratio",
+    "referenceName" : "respiratoryInput",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "respiratoryPfScore",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : 0,
+            "condition" : {
+              "comparison" : {
+                "greaterThanOrEqualTo" : 400
+              },
+              "defaultState" : true,
+              "variableReference" : "respiratoryInput"
+            }
+          },
+          {
+            "component" : 1,
+            "condition" : {
+              "comparison" : {
+                "greaterThanOrEqualTo" : 300
+              },
+              "defaultState" : true,
+              "variableReference" : "respiratoryInput"
+            }
+          },
+          {
+            "component" : 2,
+            "condition" : {
+              "comparison" : {
+                "greaterThanOrEqualTo" : 200
+              },
+              "defaultState" : true,
+              "variableReference" : "respiratoryInput"
+            }
+          },
+          {
+            "component" : 3,
+            "condition" : {
+              "comparison" : {
+                "greaterThanOrEqualTo" : 100
+              },
+              "defaultState" : true,
+              "variableReference" : "respiratoryInput"
+            }
+          },
+          {
+            "component" : 4,
+            "condition" : {
+              "comparison" : {
+                "greaterThan" : 1
+              },
+              "defaultState" : true,
+              "variableReference" : "respiratoryInput"
+            }
+          },
+          {
+            "component" : 0
+          }
+        ]
+      },
+      "parameters" : [
+        "respiratoryInput"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "respiratoryPfScore",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "respiratorySfScore",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : 0,
+            "condition" : {
+              "comparison" : {
+                "greaterThanOrEqualTo" : 292
+              },
+              "defaultState" : true,
+              "variableReference" : "respiratoryInput"
+            }
+          },
+          {
+            "component" : 1,
+            "condition" : {
+              "comparison" : {
+                "greaterThanOrEqualTo" : 264
+              },
+              "defaultState" : true,
+              "variableReference" : "respiratoryInput"
+            }
+          },
+          {
+            "component" : 2,
+            "condition" : {
+              "comparison" : {
+                "greaterThanOrEqualTo" : 221
+              },
+              "defaultState" : true,
+              "variableReference" : "respiratoryInput"
+            }
+          },
+          {
+            "component" : 3,
+            "condition" : {
+              "comparison" : {
+                "greaterThanOrEqualTo" : 148
+              },
+              "defaultState" : true,
+              "variableReference" : "respiratoryInput"
+            }
+          },
+          {
+            "component" : 4,
+            "condition" : {
+              "comparison" : {
+                "greaterThan" : 1
+              },
+              "defaultState" : true,
+              "variableReference" : "respiratoryInput"
+            }
+          },
+          {
+            "component" : 0
+          }
+        ]
+      },
+      "parameters" : [
+        "respiratoryInput"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "respiratorySfScore",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Respiratory Score",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : "respiratoryPfScore",
+            "condition" : {
+              "comparison" : {
+                "equalTo" : 0
+              },
+              "defaultState" : true,
+              "variableReference" : "respiratoryInputType"
+            }
+          },
+          {
+            "component" : "respiratorySfScore"
+          }
+        ]
+      },
+      "parameters" : [
+        "respiratoryInputType",
+        "respiratoryPfScore",
+        "respiratorySfScore"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "respiratoryOutput",
+    "startingValue" : 0,
+    "subtitle" : "Between 0 and 4 inclusive",
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Coagulation Score",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : 0,
+            "condition" : {
+              "comparison" : {
+                "greaterThanOrEqualTo" : 150
+              },
+              "defaultState" : true,
+              "variableReference" : "coagulationPlatelets"
+            }
+          },
+          {
+            "component" : 1,
+            "condition" : {
+              "comparison" : {
+                "greaterThanOrEqualTo" : 100
+              },
+              "defaultState" : true,
+              "variableReference" : "coagulationPlatelets"
+            }
+          },
+          {
+            "component" : 2,
+            "condition" : {
+              "comparison" : {
+                "greaterThanOrEqualTo" : 50
+              },
+              "defaultState" : true,
+              "variableReference" : "coagulationPlatelets"
+            }
+          },
+          {
+            "component" : 3,
+            "condition" : {
+              "comparison" : {
+                "greaterThanOrEqualTo" : 20
+              },
+              "defaultState" : true,
+              "variableReference" : "coagulationPlatelets"
+            }
+          },
+          {
+            "component" : 4,
+            "condition" : {
+              "comparison" : {
+                "greaterThan" : 1
+              },
+              "defaultState" : true,
+              "variableReference" : "coagulationPlatelets"
+            }
+          },
+          {
+            "component" : 0
+          }
+        ]
+      },
+      "parameters" : [
+        "coagulationPlatelets"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "coagulationOutput",
+    "startingValue" : 0,
+    "subtitle" : "Between 0 and 4 inclusive",
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "µmol\/L"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "Bilirubin",
+    "referenceName" : "pSOFABilirubin",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "µmol\/L"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Hepatic Score",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : 4,
+            "condition" : {
+              "comparison" : {
+                "greaterThan" : 205.19999999999999
+              },
+              "defaultState" : true,
+              "variableReference" : "pSOFABilirubin"
+            }
+          },
+          {
+            "component" : 3,
+            "condition" : {
+              "comparison" : {
+                "greaterThanOrEqualTo" : 102.59999999999999
+              },
+              "defaultState" : true,
+              "variableReference" : "pSOFABilirubin"
+            }
+          },
+          {
+            "component" : 2,
+            "condition" : {
+              "comparison" : {
+                "greaterThanOrEqualTo" : 34.200000000000003
+              },
+              "defaultState" : true,
+              "variableReference" : "pSOFABilirubin"
+            }
+          },
+          {
+            "component" : 1,
+            "condition" : {
+              "comparison" : {
+                "greaterThanOrEqualTo" : 20.5
+              },
+              "defaultState" : true,
+              "variableReference" : "pSOFABilirubin"
+            }
+          },
+          {
+            "component" : 0,
+            "condition" : {
+              "comparison" : {
+                "greaterThan" : 0.10000000000000001
+              },
+              "defaultState" : true,
+              "variableReference" : "pSOFABilirubin"
+            }
+          },
+          {
+            "component" : 0
+          }
+        ]
+      },
+      "parameters" : [
+        "pSOFABilirubin"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "bilirubinOutput",
+    "startingValue" : 0,
+    "subtitle" : "Between 0 and 4 inclusive",
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Is the patient on inotropes?",
+    "referenceName" : "cardiovascularOnInotropes",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Cardiovascular Score",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : {
+              "conditional" : [
+                {
+                  "component" : 0,
+                  "condition" : {
+                    "comparison" : {
+                      "greaterThanOrEqualTo" : 46
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "cardioMAP"
+                  }
+                },
+                {
+                  "component" : 1,
+                  "condition" : {
+                    "comparison" : {
+                      "greaterThan" : 1
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "cardioMAP"
+                  }
+                },
+                {
+                  "component" : 0
+                }
+              ]
+            },
+            "condition" : {
+              "comparison" : {
+                "lessThan" : 0.083333333300000006
+              },
+              "defaultState" : true,
+              "variableReference" : "age"
+            }
+          },
+          {
+            "component" : {
+              "conditional" : [
+                {
+                  "component" : 0,
+                  "condition" : {
+                    "comparison" : {
+                      "greaterThanOrEqualTo" : 55
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "cardioMAP"
+                  }
+                },
+                {
+                  "component" : 1,
+                  "condition" : {
+                    "comparison" : {
+                      "greaterThan" : 1
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "cardioMAP"
+                  }
+                },
+                {
+                  "component" : 0
+                }
+              ]
+            },
+            "condition" : {
+              "comparison" : {
+                "lessThanOrEqualTo" : 0.91666666669999997
+              },
+              "defaultState" : true,
+              "variableReference" : "age"
+            }
+          },
+          {
+            "component" : {
+              "conditional" : [
+                {
+                  "component" : 0,
+                  "condition" : {
+                    "comparison" : {
+                      "greaterThanOrEqualTo" : 60
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "cardioMAP"
+                  }
+                },
+                {
+                  "component" : 1,
+                  "condition" : {
+                    "comparison" : {
+                      "greaterThan" : 1
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "cardioMAP"
+                  }
+                },
+                {
+                  "component" : 0
+                }
+              ]
+            },
+            "condition" : {
+              "comparison" : {
+                "lessThanOrEqualTo" : 1.9166666667000001
+              },
+              "defaultState" : true,
+              "variableReference" : "age"
+            }
+          },
+          {
+            "component" : {
+              "conditional" : [
+                {
+                  "component" : 0,
+                  "condition" : {
+                    "comparison" : {
+                      "greaterThanOrEqualTo" : 62
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "cardioMAP"
+                  }
+                },
+                {
+                  "component" : 1,
+                  "condition" : {
+                    "comparison" : {
+                      "greaterThan" : 1
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "cardioMAP"
+                  }
+                },
+                {
+                  "component" : 0
+                }
+              ]
+            },
+            "condition" : {
+              "comparison" : {
+                "lessThanOrEqualTo" : 4.9166666667000003
+              },
+              "defaultState" : true,
+              "variableReference" : "age"
+            }
+          },
+          {
+            "component" : {
+              "conditional" : [
+                {
+                  "component" : 0,
+                  "condition" : {
+                    "comparison" : {
+                      "greaterThanOrEqualTo" : 65
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "cardioMAP"
+                  }
+                },
+                {
+                  "component" : 1,
+                  "condition" : {
+                    "comparison" : {
+                      "greaterThan" : 1
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "cardioMAP"
+                  }
+                },
+                {
+                  "component" : 0
+                }
+              ]
+            },
+            "condition" : {
+              "comparison" : {
+                "lessThanOrEqualTo" : 11.916666666699999
+              },
+              "defaultState" : true,
+              "variableReference" : "age"
+            }
+          },
+          {
+            "component" : {
+              "conditional" : [
+                {
+                  "component" : 0,
+                  "condition" : {
+                    "comparison" : {
+                      "greaterThanOrEqualTo" : 67
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "cardioMAP"
+                  }
+                },
+                {
+                  "component" : 1,
+                  "condition" : {
+                    "comparison" : {
+                      "greaterThan" : 1
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "cardioMAP"
+                  }
+                },
+                {
+                  "component" : 0
+                }
+              ]
+            },
+            "condition" : {
+              "comparison" : {
+                "lessThanOrEqualTo" : 18
+              },
+              "defaultState" : true,
+              "variableReference" : "age"
+            }
+          },
+          {
+            "component" : {
+              "conditional" : [
+                {
+                  "component" : 0,
+                  "condition" : {
+                    "comparison" : {
+                      "greaterThanOrEqualTo" : 70
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "cardioMAP"
+                  }
+                },
+                {
+                  "component" : 1,
+                  "condition" : {
+                    "comparison" : {
+                      "greaterThan" : 1
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "cardioMAP"
+                  }
+                },
+                {
+                  "component" : 0
+                }
+              ]
+            },
+            "condition" : {
+              "comparison" : {
+                "greaterThan" : 18
+              },
+              "defaultState" : true,
+              "variableReference" : "age"
+            }
+          }
+        ]
+      },
+      "parameters" : [
+        "age",
+        "cardioMAP"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "cardiovascularOutput",
+    "startingValue" : 0,
+    "subtitle" : "Between 0 and 1 inclusive",
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Dopamine ≤ 5 or Dobutamine (any dose)",
+    "referenceName" : "inotropeQuestionOne",
+    "startingValue" : -1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Dopamine > 5 or Adrenaline ≤ 0.1 or Noradrenaline ≤ 0.1",
+    "referenceName" : "inotropeQuestionTwo",
+    "startingValue" : -1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Dopamine > 5 or Adrenaline > 0.1 or Noradrenaline > 0.1",
+    "referenceName" : "inotropeQuestionThree",
+    "startingValue" : -1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Inotrope Question 1 Score",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : 0,
+            "condition" : {
+              "comparison" : {
+                "equalTo" : 0
+              },
+              "defaultState" : true,
+              "variableReference" : "inotropeQuestionOne"
+            }
+          },
+          {
+            "component" : 2,
+            "condition" : {
+              "comparison" : {
+                "equalTo" : 1
+              },
+              "defaultState" : true,
+              "variableReference" : "inotropeQuestionOne"
+            }
+          }
+        ]
+      },
+      "parameters" : [
+        "inotropeQuestionOne"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "inotropeQuestionOneOutput",
+    "startingValue" : -1,
+    "subtitle" : "Either 0 or 2",
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Inotrope Question 2 Score",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : 0,
+            "condition" : {
+              "comparison" : {
+                "equalTo" : 0
+              },
+              "defaultState" : true,
+              "variableReference" : "inotropeQuestionTwo"
+            }
+          },
+          {
+            "component" : 3,
+            "condition" : {
+              "comparison" : {
+                "equalTo" : 1
+              },
+              "defaultState" : true,
+              "variableReference" : "inotropeQuestionTwo"
+            }
+          }
+        ]
+      },
+      "parameters" : [
+        "inotropeQuestionTwo"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "inotropeQuestionTwoOutput",
+    "startingValue" : -1,
+    "subtitle" : "Either 0 or 3",
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Inotrope Question 3 Score",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : 0,
+            "condition" : {
+              "comparison" : {
+                "equalTo" : 0
+              },
+              "defaultState" : true,
+              "variableReference" : "inotropeQuestionThree"
+            }
+          },
+          {
+            "component" : 4,
+            "condition" : {
+              "comparison" : {
+                "equalTo" : 1
+              },
+              "defaultState" : true,
+              "variableReference" : "inotropeQuestionThree"
+            }
+          }
+        ]
+      },
+      "parameters" : [
+        "inotropeQuestionThree"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "inotropeQuestionThreeOutput",
+    "startingValue" : -1,
+    "subtitle" : "Either 0 or 4",
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Neurological Score",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : 0,
+            "condition" : {
+              "comparison" : {
+                "equalTo" : 15
+              },
+              "defaultState" : true,
+              "variableReference" : "neurologicGCS"
+            }
+          },
+          {
+            "component" : 1,
+            "condition" : {
+              "comparison" : {
+                "greaterThanOrEqualTo" : 13
+              },
+              "defaultState" : true,
+              "variableReference" : "neurologicGCS"
+            }
+          },
+          {
+            "component" : 2,
+            "condition" : {
+              "comparison" : {
+                "greaterThanOrEqualTo" : 10
+              },
+              "defaultState" : true,
+              "variableReference" : "neurologicGCS"
+            }
+          },
+          {
+            "component" : 3,
+            "condition" : {
+              "comparison" : {
+                "greaterThanOrEqualTo" : 6
+              },
+              "defaultState" : true,
+              "variableReference" : "neurologicGCS"
+            }
+          },
+          {
+            "component" : 4,
+            "condition" : {
+              "comparison" : {
+                "greaterThanOrEqualTo" : 3
+              },
+              "defaultState" : true,
+              "variableReference" : "neurologicGCS"
+            }
+          },
+          {
+            "component" : 0
+          }
+        ]
+      },
+      "parameters" : [
+        "neurologicGCS"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "neurlogicalOutput",
+    "startingValue" : 0,
+    "subtitle" : "Between 0 and 4 inclusive",
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "µmol\/L"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "Creatinine",
+    "referenceName" : "pSOFARenalCreatinine",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "µmol\/L"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Renal Score",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : {
+              "conditional" : [
+                {
+                  "component" : 4,
+                  "condition" : {
+                    "comparison" : {
+                      "greaterThanOrEqualTo" : 141.40000000000001
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "pSOFARenalCreatinine"
+                  }
+                },
+                {
+                  "component" : 3,
+                  "condition" : {
+                    "comparison" : {
+                      "greaterThanOrEqualTo" : 106.09999999999999
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "pSOFARenalCreatinine"
+                  }
+                },
+                {
+                  "component" : 2,
+                  "condition" : {
+                    "comparison" : {
+                      "greaterThanOrEqualTo" : 88.400000000000006
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "pSOFARenalCreatinine"
+                  }
+                },
+                {
+                  "component" : 1,
+                  "condition" : {
+                    "comparison" : {
+                      "greaterThanOrEqualTo" : 70.700000000000003
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "pSOFARenalCreatinine"
+                  }
+                },
+                {
+                  "component" : 0
+                }
+              ]
+            },
+            "condition" : {
+              "comparison" : {
+                "lessThan" : 0.083333333300000006
+              },
+              "defaultState" : true,
+              "variableReference" : "age"
+            }
+          },
+          {
+            "component" : {
+              "conditional" : [
+                {
+                  "component" : 4,
+                  "condition" : {
+                    "comparison" : {
+                      "greaterThanOrEqualTo" : 106.09999999999999
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "pSOFARenalCreatinine"
+                  }
+                },
+                {
+                  "component" : 3,
+                  "condition" : {
+                    "comparison" : {
+                      "greaterThanOrEqualTo" : 70.700000000000003
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "pSOFARenalCreatinine"
+                  }
+                },
+                {
+                  "component" : 2,
+                  "condition" : {
+                    "comparison" : {
+                      "greaterThanOrEqualTo" : 44.200000000000003
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "pSOFARenalCreatinine"
+                  }
+                },
+                {
+                  "component" : 1,
+                  "condition" : {
+                    "comparison" : {
+                      "greaterThanOrEqualTo" : 26.5
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "pSOFARenalCreatinine"
+                  }
+                },
+                {
+                  "component" : 0
+                }
+              ]
+            },
+            "condition" : {
+              "comparison" : {
+                "lessThanOrEqualTo" : 0.91666666669999997
+              },
+              "defaultState" : true,
+              "variableReference" : "age"
+            }
+          },
+          {
+            "component" : {
+              "conditional" : [
+                {
+                  "component" : 4,
+                  "condition" : {
+                    "comparison" : {
+                      "greaterThanOrEqualTo" : 132.59999999999999
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "pSOFARenalCreatinine"
+                  }
+                },
+                {
+                  "component" : 3,
+                  "condition" : {
+                    "comparison" : {
+                      "greaterThanOrEqualTo" : 97.200000000000003
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "pSOFARenalCreatinine"
+                  }
+                },
+                {
+                  "component" : 2,
+                  "condition" : {
+                    "comparison" : {
+                      "greaterThanOrEqualTo" : 53
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "pSOFARenalCreatinine"
+                  }
+                },
+                {
+                  "component" : 1,
+                  "condition" : {
+                    "comparison" : {
+                      "greaterThanOrEqualTo" : 35.399999999999999
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "pSOFARenalCreatinine"
+                  }
+                },
+                {
+                  "component" : 0
+                }
+              ]
+            },
+            "condition" : {
+              "comparison" : {
+                "lessThanOrEqualTo" : 1.9166666667000001
+              },
+              "defaultState" : true,
+              "variableReference" : "age"
+            }
+          },
+          {
+            "component" : {
+              "conditional" : [
+                {
+                  "component" : 4,
+                  "condition" : {
+                    "comparison" : {
+                      "greaterThanOrEqualTo" : 203.30000000000001
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "pSOFARenalCreatinine"
+                  }
+                },
+                {
+                  "component" : 3,
+                  "condition" : {
+                    "comparison" : {
+                      "greaterThanOrEqualTo" : 141.40000000000001
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "pSOFARenalCreatinine"
+                  }
+                },
+                {
+                  "component" : 2,
+                  "condition" : {
+                    "comparison" : {
+                      "greaterThanOrEqualTo" : 79.599999999999994
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "pSOFARenalCreatinine"
+                  }
+                },
+                {
+                  "component" : 1,
+                  "condition" : {
+                    "comparison" : {
+                      "greaterThanOrEqualTo" : 53
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "pSOFARenalCreatinine"
+                  }
+                },
+                {
+                  "component" : 0
+                }
+              ]
+            },
+            "condition" : {
+              "comparison" : {
+                "lessThanOrEqualTo" : 4.9166666667000003
+              },
+              "defaultState" : true,
+              "variableReference" : "age"
+            }
+          },
+          {
+            "component" : {
+              "conditional" : [
+                {
+                  "component" : 4,
+                  "condition" : {
+                    "comparison" : {
+                      "greaterThanOrEqualTo" : 229.80000000000001
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "pSOFARenalCreatinine"
+                  }
+                },
+                {
+                  "component" : 3,
+                  "condition" : {
+                    "comparison" : {
+                      "greaterThanOrEqualTo" : 159.09999999999999
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "pSOFARenalCreatinine"
+                  }
+                },
+                {
+                  "component" : 2,
+                  "condition" : {
+                    "comparison" : {
+                      "greaterThanOrEqualTo" : 97.200000000000003
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "pSOFARenalCreatinine"
+                  }
+                },
+                {
+                  "component" : 1,
+                  "condition" : {
+                    "comparison" : {
+                      "greaterThanOrEqualTo" : 61.899999999999999
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "pSOFARenalCreatinine"
+                  }
+                },
+                {
+                  "component" : 0
+                }
+              ]
+            },
+            "condition" : {
+              "comparison" : {
+                "lessThanOrEqualTo" : 11.916666666699999
+              },
+              "defaultState" : true,
+              "variableReference" : "age"
+            }
+          },
+          {
+            "component" : {
+              "conditional" : [
+                {
+                  "component" : 4,
+                  "condition" : {
+                    "comparison" : {
+                      "greaterThanOrEqualTo" : 371.30000000000001
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "pSOFARenalCreatinine"
+                  }
+                },
+                {
+                  "component" : 3,
+                  "condition" : {
+                    "comparison" : {
+                      "greaterThanOrEqualTo" : 256.39999999999998
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "pSOFARenalCreatinine"
+                  }
+                },
+                {
+                  "component" : 2,
+                  "condition" : {
+                    "comparison" : {
+                      "greaterThanOrEqualTo" : 150.30000000000001
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "pSOFARenalCreatinine"
+                  }
+                },
+                {
+                  "component" : 1,
+                  "condition" : {
+                    "comparison" : {
+                      "greaterThanOrEqualTo" : 88.400000000000006
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "pSOFARenalCreatinine"
+                  }
+                },
+                {
+                  "component" : 0
+                }
+              ]
+            },
+            "condition" : {
+              "comparison" : {
+                "lessThanOrEqualTo" : 18
+              },
+              "defaultState" : true,
+              "variableReference" : "age"
+            }
+          },
+          {
+            "component" : {
+              "conditional" : [
+                {
+                  "component" : 4,
+                  "condition" : {
+                    "comparison" : {
+                      "greaterThanOrEqualTo" : 442
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "pSOFARenalCreatinine"
+                  }
+                },
+                {
+                  "component" : 3,
+                  "condition" : {
+                    "comparison" : {
+                      "greaterThanOrEqualTo" : 309.39999999999998
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "pSOFARenalCreatinine"
+                  }
+                },
+                {
+                  "component" : 2,
+                  "condition" : {
+                    "comparison" : {
+                      "greaterThanOrEqualTo" : 176.80000000000001
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "pSOFARenalCreatinine"
+                  }
+                },
+                {
+                  "component" : 1,
+                  "condition" : {
+                    "comparison" : {
+                      "greaterThanOrEqualTo" : 106.09999999999999
+                    },
+                    "defaultState" : true,
+                    "variableReference" : "pSOFARenalCreatinine"
+                  }
+                },
+                {
+                  "component" : 0
+                }
+              ]
+            },
+            "condition" : {
+              "comparison" : {
+                "greaterThan" : 18
+              },
+              "defaultState" : true,
+              "variableReference" : "age"
+            }
+          }
+        ]
+      },
+      "parameters" : [
+        "age",
+        "pSOFARenalCreatinine"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "renalOutput",
+    "startingValue" : 0,
+    "subtitle" : "Between 0 and 4 inclusive",
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Cumulative pSOFA Score",
+    "formula" : {
+      "equation" : {
+        "sum" : [
+          "respiratoryOutput",
+          "coagulationOutput",
+          "bilirubinOutput",
+          "cardiovascularOutput",
+          "neurlogicalOutput",
+          "renalOutput"
+        ]
+      },
+      "parameters" : [
+        "bilirubinOutput",
+        "cardiovascularOutput",
+        "coagulationOutput",
+        "neurlogicalOutput",
+        "renalOutput",
+        "respiratoryOutput"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "pSOFAScoreNonInotrope",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Cumulative pSOFA Score",
+    "formula" : {
+      "equation" : {
+        "sum" : [
+          "respiratoryOutput",
+          "coagulationOutput",
+          "bilirubinOutput",
+          "inotropeQuestionOneOutput",
+          "inotropeQuestionTwoOutput",
+          "inotropeQuestionThreeOutput",
+          "neurlogicalOutput",
+          "renalOutput"
+        ]
+      },
+      "parameters" : [
+        "bilirubinOutput",
+        "coagulationOutput",
+        "inotropeQuestionOneOutput",
+        "inotropeQuestionThreeOutput",
+        "inotropeQuestionTwoOutput",
+        "neurlogicalOutput",
+        "renalOutput",
+        "respiratoryOutput"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "pSOFAScoreInotrope",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  }
+]
