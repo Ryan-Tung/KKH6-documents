@@ -1,11 +1,15 @@
 [
   {
+    "calcAmountUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
     "calcDoseUnit" : {
       "conversionScale" : 1,
       "name" : "mL"
     },
     "conversionFactor" : 1,
-    "displayName" : "Adrenaline [Epinephrine] 1:10,000 (1mg\/10ml) Injection",
+    "displayName" : "Adrenaline [Epinephrine] 1:10,000 (1mg\/10ml)",
     "dose" : 0.10000000000000001,
     "doseUnit" : {
       "conversionScale" : 1,
@@ -16,12 +20,16 @@
     "referenceName" : "Adrenaline"
   },
   {
+    "calcAmountUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
     "calcDoseUnit" : {
       "conversionScale" : 1,
       "name" : "mg"
     },
     "conversionFactor" : 1.6666666666666667,
-    "displayName" : "Atropine Sulfate 600mcg\/mL Injection",
+    "displayName" : "Atropine Sulfate 600mcg\/mL",
     "dose" : 0.02,
     "doseUnit" : {
       "conversionScale" : 1,
@@ -32,12 +40,16 @@
     "referenceName" : "Atropine Sulfate"
   },
   {
+    "calcAmountUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
     "calcDoseUnit" : {
       "conversionScale" : 1,
       "name" : "mL"
     },
     "conversionFactor" : 1,
-    "displayName" : "Albumin 5% Solution",
+    "displayName" : "Albumin 5%",
     "dose" : {
       "boundaryValue" : 20,
       "value" : 10
@@ -49,12 +61,16 @@
     "referenceName" : "Albumin"
   },
   {
+    "calcAmountUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
     "calcDoseUnit" : {
       "conversionScale" : 1,
       "name" : "mL"
     },
     "conversionFactor" : 1,
-    "displayName" : "Calcium Chloride 10% (5.5mmol\/10mL) Injection",
+    "displayName" : "Calcium Chloride 10% (5.5mmol\/10mL)",
     "dose" : 0.20000000000000001,
     "doseUnit" : {
       "conversionScale" : 1,
@@ -65,12 +81,16 @@
     "referenceName" : "Calcium Chloride"
   },
   {
+    "calcAmountUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
     "calcDoseUnit" : {
       "conversionScale" : 1,
       "name" : "mL"
     },
     "conversionFactor" : 1,
-    "displayName" : "Dextrose 25% Infusion",
+    "displayName" : "Dextrose 25%",
     "dose" : 2,
     "doseUnit" : {
       "conversionScale" : 1,
@@ -81,12 +101,16 @@
     "referenceName" : "Dextrose"
   },
   {
+    "calcAmountUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
     "calcDoseUnit" : {
       "conversionScale" : 1,
       "name" : "mL"
     },
     "conversionFactor" : 1,
-    "displayName" : "Sodium Chloride 0.9% Infusion",
+    "displayName" : "Sodium Chloride 0.9%",
     "dose" : {
       "boundaryValue" : 20,
       "value" : 10
@@ -98,12 +122,16 @@
     "referenceName" : "Sodium Chloride"
   },
   {
+    "calcAmountUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
     "calcDoseUnit" : {
       "conversionScale" : 1,
       "name" : "mmol"
     },
     "conversionFactor" : 1,
-    "displayName" : "Sodium Bicarbonate 8.4% (1mmol\/mL) Infusion",
+    "displayName" : "Sodium Bicarbonate 8.4% (1mmol\/mL)",
     "dose" : 1,
     "doseUnit" : {
       "conversionScale" : 1,
@@ -114,12 +142,16 @@
     "referenceName" : "Sodium Bicarbonate 8.4%"
   },
   {
+    "calcAmountUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
     "calcDoseUnit" : {
       "conversionScale" : 1,
       "name" : "mmol"
     },
     "conversionFactor" : 2,
-    "displayName" : "Sodium Bicarbonate 4.2% (0.5mmol\/mL) Infusion",
+    "displayName" : "Sodium Bicarbonate 4.2% (0.5mmol\/mL)",
     "dose" : 1,
     "doseUnit" : {
       "conversionScale" : 1,
@@ -130,12 +162,16 @@
     "referenceName" : "Sodium Bicarbonate 4.2%"
   },
   {
+    "calcAmountUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
     "calcDoseUnit" : {
       "conversionScale" : 1,
       "name" : "mg"
     },
     "conversionFactor" : 0.02,
-    "displayName" : "Suxamethonium Chloride 100mg\/2mL Injection",
+    "displayName" : "Suxamethonium Chloride 100mg\/2mL",
     "dose" : {
       "boundaryValue" : 2,
       "value" : 1
@@ -149,12 +185,16 @@
     "referenceName" : "Suxamethonium Chloride"
   },
   {
+    "calcAmountUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
     "calcDoseUnit" : {
       "conversionScale" : 1,
       "name" : "mg"
     },
     "conversionFactor" : 0.20000000000000001,
-    "displayName" : "Midazolam 5mg\/mL Injection",
+    "displayName" : "Midazolam 5mg\/mL",
     "dose" : {
       "boundaryValue" : 0.29999999999999999,
       "value" : 0.10000000000000001
@@ -168,12 +208,16 @@
     "referenceName" : "Midazolam"
   },
   {
+    "calcAmountUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
     "calcDoseUnit" : {
       "conversionScale" : 1,
       "name" : "mg"
     },
     "conversionFactor" : 0.10000000000000001,
-    "displayName" : "Morphine Sulfate 10mg\/mL Injection",
+    "displayName" : "Morphine Sulfate 10mg\/mL",
     "dose" : 0.10000000000000001,
     "doseUnit" : {
       "conversionScale" : 1,
@@ -184,22 +228,30 @@
     "referenceName" : "Morphine Sulfate"
   },
   {
+    "calcAmountUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
     "calcDoseUnit" : {
       "conversionScale" : 1,
       "name" : "mg"
     },
     "conversionFactor" : 0.10000000000000001,
-    "displayName" : "Rocuronium Br 50mg\/5mL Injection",
+    "displayName" : "Rocuronium Br 50mg\/5mL",
     "dose" : 1,
     "doseUnit" : {
       "conversionScale" : 1,
       "name" : "mg\/kg"
     },
     "maxCalcDose" : 50,
-    "notes" : "Maximum dose: 50mg (5ml)\nRoute: IV bolus",
+    "notes" : "Maximum dose: 50mg (5ml)",
     "referenceName" : "Rocuronium"
   },
   {
+    "calcAmountUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
     "calcDoseUnit" : {
       "conversionScale" : 1,
       "name" : "mg"
@@ -216,6 +268,30 @@
     "referenceName" : "Adenosine"
   },
   {
+    "calcAmountUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
+    "calcDoseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg"
+    },
+    "conversionFactor" : 10,
+    "displayName" : "Adrenaline [Ephinephrine] 0.1mg\/ml (1 : 10,000)",
+    "dose" : 0.01,
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg\/kg"
+    },
+    "maxCalcDose" : 1,
+    "notes" : "Maximum dose: 1mg (10ml)\nRoute: IV bolus",
+    "referenceName" : "Adrenaline CHETS"
+  },
+  {
+    "calcAmountUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
     "calcDoseUnit" : {
       "conversionScale" : 1,
       "name" : "mg"
@@ -232,6 +308,50 @@
     "referenceName" : "Amiodarone"
   },
   {
+    "calcAmountUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
+    "calcDoseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg"
+    },
+    "conversionFactor" : 10,
+    "displayName" : "Atropine Sulfate 600mcg\/mL",
+    "dose" : 0.02,
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg\/kg"
+    },
+    "maxCalcDose" : 0.59999999999999998,
+    "notes" : "Maximum dose: 0.6mg\/600mcg (6ml)\nRoute: IV rapid bolus",
+    "referenceName" : "Atropine Sulfate CHETS"
+  },
+  {
+    "calcAmountUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
+    "calcDoseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
+    "conversionFactor" : 1,
+    "displayName" : "Calcium Chloride 10% (6.8mmol\/10mL)",
+    "dose" : 0.20000000000000001,
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL\/kg"
+    },
+    "maxCalcDose" : 20,
+    "notes" : "Maximum dose: 20mL\nRoute: IV slow bolus",
+    "referenceName" : "Calcium Chloride CHETS"
+  },
+  {
+    "calcAmountUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
     "calcDoseUnit" : {
       "conversionScale" : 1,
       "name" : "mL"
@@ -248,6 +368,10 @@
     "referenceName" : "Calcium Gluconate"
   },
   {
+    "calcAmountUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
     "calcDoseUnit" : {
       "conversionScale" : 1,
       "name" : "mL"
@@ -264,6 +388,10 @@
     "referenceName" : "Dextrose Hypoglycemia"
   },
   {
+    "calcAmountUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
     "calcDoseUnit" : {
       "conversionScale" : 1,
       "name" : "mL"
@@ -280,6 +408,30 @@
     "referenceName" : "Dextrose Hyperkalemia"
   },
   {
+    "calcAmountUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
+    "calcDoseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
+    "conversionFactor" : 1,
+    "displayName" : "Dextrose 25%",
+    "dose" : 2,
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL\/kg"
+    },
+    "maxCalcDose" : 100,
+    "notes" : "Maximum dose: 100ml\nRoute: IV bolus",
+    "referenceName" : "Dextrose CHETS"
+  },
+  {
+    "calcAmountUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
     "calcDoseUnit" : {
       "conversionScale" : 1,
       "name" : "mg"
@@ -296,6 +448,10 @@
     "referenceName" : "Diazepam"
   },
   {
+    "calcAmountUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
     "calcDoseUnit" : {
       "conversionScale" : 1,
       "name" : "mg"
@@ -312,6 +468,10 @@
     "referenceName" : "Diphenydramine"
   },
   {
+    "calcAmountUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
     "calcDoseUnit" : {
       "conversionScale" : 1,
       "name" : "mcg"
@@ -328,6 +488,10 @@
     "referenceName" : "Flumazenil"
   },
   {
+    "calcAmountUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
     "calcDoseUnit" : {
       "conversionScale" : 1,
       "name" : "mg"
@@ -344,6 +508,10 @@
     "referenceName" : "Hydrocortisone"
   },
   {
+    "calcAmountUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
     "calcDoseUnit" : {
       "conversionScale" : 1,
       "name" : "mg"
@@ -360,6 +528,10 @@
     "referenceName" : "Hydrocortisone Stress Dose"
   },
   {
+    "calcAmountUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
     "calcDoseUnit" : {
       "conversionScale" : 1,
       "name" : "mg"
@@ -376,6 +548,10 @@
     "referenceName" : "Ketamine"
   },
   {
+    "calcAmountUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
     "calcDoseUnit" : {
       "conversionScale" : 1,
       "name" : "mg"
@@ -392,6 +568,10 @@
     "referenceName" : "Midazolam CHETS"
   },
   {
+    "calcAmountUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
     "calcDoseUnit" : {
       "conversionScale" : 1,
       "name" : "mg"
@@ -408,6 +588,10 @@
     "referenceName" : "Morphine Sulfate CHETS"
   },
   {
+    "calcAmountUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
     "calcDoseUnit" : {
       "conversionScale" : 1,
       "name" : "mg"
@@ -424,6 +608,10 @@
     "referenceName" : "Naloxone"
   },
   {
+    "calcAmountUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
     "calcDoseUnit" : {
       "conversionScale" : 1,
       "name" : "mg"
@@ -440,6 +628,50 @@
     "referenceName" : "Phenobarbitone"
   },
   {
+    "calcAmountUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
+    "calcDoseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg"
+    },
+    "conversionFactor" : 0.10000000000000001,
+    "displayName" : "Rocuronium Br (50mg\/5mL) *FIRST dose*",
+    "dose" : 1,
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg\/kg"
+    },
+    "maxCalcDose" : 50,
+    "notes" : "Maximum dose: 50mg (5ml)\nRoute: IV bolus",
+    "referenceName" : "Rocuronium CHETS"
+  },
+  {
+    "calcAmountUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
+    "calcDoseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mmol"
+    },
+    "conversionFactor" : 2,
+    "displayName" : "Sodium Bicarbonate 8.4% (1mmol\/mL)",
+    "dose" : 1,
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mmol\/kg"
+    },
+    "maxCalcDose" : 50,
+    "notes" : "Maximum dose: 50mmol (50ml)\nRoute: IV slow bolus",
+    "referenceName" : "Sodium Bicarbonate 8.4% CHETS"
+  },
+  {
+    "calcAmountUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
     "calcDoseUnit" : {
       "conversionScale" : 1,
       "name" : "mL"
@@ -456,6 +688,10 @@
     "referenceName" : "Sodium Chloride 3%"
   },
   {
+    "calcAmountUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
     "calcDoseUnit" : {
       "conversionScale" : 1,
       "name" : "mg"
@@ -472,6 +708,10 @@
     "referenceName" : "Suxamethonium Chloride First Dose"
   },
   {
+    "calcAmountUnit" : {
+      "conversionScale" : 1,
+      "name" : "puffs"
+    },
     "calcDoseUnit" : {
       "conversionScale" : 1,
       "name" : "puffs"
@@ -488,6 +728,10 @@
     "referenceName" : "Salbutamol Inhaler"
   },
   {
+    "calcAmountUnit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    },
     "calcDoseUnit" : {
       "conversionScale" : 1,
       "name" : "mL"

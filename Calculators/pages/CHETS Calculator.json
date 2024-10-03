@@ -120,13 +120,13 @@
         {
           "detailedOutput" : {
             "detailVarReferences" : [
-              "Adrenaline_Dose",
-              "Adrenaline_Calc_Dose",
-              "Adrenaline_Calc_Amt"
+              "Adrenaline CHETS_Dose",
+              "Adrenaline CHETS_Calc_Dose",
+              "Adrenaline CHETS_Calc_Amt"
             ],
-            "name" : "Adrenaline [Epinephrine] 1:10,000 (1mg\/10ml) Injection",
-            "notes" : "Maximum dose: 1mg (10mL)",
-            "primaryVarReference" : "Adrenaline_Calc_Amt"
+            "name" : "Adrenaline [Ephinephrine] 0.1mg\/ml (1 : 10,000)",
+            "notes" : "Maximum dose: 1mg (10ml)\nRoute: IV bolus",
+            "primaryVarReference" : "Adrenaline CHETS_Calc_Amt"
           }
         },
         {
@@ -144,25 +144,25 @@
         {
           "detailedOutput" : {
             "detailVarReferences" : [
-              "Atropine Sulfate_Dose",
-              "Atropine Sulfate_Calc_Dose",
-              "Atropine Sulfate_Calc_Amt"
+              "Atropine Sulfate CHETS_Dose",
+              "Atropine Sulfate CHETS_Calc_Dose",
+              "Atropine Sulfate CHETS_Calc_Amt"
             ],
-            "name" : "Atropine Sulfate 600mcg\/mL Injection",
-            "notes" : "Minimum dose: 100mcg (0.17 mL)\nMaximum dose: 600mcg (1 mL)",
-            "primaryVarReference" : "Atropine Sulfate_Calc_Amt"
+            "name" : "Atropine Sulfate 600mcg\/mL",
+            "notes" : "Maximum dose: 0.6mg\/600mcg (6ml)\nRoute: IV rapid bolus",
+            "primaryVarReference" : "Atropine Sulfate CHETS_Calc_Amt"
           }
         },
         {
           "detailedOutput" : {
             "detailVarReferences" : [
-              "Calcium Chloride_Dose",
-              "Calcium Chloride_Calc_Dose",
-              "Calcium Chloride_Calc_Amt"
+              "Calcium Chloride CHETS_Dose",
+              "Calcium Chloride CHETS_Calc_Dose",
+              "Calcium Chloride CHETS_Calc_Amt"
             ],
-            "name" : "Calcium Chloride 10% (5.5mmol\/10mL) Injection",
-            "notes" : "Use Large or Central vein.\nMaximum dose: 20mL",
-            "primaryVarReference" : "Calcium Chloride_Calc_Amt"
+            "name" : "Calcium Chloride 10% (6.8mmol\/10mL)",
+            "notes" : "Maximum dose: 20mL\nRoute: IV slow bolus",
+            "primaryVarReference" : "Calcium Chloride CHETS_Calc_Amt"
           }
         },
         {
@@ -204,13 +204,13 @@
         {
           "detailedOutput" : {
             "detailVarReferences" : [
-              "Dextrose_Dose",
-              "Dextrose_Calc_Dose",
-              "Dextrose_Calc_Amt"
+              "Dextrose CHETS_Dose",
+              "Dextrose CHETS_Calc_Dose",
+              "Dextrose CHETS_Calc_Amt"
             ],
-            "name" : "Dextrose 25% Infusion",
-            "notes" : "Dilute Dextrose 50% with same amount of WFI (1:1) to get 25% solution.\nMaximum dose: 100ml",
-            "primaryVarReference" : "Dextrose_Calc_Amt"
+            "name" : "Dextrose 25%",
+            "notes" : "Maximum dose: 100ml\nRoute: IV bolus",
+            "primaryVarReference" : "Dextrose CHETS_Calc_Amt"
           }
         },
         {
@@ -288,25 +288,25 @@
         {
           "detailedOutput" : {
             "detailVarReferences" : [
-              "Midazolam_Dose",
-              "Midazolam_Calc_Dose",
-              "Midazolam_Calc_Amt"
+              "Midazolam CHETS_Dose",
+              "Midazolam CHETS_Calc_Dose",
+              "Midazolam CHETS_Calc_Amt"
             ],
-            "name" : "Midazolam 5mg\/mL Injection",
-            "notes" : "Dilute 1ml (5mg) to final volume 5ml NS (1mg\/ml)\nMaximum dose: 5mg (5ml)",
-            "primaryVarReference" : "Midazolam_Calc_Amt"
+            "name" : "Midazolam (15mg\/3mL)",
+            "notes" : "Maximum dose: 5mg (5ml)\nRoute: IV bolus",
+            "primaryVarReference" : "Midazolam CHETS_Calc_Amt"
           }
         },
         {
           "detailedOutput" : {
             "detailVarReferences" : [
-              "Morphine Sulfate_Dose",
-              "Morphine Sulfate_Calc_Dose",
-              "Morphine Sulfate_Calc_Amt"
+              "Morphine Sulfate CHETS_Dose",
+              "Morphine Sulfate CHETS_Calc_Dose",
+              "Morphine Sulfate CHETS_Calc_Amt"
             ],
-            "name" : "Morphine Sulfate 10mg\/mL Injection",
-            "notes" : "Dilute 1ml (10mg) to final volume 10ml NS (1mg\/ml)\nMaximum dose: 5mg (5ml)",
-            "primaryVarReference" : "Morphine Sulfate_Calc_Amt"
+            "name" : "Morphine Sulfate (10mg\/mL)",
+            "notes" : "Maximum dose: 5mg (1ml)\nRoute: IV slow bolus",
+            "primaryVarReference" : "Morphine Sulfate CHETS_Calc_Amt"
           }
         },
         {
@@ -336,25 +336,25 @@
         {
           "detailedOutput" : {
             "detailVarReferences" : [
-              "Rocuronium_Dose",
-              "Rocuronium_Calc_Dose",
-              "Rocuronium_Calc_Amt"
+              "Rocuronium CHETS_Dose",
+              "Rocuronium CHETS_Calc_Dose",
+              "Rocuronium CHETS_Calc_Amt"
             ],
-            "name" : "Rocuronium Br 50mg\/5mL Injection",
+            "name" : "Rocuronium Br (50mg\/5mL) *FIRST dose*",
             "notes" : "Maximum dose: 50mg (5ml)\nRoute: IV bolus",
-            "primaryVarReference" : "Rocuronium_Calc_Amt"
+            "primaryVarReference" : "Rocuronium CHETS_Calc_Amt"
           }
         },
         {
           "detailedOutput" : {
             "detailVarReferences" : [
-              "Sodium Bicarbonate 8.4%_Dose",
-              "Sodium Bicarbonate 8.4%_Calc_Dose",
-              "Sodium Bicarbonate 8.4%_Calc_Amt"
+              "Sodium Bicarbonate 8.4% CHETS_Dose",
+              "Sodium Bicarbonate 8.4% CHETS_Calc_Dose",
+              "Sodium Bicarbonate 8.4% CHETS_Calc_Amt"
             ],
-            "name" : "Sodium Bicarbonate 8.4% (1mmol\/mL) Infusion",
-            "notes" : "8.4% - Infuse in Central Vein only\nMaximum dose: 50mmol (50ml)",
-            "primaryVarReference" : "Sodium Bicarbonate 8.4%_Calc_Amt"
+            "name" : "Sodium Bicarbonate 8.4% (1mmol\/mL)",
+            "notes" : "Maximum dose: 50mmol (50ml)\nRoute: IV slow bolus",
+            "primaryVarReference" : "Sodium Bicarbonate 8.4% CHETS_Calc_Amt"
           }
         },
         {
