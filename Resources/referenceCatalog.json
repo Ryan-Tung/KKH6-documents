@@ -1,0 +1,123 @@
+[
+  {
+    "color" : {
+      "blue" : 0.18823528289794922,
+      "green" : 0.23137253522872925,
+      "red" : 0.99999994039535522
+    },
+    "name" : "Cardiovascular",
+    "symbol" : {
+      "sfSymbol" : "heart.fill"
+    }
+  },
+  {
+    "color" : {
+      "blue" : 0.78039216995239258,
+      "green" : 0.69019609689712524,
+      "red" : 0.18823528289794922
+    },
+    "name" : "Drugs",
+    "symbol" : {
+      "sfSymbol" : "pills.fill"
+    }
+  },
+  {
+    "color" : {
+      "blue" : 0.18823528289794922,
+      "green" : 0.23137253522872925,
+      "red" : 0.99999994039535522
+    },
+    "name" : "End of Life Care",
+    "symbol" : {
+      "sfSymbol" : "cross.circle.fill"
+    }
+  },
+  {
+    "color" : {
+      "blue" : 0.90196079015731812,
+      "green" : 0.67843139171600342,
+      "red" : 0.19607838988304138
+    },
+    "name" : "Extra-Corporeal Life Support",
+    "symbol" : {
+      "custom" : "extra.corporeal.life.support.fill"
+    }
+  },
+  {
+    "color" : {
+      "blue" : 0.55686277151107788,
+      "green" : 0.60392159223556519,
+      "red" : 0.92156863212585449
+    },
+    "name" : "GI & Renal",
+    "symbol" : {
+      "custom" : "stomach.fill"
+    }
+  },
+  {
+    "color" : {
+      "blue" : 0.34901958703994751,
+      "green" : 0.78039216995239258,
+      "red" : 0.20392152667045593
+    },
+    "name" : "Infection",
+    "symbol" : {
+      "sfSymbol" : "microbe.fill"
+    }
+  },
+  {
+    "color" : {
+      "blue" : 0.57647061347961426,
+      "green" : 0.55686277151107788,
+      "red" : 0.55686277151107788
+    },
+    "name" : "Miscellaneous",
+    "symbol" : {
+      "sfSymbol" : "ellipsis"
+    }
+  },
+  {
+    "color" : {
+      "blue" : 0.33333331346511841,
+      "green" : 0.17647057771682739,
+      "red" : 0.99999994039535522
+    },
+    "name" : "Neurological",
+    "symbol" : {
+      "custom" : "brain.head.profile.fill"
+    }
+  },
+  {
+    "color" : {
+      "blue" : 0.90196079015731812,
+      "green" : 0.67843139171600342,
+      "red" : 0.19607838988304138
+    },
+    "name" : "Respiratory",
+    "symbol" : {
+      "sfSymbol" : "lungs.fill"
+    }
+  },
+  {
+    "color" : {
+      "blue" : 0.33333331346511841,
+      "green" : 0.17647057771682739,
+      "red" : 0.99999994039535522
+    },
+    "name" : "Resuscitation",
+    "symbol" : {
+      "sfSymbol" : "waveform.path.ecg.rectangle"
+    }
+  },
+  {
+    "color" : {
+      "blue" : 0.99999994039535522,
+      "green" : 0.47843140363693237,
+      "red" : 0
+    },
+    "name" : "Analgosedation and Delirium",
+    "symbol" : {
+      "sfSymbol" : "zzz"
+    }
+  }
+]
