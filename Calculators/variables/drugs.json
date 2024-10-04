@@ -15,8 +15,9 @@
       "conversionScale" : 1,
       "name" : "mL\/kg"
     },
+    "isPreDilutionAmount" : false,
     "maxCalcDose" : 10,
-    "notes" : "Maximum dose: 1mg (10mL)",
+    "notes" : "Maximum dose: 1mg",
     "referenceName" : "Adrenaline"
   },
   {
@@ -35,8 +36,9 @@
       "conversionScale" : 1,
       "name" : "mg\/kg"
     },
+    "isPreDilutionAmount" : false,
     "maxCalcDose" : 0.59999999999999998,
-    "notes" : "Minimum dose: 100mcg (0.17 mL)\nMaximum dose: 600mcg (1 mL)",
+    "notes" : "Minimum dose: 100mcg\nMaximum dose: 600mcg",
     "referenceName" : "Atropine Sulfate"
   },
   {
@@ -58,6 +60,7 @@
       "conversionScale" : 1,
       "name" : "mL\/kg"
     },
+    "isPreDilutionAmount" : false,
     "referenceName" : "Albumin"
   },
   {
@@ -76,8 +79,9 @@
       "conversionScale" : 1,
       "name" : "mL\/kg"
     },
+    "isPreDilutionAmount" : false,
     "maxCalcDose" : 20,
-    "notes" : "Use Large or Central vein.\nMaximum dose: 20mL",
+    "notes" : "Use Large or Central vein.\nMaximum dose: 20ml",
     "referenceName" : "Calcium Chloride"
   },
   {
@@ -96,6 +100,7 @@
       "conversionScale" : 1,
       "name" : "mL\/kg"
     },
+    "isPreDilutionAmount" : true,
     "maxCalcDose" : 100,
     "notes" : "Dilute Dextrose 50% with same amount of WFI (1:1) to get 25% solution.\nMaximum dose: 100ml",
     "referenceName" : "Dextrose"
@@ -119,6 +124,7 @@
       "conversionScale" : 1,
       "name" : "mL\/kg"
     },
+    "isPreDilutionAmount" : false,
     "referenceName" : "Sodium Chloride"
   },
   {
@@ -137,8 +143,9 @@
       "conversionScale" : 1,
       "name" : "mmol\/kg"
     },
+    "isPreDilutionAmount" : false,
     "maxCalcDose" : 50,
-    "notes" : "8.4% - Infuse in Central Vein only\nMaximum dose: 50mmol (50ml)",
+    "notes" : "8.4% - Infuse in Central Vein only\nMaximum dose: 50mmol",
     "referenceName" : "Sodium Bicarbonate 8.4%"
   },
   {
@@ -157,8 +164,9 @@
       "conversionScale" : 1,
       "name" : "mmol\/kg"
     },
+    "isPreDilutionAmount" : true,
     "maxCalcDose" : 50,
-    "notes" : "4.2% - Safe for peripheral vein infusion\nDilute NaHCO3 8.4% with same amount of WFI (1:1) to get 4.2% solution\nMaximum dose: 50mmol (10ml)",
+    "notes" : "4.2% - Safe for peripheral vein infusion\nDilute NaHCO3 8.4% with same amount of WFI (1:1) to get 4.2% solution\nMaximum dose: 50mmol",
     "referenceName" : "Sodium Bicarbonate 4.2%"
   },
   {
@@ -180,8 +188,9 @@
       "conversionScale" : 1,
       "name" : "mg\/kg"
     },
+    "isPreDilutionAmount" : true,
     "maxCalcDose" : 200,
-    "notes" : "Dilute 2ml (100mg) to final volume of 10ml NS (10mg\/ml)\nMaximum dose: 200mg (20ml)",
+    "notes" : "Dilute 2ml (100mg) to final volume of 10ml NS (10mg\/ml)\nMaximum dose: 200mg",
     "referenceName" : "Suxamethonium Chloride"
   },
   {
@@ -203,8 +212,9 @@
       "conversionScale" : 1,
       "name" : "mg\/kg"
     },
+    "isPreDilutionAmount" : true,
     "maxCalcDose" : 5,
-    "notes" : "Dilute 1ml (5mg) to final volume 5ml NS (1mg\/ml)\nMaximum dose: 5mg (5ml)",
+    "notes" : "Dilute 1ml (5mg) to final volume 5ml NS (1mg\/ml)\nMaximum dose: 5mg",
     "referenceName" : "Midazolam"
   },
   {
@@ -223,8 +233,9 @@
       "conversionScale" : 1,
       "name" : "mg\/kg"
     },
+    "isPreDilutionAmount" : true,
     "maxCalcDose" : 5,
-    "notes" : "Dilute 1ml (10mg) to final volume 10ml NS (1mg\/ml)\nMaximum dose: 5mg (5ml)",
+    "notes" : "Dilute 1ml (10mg) to final volume 10ml NS (1mg\/ml)\nMaximum dose: 5mg",
     "referenceName" : "Morphine Sulfate"
   },
   {
@@ -243,8 +254,9 @@
       "conversionScale" : 1,
       "name" : "mg\/kg"
     },
+    "isPreDilutionAmount" : false,
     "maxCalcDose" : 50,
-    "notes" : "Maximum dose: 50mg (5ml)",
+    "notes" : "Maximum dose: 50mg",
     "referenceName" : "Rocuronium"
   },
   {
@@ -263,8 +275,9 @@
       "conversionScale" : 1,
       "name" : "mg\/kg"
     },
+    "isPreDilutionAmount" : false,
     "maxCalcDose" : 6,
-    "notes" : "Maximum dose: 6mg (2ml)\nRoute: IV rapid bolus",
+    "notes" : "Maximum dose: 6mg\nRoute: IV rapid bolus",
     "referenceName" : "Adenosine"
   },
   {
@@ -283,8 +296,9 @@
       "conversionScale" : 1,
       "name" : "mg\/kg"
     },
+    "isPreDilutionAmount" : false,
     "maxCalcDose" : 1,
-    "notes" : "Maximum dose: 1mg (10ml)\nRoute: IV bolus",
+    "notes" : "Maximum dose: 1mg\nRoute: IV bolus",
     "referenceName" : "Adrenaline CHETS"
   },
   {
@@ -303,8 +317,9 @@
       "conversionScale" : 1,
       "name" : "mg\/kg"
     },
+    "isPreDilutionAmount" : false,
     "maxCalcDose" : 300,
-    "notes" : "Maximum dose: 300mg (6ml)\nRoute: IV bolus",
+    "notes" : "Maximum dose: 300mg\nRoute: IV bolus",
     "referenceName" : "Amiodarone"
   },
   {
@@ -323,8 +338,9 @@
       "conversionScale" : 1,
       "name" : "mg\/kg"
     },
+    "isPreDilutionAmount" : false,
     "maxCalcDose" : 0.59999999999999998,
-    "notes" : "Maximum dose: 0.6mg\/600mcg (6ml)\nRoute: IV rapid bolus",
+    "notes" : "Maximum dose: 0.6mg\/600mcg\nRoute: IV rapid bolus",
     "referenceName" : "Atropine Sulfate CHETS"
   },
   {
@@ -343,6 +359,7 @@
       "conversionScale" : 1,
       "name" : "mL\/kg"
     },
+    "isPreDilutionAmount" : false,
     "maxCalcDose" : 20,
     "notes" : "Maximum dose: 20mL\nRoute: IV slow bolus",
     "referenceName" : "Calcium Chloride CHETS"
@@ -363,6 +380,7 @@
       "conversionScale" : 1,
       "name" : "mL\/kg"
     },
+    "isPreDilutionAmount" : false,
     "maxCalcDose" : 30,
     "notes" : "Maximum dose: 30ml\nRoute: IV slow bolus",
     "referenceName" : "Calcium Gluconate"
@@ -383,6 +401,7 @@
       "conversionScale" : 1,
       "name" : "mL\/kg"
     },
+    "isPreDilutionAmount" : false,
     "maxCalcDose" : 250,
     "notes" : "Maximum dose: 250ml\nRoute: IV bolus",
     "referenceName" : "Dextrose Hypoglycemia"
@@ -403,6 +422,7 @@
       "conversionScale" : 1,
       "name" : "mL\/kg"
     },
+    "isPreDilutionAmount" : false,
     "maxCalcDose" : 250,
     "notes" : "Maximum dose: 250ml\nRoute: IV bolus",
     "referenceName" : "Dextrose Hyperkalemia"
@@ -423,6 +443,7 @@
       "conversionScale" : 1,
       "name" : "mL\/kg"
     },
+    "isPreDilutionAmount" : false,
     "maxCalcDose" : 100,
     "notes" : "Maximum dose: 100ml\nRoute: IV bolus",
     "referenceName" : "Dextrose CHETS"
@@ -443,8 +464,9 @@
       "conversionScale" : 1,
       "name" : "mg\/kg"
     },
+    "isPreDilutionAmount" : false,
     "maxCalcDose" : 10,
-    "notes" : "Maximum dose: 10mg (2ml)\nRoute: IV bolus",
+    "notes" : "Maximum dose: 10mg\nRoute: IV bolus",
     "referenceName" : "Diazepam"
   },
   {
@@ -463,8 +485,9 @@
       "conversionScale" : 1,
       "name" : "mg\/kg"
     },
+    "isPreDilutionAmount" : false,
     "maxCalcDose" : 50,
-    "notes" : "Maximum dose: 50mg (1ml)\nRoute: IV bolus",
+    "notes" : "Maximum dose: 50mg\nRoute: IV bolus",
     "referenceName" : "Diphenydramine"
   },
   {
@@ -483,8 +506,9 @@
       "conversionScale" : 1,
       "name" : "mcg\/kg"
     },
+    "isPreDilutionAmount" : false,
     "maxCalcDose" : 200,
-    "notes" : "Maximum dose: 200mcg (2ml)\nRoute: IV bolus",
+    "notes" : "Maximum dose: 200mcg\nRoute: IV bolus",
     "referenceName" : "Flumazenil"
   },
   {
@@ -503,8 +527,9 @@
       "conversionScale" : 1,
       "name" : "mg\/kg"
     },
+    "isPreDilutionAmount" : false,
     "maxCalcDose" : 100,
-    "notes" : "Maximum dose: 100mg (2ml)\nRoute: IV bolus",
+    "notes" : "Maximum dose: 100mg\nRoute: IV bolus",
     "referenceName" : "Hydrocortisone"
   },
   {
@@ -523,8 +548,9 @@
       "conversionScale" : 1,
       "name" : "mg\/kg"
     },
+    "isPreDilutionAmount" : false,
     "maxCalcDose" : 100,
-    "notes" : "Maximum dose: 100mg (2ml)\nRoute: IV bolus",
+    "notes" : "Maximum dose: 100mg\nRoute: IV bolus",
     "referenceName" : "Hydrocortisone Stress Dose"
   },
   {
@@ -543,8 +569,9 @@
       "conversionScale" : 1,
       "name" : "mg\/kg"
     },
+    "isPreDilutionAmount" : false,
     "maxCalcDose" : 50,
-    "notes" : "Maximum dose: 50mg (1ml)\nRoute: IV bolus",
+    "notes" : "Maximum dose: 50mg\nRoute: IV bolus",
     "referenceName" : "Ketamine"
   },
   {
@@ -563,8 +590,9 @@
       "conversionScale" : 1,
       "name" : "mg\/kg"
     },
+    "isPreDilutionAmount" : false,
     "maxCalcDose" : 5,
-    "notes" : "Maximum dose: 5mg (5ml)\nRoute: IV bolus",
+    "notes" : "Maximum dose: 5mg\nRoute: IV bolus",
     "referenceName" : "Midazolam CHETS"
   },
   {
@@ -583,8 +611,9 @@
       "conversionScale" : 1,
       "name" : "mg\/kg"
     },
+    "isPreDilutionAmount" : false,
     "maxCalcDose" : 5,
-    "notes" : "Maximum dose: 5mg (1ml)\nRoute: IV slow bolus",
+    "notes" : "Maximum dose: 5mg\nRoute: IV slow bolus",
     "referenceName" : "Morphine Sulfate CHETS"
   },
   {
@@ -603,8 +632,9 @@
       "conversionScale" : 1,
       "name" : "mg\/kg"
     },
+    "isPreDilutionAmount" : false,
     "maxCalcDose" : 2,
-    "notes" : "Maximum dose: 2mg (5ml)\nRoute: IV bolus",
+    "notes" : "Maximum dose: 2mg\nRoute: IV bolus",
     "referenceName" : "Naloxone"
   },
   {
@@ -623,8 +653,9 @@
       "conversionScale" : 1,
       "name" : "mg\/kg"
     },
+    "isPreDilutionAmount" : false,
     "maxCalcDose" : 1000,
-    "notes" : "Maximum dose: 1000mg (50ml)\nRoute: IV intermittent",
+    "notes" : "Maximum dose: 1000mg\nRoute: IV intermittent",
     "referenceName" : "Phenobarbitone"
   },
   {
@@ -643,8 +674,9 @@
       "conversionScale" : 1,
       "name" : "mg\/kg"
     },
+    "isPreDilutionAmount" : false,
     "maxCalcDose" : 50,
-    "notes" : "Maximum dose: 50mg (5ml)\nRoute: IV bolus",
+    "notes" : "Maximum dose: 50mg\nRoute: IV bolus",
     "referenceName" : "Rocuronium CHETS"
   },
   {
@@ -663,8 +695,9 @@
       "conversionScale" : 1,
       "name" : "mmol\/kg"
     },
+    "isPreDilutionAmount" : false,
     "maxCalcDose" : 50,
-    "notes" : "Maximum dose: 50mmol (50ml)\nRoute: IV slow bolus",
+    "notes" : "Maximum dose: 50mmol\nRoute: IV slow bolus",
     "referenceName" : "Sodium Bicarbonate 8.4% CHETS"
   },
   {
@@ -683,6 +716,7 @@
       "conversionScale" : 1,
       "name" : "mL\/kg"
     },
+    "isPreDilutionAmount" : false,
     "maxCalcDose" : 200,
     "notes" : "Maximum dose: 200ml\nRoute: IV intermittent",
     "referenceName" : "Sodium Chloride 3%"
@@ -703,8 +737,9 @@
       "conversionScale" : 1,
       "name" : "mg\/kg"
     },
+    "isPreDilutionAmount" : false,
     "maxCalcDose" : 24,
-    "notes" : "Maximum dose: 24mg (2.4ml)\nRoute: IV bolus",
+    "notes" : "Maximum dose: 24mg\nRoute: IV bolus",
     "referenceName" : "Suxamethonium Chloride First Dose"
   },
   {
@@ -723,6 +758,7 @@
       "conversionScale" : 1,
       "name" : "puff\/kg"
     },
+    "isPreDilutionAmount" : false,
     "maxCalcDose" : 10,
     "notes" : "Maximum dose: 10 puffs\nRoute: 3.6 puffs",
     "referenceName" : "Salbutamol Inhaler"
@@ -743,6 +779,7 @@
       "conversionScale" : 1,
       "name" : "mL\/kg"
     },
+    "isPreDilutionAmount" : false,
     "maxCalcDose" : 1,
     "notes" : "Maximum dose: 1ml\nRoute: Nebs",
     "referenceName" : "Salbutamol Soluation"

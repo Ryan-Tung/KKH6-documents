@@ -1,0 +1,62 @@
+[
+  {
+    "displayName" : "Adrenaline (1:1000) 1mg\/mL",
+    "maximumPeripheralConcentration" : 30,
+    "referenceName" : "adrenalineInfusion",
+    "weightBasedDosage" : 0.29999999999999999,
+    "weightBasedInfusionInstructionsUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg in 50mL of N\/S or D5%"
+    }
+  },
+  {
+    "displayName" : "DOBUTamine (250mg\/20mL)",
+    "maximumPeripheralConcentration" : 5000,
+    "referenceName" : "dobutamineInfusion",
+    "weightBasedDosage" : 30,
+    "weightBasedInfusionInstructionsUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg in 50mL of N\/S or D5%"
+    }
+  },
+  {
+    "displayName" : "DOPamine (200mg\/5mL) *CENTRAL* *Weight < 30kg*",
+    "maximumPeripheralConcentration" : 3200,
+    "referenceName" : "dopamineInfusion",
+    "weightBasedDosage" : 30,
+    "weightBasedInfusionInstructionsUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg in 50mL of N\/S or D5%"
+    }
+  },
+  {
+    "displayName" : "Midazolam (15mg\/3mL)",
+    "maximumPeripheralConcentration" : 1000,
+    "referenceName" : "midazolamInfusion",
+    "weightBasedDosage" : 3,
+    "weightBasedInfusionInstructionsUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg in 50mL of N\/S or D5%"
+    }
+  },
+  {
+    "displayName" : "Morphine Sulfate (10mg\/mL)",
+    "maximumPeripheralConcentration" : 4000,
+    "referenceName" : "morphineSulfateInfusion",
+    "weightBasedDosage" : 1,
+    "weightBasedInfusionInstructionsUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg in 50mL of D5%"
+    }
+  },
+  {
+    "displayName" : "NORadrenaline (4mg\/4mL)",
+    "maximumPeripheralConcentration" : 30,
+    "referenceName" : "noradrenalineInfusion",
+    "weightBasedDosage" : 0.29999999999999999,
+    "weightBasedInfusionInstructionsUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg in 50mL of N\/S or D5%"
+    }
+  }
+]
