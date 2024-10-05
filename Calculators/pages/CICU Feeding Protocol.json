@@ -1,15 +1,705 @@
 {
   "color" : {
-    "blue" : 0.57647061347961426,
-    "green" : 0.55686277151107788,
-    "red" : 0.55686277151107788
+    "blue" : 0.5764705882352941,
+    "green" : 0.5568627450980392,
+    "red" : 0.5568627450980392
   },
   "groups" : [
     {
       "components" : [
-
+        {
+          "discreteInput" : {
+            "presentationStyle" : "segmented",
+            "values" : [
+              {
+                "displayName" : "Bolus Feeding",
+                "value" : 0
+              },
+              {
+                "displayName" : "Continuous Feeding",
+                "value" : 1
+              }
+            ],
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0,
+                "green" : 0,
+                "red" : 0
+              },
+              "variableReference" : "feedType"
+            }
+          }
+        }
       ],
-      "name" : "NOT IMPLEMENTED YET",
+      "name" : "Feed Type",
+      "showName" : true
+    },
+    {
+      "components" : [
+        {
+          "inputPrimary" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0.8392156862745098,
+                "green" : 0.33725490196078434,
+                "red" : 0.34509803921568627
+              },
+              "variableReference" : "weight"
+            }
+          }
+        }
+      ],
+      "name" : "Weight Input",
+      "showName" : false
+    },
+    {
+      "components" : [
+        {
+          "conditional" : {
+            "component" : {
+              "inputSingle" : {
+                "allowsNegative" : false,
+                "variableInfo" : {
+                  "color" : {
+                    "blue" : 1,
+                    "green" : 0.47843137254901963,
+                    "red" : 0
+                  },
+                  "variableReference" : "feedingTotalFluids"
+                }
+              }
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedType",
+              "rhs" : 0
+            }
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "inputSingle" : {
+                "allowsNegative" : false,
+                "variableInfo" : {
+                  "color" : {
+                    "blue" : 1,
+                    "green" : 0.47843137254901963,
+                    "red" : 0
+                  },
+                  "variableReference" : "totalFluidOrdered"
+                }
+              }
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedType",
+              "rhs" : 1
+            }
+          }
+        },
+        {
+          "inputSingle" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 1,
+                "green" : 0.47843137254901963,
+                "red" : 0
+              },
+              "variableReference" : "amountSubstrateForIVMed"
+            }
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "output" : "feedingRemainingFluids"
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedType",
+              "rhs" : 0
+            }
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "discreteInput" : {
+                "presentationStyle" : "menu",
+                "values" : [
+                  {
+                    "displayName" : "Select",
+                    "value" : -1
+                  },
+                  {
+                    "displayName" : "6",
+                    "value" : 6
+                  },
+                  {
+                    "displayName" : "8",
+                    "value" : 8
+                  }
+                ],
+                "variableInfo" : {
+                  "color" : {
+                    "blue" : 1,
+                    "green" : 0.47843137254901963,
+                    "red" : 0
+                  },
+                  "variableReference" : "numberOfFeedsPerDay"
+                }
+              }
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedType",
+              "rhs" : 0
+            }
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "discreteInput" : {
+                "presentationStyle" : "menu",
+                "values" : [
+                  {
+                    "displayName" : "Select",
+                    "value" : -1
+                  },
+                  {
+                    "displayName" : "22",
+                    "value" : 22
+                  },
+                  {
+                    "displayName" : "24",
+                    "value" : 24
+                  }
+                ],
+                "variableInfo" : {
+                  "color" : {
+                    "blue" : 1,
+                    "green" : 0.47843137254901963,
+                    "red" : 0
+                  },
+                  "variableReference" : "continuousFeedHrsPerDay"
+                }
+              }
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedType",
+              "rhs" : 1
+            }
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "discreteInput" : {
+                "presentationStyle" : "menu",
+                "values" : [
+                  {
+                    "displayName" : "Select",
+                    "value" : -1
+                  },
+                  {
+                    "displayName" : "Yes",
+                    "value" : 1
+                  },
+                  {
+                    "displayName" : "No",
+                    "value" : 0
+                  }
+                ],
+                "variableInfo" : {
+                  "color" : {
+                    "blue" : 1,
+                    "green" : 0.47843137254901963,
+                    "red" : 0
+                  },
+                  "variableReference" : "primingRequired"
+                }
+              }
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedType",
+              "rhs" : 1
+            }
+          }
+        },
+        {
+          "discreteInput" : {
+            "presentationStyle" : "menu",
+            "values" : [
+              {
+                "displayName" : "Select",
+                "value" : -1
+              },
+              {
+                "displayName" : "EBM",
+                "value" : 0
+              },
+              {
+                "displayName" : "Infant Formula",
+                "value" : 1
+              },
+              {
+                "displayName" : "Neosure",
+                "value" : 2
+              },
+              {
+                "displayName" : "Alfare",
+                "value" : 3
+              },
+              {
+                "displayName" : "Neocate",
+                "value" : 4
+              },
+              {
+                "displayName" : "Growing-up Milk",
+                "value" : 5
+              },
+              {
+                "displayName" : "Pediasure",
+                "value" : 6
+              },
+              {
+                "displayName" : "Peptamen Jr",
+                "value" : 7
+              },
+              {
+                "displayName" : "Ensure",
+                "value" : 8
+              }
+            ],
+            "variableInfo" : {
+              "color" : {
+                "blue" : 1,
+                "green" : 0.47843137254901963,
+                "red" : 0
+              },
+              "variableReference" : "feedingMilkType"
+            }
+          }
+        },
+        {
+          "discreteInput" : {
+            "presentationStyle" : "menu",
+            "values" : [
+              {
+                "displayName" : "Select",
+                "value" : -1
+              },
+              {
+                "displayName" : "Non-intubated",
+                "value" : 0
+              },
+              {
+                "displayName" : "Intubated",
+                "value" : 1
+              }
+            ],
+            "variableInfo" : {
+              "color" : {
+                "blue" : 1,
+                "green" : 0.47843137254901963,
+                "red" : 0
+              },
+              "variableReference" : "intubationStatus"
+            }
+          }
+        }
+      ],
+      "name" : "Other Inputs",
+      "showName" : false
+    },
+    {
+      "components" : [
+        {
+          "output" : "actualMilkDeliveredPerDay"
+        },
+        {
+          "discreteOutput" : {
+            "values" : [
+              {
+                "displayName" : "UNDER",
+                "value" : -1
+              },
+              {
+                "displayName" : "OK",
+                "value" : 0
+              },
+              {
+                "displayName" : "OVER",
+                "value" : 1
+              }
+            ],
+            "variableReference" : "feedingStatus"
+          }
+        },
+        {
+          "output" : "milkRequiredPerDayRange"
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "output" : "totalFeedPerDayWaterAndMilk"
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedType",
+              "rhs" : 1
+            }
+          }
+        },
+        {
+          "output" : "startUpDripRate"
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "output" : "targetVolumePerFeed"
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedType",
+              "rhs" : 0
+            }
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "output" : "fullFeedRate"
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedType",
+              "rhs" : 1
+            }
+          }
+        }
+      ],
+      "name" : "Output",
+      "showName" : false
+    },
+    {
+      "components" : [
+        {
+          "conditional" : {
+            "component" : {
+              "detailedOutput" : {
+                "columnCount" : 3,
+                "detailVarReferences" : [
+                  "twentyFivePercentFeedMilk",
+                  "twentyFivePercentFeedWater",
+                  "twentyFivePercentFeedTotal"
+                ],
+                "name" : "Feed",
+                "primaryVarReference" : "twentyFivePercentFeedTotal"
+              }
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedType",
+              "rhs" : 0
+            }
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "detailedOutput" : {
+                "columnCount" : 3,
+                "detailVarReferences" : [
+                  "twentyFivePercentFeedMilk",
+                  "twentyFivePercentFeedWater",
+                  "twentyFivePercentFeedRate"
+                ],
+                "name" : "Feed",
+                "primaryVarReference" : "twentyFivePercentFeedRate"
+              }
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedType",
+              "rhs" : 1
+            }
+          }
+        },
+        {
+          "detailedOutput" : {
+            "columnCount" : 2,
+            "detailVarReferences" : [
+              "twentyFivePercentFeedDripPercent",
+              "twentyFivePercentFeedDripRate"
+            ],
+            "name" : "Drip",
+            "primaryVarReference" : "twentyFivePercentFeedDripRate"
+          }
+        }
+      ],
+      "name" : "Feed Rate: 25%",
+      "showName" : true
+    },
+    {
+      "components" : [
+        {
+          "conditional" : {
+            "component" : {
+              "detailedOutput" : {
+                "columnCount" : 3,
+                "detailVarReferences" : [
+                  "twentyFivePercentFeedMilk",
+                  "twentyFivePercentFeedWater",
+                  "twentyFivePercentFeedTotal"
+                ],
+                "name" : "Feed",
+                "primaryVarReference" : "twentyFivePercentFeedTotal"
+              }
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedType",
+              "rhs" : 0
+            }
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "detailedOutput" : {
+                "columnCount" : 3,
+                "detailVarReferences" : [
+                  "twentyFivePercentFeedMilk",
+                  "twentyFivePercentFeedWater",
+                  "twentyFivePercentFeedRate"
+                ],
+                "name" : "Feed",
+                "primaryVarReference" : "twentyFivePercentFeedRate"
+              }
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedType",
+              "rhs" : 1
+            }
+          }
+        },
+        {
+          "detailedOutput" : {
+            "columnCount" : 2,
+            "detailVarReferences" : [
+              "twentyFivePercentFeedDripPercent",
+              "twentyFivePercentFeedDripRate"
+            ],
+            "name" : "Drip",
+            "primaryVarReference" : "twentyFivePercentFeedDripRate"
+          }
+        }
+      ],
+      "name" : "Feed Rate: 25% ",
+      "showName" : true
+    },
+    {
+      "components" : [
+        {
+          "conditional" : {
+            "component" : {
+              "detailedOutput" : {
+                "columnCount" : 3,
+                "detailVarReferences" : [
+                  "fiftyPercentFeedMilk",
+                  "fiftyPercentFeedWater",
+                  "fiftyPercentFeedTotal"
+                ],
+                "name" : "Feed",
+                "primaryVarReference" : "fiftyPercentFeedTotal"
+              }
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedType",
+              "rhs" : 0
+            }
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "detailedOutput" : {
+                "columnCount" : 3,
+                "detailVarReferences" : [
+                  "fiftyPercentFeedMilk",
+                  "fiftyPercentFeedWater",
+                  "fiftyPercentFeedRate"
+                ],
+                "name" : "Feed",
+                "primaryVarReference" : "fiftyPercentFeedRate"
+              }
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedType",
+              "rhs" : 1
+            }
+          }
+        },
+        {
+          "detailedOutput" : {
+            "columnCount" : 2,
+            "detailVarReferences" : [
+              "fiftyPercentFeedDripPercent",
+              "fiftyPercentFeedDripRate"
+            ],
+            "name" : "Drip",
+            "primaryVarReference" : "fiftyPercentFeedDripRate"
+          }
+        }
+      ],
+      "name" : "Feed Rate: 50%",
+      "showName" : true
+    },
+    {
+      "components" : [
+        {
+          "conditional" : {
+            "component" : {
+              "detailedOutput" : {
+                "columnCount" : 3,
+                "detailVarReferences" : [
+                  "seventyFivePercentFeedMilk",
+                  "seventyFivePercentFeedWater",
+                  "seventyFivePercentFeedTotal"
+                ],
+                "name" : "Feed",
+                "primaryVarReference" : "seventyFivePercentFeedTotal"
+              }
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedType",
+              "rhs" : 0
+            }
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "detailedOutput" : {
+                "columnCount" : 3,
+                "detailVarReferences" : [
+                  "seventyFivePercentFeedMilk",
+                  "seventyFivePercentFeedWater",
+                  "seventyFivePercentFeedRate"
+                ],
+                "name" : "Feed",
+                "primaryVarReference" : "seventyFivePercentFeedRate"
+              }
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedType",
+              "rhs" : 1
+            }
+          }
+        },
+        {
+          "detailedOutput" : {
+            "columnCount" : 2,
+            "detailVarReferences" : [
+              "seventyFivePercentFeedDripPercent",
+              "seventyFivePercentFeedDripRate"
+            ],
+            "name" : "Drip",
+            "primaryVarReference" : "seventyFivePercentFeedDripRate"
+          }
+        }
+      ],
+      "name" : "Feed Rate: 75%",
+      "showName" : true
+    },
+    {
+      "components" : [
+        {
+          "conditional" : {
+            "component" : {
+              "detailedOutput" : {
+                "columnCount" : 3,
+                "detailVarReferences" : [
+                  "hundredPercentFeedMilk",
+                  "hundredPercentFeedWater",
+                  "hundredPercentFeedTotal"
+                ],
+                "name" : "Feed",
+                "primaryVarReference" : "hundredPercentFeedTotal"
+              }
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedType",
+              "rhs" : 0
+            }
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "detailedOutput" : {
+                "columnCount" : 3,
+                "detailVarReferences" : [
+                  "hundredPercentFeedMilk",
+                  "hundredPercentFeedWater",
+                  "hundredPercentFeedRate"
+                ],
+                "name" : "Feed",
+                "primaryVarReference" : "hundredPercentFeedRate"
+              }
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedType",
+              "rhs" : 1
+            }
+          }
+        },
+        {
+          "detailedOutput" : {
+            "columnCount" : 2,
+            "detailVarReferences" : [
+              "hundredPercentFeedDripPercent",
+              "hundredPercentFeedDripRate"
+            ],
+            "name" : "Drip",
+            "primaryVarReference" : "hundredPercentFeedDripRate"
+          }
+        }
+      ],
+      "name" : "Feed Rate: 100%",
       "showName" : true
     }
   ],

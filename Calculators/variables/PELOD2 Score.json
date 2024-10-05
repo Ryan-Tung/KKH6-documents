@@ -80,11 +80,10 @@
               "nilConstant" : null
             },
             "condition" : {
-              "comparison" : {
-                "equalTo" : 0
-              },
+              "comparison" : "equalTo",
               "defaultState" : true,
-              "variableReference" : "fiO2"
+              "lhs" : "fiO2",
+              "rhs" : 0
             }
           },
           {
@@ -130,31 +129,28 @@
           {
             "component" : 0,
             "condition" : {
-              "comparison" : {
-                "greaterThanOrEqualTo" : 11
-              },
+              "comparison" : "greaterThanOrEqualTo",
               "defaultState" : true,
-              "variableReference" : "neurologicGCS"
+              "lhs" : "neurologicGCS",
+              "rhs" : 11
             }
           },
           {
             "component" : 1,
             "condition" : {
-              "comparison" : {
-                "greaterThanOrEqualTo" : 5
-              },
+              "comparison" : "greaterThanOrEqualTo",
               "defaultState" : true,
-              "variableReference" : "neurologicGCS"
+              "lhs" : "neurologicGCS",
+              "rhs" : 5
             }
           },
           {
             "component" : 4,
             "condition" : {
-              "comparison" : {
-                "greaterThanOrEqualTo" : 3
-              },
+              "comparison" : "greaterThanOrEqualTo",
               "defaultState" : true,
-              "variableReference" : "neurologicGCS"
+              "lhs" : "neurologicGCS",
+              "rhs" : 3
             }
           },
           {
@@ -193,31 +189,28 @@
               "nilConstant" : null
             },
             "condition" : {
-              "comparison" : {
-                "equalTo" : -1
-              },
+              "comparison" : "equalTo",
               "defaultState" : true,
-              "variableReference" : "pupilReaction"
+              "lhs" : "pupilReaction",
+              "rhs" : -1
             }
           },
           {
             "component" : 0,
             "condition" : {
-              "comparison" : {
-                "equalTo" : 1
-              },
+              "comparison" : "equalTo",
               "defaultState" : true,
-              "variableReference" : "pupilReaction"
+              "lhs" : "pupilReaction",
+              "rhs" : 1
             }
           },
           {
             "component" : 5,
             "condition" : {
-              "comparison" : {
-                "equalTo" : 0
-              },
+              "comparison" : "equalTo",
               "defaultState" : true,
-              "variableReference" : "pupilReaction"
+              "lhs" : "pupilReaction",
+              "rhs" : 0
             }
           }
         ]
@@ -265,21 +258,19 @@
           {
             "component" : 4,
             "condition" : {
-              "comparison" : {
-                "greaterThanOrEqualTo" : 11
-              },
+              "comparison" : "greaterThanOrEqualTo",
               "defaultState" : true,
-              "variableReference" : "pelodLactate"
+              "lhs" : "pelodLactate",
+              "rhs" : 11
             }
           },
           {
             "component" : 1,
             "condition" : {
-              "comparison" : {
-                "greaterThanOrEqualTo" : 5
-              },
+              "comparison" : "greaterThanOrEqualTo",
               "defaultState" : true,
-              "variableReference" : "pelodLactate"
+              "lhs" : "pelodLactate",
+              "rhs" : 5
             }
           },
           {
@@ -317,51 +308,46 @@
                 {
                   "component" : 0,
                   "condition" : {
-                    "comparison" : {
-                      "greaterThanOrEqualTo" : 46
-                    },
+                    "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "variableReference" : "cardioMAP"
+                    "lhs" : "cardioMAP",
+                    "rhs" : 46
                   }
                 },
                 {
                   "component" : 2,
                   "condition" : {
-                    "comparison" : {
-                      "greaterThanOrEqualTo" : 31
-                    },
+                    "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "variableReference" : "cardioMAP"
+                    "lhs" : "cardioMAP",
+                    "rhs" : 31
                   }
                 },
                 {
                   "component" : 3,
                   "condition" : {
-                    "comparison" : {
-                      "greaterThanOrEqualTo" : 17
-                    },
+                    "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "variableReference" : "cardioMAP"
+                    "lhs" : "cardioMAP",
+                    "rhs" : 17
                   }
                 },
                 {
                   "component" : 6,
                   "condition" : {
-                    "comparison" : {
-                      "lessThanOrEqualTo" : 16
-                    },
+                    "comparison" : "lessThanOrEqualTo",
                     "defaultState" : true,
-                    "variableReference" : "cardioMAP"
+                    "lhs" : "cardioMAP",
+                    "rhs" : 16
                   }
                 }
               ]
             },
             "condition" : {
-              "comparison" : {
-                "lessThan" : 0.083333333333333329
-              },
+              "comparison" : "lessThan",
               "defaultState" : true,
-              "variableReference" : "age"
+              "lhs" : "age",
+              "rhs" : 0.08333333333333333
             }
           },
           {
@@ -370,51 +356,46 @@
                 {
                   "component" : 0,
                   "condition" : {
-                    "comparison" : {
-                      "greaterThanOrEqualTo" : 55
-                    },
+                    "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "variableReference" : "cardioMAP"
+                    "lhs" : "cardioMAP",
+                    "rhs" : 55
                   }
                 },
                 {
                   "component" : 2,
                   "condition" : {
-                    "comparison" : {
-                      "greaterThanOrEqualTo" : 39
-                    },
+                    "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "variableReference" : "cardioMAP"
+                    "lhs" : "cardioMAP",
+                    "rhs" : 39
                   }
                 },
                 {
                   "component" : 3,
                   "condition" : {
-                    "comparison" : {
-                      "greaterThanOrEqualTo" : 25
-                    },
+                    "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "variableReference" : "cardioMAP"
+                    "lhs" : "cardioMAP",
+                    "rhs" : 25
                   }
                 },
                 {
                   "component" : 6,
                   "condition" : {
-                    "comparison" : {
-                      "lessThanOrEqualTo" : 24
-                    },
+                    "comparison" : "lessThanOrEqualTo",
                     "defaultState" : true,
-                    "variableReference" : "cardioMAP"
+                    "lhs" : "cardioMAP",
+                    "rhs" : 24
                   }
                 }
               ]
             },
             "condition" : {
-              "comparison" : {
-                "lessThan" : 1
-              },
+              "comparison" : "lessThan",
               "defaultState" : true,
-              "variableReference" : "age"
+              "lhs" : "age",
+              "rhs" : 1
             }
           },
           {
@@ -423,31 +404,28 @@
                 {
                   "component" : 0,
                   "condition" : {
-                    "comparison" : {
-                      "greaterThanOrEqualTo" : 60
-                    },
+                    "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "variableReference" : "cardioMAP"
+                    "lhs" : "cardioMAP",
+                    "rhs" : 60
                   }
                 },
                 {
                   "component" : 2,
                   "condition" : {
-                    "comparison" : {
-                      "greaterThanOrEqualTo" : 44
-                    },
+                    "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "variableReference" : "cardioMAP"
+                    "lhs" : "cardioMAP",
+                    "rhs" : 44
                   }
                 },
                 {
                   "component" : 3,
                   "condition" : {
-                    "comparison" : {
-                      "greaterThanOrEqualTo" : 31
-                    },
+                    "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "variableReference" : "cardioMAP"
+                    "lhs" : "cardioMAP",
+                    "rhs" : 31
                   }
                 },
                 {
@@ -456,11 +434,10 @@
               ]
             },
             "condition" : {
-              "comparison" : {
-                "lessThan" : 2
-              },
+              "comparison" : "lessThan",
               "defaultState" : true,
-              "variableReference" : "age"
+              "lhs" : "age",
+              "rhs" : 2
             }
           },
           {
@@ -469,31 +446,28 @@
                 {
                   "component" : 0,
                   "condition" : {
-                    "comparison" : {
-                      "greaterThanOrEqualTo" : 62
-                    },
+                    "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "variableReference" : "cardioMAP"
+                    "lhs" : "cardioMAP",
+                    "rhs" : 62
                   }
                 },
                 {
                   "component" : 2,
                   "condition" : {
-                    "comparison" : {
-                      "greaterThanOrEqualTo" : 46
-                    },
+                    "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "variableReference" : "cardioMAP"
+                    "lhs" : "cardioMAP",
+                    "rhs" : 46
                   }
                 },
                 {
                   "component" : 3,
                   "condition" : {
-                    "comparison" : {
-                      "greaterThanOrEqualTo" : 32
-                    },
+                    "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "variableReference" : "cardioMAP"
+                    "lhs" : "cardioMAP",
+                    "rhs" : 32
                   }
                 },
                 {
@@ -502,11 +476,10 @@
               ]
             },
             "condition" : {
-              "comparison" : {
-                "lessThan" : 5
-              },
+              "comparison" : "lessThan",
               "defaultState" : true,
-              "variableReference" : "age"
+              "lhs" : "age",
+              "rhs" : 5
             }
           },
           {
@@ -515,31 +488,124 @@
                 {
                   "component" : 0,
                   "condition" : {
-                    "comparison" : {
-                      "greaterThanOrEqualTo" : 65
-                    },
+                    "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "variableReference" : "cardioMAP"
+                    "lhs" : "cardioMAP",
+                    "rhs" : 46
                   }
                 },
                 {
                   "component" : 2,
                   "condition" : {
-                    "comparison" : {
-                      "greaterThanOrEqualTo" : 49
-                    },
+                    "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "variableReference" : "cardioMAP"
+                    "lhs" : "cardioMAP",
+                    "rhs" : 31
                   }
                 },
                 {
                   "component" : 3,
                   "condition" : {
-                    "comparison" : {
-                      "greaterThanOrEqualTo" : 36
-                    },
+                    "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "variableReference" : "cardioMAP"
+                    "lhs" : "cardioMAP",
+                    "rhs" : 17
+                  }
+                },
+                {
+                  "component" : 6,
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "cardioMAP",
+                    "rhs" : 16
+                  }
+                }
+              ]
+            },
+            "condition" : {
+              "comparison" : "lessThan",
+              "defaultState" : true,
+              "lhs" : "age",
+              "rhs" : 12
+            }
+          },
+          {
+            "component" : {
+              "conditional" : [
+                {
+                  "component" : 0,
+                  "condition" : {
+                    "comparison" : "greaterThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "cardioMAP",
+                    "rhs" : 55
+                  }
+                },
+                {
+                  "component" : 2,
+                  "condition" : {
+                    "comparison" : "greaterThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "cardioMAP",
+                    "rhs" : 39
+                  }
+                },
+                {
+                  "component" : 3,
+                  "condition" : {
+                    "comparison" : "greaterThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "cardioMAP",
+                    "rhs" : 25
+                  }
+                },
+                {
+                  "component" : 6,
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "cardioMAP",
+                    "rhs" : 24
+                  }
+                }
+              ]
+            },
+            "condition" : {
+              "comparison" : "lessThan",
+              "defaultState" : true,
+              "lhs" : "age",
+              "rhs" : 1
+            }
+          },
+          {
+            "component" : {
+              "conditional" : [
+                {
+                  "component" : 0,
+                  "condition" : {
+                    "comparison" : "greaterThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "cardioMAP",
+                    "rhs" : 60
+                  }
+                },
+                {
+                  "component" : 2,
+                  "condition" : {
+                    "comparison" : "greaterThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "cardioMAP",
+                    "rhs" : 44
+                  }
+                },
+                {
+                  "component" : 3,
+                  "condition" : {
+                    "comparison" : "greaterThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "cardioMAP",
+                    "rhs" : 31
                   }
                 },
                 {
@@ -548,11 +614,94 @@
               ]
             },
             "condition" : {
-              "comparison" : {
-                "lessThan" : 12
-              },
+              "comparison" : "lessThan",
               "defaultState" : true,
-              "variableReference" : "age"
+              "lhs" : "age",
+              "rhs" : 2
+            }
+          },
+          {
+            "component" : {
+              "conditional" : [
+                {
+                  "component" : 0,
+                  "condition" : {
+                    "comparison" : "greaterThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "cardioMAP",
+                    "rhs" : 62
+                  }
+                },
+                {
+                  "component" : 2,
+                  "condition" : {
+                    "comparison" : "greaterThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "cardioMAP",
+                    "rhs" : 46
+                  }
+                },
+                {
+                  "component" : 3,
+                  "condition" : {
+                    "comparison" : "greaterThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "cardioMAP",
+                    "rhs" : 32
+                  }
+                },
+                {
+                  "component" : 6
+                }
+              ]
+            },
+            "condition" : {
+              "comparison" : "lessThan",
+              "defaultState" : true,
+              "lhs" : "age",
+              "rhs" : 5
+            }
+          },
+          {
+            "component" : {
+              "conditional" : [
+                {
+                  "component" : 0,
+                  "condition" : {
+                    "comparison" : "greaterThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "cardioMAP",
+                    "rhs" : 65
+                  }
+                },
+                {
+                  "component" : 2,
+                  "condition" : {
+                    "comparison" : "greaterThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "cardioMAP",
+                    "rhs" : 49
+                  }
+                },
+                {
+                  "component" : 3,
+                  "condition" : {
+                    "comparison" : "greaterThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "cardioMAP",
+                    "rhs" : 36
+                  }
+                },
+                {
+                  "component" : 6
+                }
+              ]
+            },
+            "condition" : {
+              "comparison" : "lessThan",
+              "defaultState" : true,
+              "lhs" : "age",
+              "rhs" : 12
             }
           }
         ]
@@ -588,11 +737,10 @@
                 {
                   "component" : 2,
                   "condition" : {
-                    "comparison" : {
-                      "greaterThanOrEqualTo" : 70
-                    },
+                    "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "variableReference" : "renalCreatinine"
+                    "lhs" : "renalCreatinine",
+                    "rhs" : 70
                   }
                 },
                 {
@@ -601,11 +749,10 @@
               ]
             },
             "condition" : {
-              "comparison" : {
-                "lessThan" : 0.083333333333333329
-              },
+              "comparison" : "lessThan",
               "defaultState" : true,
-              "variableReference" : "age"
+              "lhs" : "age",
+              "rhs" : 0.08333333333333333
             }
           },
           {
@@ -614,11 +761,10 @@
                 {
                   "component" : 2,
                   "condition" : {
-                    "comparison" : {
-                      "greaterThanOrEqualTo" : 23
-                    },
+                    "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "variableReference" : "renalCreatinine"
+                    "lhs" : "renalCreatinine",
+                    "rhs" : 23
                   }
                 },
                 {
@@ -627,11 +773,10 @@
               ]
             },
             "condition" : {
-              "comparison" : {
-                "lessThan" : 1
-              },
+              "comparison" : "lessThan",
               "defaultState" : true,
-              "variableReference" : "age"
+              "lhs" : "age",
+              "rhs" : 1
             }
           },
           {
@@ -640,11 +785,10 @@
                 {
                   "component" : 2,
                   "condition" : {
-                    "comparison" : {
-                      "greaterThanOrEqualTo" : 35
-                    },
+                    "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "variableReference" : "renalCreatinine"
+                    "lhs" : "renalCreatinine",
+                    "rhs" : 35
                   }
                 },
                 {
@@ -653,11 +797,10 @@
               ]
             },
             "condition" : {
-              "comparison" : {
-                "lessThan" : 2
-              },
+              "comparison" : "lessThan",
               "defaultState" : true,
-              "variableReference" : "age"
+              "lhs" : "age",
+              "rhs" : 2
             }
           },
           {
@@ -666,11 +809,10 @@
                 {
                   "component" : 2,
                   "condition" : {
-                    "comparison" : {
-                      "greaterThanOrEqualTo" : 51
-                    },
+                    "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "variableReference" : "renalCreatinine"
+                    "lhs" : "renalCreatinine",
+                    "rhs" : 51
                   }
                 },
                 {
@@ -679,11 +821,10 @@
               ]
             },
             "condition" : {
-              "comparison" : {
-                "lessThan" : 5
-              },
+              "comparison" : "lessThan",
               "defaultState" : true,
-              "variableReference" : "age"
+              "lhs" : "age",
+              "rhs" : 5
             }
           },
           {
@@ -692,11 +833,10 @@
                 {
                   "component" : 2,
                   "condition" : {
-                    "comparison" : {
-                      "greaterThanOrEqualTo" : 59
-                    },
+                    "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "variableReference" : "renalCreatinine"
+                    "lhs" : "renalCreatinine",
+                    "rhs" : 70
                   }
                 },
                 {
@@ -705,11 +845,10 @@
               ]
             },
             "condition" : {
-              "comparison" : {
-                "lessThan" : 12
-              },
+              "comparison" : "lessThan",
               "defaultState" : true,
-              "variableReference" : "age"
+              "lhs" : "age",
+              "rhs" : 12
             }
           },
           {
@@ -718,11 +857,106 @@
                 {
                   "component" : 2,
                   "condition" : {
-                    "comparison" : {
-                      "greaterThanOrEqualTo" : 93
-                    },
+                    "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "variableReference" : "renalCreatinine"
+                    "lhs" : "renalCreatinine",
+                    "rhs" : 23
+                  }
+                },
+                {
+                  "component" : 0
+                }
+              ]
+            },
+            "condition" : {
+              "comparison" : "lessThan",
+              "defaultState" : true,
+              "lhs" : "age",
+              "rhs" : 1
+            }
+          },
+          {
+            "component" : {
+              "conditional" : [
+                {
+                  "component" : 2,
+                  "condition" : {
+                    "comparison" : "greaterThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "renalCreatinine",
+                    "rhs" : 35
+                  }
+                },
+                {
+                  "component" : 0
+                }
+              ]
+            },
+            "condition" : {
+              "comparison" : "lessThan",
+              "defaultState" : true,
+              "lhs" : "age",
+              "rhs" : 2
+            }
+          },
+          {
+            "component" : {
+              "conditional" : [
+                {
+                  "component" : 2,
+                  "condition" : {
+                    "comparison" : "greaterThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "renalCreatinine",
+                    "rhs" : 51
+                  }
+                },
+                {
+                  "component" : 0
+                }
+              ]
+            },
+            "condition" : {
+              "comparison" : "lessThan",
+              "defaultState" : true,
+              "lhs" : "age",
+              "rhs" : 5
+            }
+          },
+          {
+            "component" : {
+              "conditional" : [
+                {
+                  "component" : 2,
+                  "condition" : {
+                    "comparison" : "greaterThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "renalCreatinine",
+                    "rhs" : 59
+                  }
+                },
+                {
+                  "component" : 0
+                }
+              ]
+            },
+            "condition" : {
+              "comparison" : "lessThan",
+              "defaultState" : true,
+              "lhs" : "age",
+              "rhs" : 12
+            }
+          },
+          {
+            "component" : {
+              "conditional" : [
+                {
+                  "component" : 2,
+                  "condition" : {
+                    "comparison" : "greaterThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "renalCreatinine",
+                    "rhs" : 93
                   }
                 },
                 {
@@ -761,21 +995,19 @@
           {
             "component" : 0,
             "condition" : {
-              "comparison" : {
-                "greaterThanOrEqualTo" : 61
-              },
+              "comparison" : "greaterThanOrEqualTo",
               "defaultState" : true,
-              "variableReference" : "o2Ratio"
+              "lhs" : "o2Ratio",
+              "rhs" : 61
             }
           },
           {
             "component" : 2,
             "condition" : {
-              "comparison" : {
-                "lessThan" : 61
-              },
+              "comparison" : "lessThan",
               "defaultState" : true,
-              "variableReference" : "o2Ratio"
+              "lhs" : "o2Ratio",
+              "rhs" : 61
             }
           },
           {
@@ -811,21 +1043,19 @@
           {
             "component" : 3,
             "condition" : {
-              "comparison" : {
-                "greaterThanOrEqualTo" : 95
-              },
+              "comparison" : "greaterThanOrEqualTo",
               "defaultState" : true,
-              "variableReference" : "pCO2"
+              "lhs" : "pCO2",
+              "rhs" : 95
             }
           },
           {
             "component" : 1,
             "condition" : {
-              "comparison" : {
-                "greaterThanOrEqualTo" : 59
-              },
+              "comparison" : "greaterThanOrEqualTo",
               "defaultState" : true,
-              "variableReference" : "pCO2"
+              "lhs" : "pCO2",
+              "rhs" : 59
             }
           },
           {
@@ -860,21 +1090,19 @@
           {
             "component" : 0,
             "condition" : {
-              "comparison" : {
-                "equalTo" : 0
-              },
+              "comparison" : "equalTo",
               "defaultState" : true,
-              "variableReference" : "invasiveVentilation"
+              "lhs" : "invasiveVentilation",
+              "rhs" : 0
             }
           },
           {
             "component" : 3,
             "condition" : {
-              "comparison" : {
-                "equalTo" : 1
-              },
+              "comparison" : "equalTo",
               "defaultState" : true,
-              "variableReference" : "invasiveVentilation"
+              "lhs" : "invasiveVentilation",
+              "rhs" : 1
             }
           }
         ]
@@ -906,11 +1134,10 @@
           {
             "component" : 2,
             "condition" : {
-              "comparison" : {
-                "lessThanOrEqualTo" : 2
-              },
+              "comparison" : "lessThanOrEqualTo",
               "defaultState" : true,
-              "variableReference" : "leucocytes"
+              "lhs" : "leucocytes",
+              "rhs" : 2
             }
           },
           {
@@ -945,21 +1172,19 @@
           {
             "component" : 0,
             "condition" : {
-              "comparison" : {
-                "greaterThanOrEqualTo" : 142
-              },
+              "comparison" : "greaterThanOrEqualTo",
               "defaultState" : true,
-              "variableReference" : "platelets"
+              "lhs" : "platelets",
+              "rhs" : 142
             }
           },
           {
             "component" : 1,
             "condition" : {
-              "comparison" : {
-                "greaterThanOrEqualTo" : 77
-              },
+              "comparison" : "greaterThanOrEqualTo",
               "defaultState" : true,
-              "variableReference" : "platelets"
+              "lhs" : "platelets",
+              "rhs" : 77
             }
           },
           {
@@ -1041,7 +1266,7 @@
               1,
               {
                 "power" : {
-                  "base" : 2.7182818284590402,
+                  "base" : 2.71828182845904,
                   "exponent" : {
                     "product" : [
                       {
@@ -1049,10 +1274,10 @@
                           {
                             "product" : [
                               "aPELOD2Score",
-                              0.46999999999999997
+                              0.47
                             ]
                           },
-                          -6.6100000000000003
+                          -6.61
                         ]
                       },
                       -1

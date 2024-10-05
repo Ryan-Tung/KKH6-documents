@@ -144,11 +144,10 @@
               "nilConstant" : null
             },
             "condition" : {
-              "comparison" : {
-                "lessThan" : 0
-              },
+              "comparison" : "lessThan",
               "defaultState" : true,
-              "variableReference" : "pupilReaction"
+              "lhs" : "pupilReaction",
+              "rhs" : 0
             }
           },
           {
@@ -157,7 +156,7 @@
                 {
                   "product" : [
                     "pupilReaction",
-                    3.8233090000000001
+                    3.823309
                   ]
                 },
                 {
@@ -169,11 +168,10 @@
                             "nilConstant" : null
                           },
                           "condition" : {
-                            "comparison" : {
-                              "lessThan" : 0
-                            },
+                            "comparison" : "lessThan",
                             "defaultState" : true,
-                            "variableReference" : "electiveAdmission"
+                            "lhs" : "electiveAdmission",
+                            "rhs" : 0
                           }
                         },
                         {
@@ -181,7 +179,7 @@
                         }
                       ]
                     },
-                    -0.53780159999999999
+                    -0.5378016
                   ]
                 },
                 {
@@ -193,11 +191,10 @@
                             "nilConstant" : null
                           },
                           "condition" : {
-                            "comparison" : {
-                              "lessThan" : 0
-                            },
+                            "comparison" : "lessThan",
                             "defaultState" : true,
-                            "variableReference" : "mechanicalVentilation"
+                            "lhs" : "mechanicalVentilation",
+                            "rhs" : 0
                           }
                         },
                         {
@@ -205,7 +202,7 @@
                         }
                       ]
                     },
-                    0.97634529999999997
+                    0.9763453
                   ]
                 },
                 {
@@ -220,11 +217,10 @@
                                 {
                                   "component" : 120,
                                   "condition" : {
-                                    "comparison" : {
-                                      "equalTo" : 0
-                                    },
+                                    "comparison" : "equalTo",
                                     "defaultState" : true,
-                                    "variableReference" : "pim3SystolicBloodPressure"
+                                    "lhs" : "pim3SystolicBloodPressure",
+                                    "rhs" : 0
                                   }
                                 },
                                 {
@@ -247,11 +243,10 @@
                         {
                           "component" : 120,
                           "condition" : {
-                            "comparison" : {
-                              "equalTo" : 0
-                            },
+                            "comparison" : "equalTo",
                             "defaultState" : true,
-                            "variableReference" : "pim3SystolicBloodPressure"
+                            "lhs" : "pim3SystolicBloodPressure",
+                            "rhs" : 0
                           }
                         },
                         {
@@ -259,7 +254,7 @@
                         }
                       ]
                     },
-                    -0.043076799999999998
+                    -0.0430768
                   ]
                 },
                 {
@@ -267,23 +262,21 @@
                     {
                       "conditional" : [
                         {
-                          "component" : 0.23000000000000001,
+                          "component" : 0.23,
                           "condition" : {
-                            "comparison" : {
-                              "equalTo" : 0
-                            },
+                            "comparison" : "equalTo",
                             "defaultState" : true,
-                            "variableReference" : "fiO2"
+                            "lhs" : "fiO2",
+                            "rhs" : 0
                           }
                         },
                         {
-                          "component" : 0.23000000000000001,
+                          "component" : 0.23,
                           "condition" : {
-                            "comparison" : {
-                              "equalTo" : 0
-                            },
+                            "comparison" : "equalTo",
                             "defaultState" : true,
-                            "variableReference" : "paO2"
+                            "lhs" : "paO2",
+                            "rhs" : 0
                           }
                         },
                         {
@@ -301,7 +294,7 @@
                         }
                       ]
                     },
-                    0.42139939999999998
+                    0.4213994
                   ]
                 },
                 {
@@ -309,41 +302,37 @@
                     {
                       "component" : 0,
                       "condition" : {
-                        "comparison" : {
-                          "equalTo" : 0
-                        },
+                        "comparison" : "equalTo",
                         "defaultState" : true,
-                        "variableReference" : "recovery"
+                        "lhs" : "recovery",
+                        "rhs" : 0
                       }
                     },
                     {
-                      "component" : -1.5164029999999999,
+                      "component" : -1.516403,
                       "condition" : {
-                        "comparison" : {
-                          "equalTo" : 1
-                        },
+                        "comparison" : "equalTo",
                         "defaultState" : true,
-                        "variableReference" : "recovery"
+                        "lhs" : "recovery",
+                        "rhs" : 1
                       }
                     },
                     {
-                      "component" : -0.87618479999999999,
+                      "component" : -0.8761848,
                       "condition" : {
-                        "comparison" : {
-                          "equalTo" : 2
-                        },
+                        "comparison" : "equalTo",
                         "defaultState" : true,
-                        "variableReference" : "recovery"
+                        "lhs" : "recovery",
+                        "rhs" : 2
                       }
                     },
                     {
                       "component" : -1.224559,
                       "condition" : {
-                        "comparison" : {
-                          "equalTo" : 3
-                        },
+                        "comparison" : "equalTo",
                         "defaultState" : true,
-                        "variableReference" : "recovery"
+                        "lhs" : "recovery",
+                        "rhs" : 3
                       }
                     },
                     {
@@ -358,41 +347,37 @@
                     {
                       "component" : 0,
                       "condition" : {
-                        "comparison" : {
-                          "equalTo" : 0
-                        },
+                        "comparison" : "equalTo",
                         "defaultState" : true,
-                        "variableReference" : "weightedDiagnosis"
+                        "lhs" : "weightedDiagnosis",
+                        "rhs" : 0
                       }
                     },
                     {
-                      "component" : -2.1766489999999998,
+                      "component" : -2.176649,
                       "condition" : {
-                        "comparison" : {
-                          "equalTo" : 1
-                        },
+                        "comparison" : "equalTo",
                         "defaultState" : true,
-                        "variableReference" : "weightedDiagnosis"
+                        "lhs" : "weightedDiagnosis",
+                        "rhs" : 1
                       }
                     },
                     {
-                      "component" : 1.0725420000000001,
+                      "component" : 1.072542,
                       "condition" : {
-                        "comparison" : {
-                          "equalTo" : 2
-                        },
+                        "comparison" : "equalTo",
                         "defaultState" : true,
-                        "variableReference" : "weightedDiagnosis"
+                        "lhs" : "weightedDiagnosis",
+                        "rhs" : 2
                       }
                     },
                     {
                       "component" : 1.622484,
                       "condition" : {
-                        "comparison" : {
-                          "equalTo" : 3
-                        },
+                        "comparison" : "equalTo",
                         "defaultState" : true,
-                        "variableReference" : "weightedDiagnosis"
+                        "lhs" : "weightedDiagnosis",
+                        "rhs" : 3
                       }
                     },
                     {
@@ -407,11 +392,10 @@
                     {
                       "component" : 0,
                       "condition" : {
-                        "comparison" : {
-                          "equalTo" : 0
-                        },
+                        "comparison" : "equalTo",
                         "defaultState" : true,
-                        "variableReference" : "baseExcess"
+                        "lhs" : "baseExcess",
+                        "rhs" : 0
                       }
                     },
                     {
@@ -425,13 +409,13 @@
                               }
                             ]
                           },
-                          0.067125500000000005
+                          0.0671255
                         ]
                       }
                     }
                   ]
                 },
-                -1.7927930000000001
+                -1.792793
               ]
             }
           }
@@ -474,7 +458,7 @@
               1,
               {
                 "power" : {
-                  "base" : 2.7182818284590451,
+                  "base" : 2.718281828459045,
                   "exponent" : "pim3Score"
                 }
               }
@@ -482,7 +466,7 @@
           },
           "numerator" : {
             "power" : {
-              "base" : 2.7182818284590451,
+              "base" : 2.718281828459045,
               "exponent" : "pim3Score"
             }
           }

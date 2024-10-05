@@ -1,7 +1,7 @@
 {
   "color" : {
-    "blue" : 0.7450980544090271,
-    "green" : 0.78039216995239258,
+    "blue" : 0.7450980392156863,
+    "green" : 0.7803921568627451,
     "red" : 0
   },
   "groups" : [
@@ -26,9 +26,9 @@
             ],
             "variableInfo" : {
               "color" : {
-                "blue" : 0.18823528289794922,
-                "green" : 0.23137253522872925,
-                "red" : 0.99999994039535522
+                "blue" : 0.18823529411764706,
+                "green" : 0.23137254901960785,
+                "red" : 1
               },
               "variableReference" : "pupilReaction"
             }
@@ -54,8 +54,8 @@
             "variableInfo" : {
               "color" : {
                 "blue" : 0,
-                "green" : 0.58431375026702881,
-                "red" : 0.99999994039535522
+                "green" : 0.5843137254901961,
+                "red" : 1
               },
               "variableReference" : "electiveAdmission"
             }
@@ -81,8 +81,8 @@
             "variableInfo" : {
               "color" : {
                 "blue" : 0,
-                "green" : 0.80000001192092896,
-                "red" : 0.99999994039535522
+                "green" : 0.8,
+                "red" : 1
               },
               "variableReference" : "mechanicalVentilation"
             }
@@ -93,9 +93,9 @@
             "allowsNegative" : false,
             "variableInfo" : {
               "color" : {
-                "blue" : 0.34901958703994751,
-                "green" : 0.78039216995239258,
-                "red" : 0.20392152667045593
+                "blue" : 0.34901960784313724,
+                "green" : 0.7803921568627451,
+                "red" : 0.20392156862745098
               },
               "variableReference" : "baseExcess"
             }
@@ -106,9 +106,9 @@
             "allowsNegative" : false,
             "variableInfo" : {
               "color" : {
-                "blue" : 0.90196079015731812,
-                "green" : 0.67843139171600342,
-                "red" : 0.19607838988304138
+                "blue" : 0.9019607843137255,
+                "green" : 0.6784313725490196,
+                "red" : 0.19607843137254902
               },
               "variableReference" : "pim3SystolicBloodPressure"
             }
@@ -120,8 +120,8 @@
               "allowsNegative" : false,
               "variableInfo" : {
                 "color" : {
-                  "blue" : 0.99999994039535522,
-                  "green" : 0.47843140363693237,
+                  "blue" : 1,
+                  "green" : 0.47843137254901963,
                   "red" : 0
                 },
                 "variableReference" : "fiO2"
@@ -131,9 +131,9 @@
               "allowsNegative" : false,
               "variableInfo" : {
                 "color" : {
-                  "blue" : 0.83921575546264648,
-                  "green" : 0.33725488185882568,
-                  "red" : 0.34509801864624023
+                  "blue" : 0.8392156862745098,
+                  "green" : 0.33725490196078434,
+                  "red" : 0.34509803921568627
                 },
                 "variableReference" : "paO2"
               }
@@ -167,9 +167,9 @@
             ],
             "variableInfo" : {
               "color" : {
-                "blue" : 0.18823528289794922,
-                "green" : 0.23137253522872925,
-                "red" : 0.99999994039535522
+                "blue" : 0.18823529411764706,
+                "green" : 0.23137254901960785,
+                "red" : 1
               },
               "variableReference" : "recovery"
             }
@@ -202,9 +202,9 @@
             ],
             "variableInfo" : {
               "color" : {
-                "blue" : 0.87058824300765991,
-                "green" : 0.32156863808631897,
-                "red" : 0.68627452850341797
+                "blue" : 0.8705882352941177,
+                "green" : 0.3215686274509804,
+                "red" : 0.6862745098039216
               },
               "variableReference" : "weightedDiagnosis"
             }

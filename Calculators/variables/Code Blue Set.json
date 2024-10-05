@@ -20,11 +20,10 @@
               }
             },
             "condition" : {
-              "comparison" : {
-                "greaterThanOrEqualTo" : 1
-              },
+              "comparison" : "greaterThanOrEqualTo",
               "defaultState" : true,
-              "variableReference" : "age"
+              "lhs" : "age",
+              "rhs" : 1
             }
           },
           {
@@ -33,31 +32,28 @@
                 {
                   "component" : 3,
                   "condition" : {
-                    "comparison" : {
-                      "lessThanOrEqualTo" : 3
-                    },
+                    "comparison" : "lessThanOrEqualTo",
                     "defaultState" : true,
-                    "variableReference" : "weight"
+                    "lhs" : "weight",
+                    "rhs" : 3
                   }
                 },
                 {
                   "component" : 3.5,
                   "condition" : {
-                    "comparison" : {
-                      "lessThanOrEqualTo" : 6
-                    },
+                    "comparison" : "lessThanOrEqualTo",
                     "defaultState" : true,
-                    "variableReference" : "weight"
+                    "lhs" : "weight",
+                    "rhs" : 6
                   }
                 },
                 {
                   "component" : 4,
                   "condition" : {
-                    "comparison" : {
-                      "lessThanOrEqualTo" : 8
-                    },
+                    "comparison" : "lessThanOrEqualTo",
                     "defaultState" : true,
-                    "variableReference" : "weight"
+                    "lhs" : "weight",
+                    "rhs" : 8
                   }
                 },
                 {
@@ -132,11 +128,10 @@
               }
             },
             "condition" : {
-              "comparison" : {
-                "greaterThanOrEqualTo" : 1
-              },
+              "comparison" : "greaterThanOrEqualTo",
               "defaultState" : true,
-              "variableReference" : "age"
+              "lhs" : "age",
+              "rhs" : 1
             }
           },
           {
@@ -145,31 +140,28 @@
                 {
                   "component" : 8,
                   "condition" : {
-                    "comparison" : {
-                      "lessThanOrEqualTo" : 3
-                    },
+                    "comparison" : "lessThanOrEqualTo",
                     "defaultState" : true,
-                    "variableReference" : "weight"
+                    "lhs" : "weight",
+                    "rhs" : 3
                   }
                 },
                 {
                   "component" : 9,
                   "condition" : {
-                    "comparison" : {
-                      "lessThanOrEqualTo" : 4
-                    },
+                    "comparison" : "lessThanOrEqualTo",
                     "defaultState" : true,
-                    "variableReference" : "weight"
+                    "lhs" : "weight",
+                    "rhs" : 4
                   }
                 },
                 {
                   "component" : 10,
                   "condition" : {
-                    "comparison" : {
-                      "lessThanOrEqualTo" : 8
-                    },
+                    "comparison" : "lessThanOrEqualTo",
                     "defaultState" : true,
-                    "variableReference" : "weight"
+                    "lhs" : "weight",
+                    "rhs" : 8
                   }
                 },
                 {
@@ -214,11 +206,10 @@
               }
             },
             "condition" : {
-              "comparison" : {
-                "greaterThanOrEqualTo" : 1
-              },
+              "comparison" : "greaterThanOrEqualTo",
               "defaultState" : true,
-              "variableReference" : "age"
+              "lhs" : "age",
+              "rhs" : 1
             }
           },
           {
@@ -227,41 +218,37 @@
                 {
                   "component" : 10,
                   "condition" : {
-                    "comparison" : {
-                      "lessThanOrEqualTo" : 3
-                    },
+                    "comparison" : "lessThanOrEqualTo",
                     "defaultState" : true,
-                    "variableReference" : "weight"
+                    "lhs" : "weight",
+                    "rhs" : 3
                   }
                 },
                 {
                   "component" : 11,
                   "condition" : {
-                    "comparison" : {
-                      "lessThanOrEqualTo" : 4
-                    },
+                    "comparison" : "lessThanOrEqualTo",
                     "defaultState" : true,
-                    "variableReference" : "weight"
+                    "lhs" : "weight",
+                    "rhs" : 4
                   }
                 },
                 {
                   "component" : 12,
                   "condition" : {
-                    "comparison" : {
-                      "lessThanOrEqualTo" : 6
-                    },
+                    "comparison" : "lessThanOrEqualTo",
                     "defaultState" : true,
-                    "variableReference" : "weight"
+                    "lhs" : "weight",
+                    "rhs" : 6
                   }
                 },
                 {
                   "component" : 13,
                   "condition" : {
-                    "comparison" : {
-                      "lessThanOrEqualTo" : 8
-                    },
+                    "comparison" : "lessThanOrEqualTo",
                     "defaultState" : true,
-                    "variableReference" : "weight"
+                    "lhs" : "weight",
+                    "rhs" : 8
                   }
                 },
                 {
@@ -305,21 +292,19 @@
               }
             },
             "condition" : {
-              "comparison" : {
-                "lessThan" : 0.083333333333333329
-              },
+              "comparison" : "lessThan",
               "defaultState" : true,
-              "variableReference" : "age"
+              "lhs" : "age",
+              "rhs" : 0.08333333333333333
             }
           },
           {
             "component" : 1,
             "condition" : {
-              "comparison" : {
-                "lessThanOrEqualTo" : 2
-              },
+              "comparison" : "lessThanOrEqualTo",
               "defaultState" : true,
-              "variableReference" : "age"
+              "lhs" : "age",
+              "rhs" : 2
             }
           },
           {
@@ -354,21 +339,19 @@
           {
             "component" : -1,
             "condition" : {
-              "comparison" : {
-                "lessThan" : 1
-              },
+              "comparison" : "lessThan",
               "defaultState" : true,
-              "variableReference" : "age"
+              "lhs" : "age",
+              "rhs" : 1
             }
           },
           {
             "component" : 2,
             "condition" : {
-              "comparison" : {
-                "lessThanOrEqualTo" : 6
-              },
+              "comparison" : "lessThanOrEqualTo",
               "defaultState" : true,
-              "variableReference" : "age"
+              "lhs" : "age",
+              "rhs" : 6
             }
           },
           {
@@ -403,21 +386,19 @@
           {
             "component" : 4,
             "condition" : {
-              "comparison" : {
-                "lessThan" : 10
-              },
+              "comparison" : "lessThan",
               "defaultState" : true,
-              "variableReference" : "weight"
+              "lhs" : "weight",
+              "rhs" : 10
             }
           },
           {
             "component" : 4.5,
             "condition" : {
-              "comparison" : {
-                "lessThan" : 20
-              },
+              "comparison" : "lessThan",
               "defaultState" : true,
-              "variableReference" : "weight"
+              "lhs" : "weight",
+              "rhs" : 20
             }
           },
           {
@@ -428,21 +409,19 @@
               }
             },
             "condition" : {
-              "comparison" : {
-                "equalTo" : 20
-              },
+              "comparison" : "equalTo",
               "defaultState" : true,
-              "variableReference" : "weight"
+              "lhs" : "weight",
+              "rhs" : 20
             }
           },
           {
             "component" : 5.5,
             "condition" : {
-              "comparison" : {
-                "lessThanOrEqualTo" : 40
-              },
+              "comparison" : "lessThanOrEqualTo",
               "defaultState" : true,
-              "variableReference" : "weight"
+              "lhs" : "weight",
+              "rhs" : 40
             }
           },
           {
@@ -477,11 +456,10 @@
           {
             "component" : 6.5,
             "condition" : {
-              "comparison" : {
-                "lessThan" : 6
-              },
+              "comparison" : "lessThan",
               "defaultState" : true,
-              "variableReference" : "weight"
+              "lhs" : "weight",
+              "rhs" : 6
             }
           },
           {
@@ -492,31 +470,28 @@
               }
             },
             "condition" : {
-              "comparison" : {
-                "equalTo" : 6
-              },
+              "comparison" : "equalTo",
               "defaultState" : true,
-              "variableReference" : "weight"
+              "lhs" : "weight",
+              "rhs" : 6
             }
           },
           {
             "component" : 8,
             "condition" : {
-              "comparison" : {
-                "lessThan" : 15
-              },
+              "comparison" : "lessThan",
               "defaultState" : true,
-              "variableReference" : "weight"
+              "lhs" : "weight",
+              "rhs" : 15
             }
           },
           {
             "component" : -1,
             "condition" : {
-              "comparison" : {
-                "lessThanOrEqualTo" : 30
-              },
+              "comparison" : "lessThanOrEqualTo",
               "defaultState" : true,
-              "variableReference" : "weight"
+              "lhs" : "weight",
+              "rhs" : 30
             }
           },
           {
@@ -561,11 +536,10 @@
               }
             },
             "condition" : {
-              "comparison" : {
-                "equalTo" : 15
-              },
+              "comparison" : "equalTo",
               "defaultState" : true,
-              "variableReference" : "weight"
+              "lhs" : "weight",
+              "rhs" : 15
             }
           },
           {
@@ -574,11 +548,10 @@
                 {
                   "component" : 9,
                   "condition" : {
-                    "comparison" : {
-                      "lessThanOrEqualTo" : 30
-                    },
+                    "comparison" : "lessThanOrEqualTo",
                     "defaultState" : true,
-                    "variableReference" : "weight"
+                    "lhs" : "weight",
+                    "rhs" : 30
                   }
                 },
                 {
@@ -587,11 +560,10 @@
               ]
             },
             "condition" : {
-              "comparison" : {
-                "greaterThan" : 15
-              },
+              "comparison" : "greaterThan",
               "defaultState" : true,
-              "variableReference" : "weight"
+              "lhs" : "weight",
+              "rhs" : 15
             }
           },
           {
@@ -631,11 +603,10 @@
               }
             },
             "condition" : {
-              "comparison" : {
-                "equalTo" : 15
-              },
+              "comparison" : "equalTo",
               "defaultState" : true,
-              "variableReference" : "weight"
+              "lhs" : "weight",
+              "rhs" : 15
             }
           },
           {
@@ -644,11 +615,10 @@
                 {
                   "component" : 10,
                   "condition" : {
-                    "comparison" : {
-                      "lessThanOrEqualTo" : 30
-                    },
+                    "comparison" : "lessThanOrEqualTo",
                     "defaultState" : true,
-                    "variableReference" : "weight"
+                    "lhs" : "weight",
+                    "rhs" : 30
                   }
                 },
                 {
@@ -657,11 +627,10 @@
               ]
             },
             "condition" : {
-              "comparison" : {
-                "greaterThan" : 15
-              },
+              "comparison" : "greaterThan",
               "defaultState" : true,
-              "variableReference" : "weight"
+              "lhs" : "weight",
+              "rhs" : 15
             }
           },
           {
@@ -763,21 +732,19 @@
           {
             "component" : 60,
             "condition" : {
-              "comparison" : {
-                "lessThan" : 0.083333333333333329
-              },
+              "comparison" : "lessThan",
               "defaultState" : true,
-              "variableReference" : "age"
+              "lhs" : "age",
+              "rhs" : 0.08333333333333333
             }
           },
           {
             "component" : 90,
             "condition" : {
-              "comparison" : {
-                "greaterThan" : 10
-              },
+              "comparison" : "greaterThan",
               "defaultState" : true,
-              "variableReference" : "age"
+              "lhs" : "age",
+              "rhs" : 10
             }
           },
           {
@@ -823,11 +790,10 @@
               }
             },
             "condition" : {
-              "comparison" : {
-                "lessThan" : 0
-              },
+              "comparison" : "lessThan",
               "defaultState" : true,
-              "variableReference" : "age"
+              "lhs" : "age",
+              "rhs" : 0.25
             }
           },
           {
@@ -838,11 +804,10 @@
               }
             },
             "condition" : {
-              "comparison" : {
-                "lessThan" : 0
-              },
+              "comparison" : "lessThan",
               "defaultState" : true,
-              "variableReference" : "age"
+              "lhs" : "age",
+              "rhs" : 0.5
             }
           },
           {
@@ -853,11 +818,10 @@
               }
             },
             "condition" : {
-              "comparison" : {
-                "lessThan" : 1
-              },
+              "comparison" : "lessThan",
               "defaultState" : true,
-              "variableReference" : "age"
+              "lhs" : "age",
+              "rhs" : 1
             }
           },
           {
@@ -868,11 +832,10 @@
               }
             },
             "condition" : {
-              "comparison" : {
-                "lessThan" : 6
-              },
+              "comparison" : "lessThan",
               "defaultState" : true,
-              "variableReference" : "age"
+              "lhs" : "age",
+              "rhs" : 6
             }
           },
           {
@@ -883,11 +846,10 @@
               }
             },
             "condition" : {
-              "comparison" : {
-                "lessThan" : 10
-              },
+              "comparison" : "lessThan",
               "defaultState" : true,
-              "variableReference" : "age"
+              "lhs" : "age",
+              "rhs" : 10
             }
           },
           {
@@ -932,11 +894,10 @@
               }
             },
             "condition" : {
-              "comparison" : {
-                "lessThan" : 0
-              },
+              "comparison" : "lessThan",
               "defaultState" : true,
-              "variableReference" : "age"
+              "lhs" : "age",
+              "rhs" : 0.5
             }
           },
           {
@@ -947,11 +908,10 @@
               }
             },
             "condition" : {
-              "comparison" : {
-                "lessThan" : 1
-              },
+              "comparison" : "lessThan",
               "defaultState" : true,
-              "variableReference" : "age"
+              "lhs" : "age",
+              "rhs" : 1
             }
           },
           {
@@ -962,11 +922,10 @@
               }
             },
             "condition" : {
-              "comparison" : {
-                "lessThan" : 6
-              },
+              "comparison" : "lessThan",
               "defaultState" : true,
-              "variableReference" : "age"
+              "lhs" : "age",
+              "rhs" : 6
             }
           },
           {
@@ -977,11 +936,10 @@
               }
             },
             "condition" : {
-              "comparison" : {
-                "lessThan" : 10
-              },
+              "comparison" : "lessThan",
               "defaultState" : true,
-              "variableReference" : "age"
+              "lhs" : "age",
+              "rhs" : 10
             }
           },
           {
@@ -992,11 +950,10 @@
               }
             },
             "condition" : {
-              "comparison" : {
-                "lessThan" : 15
-              },
+              "comparison" : "lessThan",
               "defaultState" : true,
-              "variableReference" : "age"
+              "lhs" : "age",
+              "rhs" : 15
             }
           },
           {

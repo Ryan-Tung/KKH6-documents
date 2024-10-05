@@ -3,7 +3,7 @@
     "displayName" : "Adrenaline (1:1000) 1mg\/mL",
     "maximumPeripheralConcentration" : 30,
     "referenceName" : "adrenalineInfusion",
-    "weightBasedDosage" : 0.29999999999999999,
+    "weightBasedDosage" : 0.3,
     "weightBasedInfusionInstructionsUnit" : {
       "conversionScale" : 1,
       "name" : "mg in 50mL of N\/S or D5%"
@@ -53,7 +53,7 @@
     "displayName" : "NORadrenaline (4mg\/4mL)",
     "maximumPeripheralConcentration" : 30,
     "referenceName" : "noradrenalineInfusion",
-    "weightBasedDosage" : 0.29999999999999999,
+    "weightBasedDosage" : 0.3,
     "weightBasedInfusionInstructionsUnit" : {
       "conversionScale" : 1,
       "name" : "mg in 50mL of N\/S or D5%"

@@ -1,8 +1,8 @@
 {
   "color" : {
     "blue" : 0,
-    "green" : 0.80000001192092896,
-    "red" : 0.99999994039535522
+    "green" : 0.8,
+    "red" : 1
   },
   "groups" : [
     {
@@ -12,9 +12,9 @@
             "allowsNegative" : false,
             "variableInfo" : {
               "color" : {
-                "blue" : 0.83921575546264648,
-                "green" : 0.33725488185882568,
-                "red" : 0.34509801864624023
+                "blue" : 0.8392156862745098,
+                "green" : 0.33725490196078434,
+                "red" : 0.34509803921568627
               },
               "variableReference" : "weight"
             }
@@ -32,8 +32,8 @@
             "variableInfo" : {
               "color" : {
                 "blue" : 0,
-                "green" : 0.58431375026702881,
-                "red" : 0.99999994039535522
+                "green" : 0.5843137254901961,
+                "red" : 1
               },
               "variableReference" : "serumSodium"
             }
@@ -45,8 +45,8 @@
             "variableInfo" : {
               "color" : {
                 "blue" : 0,
-                "green" : 0.58431375026702881,
-                "red" : 0.99999994039535522
+                "green" : 0.5843137254901961,
+                "red" : 1
               },
               "variableReference" : "glucose"
             }
@@ -67,8 +67,8 @@
             "variableInfo" : {
               "color" : {
                 "blue" : 0,
-                "green" : 0.58431375026702881,
-                "red" : 0.99999994039535522
+                "green" : 0.5843137254901961,
+                "red" : 1
               },
               "variableReference" : "serumSodium"
             }
@@ -90,8 +90,8 @@
             "variableInfo" : {
               "color" : {
                 "blue" : 0,
-                "green" : 0.58431375026702881,
-                "red" : 0.99999994039535522
+                "green" : 0.5843137254901961,
+                "red" : 1
               },
               "variableReference" : "baseExcess"
             }
@@ -122,8 +122,8 @@
             "variableInfo" : {
               "color" : {
                 "blue" : 0,
-                "green" : 0.58431375026702881,
-                "red" : 0.99999994039535522
+                "green" : 0.5843137254901961,
+                "red" : 1
               },
               "variableReference" : "serumSodium"
             }
@@ -145,8 +145,8 @@
             "variableInfo" : {
               "color" : {
                 "blue" : 0,
-                "green" : 0.58431375026702881,
-                "red" : 0.99999994039535522
+                "green" : 0.5843137254901961,
+                "red" : 1
               },
               "variableReference" : "sodium"
             }
@@ -158,8 +158,8 @@
             "variableInfo" : {
               "color" : {
                 "blue" : 0,
-                "green" : 0.58431375026702881,
-                "red" : 0.99999994039535522
+                "green" : 0.5843137254901961,
+                "red" : 1
               },
               "variableReference" : "glucose"
             }
@@ -171,8 +171,8 @@
             "variableInfo" : {
               "color" : {
                 "blue" : 0,
-                "green" : 0.58431375026702881,
-                "red" : 0.99999994039535522
+                "green" : 0.5843137254901961,
+                "red" : 1
               },
               "variableReference" : "urea"
             }
@@ -193,8 +193,8 @@
             "variableInfo" : {
               "color" : {
                 "blue" : 0,
-                "green" : 0.58431375026702881,
-                "red" : 0.99999994039535522
+                "green" : 0.5843137254901961,
+                "red" : 1
               },
               "variableReference" : "currentPotassium"
             }
@@ -206,8 +206,8 @@
             "variableInfo" : {
               "color" : {
                 "blue" : 0,
-                "green" : 0.58431375026702881,
-                "red" : 0.99999994039535522
+                "green" : 0.5843137254901961,
+                "red" : 1
               },
               "variableReference" : "desiredPotassium"
             }

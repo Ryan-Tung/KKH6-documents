@@ -115,11 +115,10 @@
               ]
             },
             "condition" : {
-              "comparison" : {
-                "equalTo" : 0
-              },
+              "comparison" : "equalTo",
               "defaultState" : true,
-              "variableReference" : "feedType"
+              "lhs" : "feedType",
+              "rhs" : 0
             }
           },
           {

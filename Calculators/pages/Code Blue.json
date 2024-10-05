@@ -1,7 +1,7 @@
 {
   "color" : {
-    "blue" : 0.99999994039535522,
-    "green" : 0.47843140363693237,
+    "blue" : 1,
+    "green" : 0.47843137254901963,
     "red" : 0
   },
   "groups" : [
@@ -23,9 +23,9 @@
               "allowsNegative" : false,
               "variableInfo" : {
                 "color" : {
-                  "blue" : 0.90196079015731812,
-                  "green" : 0.67843139171600342,
-                  "red" : 0.19607838988304138
+                  "blue" : 0.9019607843137255,
+                  "green" : 0.6784313725490196,
+                  "red" : 0.19607843137254902
                 },
                 "variableReference" : "age"
               }
@@ -34,9 +34,9 @@
               "allowsNegative" : false,
               "variableInfo" : {
                 "color" : {
-                  "blue" : 0.83921575546264648,
-                  "green" : 0.33725488185882568,
-                  "red" : 0.34509801864624023
+                  "blue" : 0.8392156862745098,
+                  "green" : 0.33725490196078434,
+                  "red" : 0.34509803921568627
                 },
                 "variableReference" : "weight"
               }
@@ -49,11 +49,10 @@
               "text" : "The calculators on this page are not for preterm neonates (<2kg)"
             },
             "condition" : {
-              "comparison" : {
-                "lessThan" : 2
-              },
+              "comparison" : "lessThan",
               "defaultState" : true,
-              "variableReference" : "weight"
+              "lhs" : "weight",
+              "rhs" : 2
             }
           }
         }
@@ -73,11 +72,10 @@
               "output" : "ettCuffed"
             },
             "condition" : {
-              "comparison" : {
-                "greaterThanOrEqualTo" : 3.5
-              },
+              "comparison" : "greaterThanOrEqualTo",
               "defaultState" : true,
-              "variableReference" : "weight"
+              "lhs" : "weight",
+              "rhs" : 3.5
             }
           }
         },
@@ -96,11 +94,10 @@
               "output" : "laryngoscopeMacintosh"
             },
             "condition" : {
-              "comparison" : {
-                "greaterThan" : 0
-              },
+              "comparison" : "greaterThan",
               "defaultState" : true,
-              "variableReference" : "laryngoscopeMacintosh"
+              "lhs" : "laryngoscopeMacintosh",
+              "rhs" : 0
             }
           }
         }
@@ -122,11 +119,10 @@
               "output" : "vascularCatheterSize_all"
             },
             "condition" : {
-              "comparison" : {
-                "notEqualTo" : -1
-              },
+              "comparison" : "notEqualTo",
               "defaultState" : true,
-              "variableReference" : "vascularCatheterSize_all"
+              "lhs" : "vascularCatheterSize_all",
+              "rhs" : -1
             }
           }
         },
@@ -136,11 +132,10 @@
               "output" : "vascularCatheterSize_medcomp"
             },
             "condition" : {
-              "comparison" : {
-                "equalTo" : -1
-              },
+              "comparison" : "equalTo",
               "defaultState" : true,
-              "variableReference" : "vascularCatheterSize_all"
+              "lhs" : "vascularCatheterSize_all",
+              "rhs" : -1
             }
           }
         },
@@ -150,11 +145,10 @@
               "output" : "vascularCatheterSize_covidien"
             },
             "condition" : {
-              "comparison" : {
-                "equalTo" : -1
-              },
+              "comparison" : "equalTo",
               "defaultState" : true,
-              "variableReference" : "vascularCatheterSize_all"
+              "lhs" : "vascularCatheterSize_all",
+              "rhs" : -1
             }
           }
         },

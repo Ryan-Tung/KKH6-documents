@@ -1,0 +1,3903 @@
+[
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "ml\/day"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "Total Fluids",
+    "referenceName" : "feedingTotalFluids",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "ml\/day"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "Amount Substrate for IV Med",
+    "referenceName" : "amountSubstrateForIVMed",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "Remaining Fluids",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : {
+              "sum" : [
+                "feedingTotalFluids",
+                {
+                  "negative" : "amountSubstrateForIVMed"
+                }
+              ]
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedType",
+              "rhs" : 0
+            }
+          },
+          {
+            "component" : {
+              "sum" : [
+                "totalFluidOrdered",
+                {
+                  "negative" : "amountSubstrateForIVMed"
+                }
+              ]
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedType",
+              "rhs" : 1
+            }
+          },
+          {
+            "component" : {
+              "nilConstant" : null
+            }
+          }
+        ]
+      },
+      "parameters" : [
+        "amountSubstrateForIVMed",
+        "feedType",
+        "feedingTotalFluids",
+        "totalFluidOrdered"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "feedingRemainingFluids",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Milk Type",
+    "referenceName" : "feedingMilkType",
+    "startingValue" : -1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "feeds"
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Number of feeds\/day",
+    "referenceName" : "numberOfFeedsPerDay",
+    "startingValue" : -1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "feeds"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Intubation Status",
+    "referenceName" : "intubationStatus",
+    "startingValue" : -1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Total Fluid Ordered",
+    "referenceName" : "totalFluidOrdered",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "hr"
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Continuous Feed hrs\/day",
+    "referenceName" : "continuousFeedHrsPerDay",
+    "startingValue" : -1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "hr"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Priming Required",
+    "referenceName" : "primingRequired",
+    "startingValue" : -1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "kg"
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "weightRoundedToWhole",
+    "formula" : {
+      "equation" : {
+        "round" : {
+          "decimals" : 0,
+          "roundingMethod" : "nearest",
+          "value" : "weight"
+        }
+      },
+      "parameters" : [
+        "weight"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "weightRoundedToWhole",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "kg"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "joules"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "energyRequirementIntubated",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : {
+              "conditional" : [
+                {
+                  "component" : {
+                    "product" : [
+                      77,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 5
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      60,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 8
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      62,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 10
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      60,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 15
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      55,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 20
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      47,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 25
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      43,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 30
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      40,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 35
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      37,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 40
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      35,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 45
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      33,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 50
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      32,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 55
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      31,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 60
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      29,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 70
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      28,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 78
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      27,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 85
+                  }
+                },
+                {
+                  "component" : {
+                    "nilConstant" : null
+                  }
+                }
+              ]
+            },
+            "condition" : {
+              "comparison" : "greaterThanOrEqualTo",
+              "defaultState" : true,
+              "lhs" : "weightRoundedToWhole",
+              "rhs" : 2
+            }
+          },
+          {
+            "component" : {
+              "nilConstant" : null
+            }
+          }
+        ]
+      },
+      "parameters" : [
+        "weight",
+        "weightRoundedToWhole"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "energyRequirementIntubated",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "joules"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "joules"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "energyRequirementNonIntubated",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : {
+              "conditional" : [
+                {
+                  "component" : {
+                    "product" : [
+                      102,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 5
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      80,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 8
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      82,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 9
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      78,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 10
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      71,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 15
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      64,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 20
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      56,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 25
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      51,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 30
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      47,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 35
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      44,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 40
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      42,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 45
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      40,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 50
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      38,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 55
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      36,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 60
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      33,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 85
+                  }
+                },
+                {
+                  "component" : {
+                    "nilConstant" : null
+                  }
+                }
+              ]
+            },
+            "condition" : {
+              "comparison" : "greaterThanOrEqualTo",
+              "defaultState" : true,
+              "lhs" : "weightRoundedToWhole",
+              "rhs" : 2
+            }
+          },
+          {
+            "component" : {
+              "nilConstant" : null
+            }
+          }
+        ]
+      },
+      "parameters" : [
+        "weight",
+        "weightRoundedToWhole"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "energyRequirementNonIntubated",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "joules"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "joules"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "patientsEnergyRequirement",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : "energyRequirementNonIntubated",
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "intubationStatus",
+              "rhs" : 0
+            }
+          },
+          {
+            "component" : "energyRequirementIntubated",
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "intubationStatus",
+              "rhs" : 1
+            }
+          },
+          {
+            "component" : {
+              "nilConstant" : null
+            }
+          }
+        ]
+      },
+      "parameters" : [
+        "energyRequirementIntubated",
+        "energyRequirementNonIntubated",
+        "intubationStatus"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "patientsEnergyRequirement",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "joules"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "milkConcentrationPerMl",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : {
+              "nilConstant" : null
+            },
+            "condition" : {
+              "comparison" : "lessThan",
+              "defaultState" : true,
+              "lhs" : "feedingMilkType",
+              "rhs" : 0
+            }
+          },
+          {
+            "component" : 0.68,
+            "condition" : {
+              "comparison" : "lessThanOrEqualTo",
+              "defaultState" : true,
+              "lhs" : "feedingMilkType",
+              "rhs" : 1
+            }
+          },
+          {
+            "component" : 0.74,
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedingMilkType",
+              "rhs" : 2
+            }
+          },
+          {
+            "component" : 0.7,
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedingMilkType",
+              "rhs" : 3
+            }
+          },
+          {
+            "component" : 0.68,
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedingMilkType",
+              "rhs" : 4
+            }
+          },
+          {
+            "component" : 0.75,
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedingMilkType",
+              "rhs" : 5
+            }
+          },
+          {
+            "component" : 1,
+            "condition" : {
+              "comparison" : "lessThanOrEqualTo",
+              "defaultState" : true,
+              "lhs" : "feedingMilkType",
+              "rhs" : 8
+            }
+          },
+          {
+            "component" : {
+              "nilConstant" : null
+            }
+          }
+        ]
+      },
+      "parameters" : [
+        "feedingMilkType"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "milkConcentrationPerMl",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "milkVolumeRequiredPerDay",
+    "formula" : {
+      "equation" : {
+        "division" : {
+          "denominator" : "milkConcentrationPerMl",
+          "numerator" : "patientsEnergyRequirement"
+        }
+      },
+      "parameters" : [
+        "milkConcentrationPerMl",
+        "patientsEnergyRequirement"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "milkVolumeRequiredPerDay",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "totalMilkVolumeAllowed",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : "feedingRemainingFluids",
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedingMilkType",
+              "rhs" : 0
+            }
+          },
+          {
+            "component" : "feedingRemainingFluids",
+            "condition" : {
+              "comparison" : "lessThan",
+              "defaultState" : true,
+              "lhs" : "weight",
+              "rhs" : 10
+            }
+          },
+          {
+            "component" : "feedingRemainingFluids",
+            "condition" : {
+              "comparison" : "lessThan",
+              "defaultState" : true,
+              "lhs" : "feedingRemainingFluids",
+              "rhs" : "milkVolumeRequiredPerDay"
+            }
+          },
+          {
+            "component" : "milkVolumeRequiredPerDay"
+          }
+        ]
+      },
+      "parameters" : [
+        "feedingMilkType",
+        "feedingRemainingFluids",
+        "milkVolumeRequiredPerDay",
+        "weight"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "totalMilkVolumeAllowed",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "milkPerFeedAtFullFeeds",
+    "formula" : {
+      "equation" : {
+        "product" : [
+          {
+            "round" : {
+              "decimals" : 0,
+              "roundingMethod" : "nearest",
+              "value" : {
+                "division" : {
+                  "denominator" : 5,
+                  "numerator" : {
+                    "division" : {
+                      "denominator" : "numberOfFeedsPerDay",
+                      "numerator" : "totalMilkVolumeAllowed"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          5
+        ]
+      },
+      "parameters" : [
+        "numberOfFeedsPerDay",
+        "totalMilkVolumeAllowed"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "milkPerFeedAtFullFeeds",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "waterBolusPerFeed",
+    "formula" : {
+      "equation" : {
+        "sum" : [
+          "targetVolumePerFeed",
+          {
+            "negative" : "milkPerFeedAtFullFeeds"
+          }
+        ]
+      },
+      "parameters" : [
+        "milkPerFeedAtFullFeeds",
+        "targetVolumePerFeed"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "waterBolusPerFeed",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "maxmimumFluids",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : {
+              "conditional" : [
+                {
+                  "component" : {
+                    "product" : [
+                      180,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 5
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      144,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 10
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      115,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 11
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      110,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 12
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      106,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 13
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      103,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 14
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      100,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 15
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      98,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 16
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      95,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 17
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      93,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 18
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      92,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 19
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      90,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 20
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      89,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 21
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      87,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 22
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      86,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 23
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      85,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 24
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      77,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 25
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      75,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 26
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      73,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 27
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      71,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 28
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      70,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 29
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      68,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 30
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      67,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 31
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      65,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 32
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      64,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 33
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      63,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 34
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      62,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 35
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      61,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 36
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      60,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 37
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      59,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 38
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      58,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 39
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      57,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 40
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      56,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 41
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      55,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 43
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      54,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 44
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      53,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 46
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      52,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 48
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      51,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 49
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      50,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 51
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      49,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 53
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      48,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 56
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      47,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 58
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      46,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 61
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      45,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 64
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      44,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 67
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      43,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 71
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      42,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 75
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      41,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 80
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      40,
+                      "weight"
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "lessThanOrEqualTo",
+                    "defaultState" : true,
+                    "lhs" : "weightRoundedToWhole",
+                    "rhs" : 85
+                  }
+                },
+                {
+                  "component" : {
+                    "nilConstant" : null
+                  }
+                }
+              ]
+            },
+            "condition" : {
+              "comparison" : "greaterThanOrEqualTo",
+              "defaultState" : true,
+              "lhs" : "weightRoundedToWhole",
+              "rhs" : 2
+            }
+          },
+          {
+            "component" : {
+              "nilConstant" : null
+            }
+          }
+        ]
+      },
+      "parameters" : [
+        "weight",
+        "weightRoundedToWhole"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "maxmimumFluids",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "continuousWaterRequiredPerDay",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : 0,
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedingMilkType",
+              "rhs" : 0
+            }
+          },
+          {
+            "component" : 0,
+            "condition" : {
+              "comparison" : "lessThan",
+              "defaultState" : true,
+              "lhs" : "weight",
+              "rhs" : 10
+            }
+          },
+          {
+            "component" : 0,
+            "condition" : {
+              "comparison" : "lessThan",
+              "defaultState" : true,
+              "lhs" : "feedingRemainingFluids",
+              "rhs" : "milkVolumeRequiredPerDay"
+            }
+          },
+          {
+            "component" : {
+              "sum" : [
+                "feedingRemainingFluids",
+                {
+                  "negative" : "milkVolumeRequiredPerDay"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "parameters" : [
+        "feedingMilkType",
+        "feedingRemainingFluids",
+        "milkVolumeRequiredPerDay",
+        "weight"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "continuousWaterRequiredPerDay",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "ratioMilkToTotalFeeds",
+    "formula" : {
+      "equation" : {
+        "division" : {
+          "denominator" : {
+            "sum" : [
+              "totalMilkVolumeAllowed",
+              "continuousWaterRequiredPerDay"
+            ]
+          },
+          "numerator" : "totalMilkVolumeAllowed"
+        }
+      },
+      "parameters" : [
+        "continuousWaterRequiredPerDay",
+        "totalMilkVolumeAllowed"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "ratioMilkToTotalFeeds",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "ratioWaterToTotalFeeds",
+    "formula" : {
+      "equation" : {
+        "division" : {
+          "denominator" : {
+            "sum" : [
+              "totalMilkVolumeAllowed",
+              "continuousWaterRequiredPerDay"
+            ]
+          },
+          "numerator" : "continuousWaterRequiredPerDay"
+        }
+      },
+      "parameters" : [
+        "continuousWaterRequiredPerDay",
+        "totalMilkVolumeAllowed"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "ratioWaterToTotalFeeds",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "ml\/hr"
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "continuousMilkPerHour",
+    "formula" : {
+      "equation" : {
+        "division" : {
+          "denominator" : "continuousFeedHrsPerDay",
+          "numerator" : "totalMilkVolumeAllowed"
+        }
+      },
+      "parameters" : [
+        "continuousFeedHrsPerDay",
+        "totalMilkVolumeAllowed"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "continuousMilkPerHour",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "ml\/hr"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "ml\/hr"
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "continuousWaterPerHour",
+    "formula" : {
+      "equation" : {
+        "division" : {
+          "denominator" : "continuousFeedHrsPerDay",
+          "numerator" : "continuousWaterRequiredPerDay"
+        }
+      },
+      "parameters" : [
+        "continuousFeedHrsPerDay",
+        "continuousWaterRequiredPerDay"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "continuousWaterPerHour",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "ml\/hr"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "ml\/day"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "Milk Given",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : {
+              "product" : [
+                "numberOfFeedsPerDay",
+                {
+                  "product" : [
+                    {
+                      "round" : {
+                        "decimals" : 0,
+                        "roundingMethod" : "nearest",
+                        "value" : {
+                          "division" : {
+                            "denominator" : 5,
+                            "numerator" : "milkPerFeedAtFullFeeds"
+                          }
+                        }
+                      }
+                    },
+                    5
+                  ]
+                }
+              ]
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedType",
+              "rhs" : 0
+            }
+          },
+          {
+            "component" : {
+              "product" : [
+                "continuousFeedHrsPerDay",
+                "fullFeedRate",
+                "ratioMilkToTotalFeeds"
+              ]
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedType",
+              "rhs" : 1
+            }
+          },
+          {
+            "component" : {
+              "nilConstant" : null
+            }
+          }
+        ]
+      },
+      "parameters" : [
+        "continuousFeedHrsPerDay",
+        "feedType",
+        "fullFeedRate",
+        "milkPerFeedAtFullFeeds",
+        "numberOfFeedsPerDay",
+        "ratioMilkToTotalFeeds"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "actualMilkDeliveredPerDay",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "ml\/day"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Feeding Status",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : -1,
+            "condition" : {
+              "comparison" : "lessThanOrEqualTo",
+              "defaultState" : true,
+              "lhs" : {
+                "division" : {
+                  "denominator" : "milkVolumeRequiredPerDay",
+                  "numerator" : "actualMilkDeliveredPerDay"
+                }
+              },
+              "rhs" : 0.9
+            }
+          },
+          {
+            "component" : 1,
+            "condition" : {
+              "comparison" : "greaterThan",
+              "defaultState" : true,
+              "lhs" : {
+                "division" : {
+                  "denominator" : "milkVolumeRequiredPerDay",
+                  "numerator" : "actualMilkDeliveredPerDay"
+                }
+              },
+              "rhs" : 1.1
+            }
+          },
+          {
+            "component" : 0
+          }
+        ]
+      },
+      "parameters" : [
+        "actualMilkDeliveredPerDay",
+        "milkVolumeRequiredPerDay"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "feedingStatus",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "ml\/day"
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Milk Required",
+    "formula" : {
+      "equation" : {
+        "product" : [
+          {
+            "rangeConstant" : {
+              "boundaryValue" : 1.1,
+              "value" : 0.91
+            }
+          },
+          "milkVolumeRequiredPerDay"
+        ]
+      },
+      "parameters" : [
+        "milkVolumeRequiredPerDay"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "milkRequiredPerDayRange",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "ml\/day"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "ml\/day"
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Total Feed\/day (Water + Milk)",
+    "formula" : {
+      "equation" : {
+        "product" : [
+          "fullFeedRate",
+          "continuousFeedHrsPerDay"
+        ]
+      },
+      "parameters" : [
+        "continuousFeedHrsPerDay",
+        "fullFeedRate"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "totalFeedPerDayWaterAndMilk",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "ml\/day"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "ml\/hr"
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Start Up Drip Rate",
+    "formula" : {
+      "equation" : {
+        "division" : {
+          "denominator" : 24,
+          "numerator" : "feedingRemainingFluids"
+        }
+      },
+      "parameters" : [
+        "feedingRemainingFluids"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "startUpDripRate",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "ml\/hr"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "ml\/feed"
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Target Volume",
+    "formula" : {
+      "equation" : {
+        "division" : {
+          "denominator" : "numberOfFeedsPerDay",
+          "numerator" : "feedingRemainingFluids"
+        }
+      },
+      "parameters" : [
+        "feedingRemainingFluids",
+        "numberOfFeedsPerDay"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "targetVolumePerFeed",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "ml\/feed"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "ml\/hr"
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Full Feed Rate",
+    "formula" : {
+      "equation" : {
+        "division" : {
+          "denominator" : "continuousFeedHrsPerDay",
+          "numerator" : "feedingRemainingFluids"
+        }
+      },
+      "parameters" : [
+        "continuousFeedHrsPerDay",
+        "feedingRemainingFluids"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "fullFeedRate",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "ml\/hr"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Milk",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : {
+              "product" : [
+                {
+                  "round" : {
+                    "decimals" : 0,
+                    "roundingMethod" : "nearest",
+                    "value" : {
+                      "division" : {
+                        "denominator" : 5,
+                        "numerator" : {
+                          "product" : [
+                            "milkPerFeedAtFullFeeds",
+                            0.25
+                          ]
+                        }
+                      }
+                    }
+                  }
+                },
+                5
+              ]
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedType",
+              "rhs" : 0
+            }
+          },
+          {
+            "component" : {
+              "conditional" : [
+                {
+                  "component" : {
+                    "product" : [
+                      {
+                        "round" : {
+                          "decimals" : 0,
+                          "roundingMethod" : "nearest",
+                          "value" : {
+                            "division" : {
+                              "denominator" : 5,
+                              "numerator" : {
+                                "product" : [
+                                  {
+                                    "linear" : {
+                                      "constant" : 20,
+                                      "gradient" : 4,
+                                      "target" : "twentyFivePercentFeedRate"
+                                    }
+                                  },
+                                  "ratioMilkToTotalFeeds"
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      },
+                      5
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "primingRequired",
+                    "rhs" : 1
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      {
+                        "round" : {
+                          "decimals" : 0,
+                          "roundingMethod" : "nearest",
+                          "value" : {
+                            "division" : {
+                              "denominator" : 5,
+                              "numerator" : {
+                                "product" : [
+                                  "twentyFivePercentFeedRate",
+                                  4,
+                                  "ratioMilkToTotalFeeds"
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      },
+                      5
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "primingRequired",
+                    "rhs" : 0
+                  }
+                },
+                {
+                  "component" : {
+                    "nilConstant" : null
+                  }
+                }
+              ]
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedType",
+              "rhs" : 1
+            }
+          },
+          {
+            "component" : {
+              "nilConstant" : null
+            }
+          }
+        ]
+      },
+      "parameters" : [
+        "feedType",
+        "milkPerFeedAtFullFeeds",
+        "primingRequired",
+        "ratioMilkToTotalFeeds",
+        "twentyFivePercentFeedRate"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "twentyFivePercentFeedMilk",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Water",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : {
+              "product" : [
+                {
+                  "round" : {
+                    "decimals" : 0,
+                    "roundingMethod" : "nearest",
+                    "value" : {
+                      "division" : {
+                        "denominator" : 5,
+                        "numerator" : {
+                          "product" : [
+                            "waterBolusPerFeed",
+                            0.25
+                          ]
+                        }
+                      }
+                    }
+                  }
+                },
+                5
+              ]
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedType",
+              "rhs" : 0
+            }
+          },
+          {
+            "component" : {
+              "conditional" : [
+                {
+                  "component" : {
+                    "product" : [
+                      {
+                        "round" : {
+                          "decimals" : 0,
+                          "roundingMethod" : "nearest",
+                          "value" : {
+                            "division" : {
+                              "denominator" : 5,
+                              "numerator" : {
+                                "product" : [
+                                  {
+                                    "linear" : {
+                                      "constant" : 20,
+                                      "gradient" : 5,
+                                      "target" : "twentyFivePercentFeedRate"
+                                    }
+                                  },
+                                  "ratioWaterToTotalFeeds"
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      },
+                      5
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "primingRequired",
+                    "rhs" : 1
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      {
+                        "round" : {
+                          "decimals" : 0,
+                          "roundingMethod" : "nearest",
+                          "value" : {
+                            "division" : {
+                              "denominator" : 5,
+                              "numerator" : {
+                                "product" : [
+                                  "twentyFivePercentFeedRate",
+                                  4,
+                                  "ratioWaterToTotalFeeds"
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      },
+                      5
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "primingRequired",
+                    "rhs" : 0
+                  }
+                },
+                {
+                  "component" : {
+                    "nilConstant" : null
+                  }
+                }
+              ]
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedType",
+              "rhs" : 1
+            }
+          }
+        ]
+      },
+      "parameters" : [
+        "feedType",
+        "primingRequired",
+        "ratioWaterToTotalFeeds",
+        "twentyFivePercentFeedRate",
+        "waterBolusPerFeed"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "twentyFivePercentFeedWater",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Total",
+    "formula" : {
+      "equation" : {
+        "sum" : [
+          "twentyFivePercentFeedMilk",
+          "twentyFivePercentFeedWater"
+        ]
+      },
+      "parameters" : [
+        "twentyFivePercentFeedMilk",
+        "twentyFivePercentFeedWater"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "twentyFivePercentFeedTotal",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "%"
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Drip",
+    "formula" : {
+      "equation" : 0.75,
+      "parameters" : [
+
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "isPercentage" : true,
+    "referenceName" : "twentyFivePercentFeedDripPercent",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "%"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "ml\/hr"
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Drip Rate",
+    "formula" : {
+      "equation" : {
+        "product" : [
+          "startUpDripRate",
+          "twentyFivePercentFeedDripPercent"
+        ]
+      },
+      "parameters" : [
+        "startUpDripRate",
+        "twentyFivePercentFeedDripPercent"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "twentyFivePercentFeedDripRate",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "ml\/hr"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "ml\/hr"
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Feed Rate",
+    "formula" : {
+      "equation" : {
+        "round" : {
+          "decimals" : 0,
+          "roundingMethod" : "nearest",
+          "value" : {
+            "product" : [
+              "fullFeedRate",
+              0.25
+            ]
+          }
+        }
+      },
+      "parameters" : [
+        "fullFeedRate"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "twentyFivePercentFeedRate",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "ml\/hr"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Milk",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : {
+              "product" : [
+                {
+                  "round" : {
+                    "decimals" : 0,
+                    "roundingMethod" : "nearest",
+                    "value" : {
+                      "division" : {
+                        "denominator" : 5,
+                        "numerator" : {
+                          "product" : [
+                            "milkPerFeedAtFullFeeds",
+                            0.5
+                          ]
+                        }
+                      }
+                    }
+                  }
+                },
+                5
+              ]
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedType",
+              "rhs" : 0
+            }
+          },
+          {
+            "component" : {
+              "conditional" : [
+                {
+                  "component" : {
+                    "product" : [
+                      {
+                        "round" : {
+                          "decimals" : 0,
+                          "roundingMethod" : "nearest",
+                          "value" : {
+                            "division" : {
+                              "denominator" : 5,
+                              "numerator" : {
+                                "product" : [
+                                  {
+                                    "linear" : {
+                                      "constant" : 20,
+                                      "gradient" : 4,
+                                      "target" : "fiftyPercentFeedRate"
+                                    }
+                                  },
+                                  "ratioMilkToTotalFeeds"
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      },
+                      5
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "primingRequired",
+                    "rhs" : 1
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      {
+                        "round" : {
+                          "decimals" : 0,
+                          "roundingMethod" : "nearest",
+                          "value" : {
+                            "division" : {
+                              "denominator" : 5,
+                              "numerator" : {
+                                "product" : [
+                                  "fiftyPercentFeedRate",
+                                  4,
+                                  "ratioMilkToTotalFeeds"
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      },
+                      5
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "primingRequired",
+                    "rhs" : 0
+                  }
+                },
+                {
+                  "component" : {
+                    "nilConstant" : null
+                  }
+                }
+              ]
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedType",
+              "rhs" : 1
+            }
+          },
+          {
+            "component" : {
+              "nilConstant" : null
+            }
+          }
+        ]
+      },
+      "parameters" : [
+        "feedType",
+        "fiftyPercentFeedRate",
+        "milkPerFeedAtFullFeeds",
+        "primingRequired",
+        "ratioMilkToTotalFeeds"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "fiftyPercentFeedMilk",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Water",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : {
+              "product" : [
+                {
+                  "round" : {
+                    "decimals" : 0,
+                    "roundingMethod" : "nearest",
+                    "value" : {
+                      "division" : {
+                        "denominator" : 5,
+                        "numerator" : {
+                          "product" : [
+                            "waterBolusPerFeed",
+                            0.5
+                          ]
+                        }
+                      }
+                    }
+                  }
+                },
+                5
+              ]
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedType",
+              "rhs" : 0
+            }
+          },
+          {
+            "component" : {
+              "conditional" : [
+                {
+                  "component" : {
+                    "product" : [
+                      {
+                        "round" : {
+                          "decimals" : 0,
+                          "roundingMethod" : "nearest",
+                          "value" : {
+                            "division" : {
+                              "denominator" : 5,
+                              "numerator" : {
+                                "product" : [
+                                  {
+                                    "linear" : {
+                                      "constant" : 20,
+                                      "gradient" : 5,
+                                      "target" : "fiftyPercentFeedRate"
+                                    }
+                                  },
+                                  "ratioWaterToTotalFeeds"
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      },
+                      5
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "primingRequired",
+                    "rhs" : 1
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      {
+                        "round" : {
+                          "decimals" : 0,
+                          "roundingMethod" : "nearest",
+                          "value" : {
+                            "division" : {
+                              "denominator" : 5,
+                              "numerator" : {
+                                "product" : [
+                                  "fiftyPercentFeedRate",
+                                  4,
+                                  "ratioWaterToTotalFeeds"
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      },
+                      5
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "primingRequired",
+                    "rhs" : 0
+                  }
+                },
+                {
+                  "component" : {
+                    "nilConstant" : null
+                  }
+                }
+              ]
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedType",
+              "rhs" : 1
+            }
+          }
+        ]
+      },
+      "parameters" : [
+        "feedType",
+        "fiftyPercentFeedRate",
+        "primingRequired",
+        "ratioWaterToTotalFeeds",
+        "waterBolusPerFeed"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "fiftyPercentFeedWater",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Total",
+    "formula" : {
+      "equation" : {
+        "sum" : [
+          "fiftyPercentFeedMilk",
+          "fiftyPercentFeedWater"
+        ]
+      },
+      "parameters" : [
+        "fiftyPercentFeedMilk",
+        "fiftyPercentFeedWater"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "fiftyPercentFeedTotal",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "%"
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Drip",
+    "formula" : {
+      "equation" : 0.5,
+      "parameters" : [
+
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "isPercentage" : true,
+    "referenceName" : "fiftyPercentFeedDripPercent",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "%"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "ml\/hr"
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Drip Rate",
+    "formula" : {
+      "equation" : {
+        "product" : [
+          "startUpDripRate",
+          "fiftyPercentFeedDripPercent"
+        ]
+      },
+      "parameters" : [
+        "fiftyPercentFeedDripPercent",
+        "startUpDripRate"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "fiftyPercentFeedDripRate",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "ml\/hr"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "ml\/hr"
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Feed Rate",
+    "formula" : {
+      "equation" : {
+        "round" : {
+          "decimals" : 0,
+          "roundingMethod" : "nearest",
+          "value" : {
+            "product" : [
+              "fullFeedRate",
+              0.5
+            ]
+          }
+        }
+      },
+      "parameters" : [
+        "fullFeedRate"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "fiftyPercentFeedRate",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "ml\/hr"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Milk",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : {
+              "product" : [
+                {
+                  "round" : {
+                    "decimals" : 0,
+                    "roundingMethod" : "nearest",
+                    "value" : {
+                      "division" : {
+                        "denominator" : 5,
+                        "numerator" : {
+                          "product" : [
+                            "milkPerFeedAtFullFeeds",
+                            0.75
+                          ]
+                        }
+                      }
+                    }
+                  }
+                },
+                5
+              ]
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedType",
+              "rhs" : 0
+            }
+          },
+          {
+            "component" : {
+              "conditional" : [
+                {
+                  "component" : {
+                    "product" : [
+                      {
+                        "round" : {
+                          "decimals" : 0,
+                          "roundingMethod" : "nearest",
+                          "value" : {
+                            "division" : {
+                              "denominator" : 5,
+                              "numerator" : {
+                                "product" : [
+                                  {
+                                    "linear" : {
+                                      "constant" : 20,
+                                      "gradient" : 4,
+                                      "target" : "seventyFivePercentFeedRate"
+                                    }
+                                  },
+                                  "ratioMilkToTotalFeeds"
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      },
+                      5
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "primingRequired",
+                    "rhs" : 1
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      {
+                        "round" : {
+                          "decimals" : 0,
+                          "roundingMethod" : "nearest",
+                          "value" : {
+                            "division" : {
+                              "denominator" : 5,
+                              "numerator" : {
+                                "product" : [
+                                  "seventyFivePercentFeedRate",
+                                  4,
+                                  "ratioMilkToTotalFeeds"
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      },
+                      5
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "primingRequired",
+                    "rhs" : 0
+                  }
+                },
+                {
+                  "component" : {
+                    "nilConstant" : null
+                  }
+                }
+              ]
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedType",
+              "rhs" : 1
+            }
+          },
+          {
+            "component" : {
+              "nilConstant" : null
+            }
+          }
+        ]
+      },
+      "parameters" : [
+        "feedType",
+        "milkPerFeedAtFullFeeds",
+        "primingRequired",
+        "ratioMilkToTotalFeeds",
+        "seventyFivePercentFeedRate"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "seventyFivePercentFeedMilk",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Water",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : {
+              "product" : [
+                {
+                  "round" : {
+                    "decimals" : 0,
+                    "roundingMethod" : "nearest",
+                    "value" : {
+                      "division" : {
+                        "denominator" : 5,
+                        "numerator" : {
+                          "product" : [
+                            "waterBolusPerFeed",
+                            0.75
+                          ]
+                        }
+                      }
+                    }
+                  }
+                },
+                5
+              ]
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedType",
+              "rhs" : 0
+            }
+          },
+          {
+            "component" : {
+              "conditional" : [
+                {
+                  "component" : {
+                    "product" : [
+                      {
+                        "round" : {
+                          "decimals" : 0,
+                          "roundingMethod" : "nearest",
+                          "value" : {
+                            "division" : {
+                              "denominator" : 5,
+                              "numerator" : {
+                                "product" : [
+                                  {
+                                    "linear" : {
+                                      "constant" : 20,
+                                      "gradient" : 5,
+                                      "target" : "seventyFivePercentFeedRate"
+                                    }
+                                  },
+                                  "ratioWaterToTotalFeeds"
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      },
+                      5
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "primingRequired",
+                    "rhs" : 1
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      {
+                        "round" : {
+                          "decimals" : 0,
+                          "roundingMethod" : "nearest",
+                          "value" : {
+                            "division" : {
+                              "denominator" : 5,
+                              "numerator" : {
+                                "product" : [
+                                  "seventyFivePercentFeedRate",
+                                  4,
+                                  "ratioWaterToTotalFeeds"
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      },
+                      5
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "primingRequired",
+                    "rhs" : 0
+                  }
+                },
+                {
+                  "component" : {
+                    "nilConstant" : null
+                  }
+                }
+              ]
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedType",
+              "rhs" : 1
+            }
+          }
+        ]
+      },
+      "parameters" : [
+        "feedType",
+        "primingRequired",
+        "ratioWaterToTotalFeeds",
+        "seventyFivePercentFeedRate",
+        "waterBolusPerFeed"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "seventyFivePercentFeedWater",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Total",
+    "formula" : {
+      "equation" : {
+        "sum" : [
+          "seventyFivePercentFeedMilk",
+          "seventyFivePercentFeedWater"
+        ]
+      },
+      "parameters" : [
+        "seventyFivePercentFeedMilk",
+        "seventyFivePercentFeedWater"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "seventyFivePercentFeedTotal",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "%"
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Drip",
+    "formula" : {
+      "equation" : 0.25,
+      "parameters" : [
+
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "isPercentage" : true,
+    "referenceName" : "seventyFivePercentFeedDripPercent",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "%"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "ml\/hr"
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Drip Rate",
+    "formula" : {
+      "equation" : {
+        "product" : [
+          "startUpDripRate",
+          "seventyFivePercentFeedDripPercent"
+        ]
+      },
+      "parameters" : [
+        "seventyFivePercentFeedDripPercent",
+        "startUpDripRate"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "seventyFivePercentFeedDripRate",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "ml\/hr"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "ml\/hr"
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Feed Rate",
+    "formula" : {
+      "equation" : {
+        "round" : {
+          "decimals" : 0,
+          "roundingMethod" : "nearest",
+          "value" : {
+            "product" : [
+              "fullFeedRate",
+              0.75
+            ]
+          }
+        }
+      },
+      "parameters" : [
+        "fullFeedRate"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "seventyFivePercentFeedRate",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "ml\/hr"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Milk",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : {
+              "product" : [
+                {
+                  "round" : {
+                    "decimals" : 0,
+                    "roundingMethod" : "nearest",
+                    "value" : {
+                      "division" : {
+                        "denominator" : 5,
+                        "numerator" : "milkPerFeedAtFullFeeds"
+                      }
+                    }
+                  }
+                },
+                5
+              ]
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedType",
+              "rhs" : 0
+            }
+          },
+          {
+            "component" : {
+              "conditional" : [
+                {
+                  "component" : {
+                    "product" : [
+                      {
+                        "round" : {
+                          "decimals" : 0,
+                          "roundingMethod" : "nearest",
+                          "value" : {
+                            "division" : {
+                              "denominator" : 5,
+                              "numerator" : {
+                                "product" : [
+                                  {
+                                    "linear" : {
+                                      "constant" : 20,
+                                      "gradient" : 4,
+                                      "target" : "hundredPercentFeedRate"
+                                    }
+                                  },
+                                  "ratioMilkToTotalFeeds"
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      },
+                      5
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "primingRequired",
+                    "rhs" : 1
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      {
+                        "round" : {
+                          "decimals" : 0,
+                          "roundingMethod" : "nearest",
+                          "value" : {
+                            "division" : {
+                              "denominator" : 5,
+                              "numerator" : {
+                                "product" : [
+                                  "hundredPercentFeedRate",
+                                  4,
+                                  "ratioMilkToTotalFeeds"
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      },
+                      5
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "primingRequired",
+                    "rhs" : 0
+                  }
+                },
+                {
+                  "component" : {
+                    "nilConstant" : null
+                  }
+                }
+              ]
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedType",
+              "rhs" : 1
+            }
+          },
+          {
+            "component" : {
+              "nilConstant" : null
+            }
+          }
+        ]
+      },
+      "parameters" : [
+        "feedType",
+        "hundredPercentFeedRate",
+        "milkPerFeedAtFullFeeds",
+        "primingRequired",
+        "ratioMilkToTotalFeeds"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "hundredPercentFeedMilk",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Water",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : {
+              "product" : [
+                {
+                  "round" : {
+                    "decimals" : 0,
+                    "roundingMethod" : "nearest",
+                    "value" : {
+                      "division" : {
+                        "denominator" : 5,
+                        "numerator" : "waterBolusPerFeed"
+                      }
+                    }
+                  }
+                },
+                5
+              ]
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedType",
+              "rhs" : 0
+            }
+          },
+          {
+            "component" : {
+              "conditional" : [
+                {
+                  "component" : {
+                    "product" : [
+                      {
+                        "round" : {
+                          "decimals" : 0,
+                          "roundingMethod" : "nearest",
+                          "value" : {
+                            "division" : {
+                              "denominator" : 5,
+                              "numerator" : {
+                                "product" : [
+                                  {
+                                    "linear" : {
+                                      "constant" : 20,
+                                      "gradient" : 5,
+                                      "target" : "hundredPercentFeedRate"
+                                    }
+                                  },
+                                  "ratioWaterToTotalFeeds"
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      },
+                      5
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "primingRequired",
+                    "rhs" : 1
+                  }
+                },
+                {
+                  "component" : {
+                    "product" : [
+                      {
+                        "round" : {
+                          "decimals" : 0,
+                          "roundingMethod" : "nearest",
+                          "value" : {
+                            "division" : {
+                              "denominator" : 5,
+                              "numerator" : {
+                                "product" : [
+                                  "hundredPercentFeedRate",
+                                  4,
+                                  "ratioWaterToTotalFeeds"
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      },
+                      5
+                    ]
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "primingRequired",
+                    "rhs" : 0
+                  }
+                },
+                {
+                  "component" : {
+                    "nilConstant" : null
+                  }
+                }
+              ]
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "feedType",
+              "rhs" : 1
+            }
+          }
+        ]
+      },
+      "parameters" : [
+        "feedType",
+        "hundredPercentFeedRate",
+        "primingRequired",
+        "ratioWaterToTotalFeeds",
+        "waterBolusPerFeed"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "hundredPercentFeedWater",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Total",
+    "formula" : {
+      "equation" : {
+        "sum" : [
+          "hundredPercentFeedMilk",
+          "hundredPercentFeedWater"
+        ]
+      },
+      "parameters" : [
+        "hundredPercentFeedMilk",
+        "hundredPercentFeedWater"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "hundredPercentFeedTotal",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "%"
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Drip",
+    "formula" : {
+      "equation" : 0,
+      "parameters" : [
+
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "isPercentage" : true,
+    "referenceName" : "hundredPercentFeedDripPercent",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "%"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "ml\/hr"
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Drip Rate",
+    "formula" : {
+      "equation" : {
+        "product" : [
+          "startUpDripRate",
+          "hundredPercentFeedDripPercent"
+        ]
+      },
+      "parameters" : [
+        "hundredPercentFeedDripPercent",
+        "startUpDripRate"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "hundredPercentFeedDripRate",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "ml\/hr"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "ml\/hr"
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Feed Rate",
+    "formula" : {
+      "equation" : {
+        "round" : {
+          "decimals" : 0,
+          "roundingMethod" : "nearest",
+          "value" : "fullFeedRate"
+        }
+      },
+      "parameters" : [
+        "fullFeedRate"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "hundredPercentFeedRate",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "ml\/hr"
+    }
+  }
+]

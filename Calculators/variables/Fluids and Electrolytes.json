@@ -46,7 +46,7 @@
           "serumSodium",
           {
             "product" : [
-              0.29999999999999999,
+              0.3,
               {
                 "sum" : [
                   "glucose",
@@ -84,7 +84,7 @@
     "formula" : {
       "equation" : {
         "product" : [
-          0.59999999999999998,
+          0.6,
           "weight",
           {
             "sum" : [
@@ -143,7 +143,7 @@
     "formula" : {
       "equation" : {
         "product" : [
-          0.29999999999999999,
+          0.3,
           "weight",
           "baseExcess"
         ]
@@ -206,7 +206,7 @@
     "formula" : {
       "equation" : {
         "product" : [
-          0.59999999999999998,
+          0.6,
           "weight",
           {
             "sum" : [
@@ -343,7 +343,7 @@
     "formula" : {
       "equation" : {
         "product" : [
-          0.29999999999999999,
+          0.3,
           "weight",
           {
             "sum" : [
@@ -378,6 +378,7 @@
     ],
     "decimals" : 2,
     "displayName" : "Dextrosity",
+    "isPercentage" : true,
     "referenceName" : "dextrosity",
     "startingValue" : 0,
     "unit" : {
@@ -418,7 +419,7 @@
             "product" : [
               "dextrosity",
               "fluidInfusionRate",
-              0.16700000000000001
+              0.167
             ]
           }
         }
@@ -446,6 +447,7 @@
     ],
     "decimals" : 2,
     "displayName" : "Dehydration",
+    "isPercentage" : true,
     "referenceName" : "dehydration",
     "startingValue" : 0,
     "unit" : {

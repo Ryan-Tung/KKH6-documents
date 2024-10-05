@@ -40,11 +40,10 @@
               }
             },
             "condition" : {
-              "comparison" : {
-                "greaterThanOrEqualTo" : 1
-              },
+              "comparison" : "greaterThanOrEqualTo",
               "defaultState" : true,
-              "variableReference" : "age"
+              "lhs" : "age",
+              "rhs" : 1
             }
           },
           {

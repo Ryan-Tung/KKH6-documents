@@ -192,7 +192,7 @@
           "ivFentanylInfusionRate",
           "weight",
           24,
-          0.10000000000000001
+          0.1
         ]
       },
       "parameters" : [
@@ -226,7 +226,7 @@
           {
             "division" : {
               "denominator" : 4,
-              "numerator" : 0.10000000000000001
+              "numerator" : 0.1
             }
           }
         ]
@@ -262,7 +262,7 @@
           {
             "division" : {
               "denominator" : 6,
-              "numerator" : 0.10000000000000001
+              "numerator" : 0.1
             }
           }
         ]
@@ -317,7 +317,7 @@
               "numerator" : 24
             }
           },
-          0.10000000000000001
+          0.1
         ]
       },
       "parameters" : [
@@ -357,7 +357,7 @@
           {
             "division" : {
               "denominator" : 4,
-              "numerator" : 0.10000000000000001
+              "numerator" : 0.1
             }
           }
         ]

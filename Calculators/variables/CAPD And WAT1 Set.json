@@ -144,11 +144,10 @@
               {
                 "component" : "capdQuestionOne",
                 "condition" : {
-                  "comparison" : {
-                    "notEqualTo" : -1
-                  },
+                  "comparison" : "notEqualTo",
                   "defaultState" : true,
-                  "variableReference" : "capdQuestionOne"
+                  "lhs" : "capdQuestionOne",
+                  "rhs" : -1
                 }
               },
               {
@@ -163,11 +162,10 @@
               {
                 "component" : "capdQuestionTwo",
                 "condition" : {
-                  "comparison" : {
-                    "notEqualTo" : -1
-                  },
+                  "comparison" : "notEqualTo",
                   "defaultState" : true,
-                  "variableReference" : "capdQuestionTwo"
+                  "lhs" : "capdQuestionTwo",
+                  "rhs" : -1
                 }
               },
               {
@@ -182,11 +180,10 @@
               {
                 "component" : "capdQuestionThree",
                 "condition" : {
-                  "comparison" : {
-                    "notEqualTo" : -1
-                  },
+                  "comparison" : "notEqualTo",
                   "defaultState" : true,
-                  "variableReference" : "capdQuestionThree"
+                  "lhs" : "capdQuestionThree",
+                  "rhs" : -1
                 }
               },
               {
@@ -201,11 +198,10 @@
               {
                 "component" : "capdQuestionFour",
                 "condition" : {
-                  "comparison" : {
-                    "notEqualTo" : -1
-                  },
+                  "comparison" : "notEqualTo",
                   "defaultState" : true,
-                  "variableReference" : "capdQuestionFour"
+                  "lhs" : "capdQuestionFour",
+                  "rhs" : -1
                 }
               },
               {
@@ -220,11 +216,10 @@
               {
                 "component" : "capdQuestionFive",
                 "condition" : {
-                  "comparison" : {
-                    "notEqualTo" : -1
-                  },
+                  "comparison" : "notEqualTo",
                   "defaultState" : true,
-                  "variableReference" : "capdQuestionFive"
+                  "lhs" : "capdQuestionFive",
+                  "rhs" : -1
                 }
               },
               {
@@ -239,11 +234,10 @@
               {
                 "component" : "capdQuestionSix",
                 "condition" : {
-                  "comparison" : {
-                    "notEqualTo" : -1
-                  },
+                  "comparison" : "notEqualTo",
                   "defaultState" : true,
-                  "variableReference" : "capdQuestionSix"
+                  "lhs" : "capdQuestionSix",
+                  "rhs" : -1
                 }
               },
               {
@@ -258,11 +252,10 @@
               {
                 "component" : "capdQuestionSeven",
                 "condition" : {
-                  "comparison" : {
-                    "notEqualTo" : -1
-                  },
+                  "comparison" : "notEqualTo",
                   "defaultState" : true,
-                  "variableReference" : "capdQuestionSeven"
+                  "lhs" : "capdQuestionSeven",
+                  "rhs" : -1
                 }
               },
               {
@@ -277,11 +270,10 @@
               {
                 "component" : "capdQuestionEight",
                 "condition" : {
-                  "comparison" : {
-                    "notEqualTo" : -1
-                  },
+                  "comparison" : "notEqualTo",
                   "defaultState" : true,
-                  "variableReference" : "capdQuestionEight"
+                  "lhs" : "capdQuestionEight",
+                  "rhs" : -1
                 }
               },
               {
@@ -505,11 +497,10 @@
               {
                 "component" : "wat1QuestionOne",
                 "condition" : {
-                  "comparison" : {
-                    "notEqualTo" : -1
-                  },
+                  "comparison" : "notEqualTo",
                   "defaultState" : true,
-                  "variableReference" : "wat1QuestionOne"
+                  "lhs" : "wat1QuestionOne",
+                  "rhs" : -1
                 }
               },
               {
@@ -524,11 +515,10 @@
               {
                 "component" : "wat1QuestionTwo",
                 "condition" : {
-                  "comparison" : {
-                    "notEqualTo" : -1
-                  },
+                  "comparison" : "notEqualTo",
                   "defaultState" : true,
-                  "variableReference" : "wat1QuestionTwo"
+                  "lhs" : "wat1QuestionTwo",
+                  "rhs" : -1
                 }
               },
               {
@@ -543,11 +533,10 @@
               {
                 "component" : "wat1QuestionThree",
                 "condition" : {
-                  "comparison" : {
-                    "notEqualTo" : -1
-                  },
+                  "comparison" : "notEqualTo",
                   "defaultState" : true,
-                  "variableReference" : "wat1QuestionThree"
+                  "lhs" : "wat1QuestionThree",
+                  "rhs" : -1
                 }
               },
               {
@@ -562,11 +551,10 @@
               {
                 "component" : "wat1QuestionFour",
                 "condition" : {
-                  "comparison" : {
-                    "notEqualTo" : -1
-                  },
+                  "comparison" : "notEqualTo",
                   "defaultState" : true,
-                  "variableReference" : "wat1QuestionFour"
+                  "lhs" : "wat1QuestionFour",
+                  "rhs" : -1
                 }
               },
               {
@@ -581,11 +569,10 @@
               {
                 "component" : "wat1QuestionFive",
                 "condition" : {
-                  "comparison" : {
-                    "notEqualTo" : -1
-                  },
+                  "comparison" : "notEqualTo",
                   "defaultState" : true,
-                  "variableReference" : "wat1QuestionFive"
+                  "lhs" : "wat1QuestionFive",
+                  "rhs" : -1
                 }
               },
               {
@@ -600,11 +587,10 @@
               {
                 "component" : "wat1QuestionSix",
                 "condition" : {
-                  "comparison" : {
-                    "notEqualTo" : -1
-                  },
+                  "comparison" : "notEqualTo",
                   "defaultState" : true,
-                  "variableReference" : "wat1QuestionSix"
+                  "lhs" : "wat1QuestionSix",
+                  "rhs" : -1
                 }
               },
               {
@@ -619,11 +605,10 @@
               {
                 "component" : "wat1QuestionSeven",
                 "condition" : {
-                  "comparison" : {
-                    "notEqualTo" : -1
-                  },
+                  "comparison" : "notEqualTo",
                   "defaultState" : true,
-                  "variableReference" : "wat1QuestionSeven"
+                  "lhs" : "wat1QuestionSeven",
+                  "rhs" : -1
                 }
               },
               {
@@ -638,11 +623,10 @@
               {
                 "component" : "wat1QuestionEight",
                 "condition" : {
-                  "comparison" : {
-                    "notEqualTo" : -1
-                  },
+                  "comparison" : "notEqualTo",
                   "defaultState" : true,
-                  "variableReference" : "wat1QuestionEight"
+                  "lhs" : "wat1QuestionEight",
+                  "rhs" : -1
                 }
               },
               {
@@ -657,11 +641,10 @@
               {
                 "component" : "wat1QuestionNine",
                 "condition" : {
-                  "comparison" : {
-                    "notEqualTo" : -1
-                  },
+                  "comparison" : "notEqualTo",
                   "defaultState" : true,
-                  "variableReference" : "wat1QuestionNine"
+                  "lhs" : "wat1QuestionNine",
+                  "rhs" : -1
                 }
               },
               {
@@ -676,11 +659,10 @@
               {
                 "component" : "wat1QuestionTen",
                 "condition" : {
-                  "comparison" : {
-                    "notEqualTo" : -1
-                  },
+                  "comparison" : "notEqualTo",
                   "defaultState" : true,
-                  "variableReference" : "wat1QuestionTen"
+                  "lhs" : "wat1QuestionTen",
+                  "rhs" : -1
                 }
               },
               {
@@ -695,11 +677,10 @@
               {
                 "component" : "wat1QuestionEleven",
                 "condition" : {
-                  "comparison" : {
-                    "notEqualTo" : -1
-                  },
+                  "comparison" : "notEqualTo",
                   "defaultState" : true,
-                  "variableReference" : "wat1QuestionEleven"
+                  "lhs" : "wat1QuestionEleven",
+                  "rhs" : -1
                 }
               },
               {

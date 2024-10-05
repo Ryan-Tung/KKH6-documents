@@ -1,8 +1,8 @@
 {
   "color" : {
-    "blue" : 0.18823528289794922,
-    "green" : 0.23137253522872925,
-    "red" : 0.99999994039535522
+    "blue" : 0.18823529411764706,
+    "green" : 0.23137254901960785,
+    "red" : 1
   },
   "groups" : [
     {
@@ -23,9 +23,9 @@
               "allowsNegative" : false,
               "variableInfo" : {
                 "color" : {
-                  "blue" : 0.90196079015731812,
-                  "green" : 0.67843139171600342,
-                  "red" : 0.19607838988304138
+                  "blue" : 0.9019607843137255,
+                  "green" : 0.6784313725490196,
+                  "red" : 0.19607843137254902
                 },
                 "variableReference" : "age"
               }
@@ -34,9 +34,9 @@
               "allowsNegative" : false,
               "variableInfo" : {
                 "color" : {
-                  "blue" : 0.83921575546264648,
-                  "green" : 0.33725488185882568,
-                  "red" : 0.34509801864624023
+                  "blue" : 0.8392156862745098,
+                  "green" : 0.33725490196078434,
+                  "red" : 0.34509803921568627
                 },
                 "variableReference" : "weight"
               }
@@ -49,11 +49,10 @@
               "text" : "The calculators on this page are not for preterm neonates (<2kg)"
             },
             "condition" : {
-              "comparison" : {
-                "lessThan" : 2
-              },
+              "comparison" : "lessThan",
               "defaultState" : true,
-              "variableReference" : "weight"
+              "lhs" : "weight",
+              "rhs" : 2
             }
           }
         }
@@ -73,11 +72,10 @@
               "output" : "ettCuffed"
             },
             "condition" : {
-              "comparison" : {
-                "greaterThanOrEqualTo" : 3.5
-              },
+              "comparison" : "greaterThanOrEqualTo",
               "defaultState" : true,
-              "variableReference" : "weight"
+              "lhs" : "weight",
+              "rhs" : 3.5
             }
           }
         },
