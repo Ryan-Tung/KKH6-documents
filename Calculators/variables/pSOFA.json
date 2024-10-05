@@ -655,7 +655,7 @@
     },
     "referenceName" : "cardiovascularOutput",
     "startingValue" : 0,
-    "subtitle" : "Between 0 and 1 inclusive",
+    "subtitle" : "Either 0 or 1",
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
