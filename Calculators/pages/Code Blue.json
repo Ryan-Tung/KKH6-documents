@@ -4,7 +4,6 @@
     "green" : 0.47843137254901963,
     "red" : 0
   },
-  "credit" : "KKH Paediatrics",
   "groups" : [
     {
       "components" : [
@@ -182,6 +181,7 @@
       "components" : [
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 3,
             "detailVarReferences" : [
               "Albumin_Dose",
@@ -194,6 +194,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 3,
             "detailVarReferences" : [
               "Sodium Chloride_Dose",
@@ -212,6 +213,7 @@
       "components" : [
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 3,
             "detailVarReferences" : [
               "Adrenaline_Dose",
@@ -225,6 +227,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 3,
             "detailVarReferences" : [
               "Atropine Sulfate_Dose",
@@ -238,6 +241,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 3,
             "detailVarReferences" : [
               "Calcium Chloride_Dose",
@@ -251,6 +255,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 3,
             "detailVarReferences" : [
               "Dextrose_Dose",
@@ -264,6 +269,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 3,
             "detailVarReferences" : [
               "Sodium Bicarbonate 8.4%_Dose",
@@ -277,6 +283,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 3,
             "detailVarReferences" : [
               "Sodium Bicarbonate 4.2%_Dose",
@@ -290,6 +297,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 3,
             "detailVarReferences" : [
               "Suxamethonium Chloride_Dose",
@@ -303,6 +311,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 3,
             "detailVarReferences" : [
               "Midazolam_Dose",
@@ -316,6 +325,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 3,
             "detailVarReferences" : [
               "Morphine Sulfate_Dose",
@@ -329,6 +339,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 3,
             "detailVarReferences" : [
               "Rocuronium_Dose",

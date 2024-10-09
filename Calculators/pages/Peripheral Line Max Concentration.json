@@ -4,12 +4,338 @@
     "green" : 0.23137254901960785,
     "red" : 1
   },
+  "credit" : "KKH Pharmacists",
   "groups" : [
     {
       "components" : [
-
+        {
+          "inputPrimary" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0.8392156862745098,
+                "green" : 0.33725490196078434,
+                "red" : 0.34509803921568627
+              },
+              "variableReference" : "weight"
+            }
+          }
+        }
       ],
-      "name" : "NOT IMPLEMENTED YET",
+      "name" : "Weight Input",
+      "showName" : false
+    },
+    {
+      "components" : [
+        {
+          "detailedOutput" : {
+            "alwaysExpanded" : true,
+            "columnCount" : 2,
+            "detailVarReferences" : [
+              "adrenalineConcentration_calculatedRange",
+              "adrenalineConcentration_calculatedRate"
+            ],
+            "name" : "Adrenaline",
+            "notes" : "Note: Weight based formula used for weight ≤ 5kg",
+            "primaryVarReference" : ""
+          }
+        },
+        {
+          "detailedOutput" : {
+            "alwaysExpanded" : true,
+            "columnCount" : 2,
+            "detailVarReferences" : [
+              "aminophyllineConcentration_calculatedRange",
+              "aminophyllineConcentration_calculatedRate"
+            ],
+            "name" : "Aminophylline",
+            "primaryVarReference" : ""
+          }
+        },
+        {
+          "detailedOutput" : {
+            "alwaysExpanded" : true,
+            "columnCount" : 2,
+            "detailVarReferences" : [
+              "alprostadilConcentration_calculatedRange",
+              "alprostadilConcentration_calculatedRate"
+            ],
+            "name" : "Alprostadil",
+            "primaryVarReference" : ""
+          }
+        },
+        {
+          "detailedOutput" : {
+            "alwaysExpanded" : true,
+            "columnCount" : 2,
+            "detailVarReferences" : [
+              "amiodaroneConcentration_calculatedRange",
+              "amiodaroneConcentration_calculatedRate"
+            ],
+            "name" : "Amiodarone",
+            "primaryVarReference" : ""
+          }
+        },
+        {
+          "detailedOutput" : {
+            "alwaysExpanded" : true,
+            "columnCount" : 2,
+            "detailVarReferences" : [
+              "atracuriumConcentration_calculatedRange",
+              "atracuriumConcentration_calculatedRate"
+            ],
+            "name" : "Atracurium",
+            "primaryVarReference" : ""
+          }
+        },
+        {
+          "detailedOutput" : {
+            "alwaysExpanded" : true,
+            "columnCount" : 2,
+            "detailVarReferences" : [
+              "dobutamineConcentration_calculatedRange",
+              "dobutamineConcentration_calculatedRate"
+            ],
+            "name" : "Dobutamine",
+            "notes" : "Note: Weight based formula used for weight ≤ 8kg",
+            "primaryVarReference" : ""
+          }
+        },
+        {
+          "detailedOutput" : {
+            "alwaysExpanded" : true,
+            "columnCount" : 2,
+            "detailVarReferences" : [
+              "dopamineConcentration_calculatedRange",
+              "dopamineConcentration_calculatedRate"
+            ],
+            "name" : "Dopamine",
+            "notes" : "Note: Weight based formula used for weight ≤ 5kg",
+            "primaryVarReference" : ""
+          }
+        },
+        {
+          "detailedOutput" : {
+            "alwaysExpanded" : true,
+            "columnCount" : 2,
+            "detailVarReferences" : [
+              "dexmedetomidineConcentration_calculatedRange",
+              "dexmedetomidineConcentration_calculatedRate"
+            ],
+            "name" : "Dexmedetomidine",
+            "primaryVarReference" : ""
+          }
+        },
+        {
+          "detailedOutput" : {
+            "alwaysExpanded" : true,
+            "columnCount" : 2,
+            "detailVarReferences" : [
+              "fentanylConcentration_calculatedRange",
+              "fentanylConcentration_calculatedRate"
+            ],
+            "name" : "Fentanyl",
+            "notes" : "Note: Weight based formula used for weight ≤ 25kg",
+            "primaryVarReference" : ""
+          }
+        },
+        {
+          "detailedOutput" : {
+            "alwaysExpanded" : true,
+            "columnCount" : 2,
+            "detailVarReferences" : [
+              "glycerylTrinitrateConcentration_calculatedRange",
+              "glycerylTrinitrateConcentration_calculatedRate"
+            ],
+            "name" : "Glyceryl Trinitrate",
+            "primaryVarReference" : ""
+          }
+        },
+        {
+          "detailedOutput" : {
+            "alwaysExpanded" : true,
+            "columnCount" : 2,
+            "detailVarReferences" : [
+              "heparinConcentration_calculatedRange",
+              "heparinConcentration_calculatedRate"
+            ],
+            "name" : "Heparin",
+            "primaryVarReference" : ""
+          }
+        },
+        {
+          "detailedOutput" : {
+            "alwaysExpanded" : true,
+            "columnCount" : 2,
+            "detailVarReferences" : [
+              "hydralazineConcentration_calculatedRange",
+              "hydralazineConcentration_calculatedRate"
+            ],
+            "name" : "Hydralazine",
+            "primaryVarReference" : ""
+          }
+        },
+        {
+          "detailedOutput" : {
+            "alwaysExpanded" : true,
+            "columnCount" : 2,
+            "detailVarReferences" : [
+              "insulinConcentration_calculatedRange",
+              "insulinConcentration_calculatedRate"
+            ],
+            "name" : "Insulin",
+            "primaryVarReference" : ""
+          }
+        },
+        {
+          "detailedOutput" : {
+            "alwaysExpanded" : true,
+            "columnCount" : 2,
+            "detailVarReferences" : [
+              "ketamineConcentration_calculatedRange",
+              "ketamineConcentration_calculatedRate"
+            ],
+            "name" : "Ketamine",
+            "primaryVarReference" : ""
+          }
+        },
+        {
+          "detailedOutput" : {
+            "alwaysExpanded" : true,
+            "columnCount" : 2,
+            "detailVarReferences" : [
+              "labetalolConcentration_calculatedRange",
+              "labetalolConcentration_calculatedRate"
+            ],
+            "name" : "Labetalol",
+            "primaryVarReference" : ""
+          }
+        },
+        {
+          "detailedOutput" : {
+            "alwaysExpanded" : true,
+            "columnCount" : 2,
+            "detailVarReferences" : [
+              "lignocaineConcentration_calculatedRange",
+              "lignocaineConcentration_calculatedRate"
+            ],
+            "name" : "Lignocaine",
+            "primaryVarReference" : ""
+          }
+        },
+        {
+          "detailedOutput" : {
+            "alwaysExpanded" : true,
+            "columnCount" : 2,
+            "detailVarReferences" : [
+              "midazolamConcentration_calculatedRange",
+              "midazolamConcentration_calculatedRate"
+            ],
+            "name" : "Midazolam",
+            "notes" : "Note: Weight based formula used for weight ≤ 16kg",
+            "primaryVarReference" : ""
+          }
+        },
+        {
+          "detailedOutput" : {
+            "alwaysExpanded" : true,
+            "columnCount" : 2,
+            "detailVarReferences" : [
+              "milrinoneConcentration_calculatedRange",
+              "milrinoneConcentration_calculatedRate"
+            ],
+            "name" : "Milrinone",
+            "primaryVarReference" : ""
+          }
+        },
+        {
+          "detailedOutput" : {
+            "alwaysExpanded" : true,
+            "columnCount" : 2,
+            "detailVarReferences" : [
+              "morphineConcentration_calculatedRange",
+              "morphineConcentration_calculatedRate"
+            ],
+            "name" : "Morphine",
+            "notes" : "Note: Weight based formula used for weight ≤ 50kg",
+            "primaryVarReference" : ""
+          }
+        },
+        {
+          "detailedOutput" : {
+            "alwaysExpanded" : true,
+            "columnCount" : 2,
+            "detailVarReferences" : [
+              "nitroprussideConcentration_calculatedRange",
+              "nitroprussideConcentration_calculatedRate"
+            ],
+            "name" : "Nitroprusside",
+            "primaryVarReference" : ""
+          }
+        },
+        {
+          "detailedOutput" : {
+            "alwaysExpanded" : true,
+            "columnCount" : 2,
+            "detailVarReferences" : [
+              "noradrenalineConcentration_calculatedRange",
+              "noradrenalineConcentration_calculatedRate"
+            ],
+            "name" : "Noradrenaline",
+            "primaryVarReference" : ""
+          }
+        },
+        {
+          "detailedOutput" : {
+            "alwaysExpanded" : true,
+            "columnCount" : 2,
+            "detailVarReferences" : [
+              "rocuroniumConcentration_calculatedRange",
+              "rocuroniumConcentration_calculatedRate"
+            ],
+            "name" : "Rocuronium",
+            "notes" : "Note: Weight based formula used for weight ≤ 10kg",
+            "primaryVarReference" : ""
+          }
+        },
+        {
+          "detailedOutput" : {
+            "alwaysExpanded" : true,
+            "columnCount" : 2,
+            "detailVarReferences" : [
+              "salbutamolConcentration_calculatedRange",
+              "salbutamolConcentration_calculatedRate"
+            ],
+            "name" : "Salbutamol",
+            "primaryVarReference" : ""
+          }
+        },
+        {
+          "detailedOutput" : {
+            "alwaysExpanded" : true,
+            "columnCount" : 2,
+            "detailVarReferences" : [
+              "thiopentalConcentration_calculatedRange",
+              "thiopentalConcentration_calculatedRate"
+            ],
+            "name" : "Thiopental",
+            "primaryVarReference" : ""
+          }
+        },
+        {
+          "detailedOutput" : {
+            "alwaysExpanded" : true,
+            "columnCount" : 2,
+            "detailVarReferences" : [
+              "vasopressinConcentration_calculatedRange",
+              "vasopressinConcentration_calculatedRate"
+            ],
+            "name" : "Vasopressin (Diabetes Insipidus)",
+            "primaryVarReference" : ""
+          }
+        }
+      ],
+      "name" : "Concentrations",
       "showName" : true
     }
   ],

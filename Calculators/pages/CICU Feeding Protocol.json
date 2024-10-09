@@ -403,6 +403,7 @@
           "conditional" : {
             "component" : {
               "detailedOutput" : {
+                "alwaysExpanded" : false,
                 "columnCount" : 3,
                 "detailVarReferences" : [
                   "twentyFivePercentFeedMilk",
@@ -425,6 +426,7 @@
           "conditional" : {
             "component" : {
               "detailedOutput" : {
+                "alwaysExpanded" : false,
                 "columnCount" : 3,
                 "detailVarReferences" : [
                   "twentyFivePercentFeedMilk",
@@ -445,6 +447,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 2,
             "detailVarReferences" : [
               "twentyFivePercentFeedDripPercent",
@@ -464,6 +467,7 @@
           "conditional" : {
             "component" : {
               "detailedOutput" : {
+                "alwaysExpanded" : false,
                 "columnCount" : 3,
                 "detailVarReferences" : [
                   "twentyFivePercentFeedMilk",
@@ -486,6 +490,7 @@
           "conditional" : {
             "component" : {
               "detailedOutput" : {
+                "alwaysExpanded" : false,
                 "columnCount" : 3,
                 "detailVarReferences" : [
                   "twentyFivePercentFeedMilk",
@@ -506,6 +511,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 2,
             "detailVarReferences" : [
               "twentyFivePercentFeedDripPercent",
@@ -525,6 +531,7 @@
           "conditional" : {
             "component" : {
               "detailedOutput" : {
+                "alwaysExpanded" : false,
                 "columnCount" : 3,
                 "detailVarReferences" : [
                   "fiftyPercentFeedMilk",
@@ -547,6 +554,7 @@
           "conditional" : {
             "component" : {
               "detailedOutput" : {
+                "alwaysExpanded" : false,
                 "columnCount" : 3,
                 "detailVarReferences" : [
                   "fiftyPercentFeedMilk",
@@ -567,6 +575,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 2,
             "detailVarReferences" : [
               "fiftyPercentFeedDripPercent",
@@ -586,6 +595,7 @@
           "conditional" : {
             "component" : {
               "detailedOutput" : {
+                "alwaysExpanded" : false,
                 "columnCount" : 3,
                 "detailVarReferences" : [
                   "seventyFivePercentFeedMilk",
@@ -608,6 +618,7 @@
           "conditional" : {
             "component" : {
               "detailedOutput" : {
+                "alwaysExpanded" : false,
                 "columnCount" : 3,
                 "detailVarReferences" : [
                   "seventyFivePercentFeedMilk",
@@ -628,6 +639,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 2,
             "detailVarReferences" : [
               "seventyFivePercentFeedDripPercent",
@@ -647,6 +659,7 @@
           "conditional" : {
             "component" : {
               "detailedOutput" : {
+                "alwaysExpanded" : false,
                 "columnCount" : 3,
                 "detailVarReferences" : [
                   "hundredPercentFeedMilk",
@@ -669,6 +682,7 @@
           "conditional" : {
             "component" : {
               "detailedOutput" : {
+                "alwaysExpanded" : false,
                 "columnCount" : 3,
                 "detailVarReferences" : [
                   "hundredPercentFeedMilk",
@@ -689,6 +703,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 2,
             "detailVarReferences" : [
               "hundredPercentFeedDripPercent",

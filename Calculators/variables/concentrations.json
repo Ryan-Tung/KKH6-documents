@@ -1,0 +1,555 @@
+[
+  {
+    "activationWeight" : 5,
+    "concentration" : 30,
+    "displayName" : "Adrenaline",
+    "doseIn50mL" : 1.5,
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg"
+    },
+    "notes" : "Note: Weight based formula used for weight ≤ 5kg",
+    "peripheralLine" : 30,
+    "peripheralLineUnit" : {
+      "conversionScale" : 1,
+      "name" : "mcg\/mL"
+    },
+    "range" : 0.5,
+    "rangeUnit" : {
+      "conversionScale" : 1,
+      "name" : "mcg\/kg\/min"
+    },
+    "referenceName" : "adrenalineConcentration",
+    "unitMultiplier" : 60,
+    "weightBasedConversionFactor" : 0.1,
+    "weightBasedFormulaConcentration" : 0.3
+  },
+  {
+    "concentration" : 2.5,
+    "displayName" : "Aminophylline",
+    "doseIn50mL" : 125,
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg"
+    },
+    "peripheralLine" : 2.5,
+    "peripheralLineUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg\/mL"
+    },
+    "range" : 1,
+    "rangeUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg\/kg\/hr"
+    },
+    "referenceName" : "aminophyllineConcentration",
+    "unitMultiplier" : 1
+  },
+  {
+    "concentration" : 5,
+    "displayName" : "Alprostadil",
+    "doseIn50mL" : 250,
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mcg"
+    },
+    "peripheralLine" : 5,
+    "peripheralLineUnit" : {
+      "conversionScale" : 1,
+      "name" : "mcg\/mL"
+    },
+    "range" : 0.1,
+    "rangeUnit" : {
+      "conversionScale" : 1,
+      "name" : "mcg\/kg\/min"
+    },
+    "referenceName" : "alprostadilConcentration",
+    "unitMultiplier" : 60
+  },
+  {
+    "concentration" : 2000,
+    "displayName" : "Amiodarone",
+    "doseIn50mL" : 100,
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg"
+    },
+    "peripheralLine" : 2,
+    "peripheralLineUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg\/mL"
+    },
+    "range" : 15,
+    "rangeUnit" : {
+      "conversionScale" : 1,
+      "name" : "mcg\/kg\/min"
+    },
+    "referenceName" : "amiodaroneConcentration",
+    "unitMultiplier" : 60
+  },
+  {
+    "concentration" : 500,
+    "displayName" : "Atracurium",
+    "doseIn50mL" : 25,
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg"
+    },
+    "peripheralLine" : 0.5,
+    "peripheralLineUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg\/mL"
+    },
+    "range" : 10,
+    "rangeUnit" : {
+      "conversionScale" : 1,
+      "name" : "mcg\/kg\/min"
+    },
+    "referenceName" : "atracuriumConcentration",
+    "unitMultiplier" : 60
+  },
+  {
+    "activationWeight" : 8,
+    "concentration" : 5000,
+    "displayName" : "Dobutamine",
+    "doseIn50mL" : 250,
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg"
+    },
+    "notes" : "Note: Weight based formula used for weight ≤ 8kg",
+    "peripheralLine" : 5,
+    "peripheralLineUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg\/mL"
+    },
+    "range" : 20,
+    "rangeUnit" : {
+      "conversionScale" : 1,
+      "name" : "mcg\/kg\/min"
+    },
+    "referenceName" : "dobutamineConcentration",
+    "unitMultiplier" : 60,
+    "weightBasedConversionFactor" : 10,
+    "weightBasedFormulaConcentration" : 30
+  },
+  {
+    "activationWeight" : 5,
+    "concentration" : 3200,
+    "displayName" : "Dopamine",
+    "doseIn50mL" : 160,
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg"
+    },
+    "notes" : "Note: Weight based formula used for weight ≤ 5kg",
+    "peripheralLine" : 3.2,
+    "peripheralLineUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg\/mL"
+    },
+    "range" : 20,
+    "rangeUnit" : {
+      "conversionScale" : 1,
+      "name" : "mcg\/kg\/min"
+    },
+    "referenceName" : "dopamineConcentration",
+    "unitMultiplier" : 60,
+    "weightBasedConversionFactor" : 10,
+    "weightBasedFormulaConcentration" : 30
+  },
+  {
+    "concentration" : 4,
+    "displayName" : "Dexmedetomidine",
+    "doseIn50mL" : 200,
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mcg"
+    },
+    "peripheralLine" : 4,
+    "peripheralLineUnit" : {
+      "conversionScale" : 1,
+      "name" : "mcg\/mL"
+    },
+    "range" : 1,
+    "rangeUnit" : {
+      "conversionScale" : 1,
+      "name" : "mcg\/kg\/hr"
+    },
+    "referenceName" : "dexmedetomidineConcentration",
+    "unitMultiplier" : 1
+  },
+  {
+    "activationWeight" : 25,
+    "concentration" : 50,
+    "displayName" : "Fentanyl",
+    "doseIn50mL" : 2500,
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mcg"
+    },
+    "notes" : "Note: Weight based formula used for weight ≤ 25kg",
+    "peripheralLine" : 50,
+    "peripheralLineUnit" : {
+      "conversionScale" : 1,
+      "name" : "mcg\/mL"
+    },
+    "range" : 5,
+    "rangeUnit" : {
+      "conversionScale" : 1,
+      "name" : "mcg\/kg\/hr"
+    },
+    "referenceName" : "fentanylConcentration",
+    "unitMultiplier" : 1,
+    "weightBasedConversionFactor" : 2,
+    "weightBasedFormulaConcentration" : 100
+  },
+  {
+    "concentration" : 400,
+    "displayName" : "Glyceryl Trinitrate",
+    "doseIn50mL" : 20,
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg"
+    },
+    "peripheralLine" : 0.4,
+    "peripheralLineUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg\/mL"
+    },
+    "range" : 10,
+    "rangeUnit" : {
+      "conversionScale" : 1,
+      "name" : "mcg\/kg\/min"
+    },
+    "referenceName" : "glycerylTrinitrateConcentration",
+    "unitMultiplier" : 60
+  },
+  {
+    "concentration" : 100,
+    "displayName" : "Heparin",
+    "doseIn50mL" : 5000,
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "units"
+    },
+    "peripheralLine" : 100,
+    "peripheralLineUnit" : {
+      "conversionScale" : 1,
+      "name" : "unit\/mL"
+    },
+    "range" : 40,
+    "rangeUnit" : {
+      "conversionScale" : 1,
+      "name" : "units\/kg\/hr"
+    },
+    "referenceName" : "heparinConcentration",
+    "unitMultiplier" : 1
+  },
+  {
+    "concentration" : 1000,
+    "displayName" : "Hydralazine",
+    "doseIn50mL" : 50,
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg"
+    },
+    "peripheralLine" : 1,
+    "peripheralLineUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg\/mL"
+    },
+    "range" : 6,
+    "rangeUnit" : {
+      "conversionScale" : 1,
+      "name" : "mcg\/kg\/min"
+    },
+    "referenceName" : "hydralazineConcentration",
+    "unitMultiplier" : 60
+  },
+  {
+    "concentration" : 1,
+    "displayName" : "Insulin",
+    "doseIn50mL" : 50,
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "units"
+    },
+    "peripheralLine" : 1,
+    "peripheralLineUnit" : {
+      "conversionScale" : 1,
+      "name" : "unit\/mL"
+    },
+    "range" : 0.1,
+    "rangeUnit" : {
+      "conversionScale" : 1,
+      "name" : "units\/kg\/hr"
+    },
+    "referenceName" : "insulinConcentration",
+    "unitMultiplier" : 1
+  },
+  {
+    "concentration" : 1000,
+    "displayName" : "Ketamine",
+    "doseIn50mL" : 50,
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg"
+    },
+    "peripheralLine" : 1,
+    "peripheralLineUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg\/mL"
+    },
+    "range" : 20,
+    "rangeUnit" : {
+      "conversionScale" : 1,
+      "name" : "mcg\/kg\/min"
+    },
+    "referenceName" : "ketamineConcentration",
+    "unitMultiplier" : 60
+  },
+  {
+    "concentration" : 1,
+    "displayName" : "Labetalol",
+    "doseIn50mL" : 50,
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg"
+    },
+    "peripheralLine" : 1,
+    "peripheralLineUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg\/mL"
+    },
+    "range" : 3,
+    "rangeUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg\/kg\/hr"
+    },
+    "referenceName" : "labetalolConcentration",
+    "unitMultiplier" : 1
+  },
+  {
+    "concentration" : 1000,
+    "displayName" : "Lignocaine",
+    "doseIn50mL" : 50,
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg"
+    },
+    "peripheralLine" : 1,
+    "peripheralLineUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg\/mL"
+    },
+    "range" : 50,
+    "rangeUnit" : {
+      "conversionScale" : 1,
+      "name" : "mcg\/kg\/min"
+    },
+    "referenceName" : "lignocaineConcentration",
+    "unitMultiplier" : 60
+  },
+  {
+    "activationWeight" : 16,
+    "concentration" : 1000,
+    "displayName" : "Midazolam",
+    "doseIn50mL" : 50,
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg"
+    },
+    "notes" : "Note: Weight based formula used for weight ≤ 16kg",
+    "peripheralLine" : 1,
+    "peripheralLineUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg\/mL"
+    },
+    "range" : 4,
+    "rangeUnit" : {
+      "conversionScale" : 1,
+      "name" : "mcg\/kg\/min"
+    },
+    "referenceName" : "midazolamConcentration",
+    "unitMultiplier" : 60,
+    "weightBasedConversionFactor" : 1,
+    "weightBasedFormulaConcentration" : 3
+  },
+  {
+    "concentration" : 200,
+    "displayName" : "Milrinone",
+    "doseIn50mL" : 10,
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg"
+    },
+    "peripheralLine" : 0.2,
+    "peripheralLineUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg\/mL"
+    },
+    "range" : 1,
+    "rangeUnit" : {
+      "conversionScale" : 1,
+      "name" : "mcg\/kg\/min"
+    },
+    "referenceName" : "milrinoneConcentration",
+    "unitMultiplier" : 60
+  },
+  {
+    "activationWeight" : 50,
+    "concentration" : 1000,
+    "displayName" : "Morphine",
+    "doseIn50mL" : 50,
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg"
+    },
+    "notes" : "Note: Weight based formula used for weight ≤ 50kg",
+    "peripheralLine" : 1,
+    "peripheralLineUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg\/mL"
+    },
+    "range" : 40,
+    "rangeUnit" : {
+      "conversionScale" : 1,
+      "name" : "mcg\/kg\/hr"
+    },
+    "referenceName" : "morphineConcentration",
+    "unitMultiplier" : 1,
+    "weightBasedConversionFactor" : 20,
+    "weightBasedFormulaConcentration" : 1
+  },
+  {
+    "concentration" : 200,
+    "displayName" : "Nitroprusside",
+    "doseIn50mL" : 10,
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg"
+    },
+    "peripheralLine" : 0.2,
+    "peripheralLineUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg\/mL"
+    },
+    "range" : 5,
+    "rangeUnit" : {
+      "conversionScale" : 1,
+      "name" : "mcg\/kg\/min"
+    },
+    "referenceName" : "nitroprussideConcentration",
+    "unitMultiplier" : 60
+  },
+  {
+    "concentration" : 30,
+    "displayName" : "Noradrenaline",
+    "doseIn50mL" : 1.5,
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg"
+    },
+    "peripheralLine" : 0.03,
+    "peripheralLineUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg\/mL"
+    },
+    "range" : 0.5,
+    "rangeUnit" : {
+      "conversionScale" : 1,
+      "name" : "mcg\/kg\/min"
+    },
+    "referenceName" : "noradrenalineConcentration",
+    "unitMultiplier" : 60
+  },
+  {
+    "activationWeight" : 10,
+    "concentration" : 5,
+    "displayName" : "Rocuronium",
+    "doseIn50mL" : 250,
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg"
+    },
+    "notes" : "Note: Weight based formula used for weight ≤ 10kg",
+    "peripheralLine" : 5,
+    "peripheralLineUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg\/mL"
+    },
+    "range" : 1,
+    "rangeUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg\/kg\/hr"
+    },
+    "referenceName" : "rocuroniumConcentration",
+    "unitMultiplier" : 1,
+    "weightBasedConversionFactor" : 1,
+    "weightBasedFormulaConcentration" : 50
+  },
+  {
+    "concentration" : 200,
+    "displayName" : "Salbutamol",
+    "doseIn50mL" : 10,
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg"
+    },
+    "peripheralLine" : 0.2,
+    "peripheralLineUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg\/mL"
+    },
+    "range" : 5,
+    "rangeUnit" : {
+      "conversionScale" : 1,
+      "name" : "mcg\/kg\/min"
+    },
+    "referenceName" : "salbutamolConcentration",
+    "unitMultiplier" : 60
+  },
+  {
+    "concentration" : 4,
+    "displayName" : "Thiopental",
+    "doseIn50mL" : 200,
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg"
+    },
+    "peripheralLine" : 4,
+    "peripheralLineUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg\/mL"
+    },
+    "range" : 5,
+    "rangeUnit" : {
+      "conversionScale" : 1,
+      "name" : "mg\/kg\/hr"
+    },
+    "referenceName" : "thiopentalConcentration",
+    "unitMultiplier" : 1
+  },
+  {
+    "concentration" : 20,
+    "displayName" : "Vasopressin (Diabetes Insipidus)",
+    "doseIn50mL" : 1000,
+    "doseUnit" : {
+      "conversionScale" : 1,
+      "name" : "milliunits"
+    },
+    "peripheralLine" : 20,
+    "peripheralLineUnit" : {
+      "conversionScale" : 1,
+      "name" : "milliunit\/mL"
+    },
+    "range" : 10,
+    "rangeUnit" : {
+      "conversionScale" : 1,
+      "name" : "milliunits\/kg\/hr"
+    },
+    "referenceName" : "vasopressinConcentration",
+    "unitMultiplier" : 1
+  }
+]

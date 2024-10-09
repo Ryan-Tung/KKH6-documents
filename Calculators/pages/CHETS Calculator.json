@@ -105,6 +105,7 @@
       "components" : [
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 3,
             "detailVarReferences" : [
               "Adenosine_Dose",
@@ -118,6 +119,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 3,
             "detailVarReferences" : [
               "Adrenaline CHETS_Dose",
@@ -131,6 +133,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 3,
             "detailVarReferences" : [
               "Amiodarone_Dose",
@@ -144,6 +147,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 3,
             "detailVarReferences" : [
               "Atropine Sulfate CHETS_Dose",
@@ -157,6 +161,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 3,
             "detailVarReferences" : [
               "Calcium Chloride CHETS_Dose",
@@ -170,6 +175,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 3,
             "detailVarReferences" : [
               "Calcium Gluconate_Dose",
@@ -183,6 +189,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 3,
             "detailVarReferences" : [
               "Dextrose Hypoglycemia_Dose",
@@ -196,6 +203,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 3,
             "detailVarReferences" : [
               "Dextrose Hyperkalemia_Dose",
@@ -209,6 +217,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 3,
             "detailVarReferences" : [
               "Dextrose CHETS_Dose",
@@ -222,6 +231,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 3,
             "detailVarReferences" : [
               "Diazepam_Dose",
@@ -235,6 +245,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 3,
             "detailVarReferences" : [
               "Diphenydramine_Dose",
@@ -248,6 +259,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 3,
             "detailVarReferences" : [
               "Flumazenil_Dose",
@@ -261,6 +273,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 3,
             "detailVarReferences" : [
               "Hydrocortisone_Dose",
@@ -274,6 +287,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 3,
             "detailVarReferences" : [
               "Hydrocortisone Stress Dose_Dose",
@@ -287,6 +301,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 3,
             "detailVarReferences" : [
               "Ketamine_Dose",
@@ -300,6 +315,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 3,
             "detailVarReferences" : [
               "Midazolam CHETS_Dose",
@@ -313,6 +329,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 3,
             "detailVarReferences" : [
               "Morphine Sulfate CHETS_Dose",
@@ -326,6 +343,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 3,
             "detailVarReferences" : [
               "Naloxone_Dose",
@@ -339,6 +357,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 3,
             "detailVarReferences" : [
               "Phenobarbitone_Dose",
@@ -352,6 +371,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 3,
             "detailVarReferences" : [
               "Rocuronium CHETS_Dose",
@@ -365,6 +385,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 3,
             "detailVarReferences" : [
               "Sodium Bicarbonate 8.4% CHETS_Dose",
@@ -378,6 +399,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 3,
             "detailVarReferences" : [
               "Sodium Chloride 3%_Dose",
@@ -391,6 +413,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 3,
             "detailVarReferences" : [
               "Suxamethonium Chloride First Dose_Dose",
@@ -404,6 +427,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 3,
             "detailVarReferences" : [
               "Salbutamol Inhaler_Dose",
@@ -417,6 +441,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 3,
             "detailVarReferences" : [
               "Salbutamol Soluation_Dose",
@@ -436,6 +461,7 @@
       "components" : [
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 2,
             "detailVarReferences" : [
               "adrenalineInfusion_weightBasedInfusionInstructions",
@@ -450,6 +476,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 2,
             "detailVarReferences" : [
               "dobutamineInfusion_weightBasedInfusionInstructions",
@@ -464,6 +491,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 2,
             "detailVarReferences" : [
               "dopamineInfusion_weightBasedInfusionInstructions",
@@ -478,6 +506,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 2,
             "detailVarReferences" : [
               "midazolamInfusion_weightBasedInfusionInstructions",
@@ -492,6 +521,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 2,
             "detailVarReferences" : [
               "morphineSulfateInfusion_weightBasedInfusionInstructions",
@@ -506,6 +536,7 @@
         },
         {
           "detailedOutput" : {
+            "alwaysExpanded" : false,
             "columnCount" : 2,
             "detailVarReferences" : [
               "noradrenalineInfusion_weightBasedInfusionInstructions",
