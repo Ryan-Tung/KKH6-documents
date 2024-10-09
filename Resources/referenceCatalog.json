@@ -126,6 +126,7 @@
       "green" : 0.47843137254901963,
       "red" : 0
     },
+    "hidden" : true,
     "name" : "APLS Algorithms",
     "symbol" : {
       "sfSymbol" : "folder"
