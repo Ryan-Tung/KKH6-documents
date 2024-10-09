@@ -4,6 +4,7 @@
     "green" : 0.47843137254901963,
     "red" : 0
   },
+  "credit" : "KKH Paediatrics",
   "groups" : [
     {
       "components" : [
@@ -218,7 +219,7 @@
               "Adrenaline_Calc_Amt"
             ],
             "name" : "Adrenaline [Epinephrine] 1:10,000 (1mg\/10ml)",
-            "notes" : "Maximum dose: 1mg",
+            "notes" : "Maximum dose: 10mL",
             "primaryVarReference" : "Adrenaline_Calc_Amt"
           }
         },

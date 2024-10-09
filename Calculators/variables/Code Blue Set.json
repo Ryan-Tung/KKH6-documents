@@ -10,59 +10,75 @@
     "displayName" : "Uncuffed ETT",
     "formula" : {
       "equation" : {
-        "conditional" : [
-          {
-            "component" : {
-              "linear" : {
-                "constant" : 4,
-                "gradient" : 0.25,
-                "target" : "age"
+        "division" : {
+          "denominator" : 2,
+          "numerator" : {
+            "round" : {
+              "decimals" : 0,
+              "roundingMethod" : "up",
+              "value" : {
+                "product" : [
+                  {
+                    "conditional" : [
+                      {
+                        "component" : {
+                          "linear" : {
+                            "constant" : 4,
+                            "gradient" : 0.25,
+                            "target" : "age"
+                          }
+                        },
+                        "condition" : {
+                          "comparison" : "greaterThanOrEqualTo",
+                          "defaultState" : true,
+                          "lhs" : "age",
+                          "rhs" : 1
+                        }
+                      },
+                      {
+                        "component" : {
+                          "conditional" : [
+                            {
+                              "component" : 3,
+                              "condition" : {
+                                "comparison" : "lessThanOrEqualTo",
+                                "defaultState" : true,
+                                "lhs" : "weight",
+                                "rhs" : 3
+                              }
+                            },
+                            {
+                              "component" : 3.5,
+                              "condition" : {
+                                "comparison" : "lessThanOrEqualTo",
+                                "defaultState" : true,
+                                "lhs" : "weight",
+                                "rhs" : 6
+                              }
+                            },
+                            {
+                              "component" : 4,
+                              "condition" : {
+                                "comparison" : "lessThanOrEqualTo",
+                                "defaultState" : true,
+                                "lhs" : "weight",
+                                "rhs" : 8
+                              }
+                            },
+                            {
+                              "component" : 4.5
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  2
+                ]
               }
-            },
-            "condition" : {
-              "comparison" : "greaterThanOrEqualTo",
-              "defaultState" : true,
-              "lhs" : "age",
-              "rhs" : 1
-            }
-          },
-          {
-            "component" : {
-              "conditional" : [
-                {
-                  "component" : 3,
-                  "condition" : {
-                    "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
-                    "lhs" : "weight",
-                    "rhs" : 3
-                  }
-                },
-                {
-                  "component" : 3.5,
-                  "condition" : {
-                    "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
-                    "lhs" : "weight",
-                    "rhs" : 6
-                  }
-                },
-                {
-                  "component" : 4,
-                  "condition" : {
-                    "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
-                    "lhs" : "weight",
-                    "rhs" : 8
-                  }
-                },
-                {
-                  "component" : 4.5
-                }
-              ]
             }
           }
-        ]
+        }
       },
       "parameters" : [
         "age",

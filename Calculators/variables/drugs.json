@@ -17,7 +17,7 @@
     },
     "isPreDilutionAmount" : false,
     "maxCalcDose" : 10,
-    "notes" : "Maximum dose: 1mg",
+    "notes" : "Maximum dose: 10mL",
     "referenceName" : "Adrenaline"
   },
   {

@@ -22,7 +22,7 @@
         "name" : "mg\/24hrs"
       }
     ],
-    "decimals" : 2,
+    "decimals" : 3,
     "displayName" : "Total PO Morphine dose over 24 hrs",
     "formula" : {
       "equation" : {
@@ -58,7 +58,7 @@
         "name" : "mg"
       }
     ],
-    "decimals" : 2,
+    "decimals" : 3,
     "displayName" : "PO Morphine Q6H Dose",
     "formula" : {
       "equation" : {
@@ -99,7 +99,7 @@
         "name" : "mg"
       }
     ],
-    "decimals" : 2,
+    "decimals" : 3,
     "displayName" : "PO Morphine Q4H Dose",
     "formula" : {
       "equation" : {
@@ -303,7 +303,7 @@
         "name" : "mg\/24hrs"
       }
     ],
-    "decimals" : 2,
+    "decimals" : 3,
     "displayName" : "Total PO Lorazepam dose over 24 hrs",
     "formula" : {
       "equation" : {
@@ -340,7 +340,7 @@
         "name" : "mg"
       }
     ],
-    "decimals" : 2,
+    "decimals" : 3,
     "displayName" : "PO Lorazepam Q6H Dose",
     "formula" : {
       "equation" : {

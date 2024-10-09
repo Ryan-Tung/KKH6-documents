@@ -160,7 +160,7 @@
                       "nilConstant" : null
                     },
                     "condition" : {
-                      "comparison" : "greaterThanOrEqualTo",
+                      "comparison" : "lessThan",
                       "defaultState" : true,
                       "lhs" : "respiratoryOtherSupport",
                       "rhs" : 0

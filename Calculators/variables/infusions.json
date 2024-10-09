@@ -41,7 +41,7 @@
   },
   {
     "displayName" : "Morphine Sulfate (10mg\/mL)",
-    "maximumPeripheralConcentration" : 4000,
+    "maximumPeripheralConcentration" : 1000,
     "referenceName" : "morphineSulfateInfusion",
     "weightBasedDosage" : 1,
     "weightBasedInfusionInstructionsUnit" : {
