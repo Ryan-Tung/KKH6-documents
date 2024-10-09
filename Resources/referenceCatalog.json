@@ -1,6 +1,17 @@
 [
   {
     "color" : {
+      "blue" : 1,
+      "green" : 0.47843137254901963,
+      "red" : 0
+    },
+    "name" : "Analgosedation and Delirium",
+    "symbol" : {
+      "sfSymbol" : "zzz"
+    }
+  },
+  {
+    "color" : {
       "blue" : 0.18823529411764706,
       "green" : 0.23137254901960785,
       "red" : 1
@@ -67,17 +78,6 @@
   },
   {
     "color" : {
-      "blue" : 0.5764705882352941,
-      "green" : 0.5568627450980392,
-      "red" : 0.5568627450980392
-    },
-    "name" : "Miscellaneous",
-    "symbol" : {
-      "sfSymbol" : "ellipsis"
-    }
-  },
-  {
-    "color" : {
       "blue" : 0.3333333333333333,
       "green" : 0.17647058823529413,
       "red" : 1
@@ -111,13 +111,24 @@
   },
   {
     "color" : {
+      "blue" : 0.5764705882352941,
+      "green" : 0.5568627450980392,
+      "red" : 0.5568627450980392
+    },
+    "name" : "Miscellaneous",
+    "symbol" : {
+      "sfSymbol" : "ellipsis"
+    }
+  },
+  {
+    "color" : {
       "blue" : 1,
       "green" : 0.47843137254901963,
       "red" : 0
     },
-    "name" : "Analgosedation and Delirium",
+    "name" : "APLS Algorithms",
     "symbol" : {
-      "sfSymbol" : "zzz"
+      "sfSymbol" : "folder"
     }
   }
 ]
