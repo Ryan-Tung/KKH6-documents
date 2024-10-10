@@ -464,13 +464,13 @@
             "alwaysExpanded" : false,
             "columnCount" : 2,
             "detailVarReferences" : [
-              "adrenalineInfusion_weightBasedInfusionInstructions",
-              "adrenalineInfusion_calculatedWeightBasedInfusionRate",
-              "adrenalineInfusion_maximumPeripheralInfusion",
-              "adrenalineInfusion_calculatedMaximumPeripheralInfusionRate"
+              "adrenalineConcentration_doseIn50mL",
+              "adrenalineConcentration_concentrationOfPeripheralLine",
+              "adrenalineConcentration_calculatedRange",
+              "adrenalineConcentration_calculatedRate"
             ],
-            "name" : "Adrenaline (1:1000) 1mg\/mL",
-            "notes" : "Weight Based Dose: 0.3 mg\/kg",
+            "name" : "Adrenaline",
+            "notes" : "Note: Weight based formula used for weight ≤ 5kg\n((0.3*Weight)mg in 50mL = 1mL\/hour = 0.1mcg\/kg\/min)",
             "primaryVarReference" : ""
           }
         },
@@ -479,13 +479,13 @@
             "alwaysExpanded" : false,
             "columnCount" : 2,
             "detailVarReferences" : [
-              "dobutamineInfusion_weightBasedInfusionInstructions",
-              "dobutamineInfusion_calculatedWeightBasedInfusionRate",
-              "dobutamineInfusion_maximumPeripheralInfusion",
-              "dobutamineInfusion_calculatedMaximumPeripheralInfusionRate"
+              "dobutamineConcentration_doseIn50mL",
+              "dobutamineConcentration_concentrationOfPeripheralLine",
+              "dobutamineConcentration_calculatedRange",
+              "dobutamineConcentration_calculatedRate"
             ],
-            "name" : "DOBUTamine (250mg\/20mL)",
-            "notes" : "Weight Based Dose: 30.0 mg\/kg",
+            "name" : "Dobutamine",
+            "notes" : "Note: Weight based formula used for weight ≤ 8kg\n((30*Weight)mg in 50mL = 1mL\/hour = 10mcg\/kg\/min)",
             "primaryVarReference" : ""
           }
         },
@@ -494,13 +494,13 @@
             "alwaysExpanded" : false,
             "columnCount" : 2,
             "detailVarReferences" : [
-              "dopamineInfusion_weightBasedInfusionInstructions",
-              "dopamineInfusion_calculatedWeightBasedInfusionRate",
-              "dopamineInfusion_maximumPeripheralInfusion",
-              "dopamineInfusion_calculatedMaximumPeripheralInfusionRate"
+              "dopamineConcentration_doseIn50mL",
+              "dopamineConcentration_concentrationOfPeripheralLine",
+              "dopamineConcentration_calculatedRange",
+              "dopamineConcentration_calculatedRate"
             ],
-            "name" : "DOPamine (200mg\/5mL) *CENTRAL* *Weight < 30kg*",
-            "notes" : "Weight Based Dose: 30.0 mg\/kg",
+            "name" : "Dopamine",
+            "notes" : "Note: Weight based formula used for weight ≤ 5kg\n((30*Weight)mg in 50mL = 1mL\/hour = 10mcg\/kg\/min)",
             "primaryVarReference" : ""
           }
         },
@@ -509,13 +509,13 @@
             "alwaysExpanded" : false,
             "columnCount" : 2,
             "detailVarReferences" : [
-              "midazolamInfusion_weightBasedInfusionInstructions",
-              "midazolamInfusion_calculatedWeightBasedInfusionRate",
-              "midazolamInfusion_maximumPeripheralInfusion",
-              "midazolamInfusion_calculatedMaximumPeripheralInfusionRate"
+              "midazolamConcentration_doseIn50mL",
+              "midazolamConcentration_concentrationOfPeripheralLine",
+              "midazolamConcentration_calculatedRange",
+              "midazolamConcentration_calculatedRate"
             ],
-            "name" : "Midazolam (15mg\/3mL)",
-            "notes" : "Weight Based Dose: 3.0 mg\/kg",
+            "name" : "Midazolam",
+            "notes" : "Note: Weight based formula used for weight ≤ 16kg\n((3*Weight)mg in 50mL = 1mL\/hour = 1mcg\/kg\/min)",
             "primaryVarReference" : ""
           }
         },
@@ -524,13 +524,13 @@
             "alwaysExpanded" : false,
             "columnCount" : 2,
             "detailVarReferences" : [
-              "morphineSulfateInfusion_weightBasedInfusionInstructions",
-              "morphineSulfateInfusion_calculatedWeightBasedInfusionRate",
-              "morphineSulfateInfusion_maximumPeripheralInfusion",
-              "morphineSulfateInfusion_calculatedMaximumPeripheralInfusionRate"
+              "morphineConcentration_doseIn50mL",
+              "morphineConcentration_concentrationOfPeripheralLine",
+              "morphineConcentration_calculatedRange",
+              "morphineConcentration_calculatedRate"
             ],
-            "name" : "Morphine Sulfate (10mg\/mL)",
-            "notes" : "Weight Based Dose: 1.0 mg\/kg",
+            "name" : "Morphine",
+            "notes" : "Note: Weight based formula used for weight ≤ 50kg\n((1*Weight)mg in 50mL = 1mL\/hour = 20mcg\/kg\/hour)",
             "primaryVarReference" : ""
           }
         },
@@ -539,13 +539,12 @@
             "alwaysExpanded" : false,
             "columnCount" : 2,
             "detailVarReferences" : [
-              "noradrenalineInfusion_weightBasedInfusionInstructions",
-              "noradrenalineInfusion_calculatedWeightBasedInfusionRate",
-              "noradrenalineInfusion_maximumPeripheralInfusion",
-              "noradrenalineInfusion_calculatedMaximumPeripheralInfusionRate"
+              "noradrenalineConcentration_doseIn50mL",
+              "noradrenalineConcentration_concentrationOfPeripheralLine",
+              "noradrenalineConcentration_calculatedRange",
+              "noradrenalineConcentration_calculatedRate"
             ],
-            "name" : "NORadrenaline (4mg\/4mL)",
-            "notes" : "Weight Based Dose: 0.3 mg\/kg",
+            "name" : "Noradrenaline",
             "primaryVarReference" : ""
           }
         }

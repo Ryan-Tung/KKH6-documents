@@ -8,21 +8,20 @@
       "conversionScale" : 1,
       "name" : "mg"
     },
-    "notes" : "Note: Weight based formula used for weight ≤ 5kg",
+    "notes" : "Note: Weight based formula used for weight ≤ 5kg\n((0.3*Weight)mg in 50mL = 1mL\/hour = 0.1mcg\/kg\/min)",
     "peripheralLine" : 30,
     "peripheralLineUnit" : {
       "conversionScale" : 1,
       "name" : "mcg\/mL"
     },
-    "range" : 0.5,
+    "range" : 0.1,
     "rangeUnit" : {
       "conversionScale" : 1,
       "name" : "mcg\/kg\/min"
     },
     "referenceName" : "adrenalineConcentration",
     "unitMultiplier" : 60,
-    "weightBasedConversionFactor" : 0.1,
-    "weightBasedFormulaConcentration" : 0.3
+    "weightBasedConversionFactor" : 0.1
   },
   {
     "concentration" : 2.5,
@@ -58,7 +57,7 @@
       "conversionScale" : 1,
       "name" : "mcg\/mL"
     },
-    "range" : 0.1,
+    "range" : 0.01,
     "rangeUnit" : {
       "conversionScale" : 1,
       "name" : "mcg\/kg\/min"
@@ -117,7 +116,7 @@
       "conversionScale" : 1,
       "name" : "mg"
     },
-    "notes" : "Note: Weight based formula used for weight ≤ 8kg",
+    "notes" : "Note: Weight based formula used for weight ≤ 8kg\n((30*Weight)mg in 50mL = 1mL\/hour = 10mcg\/kg\/min)",
     "peripheralLine" : 5,
     "peripheralLineUnit" : {
       "conversionScale" : 1,
@@ -130,8 +129,7 @@
     },
     "referenceName" : "dobutamineConcentration",
     "unitMultiplier" : 60,
-    "weightBasedConversionFactor" : 10,
-    "weightBasedFormulaConcentration" : 30
+    "weightBasedConversionFactor" : 10
   },
   {
     "activationWeight" : 5,
@@ -142,7 +140,7 @@
       "conversionScale" : 1,
       "name" : "mg"
     },
-    "notes" : "Note: Weight based formula used for weight ≤ 5kg",
+    "notes" : "Note: Weight based formula used for weight ≤ 5kg\n((30*Weight)mg in 50mL = 1mL\/hour = 10mcg\/kg\/min)",
     "peripheralLine" : 3.2,
     "peripheralLineUnit" : {
       "conversionScale" : 1,
@@ -155,8 +153,7 @@
     },
     "referenceName" : "dopamineConcentration",
     "unitMultiplier" : 60,
-    "weightBasedConversionFactor" : 10,
-    "weightBasedFormulaConcentration" : 30
+    "weightBasedConversionFactor" : 10
   },
   {
     "concentration" : 4,
@@ -188,7 +185,7 @@
       "conversionScale" : 1,
       "name" : "mcg"
     },
-    "notes" : "Note: Weight based formula used for weight ≤ 25kg",
+    "notes" : "Note: Weight based formula used for weight ≤ 25kg\n(100mcg*Weight in 50mL = 1mL\/hour = 2mcg\/kg\/hr)",
     "peripheralLine" : 50,
     "peripheralLineUnit" : {
       "conversionScale" : 1,
@@ -201,8 +198,7 @@
     },
     "referenceName" : "fentanylConcentration",
     "unitMultiplier" : 1,
-    "weightBasedConversionFactor" : 2,
-    "weightBasedFormulaConcentration" : 100
+    "weightBasedConversionFactor" : 2
   },
   {
     "concentration" : 400,
@@ -238,7 +234,7 @@
       "conversionScale" : 1,
       "name" : "unit\/mL"
     },
-    "range" : 40,
+    "range" : 10,
     "rangeUnit" : {
       "conversionScale" : 1,
       "name" : "units\/kg\/hr"
@@ -360,21 +356,20 @@
       "conversionScale" : 1,
       "name" : "mg"
     },
-    "notes" : "Note: Weight based formula used for weight ≤ 16kg",
+    "notes" : "Note: Weight based formula used for weight ≤ 16kg\n((3*Weight)mg in 50mL = 1mL\/hour = 1mcg\/kg\/min)",
     "peripheralLine" : 1,
     "peripheralLineUnit" : {
       "conversionScale" : 1,
       "name" : "mg\/mL"
     },
-    "range" : 4,
+    "range" : 1,
     "rangeUnit" : {
       "conversionScale" : 1,
       "name" : "mcg\/kg\/min"
     },
     "referenceName" : "midazolamConcentration",
     "unitMultiplier" : 60,
-    "weightBasedConversionFactor" : 1,
-    "weightBasedFormulaConcentration" : 3
+    "weightBasedConversionFactor" : 1
   },
   {
     "concentration" : 200,
@@ -406,21 +401,20 @@
       "conversionScale" : 1,
       "name" : "mg"
     },
-    "notes" : "Note: Weight based formula used for weight ≤ 50kg",
+    "notes" : "Note: Weight based formula used for weight ≤ 50kg\n((1*Weight)mg in 50mL = 1mL\/hour = 20mcg\/kg\/hour)",
     "peripheralLine" : 1,
     "peripheralLineUnit" : {
       "conversionScale" : 1,
       "name" : "mg\/mL"
     },
-    "range" : 40,
+    "range" : 20,
     "rangeUnit" : {
       "conversionScale" : 1,
       "name" : "mcg\/kg\/hr"
     },
     "referenceName" : "morphineConcentration",
     "unitMultiplier" : 1,
-    "weightBasedConversionFactor" : 20,
-    "weightBasedFormulaConcentration" : 1
+    "weightBasedConversionFactor" : 20
   },
   {
     "concentration" : 200,
@@ -435,7 +429,7 @@
       "conversionScale" : 1,
       "name" : "mg\/mL"
     },
-    "range" : 5,
+    "range" : 0.5,
     "rangeUnit" : {
       "conversionScale" : 1,
       "name" : "mcg\/kg\/min"
@@ -456,7 +450,7 @@
       "conversionScale" : 1,
       "name" : "mg\/mL"
     },
-    "range" : 0.5,
+    "range" : 0.1,
     "rangeUnit" : {
       "conversionScale" : 1,
       "name" : "mcg\/kg\/min"
@@ -473,7 +467,7 @@
       "conversionScale" : 1,
       "name" : "mg"
     },
-    "notes" : "Note: Weight based formula used for weight ≤ 10kg",
+    "notes" : "Note: Weight based formula used for weight ≤ 10kg\n(50mg*Weight in 50mL = 1mL\/hour = 1mg\/kg\/hr)",
     "peripheralLine" : 5,
     "peripheralLineUnit" : {
       "conversionScale" : 1,
@@ -486,8 +480,7 @@
     },
     "referenceName" : "rocuroniumConcentration",
     "unitMultiplier" : 1,
-    "weightBasedConversionFactor" : 1,
-    "weightBasedFormulaConcentration" : 50
+    "weightBasedConversionFactor" : 1
   },
   {
     "concentration" : 200,

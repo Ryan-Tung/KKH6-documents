@@ -29,22 +29,26 @@
       "components" : [
         {
           "detailedOutput" : {
-            "alwaysExpanded" : true,
+            "alwaysExpanded" : false,
             "columnCount" : 2,
             "detailVarReferences" : [
+              "adrenalineConcentration_doseIn50mL",
+              "adrenalineConcentration_concentrationOfPeripheralLine",
               "adrenalineConcentration_calculatedRange",
               "adrenalineConcentration_calculatedRate"
             ],
             "name" : "Adrenaline",
-            "notes" : "Note: Weight based formula used for weight ≤ 5kg",
+            "notes" : "Note: Weight based formula used for weight ≤ 5kg\n((0.3*Weight)mg in 50mL = 1mL\/hour = 0.1mcg\/kg\/min)",
             "primaryVarReference" : ""
           }
         },
         {
           "detailedOutput" : {
-            "alwaysExpanded" : true,
+            "alwaysExpanded" : false,
             "columnCount" : 2,
             "detailVarReferences" : [
+              "aminophyllineConcentration_doseIn50mL",
+              "aminophyllineConcentration_concentrationOfPeripheralLine",
               "aminophyllineConcentration_calculatedRange",
               "aminophyllineConcentration_calculatedRate"
             ],
@@ -54,9 +58,11 @@
         },
         {
           "detailedOutput" : {
-            "alwaysExpanded" : true,
+            "alwaysExpanded" : false,
             "columnCount" : 2,
             "detailVarReferences" : [
+              "alprostadilConcentration_doseIn50mL",
+              "alprostadilConcentration_concentrationOfPeripheralLine",
               "alprostadilConcentration_calculatedRange",
               "alprostadilConcentration_calculatedRate"
             ],
@@ -66,9 +72,11 @@
         },
         {
           "detailedOutput" : {
-            "alwaysExpanded" : true,
+            "alwaysExpanded" : false,
             "columnCount" : 2,
             "detailVarReferences" : [
+              "amiodaroneConcentration_doseIn50mL",
+              "amiodaroneConcentration_concentrationOfPeripheralLine",
               "amiodaroneConcentration_calculatedRange",
               "amiodaroneConcentration_calculatedRate"
             ],
@@ -78,9 +86,11 @@
         },
         {
           "detailedOutput" : {
-            "alwaysExpanded" : true,
+            "alwaysExpanded" : false,
             "columnCount" : 2,
             "detailVarReferences" : [
+              "atracuriumConcentration_doseIn50mL",
+              "atracuriumConcentration_concentrationOfPeripheralLine",
               "atracuriumConcentration_calculatedRange",
               "atracuriumConcentration_calculatedRate"
             ],
@@ -90,35 +100,41 @@
         },
         {
           "detailedOutput" : {
-            "alwaysExpanded" : true,
+            "alwaysExpanded" : false,
             "columnCount" : 2,
             "detailVarReferences" : [
+              "dobutamineConcentration_doseIn50mL",
+              "dobutamineConcentration_concentrationOfPeripheralLine",
               "dobutamineConcentration_calculatedRange",
               "dobutamineConcentration_calculatedRate"
             ],
             "name" : "Dobutamine",
-            "notes" : "Note: Weight based formula used for weight ≤ 8kg",
+            "notes" : "Note: Weight based formula used for weight ≤ 8kg\n((30*Weight)mg in 50mL = 1mL\/hour = 10mcg\/kg\/min)",
             "primaryVarReference" : ""
           }
         },
         {
           "detailedOutput" : {
-            "alwaysExpanded" : true,
+            "alwaysExpanded" : false,
             "columnCount" : 2,
             "detailVarReferences" : [
+              "dopamineConcentration_doseIn50mL",
+              "dopamineConcentration_concentrationOfPeripheralLine",
               "dopamineConcentration_calculatedRange",
               "dopamineConcentration_calculatedRate"
             ],
             "name" : "Dopamine",
-            "notes" : "Note: Weight based formula used for weight ≤ 5kg",
+            "notes" : "Note: Weight based formula used for weight ≤ 5kg\n((30*Weight)mg in 50mL = 1mL\/hour = 10mcg\/kg\/min)",
             "primaryVarReference" : ""
           }
         },
         {
           "detailedOutput" : {
-            "alwaysExpanded" : true,
+            "alwaysExpanded" : false,
             "columnCount" : 2,
             "detailVarReferences" : [
+              "dexmedetomidineConcentration_doseIn50mL",
+              "dexmedetomidineConcentration_concentrationOfPeripheralLine",
               "dexmedetomidineConcentration_calculatedRange",
               "dexmedetomidineConcentration_calculatedRate"
             ],
@@ -128,22 +144,26 @@
         },
         {
           "detailedOutput" : {
-            "alwaysExpanded" : true,
+            "alwaysExpanded" : false,
             "columnCount" : 2,
             "detailVarReferences" : [
+              "fentanylConcentration_doseIn50mL",
+              "fentanylConcentration_concentrationOfPeripheralLine",
               "fentanylConcentration_calculatedRange",
               "fentanylConcentration_calculatedRate"
             ],
             "name" : "Fentanyl",
-            "notes" : "Note: Weight based formula used for weight ≤ 25kg",
+            "notes" : "Note: Weight based formula used for weight ≤ 25kg\n(100mcg*Weight in 50mL = 1mL\/hour = 2mcg\/kg\/hr)",
             "primaryVarReference" : ""
           }
         },
         {
           "detailedOutput" : {
-            "alwaysExpanded" : true,
+            "alwaysExpanded" : false,
             "columnCount" : 2,
             "detailVarReferences" : [
+              "glycerylTrinitrateConcentration_doseIn50mL",
+              "glycerylTrinitrateConcentration_concentrationOfPeripheralLine",
               "glycerylTrinitrateConcentration_calculatedRange",
               "glycerylTrinitrateConcentration_calculatedRate"
             ],
@@ -153,9 +173,11 @@
         },
         {
           "detailedOutput" : {
-            "alwaysExpanded" : true,
+            "alwaysExpanded" : false,
             "columnCount" : 2,
             "detailVarReferences" : [
+              "heparinConcentration_doseIn50mL",
+              "heparinConcentration_concentrationOfPeripheralLine",
               "heparinConcentration_calculatedRange",
               "heparinConcentration_calculatedRate"
             ],
@@ -165,9 +187,11 @@
         },
         {
           "detailedOutput" : {
-            "alwaysExpanded" : true,
+            "alwaysExpanded" : false,
             "columnCount" : 2,
             "detailVarReferences" : [
+              "hydralazineConcentration_doseIn50mL",
+              "hydralazineConcentration_concentrationOfPeripheralLine",
               "hydralazineConcentration_calculatedRange",
               "hydralazineConcentration_calculatedRate"
             ],
@@ -177,9 +201,11 @@
         },
         {
           "detailedOutput" : {
-            "alwaysExpanded" : true,
+            "alwaysExpanded" : false,
             "columnCount" : 2,
             "detailVarReferences" : [
+              "insulinConcentration_doseIn50mL",
+              "insulinConcentration_concentrationOfPeripheralLine",
               "insulinConcentration_calculatedRange",
               "insulinConcentration_calculatedRate"
             ],
@@ -189,9 +215,11 @@
         },
         {
           "detailedOutput" : {
-            "alwaysExpanded" : true,
+            "alwaysExpanded" : false,
             "columnCount" : 2,
             "detailVarReferences" : [
+              "ketamineConcentration_doseIn50mL",
+              "ketamineConcentration_concentrationOfPeripheralLine",
               "ketamineConcentration_calculatedRange",
               "ketamineConcentration_calculatedRate"
             ],
@@ -201,9 +229,11 @@
         },
         {
           "detailedOutput" : {
-            "alwaysExpanded" : true,
+            "alwaysExpanded" : false,
             "columnCount" : 2,
             "detailVarReferences" : [
+              "labetalolConcentration_doseIn50mL",
+              "labetalolConcentration_concentrationOfPeripheralLine",
               "labetalolConcentration_calculatedRange",
               "labetalolConcentration_calculatedRate"
             ],
@@ -213,9 +243,11 @@
         },
         {
           "detailedOutput" : {
-            "alwaysExpanded" : true,
+            "alwaysExpanded" : false,
             "columnCount" : 2,
             "detailVarReferences" : [
+              "lignocaineConcentration_doseIn50mL",
+              "lignocaineConcentration_concentrationOfPeripheralLine",
               "lignocaineConcentration_calculatedRange",
               "lignocaineConcentration_calculatedRate"
             ],
@@ -225,22 +257,26 @@
         },
         {
           "detailedOutput" : {
-            "alwaysExpanded" : true,
+            "alwaysExpanded" : false,
             "columnCount" : 2,
             "detailVarReferences" : [
+              "midazolamConcentration_doseIn50mL",
+              "midazolamConcentration_concentrationOfPeripheralLine",
               "midazolamConcentration_calculatedRange",
               "midazolamConcentration_calculatedRate"
             ],
             "name" : "Midazolam",
-            "notes" : "Note: Weight based formula used for weight ≤ 16kg",
+            "notes" : "Note: Weight based formula used for weight ≤ 16kg\n((3*Weight)mg in 50mL = 1mL\/hour = 1mcg\/kg\/min)",
             "primaryVarReference" : ""
           }
         },
         {
           "detailedOutput" : {
-            "alwaysExpanded" : true,
+            "alwaysExpanded" : false,
             "columnCount" : 2,
             "detailVarReferences" : [
+              "milrinoneConcentration_doseIn50mL",
+              "milrinoneConcentration_concentrationOfPeripheralLine",
               "milrinoneConcentration_calculatedRange",
               "milrinoneConcentration_calculatedRate"
             ],
@@ -250,22 +286,26 @@
         },
         {
           "detailedOutput" : {
-            "alwaysExpanded" : true,
+            "alwaysExpanded" : false,
             "columnCount" : 2,
             "detailVarReferences" : [
+              "morphineConcentration_doseIn50mL",
+              "morphineConcentration_concentrationOfPeripheralLine",
               "morphineConcentration_calculatedRange",
               "morphineConcentration_calculatedRate"
             ],
             "name" : "Morphine",
-            "notes" : "Note: Weight based formula used for weight ≤ 50kg",
+            "notes" : "Note: Weight based formula used for weight ≤ 50kg\n((1*Weight)mg in 50mL = 1mL\/hour = 20mcg\/kg\/hour)",
             "primaryVarReference" : ""
           }
         },
         {
           "detailedOutput" : {
-            "alwaysExpanded" : true,
+            "alwaysExpanded" : false,
             "columnCount" : 2,
             "detailVarReferences" : [
+              "nitroprussideConcentration_doseIn50mL",
+              "nitroprussideConcentration_concentrationOfPeripheralLine",
               "nitroprussideConcentration_calculatedRange",
               "nitroprussideConcentration_calculatedRate"
             ],
@@ -275,9 +315,11 @@
         },
         {
           "detailedOutput" : {
-            "alwaysExpanded" : true,
+            "alwaysExpanded" : false,
             "columnCount" : 2,
             "detailVarReferences" : [
+              "noradrenalineConcentration_doseIn50mL",
+              "noradrenalineConcentration_concentrationOfPeripheralLine",
               "noradrenalineConcentration_calculatedRange",
               "noradrenalineConcentration_calculatedRate"
             ],
@@ -287,22 +329,26 @@
         },
         {
           "detailedOutput" : {
-            "alwaysExpanded" : true,
+            "alwaysExpanded" : false,
             "columnCount" : 2,
             "detailVarReferences" : [
+              "rocuroniumConcentration_doseIn50mL",
+              "rocuroniumConcentration_concentrationOfPeripheralLine",
               "rocuroniumConcentration_calculatedRange",
               "rocuroniumConcentration_calculatedRate"
             ],
             "name" : "Rocuronium",
-            "notes" : "Note: Weight based formula used for weight ≤ 10kg",
+            "notes" : "Note: Weight based formula used for weight ≤ 10kg\n(50mg*Weight in 50mL = 1mL\/hour = 1mg\/kg\/hr)",
             "primaryVarReference" : ""
           }
         },
         {
           "detailedOutput" : {
-            "alwaysExpanded" : true,
+            "alwaysExpanded" : false,
             "columnCount" : 2,
             "detailVarReferences" : [
+              "salbutamolConcentration_doseIn50mL",
+              "salbutamolConcentration_concentrationOfPeripheralLine",
               "salbutamolConcentration_calculatedRange",
               "salbutamolConcentration_calculatedRate"
             ],
@@ -312,9 +358,11 @@
         },
         {
           "detailedOutput" : {
-            "alwaysExpanded" : true,
+            "alwaysExpanded" : false,
             "columnCount" : 2,
             "detailVarReferences" : [
+              "thiopentalConcentration_doseIn50mL",
+              "thiopentalConcentration_concentrationOfPeripheralLine",
               "thiopentalConcentration_calculatedRange",
               "thiopentalConcentration_calculatedRate"
             ],
@@ -324,9 +372,11 @@
         },
         {
           "detailedOutput" : {
-            "alwaysExpanded" : true,
+            "alwaysExpanded" : false,
             "columnCount" : 2,
             "detailVarReferences" : [
+              "vasopressinConcentration_doseIn50mL",
+              "vasopressinConcentration_concentrationOfPeripheralLine",
               "vasopressinConcentration_calculatedRange",
               "vasopressinConcentration_calculatedRate"
             ],

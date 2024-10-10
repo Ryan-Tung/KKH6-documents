@@ -396,7 +396,7 @@
     }
   ],
   "image" : {
-    "sfSymbol" : "heart.slash.fill"
+    "sfSymbol" : "bolt.heart.fill"
   },
   "name" : "pSOFA",
   "nested" : false
