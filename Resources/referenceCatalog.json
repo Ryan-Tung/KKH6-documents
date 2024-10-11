@@ -1,6 +1,19 @@
 [
   {
     "color" : {
+      "blue" : 0.5764705882352941,
+      "green" : 0.5568627450980392,
+      "red" : 0.5568627450980392
+    },
+    "hidden" : true,
+    "isRoot" : true,
+    "name" : "Priority",
+    "symbol" : {
+      "sfSymbol" : "folder"
+    }
+  },
+  {
+    "color" : {
       "blue" : 1,
       "green" : 0.47843137254901963,
       "red" : 0
@@ -123,8 +136,8 @@
   {
     "color" : {
       "blue" : 1,
-      "green" : 0.47843137254901963,
-      "red" : 0
+      "green" : 0.8274509906768799,
+      "red" : 0.8274509906768799
     },
     "hidden" : true,
     "name" : "APLS Algorithms",
