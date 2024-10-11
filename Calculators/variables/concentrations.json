@@ -8,7 +8,7 @@
       "name" : "mg"
     },
     "internalConcentration" : 30,
-    "internalToPeripheralConcentrationCF" : 1000,
+    "internalToPeripheralConcentrationCF" : 1,
     "notes" : "Note: Weight based formula used for weight ≤ 5kg\n((0.3*Weight)mg in 50mL = 1mL\/hour = 0.1mcg\/kg\/min)",
     "peripheralLineConcentration" : 30,
     "peripheralLineConcentrationUnit" : {
@@ -376,7 +376,7 @@
       "name" : "mg"
     },
     "internalConcentration" : 1000,
-    "internalToPeripheralConcentrationCF" : 1000,
+    "internalToPeripheralConcentrationCF" : 1,
     "notes" : "Note: Weight based formula used for weight ≤ 16kg\n((3*Weight)mg in 50mL = 1mL\/hour = 1mcg\/kg\/min)",
     "peripheralLineConcentration" : 1,
     "peripheralLineConcentrationUnit" : {
@@ -424,7 +424,7 @@
       "name" : "mg"
     },
     "internalConcentration" : 1000,
-    "internalToPeripheralConcentrationCF" : 1000,
+    "internalToPeripheralConcentrationCF" : 1,
     "notes" : "Note: Weight based formula used for weight ≤ 50kg\n((1*Weight)mg in 50mL = 1mL\/hour = 20mcg\/kg\/hour)",
     "peripheralLineConcentration" : 1,
     "peripheralLineConcentrationUnit" : {
