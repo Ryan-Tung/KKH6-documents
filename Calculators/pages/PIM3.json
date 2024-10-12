@@ -8,6 +8,15 @@
     {
       "components" : [
         {
+          "text" : "Input the first value for each variable from within the period of time of first ICU team contact with the patient to 1 hr after arrival in the ICU."
+        }
+      ],
+      "name" : "Disclaimer",
+      "showName" : false
+    },
+    {
+      "components" : [
+        {
           "discreteInput" : {
             "presentationStyle" : "menu",
             "values" : [
