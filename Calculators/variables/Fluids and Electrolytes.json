@@ -468,7 +468,7 @@
     "alternateUnits" : [
       {
         "conversionScale" : 1,
-        "name" : "mg\/kg"
+        "name" : "mg\/kg\/min"
       }
     ],
     "decimals" : 2,
@@ -497,7 +497,7 @@
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
-      "name" : "mg\/kg"
+      "name" : "mg\/kg\/min"
     }
   },
   {
@@ -592,7 +592,7 @@
     "alternateUnits" : [
       {
         "conversionScale" : 1,
-        "name" : "ml\/min\/173m²"
+        "name" : "ml\/min\/1.73m²"
       }
     ],
     "decimals" : 2,
@@ -636,7 +636,7 @@
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
-      "name" : "ml\/min\/173m²"
+      "name" : "ml\/min\/1.73m²"
     }
   }
 ]

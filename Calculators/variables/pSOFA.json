@@ -71,7 +71,22 @@
             }
           },
           {
-            "component" : 3,
+            "component" : {
+              "conditional" : [
+                {
+                  "component" : 3,
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "respiratoryOnMechanicalVentilation",
+                    "rhs" : 1
+                  }
+                },
+                {
+                  "component" : 0
+                }
+              ]
+            },
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
               "defaultState" : true,
@@ -82,9 +97,9 @@
           {
             "component" : 4,
             "condition" : {
-              "comparison" : "greaterThan",
+              "comparison" : "equalTo",
               "defaultState" : true,
-              "lhs" : "respiratoryInput",
+              "lhs" : "respiratoryOnMechanicalVentilation",
               "rhs" : 1
             }
           },
@@ -94,7 +109,8 @@
         ]
       },
       "parameters" : [
-        "respiratoryInput"
+        "respiratoryInput",
+        "respiratoryOnMechanicalVentilation"
       ],
       "roundingMethod" : "nearest"
     },
@@ -145,7 +161,22 @@
             }
           },
           {
-            "component" : 3,
+            "component" : {
+              "conditional" : [
+                {
+                  "component" : 3,
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "respiratoryOnMechanicalVentilation",
+                    "rhs" : 1
+                  }
+                },
+                {
+                  "component" : 0
+                }
+              ]
+            },
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
               "defaultState" : true,
@@ -156,9 +187,9 @@
           {
             "component" : 4,
             "condition" : {
-              "comparison" : "greaterThan",
+              "comparison" : "equalTo",
               "defaultState" : true,
-              "lhs" : "respiratoryInput",
+              "lhs" : "respiratoryOnMechanicalVentilation",
               "rhs" : 1
             }
           },
@@ -168,12 +199,29 @@
         ]
       },
       "parameters" : [
-        "respiratoryInput"
+        "respiratoryInput",
+        "respiratoryOnMechanicalVentilation"
       ],
       "roundingMethod" : "nearest"
     },
     "referenceName" : "respiratorySfScore",
     "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "On mechanical ventilation including CPAP",
+    "referenceName" : "respiratoryOnMechanicalVentilation",
+    "startingValue" : -1,
     "unit" : {
       "conversionScale" : 1,
       "name" : ""

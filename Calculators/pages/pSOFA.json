@@ -63,6 +63,33 @@
           }
         },
         {
+          "discreteInput" : {
+            "presentationStyle" : "menu",
+            "values" : [
+              {
+                "displayName" : "Select",
+                "value" : -1
+              },
+              {
+                "displayName" : "Yes",
+                "value" : 1
+              },
+              {
+                "displayName" : "No",
+                "value" : 0
+              }
+            ],
+            "variableInfo" : {
+              "color" : {
+                "blue" : 1,
+                "green" : 0.47843137254901963,
+                "red" : 0
+              },
+              "variableReference" : "respiratoryOnMechanicalVentilation"
+            }
+          }
+        },
+        {
           "output" : "respiratoryOutput"
         }
       ],

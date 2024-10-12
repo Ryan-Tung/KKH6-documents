@@ -259,7 +259,7 @@
                 "green" : 0.5843137254901961,
                 "red" : 1
               },
-              "variableReference" : "renalCreatinine"
+              "variableReference" : "pelod2RenalCreatinine"
             }
           }
         },

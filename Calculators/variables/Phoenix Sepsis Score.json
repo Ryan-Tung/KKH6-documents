@@ -1008,7 +1008,7 @@
     "alternateUnits" : [
       {
         "conversionScale" : 1,
-        "name" : "µmol\/L"
+        "name" : "mg\/dL"
       }
     ],
     "decimals" : 1,
@@ -1017,7 +1017,7 @@
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
-      "name" : "µmol\/L"
+      "name" : "mg\/dL"
     }
   },
   {
