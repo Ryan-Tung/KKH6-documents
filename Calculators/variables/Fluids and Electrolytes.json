@@ -42,20 +42,48 @@
     "displayName" : "Corrected Sodium Level",
     "formula" : {
       "equation" : {
-        "sum" : [
-          "serumSodium",
+        "conditional" : [
           {
-            "product" : [
-              0.3,
-              {
-                "sum" : [
-                  "glucose",
-                  {
-                    "negative" : 5.5
-                  }
-                ]
-              }
-            ]
+            "component" : {
+              "nilConstant" : null
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "serumSodium",
+              "rhs" : 0
+            }
+          },
+          {
+            "component" : {
+              "nilConstant" : null
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "glucose",
+              "rhs" : 0
+            }
+          },
+          {
+            "component" : {
+              "sum" : [
+                "serumSodium",
+                {
+                  "product" : [
+                    0.3,
+                    {
+                      "sum" : [
+                        "glucose",
+                        {
+                          "negative" : 5.5
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
           }
         ]
       },
@@ -83,23 +111,40 @@
     "displayName" : "Free Water Deficit",
     "formula" : {
       "equation" : {
-        "product" : [
-          0.6,
-          "weight",
+        "conditional" : [
           {
-            "sum" : [
-              {
-                "division" : {
-                  "denominator" : 140,
-                  "numerator" : "serumSodium"
-                }
-              },
-              {
-                "negative" : 1
-              }
-            ]
+            "component" : {
+              "nilConstant" : null
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "serumSodium",
+              "rhs" : 0
+            }
           },
-          1000
+          {
+            "component" : {
+              "product" : [
+                0.6,
+                "weight",
+                {
+                  "sum" : [
+                    {
+                      "division" : {
+                        "denominator" : 140,
+                        "numerator" : "serumSodium"
+                      }
+                    },
+                    {
+                      "negative" : 1
+                    }
+                  ]
+                },
+                1000
+              ]
+            }
+          }
         ]
       },
       "parameters" : [
@@ -205,16 +250,33 @@
     "displayName" : "Sodium Deficit",
     "formula" : {
       "equation" : {
-        "product" : [
-          0.6,
-          "weight",
+        "conditional" : [
           {
-            "sum" : [
-              135,
-              {
-                "negative" : "serumSodium"
-              }
-            ]
+            "component" : {
+              "nilConstant" : null
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "serumSodium",
+              "rhs" : 0
+            }
+          },
+          {
+            "component" : {
+              "product" : [
+                0.6,
+                "weight",
+                {
+                  "sum" : [
+                    135,
+                    {
+                      "negative" : "serumSodium"
+                    }
+                  ]
+                }
+              ]
+            }
           }
         ]
       },
