@@ -56,48 +56,15 @@
     {
       "components" : [
         {
-          "conditional" : {
-            "component" : {
-              "inputSingle" : {
-                "allowsNegative" : false,
-                "variableInfo" : {
-                  "color" : {
-                    "blue" : 1,
-                    "green" : 0.47843137254901963,
-                    "red" : 0
-                  },
-                  "variableReference" : "feedingTotalFluids"
-                }
-              }
-            },
-            "condition" : {
-              "comparison" : "equalTo",
-              "defaultState" : true,
-              "lhs" : "feedType",
-              "rhs" : 0
-            }
-          }
-        },
-        {
-          "conditional" : {
-            "component" : {
-              "inputSingle" : {
-                "allowsNegative" : false,
-                "variableInfo" : {
-                  "color" : {
-                    "blue" : 1,
-                    "green" : 0.47843137254901963,
-                    "red" : 0
-                  },
-                  "variableReference" : "totalFluidOrdered"
-                }
-              }
-            },
-            "condition" : {
-              "comparison" : "equalTo",
-              "defaultState" : true,
-              "lhs" : "feedType",
-              "rhs" : 1
+          "inputSingle" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 1,
+                "green" : 0.47843137254901963,
+                "red" : 0
+              },
+              "variableReference" : "feedingTotalFluids"
             }
           }
         },
