@@ -80,7 +80,7 @@
         "name" : ""
       }
     ],
-    "decimals" : 4,
+    "decimals" : 2,
     "displayName" : "20% wean\/day",
     "formula" : {
       "equation" : {
@@ -127,7 +127,7 @@
         "name" : ""
       }
     ],
-    "decimals" : 4,
+    "decimals" : 2,
     "displayName" : "10% wean\/day",
     "formula" : {
       "equation" : {
@@ -174,7 +174,7 @@
         "name" : ""
       }
     ],
-    "decimals" : 4,
+    "decimals" : 2,
     "displayName" : "20% wean\/day",
     "formula" : {
       "equation" : {
@@ -217,7 +217,7 @@
         "name" : ""
       }
     ],
-    "decimals" : 4,
+    "decimals" : 2,
     "displayName" : "10% wean\/day",
     "formula" : {
       "equation" : {
@@ -334,7 +334,7 @@
         "name" : ""
       }
     ],
-    "decimals" : 4,
+    "decimals" : 3,
     "displayName" : "20% wean\/day",
     "formula" : {
       "equation" : {
@@ -378,7 +378,7 @@
         "name" : ""
       }
     ],
-    "decimals" : 4,
+    "decimals" : 3,
     "displayName" : "10% wean\/day",
     "formula" : {
       "equation" : {

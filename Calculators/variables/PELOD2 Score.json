@@ -723,6 +723,22 @@
     "alternateUnits" : [
       {
         "conversionScale" : 1,
+        "name" : "µmol\/L"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "Creatinine",
+    "referenceName" : "pelod2RenalCreatinine",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "µmol\/L"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
         "name" : ""
       }
     ],

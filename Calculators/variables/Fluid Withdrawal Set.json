@@ -71,7 +71,7 @@
       }
     ],
     "decimals" : 2,
-    "displayName" : "Amount of milk\/feeding",
+    "displayName" : "Amount of milk\/feed",
     "referenceName" : "amountOfMilkFeeding",
     "startingValue" : 0,
     "unit" : {

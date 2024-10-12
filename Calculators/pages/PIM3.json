@@ -11,8 +11,8 @@
           "text" : "Input the first value for each variable from within the period of time of first ICU team contact with the patient to 1 hr after arrival in the ICU."
         }
       ],
-      "name" : "Disclaimer",
-      "showName" : false
+      "name" : "Instructions",
+      "showName" : true
     },
     {
       "components" : [

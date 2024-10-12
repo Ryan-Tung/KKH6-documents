@@ -711,7 +711,7 @@
     },
     "conversionFactor" : 1,
     "displayName" : "Sodium Chloride 3%",
-    "dose" : 2,
+    "dose" : 3,
     "doseUnit" : {
       "conversionScale" : 1,
       "name" : "mL\/kg"
