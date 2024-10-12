@@ -31,6 +31,44 @@
             "allowsNegative" : false,
             "variableInfo" : {
               "color" : {
+                "blue" : 0.8392156862745098,
+                "green" : 0.33725490196078434,
+                "red" : 0.34509803921568627
+              },
+              "variableReference" : "pelodLactate"
+            }
+          }
+        },
+        {
+          "output" : "lactateScore"
+        },
+        {
+          "inputSingle" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0.8392156862745098,
+                "green" : 0.33725490196078434,
+                "red" : 0.34509803921568627
+              },
+              "variableReference" : "cardioMAP"
+            }
+          }
+        },
+        {
+          "output" : "mapScore"
+        }
+      ],
+      "name" : "Cardiovascular",
+      "showName" : true
+    },
+    {
+      "components" : [
+        {
+          "inputSingle" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
                 "blue" : 1,
                 "green" : 0.47843137254901963,
                 "red" : 0
@@ -74,66 +112,6 @@
         }
       ],
       "name" : "Neurologic",
-      "showName" : true
-    },
-    {
-      "components" : [
-        {
-          "inputSingle" : {
-            "allowsNegative" : false,
-            "variableInfo" : {
-              "color" : {
-                "blue" : 0.8392156862745098,
-                "green" : 0.33725490196078434,
-                "red" : 0.34509803921568627
-              },
-              "variableReference" : "pelodLactate"
-            }
-          }
-        },
-        {
-          "output" : "lactateScore"
-        },
-        {
-          "inputSingle" : {
-            "allowsNegative" : false,
-            "variableInfo" : {
-              "color" : {
-                "blue" : 0.8392156862745098,
-                "green" : 0.33725490196078434,
-                "red" : 0.34509803921568627
-              },
-              "variableReference" : "cardioMAP"
-            }
-          }
-        },
-        {
-          "output" : "mapScore"
-        }
-      ],
-      "name" : "Cardiovascular",
-      "showName" : true
-    },
-    {
-      "components" : [
-        {
-          "inputSingle" : {
-            "allowsNegative" : false,
-            "variableInfo" : {
-              "color" : {
-                "blue" : 0,
-                "green" : 0.5843137254901961,
-                "red" : 1
-              },
-              "variableReference" : "renalCreatinine"
-            }
-          }
-        },
-        {
-          "output" : "creatinineScore"
-        }
-      ],
-      "name" : "Renal",
       "showName" : true
     },
     {
@@ -256,6 +234,28 @@
         }
       ],
       "name" : "Hematological System",
+      "showName" : true
+    },
+    {
+      "components" : [
+        {
+          "inputSingle" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0,
+                "green" : 0.5843137254901961,
+                "red" : 1
+              },
+              "variableReference" : "renalCreatinine"
+            }
+          }
+        },
+        {
+          "output" : "creatinineScore"
+        }
+      ],
+      "name" : "Renal",
       "showName" : true
     },
     {

@@ -35,32 +35,32 @@
     "alternateUnits" : [
       {
         "conversionScale" : 1,
-        "name" : ""
+        "name" : "x10⁹\/L"
       }
     ],
-    "decimals" : 0,
+    "decimals" : 2,
     "displayName" : "Leucocytes",
     "referenceName" : "leucocytes",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
-      "name" : ""
+      "name" : "x10⁹\/L"
     }
   },
   {
     "alternateUnits" : [
       {
         "conversionScale" : 1,
-        "name" : ""
+        "name" : "x10⁹\/L"
       }
     ],
-    "decimals" : 0,
+    "decimals" : 2,
     "displayName" : "Platelets",
     "referenceName" : "platelets",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
-      "name" : ""
+      "name" : "x10⁹\/L"
     }
   },
   {
@@ -739,7 +739,7 @@
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "lhs" : "renalCreatinine",
+                    "lhs" : "pelod2RenalCreatinine",
                     "rhs" : 70
                   }
                 },
@@ -763,7 +763,7 @@
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "lhs" : "renalCreatinine",
+                    "lhs" : "pelod2RenalCreatinine",
                     "rhs" : 23
                   }
                 },
@@ -787,7 +787,7 @@
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "lhs" : "renalCreatinine",
+                    "lhs" : "pelod2RenalCreatinine",
                     "rhs" : 35
                   }
                 },
@@ -811,7 +811,7 @@
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "lhs" : "renalCreatinine",
+                    "lhs" : "pelod2RenalCreatinine",
                     "rhs" : 51
                   }
                 },
@@ -835,7 +835,7 @@
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "lhs" : "renalCreatinine",
+                    "lhs" : "pelod2RenalCreatinine",
                     "rhs" : 70
                   }
                 },
@@ -859,7 +859,7 @@
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "lhs" : "renalCreatinine",
+                    "lhs" : "pelod2RenalCreatinine",
                     "rhs" : 23
                   }
                 },
@@ -883,7 +883,7 @@
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "lhs" : "renalCreatinine",
+                    "lhs" : "pelod2RenalCreatinine",
                     "rhs" : 35
                   }
                 },
@@ -907,7 +907,7 @@
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "lhs" : "renalCreatinine",
+                    "lhs" : "pelod2RenalCreatinine",
                     "rhs" : 51
                   }
                 },
@@ -931,7 +931,7 @@
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "lhs" : "renalCreatinine",
+                    "lhs" : "pelod2RenalCreatinine",
                     "rhs" : 59
                   }
                 },
@@ -955,7 +955,7 @@
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "lhs" : "renalCreatinine",
+                    "lhs" : "pelod2RenalCreatinine",
                     "rhs" : 93
                   }
                 },
@@ -969,7 +969,7 @@
       },
       "parameters" : [
         "age",
-        "renalCreatinine"
+        "pelod2RenalCreatinine"
       ],
       "roundingMethod" : "nearest"
     },
@@ -1253,11 +1253,11 @@
     "alternateUnits" : [
       {
         "conversionScale" : 1,
-        "name" : ""
+        "name" : "%"
       }
     ],
-    "decimals" : 5,
-    "displayName" : "Mortality Risk Estimate",
+    "decimals" : 2,
+    "displayName" : "Predicted Mortality Rate",
     "formula" : {
       "equation" : {
         "division" : {
@@ -1295,11 +1295,12 @@
       ],
       "roundingMethod" : "nearest"
     },
+    "isPercentage" : true,
     "referenceName" : "mortalityRiskEstimate",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
-      "name" : ""
+      "name" : "%"
     }
   }
 ]
