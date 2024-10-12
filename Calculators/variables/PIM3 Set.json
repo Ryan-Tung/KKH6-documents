@@ -67,16 +67,17 @@
     "alternateUnits" : [
       {
         "conversionScale" : 1,
-        "name" : ""
+        "name" : "%"
       }
     ],
     "decimals" : 2,
     "displayName" : "FiO2",
+    "isPercentage" : true,
     "referenceName" : "fiO2",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
-      "name" : ""
+      "name" : "%"
     }
   },
   {
@@ -283,12 +284,7 @@
                           "component" : {
                             "division" : {
                               "denominator" : "paO2",
-                              "numerator" : {
-                                "product" : [
-                                  "fiO2",
-                                  100
-                                ]
-                              }
+                              "numerator" : "fiO2"
                             }
                           }
                         }
@@ -445,11 +441,11 @@
     "alternateUnits" : [
       {
         "conversionScale" : 1,
-        "name" : ""
+        "name" : "%"
       }
     ],
-    "decimals" : 3,
-    "displayName" : "Probability",
+    "decimals" : 1,
+    "displayName" : "Predicted Mortality Rate",
     "formula" : {
       "equation" : {
         "division" : {
@@ -477,11 +473,12 @@
       ],
       "roundingMethod" : "nearest"
     },
+    "isPercentage" : true,
     "referenceName" : "pim3Probability",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
-      "name" : ""
+      "name" : "%"
     }
   }
 ]
