@@ -2215,10 +2215,27 @@
     "displayName" : "Target Volume",
     "formula" : {
       "equation" : {
-        "division" : {
-          "denominator" : "numberOfFeedsPerDay",
-          "numerator" : "feedingRemainingFluids"
-        }
+        "conditional" : [
+          {
+            "component" : {
+              "division" : {
+                "denominator" : "numberOfFeedsPerDay",
+                "numerator" : "feedingRemainingFluids"
+              }
+            },
+            "condition" : {
+              "comparison" : "notEqualTo",
+              "defaultState" : true,
+              "lhs" : "numberOfFeedsPerDay",
+              "rhs" : -1
+            }
+          },
+          {
+            "component" : {
+              "nilConstant" : null
+            }
+          }
+        ]
       },
       "parameters" : [
         "feedingRemainingFluids",
@@ -2244,10 +2261,27 @@
     "displayName" : "Full Feed Rate",
     "formula" : {
       "equation" : {
-        "division" : {
-          "denominator" : "continuousFeedHrsPerDay",
-          "numerator" : "feedingRemainingFluids"
-        }
+        "conditional" : [
+          {
+            "component" : {
+              "division" : {
+                "denominator" : "continuousFeedHrsPerDay",
+                "numerator" : "feedingRemainingFluids"
+              }
+            },
+            "condition" : {
+              "comparison" : "notEqualTo",
+              "defaultState" : true,
+              "lhs" : "continuousFeedHrsPerDay",
+              "rhs" : -1
+            }
+          },
+          {
+            "component" : {
+              "nilConstant" : null
+            }
+          }
+        ]
       },
       "parameters" : [
         "continuousFeedHrsPerDay",

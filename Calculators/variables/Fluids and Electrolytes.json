@@ -599,15 +599,32 @@
     "displayName" : "Baseline GFR",
     "formula" : {
       "equation" : {
-        "division" : {
-          "denominator" : "baselineCreatinine",
-          "numerator" : {
-            "product" : [
-              "height",
-              36.5
-            ]
+        "conditional" : [
+          {
+            "component" : {
+              "division" : {
+                "denominator" : "baselineCreatinine",
+                "numerator" : {
+                  "product" : [
+                    "height",
+                    36.5
+                  ]
+                }
+              }
+            },
+            "condition" : {
+              "comparison" : "notEqualTo",
+              "defaultState" : true,
+              "lhs" : "baselineCreatinine",
+              "rhs" : 0
+            }
+          },
+          {
+            "component" : {
+              "nilConstant" : null
+            }
           }
-        }
+        ]
       },
       "parameters" : [
         "baselineCreatinine",

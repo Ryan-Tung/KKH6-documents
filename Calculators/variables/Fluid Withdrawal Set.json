@@ -442,10 +442,27 @@
     "displayName" : "Amount to Withdraw Per Hour",
     "formula" : {
       "equation" : {
-        "division" : {
-          "denominator" : "numberOfHoursUntil6am",
-          "numerator" : "totalFluidToWithdraw"
-        }
+        "conditional" : [
+          {
+            "component" : {
+              "division" : {
+                "denominator" : "numberOfHoursUntil6am",
+                "numerator" : "totalFluidToWithdraw"
+              }
+            },
+            "condition" : {
+              "comparison" : "notEqualTo",
+              "defaultState" : true,
+              "lhs" : "numberOfHoursUntil6am",
+              "rhs" : 0
+            }
+          },
+          {
+            "component" : {
+              "nilConstant" : null
+            }
+          }
+        ]
       },
       "parameters" : [
         "numberOfHoursUntil6am",
