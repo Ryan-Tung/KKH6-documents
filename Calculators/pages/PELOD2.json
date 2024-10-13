@@ -11,7 +11,7 @@
           "text" : "When unknown, a variable must be set as 'Not available' and will be considered normal."
         },
         {
-          "text" : "When a variable is measured multiple times in a 24 hour period, the worst value must be considered."
+          "text" : "When a variable is measured multiple times in a 24 hour period, use the worst value to calculate the score."
         }
       ],
       "name" : "Instructions",
@@ -124,6 +124,7 @@
         }
       ],
       "name" : "Neurologic",
+      "notes" : "If the patient is sedated, record the estimated GCS before sedation",
       "showName" : true
     },
     {
