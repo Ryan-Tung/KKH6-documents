@@ -8,6 +8,18 @@
     {
       "components" : [
         {
+          "text" : "The pSOFA score is a mortality prediction score that is based on the degree of dysfunction of six organ systems."
+        },
+        {
+          "text" : "The score is calculated on ICU admission and every 24 hours until discharge, using the worst parameters measured within each 24 hour period."
+        }
+      ],
+      "name" : "Instructions",
+      "showName" : true
+    },
+    {
+      "components" : [
+        {
           "inputPrimary" : {
             "allowsNegative" : false,
             "variableInfo" : {
@@ -31,11 +43,11 @@
             "presentationStyle" : "segmented",
             "values" : [
               {
-                "displayName" : "PaO2 : FiO2",
+                "displayName" : "PaO₂ : FiO₂",
                 "value" : 0
               },
               {
-                "displayName" : "SpO2 : FiO2",
+                "displayName" : "SpO₂ : FiO₂",
                 "value" : 1
               }
             ],
@@ -102,6 +114,7 @@
         }
       ],
       "name" : "Respiratory",
+      "notes" : "When SpO2 criteria is used, FiO2 should be titrated to achieve an SpO2 between 88-97%. Only SpO2 values of <\/=97% should be used in the calculation.",
       "showName" : true
     },
     {

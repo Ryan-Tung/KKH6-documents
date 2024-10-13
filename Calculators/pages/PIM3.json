@@ -186,7 +186,7 @@
         }
       ],
       "name" : "Input",
-      "notes" : "Input 0 for Base Excess, FiO2, or PaO2 if they are unknown.\nInput 120 for Systolic Blood Pressure if it is unknown.",
+      "notes" : "Input 0 for Base Excess, FiO₂, or PaO₂ if they are unknown.\nInput 120 for Systolic Blood Pressure if it is unknown.",
       "showName" : true
     },
     {

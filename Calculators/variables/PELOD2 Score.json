@@ -7,7 +7,7 @@
       }
     ],
     "decimals" : 2,
-    "displayName" : "PCO2",
+    "displayName" : "PaCO₂",
     "referenceName" : "pCO2",
     "startingValue" : 0,
     "unit" : {
@@ -71,7 +71,7 @@
       }
     ],
     "decimals" : 0,
-    "displayName" : "PaO2\/FiO2 Ratio",
+    "displayName" : "PaO₂\/FiO₂ Ratio",
     "formula" : {
       "equation" : {
         "conditional" : [
@@ -1004,7 +1004,7 @@
       }
     ],
     "decimals" : 0,
-    "displayName" : "PaO2\/FiO2 Ratio Score",
+    "displayName" : "PaO₂\/FiO₂ Ratio Score",
     "formula" : {
       "equation" : {
         "conditional" : [
@@ -1052,7 +1052,7 @@
       }
     ],
     "decimals" : 0,
-    "displayName" : "PCO2 score",
+    "displayName" : "PaCO₂ score",
     "formula" : {
       "equation" : {
         "conditional" : [

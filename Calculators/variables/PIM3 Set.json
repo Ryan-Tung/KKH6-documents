@@ -71,7 +71,7 @@
       }
     ],
     "decimals" : 2,
-    "displayName" : "FiO2",
+    "displayName" : "FiO₂",
     "isPercentage" : true,
     "referenceName" : "fiO2",
     "startingValue" : 0,
@@ -88,7 +88,7 @@
       }
     ],
     "decimals" : 2,
-    "displayName" : "PaO2",
+    "displayName" : "PaO₂",
     "referenceName" : "paO2",
     "startingValue" : 0,
     "unit" : {
