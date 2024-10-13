@@ -158,7 +158,7 @@
                 "value" : -1
               },
               {
-                "displayName" : "No",
+                "displayName" : "No Risk",
                 "value" : 0
               },
               {
@@ -183,7 +183,14 @@
               "variableReference" : "recovery"
             }
           }
-        },
+        }
+      ],
+      "name" : "Input",
+      "notes" : "Input 0 for Base Excess, FiO2, or PaO2 if they are unknown.\nInput 120 for Systolic Blood Pressure if it is unknown.",
+      "showName" : true
+    },
+    {
+      "components" : [
         {
           "discreteInput" : {
             "presentationStyle" : "menu",
@@ -218,10 +225,18 @@
               "variableReference" : "weightedDiagnosis"
             }
           }
+        },
+        {
+          "text" : "Low-risk diagnosis\n- Asthma\n- Bronchiolitis\n- Croup\n- Obstructive Sleep Apnea\n- Diabetic Ketoacidais\n- Seizure Disorder"
+        },
+        {
+          "text" : "High-risk diagnosis\n- Spontaneous Cerebral Hemorrhage\n- Cardiomyopathy or Mycosclitis\n- Hypoplastic Left Heart Syndrome\n- Neurodegenerative Disorder\n- Necrotizing Enterocolitis"
+        },
+        {
+          "text" : "Very high-risk diagnosis\n- Cardiac arrest before ICU Admission\n- Severe Combined Immune Deficiency\n- Leukemia or Lymphoma after First Induction\n- Bone Marrow Transplant Recipient\n- Liver Failure"
         }
       ],
-      "name" : "Input",
-      "notes" : "Input 0 for Base Excess, FiO2, or PaO2 if they are unknown.\nInput 120 for Systolic Blood Pressure if it is unknown.",
+      "name" : "Main Reason for ICU Admission",
       "showName" : true
     },
     {
