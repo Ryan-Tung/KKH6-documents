@@ -83,7 +83,7 @@
                   }
                 },
                 {
-                  "component" : 0
+                  "component" : -1
                 }
               ]
             },
@@ -104,7 +104,7 @@
             }
           },
           {
-            "component" : 0
+            "component" : -1
           }
         ]
       },
@@ -173,7 +173,7 @@
                   }
                 },
                 {
-                  "component" : 0
+                  "component" : -1
                 }
               ]
             },
@@ -194,7 +194,7 @@
             }
           },
           {
-            "component" : 0
+            "component" : -1
           }
         ]
       },
@@ -442,9 +442,9 @@
       }
     ],
     "decimals" : 0,
-    "displayName" : "Is the patient on inotropes?",
-    "referenceName" : "cardiovascularOnInotropes",
-    "startingValue" : 0,
+    "displayName" : "Cardiovascular Input",
+    "referenceName" : "cardiovascularInput",
+    "startingValue" : -1,
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
@@ -463,319 +463,21 @@
       "equation" : {
         "conditional" : [
           {
-            "component" : {
-              "conditional" : [
-                {
-                  "component" : 0,
-                  "condition" : {
-                    "comparison" : "greaterThanOrEqualTo",
-                    "defaultState" : true,
-                    "lhs" : "cardioMAP",
-                    "rhs" : 46
-                  }
-                },
-                {
-                  "component" : 1,
-                  "condition" : {
-                    "comparison" : "greaterThan",
-                    "defaultState" : true,
-                    "lhs" : "cardioMAP",
-                    "rhs" : 1
-                  }
-                },
-                {
-                  "component" : 0
-                }
-              ]
-            },
-            "condition" : {
-              "comparison" : "lessThan",
-              "defaultState" : true,
-              "lhs" : "age",
-              "rhs" : 0.08333333333333333
-            }
-          },
-          {
-            "component" : {
-              "conditional" : [
-                {
-                  "component" : 0,
-                  "condition" : {
-                    "comparison" : "greaterThanOrEqualTo",
-                    "defaultState" : true,
-                    "lhs" : "cardioMAP",
-                    "rhs" : 55
-                  }
-                },
-                {
-                  "component" : 1,
-                  "condition" : {
-                    "comparison" : "greaterThan",
-                    "defaultState" : true,
-                    "lhs" : "cardioMAP",
-                    "rhs" : 1
-                  }
-                },
-                {
-                  "component" : 0
-                }
-              ]
-            },
-            "condition" : {
-              "comparison" : "lessThanOrEqualTo",
-              "defaultState" : true,
-              "lhs" : "age",
-              "rhs" : 0.75
-            }
-          },
-          {
-            "component" : {
-              "conditional" : [
-                {
-                  "component" : 0,
-                  "condition" : {
-                    "comparison" : "greaterThanOrEqualTo",
-                    "defaultState" : true,
-                    "lhs" : "cardioMAP",
-                    "rhs" : 60
-                  }
-                },
-                {
-                  "component" : 1,
-                  "condition" : {
-                    "comparison" : "greaterThan",
-                    "defaultState" : true,
-                    "lhs" : "cardioMAP",
-                    "rhs" : 1
-                  }
-                },
-                {
-                  "component" : 0
-                }
-              ]
-            },
-            "condition" : {
-              "comparison" : "lessThanOrEqualTo",
-              "defaultState" : true,
-              "lhs" : "age",
-              "rhs" : 1.9166666666666667
-            }
-          },
-          {
-            "component" : {
-              "conditional" : [
-                {
-                  "component" : 0,
-                  "condition" : {
-                    "comparison" : "greaterThanOrEqualTo",
-                    "defaultState" : true,
-                    "lhs" : "cardioMAP",
-                    "rhs" : 62
-                  }
-                },
-                {
-                  "component" : 1,
-                  "condition" : {
-                    "comparison" : "greaterThan",
-                    "defaultState" : true,
-                    "lhs" : "cardioMAP",
-                    "rhs" : 1
-                  }
-                },
-                {
-                  "component" : 0
-                }
-              ]
-            },
-            "condition" : {
-              "comparison" : "lessThanOrEqualTo",
-              "defaultState" : true,
-              "lhs" : "age",
-              "rhs" : 4.916666666666667
-            }
-          },
-          {
-            "component" : {
-              "conditional" : [
-                {
-                  "component" : 0,
-                  "condition" : {
-                    "comparison" : "greaterThanOrEqualTo",
-                    "defaultState" : true,
-                    "lhs" : "cardioMAP",
-                    "rhs" : 65
-                  }
-                },
-                {
-                  "component" : 1,
-                  "condition" : {
-                    "comparison" : "greaterThan",
-                    "defaultState" : true,
-                    "lhs" : "cardioMAP",
-                    "rhs" : 1
-                  }
-                },
-                {
-                  "component" : 0
-                }
-              ]
-            },
-            "condition" : {
-              "comparison" : "lessThanOrEqualTo",
-              "defaultState" : true,
-              "lhs" : "age",
-              "rhs" : 11.916666666666666
-            }
-          },
-          {
-            "component" : {
-              "conditional" : [
-                {
-                  "component" : 0,
-                  "condition" : {
-                    "comparison" : "greaterThanOrEqualTo",
-                    "defaultState" : true,
-                    "lhs" : "cardioMAP",
-                    "rhs" : 67
-                  }
-                },
-                {
-                  "component" : 1,
-                  "condition" : {
-                    "comparison" : "greaterThan",
-                    "defaultState" : true,
-                    "lhs" : "cardioMAP",
-                    "rhs" : 1
-                  }
-                },
-                {
-                  "component" : 0
-                }
-              ]
-            },
-            "condition" : {
-              "comparison" : "lessThanOrEqualTo",
-              "defaultState" : true,
-              "lhs" : "age",
-              "rhs" : 18
-            }
-          },
-          {
-            "component" : {
-              "conditional" : [
-                {
-                  "component" : 0,
-                  "condition" : {
-                    "comparison" : "greaterThanOrEqualTo",
-                    "defaultState" : true,
-                    "lhs" : "cardioMAP",
-                    "rhs" : 70
-                  }
-                },
-                {
-                  "component" : 1,
-                  "condition" : {
-                    "comparison" : "greaterThan",
-                    "defaultState" : true,
-                    "lhs" : "cardioMAP",
-                    "rhs" : 1
-                  }
-                },
-                {
-                  "component" : 0
-                }
-              ]
-            },
-            "condition" : {
-              "comparison" : "greaterThan",
-              "defaultState" : true,
-              "lhs" : "age",
-              "rhs" : 18
-            }
-          }
-        ]
-      },
-      "parameters" : [
-        "age",
-        "cardioMAP"
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "cardiovascularOutput",
-    "startingValue" : 0,
-    "subtitle" : "Either 0 or 1",
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : ""
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : ""
-      }
-    ],
-    "decimals" : 0,
-    "displayName" : "Dopamine ≤ 5 or Dobutamine (any dose)",
-    "referenceName" : "inotropeQuestionOne",
-    "startingValue" : -1,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : ""
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : ""
-      }
-    ],
-    "decimals" : 0,
-    "displayName" : "Dopamine > 5 or Adrenaline ≤ 0.1 or Noradrenaline ≤ 0.1",
-    "referenceName" : "inotropeQuestionTwo",
-    "startingValue" : -1,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : ""
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : ""
-      }
-    ],
-    "decimals" : 0,
-    "displayName" : "Dopamine > 5 or Adrenaline > 0.1 or Noradrenaline > 0.1",
-    "referenceName" : "inotropeQuestionThree",
-    "startingValue" : -1,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : ""
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : ""
-      }
-    ],
-    "decimals" : 0,
-    "displayName" : "Inotrope Question 1 Score",
-    "formula" : {
-      "equation" : {
-        "conditional" : [
-          {
             "component" : 0,
             "condition" : {
               "comparison" : "equalTo",
               "defaultState" : true,
-              "lhs" : "inotropeQuestionOne",
+              "lhs" : "cardiovascularInput",
               "rhs" : 0
+            }
+          },
+          {
+            "component" : 1,
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "cardiovascularInput",
+              "rhs" : 1
             }
           },
           {
@@ -783,44 +485,8 @@
             "condition" : {
               "comparison" : "equalTo",
               "defaultState" : true,
-              "lhs" : "inotropeQuestionOne",
-              "rhs" : 1
-            }
-          }
-        ]
-      },
-      "parameters" : [
-        "inotropeQuestionOne"
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "inotropeQuestionOneOutput",
-    "startingValue" : -1,
-    "subtitle" : "Either 0 or 2",
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : ""
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : ""
-      }
-    ],
-    "decimals" : 0,
-    "displayName" : "Inotrope Question 2 Score",
-    "formula" : {
-      "equation" : {
-        "conditional" : [
-          {
-            "component" : 0,
-            "condition" : {
-              "comparison" : "equalTo",
-              "defaultState" : true,
-              "lhs" : "inotropeQuestionTwo",
-              "rhs" : 0
+              "lhs" : "cardiovascularInput",
+              "rhs" : 2
             }
           },
           {
@@ -828,44 +494,8 @@
             "condition" : {
               "comparison" : "equalTo",
               "defaultState" : true,
-              "lhs" : "inotropeQuestionTwo",
-              "rhs" : 1
-            }
-          }
-        ]
-      },
-      "parameters" : [
-        "inotropeQuestionTwo"
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "inotropeQuestionTwoOutput",
-    "startingValue" : -1,
-    "subtitle" : "Either 0 or 3",
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : ""
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : ""
-      }
-    ],
-    "decimals" : 0,
-    "displayName" : "Inotrope Question 3 Score",
-    "formula" : {
-      "equation" : {
-        "conditional" : [
-          {
-            "component" : 0,
-            "condition" : {
-              "comparison" : "equalTo",
-              "defaultState" : true,
-              "lhs" : "inotropeQuestionThree",
-              "rhs" : 0
+              "lhs" : "cardiovascularInput",
+              "rhs" : 3
             }
           },
           {
@@ -873,20 +503,25 @@
             "condition" : {
               "comparison" : "equalTo",
               "defaultState" : true,
-              "lhs" : "inotropeQuestionThree",
-              "rhs" : 1
+              "lhs" : "cardiovascularInput",
+              "rhs" : 4
+            }
+          },
+          {
+            "component" : {
+              "nilConstant" : null
             }
           }
         ]
       },
       "parameters" : [
-        "inotropeQuestionThree"
+        "cardiovascularInput"
       ],
       "roundingMethod" : "nearest"
     },
-    "referenceName" : "inotropeQuestionThreeOutput",
-    "startingValue" : -1,
-    "subtitle" : "Either 0 or 4",
+    "referenceName" : "cardiovascularOutput",
+    "startingValue" : 0,
+    "subtitle" : "Between 0 and 4 inclusive",
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
@@ -1380,7 +1015,22 @@
     "formula" : {
       "equation" : {
         "sum" : [
-          "respiratoryOutput",
+          {
+            "conditional" : [
+              {
+                "component" : "respiratoryOutput",
+                "condition" : {
+                  "comparison" : "greaterThan",
+                  "defaultState" : true,
+                  "lhs" : "respiratoryOutput",
+                  "rhs" : -1
+                }
+              },
+              {
+                "component" : 0
+              }
+            ]
+          },
           "coagulationOutput",
           "bilirubinOutput",
           "cardiovascularOutput",
@@ -1399,47 +1049,6 @@
       "roundingMethod" : "nearest"
     },
     "referenceName" : "pSOFAScoreNonInotrope",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : ""
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : ""
-      }
-    ],
-    "decimals" : 0,
-    "displayName" : "Cumulative pSOFA Score",
-    "formula" : {
-      "equation" : {
-        "sum" : [
-          "respiratoryOutput",
-          "coagulationOutput",
-          "bilirubinOutput",
-          "inotropeQuestionOneOutput",
-          "inotropeQuestionTwoOutput",
-          "inotropeQuestionThreeOutput",
-          "neurlogicalOutput",
-          "renalOutput"
-        ]
-      },
-      "parameters" : [
-        "bilirubinOutput",
-        "coagulationOutput",
-        "inotropeQuestionOneOutput",
-        "inotropeQuestionThreeOutput",
-        "inotropeQuestionTwoOutput",
-        "neurlogicalOutput",
-        "renalOutput",
-        "respiratoryOutput"
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "pSOFAScoreInotrope",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,

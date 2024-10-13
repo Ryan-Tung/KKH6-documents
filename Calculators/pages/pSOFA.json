@@ -90,7 +90,15 @@
           }
         },
         {
-          "output" : "respiratoryOutput"
+          "discreteOutput" : {
+            "values" : [
+              {
+                "displayName" : "N\/A",
+                "value" : -1
+              }
+            ],
+            "variableReference" : "respiratoryOutput"
+          }
         }
       ],
       "name" : "Respiratory",
@@ -145,200 +153,187 @@
     {
       "components" : [
         {
-          "toggle" : {
-            "color" : {
-              "blue" : 1,
-              "green" : 0.47843137254901963,
-              "red" : 0
-            },
-            "variableReference" : "cardiovascularOnInotropes"
+          "discreteInput" : {
+            "presentationStyle" : "menu",
+            "values" : [
+              {
+                "displayName" : "Select",
+                "value" : -1
+              },
+              {
+                "displayName" : "Option 1",
+                "value" : 0
+              },
+              {
+                "displayName" : "Option 2",
+                "value" : 1
+              },
+              {
+                "displayName" : "Option 3",
+                "value" : 2
+              },
+              {
+                "displayName" : "Option 4",
+                "value" : 3
+              },
+              {
+                "displayName" : "Option 5",
+                "value" : 4
+              }
+            ],
+            "variableInfo" : {
+              "color" : {
+                "blue" : 1,
+                "green" : 0.47843137254901963,
+                "red" : 0
+              },
+              "variableReference" : "cardiovascularInput"
+            }
           }
         },
         {
           "conditional" : {
             "component" : {
-              "inputSingle" : {
-                "allowsNegative" : false,
-                "variableInfo" : {
-                  "color" : {
-                    "blue" : 1,
-                    "green" : 0.47843137254901963,
-                    "red" : 0
-                  },
-                  "variableReference" : "cardioMAP"
+              "text" : "1) Not Hypotensive (MAP ≥ 46mmHg)\n2) Hypotensive (MAP < 46mmHg)\n3) Dopamine ≤ 5 or Dobutamine (any dose)\n4) Dopamine > 5 or Adrenaline ≤ 0.1 or Noradrenaline ≤ 0.1\n5) Dopamine > 5 or Adrenaline > 0.1 or Noradrenaline > 0.1"
+            },
+            "condition" : {
+              "comparison" : "lessThan",
+              "defaultState" : true,
+              "lhs" : "age",
+              "rhs" : 0.08333333333333333
+            }
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "conditional" : {
+                "component" : {
+                  "text" : "1) Not Hypotensive (MAP ≥ 55mmHg)\n2) Hypotensive (MAP < 55mmHg)\n3) Dopamine ≤ 5 or Dobutamine (any dose)\n4) Dopamine > 5 or Adrenaline ≤ 0.1 or Noradrenaline ≤ 0.1\n5) Dopamine > 5 or Adrenaline > 0.1 or Noradrenaline > 0.1"
+                },
+                "condition" : {
+                  "comparison" : "lessThanOrEqualTo",
+                  "defaultState" : true,
+                  "lhs" : "age",
+                  "rhs" : 0.9166666666666666
                 }
               }
             },
             "condition" : {
-              "comparison" : "equalTo",
+              "comparison" : "greaterThanOrEqualTo",
               "defaultState" : true,
-              "lhs" : "cardiovascularOnInotropes",
-              "rhs" : 0
+              "lhs" : "age",
+              "rhs" : 0.08333333333333333
             }
           }
         },
         {
           "conditional" : {
             "component" : {
-              "output" : "cardiovascularOutput"
-            },
-            "condition" : {
-              "comparison" : "equalTo",
-              "defaultState" : true,
-              "lhs" : "cardiovascularOnInotropes",
-              "rhs" : 0
-            }
-          }
-        },
-        {
-          "conditional" : {
-            "component" : {
-              "discreteInput" : {
-                "presentationStyle" : "menu",
-                "values" : [
-                  {
-                    "displayName" : "Select",
-                    "value" : -1
-                  },
-                  {
-                    "displayName" : "Yes",
-                    "value" : 1
-                  },
-                  {
-                    "displayName" : "No",
-                    "value" : 0
-                  }
-                ],
-                "variableInfo" : {
-                  "color" : {
-                    "blue" : 1,
-                    "green" : 0.47843137254901963,
-                    "red" : 0
-                  },
-                  "variableReference" : "inotropeQuestionOne"
+              "conditional" : {
+                "component" : {
+                  "text" : "1) Not Hypotensive (MAP ≥ 60mmHg)\n2) Hypotensive (MAP < 60mmHg)\n3) Dopamine ≤ 5 or Dobutamine (any dose)\n4) Dopamine > 5 or Adrenaline ≤ 0.1 or Noradrenaline ≤ 0.1\n5) Dopamine > 5 or Adrenaline > 0.1 or Noradrenaline > 0.1"
+                },
+                "condition" : {
+                  "comparison" : "lessThanOrEqualTo",
+                  "defaultState" : true,
+                  "lhs" : "age",
+                  "rhs" : 1.9166666666666667
                 }
               }
             },
             "condition" : {
-              "comparison" : "equalTo",
+              "comparison" : "greaterThan",
               "defaultState" : true,
-              "lhs" : "cardiovascularOnInotropes",
-              "rhs" : 1
+              "lhs" : "age",
+              "rhs" : 0.9166666666666666
             }
           }
         },
         {
           "conditional" : {
             "component" : {
-              "output" : "inotropeQuestionOneOutput"
-            },
-            "condition" : {
-              "comparison" : "equalTo",
-              "defaultState" : true,
-              "lhs" : "cardiovascularOnInotropes",
-              "rhs" : 1
-            }
-          }
-        },
-        {
-          "conditional" : {
-            "component" : {
-              "discreteInput" : {
-                "presentationStyle" : "menu",
-                "values" : [
-                  {
-                    "displayName" : "Select",
-                    "value" : -1
-                  },
-                  {
-                    "displayName" : "Yes",
-                    "value" : 1
-                  },
-                  {
-                    "displayName" : "No",
-                    "value" : 0
-                  }
-                ],
-                "variableInfo" : {
-                  "color" : {
-                    "blue" : 1,
-                    "green" : 0.47843137254901963,
-                    "red" : 0
-                  },
-                  "variableReference" : "inotropeQuestionTwo"
+              "conditional" : {
+                "component" : {
+                  "text" : "1) Not Hypotensive (MAP ≥ 62mmHg)\n2) Hypotensive (MAP < 62mmHg)\n3) Dopamine ≤ 5 or Dobutamine (any dose)\n4) Dopamine > 5 or Adrenaline ≤ 0.1 or Noradrenaline ≤ 0.1\n5) Dopamine > 5 or Adrenaline > 0.1 or Noradrenaline > 0.1"
+                },
+                "condition" : {
+                  "comparison" : "lessThanOrEqualTo",
+                  "defaultState" : true,
+                  "lhs" : "age",
+                  "rhs" : 4.916666666666667
                 }
               }
             },
             "condition" : {
-              "comparison" : "equalTo",
+              "comparison" : "greaterThan",
               "defaultState" : true,
-              "lhs" : "cardiovascularOnInotropes",
-              "rhs" : 1
+              "lhs" : "age",
+              "rhs" : 1.9166666666666667
             }
           }
         },
         {
           "conditional" : {
             "component" : {
-              "output" : "inotropeQuestionTwoOutput"
-            },
-            "condition" : {
-              "comparison" : "equalTo",
-              "defaultState" : true,
-              "lhs" : "cardiovascularOnInotropes",
-              "rhs" : 1
-            }
-          }
-        },
-        {
-          "conditional" : {
-            "component" : {
-              "discreteInput" : {
-                "presentationStyle" : "menu",
-                "values" : [
-                  {
-                    "displayName" : "Select",
-                    "value" : -1
-                  },
-                  {
-                    "displayName" : "Yes",
-                    "value" : 1
-                  },
-                  {
-                    "displayName" : "No",
-                    "value" : 0
-                  }
-                ],
-                "variableInfo" : {
-                  "color" : {
-                    "blue" : 1,
-                    "green" : 0.47843137254901963,
-                    "red" : 0
-                  },
-                  "variableReference" : "inotropeQuestionThree"
+              "conditional" : {
+                "component" : {
+                  "text" : "1) Not Hypotensive (MAP ≥ 65mmHg)\n2) Hypotensive (MAP < 65mmHg)\n3) Dopamine ≤ 5 or Dobutamine (any dose)\n4) Dopamine > 5 or Adrenaline ≤ 0.1 or Noradrenaline ≤ 0.1\n5) Dopamine > 5 or Adrenaline > 0.1 or Noradrenaline > 0.1"
+                },
+                "condition" : {
+                  "comparison" : "lessThanOrEqualTo",
+                  "defaultState" : true,
+                  "lhs" : "age",
+                  "rhs" : 11.916666666666666
                 }
               }
             },
             "condition" : {
-              "comparison" : "equalTo",
+              "comparison" : "greaterThan",
               "defaultState" : true,
-              "lhs" : "cardiovascularOnInotropes",
-              "rhs" : 1
+              "lhs" : "age",
+              "rhs" : 4.916666666666667
             }
           }
         },
         {
           "conditional" : {
             "component" : {
-              "output" : "inotropeQuestionThreeOutput"
+              "conditional" : {
+                "component" : {
+                  "text" : "1) Not Hypotensive (MAP ≥ 67mmHg)\n2) Hypotensive (MAP < 67mmHg)\n3) Dopamine ≤ 5 or Dobutamine (any dose)\n4) Dopamine > 5 or Adrenaline ≤ 0.1 or Noradrenaline ≤ 0.1\n5) Dopamine > 5 or Adrenaline > 0.1 or Noradrenaline > 0.1"
+                },
+                "condition" : {
+                  "comparison" : "lessThanOrEqualTo",
+                  "defaultState" : true,
+                  "lhs" : "age",
+                  "rhs" : 18
+                }
+              }
             },
             "condition" : {
-              "comparison" : "equalTo",
+              "comparison" : "greaterThan",
               "defaultState" : true,
-              "lhs" : "cardiovascularOnInotropes",
-              "rhs" : 1
+              "lhs" : "age",
+              "rhs" : 11.916666666666666
             }
           }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "text" : "1) Not Hypotensive (MAP ≥ 70mmHg)\n2) Hypotensive (MAP < 70mmHg)\n3) Dopamine ≤ 5 or Dobutamine (any dose)\n4) Dopamine > 5 or Adrenaline ≤ 0.1 or Noradrenaline ≤ 0.1\n5) Dopamine > 5 or Adrenaline > 0.1 or Noradrenaline > 0.1"
+            },
+            "condition" : {
+              "comparison" : "greaterThan",
+              "defaultState" : true,
+              "lhs" : "age",
+              "rhs" : 18
+            }
+          }
+        },
+        {
+          "output" : "cardiovascularOutput"
         }
       ],
       "name" : "Cardiovascular",
