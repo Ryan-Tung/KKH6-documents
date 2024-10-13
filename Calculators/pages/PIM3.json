@@ -200,7 +200,7 @@
                 "value" : -1
               },
               {
-                "displayName" : "No",
+                "displayName" : "None",
                 "value" : 0
               },
               {
@@ -230,7 +230,7 @@
           "text" : "Low-risk diagnosis\n- Asthma\n- Bronchiolitis\n- Croup\n- Obstructive Sleep Apnea\n- Diabetic Ketoacidais\n- Seizure Disorder"
         },
         {
-          "text" : "High-risk diagnosis\n- Spontaneous Cerebral Hemorrhage\n- Cardiomyopathy or Mycosclitis\n- Hypoplastic Left Heart Syndrome\n- Neurodegenerative Disorder\n- Necrotizing Enterocolitis"
+          "text" : "High-risk diagnosis\n- Spontaneous Cerebral Hemorrhage\n- Cardiomyopathy or Myocarditis\n- Hypoplastic Left Heart Syndrome\n- Neurodegenerative Disorder\n- Necrotizing Enterocolitis"
         },
         {
           "text" : "Very high-risk diagnosis\n- Cardiac arrest before ICU Admission\n- Severe Combined Immune Deficiency\n- Leukemia or Lymphoma after First Induction\n- Bone Marrow Transplant Recipient\n- Liver Failure"
