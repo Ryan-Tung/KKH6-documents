@@ -229,7 +229,7 @@
     "decimals" : 0,
     "displayName" : "On mechanical ventilation including CPAP",
     "referenceName" : "respiratoryOnMechanicalVentilation",
-    "startingValue" : -1,
+    "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : ""

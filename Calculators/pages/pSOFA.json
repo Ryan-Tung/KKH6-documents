@@ -76,12 +76,8 @@
         },
         {
           "discreteInput" : {
-            "presentationStyle" : "menu",
+            "presentationStyle" : "segmented",
             "values" : [
-              {
-                "displayName" : "Select",
-                "value" : -1
-              },
               {
                 "displayName" : "Yes",
                 "value" : 1
