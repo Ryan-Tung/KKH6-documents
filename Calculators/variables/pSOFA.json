@@ -83,7 +83,9 @@
                   }
                 },
                 {
-                  "component" : -1
+                  "component" : {
+                    "nilConstant" : null
+                  }
                 }
               ]
             },
@@ -104,7 +106,9 @@
             }
           },
           {
-            "component" : -1
+            "component" : {
+              "nilConstant" : null
+            }
           }
         ]
       },
@@ -173,7 +177,9 @@
                   }
                 },
                 {
-                  "component" : -1
+                  "component" : {
+                    "nilConstant" : null
+                  }
                 }
               ]
             },
@@ -194,7 +200,9 @@
             }
           },
           {
-            "component" : -1
+            "component" : {
+              "nilConstant" : null
+            }
           }
         ]
       },
@@ -1015,22 +1023,7 @@
     "formula" : {
       "equation" : {
         "sum" : [
-          {
-            "conditional" : [
-              {
-                "component" : "respiratoryOutput",
-                "condition" : {
-                  "comparison" : "greaterThan",
-                  "defaultState" : true,
-                  "lhs" : "respiratoryOutput",
-                  "rhs" : -1
-                }
-              },
-              {
-                "component" : 0
-              }
-            ]
-          },
+          "respiratoryOutput",
           "coagulationOutput",
           "bilirubinOutput",
           "cardiovascularOutput",
@@ -1048,7 +1041,7 @@
       ],
       "roundingMethod" : "nearest"
     },
-    "referenceName" : "pSOFAScoreNonInotrope",
+    "referenceName" : "pSOFAScore",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,

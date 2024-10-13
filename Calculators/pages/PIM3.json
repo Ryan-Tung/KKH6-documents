@@ -158,19 +158,19 @@
                 "value" : -1
               },
               {
-                "displayName" : "No Risk",
+                "displayName" : "No recovery from a surgery\/procedure",
                 "value" : 0
               },
               {
-                "displayName" : "Yes, recovery from non-cardiac procedure",
+                "displayName" : "Recovery from non-cardiac procedure",
                 "value" : 1
               },
               {
-                "displayName" : "Yes, recovery from non-bypass cardiac procedure",
+                "displayName" : "Recovery from non-bypass cardiac procedure",
                 "value" : 2
               },
               {
-                "displayName" : "Yes, recovery from a bypass procedure",
+                "displayName" : "Recovery from a cardiac bypass procedure",
                 "value" : 3
               }
             ],
@@ -227,7 +227,7 @@
           }
         },
         {
-          "text" : "Low-risk diagnosis\n- Asthma\n- Bronchiolitis\n- Croup\n- Obstructive Sleep Apnea\n- Diabetic Ketoacidais\n- Seizure Disorder"
+          "text" : "Low-risk diagnosis\n- Asthma\n- Bronchiolitis\n- Croup\n- Obstructive Sleep Apnea\n- Diabetic Ketoacidosis\n- Seizure Disorder"
         },
         {
           "text" : "High-risk diagnosis\n- Spontaneous Cerebral Hemorrhage\n- Cardiomyopathy or Myocarditis\n- Hypoplastic Left Heart Syndrome\n- Neurodegenerative Disorder\n- Necrotizing Enterocolitis"

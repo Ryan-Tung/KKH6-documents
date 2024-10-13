@@ -154,30 +154,26 @@
       "components" : [
         {
           "discreteInput" : {
-            "presentationStyle" : "menu",
+            "presentationStyle" : "segmented",
             "values" : [
               {
-                "displayName" : "Select",
-                "value" : -1
-              },
-              {
-                "displayName" : "Option 1",
+                "displayName" : "1",
                 "value" : 0
               },
               {
-                "displayName" : "Option 2",
+                "displayName" : "2",
                 "value" : 1
               },
               {
-                "displayName" : "Option 3",
+                "displayName" : "3",
                 "value" : 2
               },
               {
-                "displayName" : "Option 4",
+                "displayName" : "4",
                 "value" : 3
               },
               {
-                "displayName" : "Option 5",
+                "displayName" : "5",
                 "value" : 4
               }
             ],
@@ -387,30 +383,7 @@
     {
       "components" : [
         {
-          "conditional" : {
-            "component" : {
-              "output" : "pSOFAScoreNonInotrope"
-            },
-            "condition" : {
-              "comparison" : "equalTo",
-              "defaultState" : true,
-              "lhs" : "cardiovascularOnInotropes",
-              "rhs" : 0
-            }
-          }
-        },
-        {
-          "conditional" : {
-            "component" : {
-              "output" : "pSOFAScoreInotrope"
-            },
-            "condition" : {
-              "comparison" : "equalTo",
-              "defaultState" : true,
-              "lhs" : "cardiovascularOnInotropes",
-              "rhs" : 1
-            }
-          }
+          "output" : "pSOFAScore"
         }
       ],
       "name" : "pSOFA Score",
