@@ -19,12 +19,75 @@
     "alternateUnits" : [
       {
         "conversionScale" : 1,
+        "name" : "%"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "SpO₂",
+    "isPercentage" : true,
+    "referenceName" : "spO2",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "%"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
         "name" : ""
       }
     ],
     "decimals" : 0,
-    "displayName" : "ratio",
-    "referenceName" : "respiratoryInput",
+    "displayName" : "Ratio",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : {
+              "division" : {
+                "denominator" : "fiO2",
+                "numerator" : "paO2"
+              }
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "respiratoryInputType",
+              "rhs" : 0
+            }
+          },
+          {
+            "component" : {
+              "division" : {
+                "denominator" : "fiO2",
+                "numerator" : "spO2"
+              }
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "respiratoryInputType",
+              "rhs" : 1
+            }
+          },
+          {
+            "component" : {
+              "nilConstant" : null
+            }
+          }
+        ]
+      },
+      "parameters" : [
+        "fiO2",
+        "paO2",
+        "respiratoryInputType",
+        "spO2"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "respiratoryRatio",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
@@ -48,7 +111,7 @@
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
               "defaultState" : true,
-              "lhs" : "respiratoryInput",
+              "lhs" : "respiratoryRatio",
               "rhs" : 400
             }
           },
@@ -57,7 +120,7 @@
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
               "defaultState" : true,
-              "lhs" : "respiratoryInput",
+              "lhs" : "respiratoryRatio",
               "rhs" : 300
             }
           },
@@ -66,7 +129,7 @@
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
               "defaultState" : true,
-              "lhs" : "respiratoryInput",
+              "lhs" : "respiratoryRatio",
               "rhs" : 200
             }
           },
@@ -92,7 +155,7 @@
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
               "defaultState" : true,
-              "lhs" : "respiratoryInput",
+              "lhs" : "respiratoryRatio",
               "rhs" : 100
             }
           },
@@ -113,8 +176,8 @@
         ]
       },
       "parameters" : [
-        "respiratoryInput",
-        "respiratoryOnMechanicalVentilation"
+        "respiratoryOnMechanicalVentilation",
+        "respiratoryRatio"
       ],
       "roundingMethod" : "nearest"
     },
@@ -142,7 +205,7 @@
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
               "defaultState" : true,
-              "lhs" : "respiratoryInput",
+              "lhs" : "respiratoryRatio",
               "rhs" : 292
             }
           },
@@ -151,7 +214,7 @@
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
               "defaultState" : true,
-              "lhs" : "respiratoryInput",
+              "lhs" : "respiratoryRatio",
               "rhs" : 264
             }
           },
@@ -160,7 +223,7 @@
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
               "defaultState" : true,
-              "lhs" : "respiratoryInput",
+              "lhs" : "respiratoryRatio",
               "rhs" : 221
             }
           },
@@ -186,7 +249,7 @@
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
               "defaultState" : true,
-              "lhs" : "respiratoryInput",
+              "lhs" : "respiratoryRatio",
               "rhs" : 148
             }
           },
@@ -207,8 +270,8 @@
         ]
       },
       "parameters" : [
-        "respiratoryInput",
-        "respiratoryOnMechanicalVentilation"
+        "respiratoryOnMechanicalVentilation",
+        "respiratoryRatio"
       ],
       "roundingMethod" : "nearest"
     },

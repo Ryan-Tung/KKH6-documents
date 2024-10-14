@@ -62,17 +62,79 @@
           }
         },
         {
-          "inputSingle" : {
-            "allowsNegative" : false,
-            "variableInfo" : {
-              "color" : {
-                "blue" : 1,
-                "green" : 0.47843137254901963,
-                "red" : 0
-              },
-              "variableReference" : "respiratoryInput"
+          "conditional" : {
+            "component" : {
+              "inputDual" : {
+                "lhs" : {
+                  "allowsNegative" : false,
+                  "variableInfo" : {
+                    "color" : {
+                      "blue" : 0,
+                      "green" : 0.8,
+                      "red" : 1
+                    },
+                    "variableReference" : "paO2"
+                  }
+                },
+                "rhs" : {
+                  "allowsNegative" : false,
+                  "variableInfo" : {
+                    "color" : {
+                      "blue" : 0.34901960784313724,
+                      "green" : 0.7803921568627451,
+                      "red" : 0.20392156862745098
+                    },
+                    "variableReference" : "fiO2"
+                  }
+                }
+              }
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "respiratoryInputType",
+              "rhs" : 0
             }
           }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "inputDual" : {
+                "lhs" : {
+                  "allowsNegative" : false,
+                  "variableInfo" : {
+                    "color" : {
+                      "blue" : 0,
+                      "green" : 0.8,
+                      "red" : 1
+                    },
+                    "variableReference" : "spO2"
+                  }
+                },
+                "rhs" : {
+                  "allowsNegative" : false,
+                  "variableInfo" : {
+                    "color" : {
+                      "blue" : 0.34901960784313724,
+                      "green" : 0.7803921568627451,
+                      "red" : 0.20392156862745098
+                    },
+                    "variableReference" : "fiO2"
+                  }
+                }
+              }
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "respiratoryInputType",
+              "rhs" : 1
+            }
+          }
+        },
+        {
+          "output" : "respiratoryRatio"
         },
         {
           "discreteInput" : {
