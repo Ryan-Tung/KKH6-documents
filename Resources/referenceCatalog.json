@@ -91,17 +91,6 @@
   },
   {
     "color" : {
-      "blue" : 0.5764705882352941,
-      "green" : 0.5568627450980392,
-      "red" : 0.5568627450980392
-    },
-    "name" : "Miscellaneous",
-    "symbol" : {
-      "sfSymbol" : "ellipsis"
-    }
-  },
-  {
-    "color" : {
       "blue" : 0.3333333333333333,
       "green" : 0.17647058823529413,
       "red" : 1
@@ -143,6 +132,17 @@
     "name" : "APLS Algorithms",
     "symbol" : {
       "sfSymbol" : "folder"
+    }
+  },
+  {
+    "color" : {
+      "blue" : 0.5764705882352941,
+      "green" : 0.5568627450980392,
+      "red" : 0.5568627450980392
+    },
+    "name" : "Miscellaneous",
+    "symbol" : {
+      "sfSymbol" : "ellipsis"
     }
   }
 ]
