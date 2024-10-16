@@ -114,43 +114,7 @@
           "output" : "centralVenousCatheterSize"
         },
         {
-          "conditional" : {
-            "component" : {
-              "output" : "vascularCatheterSize_all"
-            },
-            "condition" : {
-              "comparison" : "notEqualTo",
-              "defaultState" : true,
-              "lhs" : "vascularCatheterSize_all",
-              "rhs" : -1
-            }
-          }
-        },
-        {
-          "conditional" : {
-            "component" : {
-              "output" : "vascularCatheterSize_medcomp"
-            },
-            "condition" : {
-              "comparison" : "equalTo",
-              "defaultState" : true,
-              "lhs" : "vascularCatheterSize_all",
-              "rhs" : -1
-            }
-          }
-        },
-        {
-          "conditional" : {
-            "component" : {
-              "output" : "vascularCatheterSize_covidien"
-            },
-            "condition" : {
-              "comparison" : "equalTo",
-              "defaultState" : true,
-              "lhs" : "vascularCatheterSize_all",
-              "rhs" : -1
-            }
-          }
+          "output" : "vascularCatheterSize"
         },
         {
           "output" : "defibrillation"
