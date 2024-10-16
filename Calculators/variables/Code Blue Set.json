@@ -502,7 +502,26 @@
             }
           },
           {
-            "component" : -1,
+            "component" : {
+              "rangeConstant" : {
+                "boundaryValue" : 10,
+                "value" : 8
+              }
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "weight",
+              "rhs" : 15
+            }
+          },
+          {
+            "component" : {
+              "rangeConstant" : {
+                "boundaryValue" : 10,
+                "value" : 9
+              }
+            },
             "condition" : {
               "comparison" : "lessThanOrEqualTo",
               "defaultState" : true,
@@ -525,141 +544,7 @@
       ],
       "roundingMethod" : "nearest"
     },
-    "referenceName" : "vascularCatheterSize_all",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "French"
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : "French"
-      }
-    ],
-    "decimals" : 1,
-    "displayName" : "Vascular Catheter Size (Medcomp)",
-    "formula" : {
-      "equation" : {
-        "conditional" : [
-          {
-            "component" : {
-              "rangeConstant" : {
-                "boundaryValue" : 9,
-                "value" : 8
-              }
-            },
-            "condition" : {
-              "comparison" : "equalTo",
-              "defaultState" : true,
-              "lhs" : "weight",
-              "rhs" : 15
-            }
-          },
-          {
-            "component" : {
-              "conditional" : [
-                {
-                  "component" : 9,
-                  "condition" : {
-                    "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
-                    "lhs" : "weight",
-                    "rhs" : 30
-                  }
-                },
-                {
-                  "component" : -1
-                }
-              ]
-            },
-            "condition" : {
-              "comparison" : "greaterThan",
-              "defaultState" : true,
-              "lhs" : "weight",
-              "rhs" : 15
-            }
-          },
-          {
-            "component" : -1
-          }
-        ]
-      },
-      "parameters" : [
-        "weight"
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "vascularCatheterSize_medcomp",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "French"
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : "French"
-      }
-    ],
-    "decimals" : 1,
-    "displayName" : "Vascular Catheter Size (Covidien)",
-    "formula" : {
-      "equation" : {
-        "conditional" : [
-          {
-            "component" : {
-              "rangeConstant" : {
-                "boundaryValue" : 10,
-                "value" : 8
-              }
-            },
-            "condition" : {
-              "comparison" : "equalTo",
-              "defaultState" : true,
-              "lhs" : "weight",
-              "rhs" : 15
-            }
-          },
-          {
-            "component" : {
-              "conditional" : [
-                {
-                  "component" : 10,
-                  "condition" : {
-                    "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
-                    "lhs" : "weight",
-                    "rhs" : 30
-                  }
-                },
-                {
-                  "component" : -1
-                }
-              ]
-            },
-            "condition" : {
-              "comparison" : "greaterThan",
-              "defaultState" : true,
-              "lhs" : "weight",
-              "rhs" : 15
-            }
-          },
-          {
-            "component" : -1
-          }
-        ]
-      },
-      "parameters" : [
-        "weight"
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "vascularCatheterSize_covidien",
+    "referenceName" : "vascularCatheterSize",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
