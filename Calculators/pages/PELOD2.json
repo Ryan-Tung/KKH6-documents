@@ -94,12 +94,8 @@
         },
         {
           "discreteInput" : {
-            "presentationStyle" : "menu",
+            "presentationStyle" : "segmented",
             "values" : [
-              {
-                "displayName" : "Select",
-                "value" : -1
-              },
               {
                 "displayName" : "Reactive",
                 "value" : 1
@@ -131,12 +127,8 @@
       "components" : [
         {
           "discreteInput" : {
-            "presentationStyle" : "menu",
+            "presentationStyle" : "segmented",
             "values" : [
-              {
-                "displayName" : "Select",
-                "value" : -1
-              },
               {
                 "displayName" : "Yes",
                 "value" : 1
@@ -152,7 +144,7 @@
                 "green" : 0.23137254901960785,
                 "red" : 1
               },
-              "variableReference" : "invasiveVentilation"
+              "variableReference" : "mechanicalVentilation"
             }
           }
         },
@@ -165,28 +157,28 @@
               "allowsNegative" : false,
               "variableInfo" : {
                 "color" : {
-                  "blue" : 0,
-                  "green" : 0.8,
-                  "red" : 1
-                },
-                "variableReference" : "fiO2"
-              }
-            },
-            "rhs" : {
-              "allowsNegative" : false,
-              "variableInfo" : {
-                "color" : {
                   "blue" : 0.34901960784313724,
                   "green" : 0.7803921568627451,
                   "red" : 0.20392156862745098
                 },
                 "variableReference" : "paO2"
               }
+            },
+            "rhs" : {
+              "allowsNegative" : false,
+              "variableInfo" : {
+                "color" : {
+                  "blue" : 0,
+                  "green" : 0.8,
+                  "red" : 1
+                },
+                "variableReference" : "fiO2"
+              }
             }
           }
         },
         {
-          "output" : "o2Ratio"
+          "output" : "paO2FiO2Ratio"
         },
         {
           "output" : "ratioScore"
@@ -260,7 +252,7 @@
                 "green" : 0.5843137254901961,
                 "red" : 1
               },
-              "variableReference" : "pelod2RenalCreatinine"
+              "variableReference" : "renalCreatinine"
             }
           }
         },

@@ -39,38 +39,6 @@
       }
     ],
     "decimals" : 0,
-    "displayName" : "PaO₂ : FiO₂ ratio",
-    "referenceName" : "respiratoryPfRatio",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : ""
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : ""
-      }
-    ],
-    "decimals" : 0,
-    "displayName" : "SpO₂ : FiO₂ ratio",
-    "referenceName" : "respiratorySfRatio",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : ""
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : ""
-      }
-    ],
-    "decimals" : 0,
     "displayName" : "Respiratory Score",
     "formula" : {
       "equation" : {
@@ -104,7 +72,7 @@
                         "condition" : {
                           "comparison" : "lessThan",
                           "defaultState" : true,
-                          "lhs" : "respiratoryPfRatio",
+                          "lhs" : "paO2FiO2Ratio",
                           "rhs" : 100
                         }
                       },
@@ -113,7 +81,7 @@
                         "condition" : {
                           "comparison" : "lessThan",
                           "defaultState" : true,
-                          "lhs" : "respiratorySfRatio",
+                          "lhs" : "spO2FiO2Ratio",
                           "rhs" : 148
                         }
                       },
@@ -129,7 +97,7 @@
                         "condition" : {
                           "comparison" : "lessThan",
                           "defaultState" : true,
-                          "lhs" : "respiratoryPfRatio",
+                          "lhs" : "paO2FiO2Ratio",
                           "rhs" : 200
                         }
                       },
@@ -138,7 +106,7 @@
                         "condition" : {
                           "comparison" : "lessThan",
                           "defaultState" : true,
-                          "lhs" : "respiratorySfRatio",
+                          "lhs" : "spO2FiO2Ratio",
                           "rhs" : 220
                         }
                       },
@@ -196,7 +164,7 @@
                     "condition" : {
                       "comparison" : "lessThan",
                       "defaultState" : true,
-                      "lhs" : "respiratoryPfRatio",
+                      "lhs" : "paO2FiO2Ratio",
                       "rhs" : 400
                     }
                   },
@@ -205,7 +173,7 @@
                     "condition" : {
                       "comparison" : "lessThan",
                       "defaultState" : true,
-                      "lhs" : "respiratorySfRatio",
+                      "lhs" : "spO2FiO2Ratio",
                       "rhs" : 292
                     }
                   },
@@ -219,10 +187,10 @@
         ]
       },
       "parameters" : [
+        "paO2FiO2Ratio",
         "respiratoryIntubation",
         "respiratoryOtherSupport",
-        "respiratoryPfRatio",
-        "respiratorySfRatio"
+        "spO2FiO2Ratio"
       ],
       "roundingMethod" : "nearest"
     },
@@ -244,7 +212,7 @@
     "decimals" : 0,
     "displayName" : "Number of Systemic Vasoactive Medications",
     "referenceName" : "cardioVasoactives",
-    "startingValue" : -1,
+    "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
@@ -260,7 +228,7 @@
     "decimals" : 0,
     "displayName" : "Lactate",
     "referenceName" : "cardioLactate",
-    "startingValue" : -1,
+    "startingValue" : 0,
     "subtitle" : "Lactate can be arterial or venous. Reference range 0.5 - 2.2 mmol\/L",
     "unit" : {
       "conversionScale" : 1,
@@ -572,7 +540,7 @@
     ],
     "decimals" : 0,
     "displayName" : "Platelets",
-    "referenceName" : "coagulationPlatelets",
+    "referenceName" : "platelets",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
@@ -599,7 +567,7 @@
     "alternateUnits" : [
       {
         "conversionScale" : 1,
-        "name" : "mg\/L FEU"
+        "name" : "µg\/mg FEU"
       }
     ],
     "decimals" : 0,
@@ -608,7 +576,7 @@
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
-      "name" : "mg\/L FEU"
+      "name" : "µg\/mg FEU"
     }
   },
   {
@@ -616,6 +584,10 @@
       {
         "conversionScale" : 1,
         "name" : "mg\/dL"
+      },
+      {
+        "conversionScale" : 0.01,
+        "name" : "g\/L"
       }
     ],
     "decimals" : 0,
@@ -623,8 +595,8 @@
     "referenceName" : "coagulationFibrinogen",
     "startingValue" : 0,
     "unit" : {
-      "conversionScale" : 1,
-      "name" : "mg\/dL"
+      "conversionScale" : 0.01,
+      "name" : "g\/L"
     }
   },
   {
@@ -646,7 +618,7 @@
                 "condition" : {
                   "comparison" : "lessThan",
                   "defaultState" : true,
-                  "lhs" : "coagulationPlatelets",
+                  "lhs" : "platelets",
                   "rhs" : 100
                 }
               },
@@ -709,7 +681,7 @@
         "coagulationDDimer",
         "coagulationFibrinogen",
         "coagulationINR",
-        "coagulationPlatelets"
+        "platelets"
       ],
       "roundingMethod" : "nearest"
     },
@@ -784,76 +756,17 @@
       }
     ],
     "decimals" : 0,
-    "displayName" : "Bilaterally fixed pupils",
-    "referenceName" : "neurologicBFP",
-    "startingValue" : -1,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : ""
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : ""
-      }
-    ],
-    "decimals" : 0,
     "displayName" : "Neurologic Score",
     "formula" : {
-      "equation" : {
-        "sum" : [
-          {
-            "conditional" : [
-              {
-                "component" : 1,
-                "condition" : {
-                  "comparison" : "lessThanOrEqualTo",
-                  "defaultState" : true,
-                  "lhs" : "neurologicGCS",
-                  "rhs" : 10
-                }
-              },
-              {
-                "component" : 0
-              }
-            ]
-          },
-          {
-            "product" : [
-              2,
-              {
-                "conditional" : [
-                  {
-                    "component" : "neurologicBFP",
-                    "condition" : {
-                      "comparison" : "greaterThanOrEqualTo",
-                      "defaultState" : true,
-                      "lhs" : "neurologicBFP",
-                      "rhs" : 0
-                    }
-                  },
-                  {
-                    "component" : {
-                      "nilConstant" : null
-                    }
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
+      "equation" : "neurologicGCS",
       "parameters" : [
-        "neurologicBFP",
         "neurologicGCS"
       ],
       "roundingMethod" : "nearest"
     },
     "referenceName" : "neurologicScore",
     "startingValue" : 0,
-    "subtitle" : "Between 0 and 3 inclusive",
+    "subtitle" : "Between 0 and 2 inclusive",
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
@@ -863,7 +776,7 @@
     "alternateUnits" : [
       {
         "conversionScale" : 1,
-        "name" : "mg\/dL"
+        "name" : "mmol\/L"
       }
     ],
     "decimals" : 0,
@@ -872,7 +785,7 @@
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
-      "name" : "mg\/dL"
+      "name" : "mmol\/L"
     }
   },
   {
@@ -893,7 +806,7 @@
               "comparison" : "lessThan",
               "defaultState" : true,
               "lhs" : "endocrineGlucose",
-              "rhs" : 50
+              "rhs" : 2.775
             }
           },
           {
@@ -902,7 +815,7 @@
               "comparison" : "greaterThan",
               "defaultState" : true,
               "lhs" : "endocrineGlucose",
-              "rhs" : 150
+              "rhs" : 8.325
             }
           },
           {
@@ -1013,7 +926,7 @@
     ],
     "decimals" : 1,
     "displayName" : "Creatinine",
-    "referenceName" : "renalCreatinine",
+    "referenceName" : "phoenixRenalCreatinine",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
@@ -1040,7 +953,7 @@
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "lhs" : "renalCreatinine",
+                    "lhs" : "phoenixRenalCreatinine",
                     "rhs" : 0.8
                   }
                 },
@@ -1064,7 +977,7 @@
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "lhs" : "renalCreatinine",
+                    "lhs" : "phoenixRenalCreatinine",
                     "rhs" : 0.3
                   }
                 },
@@ -1088,7 +1001,7 @@
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "lhs" : "renalCreatinine",
+                    "lhs" : "phoenixRenalCreatinine",
                     "rhs" : 0.4
                   }
                 },
@@ -1112,7 +1025,7 @@
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "lhs" : "renalCreatinine",
+                    "lhs" : "phoenixRenalCreatinine",
                     "rhs" : 0.6
                   }
                 },
@@ -1136,7 +1049,7 @@
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "lhs" : "renalCreatinine",
+                    "lhs" : "phoenixRenalCreatinine",
                     "rhs" : 0.7
                   }
                 },
@@ -1160,7 +1073,7 @@
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "lhs" : "renalCreatinine",
+                    "lhs" : "phoenixRenalCreatinine",
                     "rhs" : 1
                   }
                 },
@@ -1174,7 +1087,7 @@
       },
       "parameters" : [
         "age",
-        "renalCreatinine"
+        "phoenixRenalCreatinine"
       ],
       "roundingMethod" : "nearest"
     },

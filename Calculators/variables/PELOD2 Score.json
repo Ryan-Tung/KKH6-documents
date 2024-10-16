@@ -19,22 +19,6 @@
     "alternateUnits" : [
       {
         "conversionScale" : 1,
-        "name" : ""
-      }
-    ],
-    "decimals" : 0,
-    "displayName" : "Invasive Ventilation",
-    "referenceName" : "invasiveVentilation",
-    "startingValue" : -1,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : ""
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
         "name" : "x10⁹\/L"
       }
     ],
@@ -45,73 +29,6 @@
     "unit" : {
       "conversionScale" : 1,
       "name" : "x10⁹\/L"
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : "x10⁹\/L"
-      }
-    ],
-    "decimals" : 2,
-    "displayName" : "Platelets",
-    "referenceName" : "platelets",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "x10⁹\/L"
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : ""
-      }
-    ],
-    "decimals" : 0,
-    "displayName" : "PaO₂\/FiO₂ Ratio",
-    "formula" : {
-      "equation" : {
-        "conditional" : [
-          {
-            "component" : {
-              "nilConstant" : null
-            },
-            "condition" : {
-              "comparison" : "equalTo",
-              "defaultState" : true,
-              "lhs" : "fiO2",
-              "rhs" : 0
-            }
-          },
-          {
-            "component" : {
-              "division" : {
-                "denominator" : "fiO2",
-                "numerator" : {
-                  "product" : [
-                    "paO2",
-                    100
-                  ]
-                }
-              }
-            }
-          }
-        ]
-      },
-      "parameters" : [
-        "fiO2",
-        "paO2"
-      ],
-      "roundingMethod" : "nearest"
-    },
-    "referenceName" : "o2Ratio",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : ""
     }
   },
   {
@@ -298,7 +215,7 @@
       }
     ],
     "decimals" : 0,
-    "displayName" : "MAP score",
+    "displayName" : "MAP Score",
     "formula" : {
       "equation" : {
         "conditional" : [
@@ -728,7 +645,7 @@
     ],
     "decimals" : 2,
     "displayName" : "Creatinine",
-    "referenceName" : "pelod2RenalCreatinine",
+    "referenceName" : "renalCreatinine",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
@@ -755,7 +672,7 @@
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "lhs" : "pelod2RenalCreatinine",
+                    "lhs" : "renalCreatinine",
                     "rhs" : 70
                   }
                 },
@@ -779,7 +696,7 @@
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "lhs" : "pelod2RenalCreatinine",
+                    "lhs" : "renalCreatinine",
                     "rhs" : 23
                   }
                 },
@@ -803,7 +720,7 @@
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "lhs" : "pelod2RenalCreatinine",
+                    "lhs" : "renalCreatinine",
                     "rhs" : 35
                   }
                 },
@@ -827,7 +744,7 @@
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "lhs" : "pelod2RenalCreatinine",
+                    "lhs" : "renalCreatinine",
                     "rhs" : 51
                   }
                 },
@@ -851,7 +768,7 @@
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "lhs" : "pelod2RenalCreatinine",
+                    "lhs" : "renalCreatinine",
                     "rhs" : 70
                   }
                 },
@@ -875,7 +792,7 @@
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "lhs" : "pelod2RenalCreatinine",
+                    "lhs" : "renalCreatinine",
                     "rhs" : 23
                   }
                 },
@@ -899,7 +816,7 @@
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "lhs" : "pelod2RenalCreatinine",
+                    "lhs" : "renalCreatinine",
                     "rhs" : 35
                   }
                 },
@@ -923,7 +840,7 @@
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "lhs" : "pelod2RenalCreatinine",
+                    "lhs" : "renalCreatinine",
                     "rhs" : 51
                   }
                 },
@@ -947,7 +864,7 @@
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "lhs" : "pelod2RenalCreatinine",
+                    "lhs" : "renalCreatinine",
                     "rhs" : 59
                   }
                 },
@@ -971,7 +888,7 @@
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "lhs" : "pelod2RenalCreatinine",
+                    "lhs" : "renalCreatinine",
                     "rhs" : 93
                   }
                 },
@@ -985,7 +902,7 @@
       },
       "parameters" : [
         "age",
-        "pelod2RenalCreatinine"
+        "renalCreatinine"
       ],
       "roundingMethod" : "nearest"
     },
@@ -1004,7 +921,7 @@
       }
     ],
     "decimals" : 0,
-    "displayName" : "PaO₂\/FiO₂ Ratio Score",
+    "displayName" : "PaO₂ : FiO₂ Ratio Score",
     "formula" : {
       "equation" : {
         "conditional" : [
@@ -1013,7 +930,7 @@
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
               "defaultState" : true,
-              "lhs" : "o2Ratio",
+              "lhs" : "paO2FiO2Ratio",
               "rhs" : 61
             }
           },
@@ -1022,7 +939,7 @@
             "condition" : {
               "comparison" : "lessThan",
               "defaultState" : true,
-              "lhs" : "o2Ratio",
+              "lhs" : "paO2FiO2Ratio",
               "rhs" : 61
             }
           },
@@ -1032,7 +949,7 @@
         ]
       },
       "parameters" : [
-        "o2Ratio"
+        "paO2FiO2Ratio"
       ],
       "roundingMethod" : "nearest"
     },
@@ -1099,7 +1016,7 @@
       }
     ],
     "decimals" : 0,
-    "displayName" : "Invasive Ventilation score",
+    "displayName" : "Mechanical Ventilation score",
     "formula" : {
       "equation" : {
         "conditional" : [
@@ -1108,7 +1025,7 @@
             "condition" : {
               "comparison" : "equalTo",
               "defaultState" : true,
-              "lhs" : "invasiveVentilation",
+              "lhs" : "mechanicalVentilation",
               "rhs" : 0
             }
           },
@@ -1117,14 +1034,14 @@
             "condition" : {
               "comparison" : "equalTo",
               "defaultState" : true,
-              "lhs" : "invasiveVentilation",
+              "lhs" : "mechanicalVentilation",
               "rhs" : 1
             }
           }
         ]
       },
       "parameters" : [
-        "invasiveVentilation"
+        "mechanicalVentilation"
       ],
       "roundingMethod" : "nearest"
     },

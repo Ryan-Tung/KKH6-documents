@@ -81,28 +81,123 @@
           }
         },
         {
-          "inputDual" : {
-            "lhs" : {
-              "allowsNegative" : false,
-              "variableInfo" : {
-                "color" : {
-                  "blue" : 0,
-                  "green" : 0.8,
-                  "red" : 1
+          "discreteInput" : {
+            "presentationStyle" : "segmented",
+            "values" : [
+              {
+                "displayName" : "PaO₂ : FiO₂",
+                "value" : 0
+              },
+              {
+                "displayName" : "SpO₂ : FiO₂",
+                "value" : 1
+              }
+            ],
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0.9019607843137255,
+                "green" : 0.6784313725490196,
+                "red" : 0.19607843137254902
+              },
+              "variableReference" : "respiratoryInputType"
+            }
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "inputDual" : {
+                "lhs" : {
+                  "allowsNegative" : false,
+                  "variableInfo" : {
+                    "color" : {
+                      "blue" : 0,
+                      "green" : 0.8,
+                      "red" : 1
+                    },
+                    "variableReference" : "paO2"
+                  }
                 },
-                "variableReference" : "respiratoryPfRatio"
+                "rhs" : {
+                  "allowsNegative" : false,
+                  "variableInfo" : {
+                    "color" : {
+                      "blue" : 0.34901960784313724,
+                      "green" : 0.7803921568627451,
+                      "red" : 0.20392156862745098
+                    },
+                    "variableReference" : "fiO2"
+                  }
+                }
               }
             },
-            "rhs" : {
-              "allowsNegative" : false,
-              "variableInfo" : {
-                "color" : {
-                  "blue" : 0.34901960784313724,
-                  "green" : 0.7803921568627451,
-                  "red" : 0.20392156862745098
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "respiratoryInputType",
+              "rhs" : 0
+            }
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "inputDual" : {
+                "lhs" : {
+                  "allowsNegative" : false,
+                  "variableInfo" : {
+                    "color" : {
+                      "blue" : 0,
+                      "green" : 0.8,
+                      "red" : 1
+                    },
+                    "variableReference" : "spO2"
+                  }
                 },
-                "variableReference" : "respiratorySfRatio"
+                "rhs" : {
+                  "allowsNegative" : false,
+                  "variableInfo" : {
+                    "color" : {
+                      "blue" : 0.34901960784313724,
+                      "green" : 0.7803921568627451,
+                      "red" : 0.20392156862745098
+                    },
+                    "variableReference" : "fiO2"
+                  }
+                }
               }
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "respiratoryInputType",
+              "rhs" : 1
+            }
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "output" : "paO2FiO2Ratio"
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "respiratoryInputType",
+              "rhs" : 0
+            }
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "output" : "spO2FiO2Ratio"
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "respiratoryInputType",
+              "rhs" : 1
             }
           }
         },
@@ -117,12 +212,8 @@
       "components" : [
         {
           "discreteInput" : {
-            "presentationStyle" : "menu",
+            "presentationStyle" : "segmented",
             "values" : [
-              {
-                "displayName" : "Select",
-                "value" : -1
-              },
               {
                 "displayName" : "None",
                 "value" : 0
@@ -132,7 +223,7 @@
                 "value" : 1
               },
               {
-                "displayName" : "2 or more",
+                "displayName" : "≥ Two",
                 "value" : 2
               }
             ],
@@ -148,12 +239,8 @@
         },
         {
           "discreteInput" : {
-            "presentationStyle" : "menu",
+            "presentationStyle" : "segmented",
             "values" : [
-              {
-                "displayName" : "Select",
-                "value" : -1
-              },
               {
                 "displayName" : "Less than 5",
                 "value" : 0
@@ -209,7 +296,7 @@
                 "green" : 0.23137254901960785,
                 "red" : 1
               },
-              "variableReference" : "coagulationPlatelets"
+              "variableReference" : "platelets"
             }
           }
         },
@@ -262,33 +349,20 @@
     {
       "components" : [
         {
-          "inputSingle" : {
-            "allowsNegative" : false,
-            "variableInfo" : {
-              "color" : {
-                "blue" : 1,
-                "green" : 0.47843137254901963,
-                "red" : 0
-              },
-              "variableReference" : "neurologicGCS"
-            }
-          }
-        },
-        {
           "discreteInput" : {
-            "presentationStyle" : "menu",
+            "presentationStyle" : "segmented",
             "values" : [
               {
-                "displayName" : "Select",
-                "value" : -1
+                "displayName" : "GCS > 10",
+                "value" : 0
               },
               {
-                "displayName" : "Yes",
+                "displayName" : "GCS ≤ 10",
                 "value" : 1
               },
               {
-                "displayName" : "No",
-                "value" : 0
+                "displayName" : "Pupils Fixed",
+                "value" : 2
               }
             ],
             "variableInfo" : {
@@ -297,7 +371,7 @@
                 "green" : 0.3215686274509804,
                 "red" : 0.6862745098039216
               },
-              "variableReference" : "neurologicBFP"
+              "variableReference" : "neurologicGCS"
             }
           }
         },
@@ -376,7 +450,7 @@
                 "green" : 0.5843137254901961,
                 "red" : 1
               },
-              "variableReference" : "renalCreatinine"
+              "variableReference" : "phoenixRenalCreatinine"
             }
           }
         },

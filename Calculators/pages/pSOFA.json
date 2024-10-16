@@ -134,7 +134,30 @@
           }
         },
         {
-          "output" : "respiratoryRatio"
+          "conditional" : {
+            "component" : {
+              "output" : "paO2FiO2Ratio"
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "respiratoryInputType",
+              "rhs" : 0
+            }
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "output" : "spO2FiO2Ratio"
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "respiratoryInputType",
+              "rhs" : 1
+            }
+          }
         },
         {
           "discreteInput" : {
@@ -172,7 +195,7 @@
         }
       ],
       "name" : "Respiratory",
-      "notes" : "When SpO2 criteria is used, FiO2 should be titrated to achieve an SpO2 between 88-97%. Only SpO2 values of <\/=97% should be used in the calculation.",
+      "notes" : "When SpO₂ criteria is used, FiO₂ should be titrated to achieve an SpO₂ between 88-97%. Only SpO₂ values of <\/=97% should be used in the calculation.",
       "showName" : true
     },
     {
@@ -186,7 +209,7 @@
                 "green" : 0.47843137254901963,
                 "red" : 0
               },
-              "variableReference" : "coagulationPlatelets"
+              "variableReference" : "platelets"
             }
           }
         },
@@ -439,7 +462,7 @@
                 "green" : 0.47843137254901963,
                 "red" : 0
               },
-              "variableReference" : "pSOFARenalCreatinine"
+              "variableReference" : "renalCreatinine"
             }
           }
         },

@@ -18,12 +18,8 @@
       "components" : [
         {
           "discreteInput" : {
-            "presentationStyle" : "menu",
+            "presentationStyle" : "segmented",
             "values" : [
-              {
-                "displayName" : "Select",
-                "value" : -1
-              },
               {
                 "displayName" : ">3 mm and both fixed",
                 "value" : 1
@@ -45,12 +41,8 @@
         },
         {
           "discreteInput" : {
-            "presentationStyle" : "menu",
+            "presentationStyle" : "segmented",
             "values" : [
-              {
-                "displayName" : "Select",
-                "value" : -1
-              },
               {
                 "displayName" : "Yes",
                 "value" : 1
@@ -72,12 +64,8 @@
         },
         {
           "discreteInput" : {
-            "presentationStyle" : "menu",
+            "presentationStyle" : "segmented",
             "values" : [
-              {
-                "displayName" : "Select",
-                "value" : -1
-              },
               {
                 "displayName" : "Yes",
                 "value" : 1
@@ -129,25 +117,28 @@
               "allowsNegative" : false,
               "variableInfo" : {
                 "color" : {
-                  "blue" : 1,
-                  "green" : 0.47843137254901963,
-                  "red" : 0
-                },
-                "variableReference" : "fiO2"
-              }
-            },
-            "rhs" : {
-              "allowsNegative" : false,
-              "variableInfo" : {
-                "color" : {
                   "blue" : 0.8392156862745098,
                   "green" : 0.33725490196078434,
                   "red" : 0.34509803921568627
                 },
                 "variableReference" : "paO2"
               }
+            },
+            "rhs" : {
+              "allowsNegative" : false,
+              "variableInfo" : {
+                "color" : {
+                  "blue" : 1,
+                  "green" : 0.47843137254901963,
+                  "red" : 0
+                },
+                "variableReference" : "fiO2"
+              }
             }
           }
+        },
+        {
+          "output" : "paO2FiO2Ratio"
         },
         {
           "discreteInput" : {
