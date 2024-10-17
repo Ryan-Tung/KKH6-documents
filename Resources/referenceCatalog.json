@@ -144,16 +144,5 @@
     "symbol" : {
       "sfSymbol" : "ellipsis"
     }
-  },
-  {
-    "color" : {
-      "blue" : 0.5764705882352941,
-      "green" : 0.5568627450980392,
-      "red" : 0.5568627450980392
-    },
-    "name" : "udsfud",
-    "symbol" : {
-      "sfSymbol" : "ellipsis"
-    }
   }
 ]
