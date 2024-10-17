@@ -28,19 +28,19 @@
       "components" : [
         {
           "discreteInput" : {
-            "presentationStyle" : "menu",
+            "presentationStyle" : "segmented",
             "values" : [
               {
-                "displayName" : "Select",
-                "value" : -1
+                "displayName" : "None",
+                "value" : 0
               },
               {
-                "displayName" : "Yes",
+                "displayName" : "O₂ \/ HFNC \/ NIV",
                 "value" : 1
               },
               {
-                "displayName" : "No",
-                "value" : 0
+                "displayName" : "MV",
+                "value" : 2
               }
             ],
             "variableInfo" : {
@@ -49,34 +49,7 @@
                 "green" : 0.23137254901960785,
                 "red" : 1
               },
-              "variableReference" : "respiratoryIntubation"
-            }
-          }
-        },
-        {
-          "discreteInput" : {
-            "presentationStyle" : "menu",
-            "values" : [
-              {
-                "displayName" : "Select",
-                "value" : -1
-              },
-              {
-                "displayName" : "Yes",
-                "value" : 1
-              },
-              {
-                "displayName" : "No",
-                "value" : 0
-              }
-            ],
-            "variableInfo" : {
-              "color" : {
-                "blue" : 0,
-                "green" : 0.5843137254901961,
-                "red" : 1
-              },
-              "variableReference" : "respiratoryOtherSupport"
+              "variableReference" : "respiratorySupport"
             }
           }
         },
@@ -202,7 +175,7 @@
           }
         },
         {
-          "output" : "respiratoryScore"
+          "output" : "respiratoryFinalScore"
         }
       ],
       "name" : "Respiratory",
@@ -450,7 +423,7 @@
                 "green" : 0.5843137254901961,
                 "red" : 1
               },
-              "variableReference" : "phoenixRenalCreatinine"
+              "variableReference" : "renalCreatinine"
             }
           }
         },

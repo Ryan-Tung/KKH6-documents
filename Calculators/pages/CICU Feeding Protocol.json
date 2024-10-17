@@ -369,16 +369,23 @@
         {
           "conditional" : {
             "component" : {
-              "detailedOutput" : {
-                "alwaysExpanded" : false,
-                "columnCount" : 3,
-                "detailVarReferences" : [
-                  "twentyFivePercentFeedMilk",
-                  "twentyFivePercentFeedWater",
-                  "twentyFivePercentFeedTotal"
+              "disclosure" : {
+                "component" : {
+                  "output" : "twentyFivePercentFeedTotal"
+                },
+                "details" : [
+                  {
+                    "detailedOutput" : {
+                      "columnCount" : 3,
+                      "detailVarReferences" : [
+                        "twentyFivePercentFeedMilk",
+                        "twentyFivePercentFeedWater",
+                        "twentyFivePercentFeedTotal"
+                      ]
+                    }
+                  }
                 ],
-                "name" : "Feed",
-                "primaryVarReference" : "twentyFivePercentFeedTotal"
+                "expandedByDefault" : false
               }
             },
             "condition" : {
@@ -392,16 +399,23 @@
         {
           "conditional" : {
             "component" : {
-              "detailedOutput" : {
-                "alwaysExpanded" : false,
-                "columnCount" : 3,
-                "detailVarReferences" : [
-                  "twentyFivePercentFeedMilk",
-                  "twentyFivePercentFeedWater",
-                  "twentyFivePercentFeedRate"
+              "disclosure" : {
+                "component" : {
+                  "output" : "twentyFivePercentFeedRate"
+                },
+                "details" : [
+                  {
+                    "detailedOutput" : {
+                      "columnCount" : 3,
+                      "detailVarReferences" : [
+                        "twentyFivePercentFeedMilk",
+                        "twentyFivePercentFeedWater",
+                        "twentyFivePercentFeedRate"
+                      ]
+                    }
+                  }
                 ],
-                "name" : "Feed",
-                "primaryVarReference" : "twentyFivePercentFeedRate"
+                "expandedByDefault" : false
               }
             },
             "condition" : {
@@ -413,19 +427,26 @@
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 2,
-            "detailVarReferences" : [
-              "twentyFivePercentFeedDripPercent",
-              "twentyFivePercentFeedDripRate"
+          "disclosure" : {
+            "component" : {
+              "output" : "twentyFivePercentFeedDripRate"
+            },
+            "details" : [
+              {
+                "detailedOutput" : {
+                  "columnCount" : 2,
+                  "detailVarReferences" : [
+                    "twentyFivePercentFeedDripPercent",
+                    "twentyFivePercentFeedDripRate"
+                  ]
+                }
+              }
             ],
-            "name" : "Drip",
-            "primaryVarReference" : "twentyFivePercentFeedDripRate"
+            "expandedByDefault" : false
           }
         }
       ],
-      "name" : "Feed Rate: 25%",
+      "name" : "Feed  Rate: 25%",
       "showName" : true
     },
     {
@@ -433,16 +454,23 @@
         {
           "conditional" : {
             "component" : {
-              "detailedOutput" : {
-                "alwaysExpanded" : false,
-                "columnCount" : 3,
-                "detailVarReferences" : [
-                  "twentyFivePercentFeedMilk",
-                  "twentyFivePercentFeedWater",
-                  "twentyFivePercentFeedTotal"
+              "disclosure" : {
+                "component" : {
+                  "output" : "twentyFivePercentFeedTotal"
+                },
+                "details" : [
+                  {
+                    "detailedOutput" : {
+                      "columnCount" : 3,
+                      "detailVarReferences" : [
+                        "twentyFivePercentFeedMilk",
+                        "twentyFivePercentFeedWater",
+                        "twentyFivePercentFeedTotal"
+                      ]
+                    }
+                  }
                 ],
-                "name" : "Feed",
-                "primaryVarReference" : "twentyFivePercentFeedTotal"
+                "expandedByDefault" : false
               }
             },
             "condition" : {
@@ -456,16 +484,23 @@
         {
           "conditional" : {
             "component" : {
-              "detailedOutput" : {
-                "alwaysExpanded" : false,
-                "columnCount" : 3,
-                "detailVarReferences" : [
-                  "twentyFivePercentFeedMilk",
-                  "twentyFivePercentFeedWater",
-                  "twentyFivePercentFeedRate"
+              "disclosure" : {
+                "component" : {
+                  "output" : "twentyFivePercentFeedRate"
+                },
+                "details" : [
+                  {
+                    "detailedOutput" : {
+                      "columnCount" : 3,
+                      "detailVarReferences" : [
+                        "twentyFivePercentFeedMilk",
+                        "twentyFivePercentFeedWater",
+                        "twentyFivePercentFeedRate"
+                      ]
+                    }
+                  }
                 ],
-                "name" : "Feed",
-                "primaryVarReference" : "twentyFivePercentFeedRate"
+                "expandedByDefault" : false
               }
             },
             "condition" : {
@@ -477,15 +512,22 @@
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 2,
-            "detailVarReferences" : [
-              "twentyFivePercentFeedDripPercent",
-              "twentyFivePercentFeedDripRate"
+          "disclosure" : {
+            "component" : {
+              "output" : "twentyFivePercentFeedDripRate"
+            },
+            "details" : [
+              {
+                "detailedOutput" : {
+                  "columnCount" : 2,
+                  "detailVarReferences" : [
+                    "twentyFivePercentFeedDripPercent",
+                    "twentyFivePercentFeedDripRate"
+                  ]
+                }
+              }
             ],
-            "name" : "Drip",
-            "primaryVarReference" : "twentyFivePercentFeedDripRate"
+            "expandedByDefault" : false
           }
         }
       ],
@@ -497,16 +539,23 @@
         {
           "conditional" : {
             "component" : {
-              "detailedOutput" : {
-                "alwaysExpanded" : false,
-                "columnCount" : 3,
-                "detailVarReferences" : [
-                  "fiftyPercentFeedMilk",
-                  "fiftyPercentFeedWater",
-                  "fiftyPercentFeedTotal"
+              "disclosure" : {
+                "component" : {
+                  "output" : "fiftyPercentFeedTotal"
+                },
+                "details" : [
+                  {
+                    "detailedOutput" : {
+                      "columnCount" : 3,
+                      "detailVarReferences" : [
+                        "fiftyPercentFeedMilk",
+                        "fiftyPercentFeedWater",
+                        "fiftyPercentFeedTotal"
+                      ]
+                    }
+                  }
                 ],
-                "name" : "Feed",
-                "primaryVarReference" : "fiftyPercentFeedTotal"
+                "expandedByDefault" : false
               }
             },
             "condition" : {
@@ -520,16 +569,23 @@
         {
           "conditional" : {
             "component" : {
-              "detailedOutput" : {
-                "alwaysExpanded" : false,
-                "columnCount" : 3,
-                "detailVarReferences" : [
-                  "fiftyPercentFeedMilk",
-                  "fiftyPercentFeedWater",
-                  "fiftyPercentFeedRate"
+              "disclosure" : {
+                "component" : {
+                  "output" : "fiftyPercentFeedRate"
+                },
+                "details" : [
+                  {
+                    "detailedOutput" : {
+                      "columnCount" : 3,
+                      "detailVarReferences" : [
+                        "fiftyPercentFeedMilk",
+                        "fiftyPercentFeedWater",
+                        "fiftyPercentFeedRate"
+                      ]
+                    }
+                  }
                 ],
-                "name" : "Feed",
-                "primaryVarReference" : "fiftyPercentFeedRate"
+                "expandedByDefault" : false
               }
             },
             "condition" : {
@@ -541,15 +597,22 @@
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 2,
-            "detailVarReferences" : [
-              "fiftyPercentFeedDripPercent",
-              "fiftyPercentFeedDripRate"
+          "disclosure" : {
+            "component" : {
+              "output" : "fiftyPercentFeedDripRate"
+            },
+            "details" : [
+              {
+                "detailedOutput" : {
+                  "columnCount" : 2,
+                  "detailVarReferences" : [
+                    "fiftyPercentFeedDripPercent",
+                    "fiftyPercentFeedDripRate"
+                  ]
+                }
+              }
             ],
-            "name" : "Drip",
-            "primaryVarReference" : "fiftyPercentFeedDripRate"
+            "expandedByDefault" : false
           }
         }
       ],
@@ -561,16 +624,23 @@
         {
           "conditional" : {
             "component" : {
-              "detailedOutput" : {
-                "alwaysExpanded" : false,
-                "columnCount" : 3,
-                "detailVarReferences" : [
-                  "seventyFivePercentFeedMilk",
-                  "seventyFivePercentFeedWater",
-                  "seventyFivePercentFeedTotal"
+              "disclosure" : {
+                "component" : {
+                  "output" : "seventyFivePercentFeedTotal"
+                },
+                "details" : [
+                  {
+                    "detailedOutput" : {
+                      "columnCount" : 3,
+                      "detailVarReferences" : [
+                        "seventyFivePercentFeedMilk",
+                        "seventyFivePercentFeedWater",
+                        "seventyFivePercentFeedTotal"
+                      ]
+                    }
+                  }
                 ],
-                "name" : "Feed",
-                "primaryVarReference" : "seventyFivePercentFeedTotal"
+                "expandedByDefault" : false
               }
             },
             "condition" : {
@@ -584,16 +654,23 @@
         {
           "conditional" : {
             "component" : {
-              "detailedOutput" : {
-                "alwaysExpanded" : false,
-                "columnCount" : 3,
-                "detailVarReferences" : [
-                  "seventyFivePercentFeedMilk",
-                  "seventyFivePercentFeedWater",
-                  "seventyFivePercentFeedRate"
+              "disclosure" : {
+                "component" : {
+                  "output" : "seventyFivePercentFeedRate"
+                },
+                "details" : [
+                  {
+                    "detailedOutput" : {
+                      "columnCount" : 3,
+                      "detailVarReferences" : [
+                        "seventyFivePercentFeedMilk",
+                        "seventyFivePercentFeedWater",
+                        "seventyFivePercentFeedRate"
+                      ]
+                    }
+                  }
                 ],
-                "name" : "Feed",
-                "primaryVarReference" : "seventyFivePercentFeedRate"
+                "expandedByDefault" : false
               }
             },
             "condition" : {
@@ -605,15 +682,22 @@
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 2,
-            "detailVarReferences" : [
-              "seventyFivePercentFeedDripPercent",
-              "seventyFivePercentFeedDripRate"
+          "disclosure" : {
+            "component" : {
+              "output" : "seventyFivePercentFeedDripRate"
+            },
+            "details" : [
+              {
+                "detailedOutput" : {
+                  "columnCount" : 2,
+                  "detailVarReferences" : [
+                    "seventyFivePercentFeedDripPercent",
+                    "seventyFivePercentFeedDripRate"
+                  ]
+                }
+              }
             ],
-            "name" : "Drip",
-            "primaryVarReference" : "seventyFivePercentFeedDripRate"
+            "expandedByDefault" : false
           }
         }
       ],
@@ -625,16 +709,23 @@
         {
           "conditional" : {
             "component" : {
-              "detailedOutput" : {
-                "alwaysExpanded" : false,
-                "columnCount" : 3,
-                "detailVarReferences" : [
-                  "hundredPercentFeedMilk",
-                  "hundredPercentFeedWater",
-                  "hundredPercentFeedTotal"
+              "disclosure" : {
+                "component" : {
+                  "output" : "hundredPercentFeedTotal"
+                },
+                "details" : [
+                  {
+                    "detailedOutput" : {
+                      "columnCount" : 3,
+                      "detailVarReferences" : [
+                        "hundredPercentFeedMilk",
+                        "hundredPercentFeedWater",
+                        "hundredPercentFeedTotal"
+                      ]
+                    }
+                  }
                 ],
-                "name" : "Feed",
-                "primaryVarReference" : "hundredPercentFeedTotal"
+                "expandedByDefault" : false
               }
             },
             "condition" : {
@@ -648,16 +739,23 @@
         {
           "conditional" : {
             "component" : {
-              "detailedOutput" : {
-                "alwaysExpanded" : false,
-                "columnCount" : 3,
-                "detailVarReferences" : [
-                  "hundredPercentFeedMilk",
-                  "hundredPercentFeedWater",
-                  "hundredPercentFeedRate"
+              "disclosure" : {
+                "component" : {
+                  "output" : "hundredPercentFeedRate"
+                },
+                "details" : [
+                  {
+                    "detailedOutput" : {
+                      "columnCount" : 3,
+                      "detailVarReferences" : [
+                        "hundredPercentFeedMilk",
+                        "hundredPercentFeedWater",
+                        "hundredPercentFeedRate"
+                      ]
+                    }
+                  }
                 ],
-                "name" : "Feed",
-                "primaryVarReference" : "hundredPercentFeedRate"
+                "expandedByDefault" : false
               }
             },
             "condition" : {
@@ -669,15 +767,22 @@
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 2,
-            "detailVarReferences" : [
-              "hundredPercentFeedDripPercent",
-              "hundredPercentFeedDripRate"
+          "disclosure" : {
+            "component" : {
+              "output" : "hundredPercentFeedDripRate"
+            },
+            "details" : [
+              {
+                "detailedOutput" : {
+                  "columnCount" : 2,
+                  "detailVarReferences" : [
+                    "hundredPercentFeedDripPercent",
+                    "hundredPercentFeedDripRate"
+                  ]
+                }
+              }
             ],
-            "name" : "Drip",
-            "primaryVarReference" : "hundredPercentFeedDripRate"
+            "expandedByDefault" : false
           }
         }
       ],

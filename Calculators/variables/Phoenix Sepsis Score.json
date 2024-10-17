@@ -7,8 +7,8 @@
       }
     ],
     "decimals" : 0,
-    "displayName" : "Respiratory Intubation",
-    "referenceName" : "respiratoryIntubation",
+    "displayName" : "Respiratory Support",
+    "referenceName" : "respiratorySupport",
     "startingValue" : -1,
     "unit" : {
       "conversionScale" : 1,
@@ -23,9 +23,99 @@
       }
     ],
     "decimals" : 0,
-    "displayName" : "Other Respiratory Support",
-    "referenceName" : "respiratoryOtherSupport",
-    "startingValue" : -1,
+    "displayName" : "respiratoryScore",
+    "formula" : {
+      "equation" : {
+        "sum" : [
+          {
+            "sum" : [
+              {
+                "conditional" : [
+                  {
+                    "component" : 1,
+                    "condition" : {
+                      "comparison" : "lessThan",
+                      "defaultState" : true,
+                      "lhs" : "paO2FiO2Ratio",
+                      "rhs" : 100
+                    }
+                  },
+                  {
+                    "component" : 1,
+                    "condition" : {
+                      "comparison" : "lessThan",
+                      "defaultState" : true,
+                      "lhs" : "spO2FiO2Ratio",
+                      "rhs" : 148
+                    }
+                  },
+                  {
+                    "component" : 0
+                  }
+                ]
+              },
+              {
+                "conditional" : [
+                  {
+                    "component" : 1,
+                    "condition" : {
+                      "comparison" : "lessThan",
+                      "defaultState" : true,
+                      "lhs" : "paO2FiO2Ratio",
+                      "rhs" : 200
+                    }
+                  },
+                  {
+                    "component" : 1,
+                    "condition" : {
+                      "comparison" : "lessThan",
+                      "defaultState" : true,
+                      "lhs" : "spO2FiO2Ratio",
+                      "rhs" : 220
+                    }
+                  },
+                  {
+                    "component" : 0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "conditional" : [
+              {
+                "component" : 1,
+                "condition" : {
+                  "comparison" : "lessThan",
+                  "defaultState" : true,
+                  "lhs" : "paO2FiO2Ratio",
+                  "rhs" : 400
+                }
+              },
+              {
+                "component" : 1,
+                "condition" : {
+                  "comparison" : "lessThan",
+                  "defaultState" : true,
+                  "lhs" : "spO2FiO2Ratio",
+                  "rhs" : 292
+                }
+              },
+              {
+                "component" : 0
+              }
+            ]
+          }
+        ]
+      },
+      "parameters" : [
+        "paO2FiO2Ratio",
+        "spO2FiO2Ratio"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "respiratoryScore",
+    "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
@@ -42,159 +132,108 @@
     "displayName" : "Respiratory Score",
     "formula" : {
       "equation" : {
-        "sum" : [
+        "conditional" : [
           {
-            "product" : [
-              {
-                "conditional" : [
-                  {
-                    "component" : "respiratoryIntubation",
-                    "condition" : {
-                      "comparison" : "greaterThanOrEqualTo",
-                      "defaultState" : true,
-                      "lhs" : "respiratoryIntubation",
-                      "rhs" : 0
-                    }
-                  },
-                  {
-                    "component" : {
-                      "nilConstant" : null
-                    }
-                  }
-                ]
-              },
-              {
-                "sum" : [
-                  {
-                    "conditional" : [
-                      {
-                        "component" : 1,
-                        "condition" : {
-                          "comparison" : "lessThan",
-                          "defaultState" : true,
-                          "lhs" : "paO2FiO2Ratio",
-                          "rhs" : 100
-                        }
-                      },
-                      {
-                        "component" : 1,
-                        "condition" : {
-                          "comparison" : "lessThan",
-                          "defaultState" : true,
-                          "lhs" : "spO2FiO2Ratio",
-                          "rhs" : 148
-                        }
-                      },
-                      {
-                        "component" : 0
-                      }
-                    ]
-                  },
-                  {
-                    "conditional" : [
-                      {
-                        "component" : 1,
-                        "condition" : {
-                          "comparison" : "lessThan",
-                          "defaultState" : true,
-                          "lhs" : "paO2FiO2Ratio",
-                          "rhs" : 200
-                        }
-                      },
-                      {
-                        "component" : 1,
-                        "condition" : {
-                          "comparison" : "lessThan",
-                          "defaultState" : true,
-                          "lhs" : "spO2FiO2Ratio",
-                          "rhs" : 220
-                        }
-                      },
-                      {
-                        "component" : 0
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
+            "component" : "respiratoryScore",
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "respiratoryScore",
+              "rhs" : 0
+            }
           },
           {
-            "product" : [
-              {
-                "conditional" : [
-                  {
-                    "component" : {
-                      "nilConstant" : null
-                    },
-                    "condition" : {
-                      "comparison" : "lessThan",
-                      "defaultState" : true,
-                      "lhs" : "respiratoryOtherSupport",
-                      "rhs" : 0
-                    }
-                  },
-                  {
-                    "component" : 1,
-                    "condition" : {
-                      "comparison" : "equalTo",
-                      "defaultState" : true,
-                      "lhs" : "respiratoryIntubation",
-                      "rhs" : 1
-                    }
-                  },
-                  {
-                    "component" : 1,
-                    "condition" : {
-                      "comparison" : "equalTo",
-                      "defaultState" : true,
-                      "lhs" : "respiratoryOtherSupport",
-                      "rhs" : 1
-                    }
-                  },
-                  {
-                    "component" : 0
+            "component" : {
+              "conditional" : [
+                {
+                  "component" : "respiratoryScore",
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "respiratorySupport",
+                    "rhs" : 1
                   }
-                ]
-              },
-              {
-                "conditional" : [
-                  {
-                    "component" : 1,
-                    "condition" : {
-                      "comparison" : "lessThan",
-                      "defaultState" : true,
-                      "lhs" : "paO2FiO2Ratio",
-                      "rhs" : 400
-                    }
-                  },
-                  {
-                    "component" : 1,
-                    "condition" : {
-                      "comparison" : "lessThan",
-                      "defaultState" : true,
-                      "lhs" : "spO2FiO2Ratio",
-                      "rhs" : 292
-                    }
-                  },
-                  {
-                    "component" : 0
+                },
+                {
+                  "component" : {
+                    "nilConstant" : null
                   }
-                ]
-              }
-            ]
+                }
+              ]
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "respiratoryScore",
+              "rhs" : 1
+            }
+          },
+          {
+            "component" : {
+              "conditional" : [
+                {
+                  "component" : "respiratoryScore",
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "respiratorySupport",
+                    "rhs" : 2
+                  }
+                },
+                {
+                  "component" : {
+                    "nilConstant" : null
+                  }
+                }
+              ]
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "respiratoryScore",
+              "rhs" : 2
+            }
+          },
+          {
+            "component" : {
+              "conditional" : [
+                {
+                  "component" : "respiratoryScore",
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "respiratorySupport",
+                    "rhs" : 2
+                  }
+                },
+                {
+                  "component" : {
+                    "nilConstant" : null
+                  }
+                }
+              ]
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "respiratoryScore",
+              "rhs" : 3
+            }
+          },
+          {
+            "component" : {
+              "nilConstant" : null
+            }
           }
         ]
       },
       "parameters" : [
-        "paO2FiO2Ratio",
-        "respiratoryIntubation",
-        "respiratoryOtherSupport",
-        "spO2FiO2Ratio"
+        "respiratoryScore",
+        "respiratorySupport"
       ],
       "roundingMethod" : "nearest"
     },
-    "referenceName" : "respiratoryScore",
+    "referenceName" : "respiratoryFinalScore",
     "startingValue" : 0,
     "subtitle" : "Between 0 and 3 inclusive",
     "unit" : {
@@ -840,7 +879,7 @@
     "alternateUnits" : [
       {
         "conversionScale" : 1,
-        "name" : "cells\/mm³"
+        "name" : "x10⁹\/L"
       }
     ],
     "decimals" : 0,
@@ -849,14 +888,14 @@
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
-      "name" : "cells\/mm³"
+      "name" : "x10⁹\/L"
     }
   },
   {
     "alternateUnits" : [
       {
         "conversionScale" : 1,
-        "name" : "cells\/mm³"
+        "name" : "x10⁹\/L"
       }
     ],
     "decimals" : 0,
@@ -865,7 +904,7 @@
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
-      "name" : "cells\/mm³"
+      "name" : "x10⁹\/L"
     }
   },
   {
@@ -886,7 +925,7 @@
               "comparison" : "lessThan",
               "defaultState" : true,
               "lhs" : "immunologicANC",
-              "rhs" : 500
+              "rhs" : 0.5
             }
           },
           {
@@ -895,7 +934,7 @@
               "comparison" : "lessThan",
               "defaultState" : true,
               "lhs" : "immunologicALC",
-              "rhs" : 1000
+              "rhs" : 1
             }
           },
           {
@@ -921,22 +960,6 @@
     "alternateUnits" : [
       {
         "conversionScale" : 1,
-        "name" : "mg\/dL"
-      }
-    ],
-    "decimals" : 1,
-    "displayName" : "Creatinine",
-    "referenceName" : "phoenixRenalCreatinine",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "mg\/dL"
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
         "name" : ""
       }
     ],
@@ -953,8 +976,8 @@
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "lhs" : "phoenixRenalCreatinine",
-                    "rhs" : 0.8
+                    "lhs" : "renalCreatinine",
+                    "rhs" : 70.72
                   }
                 },
                 {
@@ -977,8 +1000,8 @@
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "lhs" : "phoenixRenalCreatinine",
-                    "rhs" : 0.3
+                    "lhs" : "renalCreatinine",
+                    "rhs" : 26.52
                   }
                 },
                 {
@@ -1001,8 +1024,8 @@
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "lhs" : "phoenixRenalCreatinine",
-                    "rhs" : 0.4
+                    "lhs" : "renalCreatinine",
+                    "rhs" : 35.36
                   }
                 },
                 {
@@ -1025,8 +1048,8 @@
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "lhs" : "phoenixRenalCreatinine",
-                    "rhs" : 0.6
+                    "lhs" : "renalCreatinine",
+                    "rhs" : 53.04
                   }
                 },
                 {
@@ -1049,8 +1072,8 @@
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "lhs" : "phoenixRenalCreatinine",
-                    "rhs" : 0.7
+                    "lhs" : "renalCreatinine",
+                    "rhs" : 61.88
                   }
                 },
                 {
@@ -1073,8 +1096,8 @@
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
-                    "lhs" : "phoenixRenalCreatinine",
-                    "rhs" : 1
+                    "lhs" : "renalCreatinine",
+                    "rhs" : 88.4
                   }
                 },
                 {
@@ -1087,7 +1110,7 @@
       },
       "parameters" : [
         "age",
-        "phoenixRenalCreatinine"
+        "renalCreatinine"
       ],
       "roundingMethod" : "nearest"
     },
