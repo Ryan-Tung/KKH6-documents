@@ -39,22 +39,6 @@
       }
     ],
     "decimals" : 0,
-    "displayName" : "Cyanotic Heart Disease",
-    "referenceName" : "cyanoticHeartDisease",
-    "startingValue" : -1,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : ""
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : ""
-      }
-    ],
-    "decimals" : 0,
     "displayName" : "GCS score",
     "formula" : {
       "equation" : {
@@ -944,15 +928,6 @@
           {
             "component" : 0,
             "condition" : {
-              "comparison" : "equalTo",
-              "defaultState" : true,
-              "lhs" : "cyanoticHeartDisease",
-              "rhs" : 1
-            }
-          },
-          {
-            "component" : 0,
-            "condition" : {
               "comparison" : "greaterThanOrEqualTo",
               "defaultState" : true,
               "lhs" : "paO2FiO2Ratio",
@@ -974,7 +949,6 @@
         ]
       },
       "parameters" : [
-        "cyanoticHeartDisease",
         "paO2FiO2Ratio"
       ],
       "roundingMethod" : "nearest"
