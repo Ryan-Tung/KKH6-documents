@@ -39,96 +39,44 @@
     {
       "components" : [
         {
-          "discreteInput" : {
-            "presentationStyle" : "segmented",
-            "values" : [
-              {
-                "displayName" : "PaO₂ : FiO₂",
-                "value" : 0
-              },
-              {
-                "displayName" : "SpO₂ : FiO₂",
-                "value" : 1
-              }
-            ],
-            "variableInfo" : {
-              "color" : {
-                "blue" : 0.9019607843137255,
-                "green" : 0.6784313725490196,
-                "red" : 0.19607843137254902
-              },
-              "variableReference" : "respiratoryInputType"
-            }
+          "toggle" : {
+            "color" : {
+              "blue" : 0.18823529411764706,
+              "green" : 0.23137254901960785,
+              "red" : 1
+            },
+            "variableReference" : "pSOFARespiratoryAvailable"
           }
         },
         {
           "conditional" : {
             "component" : {
-              "inputDual" : {
-                "lhs" : {
-                  "allowsNegative" : false,
-                  "variableInfo" : {
-                    "color" : {
-                      "blue" : 0,
-                      "green" : 0.8,
-                      "red" : 1
-                    },
-                    "variableReference" : "paO2"
+              "discreteInput" : {
+                "presentationStyle" : "segmented",
+                "values" : [
+                  {
+                    "displayName" : "PaO₂ : FiO₂",
+                    "value" : 0
+                  },
+                  {
+                    "displayName" : "SpO₂ : FiO₂",
+                    "value" : 1
                   }
-                },
-                "rhs" : {
-                  "allowsNegative" : false,
-                  "variableInfo" : {
-                    "color" : {
-                      "blue" : 0.34901960784313724,
-                      "green" : 0.7803921568627451,
-                      "red" : 0.20392156862745098
-                    },
-                    "variableReference" : "fiO2"
-                  }
+                ],
+                "variableInfo" : {
+                  "color" : {
+                    "blue" : 0.9019607843137255,
+                    "green" : 0.6784313725490196,
+                    "red" : 0.19607843137254902
+                  },
+                  "variableReference" : "respiratoryInputType"
                 }
               }
             },
             "condition" : {
               "comparison" : "equalTo",
               "defaultState" : true,
-              "lhs" : "respiratoryInputType",
-              "rhs" : 0
-            }
-          }
-        },
-        {
-          "conditional" : {
-            "component" : {
-              "inputDual" : {
-                "lhs" : {
-                  "allowsNegative" : false,
-                  "variableInfo" : {
-                    "color" : {
-                      "blue" : 0,
-                      "green" : 0.8,
-                      "red" : 1
-                    },
-                    "variableReference" : "spO2"
-                  }
-                },
-                "rhs" : {
-                  "allowsNegative" : false,
-                  "variableInfo" : {
-                    "color" : {
-                      "blue" : 0.34901960784313724,
-                      "green" : 0.7803921568627451,
-                      "red" : 0.20392156862745098
-                    },
-                    "variableReference" : "fiO2"
-                  }
-                }
-              }
-            },
-            "condition" : {
-              "comparison" : "equalTo",
-              "defaultState" : true,
-              "lhs" : "respiratoryInputType",
+              "lhs" : "pSOFARespiratoryAvailable",
               "rhs" : 1
             }
           }
@@ -136,49 +84,171 @@
         {
           "conditional" : {
             "component" : {
-              "output" : "paO2FiO2Ratio"
+              "conditional" : {
+                "component" : {
+                  "inputDual" : {
+                    "lhs" : {
+                      "allowsNegative" : false,
+                      "variableInfo" : {
+                        "color" : {
+                          "blue" : 0,
+                          "green" : 0.8,
+                          "red" : 1
+                        },
+                        "variableReference" : "paO2"
+                      }
+                    },
+                    "rhs" : {
+                      "allowsNegative" : false,
+                      "variableInfo" : {
+                        "color" : {
+                          "blue" : 0.34901960784313724,
+                          "green" : 0.7803921568627451,
+                          "red" : 0.20392156862745098
+                        },
+                        "variableReference" : "fiO2"
+                      }
+                    }
+                  }
+                },
+                "condition" : {
+                  "comparison" : "equalTo",
+                  "defaultState" : true,
+                  "lhs" : "respiratoryInputType",
+                  "rhs" : 0
+                }
+              }
             },
             "condition" : {
               "comparison" : "equalTo",
               "defaultState" : true,
-              "lhs" : "respiratoryInputType",
-              "rhs" : 0
+              "lhs" : "pSOFARespiratoryAvailable",
+              "rhs" : 1
             }
           }
         },
         {
           "conditional" : {
             "component" : {
-              "output" : "spO2FiO2Ratio"
+              "conditional" : {
+                "component" : {
+                  "inputDual" : {
+                    "lhs" : {
+                      "allowsNegative" : false,
+                      "variableInfo" : {
+                        "color" : {
+                          "blue" : 0,
+                          "green" : 0.8,
+                          "red" : 1
+                        },
+                        "variableReference" : "spO2"
+                      }
+                    },
+                    "rhs" : {
+                      "allowsNegative" : false,
+                      "variableInfo" : {
+                        "color" : {
+                          "blue" : 0.34901960784313724,
+                          "green" : 0.7803921568627451,
+                          "red" : 0.20392156862745098
+                        },
+                        "variableReference" : "fiO2"
+                      }
+                    }
+                  }
+                },
+                "condition" : {
+                  "comparison" : "equalTo",
+                  "defaultState" : true,
+                  "lhs" : "respiratoryInputType",
+                  "rhs" : 1
+                }
+              }
             },
             "condition" : {
               "comparison" : "equalTo",
               "defaultState" : true,
-              "lhs" : "respiratoryInputType",
+              "lhs" : "pSOFARespiratoryAvailable",
               "rhs" : 1
             }
           }
         },
         {
-          "discreteInput" : {
-            "presentationStyle" : "segmented",
-            "values" : [
-              {
-                "displayName" : "Yes",
-                "value" : 1
-              },
-              {
-                "displayName" : "No",
-                "value" : 0
+          "conditional" : {
+            "component" : {
+              "conditional" : {
+                "component" : {
+                  "output" : "paO2FiO2Ratio"
+                },
+                "condition" : {
+                  "comparison" : "equalTo",
+                  "defaultState" : true,
+                  "lhs" : "respiratoryInputType",
+                  "rhs" : 0
+                }
               }
-            ],
-            "variableInfo" : {
-              "color" : {
-                "blue" : 1,
-                "green" : 0.47843137254901963,
-                "red" : 0
-              },
-              "variableReference" : "respiratoryOnMechanicalVentilation"
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "pSOFARespiratoryAvailable",
+              "rhs" : 1
+            }
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "conditional" : {
+                "component" : {
+                  "output" : "spO2FiO2Ratio"
+                },
+                "condition" : {
+                  "comparison" : "equalTo",
+                  "defaultState" : true,
+                  "lhs" : "respiratoryInputType",
+                  "rhs" : 1
+                }
+              }
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "pSOFARespiratoryAvailable",
+              "rhs" : 1
+            }
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "discreteInput" : {
+                "presentationStyle" : "segmented",
+                "values" : [
+                  {
+                    "displayName" : "Yes",
+                    "value" : 1
+                  },
+                  {
+                    "displayName" : "No",
+                    "value" : 0
+                  }
+                ],
+                "variableInfo" : {
+                  "color" : {
+                    "blue" : 1,
+                    "green" : 0.47843137254901963,
+                    "red" : 0
+                  },
+                  "variableReference" : "respiratoryOnMechanicalVentilation"
+                }
+              }
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "pSOFARespiratoryAvailable",
+              "rhs" : 1
             }
           }
         },
@@ -201,15 +271,35 @@
     {
       "components" : [
         {
-          "inputSingle" : {
-            "allowsNegative" : false,
-            "variableInfo" : {
-              "color" : {
-                "blue" : 1,
-                "green" : 0.47843137254901963,
-                "red" : 0
-              },
-              "variableReference" : "platelets"
+          "toggle" : {
+            "color" : {
+              "blue" : 0.18823529411764706,
+              "green" : 0.23137254901960785,
+              "red" : 1
+            },
+            "variableReference" : "pSOFACoagulationAvailable"
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "inputSingle" : {
+                "allowsNegative" : false,
+                "variableInfo" : {
+                  "color" : {
+                    "blue" : 1,
+                    "green" : 0.47843137254901963,
+                    "red" : 0
+                  },
+                  "variableReference" : "platelets"
+                }
+              }
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "pSOFACoagulationAvailable",
+              "rhs" : 1
             }
           }
         },
@@ -224,15 +314,35 @@
     {
       "components" : [
         {
-          "inputSingle" : {
-            "allowsNegative" : false,
-            "variableInfo" : {
-              "color" : {
-                "blue" : 1,
-                "green" : 0.47843137254901963,
-                "red" : 0
-              },
-              "variableReference" : "pSOFABilirubin"
+          "toggle" : {
+            "color" : {
+              "blue" : 0.18823529411764706,
+              "green" : 0.23137254901960785,
+              "red" : 1
+            },
+            "variableReference" : "pSOFAHepaticAvailable"
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "inputSingle" : {
+                "allowsNegative" : false,
+                "variableInfo" : {
+                  "color" : {
+                    "blue" : 1,
+                    "green" : 0.47843137254901963,
+                    "red" : 0
+                  },
+                  "variableReference" : "pSOFABilirubin"
+                }
+              }
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "pSOFAHepaticAvailable",
+              "rhs" : 1
             }
           }
         },
@@ -247,50 +357,57 @@
     {
       "components" : [
         {
-          "discreteInput" : {
-            "presentationStyle" : "segmented",
-            "values" : [
-              {
-                "displayName" : "1",
-                "value" : 0
-              },
-              {
-                "displayName" : "2",
-                "value" : 1
-              },
-              {
-                "displayName" : "3",
-                "value" : 2
-              },
-              {
-                "displayName" : "4",
-                "value" : 3
-              },
-              {
-                "displayName" : "5",
-                "value" : 4
-              }
-            ],
-            "variableInfo" : {
-              "color" : {
-                "blue" : 1,
-                "green" : 0.47843137254901963,
-                "red" : 0
-              },
-              "variableReference" : "cardiovascularInput"
-            }
+          "toggle" : {
+            "color" : {
+              "blue" : 0.18823529411764706,
+              "green" : 0.23137254901960785,
+              "red" : 1
+            },
+            "variableReference" : "pSOFACardiovascularAvailable"
           }
         },
         {
           "conditional" : {
             "component" : {
-              "text" : "1) Not Hypotensive (MAP ≥ 46mmHg)\n2) Hypotensive (MAP < 46mmHg)\n3) Dopamine ≤ 5 or Dobutamine (any dose)\n4) Dopamine > 5 or Adrenaline ≤ 0.1 or Noradrenaline ≤ 0.1\n5) Dopamine > 5 or Adrenaline > 0.1 or Noradrenaline > 0.1"
+              "discreteInput" : {
+                "presentationStyle" : "segmented",
+                "values" : [
+                  {
+                    "displayName" : "1",
+                    "value" : 0
+                  },
+                  {
+                    "displayName" : "2",
+                    "value" : 1
+                  },
+                  {
+                    "displayName" : "3",
+                    "value" : 2
+                  },
+                  {
+                    "displayName" : "4",
+                    "value" : 3
+                  },
+                  {
+                    "displayName" : "5",
+                    "value" : 4
+                  }
+                ],
+                "variableInfo" : {
+                  "color" : {
+                    "blue" : 1,
+                    "green" : 0.47843137254901963,
+                    "red" : 0
+                  },
+                  "variableReference" : "cardiovascularInput"
+                }
+              }
             },
             "condition" : {
-              "comparison" : "lessThan",
+              "comparison" : "equalTo",
               "defaultState" : true,
-              "lhs" : "age",
-              "rhs" : 0.08333333333333333
+              "lhs" : "pSOFACardiovascularAvailable",
+              "rhs" : 1
             }
           }
         },
@@ -299,10 +416,76 @@
             "component" : {
               "conditional" : {
                 "component" : {
-                  "text" : "1) Not Hypotensive (MAP ≥ 55mmHg)\n2) Hypotensive (MAP < 55mmHg)\n3) Dopamine ≤ 5 or Dobutamine (any dose)\n4) Dopamine > 5 or Adrenaline ≤ 0.1 or Noradrenaline ≤ 0.1\n5) Dopamine > 5 or Adrenaline > 0.1 or Noradrenaline > 0.1"
+                  "text" : "1) Not Hypotensive (MAP ≥ 46mmHg)\n2) Hypotensive (MAP < 46mmHg)\n3) Dopamine ≤ 5 or Dobutamine (any dose)\n4) Dopamine > 5 or Adrenaline ≤ 0.1 or Noradrenaline ≤ 0.1\n5) Dopamine > 5 or Adrenaline > 0.1 or Noradrenaline > 0.1"
                 },
                 "condition" : {
-                  "comparison" : "lessThanOrEqualTo",
+                  "comparison" : "lessThan",
+                  "defaultState" : true,
+                  "lhs" : "age",
+                  "rhs" : 0.08333333333333333
+                }
+              }
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "pSOFACardiovascularAvailable",
+              "rhs" : 1
+            }
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "conditional" : {
+                "component" : {
+                  "conditional" : {
+                    "component" : {
+                      "text" : "1) Not Hypotensive (MAP ≥ 55mmHg)\n2) Hypotensive (MAP < 55mmHg)\n3) Dopamine ≤ 5 or Dobutamine (any dose)\n4) Dopamine > 5 or Adrenaline ≤ 0.1 or Noradrenaline ≤ 0.1\n5) Dopamine > 5 or Adrenaline > 0.1 or Noradrenaline > 0.1"
+                    },
+                    "condition" : {
+                      "comparison" : "lessThanOrEqualTo",
+                      "defaultState" : true,
+                      "lhs" : "age",
+                      "rhs" : 0.9166666666666666
+                    }
+                  }
+                },
+                "condition" : {
+                  "comparison" : "greaterThanOrEqualTo",
+                  "defaultState" : true,
+                  "lhs" : "age",
+                  "rhs" : 0.08333333333333333
+                }
+              }
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "pSOFACardiovascularAvailable",
+              "rhs" : 1
+            }
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "conditional" : {
+                "component" : {
+                  "conditional" : {
+                    "component" : {
+                      "text" : "1) Not Hypotensive (MAP ≥ 60mmHg)\n2) Hypotensive (MAP < 60mmHg)\n3) Dopamine ≤ 5 or Dobutamine (any dose)\n4) Dopamine > 5 or Adrenaline ≤ 0.1 or Noradrenaline ≤ 0.1\n5) Dopamine > 5 or Adrenaline > 0.1 or Noradrenaline > 0.1"
+                    },
+                    "condition" : {
+                      "comparison" : "lessThanOrEqualTo",
+                      "defaultState" : true,
+                      "lhs" : "age",
+                      "rhs" : 1.9166666666666667
+                    }
+                  }
+                },
+                "condition" : {
+                  "comparison" : "greaterThan",
                   "defaultState" : true,
                   "lhs" : "age",
                   "rhs" : 0.9166666666666666
@@ -310,10 +493,10 @@
               }
             },
             "condition" : {
-              "comparison" : "greaterThanOrEqualTo",
+              "comparison" : "equalTo",
               "defaultState" : true,
-              "lhs" : "age",
-              "rhs" : 0.08333333333333333
+              "lhs" : "pSOFACardiovascularAvailable",
+              "rhs" : 1
             }
           }
         },
@@ -322,10 +505,20 @@
             "component" : {
               "conditional" : {
                 "component" : {
-                  "text" : "1) Not Hypotensive (MAP ≥ 60mmHg)\n2) Hypotensive (MAP < 60mmHg)\n3) Dopamine ≤ 5 or Dobutamine (any dose)\n4) Dopamine > 5 or Adrenaline ≤ 0.1 or Noradrenaline ≤ 0.1\n5) Dopamine > 5 or Adrenaline > 0.1 or Noradrenaline > 0.1"
+                  "conditional" : {
+                    "component" : {
+                      "text" : "1) Not Hypotensive (MAP ≥ 62mmHg)\n2) Hypotensive (MAP < 62mmHg)\n3) Dopamine ≤ 5 or Dobutamine (any dose)\n4) Dopamine > 5 or Adrenaline ≤ 0.1 or Noradrenaline ≤ 0.1\n5) Dopamine > 5 or Adrenaline > 0.1 or Noradrenaline > 0.1"
+                    },
+                    "condition" : {
+                      "comparison" : "lessThanOrEqualTo",
+                      "defaultState" : true,
+                      "lhs" : "age",
+                      "rhs" : 4.916666666666667
+                    }
+                  }
                 },
                 "condition" : {
-                  "comparison" : "lessThanOrEqualTo",
+                  "comparison" : "greaterThan",
                   "defaultState" : true,
                   "lhs" : "age",
                   "rhs" : 1.9166666666666667
@@ -333,10 +526,10 @@
               }
             },
             "condition" : {
-              "comparison" : "greaterThan",
+              "comparison" : "equalTo",
               "defaultState" : true,
-              "lhs" : "age",
-              "rhs" : 0.9166666666666666
+              "lhs" : "pSOFACardiovascularAvailable",
+              "rhs" : 1
             }
           }
         },
@@ -345,10 +538,20 @@
             "component" : {
               "conditional" : {
                 "component" : {
-                  "text" : "1) Not Hypotensive (MAP ≥ 62mmHg)\n2) Hypotensive (MAP < 62mmHg)\n3) Dopamine ≤ 5 or Dobutamine (any dose)\n4) Dopamine > 5 or Adrenaline ≤ 0.1 or Noradrenaline ≤ 0.1\n5) Dopamine > 5 or Adrenaline > 0.1 or Noradrenaline > 0.1"
+                  "conditional" : {
+                    "component" : {
+                      "text" : "1) Not Hypotensive (MAP ≥ 65mmHg)\n2) Hypotensive (MAP < 65mmHg)\n3) Dopamine ≤ 5 or Dobutamine (any dose)\n4) Dopamine > 5 or Adrenaline ≤ 0.1 or Noradrenaline ≤ 0.1\n5) Dopamine > 5 or Adrenaline > 0.1 or Noradrenaline > 0.1"
+                    },
+                    "condition" : {
+                      "comparison" : "lessThanOrEqualTo",
+                      "defaultState" : true,
+                      "lhs" : "age",
+                      "rhs" : 11.916666666666666
+                    }
+                  }
                 },
                 "condition" : {
-                  "comparison" : "lessThanOrEqualTo",
+                  "comparison" : "greaterThan",
                   "defaultState" : true,
                   "lhs" : "age",
                   "rhs" : 4.916666666666667
@@ -356,10 +559,10 @@
               }
             },
             "condition" : {
-              "comparison" : "greaterThan",
+              "comparison" : "equalTo",
               "defaultState" : true,
-              "lhs" : "age",
-              "rhs" : 1.9166666666666667
+              "lhs" : "pSOFACardiovascularAvailable",
+              "rhs" : 1
             }
           }
         },
@@ -368,10 +571,20 @@
             "component" : {
               "conditional" : {
                 "component" : {
-                  "text" : "1) Not Hypotensive (MAP ≥ 65mmHg)\n2) Hypotensive (MAP < 65mmHg)\n3) Dopamine ≤ 5 or Dobutamine (any dose)\n4) Dopamine > 5 or Adrenaline ≤ 0.1 or Noradrenaline ≤ 0.1\n5) Dopamine > 5 or Adrenaline > 0.1 or Noradrenaline > 0.1"
+                  "conditional" : {
+                    "component" : {
+                      "text" : "1) Not Hypotensive (MAP ≥ 67mmHg)\n2) Hypotensive (MAP < 67mmHg)\n3) Dopamine ≤ 5 or Dobutamine (any dose)\n4) Dopamine > 5 or Adrenaline ≤ 0.1 or Noradrenaline ≤ 0.1\n5) Dopamine > 5 or Adrenaline > 0.1 or Noradrenaline > 0.1"
+                    },
+                    "condition" : {
+                      "comparison" : "lessThanOrEqualTo",
+                      "defaultState" : true,
+                      "lhs" : "age",
+                      "rhs" : 18
+                    }
+                  }
                 },
                 "condition" : {
-                  "comparison" : "lessThanOrEqualTo",
+                  "comparison" : "greaterThan",
                   "defaultState" : true,
                   "lhs" : "age",
                   "rhs" : 11.916666666666666
@@ -379,10 +592,10 @@
               }
             },
             "condition" : {
-              "comparison" : "greaterThan",
+              "comparison" : "equalTo",
               "defaultState" : true,
-              "lhs" : "age",
-              "rhs" : 4.916666666666667
+              "lhs" : "pSOFACardiovascularAvailable",
+              "rhs" : 1
             }
           }
         },
@@ -391,10 +604,10 @@
             "component" : {
               "conditional" : {
                 "component" : {
-                  "text" : "1) Not Hypotensive (MAP ≥ 67mmHg)\n2) Hypotensive (MAP < 67mmHg)\n3) Dopamine ≤ 5 or Dobutamine (any dose)\n4) Dopamine > 5 or Adrenaline ≤ 0.1 or Noradrenaline ≤ 0.1\n5) Dopamine > 5 or Adrenaline > 0.1 or Noradrenaline > 0.1"
+                  "text" : "1) Not Hypotensive (MAP ≥ 70mmHg)\n2) Hypotensive (MAP < 70mmHg)\n3) Dopamine ≤ 5 or Dobutamine (any dose)\n4) Dopamine > 5 or Adrenaline ≤ 0.1 or Noradrenaline ≤ 0.1\n5) Dopamine > 5 or Adrenaline > 0.1 or Noradrenaline > 0.1"
                 },
                 "condition" : {
-                  "comparison" : "lessThanOrEqualTo",
+                  "comparison" : "greaterThan",
                   "defaultState" : true,
                   "lhs" : "age",
                   "rhs" : 18
@@ -402,23 +615,10 @@
               }
             },
             "condition" : {
-              "comparison" : "greaterThan",
+              "comparison" : "equalTo",
               "defaultState" : true,
-              "lhs" : "age",
-              "rhs" : 11.916666666666666
-            }
-          }
-        },
-        {
-          "conditional" : {
-            "component" : {
-              "text" : "1) Not Hypotensive (MAP ≥ 70mmHg)\n2) Hypotensive (MAP < 70mmHg)\n3) Dopamine ≤ 5 or Dobutamine (any dose)\n4) Dopamine > 5 or Adrenaline ≤ 0.1 or Noradrenaline ≤ 0.1\n5) Dopamine > 5 or Adrenaline > 0.1 or Noradrenaline > 0.1"
-            },
-            "condition" : {
-              "comparison" : "greaterThan",
-              "defaultState" : true,
-              "lhs" : "age",
-              "rhs" : 18
+              "lhs" : "pSOFACardiovascularAvailable",
+              "rhs" : 1
             }
           }
         },
@@ -432,15 +632,35 @@
     {
       "components" : [
         {
-          "inputSingle" : {
-            "allowsNegative" : false,
-            "variableInfo" : {
-              "color" : {
-                "blue" : 1,
-                "green" : 0.47843137254901963,
-                "red" : 0
-              },
-              "variableReference" : "neurologicGCS"
+          "toggle" : {
+            "color" : {
+              "blue" : 0.18823529411764706,
+              "green" : 0.23137254901960785,
+              "red" : 1
+            },
+            "variableReference" : "pSOFANeurologicalAvailable"
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "inputSingle" : {
+                "allowsNegative" : false,
+                "variableInfo" : {
+                  "color" : {
+                    "blue" : 1,
+                    "green" : 0.47843137254901963,
+                    "red" : 0
+                  },
+                  "variableReference" : "neurologicGCS"
+                }
+              }
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "pSOFANeurologicalAvailable",
+              "rhs" : 1
             }
           }
         },
@@ -454,15 +674,35 @@
     {
       "components" : [
         {
-          "inputSingle" : {
-            "allowsNegative" : false,
-            "variableInfo" : {
-              "color" : {
-                "blue" : 1,
-                "green" : 0.47843137254901963,
-                "red" : 0
-              },
-              "variableReference" : "renalCreatinine"
+          "toggle" : {
+            "color" : {
+              "blue" : 0.18823529411764706,
+              "green" : 0.23137254901960785,
+              "red" : 1
+            },
+            "variableReference" : "pSOFARenalAvailable"
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "inputSingle" : {
+                "allowsNegative" : false,
+                "variableInfo" : {
+                  "color" : {
+                    "blue" : 1,
+                    "green" : 0.47843137254901963,
+                    "red" : 0
+                  },
+                  "variableReference" : "renalCreatinine"
+                }
+              }
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "pSOFARenalAvailable",
+              "rhs" : 1
             }
           }
         },

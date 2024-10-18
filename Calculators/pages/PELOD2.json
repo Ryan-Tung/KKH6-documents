@@ -39,15 +39,35 @@
     {
       "components" : [
         {
-          "inputSingle" : {
-            "allowsNegative" : false,
-            "variableInfo" : {
-              "color" : {
-                "blue" : 0.8392156862745098,
-                "green" : 0.33725490196078434,
-                "red" : 0.34509803921568627
-              },
-              "variableReference" : "pelodLactate"
+          "toggle" : {
+            "color" : {
+              "blue" : 0.18823529411764706,
+              "green" : 0.23137254901960785,
+              "red" : 1
+            },
+            "variableReference" : "pelod2LactateAvailable"
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "inputSingle" : {
+                "allowsNegative" : false,
+                "variableInfo" : {
+                  "color" : {
+                    "blue" : 0.8392156862745098,
+                    "green" : 0.33725490196078434,
+                    "red" : 0.34509803921568627
+                  },
+                  "variableReference" : "pelodLactate"
+                }
+              }
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "pelod2LactateAvailable",
+              "rhs" : 1
             }
           }
         },
@@ -55,15 +75,35 @@
           "output" : "lactateScore"
         },
         {
-          "inputSingle" : {
-            "allowsNegative" : false,
-            "variableInfo" : {
-              "color" : {
-                "blue" : 0.8392156862745098,
-                "green" : 0.33725490196078434,
-                "red" : 0.34509803921568627
-              },
-              "variableReference" : "cardioMAP"
+          "toggle" : {
+            "color" : {
+              "blue" : 0.18823529411764706,
+              "green" : 0.23137254901960785,
+              "red" : 1
+            },
+            "variableReference" : "pelod2MAPAvailable"
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "inputSingle" : {
+                "allowsNegative" : false,
+                "variableInfo" : {
+                  "color" : {
+                    "blue" : 0.8392156862745098,
+                    "green" : 0.33725490196078434,
+                    "red" : 0.34509803921568627
+                  },
+                  "variableReference" : "cardioMAP"
+                }
+              }
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "pelod2MAPAvailable",
+              "rhs" : 1
             }
           }
         },
@@ -100,15 +140,35 @@
     {
       "components" : [
         {
-          "inputSingle" : {
-            "allowsNegative" : false,
-            "variableInfo" : {
-              "color" : {
-                "blue" : 1,
-                "green" : 0.47843137254901963,
-                "red" : 0
-              },
-              "variableReference" : "neurologicGCS"
+          "toggle" : {
+            "color" : {
+              "blue" : 0.18823529411764706,
+              "green" : 0.23137254901960785,
+              "red" : 1
+            },
+            "variableReference" : "pelod2GCSAvailable"
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "inputSingle" : {
+                "allowsNegative" : false,
+                "variableInfo" : {
+                  "color" : {
+                    "blue" : 1,
+                    "green" : 0.47843137254901963,
+                    "red" : 0
+                  },
+                  "variableReference" : "neurologicGCS"
+                }
+              }
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "pelod2GCSAvailable",
+              "rhs" : 1
             }
           }
         },
@@ -116,25 +176,45 @@
           "output" : "gcsScore"
         },
         {
-          "discreteInput" : {
-            "presentationStyle" : "segmented",
-            "values" : [
-              {
-                "displayName" : "Reactive",
-                "value" : 1
-              },
-              {
-                "displayName" : "Non-reactive and >3mm",
-                "value" : 0
+          "toggle" : {
+            "color" : {
+              "blue" : 0.18823529411764706,
+              "green" : 0.23137254901960785,
+              "red" : 1
+            },
+            "variableReference" : "pelod2PupilReactionAvailable"
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "discreteInput" : {
+                "presentationStyle" : "segmented",
+                "values" : [
+                  {
+                    "displayName" : "Reactive",
+                    "value" : 1
+                  },
+                  {
+                    "displayName" : "Non-reactive and >3mm",
+                    "value" : 0
+                  }
+                ],
+                "variableInfo" : {
+                  "color" : {
+                    "blue" : 0.18823529411764706,
+                    "green" : 0.23137254901960785,
+                    "red" : 1
+                  },
+                  "variableReference" : "pupilReaction"
+                }
               }
-            ],
-            "variableInfo" : {
-              "color" : {
-                "blue" : 0.18823529411764706,
-                "green" : 0.23137254901960785,
-                "red" : 1
-              },
-              "variableReference" : "pupilReaction"
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "pelod2PupilReactionAvailable",
+              "rhs" : 1
             }
           }
         },
@@ -149,25 +229,45 @@
     {
       "components" : [
         {
-          "discreteInput" : {
-            "presentationStyle" : "segmented",
-            "values" : [
-              {
-                "displayName" : "Yes",
-                "value" : 1
-              },
-              {
-                "displayName" : "No",
-                "value" : 0
+          "toggle" : {
+            "color" : {
+              "blue" : 0.18823529411764706,
+              "green" : 0.23137254901960785,
+              "red" : 1
+            },
+            "variableReference" : "pelod2VentilationAvailable"
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "discreteInput" : {
+                "presentationStyle" : "segmented",
+                "values" : [
+                  {
+                    "displayName" : "Yes",
+                    "value" : 1
+                  },
+                  {
+                    "displayName" : "No",
+                    "value" : 0
+                  }
+                ],
+                "variableInfo" : {
+                  "color" : {
+                    "blue" : 0.18823529411764706,
+                    "green" : 0.23137254901960785,
+                    "red" : 1
+                  },
+                  "variableReference" : "mechanicalVentilation"
+                }
               }
-            ],
-            "variableInfo" : {
-              "color" : {
-                "blue" : 0.18823529411764706,
-                "green" : 0.23137254901960785,
-                "red" : 1
-              },
-              "variableReference" : "mechanicalVentilation"
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "pelod2VentilationAvailable",
+              "rhs" : 1
             }
           }
         },
@@ -175,47 +275,97 @@
           "output" : "ventilationScore"
         },
         {
-          "inputDual" : {
-            "lhs" : {
-              "allowsNegative" : false,
-              "variableInfo" : {
-                "color" : {
-                  "blue" : 0.34901960784313724,
-                  "green" : 0.7803921568627451,
-                  "red" : 0.20392156862745098
+          "toggle" : {
+            "color" : {
+              "blue" : 0.18823529411764706,
+              "green" : 0.23137254901960785,
+              "red" : 1
+            },
+            "variableReference" : "pelod2RatioAvailable"
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "inputDual" : {
+                "lhs" : {
+                  "allowsNegative" : false,
+                  "variableInfo" : {
+                    "color" : {
+                      "blue" : 0.34901960784313724,
+                      "green" : 0.7803921568627451,
+                      "red" : 0.20392156862745098
+                    },
+                    "variableReference" : "paO2"
+                  }
                 },
-                "variableReference" : "paO2"
+                "rhs" : {
+                  "allowsNegative" : false,
+                  "variableInfo" : {
+                    "color" : {
+                      "blue" : 0,
+                      "green" : 0.8,
+                      "red" : 1
+                    },
+                    "variableReference" : "fiO2"
+                  }
+                }
               }
             },
-            "rhs" : {
-              "allowsNegative" : false,
-              "variableInfo" : {
-                "color" : {
-                  "blue" : 0,
-                  "green" : 0.8,
-                  "red" : 1
-                },
-                "variableReference" : "fiO2"
-              }
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "pelod2RatioAvailable",
+              "rhs" : 1
             }
           }
         },
         {
-          "output" : "paO2FiO2Ratio"
+          "conditional" : {
+            "component" : {
+              "output" : "paO2FiO2Ratio"
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "pelod2RatioAvailable",
+              "rhs" : 1
+            }
+          }
         },
         {
           "output" : "ratioScore"
         },
         {
-          "inputSingle" : {
-            "allowsNegative" : false,
-            "variableInfo" : {
-              "color" : {
-                "blue" : 1,
-                "green" : 0.47843137254901963,
-                "red" : 0
-              },
-              "variableReference" : "pCO2"
+          "toggle" : {
+            "color" : {
+              "blue" : 0.18823529411764706,
+              "green" : 0.23137254901960785,
+              "red" : 1
+            },
+            "variableReference" : "pelod2PCO2Available"
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "inputSingle" : {
+                "allowsNegative" : false,
+                "variableInfo" : {
+                  "color" : {
+                    "blue" : 1,
+                    "green" : 0.47843137254901963,
+                    "red" : 0
+                  },
+                  "variableReference" : "pCO2"
+                }
+              }
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "pelod2PCO2Available",
+              "rhs" : 1
             }
           }
         },
@@ -229,15 +379,35 @@
     {
       "components" : [
         {
-          "inputSingle" : {
-            "allowsNegative" : false,
-            "variableInfo" : {
-              "color" : {
-                "blue" : 1,
-                "green" : 0.47843137254901963,
-                "red" : 0
-              },
-              "variableReference" : "leucocytes"
+          "toggle" : {
+            "color" : {
+              "blue" : 0.18823529411764706,
+              "green" : 0.23137254901960785,
+              "red" : 1
+            },
+            "variableReference" : "pelod2LeucocytesAvailable"
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "inputSingle" : {
+                "allowsNegative" : false,
+                "variableInfo" : {
+                  "color" : {
+                    "blue" : 1,
+                    "green" : 0.47843137254901963,
+                    "red" : 0
+                  },
+                  "variableReference" : "leucocytes"
+                }
+              }
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "pelod2LeucocytesAvailable",
+              "rhs" : 1
             }
           }
         },
@@ -245,15 +415,35 @@
           "output" : "leucocytesScore"
         },
         {
-          "inputSingle" : {
-            "allowsNegative" : false,
-            "variableInfo" : {
-              "color" : {
-                "blue" : 1,
-                "green" : 0.47843137254901963,
-                "red" : 0
-              },
-              "variableReference" : "platelets"
+          "toggle" : {
+            "color" : {
+              "blue" : 0.18823529411764706,
+              "green" : 0.23137254901960785,
+              "red" : 1
+            },
+            "variableReference" : "pelod2PlateletsAvailable"
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "inputSingle" : {
+                "allowsNegative" : false,
+                "variableInfo" : {
+                  "color" : {
+                    "blue" : 1,
+                    "green" : 0.47843137254901963,
+                    "red" : 0
+                  },
+                  "variableReference" : "platelets"
+                }
+              }
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "pelod2PlateletsAvailable",
+              "rhs" : 1
             }
           }
         },
@@ -267,15 +457,35 @@
     {
       "components" : [
         {
-          "inputSingle" : {
-            "allowsNegative" : false,
-            "variableInfo" : {
-              "color" : {
-                "blue" : 0,
-                "green" : 0.5843137254901961,
-                "red" : 1
-              },
-              "variableReference" : "renalCreatinine"
+          "toggle" : {
+            "color" : {
+              "blue" : 0.18823529411764706,
+              "green" : 0.23137254901960785,
+              "red" : 1
+            },
+            "variableReference" : "pelod2RenalCreatinineAvailable"
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "inputSingle" : {
+                "allowsNegative" : false,
+                "variableInfo" : {
+                  "color" : {
+                    "blue" : 0,
+                    "green" : 0.5843137254901961,
+                    "red" : 1
+                  },
+                  "variableReference" : "renalCreatinine"
+                }
+              }
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "pelod2RenalCreatinineAvailable",
+              "rhs" : 1
             }
           }
         },
