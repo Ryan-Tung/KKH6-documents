@@ -171,7 +171,7 @@
       }
     ],
     "decimals" : 0,
-    "displayName" : "Time (in 24 hr format)",
+    "displayName" : "Withdrawal starting time (in 24 hr format)",
     "referenceName" : "numberOfHoursUntil6am",
     "startingValue" : 0,
     "unit" : {
@@ -187,7 +187,7 @@
       }
     ],
     "decimals" : 2,
-    "displayName" : "Number of Hours from specified time",
+    "displayName" : "Number of Hours till 6am",
     "formula" : {
       "equation" : {
         "conditional" : [

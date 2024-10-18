@@ -150,12 +150,18 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 3,
-                  "detailVarReferences" : [
-                    "Albumin_Dose",
-                    "Albumin_Calc_Dose",
-                    "Albumin_Calc_Amt"
+                  "items" : [
+                    {
+                      "output" : "Albumin_Dose"
+                    },
+                    {
+                      "output" : "Albumin_Calc_Dose"
+                    },
+                    {
+                      "output" : "Albumin_Calc_Amt"
+                    }
                   ]
                 }
               }
@@ -170,12 +176,18 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 3,
-                  "detailVarReferences" : [
-                    "Sodium Chloride_Dose",
-                    "Sodium Chloride_Calc_Dose",
-                    "Sodium Chloride_Calc_Amt"
+                  "items" : [
+                    {
+                      "output" : "Sodium Chloride_Dose"
+                    },
+                    {
+                      "output" : "Sodium Chloride_Calc_Dose"
+                    },
+                    {
+                      "output" : "Sodium Chloride_Calc_Amt"
+                    }
                   ]
                 }
               }
@@ -196,12 +208,18 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 3,
-                  "detailVarReferences" : [
-                    "Adrenaline_Dose",
-                    "Adrenaline_Calc_Dose",
-                    "Adrenaline_Calc_Amt"
+                  "items" : [
+                    {
+                      "output" : "Adrenaline_Dose"
+                    },
+                    {
+                      "output" : "Adrenaline_Calc_Dose"
+                    },
+                    {
+                      "output" : "Adrenaline_Calc_Amt"
+                    }
                   ]
                 }
               }
@@ -216,12 +234,18 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 3,
-                  "detailVarReferences" : [
-                    "Atropine Sulfate_Dose",
-                    "Atropine Sulfate_Calc_Dose",
-                    "Atropine Sulfate_Calc_Amt"
+                  "items" : [
+                    {
+                      "output" : "Atropine Sulfate_Dose"
+                    },
+                    {
+                      "output" : "Atropine Sulfate_Calc_Dose"
+                    },
+                    {
+                      "output" : "Atropine Sulfate_Calc_Amt"
+                    }
                   ]
                 }
               }
@@ -236,12 +260,18 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 3,
-                  "detailVarReferences" : [
-                    "Calcium Chloride_Dose",
-                    "Calcium Chloride_Calc_Dose",
-                    "Calcium Chloride_Calc_Amt"
+                  "items" : [
+                    {
+                      "output" : "Calcium Chloride_Dose"
+                    },
+                    {
+                      "output" : "Calcium Chloride_Calc_Dose"
+                    },
+                    {
+                      "output" : "Calcium Chloride_Calc_Amt"
+                    }
                   ]
                 }
               }
@@ -256,12 +286,18 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 3,
-                  "detailVarReferences" : [
-                    "Dextrose_Dose",
-                    "Dextrose_Calc_Dose",
-                    "Dextrose_Calc_Amt"
+                  "items" : [
+                    {
+                      "output" : "Dextrose_Dose"
+                    },
+                    {
+                      "output" : "Dextrose_Calc_Dose"
+                    },
+                    {
+                      "output" : "Dextrose_Calc_Amt"
+                    }
                   ]
                 }
               }
@@ -276,12 +312,18 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 3,
-                  "detailVarReferences" : [
-                    "Sodium Bicarbonate 8.4%_Dose",
-                    "Sodium Bicarbonate 8.4%_Calc_Dose",
-                    "Sodium Bicarbonate 8.4%_Calc_Amt"
+                  "items" : [
+                    {
+                      "output" : "Sodium Bicarbonate 8.4%_Dose"
+                    },
+                    {
+                      "output" : "Sodium Bicarbonate 8.4%_Calc_Dose"
+                    },
+                    {
+                      "output" : "Sodium Bicarbonate 8.4%_Calc_Amt"
+                    }
                   ]
                 }
               }
@@ -296,12 +338,18 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 3,
-                  "detailVarReferences" : [
-                    "Sodium Bicarbonate 4.2%_Dose",
-                    "Sodium Bicarbonate 4.2%_Calc_Dose",
-                    "Sodium Bicarbonate 4.2%_Calc_Amt"
+                  "items" : [
+                    {
+                      "output" : "Sodium Bicarbonate 4.2%_Dose"
+                    },
+                    {
+                      "output" : "Sodium Bicarbonate 4.2%_Calc_Dose"
+                    },
+                    {
+                      "output" : "Sodium Bicarbonate 4.2%_Calc_Amt"
+                    }
                   ]
                 }
               }
@@ -316,12 +364,18 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 3,
-                  "detailVarReferences" : [
-                    "Suxamethonium Chloride_Dose",
-                    "Suxamethonium Chloride_Calc_Dose",
-                    "Suxamethonium Chloride_Calc_Amt"
+                  "items" : [
+                    {
+                      "output" : "Suxamethonium Chloride_Dose"
+                    },
+                    {
+                      "output" : "Suxamethonium Chloride_Calc_Dose"
+                    },
+                    {
+                      "output" : "Suxamethonium Chloride_Calc_Amt"
+                    }
                   ]
                 }
               }
@@ -336,12 +390,18 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 3,
-                  "detailVarReferences" : [
-                    "Midazolam_Dose",
-                    "Midazolam_Calc_Dose",
-                    "Midazolam_Calc_Amt"
+                  "items" : [
+                    {
+                      "output" : "Midazolam_Dose"
+                    },
+                    {
+                      "output" : "Midazolam_Calc_Dose"
+                    },
+                    {
+                      "output" : "Midazolam_Calc_Amt"
+                    }
                   ]
                 }
               }
@@ -356,12 +416,18 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 3,
-                  "detailVarReferences" : [
-                    "Morphine Sulfate_Dose",
-                    "Morphine Sulfate_Calc_Dose",
-                    "Morphine Sulfate_Calc_Amt"
+                  "items" : [
+                    {
+                      "output" : "Morphine Sulfate_Dose"
+                    },
+                    {
+                      "output" : "Morphine Sulfate_Calc_Dose"
+                    },
+                    {
+                      "output" : "Morphine Sulfate_Calc_Amt"
+                    }
                   ]
                 }
               }
@@ -376,12 +442,18 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 3,
-                  "detailVarReferences" : [
-                    "Rocuronium_Dose",
-                    "Rocuronium_Calc_Dose",
-                    "Rocuronium_Calc_Amt"
+                  "items" : [
+                    {
+                      "output" : "Rocuronium_Dose"
+                    },
+                    {
+                      "output" : "Rocuronium_Calc_Dose"
+                    },
+                    {
+                      "output" : "Rocuronium_Calc_Amt"
+                    }
                   ]
                 }
               }

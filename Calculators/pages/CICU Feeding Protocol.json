@@ -375,12 +375,18 @@
                 },
                 "details" : [
                   {
-                    "detailedOutput" : {
+                    "gridInputOutput" : {
                       "columnCount" : 3,
-                      "detailVarReferences" : [
-                        "twentyFivePercentFeedMilk",
-                        "twentyFivePercentFeedWater",
-                        "twentyFivePercentFeedTotal"
+                      "items" : [
+                        {
+                          "output" : "twentyFivePercentFeedMilk"
+                        },
+                        {
+                          "output" : "twentyFivePercentFeedWater"
+                        },
+                        {
+                          "output" : "twentyFivePercentFeedTotal"
+                        }
                       ]
                     }
                   }
@@ -405,12 +411,18 @@
                 },
                 "details" : [
                   {
-                    "detailedOutput" : {
+                    "gridInputOutput" : {
                       "columnCount" : 3,
-                      "detailVarReferences" : [
-                        "twentyFivePercentFeedMilk",
-                        "twentyFivePercentFeedWater",
-                        "twentyFivePercentFeedRate"
+                      "items" : [
+                        {
+                          "output" : "twentyFivePercentFeedMilk"
+                        },
+                        {
+                          "output" : "twentyFivePercentFeedWater"
+                        },
+                        {
+                          "output" : "twentyFivePercentFeedRate"
+                        }
                       ]
                     }
                   }
@@ -433,11 +445,15 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 2,
-                  "detailVarReferences" : [
-                    "twentyFivePercentFeedDripPercent",
-                    "twentyFivePercentFeedDripRate"
+                  "items" : [
+                    {
+                      "output" : "twentyFivePercentFeedDripPercent"
+                    },
+                    {
+                      "output" : "twentyFivePercentFeedDripRate"
+                    }
                   ]
                 }
               }
@@ -446,7 +462,7 @@
           }
         }
       ],
-      "name" : "Feed  Rate: 25%",
+      "name" : "Feed Rate: 25%",
       "showName" : true
     },
     {
@@ -460,12 +476,18 @@
                 },
                 "details" : [
                   {
-                    "detailedOutput" : {
+                    "gridInputOutput" : {
                       "columnCount" : 3,
-                      "detailVarReferences" : [
-                        "twentyFivePercentFeedMilk",
-                        "twentyFivePercentFeedWater",
-                        "twentyFivePercentFeedTotal"
+                      "items" : [
+                        {
+                          "output" : "twentyFivePercentFeedMilk"
+                        },
+                        {
+                          "output" : "twentyFivePercentFeedWater"
+                        },
+                        {
+                          "output" : "twentyFivePercentFeedTotal"
+                        }
                       ]
                     }
                   }
@@ -490,12 +512,18 @@
                 },
                 "details" : [
                   {
-                    "detailedOutput" : {
+                    "gridInputOutput" : {
                       "columnCount" : 3,
-                      "detailVarReferences" : [
-                        "twentyFivePercentFeedMilk",
-                        "twentyFivePercentFeedWater",
-                        "twentyFivePercentFeedRate"
+                      "items" : [
+                        {
+                          "output" : "twentyFivePercentFeedMilk"
+                        },
+                        {
+                          "output" : "twentyFivePercentFeedWater"
+                        },
+                        {
+                          "output" : "twentyFivePercentFeedRate"
+                        }
                       ]
                     }
                   }
@@ -518,11 +546,15 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 2,
-                  "detailVarReferences" : [
-                    "twentyFivePercentFeedDripPercent",
-                    "twentyFivePercentFeedDripRate"
+                  "items" : [
+                    {
+                      "output" : "twentyFivePercentFeedDripPercent"
+                    },
+                    {
+                      "output" : "twentyFivePercentFeedDripRate"
+                    }
                   ]
                 }
               }
@@ -545,12 +577,18 @@
                 },
                 "details" : [
                   {
-                    "detailedOutput" : {
+                    "gridInputOutput" : {
                       "columnCount" : 3,
-                      "detailVarReferences" : [
-                        "fiftyPercentFeedMilk",
-                        "fiftyPercentFeedWater",
-                        "fiftyPercentFeedTotal"
+                      "items" : [
+                        {
+                          "output" : "fiftyPercentFeedMilk"
+                        },
+                        {
+                          "output" : "fiftyPercentFeedWater"
+                        },
+                        {
+                          "output" : "fiftyPercentFeedTotal"
+                        }
                       ]
                     }
                   }
@@ -575,12 +613,18 @@
                 },
                 "details" : [
                   {
-                    "detailedOutput" : {
+                    "gridInputOutput" : {
                       "columnCount" : 3,
-                      "detailVarReferences" : [
-                        "fiftyPercentFeedMilk",
-                        "fiftyPercentFeedWater",
-                        "fiftyPercentFeedRate"
+                      "items" : [
+                        {
+                          "output" : "fiftyPercentFeedMilk"
+                        },
+                        {
+                          "output" : "fiftyPercentFeedWater"
+                        },
+                        {
+                          "output" : "fiftyPercentFeedRate"
+                        }
                       ]
                     }
                   }
@@ -603,11 +647,15 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 2,
-                  "detailVarReferences" : [
-                    "fiftyPercentFeedDripPercent",
-                    "fiftyPercentFeedDripRate"
+                  "items" : [
+                    {
+                      "output" : "fiftyPercentFeedDripPercent"
+                    },
+                    {
+                      "output" : "fiftyPercentFeedDripRate"
+                    }
                   ]
                 }
               }
@@ -630,12 +678,18 @@
                 },
                 "details" : [
                   {
-                    "detailedOutput" : {
+                    "gridInputOutput" : {
                       "columnCount" : 3,
-                      "detailVarReferences" : [
-                        "seventyFivePercentFeedMilk",
-                        "seventyFivePercentFeedWater",
-                        "seventyFivePercentFeedTotal"
+                      "items" : [
+                        {
+                          "output" : "seventyFivePercentFeedMilk"
+                        },
+                        {
+                          "output" : "seventyFivePercentFeedWater"
+                        },
+                        {
+                          "output" : "seventyFivePercentFeedTotal"
+                        }
                       ]
                     }
                   }
@@ -660,12 +714,18 @@
                 },
                 "details" : [
                   {
-                    "detailedOutput" : {
+                    "gridInputOutput" : {
                       "columnCount" : 3,
-                      "detailVarReferences" : [
-                        "seventyFivePercentFeedMilk",
-                        "seventyFivePercentFeedWater",
-                        "seventyFivePercentFeedRate"
+                      "items" : [
+                        {
+                          "output" : "seventyFivePercentFeedMilk"
+                        },
+                        {
+                          "output" : "seventyFivePercentFeedWater"
+                        },
+                        {
+                          "output" : "seventyFivePercentFeedRate"
+                        }
                       ]
                     }
                   }
@@ -688,11 +748,15 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 2,
-                  "detailVarReferences" : [
-                    "seventyFivePercentFeedDripPercent",
-                    "seventyFivePercentFeedDripRate"
+                  "items" : [
+                    {
+                      "output" : "seventyFivePercentFeedDripPercent"
+                    },
+                    {
+                      "output" : "seventyFivePercentFeedDripRate"
+                    }
                   ]
                 }
               }
@@ -715,12 +779,18 @@
                 },
                 "details" : [
                   {
-                    "detailedOutput" : {
+                    "gridInputOutput" : {
                       "columnCount" : 3,
-                      "detailVarReferences" : [
-                        "hundredPercentFeedMilk",
-                        "hundredPercentFeedWater",
-                        "hundredPercentFeedTotal"
+                      "items" : [
+                        {
+                          "output" : "hundredPercentFeedMilk"
+                        },
+                        {
+                          "output" : "hundredPercentFeedWater"
+                        },
+                        {
+                          "output" : "hundredPercentFeedTotal"
+                        }
                       ]
                     }
                   }
@@ -745,12 +815,18 @@
                 },
                 "details" : [
                   {
-                    "detailedOutput" : {
+                    "gridInputOutput" : {
                       "columnCount" : 3,
-                      "detailVarReferences" : [
-                        "hundredPercentFeedMilk",
-                        "hundredPercentFeedWater",
-                        "hundredPercentFeedRate"
+                      "items" : [
+                        {
+                          "output" : "hundredPercentFeedMilk"
+                        },
+                        {
+                          "output" : "hundredPercentFeedWater"
+                        },
+                        {
+                          "output" : "hundredPercentFeedRate"
+                        }
                       ]
                     }
                   }
@@ -773,11 +849,15 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 2,
-                  "detailVarReferences" : [
-                    "hundredPercentFeedDripPercent",
-                    "hundredPercentFeedDripRate"
+                  "items" : [
+                    {
+                      "output" : "hundredPercentFeedDripPercent"
+                    },
+                    {
+                      "output" : "hundredPercentFeedDripRate"
+                    }
                   ]
                 }
               }

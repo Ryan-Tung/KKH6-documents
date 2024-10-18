@@ -110,12 +110,18 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 3,
-                  "detailVarReferences" : [
-                    "Adenosine_Dose",
-                    "Adenosine_Calc_Dose",
-                    "Adenosine_Calc_Amt"
+                  "items" : [
+                    {
+                      "output" : "Adenosine_Dose"
+                    },
+                    {
+                      "output" : "Adenosine_Calc_Dose"
+                    },
+                    {
+                      "output" : "Adenosine_Calc_Amt"
+                    }
                   ]
                 }
               }
@@ -130,12 +136,18 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 3,
-                  "detailVarReferences" : [
-                    "Adrenaline CHETS_Dose",
-                    "Adrenaline CHETS_Calc_Dose",
-                    "Adrenaline CHETS_Calc_Amt"
+                  "items" : [
+                    {
+                      "output" : "Adrenaline CHETS_Dose"
+                    },
+                    {
+                      "output" : "Adrenaline CHETS_Calc_Dose"
+                    },
+                    {
+                      "output" : "Adrenaline CHETS_Calc_Amt"
+                    }
                   ]
                 }
               }
@@ -150,12 +162,18 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 3,
-                  "detailVarReferences" : [
-                    "Amiodarone_Dose",
-                    "Amiodarone_Calc_Dose",
-                    "Amiodarone_Calc_Amt"
+                  "items" : [
+                    {
+                      "output" : "Amiodarone_Dose"
+                    },
+                    {
+                      "output" : "Amiodarone_Calc_Dose"
+                    },
+                    {
+                      "output" : "Amiodarone_Calc_Amt"
+                    }
                   ]
                 }
               }
@@ -170,12 +188,18 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 3,
-                  "detailVarReferences" : [
-                    "Atropine Sulfate CHETS_Dose",
-                    "Atropine Sulfate CHETS_Calc_Dose",
-                    "Atropine Sulfate CHETS_Calc_Amt"
+                  "items" : [
+                    {
+                      "output" : "Atropine Sulfate CHETS_Dose"
+                    },
+                    {
+                      "output" : "Atropine Sulfate CHETS_Calc_Dose"
+                    },
+                    {
+                      "output" : "Atropine Sulfate CHETS_Calc_Amt"
+                    }
                   ]
                 }
               }
@@ -190,12 +214,18 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 3,
-                  "detailVarReferences" : [
-                    "Calcium Chloride CHETS_Dose",
-                    "Calcium Chloride CHETS_Calc_Dose",
-                    "Calcium Chloride CHETS_Calc_Amt"
+                  "items" : [
+                    {
+                      "output" : "Calcium Chloride CHETS_Dose"
+                    },
+                    {
+                      "output" : "Calcium Chloride CHETS_Calc_Dose"
+                    },
+                    {
+                      "output" : "Calcium Chloride CHETS_Calc_Amt"
+                    }
                   ]
                 }
               }
@@ -210,12 +240,18 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 3,
-                  "detailVarReferences" : [
-                    "Calcium Gluconate_Dose",
-                    "Calcium Gluconate_Calc_Dose",
-                    "Calcium Gluconate_Calc_Amt"
+                  "items" : [
+                    {
+                      "output" : "Calcium Gluconate_Dose"
+                    },
+                    {
+                      "output" : "Calcium Gluconate_Calc_Dose"
+                    },
+                    {
+                      "output" : "Calcium Gluconate_Calc_Amt"
+                    }
                   ]
                 }
               }
@@ -230,12 +266,18 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 3,
-                  "detailVarReferences" : [
-                    "Dextrose Hypoglycemia_Dose",
-                    "Dextrose Hypoglycemia_Calc_Dose",
-                    "Dextrose Hypoglycemia_Calc_Amt"
+                  "items" : [
+                    {
+                      "output" : "Dextrose Hypoglycemia_Dose"
+                    },
+                    {
+                      "output" : "Dextrose Hypoglycemia_Calc_Dose"
+                    },
+                    {
+                      "output" : "Dextrose Hypoglycemia_Calc_Amt"
+                    }
                   ]
                 }
               }
@@ -250,12 +292,18 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 3,
-                  "detailVarReferences" : [
-                    "Dextrose Hyperkalemia_Dose",
-                    "Dextrose Hyperkalemia_Calc_Dose",
-                    "Dextrose Hyperkalemia_Calc_Amt"
+                  "items" : [
+                    {
+                      "output" : "Dextrose Hyperkalemia_Dose"
+                    },
+                    {
+                      "output" : "Dextrose Hyperkalemia_Calc_Dose"
+                    },
+                    {
+                      "output" : "Dextrose Hyperkalemia_Calc_Amt"
+                    }
                   ]
                 }
               }
@@ -270,12 +318,18 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 3,
-                  "detailVarReferences" : [
-                    "Dextrose CHETS_Dose",
-                    "Dextrose CHETS_Calc_Dose",
-                    "Dextrose CHETS_Calc_Amt"
+                  "items" : [
+                    {
+                      "output" : "Dextrose CHETS_Dose"
+                    },
+                    {
+                      "output" : "Dextrose CHETS_Calc_Dose"
+                    },
+                    {
+                      "output" : "Dextrose CHETS_Calc_Amt"
+                    }
                   ]
                 }
               }
@@ -290,12 +344,18 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 3,
-                  "detailVarReferences" : [
-                    "Diazepam_Dose",
-                    "Diazepam_Calc_Dose",
-                    "Diazepam_Calc_Amt"
+                  "items" : [
+                    {
+                      "output" : "Diazepam_Dose"
+                    },
+                    {
+                      "output" : "Diazepam_Calc_Dose"
+                    },
+                    {
+                      "output" : "Diazepam_Calc_Amt"
+                    }
                   ]
                 }
               }
@@ -310,12 +370,18 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 3,
-                  "detailVarReferences" : [
-                    "Diphenydramine_Dose",
-                    "Diphenydramine_Calc_Dose",
-                    "Diphenydramine_Calc_Amt"
+                  "items" : [
+                    {
+                      "output" : "Diphenydramine_Dose"
+                    },
+                    {
+                      "output" : "Diphenydramine_Calc_Dose"
+                    },
+                    {
+                      "output" : "Diphenydramine_Calc_Amt"
+                    }
                   ]
                 }
               }
@@ -330,12 +396,18 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 3,
-                  "detailVarReferences" : [
-                    "Flumazenil_Dose",
-                    "Flumazenil_Calc_Dose",
-                    "Flumazenil_Calc_Amt"
+                  "items" : [
+                    {
+                      "output" : "Flumazenil_Dose"
+                    },
+                    {
+                      "output" : "Flumazenil_Calc_Dose"
+                    },
+                    {
+                      "output" : "Flumazenil_Calc_Amt"
+                    }
                   ]
                 }
               }
@@ -350,12 +422,18 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 3,
-                  "detailVarReferences" : [
-                    "Hydrocortisone_Dose",
-                    "Hydrocortisone_Calc_Dose",
-                    "Hydrocortisone_Calc_Amt"
+                  "items" : [
+                    {
+                      "output" : "Hydrocortisone_Dose"
+                    },
+                    {
+                      "output" : "Hydrocortisone_Calc_Dose"
+                    },
+                    {
+                      "output" : "Hydrocortisone_Calc_Amt"
+                    }
                   ]
                 }
               }
@@ -370,12 +448,18 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 3,
-                  "detailVarReferences" : [
-                    "Hydrocortisone Stress Dose_Dose",
-                    "Hydrocortisone Stress Dose_Calc_Dose",
-                    "Hydrocortisone Stress Dose_Calc_Amt"
+                  "items" : [
+                    {
+                      "output" : "Hydrocortisone Stress Dose_Dose"
+                    },
+                    {
+                      "output" : "Hydrocortisone Stress Dose_Calc_Dose"
+                    },
+                    {
+                      "output" : "Hydrocortisone Stress Dose_Calc_Amt"
+                    }
                   ]
                 }
               }
@@ -390,12 +474,18 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 3,
-                  "detailVarReferences" : [
-                    "Ketamine_Dose",
-                    "Ketamine_Calc_Dose",
-                    "Ketamine_Calc_Amt"
+                  "items" : [
+                    {
+                      "output" : "Ketamine_Dose"
+                    },
+                    {
+                      "output" : "Ketamine_Calc_Dose"
+                    },
+                    {
+                      "output" : "Ketamine_Calc_Amt"
+                    }
                   ]
                 }
               }
@@ -410,12 +500,18 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 3,
-                  "detailVarReferences" : [
-                    "Midazolam CHETS_Dose",
-                    "Midazolam CHETS_Calc_Dose",
-                    "Midazolam CHETS_Calc_Amt"
+                  "items" : [
+                    {
+                      "output" : "Midazolam CHETS_Dose"
+                    },
+                    {
+                      "output" : "Midazolam CHETS_Calc_Dose"
+                    },
+                    {
+                      "output" : "Midazolam CHETS_Calc_Amt"
+                    }
                   ]
                 }
               }
@@ -430,12 +526,18 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 3,
-                  "detailVarReferences" : [
-                    "Morphine Sulfate CHETS_Dose",
-                    "Morphine Sulfate CHETS_Calc_Dose",
-                    "Morphine Sulfate CHETS_Calc_Amt"
+                  "items" : [
+                    {
+                      "output" : "Morphine Sulfate CHETS_Dose"
+                    },
+                    {
+                      "output" : "Morphine Sulfate CHETS_Calc_Dose"
+                    },
+                    {
+                      "output" : "Morphine Sulfate CHETS_Calc_Amt"
+                    }
                   ]
                 }
               }
@@ -450,12 +552,18 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 3,
-                  "detailVarReferences" : [
-                    "Naloxone_Dose",
-                    "Naloxone_Calc_Dose",
-                    "Naloxone_Calc_Amt"
+                  "items" : [
+                    {
+                      "output" : "Naloxone_Dose"
+                    },
+                    {
+                      "output" : "Naloxone_Calc_Dose"
+                    },
+                    {
+                      "output" : "Naloxone_Calc_Amt"
+                    }
                   ]
                 }
               }
@@ -470,12 +578,18 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 3,
-                  "detailVarReferences" : [
-                    "Phenobarbitone_Dose",
-                    "Phenobarbitone_Calc_Dose",
-                    "Phenobarbitone_Calc_Amt"
+                  "items" : [
+                    {
+                      "output" : "Phenobarbitone_Dose"
+                    },
+                    {
+                      "output" : "Phenobarbitone_Calc_Dose"
+                    },
+                    {
+                      "output" : "Phenobarbitone_Calc_Amt"
+                    }
                   ]
                 }
               }
@@ -490,12 +604,18 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 3,
-                  "detailVarReferences" : [
-                    "Rocuronium CHETS_Dose",
-                    "Rocuronium CHETS_Calc_Dose",
-                    "Rocuronium CHETS_Calc_Amt"
+                  "items" : [
+                    {
+                      "output" : "Rocuronium CHETS_Dose"
+                    },
+                    {
+                      "output" : "Rocuronium CHETS_Calc_Dose"
+                    },
+                    {
+                      "output" : "Rocuronium CHETS_Calc_Amt"
+                    }
                   ]
                 }
               }
@@ -510,12 +630,18 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 3,
-                  "detailVarReferences" : [
-                    "Sodium Bicarbonate 8.4% CHETS_Dose",
-                    "Sodium Bicarbonate 8.4% CHETS_Calc_Dose",
-                    "Sodium Bicarbonate 8.4% CHETS_Calc_Amt"
+                  "items" : [
+                    {
+                      "output" : "Sodium Bicarbonate 8.4% CHETS_Dose"
+                    },
+                    {
+                      "output" : "Sodium Bicarbonate 8.4% CHETS_Calc_Dose"
+                    },
+                    {
+                      "output" : "Sodium Bicarbonate 8.4% CHETS_Calc_Amt"
+                    }
                   ]
                 }
               }
@@ -530,12 +656,18 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 3,
-                  "detailVarReferences" : [
-                    "Sodium Chloride 3%_Dose",
-                    "Sodium Chloride 3%_Calc_Dose",
-                    "Sodium Chloride 3%_Calc_Amt"
+                  "items" : [
+                    {
+                      "output" : "Sodium Chloride 3%_Dose"
+                    },
+                    {
+                      "output" : "Sodium Chloride 3%_Calc_Dose"
+                    },
+                    {
+                      "output" : "Sodium Chloride 3%_Calc_Amt"
+                    }
                   ]
                 }
               }
@@ -550,12 +682,18 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 3,
-                  "detailVarReferences" : [
-                    "Suxamethonium Chloride First Dose_Dose",
-                    "Suxamethonium Chloride First Dose_Calc_Dose",
-                    "Suxamethonium Chloride First Dose_Calc_Amt"
+                  "items" : [
+                    {
+                      "output" : "Suxamethonium Chloride First Dose_Dose"
+                    },
+                    {
+                      "output" : "Suxamethonium Chloride First Dose_Calc_Dose"
+                    },
+                    {
+                      "output" : "Suxamethonium Chloride First Dose_Calc_Amt"
+                    }
                   ]
                 }
               }
@@ -570,12 +708,18 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 3,
-                  "detailVarReferences" : [
-                    "Salbutamol Inhaler_Dose",
-                    "Salbutamol Inhaler_Calc_Dose",
-                    "Salbutamol Inhaler_Calc_Amt"
+                  "items" : [
+                    {
+                      "output" : "Salbutamol Inhaler_Dose"
+                    },
+                    {
+                      "output" : "Salbutamol Inhaler_Calc_Dose"
+                    },
+                    {
+                      "output" : "Salbutamol Inhaler_Calc_Amt"
+                    }
                   ]
                 }
               }
@@ -590,12 +734,18 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 3,
-                  "detailVarReferences" : [
-                    "Salbutamol Soluation_Dose",
-                    "Salbutamol Soluation_Calc_Dose",
-                    "Salbutamol Soluation_Calc_Amt"
+                  "items" : [
+                    {
+                      "output" : "Salbutamol Soluation_Dose"
+                    },
+                    {
+                      "output" : "Salbutamol Soluation_Calc_Dose"
+                    },
+                    {
+                      "output" : "Salbutamol Soluation_Calc_Amt"
+                    }
                   ]
                 }
               }
@@ -619,13 +769,21 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 2,
-                  "detailVarReferences" : [
-                    "adrenalineConcentration_doseIn50mL",
-                    "adrenalineConcentration_concentrationOfPeripheralLine",
-                    "adrenalineConcentration_calculatedRange",
-                    "adrenalineConcentration_calculatedRate"
+                  "items" : [
+                    {
+                      "output" : "adrenalineConcentration_doseIn50mL"
+                    },
+                    {
+                      "output" : "adrenalineConcentration_concentrationOfPeripheralLine"
+                    },
+                    {
+                      "output" : "adrenalineConcentration_calculatedRange"
+                    },
+                    {
+                      "output" : "adrenalineConcentration_calculatedRate"
+                    }
                   ]
                 }
               }
@@ -643,13 +801,21 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 2,
-                  "detailVarReferences" : [
-                    "dobutamineConcentration_doseIn50mL",
-                    "dobutamineConcentration_concentrationOfPeripheralLine",
-                    "dobutamineConcentration_calculatedRange",
-                    "dobutamineConcentration_calculatedRate"
+                  "items" : [
+                    {
+                      "output" : "dobutamineConcentration_doseIn50mL"
+                    },
+                    {
+                      "output" : "dobutamineConcentration_concentrationOfPeripheralLine"
+                    },
+                    {
+                      "output" : "dobutamineConcentration_calculatedRange"
+                    },
+                    {
+                      "output" : "dobutamineConcentration_calculatedRate"
+                    }
                   ]
                 }
               }
@@ -667,13 +833,21 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 2,
-                  "detailVarReferences" : [
-                    "dopamineConcentration_doseIn50mL",
-                    "dopamineConcentration_concentrationOfPeripheralLine",
-                    "dopamineConcentration_calculatedRange",
-                    "dopamineConcentration_calculatedRate"
+                  "items" : [
+                    {
+                      "output" : "dopamineConcentration_doseIn50mL"
+                    },
+                    {
+                      "output" : "dopamineConcentration_concentrationOfPeripheralLine"
+                    },
+                    {
+                      "output" : "dopamineConcentration_calculatedRange"
+                    },
+                    {
+                      "output" : "dopamineConcentration_calculatedRate"
+                    }
                   ]
                 }
               }
@@ -691,13 +865,21 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 2,
-                  "detailVarReferences" : [
-                    "midazolamConcentration_doseIn50mL",
-                    "midazolamConcentration_concentrationOfPeripheralLine",
-                    "midazolamConcentration_calculatedRange",
-                    "midazolamConcentration_calculatedRate"
+                  "items" : [
+                    {
+                      "output" : "midazolamConcentration_doseIn50mL"
+                    },
+                    {
+                      "output" : "midazolamConcentration_concentrationOfPeripheralLine"
+                    },
+                    {
+                      "output" : "midazolamConcentration_calculatedRange"
+                    },
+                    {
+                      "output" : "midazolamConcentration_calculatedRate"
+                    }
                   ]
                 }
               }
@@ -715,13 +897,21 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 2,
-                  "detailVarReferences" : [
-                    "morphineConcentration_doseIn50mL",
-                    "morphineConcentration_concentrationOfPeripheralLine",
-                    "morphineConcentration_calculatedRange",
-                    "morphineConcentration_calculatedRate"
+                  "items" : [
+                    {
+                      "output" : "morphineConcentration_doseIn50mL"
+                    },
+                    {
+                      "output" : "morphineConcentration_concentrationOfPeripheralLine"
+                    },
+                    {
+                      "output" : "morphineConcentration_calculatedRange"
+                    },
+                    {
+                      "output" : "morphineConcentration_calculatedRate"
+                    }
                   ]
                 }
               }
@@ -738,13 +928,21 @@
             },
             "details" : [
               {
-                "detailedOutput" : {
+                "gridInputOutput" : {
                   "columnCount" : 2,
-                  "detailVarReferences" : [
-                    "noradrenalineConcentration_doseIn50mL",
-                    "noradrenalineConcentration_concentrationOfPeripheralLine",
-                    "noradrenalineConcentration_calculatedRange",
-                    "noradrenalineConcentration_calculatedRate"
+                  "items" : [
+                    {
+                      "output" : "noradrenalineConcentration_doseIn50mL"
+                    },
+                    {
+                      "output" : "noradrenalineConcentration_concentrationOfPeripheralLine"
+                    },
+                    {
+                      "output" : "noradrenalineConcentration_calculatedRange"
+                    },
+                    {
+                      "output" : "noradrenalineConcentration_calculatedRate"
+                    }
                   ]
                 }
               }
