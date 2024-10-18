@@ -163,10 +163,14 @@
           }
         },
         {
+          "output" : "calculateNumberOfHours"
+        },
+        {
           "output" : "totalDripVolume"
         }
       ],
       "name" : "Drip Rate",
+      "notes" : "Please enter the time in 24-hour format for which you want to calculate the number of hours remaining until 6 AM (e.g., 5 PM = 17, resulting in 13 hours until 6 AM).\nYou can enter midnight as either 0 or 24 hours.",
       "showName" : false
     },
     {

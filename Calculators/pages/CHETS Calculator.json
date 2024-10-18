@@ -104,353 +104,653 @@
     {
       "components" : [
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 3,
-            "detailVarReferences" : [
-              "Adenosine_Dose",
-              "Adenosine_Calc_Dose",
-              "Adenosine_Calc_Amt"
+          "disclosure" : {
+            "component" : {
+              "output" : "Adenosine_Summary"
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 3,
+                  "items" : [
+                    {
+                      "output" : "Adenosine_Dose"
+                    },
+                    {
+                      "output" : "Adenosine_Calc_Dose"
+                    },
+                    {
+                      "output" : "Adenosine_Calc_Amt"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Adenosine (6mg\/2mL)",
-            "notes" : "Maximum dose: 6mg\nRoute: IV rapid bolus",
-            "primaryVarReference" : "Adenosine_Calc_Amt"
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 3,
-            "detailVarReferences" : [
-              "Adrenaline CHETS_Dose",
-              "Adrenaline CHETS_Calc_Dose",
-              "Adrenaline CHETS_Calc_Amt"
+          "disclosure" : {
+            "component" : {
+              "output" : "Adrenaline CHETS_Summary"
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 3,
+                  "items" : [
+                    {
+                      "output" : "Adrenaline CHETS_Dose"
+                    },
+                    {
+                      "output" : "Adrenaline CHETS_Calc_Dose"
+                    },
+                    {
+                      "output" : "Adrenaline CHETS_Calc_Amt"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Adrenaline [Ephinephrine] 0.1mg\/ml (1 : 10,000)",
-            "notes" : "Maximum dose: 1mg\nRoute: IV bolus",
-            "primaryVarReference" : "Adrenaline CHETS_Calc_Amt"
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 3,
-            "detailVarReferences" : [
-              "Amiodarone_Dose",
-              "Amiodarone_Calc_Dose",
-              "Amiodarone_Calc_Amt"
+          "disclosure" : {
+            "component" : {
+              "output" : "Amiodarone_Summary"
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 3,
+                  "items" : [
+                    {
+                      "output" : "Amiodarone_Dose"
+                    },
+                    {
+                      "output" : "Amiodarone_Calc_Dose"
+                    },
+                    {
+                      "output" : "Amiodarone_Calc_Amt"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Amiodarone (150mg\/3mL)",
-            "notes" : "Maximum dose: 300mg\nRoute: IV bolus",
-            "primaryVarReference" : "Amiodarone_Calc_Amt"
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 3,
-            "detailVarReferences" : [
-              "Atropine Sulfate CHETS_Dose",
-              "Atropine Sulfate CHETS_Calc_Dose",
-              "Atropine Sulfate CHETS_Calc_Amt"
+          "disclosure" : {
+            "component" : {
+              "output" : "Atropine Sulfate CHETS_Summary"
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 3,
+                  "items" : [
+                    {
+                      "output" : "Atropine Sulfate CHETS_Dose"
+                    },
+                    {
+                      "output" : "Atropine Sulfate CHETS_Calc_Dose"
+                    },
+                    {
+                      "output" : "Atropine Sulfate CHETS_Calc_Amt"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Atropine Sulfate 600mcg\/mL",
-            "notes" : "Maximum dose: 0.6mg\/600mcg\nRoute: IV rapid bolus",
-            "primaryVarReference" : "Atropine Sulfate CHETS_Calc_Amt"
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 3,
-            "detailVarReferences" : [
-              "Calcium Chloride CHETS_Dose",
-              "Calcium Chloride CHETS_Calc_Dose",
-              "Calcium Chloride CHETS_Calc_Amt"
+          "disclosure" : {
+            "component" : {
+              "output" : "Calcium Chloride CHETS_Summary"
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 3,
+                  "items" : [
+                    {
+                      "output" : "Calcium Chloride CHETS_Dose"
+                    },
+                    {
+                      "output" : "Calcium Chloride CHETS_Calc_Dose"
+                    },
+                    {
+                      "output" : "Calcium Chloride CHETS_Calc_Amt"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Calcium Chloride 10% (6.8mmol\/10mL)",
-            "notes" : "Maximum dose: 20mL\nRoute: IV slow bolus",
-            "primaryVarReference" : "Calcium Chloride CHETS_Calc_Amt"
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 3,
-            "detailVarReferences" : [
-              "Calcium Gluconate_Dose",
-              "Calcium Gluconate_Calc_Dose",
-              "Calcium Gluconate_Calc_Amt"
+          "disclosure" : {
+            "component" : {
+              "output" : "Calcium Gluconate_Summary"
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 3,
+                  "items" : [
+                    {
+                      "output" : "Calcium Gluconate_Dose"
+                    },
+                    {
+                      "output" : "Calcium Gluconate_Calc_Dose"
+                    },
+                    {
+                      "output" : "Calcium Gluconate_Calc_Amt"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Calcium Gluconate 10% (2.3mmol\/10mL)",
-            "notes" : "Maximum dose: 30ml\nRoute: IV slow bolus",
-            "primaryVarReference" : "Calcium Gluconate_Calc_Amt"
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 3,
-            "detailVarReferences" : [
-              "Dextrose Hypoglycemia_Dose",
-              "Dextrose Hypoglycemia_Calc_Dose",
-              "Dextrose Hypoglycemia_Calc_Amt"
+          "disclosure" : {
+            "component" : {
+              "output" : "Dextrose Hypoglycemia_Summary"
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 3,
+                  "items" : [
+                    {
+                      "output" : "Dextrose Hypoglycemia_Dose"
+                    },
+                    {
+                      "output" : "Dextrose Hypoglycemia_Calc_Dose"
+                    },
+                    {
+                      "output" : "Dextrose Hypoglycemia_Calc_Amt"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Dextrose 10% (Hypoglycemia)",
-            "notes" : "Maximum dose: 250ml\nRoute: IV bolus",
-            "primaryVarReference" : "Dextrose Hypoglycemia_Calc_Amt"
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 3,
-            "detailVarReferences" : [
-              "Dextrose Hyperkalemia_Dose",
-              "Dextrose Hyperkalemia_Calc_Dose",
-              "Dextrose Hyperkalemia_Calc_Amt"
+          "disclosure" : {
+            "component" : {
+              "output" : "Dextrose Hyperkalemia_Summary"
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 3,
+                  "items" : [
+                    {
+                      "output" : "Dextrose Hyperkalemia_Dose"
+                    },
+                    {
+                      "output" : "Dextrose Hyperkalemia_Calc_Dose"
+                    },
+                    {
+                      "output" : "Dextrose Hyperkalemia_Calc_Amt"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Dextrose 10% (Hyperkalemia)",
-            "notes" : "Maximum dose: 250ml\nRoute: IV bolus",
-            "primaryVarReference" : "Dextrose Hyperkalemia_Calc_Amt"
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 3,
-            "detailVarReferences" : [
-              "Dextrose CHETS_Dose",
-              "Dextrose CHETS_Calc_Dose",
-              "Dextrose CHETS_Calc_Amt"
+          "disclosure" : {
+            "component" : {
+              "output" : "Dextrose CHETS_Summary"
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 3,
+                  "items" : [
+                    {
+                      "output" : "Dextrose CHETS_Dose"
+                    },
+                    {
+                      "output" : "Dextrose CHETS_Calc_Dose"
+                    },
+                    {
+                      "output" : "Dextrose CHETS_Calc_Amt"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Dextrose 25%",
-            "notes" : "Maximum dose: 100ml\nRoute: IV bolus",
-            "primaryVarReference" : "Dextrose CHETS_Calc_Amt"
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 3,
-            "detailVarReferences" : [
-              "Diazepam_Dose",
-              "Diazepam_Calc_Dose",
-              "Diazepam_Calc_Amt"
+          "disclosure" : {
+            "component" : {
+              "output" : "Diazepam_Summary"
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 3,
+                  "items" : [
+                    {
+                      "output" : "Diazepam_Dose"
+                    },
+                    {
+                      "output" : "Diazepam_Calc_Dose"
+                    },
+                    {
+                      "output" : "Diazepam_Calc_Amt"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Diazepam (10mg\/2mL)",
-            "notes" : "Maximum dose: 10mg\nRoute: IV bolus",
-            "primaryVarReference" : "Diazepam_Calc_Amt"
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 3,
-            "detailVarReferences" : [
-              "Diphenydramine_Dose",
-              "Diphenydramine_Calc_Dose",
-              "Diphenydramine_Calc_Amt"
+          "disclosure" : {
+            "component" : {
+              "output" : "Diphenydramine_Summary"
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 3,
+                  "items" : [
+                    {
+                      "output" : "Diphenydramine_Dose"
+                    },
+                    {
+                      "output" : "Diphenydramine_Calc_Dose"
+                    },
+                    {
+                      "output" : "Diphenydramine_Calc_Amt"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Diphenydramine (50mg\/mL)",
-            "notes" : "Maximum dose: 50mg\nRoute: IV bolus",
-            "primaryVarReference" : "Diphenydramine_Calc_Amt"
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 3,
-            "detailVarReferences" : [
-              "Flumazenil_Dose",
-              "Flumazenil_Calc_Dose",
-              "Flumazenil_Calc_Amt"
+          "disclosure" : {
+            "component" : {
+              "output" : "Flumazenil_Summary"
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 3,
+                  "items" : [
+                    {
+                      "output" : "Flumazenil_Dose"
+                    },
+                    {
+                      "output" : "Flumazenil_Calc_Dose"
+                    },
+                    {
+                      "output" : "Flumazenil_Calc_Amt"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Flumazenil (0.5mg\/5mL)",
-            "notes" : "Maximum dose: 200mcg\nRoute: IV bolus",
-            "primaryVarReference" : "Flumazenil_Calc_Amt"
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 3,
-            "detailVarReferences" : [
-              "Hydrocortisone_Dose",
-              "Hydrocortisone_Calc_Dose",
-              "Hydrocortisone_Calc_Amt"
+          "disclosure" : {
+            "component" : {
+              "output" : "Hydrocortisone_Summary"
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 3,
+                  "items" : [
+                    {
+                      "output" : "Hydrocortisone_Dose"
+                    },
+                    {
+                      "output" : "Hydrocortisone_Calc_Dose"
+                    },
+                    {
+                      "output" : "Hydrocortisone_Calc_Amt"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Hydrocortisone (100mg)",
-            "notes" : "Maximum dose: 100mg\nRoute: IV bolus",
-            "primaryVarReference" : "Hydrocortisone_Calc_Amt"
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 3,
-            "detailVarReferences" : [
-              "Hydrocortisone Stress Dose_Dose",
-              "Hydrocortisone Stress Dose_Calc_Dose",
-              "Hydrocortisone Stress Dose_Calc_Amt"
+          "disclosure" : {
+            "component" : {
+              "output" : "Hydrocortisone Stress Dose_Summary"
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 3,
+                  "items" : [
+                    {
+                      "output" : "Hydrocortisone Stress Dose_Dose"
+                    },
+                    {
+                      "output" : "Hydrocortisone Stress Dose_Calc_Dose"
+                    },
+                    {
+                      "output" : "Hydrocortisone Stress Dose_Calc_Amt"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Hydrocortisone (100mg) [PHYSIOLOGICAL STRESS DOSE]",
-            "notes" : "Maximum dose: 100mg\nRoute: IV bolus",
-            "primaryVarReference" : "Hydrocortisone Stress Dose_Calc_Amt"
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 3,
-            "detailVarReferences" : [
-              "Ketamine_Dose",
-              "Ketamine_Calc_Dose",
-              "Ketamine_Calc_Amt"
+          "disclosure" : {
+            "component" : {
+              "output" : "Ketamine_Summary"
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 3,
+                  "items" : [
+                    {
+                      "output" : "Ketamine_Dose"
+                    },
+                    {
+                      "output" : "Ketamine_Calc_Dose"
+                    },
+                    {
+                      "output" : "Ketamine_Calc_Amt"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Ketamine (100mg\/2mL)",
-            "notes" : "Maximum dose: 50mg\nRoute: IV bolus",
-            "primaryVarReference" : "Ketamine_Calc_Amt"
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 3,
-            "detailVarReferences" : [
-              "Midazolam CHETS_Dose",
-              "Midazolam CHETS_Calc_Dose",
-              "Midazolam CHETS_Calc_Amt"
+          "disclosure" : {
+            "component" : {
+              "output" : "Midazolam CHETS_Summary"
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 3,
+                  "items" : [
+                    {
+                      "output" : "Midazolam CHETS_Dose"
+                    },
+                    {
+                      "output" : "Midazolam CHETS_Calc_Dose"
+                    },
+                    {
+                      "output" : "Midazolam CHETS_Calc_Amt"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Midazolam (15mg\/3mL)",
-            "notes" : "Maximum dose: 5mg\nRoute: IV bolus",
-            "primaryVarReference" : "Midazolam CHETS_Calc_Amt"
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 3,
-            "detailVarReferences" : [
-              "Morphine Sulfate CHETS_Dose",
-              "Morphine Sulfate CHETS_Calc_Dose",
-              "Morphine Sulfate CHETS_Calc_Amt"
+          "disclosure" : {
+            "component" : {
+              "output" : "Morphine Sulfate CHETS_Summary"
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 3,
+                  "items" : [
+                    {
+                      "output" : "Morphine Sulfate CHETS_Dose"
+                    },
+                    {
+                      "output" : "Morphine Sulfate CHETS_Calc_Dose"
+                    },
+                    {
+                      "output" : "Morphine Sulfate CHETS_Calc_Amt"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Morphine Sulfate (10mg\/mL)",
-            "notes" : "Maximum dose: 5mg\nRoute: IV slow bolus",
-            "primaryVarReference" : "Morphine Sulfate CHETS_Calc_Amt"
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 3,
-            "detailVarReferences" : [
-              "Naloxone_Dose",
-              "Naloxone_Calc_Dose",
-              "Naloxone_Calc_Amt"
+          "disclosure" : {
+            "component" : {
+              "output" : "Naloxone_Summary"
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 3,
+                  "items" : [
+                    {
+                      "output" : "Naloxone_Dose"
+                    },
+                    {
+                      "output" : "Naloxone_Calc_Dose"
+                    },
+                    {
+                      "output" : "Naloxone_Calc_Amt"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Naloxone (0.4mg\/mL) *OPIOID OVERDOSE*",
-            "notes" : "Maximum dose: 2mg\nRoute: IV bolus",
-            "primaryVarReference" : "Naloxone_Calc_Amt"
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 3,
-            "detailVarReferences" : [
-              "Phenobarbitone_Dose",
-              "Phenobarbitone_Calc_Dose",
-              "Phenobarbitone_Calc_Amt"
+          "disclosure" : {
+            "component" : {
+              "output" : "Phenobarbitone_Summary"
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 3,
+                  "items" : [
+                    {
+                      "output" : "Phenobarbitone_Dose"
+                    },
+                    {
+                      "output" : "Phenobarbitone_Calc_Dose"
+                    },
+                    {
+                      "output" : "Phenobarbitone_Calc_Amt"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Phenobarbitone (200mg\/mL) *LOADING dose*",
-            "notes" : "Maximum dose: 1000mg\nRoute: IV intermittent",
-            "primaryVarReference" : "Phenobarbitone_Calc_Amt"
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 3,
-            "detailVarReferences" : [
-              "Rocuronium CHETS_Dose",
-              "Rocuronium CHETS_Calc_Dose",
-              "Rocuronium CHETS_Calc_Amt"
+          "disclosure" : {
+            "component" : {
+              "output" : "Rocuronium CHETS_Summary"
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 3,
+                  "items" : [
+                    {
+                      "output" : "Rocuronium CHETS_Dose"
+                    },
+                    {
+                      "output" : "Rocuronium CHETS_Calc_Dose"
+                    },
+                    {
+                      "output" : "Rocuronium CHETS_Calc_Amt"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Rocuronium Br (50mg\/5mL) *FIRST dose*",
-            "notes" : "Maximum dose: 50mg\nRoute: IV bolus",
-            "primaryVarReference" : "Rocuronium CHETS_Calc_Amt"
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 3,
-            "detailVarReferences" : [
-              "Sodium Bicarbonate 8.4% CHETS_Dose",
-              "Sodium Bicarbonate 8.4% CHETS_Calc_Dose",
-              "Sodium Bicarbonate 8.4% CHETS_Calc_Amt"
+          "disclosure" : {
+            "component" : {
+              "output" : "Sodium Bicarbonate 8.4% CHETS_Summary"
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 3,
+                  "items" : [
+                    {
+                      "output" : "Sodium Bicarbonate 8.4% CHETS_Dose"
+                    },
+                    {
+                      "output" : "Sodium Bicarbonate 8.4% CHETS_Calc_Dose"
+                    },
+                    {
+                      "output" : "Sodium Bicarbonate 8.4% CHETS_Calc_Amt"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Sodium Bicarbonate 8.4% (1mmol\/mL)",
-            "notes" : "Maximum dose: 50mmol\nRoute: IV slow bolus",
-            "primaryVarReference" : "Sodium Bicarbonate 8.4% CHETS_Calc_Amt"
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 3,
-            "detailVarReferences" : [
-              "Sodium Chloride 3%_Dose",
-              "Sodium Chloride 3%_Calc_Dose",
-              "Sodium Chloride 3%_Calc_Amt"
+          "disclosure" : {
+            "component" : {
+              "output" : "Sodium Chloride 3%_Summary"
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 3,
+                  "items" : [
+                    {
+                      "output" : "Sodium Chloride 3%_Dose"
+                    },
+                    {
+                      "output" : "Sodium Chloride 3%_Calc_Dose"
+                    },
+                    {
+                      "output" : "Sodium Chloride 3%_Calc_Amt"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Sodium Chloride 3%",
-            "notes" : "Maximum dose: 200ml\nRoute: IV intermittent",
-            "primaryVarReference" : "Sodium Chloride 3%_Calc_Amt"
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 3,
-            "detailVarReferences" : [
-              "Suxamethonium Chloride First Dose_Dose",
-              "Suxamethonium Chloride First Dose_Calc_Dose",
-              "Suxamethonium Chloride First Dose_Calc_Amt"
+          "disclosure" : {
+            "component" : {
+              "output" : "Suxamethonium Chloride First Dose_Summary"
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 3,
+                  "items" : [
+                    {
+                      "output" : "Suxamethonium Chloride First Dose_Dose"
+                    },
+                    {
+                      "output" : "Suxamethonium Chloride First Dose_Calc_Dose"
+                    },
+                    {
+                      "output" : "Suxamethonium Chloride First Dose_Calc_Amt"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Suxamethonium Chloride (100mg\/2mL) *FIRST Dose*",
-            "notes" : "Maximum dose: 24mg\nRoute: IV bolus",
-            "primaryVarReference" : "Suxamethonium Chloride First Dose_Calc_Amt"
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 3,
-            "detailVarReferences" : [
-              "Salbutamol Inhaler_Dose",
-              "Salbutamol Inhaler_Calc_Dose",
-              "Salbutamol Inhaler_Calc_Amt"
+          "disclosure" : {
+            "component" : {
+              "output" : "Salbutamol Inhaler_Summary"
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 3,
+                  "items" : [
+                    {
+                      "output" : "Salbutamol Inhaler_Dose"
+                    },
+                    {
+                      "output" : "Salbutamol Inhaler_Calc_Dose"
+                    },
+                    {
+                      "output" : "Salbutamol Inhaler_Calc_Amt"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Salbutamol Inhaler",
-            "notes" : "Maximum dose: 10 puffs\nRoute: 3.6 puffs",
-            "primaryVarReference" : "Salbutamol Inhaler_Calc_Amt"
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 3,
-            "detailVarReferences" : [
-              "Salbutamol Soluation_Dose",
-              "Salbutamol Soluation_Calc_Dose",
-              "Salbutamol Soluation_Calc_Amt"
+          "disclosure" : {
+            "component" : {
+              "output" : "Salbutamol Soluation_Summary"
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 3,
+                  "items" : [
+                    {
+                      "output" : "Salbutamol Soluation_Dose"
+                    },
+                    {
+                      "output" : "Salbutamol Soluation_Calc_Dose"
+                    },
+                    {
+                      "output" : "Salbutamol Soluation_Calc_Amt"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Salbutamol 0.5% NEBULIZER Solution",
-            "notes" : "Maximum dose: 1ml\nRoute: Nebs",
-            "primaryVarReference" : "Salbutamol Soluation_Calc_Amt"
+            "expandedByDefault" : false
           }
         }
       ],
@@ -460,92 +760,194 @@
     {
       "components" : [
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 2,
-            "detailVarReferences" : [
-              "adrenalineConcentration_doseIn50mL",
-              "adrenalineConcentration_concentrationOfPeripheralLine",
-              "adrenalineConcentration_calculatedRange",
-              "adrenalineConcentration_calculatedRate"
+          "disclosure" : {
+            "component" : {
+              "subsectionTitle" : {
+                "subtitle" : "Note: Weight based formula used for weight ≤ 5kg\n((0.3*Weight)mg in 50mL = 1mL\/hour = 0.1mcg\/kg\/min)",
+                "text" : "Adrenaline"
+              }
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 2,
+                  "items" : [
+                    {
+                      "output" : "adrenalineConcentration_doseIn50mL"
+                    },
+                    {
+                      "output" : "adrenalineConcentration_concentrationOfPeripheralLine"
+                    },
+                    {
+                      "output" : "adrenalineConcentration_calculatedRange"
+                    },
+                    {
+                      "output" : "adrenalineConcentration_calculatedRate"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Adrenaline",
-            "notes" : "Note: Weight based formula used for weight ≤ 5kg\n((0.3*Weight)mg in 50mL = 1mL\/hour = 0.1mcg\/kg\/min)",
-            "primaryVarReference" : ""
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 2,
-            "detailVarReferences" : [
-              "dobutamineConcentration_doseIn50mL",
-              "dobutamineConcentration_concentrationOfPeripheralLine",
-              "dobutamineConcentration_calculatedRange",
-              "dobutamineConcentration_calculatedRate"
+          "disclosure" : {
+            "component" : {
+              "subsectionTitle" : {
+                "subtitle" : "Note: Weight based formula used for weight ≤ 8kg\n((30*Weight)mg in 50mL = 1mL\/hour = 10mcg\/kg\/min)",
+                "text" : "Dobutamine"
+              }
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 2,
+                  "items" : [
+                    {
+                      "output" : "dobutamineConcentration_doseIn50mL"
+                    },
+                    {
+                      "output" : "dobutamineConcentration_concentrationOfPeripheralLine"
+                    },
+                    {
+                      "output" : "dobutamineConcentration_calculatedRange"
+                    },
+                    {
+                      "output" : "dobutamineConcentration_calculatedRate"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Dobutamine",
-            "notes" : "Note: Weight based formula used for weight ≤ 8kg\n((30*Weight)mg in 50mL = 1mL\/hour = 10mcg\/kg\/min)",
-            "primaryVarReference" : ""
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 2,
-            "detailVarReferences" : [
-              "dopamineConcentration_doseIn50mL",
-              "dopamineConcentration_concentrationOfPeripheralLine",
-              "dopamineConcentration_calculatedRange",
-              "dopamineConcentration_calculatedRate"
+          "disclosure" : {
+            "component" : {
+              "subsectionTitle" : {
+                "subtitle" : "Note: Weight based formula used for weight ≤ 5kg\n((30*Weight)mg in 50mL = 1mL\/hour = 10mcg\/kg\/min)",
+                "text" : "Dopamine"
+              }
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 2,
+                  "items" : [
+                    {
+                      "output" : "dopamineConcentration_doseIn50mL"
+                    },
+                    {
+                      "output" : "dopamineConcentration_concentrationOfPeripheralLine"
+                    },
+                    {
+                      "output" : "dopamineConcentration_calculatedRange"
+                    },
+                    {
+                      "output" : "dopamineConcentration_calculatedRate"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Dopamine",
-            "notes" : "Note: Weight based formula used for weight ≤ 5kg\n((30*Weight)mg in 50mL = 1mL\/hour = 10mcg\/kg\/min)",
-            "primaryVarReference" : ""
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 2,
-            "detailVarReferences" : [
-              "midazolamConcentration_doseIn50mL",
-              "midazolamConcentration_concentrationOfPeripheralLine",
-              "midazolamConcentration_calculatedRange",
-              "midazolamConcentration_calculatedRate"
+          "disclosure" : {
+            "component" : {
+              "subsectionTitle" : {
+                "subtitle" : "Note: Weight based formula used for weight ≤ 16kg\n((3*Weight)mg in 50mL = 1mL\/hour = 1mcg\/kg\/min)",
+                "text" : "Midazolam"
+              }
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 2,
+                  "items" : [
+                    {
+                      "output" : "midazolamConcentration_doseIn50mL"
+                    },
+                    {
+                      "output" : "midazolamConcentration_concentrationOfPeripheralLine"
+                    },
+                    {
+                      "output" : "midazolamConcentration_calculatedRange"
+                    },
+                    {
+                      "output" : "midazolamConcentration_calculatedRate"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Midazolam",
-            "notes" : "Note: Weight based formula used for weight ≤ 16kg\n((3*Weight)mg in 50mL = 1mL\/hour = 1mcg\/kg\/min)",
-            "primaryVarReference" : ""
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 2,
-            "detailVarReferences" : [
-              "morphineConcentration_doseIn50mL",
-              "morphineConcentration_concentrationOfPeripheralLine",
-              "morphineConcentration_calculatedRange",
-              "morphineConcentration_calculatedRate"
+          "disclosure" : {
+            "component" : {
+              "subsectionTitle" : {
+                "subtitle" : "Note: Weight based formula used for weight ≤ 50kg\n((1*Weight)mg in 50mL = 1mL\/hour = 20mcg\/kg\/hour)",
+                "text" : "Morphine"
+              }
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 2,
+                  "items" : [
+                    {
+                      "output" : "morphineConcentration_doseIn50mL"
+                    },
+                    {
+                      "output" : "morphineConcentration_concentrationOfPeripheralLine"
+                    },
+                    {
+                      "output" : "morphineConcentration_calculatedRange"
+                    },
+                    {
+                      "output" : "morphineConcentration_calculatedRate"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Morphine",
-            "notes" : "Note: Weight based formula used for weight ≤ 50kg\n((1*Weight)mg in 50mL = 1mL\/hour = 20mcg\/kg\/hour)",
-            "primaryVarReference" : ""
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 2,
-            "detailVarReferences" : [
-              "noradrenalineConcentration_doseIn50mL",
-              "noradrenalineConcentration_concentrationOfPeripheralLine",
-              "noradrenalineConcentration_calculatedRange",
-              "noradrenalineConcentration_calculatedRate"
+          "disclosure" : {
+            "component" : {
+              "subsectionTitle" : {
+                "text" : "Noradrenaline"
+              }
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 2,
+                  "items" : [
+                    {
+                      "output" : "noradrenalineConcentration_doseIn50mL"
+                    },
+                    {
+                      "output" : "noradrenalineConcentration_concentrationOfPeripheralLine"
+                    },
+                    {
+                      "output" : "noradrenalineConcentration_calculatedRange"
+                    },
+                    {
+                      "output" : "noradrenalineConcentration_calculatedRate"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Noradrenaline",
-            "primaryVarReference" : ""
+            "expandedByDefault" : false
           }
         }
       ],

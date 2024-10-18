@@ -27,360 +27,960 @@
     {
       "components" : [
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 2,
-            "detailVarReferences" : [
-              "adrenalineConcentration_doseIn50mL",
-              "adrenalineConcentration_concentrationOfPeripheralLine",
-              "adrenalineConcentration_calculatedRange",
-              "adrenalineConcentration_calculatedRate"
+          "disclosure" : {
+            "component" : {
+              "subsectionTitle" : {
+                "subtitle" : "Note: Weight based formula used for weight ≤ 5kg\n((0.3*Weight)mg in 50mL = 1mL\/hour = 0.1mcg\/kg\/min)",
+                "text" : "Adrenaline"
+              }
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 2,
+                  "items" : [
+                    {
+                      "output" : "adrenalineConcentration_doseIn50mL"
+                    },
+                    {
+                      "output" : "adrenalineConcentration_concentrationOfPeripheralLine"
+                    },
+                    {
+                      "input" : {
+                        "color" : {
+                          "blue" : 0.8705882352941177,
+                          "green" : 0.3215686274509804,
+                          "red" : 0.6862745098039216
+                        },
+                        "variableReference" : "adrenalineConcentration_calculatedRange"
+                      }
+                    },
+                    {
+                      "output" : "adrenalineConcentration_calculatedRate"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Adrenaline",
-            "notes" : "Note: Weight based formula used for weight ≤ 5kg\n((0.3*Weight)mg in 50mL = 1mL\/hour = 0.1mcg\/kg\/min)",
-            "primaryVarReference" : ""
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 2,
-            "detailVarReferences" : [
-              "aminophyllineConcentration_doseIn50mL",
-              "aminophyllineConcentration_concentrationOfPeripheralLine",
-              "aminophyllineConcentration_calculatedRange",
-              "aminophyllineConcentration_calculatedRate"
+          "disclosure" : {
+            "component" : {
+              "subsectionTitle" : {
+                "text" : "Aminophylline"
+              }
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 2,
+                  "items" : [
+                    {
+                      "output" : "aminophyllineConcentration_doseIn50mL"
+                    },
+                    {
+                      "output" : "aminophyllineConcentration_concentrationOfPeripheralLine"
+                    },
+                    {
+                      "input" : {
+                        "color" : {
+                          "blue" : 0.8705882352941177,
+                          "green" : 0.3215686274509804,
+                          "red" : 0.6862745098039216
+                        },
+                        "variableReference" : "aminophyllineConcentration_calculatedRange"
+                      }
+                    },
+                    {
+                      "output" : "aminophyllineConcentration_calculatedRate"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Aminophylline",
-            "primaryVarReference" : ""
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 2,
-            "detailVarReferences" : [
-              "alprostadilConcentration_doseIn50mL",
-              "alprostadilConcentration_concentrationOfPeripheralLine",
-              "alprostadilConcentration_calculatedRange",
-              "alprostadilConcentration_calculatedRate"
+          "disclosure" : {
+            "component" : {
+              "subsectionTitle" : {
+                "text" : "Alprostadil"
+              }
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 2,
+                  "items" : [
+                    {
+                      "output" : "alprostadilConcentration_doseIn50mL"
+                    },
+                    {
+                      "output" : "alprostadilConcentration_concentrationOfPeripheralLine"
+                    },
+                    {
+                      "input" : {
+                        "color" : {
+                          "blue" : 0.8705882352941177,
+                          "green" : 0.3215686274509804,
+                          "red" : 0.6862745098039216
+                        },
+                        "variableReference" : "alprostadilConcentration_calculatedRange"
+                      }
+                    },
+                    {
+                      "output" : "alprostadilConcentration_calculatedRate"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Alprostadil",
-            "primaryVarReference" : ""
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 2,
-            "detailVarReferences" : [
-              "amiodaroneConcentration_doseIn50mL",
-              "amiodaroneConcentration_concentrationOfPeripheralLine",
-              "amiodaroneConcentration_calculatedRange",
-              "amiodaroneConcentration_calculatedRate"
+          "disclosure" : {
+            "component" : {
+              "subsectionTitle" : {
+                "text" : "Amiodarone"
+              }
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 2,
+                  "items" : [
+                    {
+                      "output" : "amiodaroneConcentration_doseIn50mL"
+                    },
+                    {
+                      "output" : "amiodaroneConcentration_concentrationOfPeripheralLine"
+                    },
+                    {
+                      "input" : {
+                        "color" : {
+                          "blue" : 0.8705882352941177,
+                          "green" : 0.3215686274509804,
+                          "red" : 0.6862745098039216
+                        },
+                        "variableReference" : "amiodaroneConcentration_calculatedRange"
+                      }
+                    },
+                    {
+                      "output" : "amiodaroneConcentration_calculatedRate"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Amiodarone",
-            "primaryVarReference" : ""
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 2,
-            "detailVarReferences" : [
-              "atracuriumConcentration_doseIn50mL",
-              "atracuriumConcentration_concentrationOfPeripheralLine",
-              "atracuriumConcentration_calculatedRange",
-              "atracuriumConcentration_calculatedRate"
+          "disclosure" : {
+            "component" : {
+              "subsectionTitle" : {
+                "text" : "Atracurium"
+              }
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 2,
+                  "items" : [
+                    {
+                      "output" : "atracuriumConcentration_doseIn50mL"
+                    },
+                    {
+                      "output" : "atracuriumConcentration_concentrationOfPeripheralLine"
+                    },
+                    {
+                      "input" : {
+                        "color" : {
+                          "blue" : 0.8705882352941177,
+                          "green" : 0.3215686274509804,
+                          "red" : 0.6862745098039216
+                        },
+                        "variableReference" : "atracuriumConcentration_calculatedRange"
+                      }
+                    },
+                    {
+                      "output" : "atracuriumConcentration_calculatedRate"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Atracurium",
-            "primaryVarReference" : ""
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 2,
-            "detailVarReferences" : [
-              "dobutamineConcentration_doseIn50mL",
-              "dobutamineConcentration_concentrationOfPeripheralLine",
-              "dobutamineConcentration_calculatedRange",
-              "dobutamineConcentration_calculatedRate"
+          "disclosure" : {
+            "component" : {
+              "subsectionTitle" : {
+                "subtitle" : "Note: Weight based formula used for weight ≤ 8kg\n((30*Weight)mg in 50mL = 1mL\/hour = 10mcg\/kg\/min)",
+                "text" : "Dobutamine"
+              }
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 2,
+                  "items" : [
+                    {
+                      "output" : "dobutamineConcentration_doseIn50mL"
+                    },
+                    {
+                      "output" : "dobutamineConcentration_concentrationOfPeripheralLine"
+                    },
+                    {
+                      "input" : {
+                        "color" : {
+                          "blue" : 0.8705882352941177,
+                          "green" : 0.3215686274509804,
+                          "red" : 0.6862745098039216
+                        },
+                        "variableReference" : "dobutamineConcentration_calculatedRange"
+                      }
+                    },
+                    {
+                      "output" : "dobutamineConcentration_calculatedRate"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Dobutamine",
-            "notes" : "Note: Weight based formula used for weight ≤ 8kg\n((30*Weight)mg in 50mL = 1mL\/hour = 10mcg\/kg\/min)",
-            "primaryVarReference" : ""
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 2,
-            "detailVarReferences" : [
-              "dopamineConcentration_doseIn50mL",
-              "dopamineConcentration_concentrationOfPeripheralLine",
-              "dopamineConcentration_calculatedRange",
-              "dopamineConcentration_calculatedRate"
+          "disclosure" : {
+            "component" : {
+              "subsectionTitle" : {
+                "subtitle" : "Note: Weight based formula used for weight ≤ 5kg\n((30*Weight)mg in 50mL = 1mL\/hour = 10mcg\/kg\/min)",
+                "text" : "Dopamine"
+              }
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 2,
+                  "items" : [
+                    {
+                      "output" : "dopamineConcentration_doseIn50mL"
+                    },
+                    {
+                      "output" : "dopamineConcentration_concentrationOfPeripheralLine"
+                    },
+                    {
+                      "input" : {
+                        "color" : {
+                          "blue" : 0.8705882352941177,
+                          "green" : 0.3215686274509804,
+                          "red" : 0.6862745098039216
+                        },
+                        "variableReference" : "dopamineConcentration_calculatedRange"
+                      }
+                    },
+                    {
+                      "output" : "dopamineConcentration_calculatedRate"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Dopamine",
-            "notes" : "Note: Weight based formula used for weight ≤ 5kg\n((30*Weight)mg in 50mL = 1mL\/hour = 10mcg\/kg\/min)",
-            "primaryVarReference" : ""
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 2,
-            "detailVarReferences" : [
-              "dexmedetomidineConcentration_doseIn50mL",
-              "dexmedetomidineConcentration_concentrationOfPeripheralLine",
-              "dexmedetomidineConcentration_calculatedRange",
-              "dexmedetomidineConcentration_calculatedRate"
+          "disclosure" : {
+            "component" : {
+              "subsectionTitle" : {
+                "text" : "Dexmedetomidine"
+              }
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 2,
+                  "items" : [
+                    {
+                      "output" : "dexmedetomidineConcentration_doseIn50mL"
+                    },
+                    {
+                      "output" : "dexmedetomidineConcentration_concentrationOfPeripheralLine"
+                    },
+                    {
+                      "input" : {
+                        "color" : {
+                          "blue" : 0.8705882352941177,
+                          "green" : 0.3215686274509804,
+                          "red" : 0.6862745098039216
+                        },
+                        "variableReference" : "dexmedetomidineConcentration_calculatedRange"
+                      }
+                    },
+                    {
+                      "output" : "dexmedetomidineConcentration_calculatedRate"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Dexmedetomidine",
-            "primaryVarReference" : ""
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 2,
-            "detailVarReferences" : [
-              "fentanylConcentration_doseIn50mL",
-              "fentanylConcentration_concentrationOfPeripheralLine",
-              "fentanylConcentration_calculatedRange",
-              "fentanylConcentration_calculatedRate"
+          "disclosure" : {
+            "component" : {
+              "subsectionTitle" : {
+                "subtitle" : "Note: Weight based formula used for weight ≤ 25kg\n(100mcg*Weight in 50mL = 1mL\/hour = 2mcg\/kg\/hr)",
+                "text" : "Fentanyl"
+              }
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 2,
+                  "items" : [
+                    {
+                      "output" : "fentanylConcentration_doseIn50mL"
+                    },
+                    {
+                      "output" : "fentanylConcentration_concentrationOfPeripheralLine"
+                    },
+                    {
+                      "input" : {
+                        "color" : {
+                          "blue" : 0.8705882352941177,
+                          "green" : 0.3215686274509804,
+                          "red" : 0.6862745098039216
+                        },
+                        "variableReference" : "fentanylConcentration_calculatedRange"
+                      }
+                    },
+                    {
+                      "output" : "fentanylConcentration_calculatedRate"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Fentanyl",
-            "notes" : "Note: Weight based formula used for weight ≤ 25kg\n(100mcg*Weight in 50mL = 1mL\/hour = 2mcg\/kg\/hr)",
-            "primaryVarReference" : ""
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 2,
-            "detailVarReferences" : [
-              "glycerylTrinitrateConcentration_doseIn50mL",
-              "glycerylTrinitrateConcentration_concentrationOfPeripheralLine",
-              "glycerylTrinitrateConcentration_calculatedRange",
-              "glycerylTrinitrateConcentration_calculatedRate"
+          "disclosure" : {
+            "component" : {
+              "subsectionTitle" : {
+                "text" : "Glyceryl Trinitrate"
+              }
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 2,
+                  "items" : [
+                    {
+                      "output" : "glycerylTrinitrateConcentration_doseIn50mL"
+                    },
+                    {
+                      "output" : "glycerylTrinitrateConcentration_concentrationOfPeripheralLine"
+                    },
+                    {
+                      "input" : {
+                        "color" : {
+                          "blue" : 0.8705882352941177,
+                          "green" : 0.3215686274509804,
+                          "red" : 0.6862745098039216
+                        },
+                        "variableReference" : "glycerylTrinitrateConcentration_calculatedRange"
+                      }
+                    },
+                    {
+                      "output" : "glycerylTrinitrateConcentration_calculatedRate"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Glyceryl Trinitrate",
-            "primaryVarReference" : ""
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 2,
-            "detailVarReferences" : [
-              "heparinConcentration_doseIn50mL",
-              "heparinConcentration_concentrationOfPeripheralLine",
-              "heparinConcentration_calculatedRange",
-              "heparinConcentration_calculatedRate"
+          "disclosure" : {
+            "component" : {
+              "subsectionTitle" : {
+                "text" : "Heparin"
+              }
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 2,
+                  "items" : [
+                    {
+                      "output" : "heparinConcentration_doseIn50mL"
+                    },
+                    {
+                      "output" : "heparinConcentration_concentrationOfPeripheralLine"
+                    },
+                    {
+                      "input" : {
+                        "color" : {
+                          "blue" : 0.8705882352941177,
+                          "green" : 0.3215686274509804,
+                          "red" : 0.6862745098039216
+                        },
+                        "variableReference" : "heparinConcentration_calculatedRange"
+                      }
+                    },
+                    {
+                      "output" : "heparinConcentration_calculatedRate"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Heparin",
-            "primaryVarReference" : ""
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 2,
-            "detailVarReferences" : [
-              "hydralazineConcentration_doseIn50mL",
-              "hydralazineConcentration_concentrationOfPeripheralLine",
-              "hydralazineConcentration_calculatedRange",
-              "hydralazineConcentration_calculatedRate"
+          "disclosure" : {
+            "component" : {
+              "subsectionTitle" : {
+                "text" : "Hydralazine"
+              }
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 2,
+                  "items" : [
+                    {
+                      "output" : "hydralazineConcentration_doseIn50mL"
+                    },
+                    {
+                      "output" : "hydralazineConcentration_concentrationOfPeripheralLine"
+                    },
+                    {
+                      "input" : {
+                        "color" : {
+                          "blue" : 0.8705882352941177,
+                          "green" : 0.3215686274509804,
+                          "red" : 0.6862745098039216
+                        },
+                        "variableReference" : "hydralazineConcentration_calculatedRange"
+                      }
+                    },
+                    {
+                      "output" : "hydralazineConcentration_calculatedRate"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Hydralazine",
-            "primaryVarReference" : ""
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 2,
-            "detailVarReferences" : [
-              "insulinConcentration_doseIn50mL",
-              "insulinConcentration_concentrationOfPeripheralLine",
-              "insulinConcentration_calculatedRange",
-              "insulinConcentration_calculatedRate"
+          "disclosure" : {
+            "component" : {
+              "subsectionTitle" : {
+                "text" : "Insulin"
+              }
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 2,
+                  "items" : [
+                    {
+                      "output" : "insulinConcentration_doseIn50mL"
+                    },
+                    {
+                      "output" : "insulinConcentration_concentrationOfPeripheralLine"
+                    },
+                    {
+                      "input" : {
+                        "color" : {
+                          "blue" : 0.8705882352941177,
+                          "green" : 0.3215686274509804,
+                          "red" : 0.6862745098039216
+                        },
+                        "variableReference" : "insulinConcentration_calculatedRange"
+                      }
+                    },
+                    {
+                      "output" : "insulinConcentration_calculatedRate"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Insulin",
-            "primaryVarReference" : ""
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 2,
-            "detailVarReferences" : [
-              "ketamineConcentration_doseIn50mL",
-              "ketamineConcentration_concentrationOfPeripheralLine",
-              "ketamineConcentration_calculatedRange",
-              "ketamineConcentration_calculatedRate"
+          "disclosure" : {
+            "component" : {
+              "subsectionTitle" : {
+                "text" : "Ketamine"
+              }
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 2,
+                  "items" : [
+                    {
+                      "output" : "ketamineConcentration_doseIn50mL"
+                    },
+                    {
+                      "output" : "ketamineConcentration_concentrationOfPeripheralLine"
+                    },
+                    {
+                      "input" : {
+                        "color" : {
+                          "blue" : 0.8705882352941177,
+                          "green" : 0.3215686274509804,
+                          "red" : 0.6862745098039216
+                        },
+                        "variableReference" : "ketamineConcentration_calculatedRange"
+                      }
+                    },
+                    {
+                      "output" : "ketamineConcentration_calculatedRate"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Ketamine",
-            "primaryVarReference" : ""
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 2,
-            "detailVarReferences" : [
-              "labetalolConcentration_doseIn50mL",
-              "labetalolConcentration_concentrationOfPeripheralLine",
-              "labetalolConcentration_calculatedRange",
-              "labetalolConcentration_calculatedRate"
+          "disclosure" : {
+            "component" : {
+              "subsectionTitle" : {
+                "text" : "Labetalol"
+              }
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 2,
+                  "items" : [
+                    {
+                      "output" : "labetalolConcentration_doseIn50mL"
+                    },
+                    {
+                      "output" : "labetalolConcentration_concentrationOfPeripheralLine"
+                    },
+                    {
+                      "input" : {
+                        "color" : {
+                          "blue" : 0.8705882352941177,
+                          "green" : 0.3215686274509804,
+                          "red" : 0.6862745098039216
+                        },
+                        "variableReference" : "labetalolConcentration_calculatedRange"
+                      }
+                    },
+                    {
+                      "output" : "labetalolConcentration_calculatedRate"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Labetalol",
-            "primaryVarReference" : ""
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 2,
-            "detailVarReferences" : [
-              "lignocaineConcentration_doseIn50mL",
-              "lignocaineConcentration_concentrationOfPeripheralLine",
-              "lignocaineConcentration_calculatedRange",
-              "lignocaineConcentration_calculatedRate"
+          "disclosure" : {
+            "component" : {
+              "subsectionTitle" : {
+                "text" : "Lignocaine"
+              }
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 2,
+                  "items" : [
+                    {
+                      "output" : "lignocaineConcentration_doseIn50mL"
+                    },
+                    {
+                      "output" : "lignocaineConcentration_concentrationOfPeripheralLine"
+                    },
+                    {
+                      "input" : {
+                        "color" : {
+                          "blue" : 0.8705882352941177,
+                          "green" : 0.3215686274509804,
+                          "red" : 0.6862745098039216
+                        },
+                        "variableReference" : "lignocaineConcentration_calculatedRange"
+                      }
+                    },
+                    {
+                      "output" : "lignocaineConcentration_calculatedRate"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Lignocaine",
-            "primaryVarReference" : ""
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 2,
-            "detailVarReferences" : [
-              "midazolamConcentration_doseIn50mL",
-              "midazolamConcentration_concentrationOfPeripheralLine",
-              "midazolamConcentration_calculatedRange",
-              "midazolamConcentration_calculatedRate"
+          "disclosure" : {
+            "component" : {
+              "subsectionTitle" : {
+                "subtitle" : "Note: Weight based formula used for weight ≤ 16kg\n((3*Weight)mg in 50mL = 1mL\/hour = 1mcg\/kg\/min)",
+                "text" : "Midazolam"
+              }
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 2,
+                  "items" : [
+                    {
+                      "output" : "midazolamConcentration_doseIn50mL"
+                    },
+                    {
+                      "output" : "midazolamConcentration_concentrationOfPeripheralLine"
+                    },
+                    {
+                      "input" : {
+                        "color" : {
+                          "blue" : 0.8705882352941177,
+                          "green" : 0.3215686274509804,
+                          "red" : 0.6862745098039216
+                        },
+                        "variableReference" : "midazolamConcentration_calculatedRange"
+                      }
+                    },
+                    {
+                      "output" : "midazolamConcentration_calculatedRate"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Midazolam",
-            "notes" : "Note: Weight based formula used for weight ≤ 16kg\n((3*Weight)mg in 50mL = 1mL\/hour = 1mcg\/kg\/min)",
-            "primaryVarReference" : ""
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 2,
-            "detailVarReferences" : [
-              "milrinoneConcentration_doseIn50mL",
-              "milrinoneConcentration_concentrationOfPeripheralLine",
-              "milrinoneConcentration_calculatedRange",
-              "milrinoneConcentration_calculatedRate"
+          "disclosure" : {
+            "component" : {
+              "subsectionTitle" : {
+                "text" : "Milrinone"
+              }
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 2,
+                  "items" : [
+                    {
+                      "output" : "milrinoneConcentration_doseIn50mL"
+                    },
+                    {
+                      "output" : "milrinoneConcentration_concentrationOfPeripheralLine"
+                    },
+                    {
+                      "input" : {
+                        "color" : {
+                          "blue" : 0.8705882352941177,
+                          "green" : 0.3215686274509804,
+                          "red" : 0.6862745098039216
+                        },
+                        "variableReference" : "milrinoneConcentration_calculatedRange"
+                      }
+                    },
+                    {
+                      "output" : "milrinoneConcentration_calculatedRate"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Milrinone",
-            "primaryVarReference" : ""
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 2,
-            "detailVarReferences" : [
-              "morphineConcentration_doseIn50mL",
-              "morphineConcentration_concentrationOfPeripheralLine",
-              "morphineConcentration_calculatedRange",
-              "morphineConcentration_calculatedRate"
+          "disclosure" : {
+            "component" : {
+              "subsectionTitle" : {
+                "subtitle" : "Note: Weight based formula used for weight ≤ 50kg\n((1*Weight)mg in 50mL = 1mL\/hour = 20mcg\/kg\/hour)",
+                "text" : "Morphine"
+              }
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 2,
+                  "items" : [
+                    {
+                      "output" : "morphineConcentration_doseIn50mL"
+                    },
+                    {
+                      "output" : "morphineConcentration_concentrationOfPeripheralLine"
+                    },
+                    {
+                      "input" : {
+                        "color" : {
+                          "blue" : 0.8705882352941177,
+                          "green" : 0.3215686274509804,
+                          "red" : 0.6862745098039216
+                        },
+                        "variableReference" : "morphineConcentration_calculatedRange"
+                      }
+                    },
+                    {
+                      "output" : "morphineConcentration_calculatedRate"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Morphine",
-            "notes" : "Note: Weight based formula used for weight ≤ 50kg\n((1*Weight)mg in 50mL = 1mL\/hour = 20mcg\/kg\/hour)",
-            "primaryVarReference" : ""
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 2,
-            "detailVarReferences" : [
-              "nitroprussideConcentration_doseIn50mL",
-              "nitroprussideConcentration_concentrationOfPeripheralLine",
-              "nitroprussideConcentration_calculatedRange",
-              "nitroprussideConcentration_calculatedRate"
+          "disclosure" : {
+            "component" : {
+              "subsectionTitle" : {
+                "text" : "Nitroprusside"
+              }
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 2,
+                  "items" : [
+                    {
+                      "output" : "nitroprussideConcentration_doseIn50mL"
+                    },
+                    {
+                      "output" : "nitroprussideConcentration_concentrationOfPeripheralLine"
+                    },
+                    {
+                      "input" : {
+                        "color" : {
+                          "blue" : 0.8705882352941177,
+                          "green" : 0.3215686274509804,
+                          "red" : 0.6862745098039216
+                        },
+                        "variableReference" : "nitroprussideConcentration_calculatedRange"
+                      }
+                    },
+                    {
+                      "output" : "nitroprussideConcentration_calculatedRate"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Nitroprusside",
-            "primaryVarReference" : ""
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 2,
-            "detailVarReferences" : [
-              "noradrenalineConcentration_doseIn50mL",
-              "noradrenalineConcentration_concentrationOfPeripheralLine",
-              "noradrenalineConcentration_calculatedRange",
-              "noradrenalineConcentration_calculatedRate"
+          "disclosure" : {
+            "component" : {
+              "subsectionTitle" : {
+                "text" : "Noradrenaline"
+              }
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 2,
+                  "items" : [
+                    {
+                      "output" : "noradrenalineConcentration_doseIn50mL"
+                    },
+                    {
+                      "output" : "noradrenalineConcentration_concentrationOfPeripheralLine"
+                    },
+                    {
+                      "input" : {
+                        "color" : {
+                          "blue" : 0.8705882352941177,
+                          "green" : 0.3215686274509804,
+                          "red" : 0.6862745098039216
+                        },
+                        "variableReference" : "noradrenalineConcentration_calculatedRange"
+                      }
+                    },
+                    {
+                      "output" : "noradrenalineConcentration_calculatedRate"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Noradrenaline",
-            "primaryVarReference" : ""
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 2,
-            "detailVarReferences" : [
-              "rocuroniumConcentration_doseIn50mL",
-              "rocuroniumConcentration_concentrationOfPeripheralLine",
-              "rocuroniumConcentration_calculatedRange",
-              "rocuroniumConcentration_calculatedRate"
+          "disclosure" : {
+            "component" : {
+              "subsectionTitle" : {
+                "subtitle" : "Note: Weight based formula used for weight ≤ 10kg\n(50mg*Weight in 50mL = 1mL\/hour = 1mg\/kg\/hr)",
+                "text" : "Rocuronium"
+              }
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 2,
+                  "items" : [
+                    {
+                      "output" : "rocuroniumConcentration_doseIn50mL"
+                    },
+                    {
+                      "output" : "rocuroniumConcentration_concentrationOfPeripheralLine"
+                    },
+                    {
+                      "input" : {
+                        "color" : {
+                          "blue" : 0.8705882352941177,
+                          "green" : 0.3215686274509804,
+                          "red" : 0.6862745098039216
+                        },
+                        "variableReference" : "rocuroniumConcentration_calculatedRange"
+                      }
+                    },
+                    {
+                      "output" : "rocuroniumConcentration_calculatedRate"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Rocuronium",
-            "notes" : "Note: Weight based formula used for weight ≤ 10kg\n(50mg*Weight in 50mL = 1mL\/hour = 1mg\/kg\/hr)",
-            "primaryVarReference" : ""
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 2,
-            "detailVarReferences" : [
-              "salbutamolConcentration_doseIn50mL",
-              "salbutamolConcentration_concentrationOfPeripheralLine",
-              "salbutamolConcentration_calculatedRange",
-              "salbutamolConcentration_calculatedRate"
+          "disclosure" : {
+            "component" : {
+              "subsectionTitle" : {
+                "text" : "Salbutamol"
+              }
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 2,
+                  "items" : [
+                    {
+                      "output" : "salbutamolConcentration_doseIn50mL"
+                    },
+                    {
+                      "output" : "salbutamolConcentration_concentrationOfPeripheralLine"
+                    },
+                    {
+                      "input" : {
+                        "color" : {
+                          "blue" : 0.8705882352941177,
+                          "green" : 0.3215686274509804,
+                          "red" : 0.6862745098039216
+                        },
+                        "variableReference" : "salbutamolConcentration_calculatedRange"
+                      }
+                    },
+                    {
+                      "output" : "salbutamolConcentration_calculatedRate"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Salbutamol",
-            "primaryVarReference" : ""
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 2,
-            "detailVarReferences" : [
-              "thiopentalConcentration_doseIn50mL",
-              "thiopentalConcentration_concentrationOfPeripheralLine",
-              "thiopentalConcentration_calculatedRange",
-              "thiopentalConcentration_calculatedRate"
+          "disclosure" : {
+            "component" : {
+              "subsectionTitle" : {
+                "text" : "Thiopental"
+              }
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 2,
+                  "items" : [
+                    {
+                      "output" : "thiopentalConcentration_doseIn50mL"
+                    },
+                    {
+                      "output" : "thiopentalConcentration_concentrationOfPeripheralLine"
+                    },
+                    {
+                      "input" : {
+                        "color" : {
+                          "blue" : 0.8705882352941177,
+                          "green" : 0.3215686274509804,
+                          "red" : 0.6862745098039216
+                        },
+                        "variableReference" : "thiopentalConcentration_calculatedRange"
+                      }
+                    },
+                    {
+                      "output" : "thiopentalConcentration_calculatedRate"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Thiopental",
-            "primaryVarReference" : ""
+            "expandedByDefault" : false
           }
         },
         {
-          "detailedOutput" : {
-            "alwaysExpanded" : false,
-            "columnCount" : 2,
-            "detailVarReferences" : [
-              "vasopressinConcentration_doseIn50mL",
-              "vasopressinConcentration_concentrationOfPeripheralLine",
-              "vasopressinConcentration_calculatedRange",
-              "vasopressinConcentration_calculatedRate"
+          "disclosure" : {
+            "component" : {
+              "subsectionTitle" : {
+                "text" : "Vasopressin (Diabetes Insipidus)"
+              }
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 2,
+                  "items" : [
+                    {
+                      "output" : "vasopressinConcentration_doseIn50mL"
+                    },
+                    {
+                      "output" : "vasopressinConcentration_concentrationOfPeripheralLine"
+                    },
+                    {
+                      "input" : {
+                        "color" : {
+                          "blue" : 0.8705882352941177,
+                          "green" : 0.3215686274509804,
+                          "red" : 0.6862745098039216
+                        },
+                        "variableReference" : "vasopressinConcentration_calculatedRange"
+                      }
+                    },
+                    {
+                      "output" : "vasopressinConcentration_calculatedRate"
+                    }
+                  ]
+                }
+              }
             ],
-            "name" : "Vasopressin (Diabetes Insipidus)",
-            "primaryVarReference" : ""
+            "expandedByDefault" : false
           }
         }
       ],

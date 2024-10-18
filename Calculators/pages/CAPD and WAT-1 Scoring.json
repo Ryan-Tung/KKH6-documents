@@ -341,7 +341,9 @@
     {
       "components" : [
         {
-          "subsectionTitle" : "Information from Patient Record (12 hours)"
+          "subsectionTitle" : {
+            "text" : "Information from Patient Record (12 hours)"
+          }
         },
         {
           "nested" : {
@@ -431,7 +433,9 @@
           }
         },
         {
-          "subsectionTitle" : "2 minute pre-stimulus observation"
+          "subsectionTitle" : {
+            "text" : "2 minute pre-stimulus observation"
+          }
         },
         {
           "nested" : {
@@ -579,7 +583,9 @@
           }
         },
         {
-          "subsectionTitle" : "1 minute stimulus observation"
+          "subsectionTitle" : {
+            "text" : "1 minute stimulus observation"
+          }
         },
         {
           "nested" : {
@@ -640,7 +646,9 @@
           }
         },
         {
-          "subsectionTitle" : "Post-stimulus recovery"
+          "subsectionTitle" : {
+            "text" : "Post-stimulus recovery"
+          }
         },
         {
           "nested" : {

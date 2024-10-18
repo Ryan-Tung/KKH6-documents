@@ -40,7 +40,9 @@
           }
         },
         {
-          "subsectionTitle" : "Weaning IV Morphine Infusion:"
+          "subsectionTitle" : {
+            "text" : "Weaning IV Morphine Infusion:"
+          }
         },
         {
           "nested" : {
@@ -53,7 +55,9 @@
           }
         },
         {
-          "subsectionTitle" : "Weaning PO Morphine (Q6H) (After enteral conversion):"
+          "subsectionTitle" : {
+            "text" : "Weaning PO Morphine (Q6H) (After enteral conversion):"
+          }
         },
         {
           "nested" : {
@@ -66,7 +70,9 @@
           }
         },
         {
-          "subsectionTitle" : "Weaning PO Morphine (Q4H) (After enteral conversion):"
+          "subsectionTitle" : {
+            "text" : "Weaning PO Morphine (Q4H) (After enteral conversion):"
+          }
         },
         {
           "nested" : {
@@ -99,7 +105,9 @@
           }
         },
         {
-          "subsectionTitle" : "Weaning IV Midazolam Infusion:"
+          "subsectionTitle" : {
+            "text" : "Weaning IV Midazolam Infusion:"
+          }
         },
         {
           "nested" : {
@@ -112,7 +120,9 @@
           }
         },
         {
-          "subsectionTitle" : "Weaning PO Lorazepam (Q6H) (After enteral conversion):"
+          "subsectionTitle" : {
+            "text" : "Weaning PO Lorazepam (Q6H) (After enteral conversion):"
+          }
         },
         {
           "nested" : {

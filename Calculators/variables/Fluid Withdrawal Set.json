@@ -125,7 +125,7 @@
             "component" : {
               "product" : [
                 "feedingRate",
-                "numberOfHoursUntil6am"
+                "calculateNumberOfHours"
               ]
             }
           }
@@ -133,10 +133,10 @@
       },
       "parameters" : [
         "amountOfMilkFeeding",
+        "calculateNumberOfHours",
         "feedType",
         "feedingRate",
-        "numberOfFeedingsLeft",
-        "numberOfHoursUntil6am"
+        "numberOfFeedingsLeft"
       ],
       "roundingMethod" : "nearest"
     },
@@ -167,12 +167,70 @@
     "alternateUnits" : [
       {
         "conversionScale" : 1,
-        "name" : "hr"
+        "name" : ":00 hrs"
       }
     ],
     "decimals" : 0,
-    "displayName" : "Number of hours until 6am",
+    "displayName" : "Withdrawal starting time (in 24 hr format)",
     "referenceName" : "numberOfHoursUntil6am",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ":00 hrs"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "hr"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "Number of Hours till 6am",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : {
+              "sum" : [
+                6,
+                {
+                  "negative" : "numberOfHoursUntil6am"
+                }
+              ]
+            },
+            "condition" : {
+              "comparison" : "lessThan",
+              "defaultState" : true,
+              "lhs" : "numberOfHoursUntil6am",
+              "rhs" : 6
+            }
+          },
+          {
+            "component" : {
+              "sum" : [
+                30,
+                {
+                  "negative" : "numberOfHoursUntil6am"
+                }
+              ]
+            },
+            "condition" : {
+              "comparison" : "greaterThanOrEqualTo",
+              "defaultState" : true,
+              "lhs" : "numberOfHoursUntil6am",
+              "rhs" : 6
+            }
+          }
+        ]
+      },
+      "parameters" : [
+        "numberOfHoursUntil6am"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "calculateNumberOfHours",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
@@ -192,11 +250,11 @@
       "equation" : {
         "product" : [
           "sideAndMainDripPerHour",
-          "numberOfHoursUntil6am"
+          "calculateNumberOfHours"
         ]
       },
       "parameters" : [
-        "numberOfHoursUntil6am",
+        "calculateNumberOfHours",
         "sideAndMainDripPerHour"
       ],
       "roundingMethod" : "nearest"
@@ -374,15 +432,15 @@
               "miscVolumeOutput"
             ]
           },
-          "numberOfHoursUntil6am"
+          "calculateNumberOfHours"
         ]
       },
       "parameters" : [
+        "calculateNumberOfHours",
         "chestTube",
         "drains",
         "miscVolumeOutput",
         "ngLosses",
-        "numberOfHoursUntil6am",
         "urineOutput"
       ],
       "roundingMethod" : "nearest"
@@ -446,14 +504,14 @@
           {
             "component" : {
               "division" : {
-                "denominator" : "numberOfHoursUntil6am",
+                "denominator" : "calculateNumberOfHours",
                 "numerator" : "totalFluidToWithdraw"
               }
             },
             "condition" : {
               "comparison" : "notEqualTo",
               "defaultState" : true,
-              "lhs" : "numberOfHoursUntil6am",
+              "lhs" : "calculateNumberOfHours",
               "rhs" : 0
             }
           },
@@ -465,7 +523,7 @@
         ]
       },
       "parameters" : [
-        "numberOfHoursUntil6am",
+        "calculateNumberOfHours",
         "totalFluidToWithdraw"
       ],
       "roundingMethod" : "nearest"
