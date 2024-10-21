@@ -175,7 +175,7 @@
           }
         },
         {
-          "output" : "respiratoryFinalScore"
+          "output" : "respiratoryScore"
         }
       ],
       "name" : "Respiratory",

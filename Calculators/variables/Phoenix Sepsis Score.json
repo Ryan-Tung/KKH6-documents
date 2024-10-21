@@ -23,98 +23,134 @@
       }
     ],
     "decimals" : 0,
-    "displayName" : "respiratoryScore",
+    "displayName" : "respiratoryIntermediateScore",
     "formula" : {
       "equation" : {
-        "sum" : [
+        "conditional" : [
           {
-            "sum" : [
-              {
-                "conditional" : [
-                  {
-                    "component" : 1,
-                    "condition" : {
-                      "comparison" : "lessThan",
-                      "defaultState" : true,
-                      "lhs" : "paO2FiO2Ratio",
-                      "rhs" : 100
+            "component" : {
+              "sum" : [
+                {
+                  "conditional" : [
+                    {
+                      "component" : 1,
+                      "condition" : {
+                        "comparison" : "lessThan",
+                        "defaultState" : true,
+                        "lhs" : "paO2FiO2Ratio",
+                        "rhs" : 100
+                      }
+                    },
+                    {
+                      "component" : 0
                     }
-                  },
-                  {
-                    "component" : 1,
-                    "condition" : {
-                      "comparison" : "lessThan",
-                      "defaultState" : true,
-                      "lhs" : "spO2FiO2Ratio",
-                      "rhs" : 148
+                  ]
+                },
+                {
+                  "conditional" : [
+                    {
+                      "component" : 1,
+                      "condition" : {
+                        "comparison" : "lessThan",
+                        "defaultState" : true,
+                        "lhs" : "paO2FiO2Ratio",
+                        "rhs" : 200
+                      }
+                    },
+                    {
+                      "component" : 0
                     }
-                  },
-                  {
-                    "component" : 0
-                  }
-                ]
-              },
-              {
-                "conditional" : [
-                  {
-                    "component" : 1,
-                    "condition" : {
-                      "comparison" : "lessThan",
-                      "defaultState" : true,
-                      "lhs" : "paO2FiO2Ratio",
-                      "rhs" : 200
+                  ]
+                },
+                {
+                  "conditional" : [
+                    {
+                      "component" : 1,
+                      "condition" : {
+                        "comparison" : "lessThan",
+                        "defaultState" : true,
+                        "lhs" : "paO2FiO2Ratio",
+                        "rhs" : 400
+                      }
+                    },
+                    {
+                      "component" : 0
                     }
-                  },
-                  {
-                    "component" : 1,
-                    "condition" : {
-                      "comparison" : "lessThan",
-                      "defaultState" : true,
-                      "lhs" : "spO2FiO2Ratio",
-                      "rhs" : 220
-                    }
-                  },
-                  {
-                    "component" : 0
-                  }
-                ]
-              }
-            ]
+                  ]
+                }
+              ]
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "respiratoryInputType",
+              "rhs" : 0
+            }
           },
           {
-            "conditional" : [
-              {
-                "component" : 1,
-                "condition" : {
-                  "comparison" : "lessThan",
-                  "defaultState" : true,
-                  "lhs" : "paO2FiO2Ratio",
-                  "rhs" : 400
+            "component" : {
+              "sum" : [
+                {
+                  "conditional" : [
+                    {
+                      "component" : 1,
+                      "condition" : {
+                        "comparison" : "lessThan",
+                        "defaultState" : true,
+                        "lhs" : "spO2FiO2Ratio",
+                        "rhs" : 148
+                      }
+                    },
+                    {
+                      "component" : 0
+                    }
+                  ]
+                },
+                {
+                  "conditional" : [
+                    {
+                      "component" : 1,
+                      "condition" : {
+                        "comparison" : "lessThan",
+                        "defaultState" : true,
+                        "lhs" : "spO2FiO2Ratio",
+                        "rhs" : 220
+                      }
+                    },
+                    {
+                      "component" : 0
+                    }
+                  ]
+                },
+                {
+                  "conditional" : [
+                    {
+                      "component" : 1,
+                      "condition" : {
+                        "comparison" : "lessThan",
+                        "defaultState" : true,
+                        "lhs" : "spO2FiO2Ratio",
+                        "rhs" : 292
+                      }
+                    },
+                    {
+                      "component" : 0
+                    }
+                  ]
                 }
-              },
-              {
-                "component" : 1,
-                "condition" : {
-                  "comparison" : "lessThan",
-                  "defaultState" : true,
-                  "lhs" : "spO2FiO2Ratio",
-                  "rhs" : 292
-                }
-              },
-              {
-                "component" : 0
-              }
-            ]
+              ]
+            }
           }
         ]
       },
       "parameters" : [
         "paO2FiO2Ratio",
+        "respiratoryInputType",
         "spO2FiO2Ratio"
       ],
       "roundingMethod" : "nearest"
     },
-    "referenceName" : "respiratoryScore",
+    "referenceName" : "respiratoryIntermediateScore",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
@@ -134,11 +170,11 @@
       "equation" : {
         "conditional" : [
           {
-            "component" : "respiratoryScore",
+            "component" : 0,
             "condition" : {
               "comparison" : "equalTo",
               "defaultState" : true,
-              "lhs" : "respiratoryScore",
+              "lhs" : "respiratoryIntermediateScore",
               "rhs" : 0
             }
           },
@@ -146,7 +182,7 @@
             "component" : {
               "conditional" : [
                 {
-                  "component" : "respiratoryScore",
+                  "component" : "respiratoryIntermediateScore",
                   "condition" : {
                     "comparison" : "equalTo",
                     "defaultState" : true,
@@ -164,7 +200,7 @@
             "condition" : {
               "comparison" : "equalTo",
               "defaultState" : true,
-              "lhs" : "respiratoryScore",
+              "lhs" : "respiratoryIntermediateScore",
               "rhs" : 1
             }
           },
@@ -172,7 +208,7 @@
             "component" : {
               "conditional" : [
                 {
-                  "component" : "respiratoryScore",
+                  "component" : "respiratoryIntermediateScore",
                   "condition" : {
                     "comparison" : "equalTo",
                     "defaultState" : true,
@@ -190,7 +226,7 @@
             "condition" : {
               "comparison" : "equalTo",
               "defaultState" : true,
-              "lhs" : "respiratoryScore",
+              "lhs" : "respiratoryIntermediateScore",
               "rhs" : 2
             }
           },
@@ -198,7 +234,7 @@
             "component" : {
               "conditional" : [
                 {
-                  "component" : "respiratoryScore",
+                  "component" : "respiratoryIntermediateScore",
                   "condition" : {
                     "comparison" : "equalTo",
                     "defaultState" : true,
@@ -216,7 +252,7 @@
             "condition" : {
               "comparison" : "equalTo",
               "defaultState" : true,
-              "lhs" : "respiratoryScore",
+              "lhs" : "respiratoryIntermediateScore",
               "rhs" : 3
             }
           },
@@ -228,12 +264,12 @@
         ]
       },
       "parameters" : [
-        "respiratoryScore",
+        "respiratoryIntermediateScore",
         "respiratorySupport"
       ],
       "roundingMethod" : "nearest"
     },
-    "referenceName" : "respiratoryFinalScore",
+    "referenceName" : "respiratoryScore",
     "startingValue" : 0,
     "subtitle" : "Between 0 and 3 inclusive",
     "unit" : {
@@ -609,7 +645,7 @@
         "name" : "µg\/mg FEU"
       }
     ],
-    "decimals" : 0,
+    "decimals" : 2,
     "displayName" : "D-Dimer",
     "referenceName" : "coagulationDDimer",
     "startingValue" : 0,
