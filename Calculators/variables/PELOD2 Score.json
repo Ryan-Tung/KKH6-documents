@@ -62,6 +62,15 @@
           {
             "component" : 0,
             "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "pelod2GCSAvailable",
+              "rhs" : 0
+            }
+          },
+          {
+            "component" : 0,
+            "condition" : {
               "comparison" : "greaterThanOrEqualTo",
               "defaultState" : true,
               "lhs" : "neurologicGCS",
@@ -94,7 +103,8 @@
         ]
       },
       "parameters" : [
-        "neurologicGCS"
+        "neurologicGCS",
+        "pelod2GCSAvailable"
       ],
       "roundingMethod" : "nearest"
     },
@@ -117,6 +127,15 @@
     "formula" : {
       "equation" : {
         "conditional" : [
+          {
+            "component" : 0,
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "pelod2PupilReactionAvailable",
+              "rhs" : 0
+            }
+          },
           {
             "component" : {
               "nilConstant" : null
@@ -149,6 +168,7 @@
         ]
       },
       "parameters" : [
+        "pelod2PupilReactionAvailable",
         "pupilReaction"
       ],
       "roundingMethod" : "nearest"
@@ -189,6 +209,15 @@
       "equation" : {
         "conditional" : [
           {
+            "component" : 0,
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "pelod2LactateAvailable",
+              "rhs" : 0
+            }
+          },
+          {
             "component" : 4,
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
@@ -212,6 +241,7 @@
         ]
       },
       "parameters" : [
+        "pelod2LactateAvailable",
         "pelodLactate"
       ],
       "roundingMethod" : "nearest"
@@ -235,6 +265,15 @@
     "formula" : {
       "equation" : {
         "conditional" : [
+          {
+            "component" : 0,
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "pelod2MAPAvailable",
+              "rhs" : 0
+            }
+          },
           {
             "component" : {
               "conditional" : [
@@ -641,7 +680,8 @@
       },
       "parameters" : [
         "age",
-        "cardioMAP"
+        "cardioMAP",
+        "pelod2MAPAvailable"
       ],
       "roundingMethod" : "nearest"
     },
@@ -680,6 +720,15 @@
     "formula" : {
       "equation" : {
         "conditional" : [
+          {
+            "component" : 0,
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "pelod2RenalCreatinineAvailable",
+              "rhs" : 0
+            }
+          },
           {
             "component" : {
               "conditional" : [
@@ -918,6 +967,7 @@
       },
       "parameters" : [
         "age",
+        "pelod2RenalCreatinineAvailable",
         "renalCreatinine"
       ],
       "roundingMethod" : "nearest"
@@ -941,6 +991,15 @@
     "formula" : {
       "equation" : {
         "conditional" : [
+          {
+            "component" : 0,
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "pelod2RatioAvailable",
+              "rhs" : 0
+            }
+          },
           {
             "component" : 0,
             "condition" : {
@@ -975,7 +1034,8 @@
       },
       "parameters" : [
         "cyanoticHeartDisease",
-        "paO2FiO2Ratio"
+        "paO2FiO2Ratio",
+        "pelod2RatioAvailable"
       ],
       "roundingMethod" : "nearest"
     },
@@ -1000,6 +1060,15 @@
       "equation" : {
         "conditional" : [
           {
+            "component" : 0,
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "pelod2PCO2Available",
+              "rhs" : 0
+            }
+          },
+          {
             "component" : 3,
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
@@ -1023,7 +1092,8 @@
         ]
       },
       "parameters" : [
-        "pCO2"
+        "pCO2",
+        "pelod2PCO2Available"
       ],
       "roundingMethod" : "nearest"
     },
@@ -1051,6 +1121,15 @@
             "condition" : {
               "comparison" : "equalTo",
               "defaultState" : true,
+              "lhs" : "pelod2VentilationAvailable",
+              "rhs" : 0
+            }
+          },
+          {
+            "component" : 0,
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
               "lhs" : "mechanicalVentilation",
               "rhs" : 0
             }
@@ -1067,7 +1146,8 @@
         ]
       },
       "parameters" : [
-        "mechanicalVentilation"
+        "mechanicalVentilation",
+        "pelod2VentilationAvailable"
       ],
       "roundingMethod" : "nearest"
     },
@@ -1091,6 +1171,15 @@
       "equation" : {
         "conditional" : [
           {
+            "component" : 0,
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "pelod2LeucocytesAvailable",
+              "rhs" : 0
+            }
+          },
+          {
             "component" : 2,
             "condition" : {
               "comparison" : "lessThanOrEqualTo",
@@ -1105,7 +1194,8 @@
         ]
       },
       "parameters" : [
-        "leucocytes"
+        "leucocytes",
+        "pelod2LeucocytesAvailable"
       ],
       "roundingMethod" : "nearest"
     },
@@ -1131,6 +1221,15 @@
           {
             "component" : 0,
             "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "pelod2PlateletsAvailable",
+              "rhs" : 0
+            }
+          },
+          {
+            "component" : 0,
+            "condition" : {
               "comparison" : "greaterThanOrEqualTo",
               "defaultState" : true,
               "lhs" : "platelets",
@@ -1152,6 +1251,7 @@
         ]
       },
       "parameters" : [
+        "pelod2PlateletsAvailable",
         "platelets"
       ],
       "roundingMethod" : "nearest"
@@ -1260,6 +1360,166 @@
     "unit" : {
       "conversionScale" : 1,
       "name" : "%"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Lactate Information Available?",
+    "referenceName" : "pelod2LactateAvailable",
+    "startingValue" : 1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Mean Arterial Pressure Information Available?",
+    "referenceName" : "pelod2MAPAvailable",
+    "startingValue" : 1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Glasgow Coma Score (GCS) Information Available?",
+    "referenceName" : "pelod2GCSAvailable",
+    "startingValue" : 1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Pupil Reaction Information Available?",
+    "referenceName" : "pelod2PupilReactionAvailable",
+    "startingValue" : 1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Renal Creatinine Information Available?",
+    "referenceName" : "pelod2RenalCreatinineAvailable",
+    "startingValue" : 1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "PaO₂ : FiO₂ Ratio Available?",
+    "referenceName" : "pelod2RatioAvailable",
+    "startingValue" : 1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "PaCO₂ Information Available?",
+    "referenceName" : "pelod2PCO2Available",
+    "startingValue" : 1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Mechanical Ventilation Information Available?",
+    "referenceName" : "pelod2VentilationAvailable",
+    "startingValue" : 1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Leucocytes Information Available?",
+    "referenceName" : "pelod2LeucocytesAvailable",
+    "startingValue" : 1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Platelets Information Available?",
+    "referenceName" : "pelod2PlateletsAvailable",
+    "startingValue" : 1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
     }
   }
 ]

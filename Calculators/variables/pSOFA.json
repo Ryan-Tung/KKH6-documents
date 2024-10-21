@@ -407,6 +407,15 @@
       "equation" : {
         "conditional" : [
           {
+            "component" : 0,
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "pSOFARespiratoryAvailable",
+              "rhs" : 0
+            }
+          },
+          {
             "component" : "respiratoryPfScore",
             "condition" : {
               "comparison" : "equalTo",
@@ -421,6 +430,7 @@
         ]
       },
       "parameters" : [
+        "pSOFARespiratoryAvailable",
         "respiratoryInputType",
         "respiratoryPfScore",
         "respiratorySfScore"
@@ -443,10 +453,35 @@
       }
     ],
     "decimals" : 0,
+    "displayName" : "Respiratory Information Available?",
+    "referenceName" : "pSOFARespiratoryAvailable",
+    "startingValue" : 1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
     "displayName" : "Coagulation Score",
     "formula" : {
       "equation" : {
         "conditional" : [
+          {
+            "component" : 0,
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "pSOFACoagulationAvailable",
+              "rhs" : 0
+            }
+          },
           {
             "component" : 0,
             "condition" : {
@@ -498,6 +533,7 @@
         ]
       },
       "parameters" : [
+        "pSOFACoagulationAvailable",
         "platelets"
       ],
       "roundingMethod" : "nearest"
@@ -505,6 +541,22 @@
     "referenceName" : "coagulationOutput",
     "startingValue" : 0,
     "subtitle" : "Between 0 and 4 inclusive",
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Coagulation Information Available?",
+    "referenceName" : "pSOFACoagulationAvailable",
+    "startingValue" : 1,
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
@@ -538,6 +590,15 @@
     "formula" : {
       "equation" : {
         "conditional" : [
+          {
+            "component" : 0,
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "pSOFAHepaticAvailable",
+              "rhs" : 0
+            }
+          },
           {
             "component" : 4,
             "condition" : {
@@ -589,13 +650,30 @@
         ]
       },
       "parameters" : [
-        "pSOFABilirubin"
+        "pSOFABilirubin",
+        "pSOFAHepaticAvailable"
       ],
       "roundingMethod" : "nearest"
     },
     "referenceName" : "bilirubinOutput",
     "startingValue" : 0,
     "subtitle" : "Between 0 and 4 inclusive",
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Hepatic Information Available?",
+    "referenceName" : "pSOFAHepaticAvailable",
+    "startingValue" : 1,
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
@@ -629,6 +707,15 @@
     "formula" : {
       "equation" : {
         "conditional" : [
+          {
+            "component" : 0,
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "pSOFACardiovascularAvailable",
+              "rhs" : 0
+            }
+          },
           {
             "component" : 0,
             "condition" : {
@@ -682,7 +769,8 @@
         ]
       },
       "parameters" : [
-        "cardiovascularInput"
+        "cardiovascularInput",
+        "pSOFACardiovascularAvailable"
       ],
       "roundingMethod" : "nearest"
     },
@@ -702,10 +790,35 @@
       }
     ],
     "decimals" : 0,
+    "displayName" : "Cardiovascular Information Available?",
+    "referenceName" : "pSOFACardiovascularAvailable",
+    "startingValue" : 1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
     "displayName" : "Neurological Score",
     "formula" : {
       "equation" : {
         "conditional" : [
+          {
+            "component" : 0,
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "pSOFANeurologicalAvailable",
+              "rhs" : 0
+            }
+          },
           {
             "component" : 0,
             "condition" : {
@@ -757,7 +870,8 @@
         ]
       },
       "parameters" : [
-        "neurologicGCS"
+        "neurologicGCS",
+        "pSOFANeurologicalAvailable"
       ],
       "roundingMethod" : "nearest"
     },
@@ -777,10 +891,35 @@
       }
     ],
     "decimals" : 0,
+    "displayName" : "Neurological Information Available?",
+    "referenceName" : "pSOFANeurologicalAvailable",
+    "startingValue" : 1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
     "displayName" : "Renal Score",
     "formula" : {
       "equation" : {
         "conditional" : [
+          {
+            "component" : 0,
+            "condition" : {
+              "comparison" : "equalTo",
+              "defaultState" : true,
+              "lhs" : "pSOFARenalAvailable",
+              "rhs" : 0
+            }
+          },
           {
             "component" : {
               "conditional" : [
@@ -1142,6 +1281,7 @@
       },
       "parameters" : [
         "age",
+        "pSOFARenalAvailable",
         "renalCreatinine"
       ],
       "roundingMethod" : "nearest"
@@ -1149,6 +1289,22 @@
     "referenceName" : "renalOutput",
     "startingValue" : 0,
     "subtitle" : "Between 0 and 4 inclusive",
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Renal Information Available?",
+    "referenceName" : "pSOFARenalAvailable",
+    "startingValue" : 1,
     "unit" : {
       "conversionScale" : 1,
       "name" : ""

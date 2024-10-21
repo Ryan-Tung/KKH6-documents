@@ -1126,7 +1126,7 @@
     "alternateUnits" : [
       {
         "conversionScale" : 1,
-        "name" : "mg\/dL"
+        "name" : "µmol\/L"
       }
     ],
     "decimals" : 0,
@@ -1135,14 +1135,14 @@
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
-      "name" : "mg\/dL"
+      "name" : "µmol\/L"
     }
   },
   {
     "alternateUnits" : [
       {
         "conversionScale" : 1,
-        "name" : "IU\/L"
+        "name" : "U\/L"
       }
     ],
     "decimals" : 0,
@@ -1151,7 +1151,7 @@
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
-      "name" : "IU\/L"
+      "name" : "U\/L"
     }
   },
   {
@@ -1172,7 +1172,7 @@
               "comparison" : "greaterThanOrEqualTo",
               "defaultState" : true,
               "lhs" : "hepaticBilirubin",
-              "rhs" : 4
+              "rhs" : 68.4
             }
           },
           {
