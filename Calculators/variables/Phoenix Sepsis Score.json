@@ -29,54 +29,36 @@
         "conditional" : [
           {
             "component" : {
-              "sum" : [
+              "conditional" : [
                 {
-                  "conditional" : [
-                    {
-                      "component" : 1,
-                      "condition" : {
-                        "comparison" : "lessThan",
-                        "defaultState" : true,
-                        "lhs" : "paO2FiO2Ratio",
-                        "rhs" : 100
-                      }
-                    },
-                    {
-                      "component" : 0
-                    }
-                  ]
+                  "component" : 3,
+                  "condition" : {
+                    "comparison" : "lessThan",
+                    "defaultState" : true,
+                    "lhs" : "paO2FiO2Ratio",
+                    "rhs" : 100
+                  }
                 },
                 {
-                  "conditional" : [
-                    {
-                      "component" : 1,
-                      "condition" : {
-                        "comparison" : "lessThan",
-                        "defaultState" : true,
-                        "lhs" : "paO2FiO2Ratio",
-                        "rhs" : 200
-                      }
-                    },
-                    {
-                      "component" : 0
-                    }
-                  ]
+                  "component" : 2,
+                  "condition" : {
+                    "comparison" : "lessThan",
+                    "defaultState" : true,
+                    "lhs" : "paO2FiO2Ratio",
+                    "rhs" : 200
+                  }
                 },
                 {
-                  "conditional" : [
-                    {
-                      "component" : 1,
-                      "condition" : {
-                        "comparison" : "lessThan",
-                        "defaultState" : true,
-                        "lhs" : "paO2FiO2Ratio",
-                        "rhs" : 400
-                      }
-                    },
-                    {
-                      "component" : 0
-                    }
-                  ]
+                  "component" : 1,
+                  "condition" : {
+                    "comparison" : "lessThan",
+                    "defaultState" : true,
+                    "lhs" : "paO2FiO2Ratio",
+                    "rhs" : 400
+                  }
+                },
+                {
+                  "component" : 0
                 }
               ]
             },
@@ -89,54 +71,36 @@
           },
           {
             "component" : {
-              "sum" : [
+              "conditional" : [
                 {
-                  "conditional" : [
-                    {
-                      "component" : 1,
-                      "condition" : {
-                        "comparison" : "lessThan",
-                        "defaultState" : true,
-                        "lhs" : "spO2FiO2Ratio",
-                        "rhs" : 148
-                      }
-                    },
-                    {
-                      "component" : 0
-                    }
-                  ]
+                  "component" : 3,
+                  "condition" : {
+                    "comparison" : "lessThan",
+                    "defaultState" : true,
+                    "lhs" : "spO2FiO2Ratio",
+                    "rhs" : 148
+                  }
                 },
                 {
-                  "conditional" : [
-                    {
-                      "component" : 1,
-                      "condition" : {
-                        "comparison" : "lessThan",
-                        "defaultState" : true,
-                        "lhs" : "spO2FiO2Ratio",
-                        "rhs" : 220
-                      }
-                    },
-                    {
-                      "component" : 0
-                    }
-                  ]
+                  "component" : 2,
+                  "condition" : {
+                    "comparison" : "lessThan",
+                    "defaultState" : true,
+                    "lhs" : "spO2FiO2Ratio",
+                    "rhs" : 220
+                  }
                 },
                 {
-                  "conditional" : [
-                    {
-                      "component" : 1,
-                      "condition" : {
-                        "comparison" : "lessThan",
-                        "defaultState" : true,
-                        "lhs" : "spO2FiO2Ratio",
-                        "rhs" : 292
-                      }
-                    },
-                    {
-                      "component" : 0
-                    }
-                  ]
+                  "component" : 1,
+                  "condition" : {
+                    "comparison" : "lessThan",
+                    "defaultState" : true,
+                    "lhs" : "spO2FiO2Ratio",
+                    "rhs" : 292
+                  }
+                },
+                {
+                  "component" : 0
                 }
               ]
             }
@@ -182,18 +146,16 @@
             "component" : {
               "conditional" : [
                 {
-                  "component" : "respiratoryIntermediateScore",
+                  "component" : 1,
                   "condition" : {
-                    "comparison" : "equalTo",
+                    "comparison" : "greaterThanOrEqualTo",
                     "defaultState" : true,
                     "lhs" : "respiratorySupport",
                     "rhs" : 1
                   }
                 },
                 {
-                  "component" : {
-                    "nilConstant" : null
-                  }
+                  "component" : 0
                 }
               ]
             },
@@ -208,7 +170,7 @@
             "component" : {
               "conditional" : [
                 {
-                  "component" : "respiratoryIntermediateScore",
+                  "component" : 2,
                   "condition" : {
                     "comparison" : "equalTo",
                     "defaultState" : true,
@@ -217,9 +179,7 @@
                   }
                 },
                 {
-                  "component" : {
-                    "nilConstant" : null
-                  }
+                  "component" : 1
                 }
               ]
             },
@@ -234,7 +194,7 @@
             "component" : {
               "conditional" : [
                 {
-                  "component" : "respiratoryIntermediateScore",
+                  "component" : 3,
                   "condition" : {
                     "comparison" : "equalTo",
                     "defaultState" : true,
@@ -243,9 +203,7 @@
                   }
                 },
                 {
-                  "component" : {
-                    "nilConstant" : null
-                  }
+                  "component" : 1
                 }
               ]
             },
