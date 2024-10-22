@@ -168,7 +168,7 @@
       }
     ],
     "decimals" : 2,
-    "displayName" : "Base Excess",
+    "displayName" : "Base Deficit",
     "referenceName" : "baseExcess",
     "startingValue" : 0,
     "unit" : {

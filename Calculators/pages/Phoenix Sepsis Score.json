@@ -446,7 +446,7 @@
                   "green" : 0.7803921568627451,
                   "red" : 0.20392156862745098
                 },
-                "variableReference" : "hepaticBilirubin"
+                "variableReference" : "bilirubin"
               }
             },
             "rhs" : {

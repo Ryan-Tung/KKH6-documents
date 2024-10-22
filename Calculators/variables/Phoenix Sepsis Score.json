@@ -588,7 +588,7 @@
       }
     ],
     "decimals" : 1,
-    "displayName" : "International normalized ratio",
+    "displayName" : "International Normalized Ratio",
     "referenceName" : "coagulationINR",
     "startingValue" : 0,
     "unit" : {
@@ -877,7 +877,7 @@
       }
     ],
     "decimals" : 0,
-    "displayName" : "Absolute neutrophil count",
+    "displayName" : "Absolute Neutrophil Count",
     "referenceName" : "immunologicANC",
     "startingValue" : 0,
     "unit" : {
@@ -893,7 +893,7 @@
       }
     ],
     "decimals" : 0,
-    "displayName" : "Absolute lymphocyte count",
+    "displayName" : "Absolute Lymphocyte Count",
     "referenceName" : "immunologicALC",
     "startingValue" : 0,
     "unit" : {
@@ -1120,23 +1120,7 @@
     "alternateUnits" : [
       {
         "conversionScale" : 1,
-        "name" : "µmol\/L"
-      }
-    ],
-    "decimals" : 0,
-    "displayName" : "Total Bilirubin",
-    "referenceName" : "hepaticBilirubin",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : "µmol\/L"
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : "U\/L"
+        "name" : "IU\/L"
       }
     ],
     "decimals" : 0,
@@ -1145,7 +1129,7 @@
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
-      "name" : "U\/L"
+      "name" : "IU\/L"
     }
   },
   {
@@ -1165,7 +1149,7 @@
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
               "defaultState" : true,
-              "lhs" : "hepaticBilirubin",
+              "lhs" : "bilirubin",
               "rhs" : 68.4
             }
           },
@@ -1184,8 +1168,8 @@
         ]
       },
       "parameters" : [
-        "hepaticALT",
-        "hepaticBilirubin"
+        "bilirubin",
+        "hepaticALT"
       ],
       "roundingMethod" : "nearest"
     },

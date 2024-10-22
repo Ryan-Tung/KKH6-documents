@@ -67,7 +67,7 @@
               "comparison" : "equalTo",
               "defaultState" : true,
               "lhs" : "pelod2LactateAvailable",
-              "rhs" : 1
+              "rhs" : 0
             }
           }
         },
@@ -103,7 +103,7 @@
               "comparison" : "equalTo",
               "defaultState" : true,
               "lhs" : "pelod2MAPAvailable",
-              "rhs" : 1
+              "rhs" : 0
             }
           }
         },
@@ -168,7 +168,7 @@
               "comparison" : "equalTo",
               "defaultState" : true,
               "lhs" : "pelod2GCSAvailable",
-              "rhs" : 1
+              "rhs" : 0
             }
           }
         },
@@ -214,7 +214,7 @@
               "comparison" : "equalTo",
               "defaultState" : true,
               "lhs" : "pelod2PupilReactionAvailable",
-              "rhs" : 1
+              "rhs" : 0
             }
           }
         },
@@ -267,7 +267,7 @@
               "comparison" : "equalTo",
               "defaultState" : true,
               "lhs" : "pelod2VentilationAvailable",
-              "rhs" : 1
+              "rhs" : 0
             }
           }
         },
@@ -316,7 +316,7 @@
               "comparison" : "equalTo",
               "defaultState" : true,
               "lhs" : "pelod2RatioAvailable",
-              "rhs" : 1
+              "rhs" : 0
             }
           }
         },
@@ -329,7 +329,7 @@
               "comparison" : "equalTo",
               "defaultState" : true,
               "lhs" : "pelod2RatioAvailable",
-              "rhs" : 1
+              "rhs" : 0
             }
           }
         },
@@ -365,7 +365,7 @@
               "comparison" : "equalTo",
               "defaultState" : true,
               "lhs" : "pelod2PCO2Available",
-              "rhs" : 1
+              "rhs" : 0
             }
           }
         },
@@ -407,7 +407,7 @@
               "comparison" : "equalTo",
               "defaultState" : true,
               "lhs" : "pelod2LeucocytesAvailable",
-              "rhs" : 1
+              "rhs" : 0
             }
           }
         },
@@ -443,7 +443,7 @@
               "comparison" : "equalTo",
               "defaultState" : true,
               "lhs" : "pelod2PlateletsAvailable",
-              "rhs" : 1
+              "rhs" : 0
             }
           }
         },
@@ -485,7 +485,7 @@
               "comparison" : "equalTo",
               "defaultState" : true,
               "lhs" : "pelod2RenalCreatinineAvailable",
-              "rhs" : 1
+              "rhs" : 0
             }
           }
         },

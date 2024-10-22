@@ -412,7 +412,7 @@
               "comparison" : "equalTo",
               "defaultState" : true,
               "lhs" : "pSOFARespiratoryAvailable",
-              "rhs" : 0
+              "rhs" : 1
             }
           },
           {
@@ -453,9 +453,9 @@
       }
     ],
     "decimals" : 0,
-    "displayName" : "Respiratory Information Available?",
+    "displayName" : "Respiratory Not Available",
     "referenceName" : "pSOFARespiratoryAvailable",
-    "startingValue" : 1,
+    "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
@@ -479,7 +479,7 @@
               "comparison" : "equalTo",
               "defaultState" : true,
               "lhs" : "pSOFACoagulationAvailable",
-              "rhs" : 0
+              "rhs" : 1
             }
           },
           {
@@ -554,9 +554,9 @@
       }
     ],
     "decimals" : 0,
-    "displayName" : "Coagulation Information Available?",
+    "displayName" : "Platelets Not Available",
     "referenceName" : "pSOFACoagulationAvailable",
-    "startingValue" : 1,
+    "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
@@ -571,7 +571,7 @@
     ],
     "decimals" : 2,
     "displayName" : "Bilirubin",
-    "referenceName" : "pSOFABilirubin",
+    "referenceName" : "bilirubin",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
@@ -596,7 +596,7 @@
               "comparison" : "equalTo",
               "defaultState" : true,
               "lhs" : "pSOFAHepaticAvailable",
-              "rhs" : 0
+              "rhs" : 1
             }
           },
           {
@@ -604,7 +604,7 @@
             "condition" : {
               "comparison" : "greaterThan",
               "defaultState" : true,
-              "lhs" : "pSOFABilirubin",
+              "lhs" : "bilirubin",
               "rhs" : 205.2
             }
           },
@@ -613,7 +613,7 @@
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
               "defaultState" : true,
-              "lhs" : "pSOFABilirubin",
+              "lhs" : "bilirubin",
               "rhs" : 102.6
             }
           },
@@ -622,7 +622,7 @@
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
               "defaultState" : true,
-              "lhs" : "pSOFABilirubin",
+              "lhs" : "bilirubin",
               "rhs" : 34.2
             }
           },
@@ -631,7 +631,7 @@
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
               "defaultState" : true,
-              "lhs" : "pSOFABilirubin",
+              "lhs" : "bilirubin",
               "rhs" : 20.5
             }
           },
@@ -640,7 +640,7 @@
             "condition" : {
               "comparison" : "greaterThan",
               "defaultState" : true,
-              "lhs" : "pSOFABilirubin",
+              "lhs" : "bilirubin",
               "rhs" : 0.1
             }
           },
@@ -650,7 +650,7 @@
         ]
       },
       "parameters" : [
-        "pSOFABilirubin",
+        "bilirubin",
         "pSOFAHepaticAvailable"
       ],
       "roundingMethod" : "nearest"
@@ -671,9 +671,9 @@
       }
     ],
     "decimals" : 0,
-    "displayName" : "Hepatic Information Available?",
+    "displayName" : "Bilirubin Not Available",
     "referenceName" : "pSOFAHepaticAvailable",
-    "startingValue" : 1,
+    "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
@@ -713,7 +713,7 @@
               "comparison" : "equalTo",
               "defaultState" : true,
               "lhs" : "pSOFACardiovascularAvailable",
-              "rhs" : 0
+              "rhs" : 1
             }
           },
           {
@@ -790,9 +790,9 @@
       }
     ],
     "decimals" : 0,
-    "displayName" : "Cardiovascular Information Available?",
+    "displayName" : "Cardiovascular Not Available",
     "referenceName" : "pSOFACardiovascularAvailable",
-    "startingValue" : 1,
+    "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
@@ -816,7 +816,7 @@
               "comparison" : "equalTo",
               "defaultState" : true,
               "lhs" : "pSOFANeurologicalAvailable",
-              "rhs" : 0
+              "rhs" : 1
             }
           },
           {
@@ -891,9 +891,9 @@
       }
     ],
     "decimals" : 0,
-    "displayName" : "Neurological Information Available?",
+    "displayName" : "Glasgow Coma Score (GCS) Not Available",
     "referenceName" : "pSOFANeurologicalAvailable",
-    "startingValue" : 1,
+    "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
@@ -917,7 +917,7 @@
               "comparison" : "equalTo",
               "defaultState" : true,
               "lhs" : "pSOFARenalAvailable",
-              "rhs" : 0
+              "rhs" : 1
             }
           },
           {
@@ -1302,9 +1302,9 @@
       }
     ],
     "decimals" : 0,
-    "displayName" : "Renal Information Available?",
+    "displayName" : "Renal Creatinine Not Available",
     "referenceName" : "pSOFARenalAvailable",
-    "startingValue" : 1,
+    "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : ""

@@ -39,7 +39,7 @@
       }
     ],
     "decimals" : 0,
-    "displayName" : "Mechanical ventilation",
+    "displayName" : "Mechanical Ventilation",
     "referenceName" : "mechanicalVentilation",
     "startingValue" : -1,
     "unit" : {
@@ -55,7 +55,7 @@
       }
     ],
     "decimals" : 0,
-    "displayName" : "Systolic blood pressure",
+    "displayName" : "Systolic Blood Pressure",
     "referenceName" : "pim3SystolicBloodPressure",
     "startingValue" : 120,
     "unit" : {
