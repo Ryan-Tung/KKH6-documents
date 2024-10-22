@@ -55,7 +55,7 @@
       }
     ],
     "decimals" : 2,
-    "displayName" : "Number of feedings left",
+    "displayName" : "Number of Feedings left",
     "referenceName" : "numberOfFeedingsLeft",
     "startingValue" : 0,
     "unit" : {
