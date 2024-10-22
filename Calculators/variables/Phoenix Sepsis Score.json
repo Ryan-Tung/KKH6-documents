@@ -229,7 +229,6 @@
     },
     "referenceName" : "respiratoryScore",
     "startingValue" : 0,
-    "subtitle" : "Between 0 and 3 inclusive",
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
@@ -554,7 +553,6 @@
     },
     "referenceName" : "cardioScore",
     "startingValue" : 0,
-    "subtitle" : "Between 0 and 6 inclusive",
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
@@ -562,10 +560,6 @@
   },
   {
     "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : "x10³\/µL"
-      },
       {
         "conversionScale" : 1,
         "name" : "x10⁹\/L"
@@ -799,7 +793,6 @@
     },
     "referenceName" : "neurologicScore",
     "startingValue" : 0,
-    "subtitle" : "Between 0 and 2 inclusive",
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
@@ -863,7 +856,6 @@
     },
     "referenceName" : "endocrineScore",
     "startingValue" : 0,
-    "subtitle" : "Either 0 or 1",
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
@@ -944,7 +936,6 @@
     },
     "referenceName" : "immunologicScore",
     "startingValue" : 0,
-    "subtitle" : "Either 0 or 1",
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
@@ -1110,7 +1101,6 @@
     },
     "referenceName" : "renalScore",
     "startingValue" : 0,
-    "subtitle" : "Either 0 or 1",
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
@@ -1175,7 +1165,6 @@
     },
     "referenceName" : "hepaticScore",
     "startingValue" : 0,
-    "subtitle" : "Either 0 or 1",
     "unit" : {
       "conversionScale" : 1,
       "name" : ""

@@ -123,7 +123,7 @@
       }
     ],
     "decimals" : 0,
-    "displayName" : "Pupil reaction score",
+    "displayName" : "Pupillary reaction score",
     "formula" : {
       "equation" : {
         "conditional" : [
@@ -1041,7 +1041,6 @@
     },
     "referenceName" : "ratioScore",
     "startingValue" : 0,
-    "subtitle" : "Either 0 or 2",
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
@@ -1121,15 +1120,6 @@
             "condition" : {
               "comparison" : "equalTo",
               "defaultState" : true,
-              "lhs" : "pelod2VentilationAvailable",
-              "rhs" : 1
-            }
-          },
-          {
-            "component" : 0,
-            "condition" : {
-              "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "mechanicalVentilation",
               "rhs" : 0
             }
@@ -1146,8 +1136,7 @@
         ]
       },
       "parameters" : [
-        "mechanicalVentilation",
-        "pelod2VentilationAvailable"
+        "mechanicalVentilation"
       ],
       "roundingMethod" : "nearest"
     },
@@ -1418,7 +1407,7 @@
       }
     ],
     "decimals" : 0,
-    "displayName" : "Pupil Reaction Not Available",
+    "displayName" : "Pupillary Not Available",
     "referenceName" : "pelod2PupilReactionAvailable",
     "startingValue" : 0,
     "unit" : {
@@ -1434,7 +1423,7 @@
       }
     ],
     "decimals" : 0,
-    "displayName" : "Renal Creatinine Not Available",
+    "displayName" : "Creatinine Not Available",
     "referenceName" : "pelod2RenalCreatinineAvailable",
     "startingValue" : 0,
     "unit" : {
@@ -1482,22 +1471,6 @@
       }
     ],
     "decimals" : 0,
-    "displayName" : "Mechanical Ventilation Not Available",
-    "referenceName" : "pelod2VentilationAvailable",
-    "startingValue" : 0,
-    "unit" : {
-      "conversionScale" : 1,
-      "name" : ""
-    }
-  },
-  {
-    "alternateUnits" : [
-      {
-        "conversionScale" : 1,
-        "name" : ""
-      }
-    ],
-    "decimals" : 0,
     "displayName" : "Leucocytes Not Available",
     "referenceName" : "pelod2LeucocytesAvailable",
     "startingValue" : 0,
@@ -1514,7 +1487,7 @@
       }
     ],
     "decimals" : 0,
-    "displayName" : "Platelets Not Available?",
+    "displayName" : "Platelets Not Available",
     "referenceName" : "pelod2PlateletsAvailable",
     "startingValue" : 0,
     "unit" : {

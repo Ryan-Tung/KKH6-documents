@@ -229,45 +229,25 @@
     {
       "components" : [
         {
-          "toggle" : {
-            "color" : {
-              "blue" : 0.18823529411764706,
-              "green" : 0.23137254901960785,
-              "red" : 1
-            },
-            "variableReference" : "pelod2VentilationAvailable"
-          }
-        },
-        {
-          "conditional" : {
-            "component" : {
-              "discreteInput" : {
-                "presentationStyle" : "segmented",
-                "values" : [
-                  {
-                    "displayName" : "Yes",
-                    "value" : 1
-                  },
-                  {
-                    "displayName" : "No",
-                    "value" : 0
-                  }
-                ],
-                "variableInfo" : {
-                  "color" : {
-                    "blue" : 0.18823529411764706,
-                    "green" : 0.23137254901960785,
-                    "red" : 1
-                  },
-                  "variableReference" : "mechanicalVentilation"
-                }
+          "discreteInput" : {
+            "presentationStyle" : "segmented",
+            "values" : [
+              {
+                "displayName" : "Yes",
+                "value" : 1
+              },
+              {
+                "displayName" : "No",
+                "value" : 0
               }
-            },
-            "condition" : {
-              "comparison" : "equalTo",
-              "defaultState" : true,
-              "lhs" : "pelod2VentilationAvailable",
-              "rhs" : 0
+            ],
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0.18823529411764706,
+                "green" : 0.23137254901960785,
+                "red" : 1
+              },
+              "variableReference" : "mechanicalVentilation"
             }
           }
         },

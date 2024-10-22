@@ -439,7 +439,6 @@
     },
     "referenceName" : "respiratoryOutput",
     "startingValue" : 0,
-    "subtitle" : "Between 0 and 4 inclusive",
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
@@ -540,7 +539,6 @@
     },
     "referenceName" : "coagulationOutput",
     "startingValue" : 0,
-    "subtitle" : "Between 0 and 4 inclusive",
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
@@ -657,7 +655,6 @@
     },
     "referenceName" : "bilirubinOutput",
     "startingValue" : 0,
-    "subtitle" : "Between 0 and 4 inclusive",
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
@@ -776,7 +773,6 @@
     },
     "referenceName" : "cardiovascularOutput",
     "startingValue" : 0,
-    "subtitle" : "Between 0 and 4 inclusive",
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
@@ -877,7 +873,6 @@
     },
     "referenceName" : "neurlogicalOutput",
     "startingValue" : 0,
-    "subtitle" : "Between 0 and 4 inclusive",
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
@@ -1288,7 +1283,6 @@
     },
     "referenceName" : "renalOutput",
     "startingValue" : 0,
-    "subtitle" : "Between 0 and 4 inclusive",
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
@@ -1302,7 +1296,7 @@
       }
     ],
     "decimals" : 0,
-    "displayName" : "Renal Creatinine Not Available",
+    "displayName" : "Creatinine Not Available",
     "referenceName" : "pSOFARenalAvailable",
     "startingValue" : 0,
     "unit" : {
