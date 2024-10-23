@@ -1,0 +1,158 @@
+[
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      },
+      {
+        "conversionScale" : 1,
+        "name" : "mg"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "Adrenaline",
+    "referenceName" : "adrenalineCode",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mg"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "5% Albumin",
+    "referenceName" : "albuminCode",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "Calcium Chloride",
+    "referenceName" : "calciumChlorideCode",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "Calcium Gluconate",
+    "referenceName" : "calciumGluconateCode",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "0.9% Sodium Chloride",
+    "referenceName" : "sodiumChlorideCode",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      },
+      {
+        "conversionScale" : 1,
+        "name" : "mmol"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "Sodium Bicarbonate",
+    "referenceName" : "sodiumBicarbonateCode",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mmol"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      },
+      {
+        "conversionScale" : 1,
+        "name" : "mmol"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "Dextrose 10%",
+    "referenceName" : "dextroseCode",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mmol"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "Blood Products",
+    "referenceName" : "bloodProductsCode",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "joules"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "Defibrillation",
+    "referenceName" : "defibrillationCode",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "joules"
+    }
+  }
+]

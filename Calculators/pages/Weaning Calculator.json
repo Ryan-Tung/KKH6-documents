@@ -140,9 +140,9 @@
       "showName" : true
     }
   ],
-  "image" : {
-    "custom" : "figure.child.circle.fill"
-  },
   "name" : "Weaning Calculator",
-  "nested" : true
+  "nested" : true,
+  "special" : {
+    "custom" : "figure.child.circle.fill"
+  }
 }

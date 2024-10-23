@@ -243,9 +243,9 @@
       "showName" : true
     }
   ],
-  "image" : {
-    "sfSymbol" : "percent"
-  },
   "name" : "PIM3",
-  "nested" : false
+  "nested" : false,
+  "special" : {
+    "sfSymbol" : "percent"
+  }
 }

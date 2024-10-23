@@ -1,15 +1,12 @@
 {
   "color" : {
-    "blue" : 0.9019607843137255,
-    "green" : 0.6784313725490196,
-    "red" : 0.19607843137254902
-  },
-  "groups" : [
-
-  ],
-  "image" : {
-    "custom" : "person.waking.double.bed.fill"
+    "blue" : 0,
+    "green" : 0,
+    "red" : 0
   },
   "name" : "Sedation Weaning",
-  "nested" : false
+  "nested" : false,
+  "special" : {
+    "sfSymbol" : "circle"
+  }
 }

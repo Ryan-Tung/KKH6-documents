@@ -325,7 +325,7 @@
               {
                 "component" : 2,
                 "condition" : {
-                  "comparison" : "greaterThan",
+                  "comparison" : "greaterThanOrEqualTo",
                   "defaultState" : true,
                   "lhs" : "cardioLactate",
                   "rhs" : 11
@@ -334,7 +334,7 @@
               {
                 "component" : 1,
                 "condition" : {
-                  "comparison" : "greaterThan",
+                  "comparison" : "greaterThanOrEqualTo",
                   "defaultState" : true,
                   "lhs" : "cardioLactate",
                   "rhs" : 5

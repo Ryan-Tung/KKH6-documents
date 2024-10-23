@@ -988,9 +988,9 @@
       "showName" : true
     }
   ],
-  "image" : {
-    "sfSymbol" : "syringe.fill"
-  },
   "name" : "Peripheral Line Max Concentration",
-  "nested" : false
+  "nested" : false,
+  "special" : {
+    "sfSymbol" : "syringe.fill"
+  }
 }

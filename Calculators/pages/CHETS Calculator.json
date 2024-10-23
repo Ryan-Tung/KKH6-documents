@@ -955,9 +955,9 @@
       "showName" : true
     }
   ],
-  "image" : {
-    "custom" : "ambulance.fill"
-  },
   "name" : "CHETS Calculator",
-  "nested" : false
+  "nested" : false,
+  "special" : {
+    "custom" : "ambulance.fill"
+  }
 }

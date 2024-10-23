@@ -220,11 +220,11 @@
               },
               {
                 "displayName" : "≥ 5, < 11",
-                "value" : 1
+                "value" : 8
               },
               {
                 "displayName" : "11 or more",
-                "value" : 2
+                "value" : 12
               }
             ],
             "variableInfo" : {
@@ -482,9 +482,9 @@
       "showName" : true
     }
   ],
-  "image" : {
-    "sfSymbol" : "flame.fill"
-  },
   "name" : "Phoenix Sepsis Score",
-  "nested" : false
+  "nested" : false,
+  "special" : {
+    "sfSymbol" : "flame.fill"
+  }
 }

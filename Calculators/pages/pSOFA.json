@@ -724,9 +724,9 @@
       "showName" : true
     }
   ],
-  "image" : {
-    "sfSymbol" : "bolt.heart.fill"
-  },
   "name" : "pSOFA",
-  "nested" : false
+  "nested" : false,
+  "special" : {
+    "sfSymbol" : "bolt.heart.fill"
+  }
 }

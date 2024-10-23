@@ -489,9 +489,9 @@
       "showName" : true
     }
   ],
-  "image" : {
-    "sfSymbol" : "person.crop.circle.badge.exclamationmark"
-  },
   "name" : "PELOD2",
-  "nested" : false
+  "nested" : false,
+  "special" : {
+    "sfSymbol" : "person.crop.circle.badge.exclamationmark"
+  }
 }
