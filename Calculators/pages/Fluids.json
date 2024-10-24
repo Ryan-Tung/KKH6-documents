@@ -118,9 +118,9 @@
       "showName" : true
     }
   ],
-  "name" : "Fluids",
-  "nested" : true,
-  "special" : {
+  "image" : {
     "custom" : "waterbottle.fill"
-  }
+  },
+  "name" : "Fluids",
+  "nested" : true
 }

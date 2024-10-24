@@ -870,9 +870,9 @@
       "showName" : true
     }
   ],
-  "name" : "CICU Feeding Protocol",
-  "nested" : false,
-  "special" : {
+  "image" : {
     "sfSymbol" : "fork.knife"
-  }
+  },
+  "name" : "CICU Feeding Protocol",
+  "nested" : false
 }

@@ -4,9 +4,9 @@
     "green" : 0,
     "red" : 0
   },
-  "name" : "Sedation Weaning",
-  "nested" : false,
-  "special" : {
+  "image" : {
     "sfSymbol" : "circle"
-  }
+  },
+  "name" : "Sedation Weaning",
+  "nested" : false
 }

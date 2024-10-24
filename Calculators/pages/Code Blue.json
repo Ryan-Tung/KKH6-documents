@@ -466,9 +466,9 @@
       "showName" : true
     }
   ],
-  "name" : "Code Blue",
-  "nested" : false,
-  "special" : {
+  "image" : {
     "custom" : "code.blue"
-  }
+  },
+  "name" : "Code Blue",
+  "nested" : false
 }

@@ -482,9 +482,9 @@
       "showName" : true
     }
   ],
-  "name" : "Phoenix Sepsis Score",
-  "nested" : false,
-  "special" : {
+  "image" : {
     "sfSymbol" : "flame.fill"
-  }
+  },
+  "name" : "Phoenix Sepsis Score",
+  "nested" : false
 }

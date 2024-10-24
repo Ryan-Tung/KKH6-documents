@@ -221,9 +221,9 @@
       "showName" : true
     }
   ],
-  "name" : "Electrolytes",
-  "nested" : true,
-  "special" : {
+  "image" : {
     "sfSymbol" : "bolt.fill"
-  }
+  },
+  "name" : "Electrolytes",
+  "nested" : true
 }

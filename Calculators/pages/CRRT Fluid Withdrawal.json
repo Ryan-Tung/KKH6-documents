@@ -295,9 +295,9 @@
       "showName" : false
     }
   ],
-  "name" : "CRRT Fluid Withdrawal",
-  "nested" : false,
-  "special" : {
+  "image" : {
     "sfSymbol" : "drop.degreesign.slash.fill"
-  }
+  },
+  "name" : "CRRT Fluid Withdrawal",
+  "nested" : false
 }

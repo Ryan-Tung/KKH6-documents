@@ -4,9 +4,9 @@
     "green" : 0,
     "red" : 0
   },
-  "name" : "Fluids And Electrolytes",
-  "nested" : false,
-  "special" : {
+  "image" : {
     "sfSymbol" : "circle"
-  }
+  },
+  "name" : "Fluids And Electrolytes",
+  "nested" : false
 }

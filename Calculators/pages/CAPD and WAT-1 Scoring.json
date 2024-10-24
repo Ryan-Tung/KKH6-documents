@@ -691,9 +691,9 @@
       "showName" : true
     }
   ],
-  "name" : "CAPD and WAT-1 Scoring",
-  "nested" : false,
-  "special" : {
+  "image" : {
     "custom" : "cognitive.deficit"
-  }
+  },
+  "name" : "CAPD and WAT-1 Scoring",
+  "nested" : false
 }

@@ -109,9 +109,9 @@
       "showName" : true
     }
   ],
-  "name" : "Conversion Calculator",
-  "nested" : true,
-  "special" : {
+  "image" : {
     "sfSymbol" : "arrow.left.arrow.right.circle.fill"
-  }
+  },
+  "name" : "Conversion Calculator",
+  "nested" : true
 }
