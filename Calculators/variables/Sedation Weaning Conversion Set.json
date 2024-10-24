@@ -422,17 +422,6 @@
               ]
             },
             "condition" : {
-              "comparison" : "lessThanOrEqualTo",
-              "defaultState" : true,
-              "lhs" : "ivDexmedetomidineRate",
-              "rhs" : 0.3
-            }
-          },
-          {
-            "component" : {
-              "nilConstant" : null
-            },
-            "condition" : {
               "comparison" : "lessThan",
               "defaultState" : true,
               "lhs" : "ivDexmedetomidineRate",
@@ -452,10 +441,10 @@
               ]
             },
             "condition" : {
-              "comparison" : "lessThanOrEqualTo",
+              "comparison" : "lessThan",
               "defaultState" : true,
               "lhs" : "ivDexmedetomidineRate",
-              "rhs" : 0.5
+              "rhs" : 0.6
             }
           },
           {
