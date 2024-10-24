@@ -374,5 +374,108 @@
       "conversionScale" : 1,
       "name" : "mg"
     }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mcg\/kg\/hr"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "IV Dexmedetomidine Rate",
+    "referenceName" : "ivDexmedetomidineRate",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mcg\/kg\/hr"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mcg\/kg\/hr"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "IV\/PO Clonidine Q6H Dose",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : {
+              "nilConstant" : null
+            },
+            "condition" : {
+              "comparison" : "lessThan",
+              "defaultState" : true,
+              "lhs" : "ivDexmedetomidineRate",
+              "rhs" : 0.2
+            }
+          },
+          {
+            "component" : {
+              "product" : [
+                2,
+                "weight"
+              ]
+            },
+            "condition" : {
+              "comparison" : "lessThanOrEqualTo",
+              "defaultState" : true,
+              "lhs" : "ivDexmedetomidineRate",
+              "rhs" : 0.3
+            }
+          },
+          {
+            "component" : {
+              "nilConstant" : null
+            },
+            "condition" : {
+              "comparison" : "lessThan",
+              "defaultState" : true,
+              "lhs" : "ivDexmedetomidineRate",
+              "rhs" : 0.4
+            }
+          },
+          {
+            "component" : {
+              "product" : [
+                {
+                  "rangeConstant" : {
+                    "boundaryValue" : 5,
+                    "value" : 3
+                  }
+                },
+                "weight"
+              ]
+            },
+            "condition" : {
+              "comparison" : "lessThanOrEqualTo",
+              "defaultState" : true,
+              "lhs" : "ivDexmedetomidineRate",
+              "rhs" : 0.5
+            }
+          },
+          {
+            "component" : {
+              "nilConstant" : null
+            }
+          }
+        ]
+      },
+      "parameters" : [
+        "ivDexmedetomidineRate",
+        "weight"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "ivPoClonidineQ6HDose",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mcg\/kg\/hr"
+    }
   }
 ]

@@ -12,6 +12,9 @@
         },
         {
           "text" : "The score is calculated on ICU admission and every 24 hours until discharge, using the worst parameters measured within each 24 hour period."
+        },
+        {
+          "text" : "If a variable is not available in a given 24-hour period, it is assumed to be normal and a score of 0 is used."
         }
       ],
       "name" : "Instructions",

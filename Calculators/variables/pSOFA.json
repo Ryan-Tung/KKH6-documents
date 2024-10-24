@@ -452,7 +452,7 @@
       }
     ],
     "decimals" : 0,
-    "displayName" : "Respiratory Not Available",
+    "displayName" : "Not Available",
     "referenceName" : "pSOFARespiratoryAvailable",
     "startingValue" : 0,
     "unit" : {
@@ -552,7 +552,7 @@
       }
     ],
     "decimals" : 0,
-    "displayName" : "Platelets Not Available",
+    "displayName" : "Not Available",
     "referenceName" : "pSOFACoagulationAvailable",
     "startingValue" : 0,
     "unit" : {
@@ -668,7 +668,7 @@
       }
     ],
     "decimals" : 0,
-    "displayName" : "Bilirubin Not Available",
+    "displayName" : "Not Available",
     "referenceName" : "pSOFAHepaticAvailable",
     "startingValue" : 0,
     "unit" : {
@@ -786,7 +786,7 @@
       }
     ],
     "decimals" : 0,
-    "displayName" : "Cardiovascular Not Available",
+    "displayName" : "Not Available",
     "referenceName" : "pSOFACardiovascularAvailable",
     "startingValue" : 0,
     "unit" : {
@@ -886,7 +886,7 @@
       }
     ],
     "decimals" : 0,
-    "displayName" : "Glasgow Coma Score (GCS) Not Available",
+    "displayName" : "Not Available",
     "referenceName" : "pSOFANeurologicalAvailable",
     "startingValue" : 0,
     "unit" : {
@@ -1296,7 +1296,7 @@
       }
     ],
     "decimals" : 0,
-    "displayName" : "Creatinine Not Available",
+    "displayName" : "Not Available",
     "referenceName" : "pSOFARenalAvailable",
     "startingValue" : 0,
     "unit" : {

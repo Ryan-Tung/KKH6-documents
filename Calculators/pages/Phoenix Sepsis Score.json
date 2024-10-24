@@ -192,11 +192,11 @@
                 "value" : 0
               },
               {
-                "displayName" : "One",
+                "displayName" : "1",
                 "value" : 1
               },
               {
-                "displayName" : "≥ Two",
+                "displayName" : "≥2",
                 "value" : 2
               }
             ],
@@ -215,15 +215,15 @@
             "presentationStyle" : "segmented",
             "values" : [
               {
-                "displayName" : "Less than 5",
+                "displayName" : "<5",
                 "value" : 0
               },
               {
-                "displayName" : "≥ 5, < 11",
+                "displayName" : "5 to 10.9",
                 "value" : 8
               },
               {
-                "displayName" : "11 or more",
+                "displayName" : "≥11",
                 "value" : 12
               }
             ],

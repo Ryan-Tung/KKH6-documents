@@ -1407,7 +1407,7 @@
       }
     ],
     "decimals" : 0,
-    "displayName" : "Pupillary Not Available",
+    "displayName" : "Pupillary Reaction Not Available",
     "referenceName" : "pelod2PupilReactionAvailable",
     "startingValue" : 0,
     "unit" : {
