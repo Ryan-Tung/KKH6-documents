@@ -6,18 +6,18 @@
     },
     "calcDoseUnit" : {
       "conversionScale" : 1,
-      "name" : "mL"
+      "name" : "mg"
     },
     "conversionFactor" : 1,
     "displayName" : "Adrenaline [Epinephrine] 1:10,000 (1mg\/10ml)",
-    "dose" : 0.1,
+    "dose" : 0.01,
     "doseUnit" : {
       "conversionScale" : 1,
       "name" : "mL\/kg"
     },
     "isPreDilutionAmount" : false,
     "maxCalcDose" : 10,
-    "notes" : "Maximum dose: 10mL",
+    "notes" : "Maximum dose: 1mg\/10mL",
     "referenceName" : "Adrenaline"
   },
   {
