@@ -104,12 +104,7 @@
                     "numerator" : "fiO2"
                   }
                 },
-                "numerator" : {
-                  "division" : {
-                    "denominator" : 100,
-                    "numerator" : "spO2"
-                  }
-                }
+                "numerator" : "spO2"
               }
             },
             "condition" : {

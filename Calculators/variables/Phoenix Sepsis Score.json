@@ -31,6 +31,17 @@
             "component" : {
               "conditional" : [
                 {
+                  "component" : {
+                    "nilConstant" : null
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "paO2FiO2Ratio",
+                    "rhs" : 0
+                  }
+                },
+                {
                   "component" : 3,
                   "condition" : {
                     "comparison" : "lessThan",
@@ -72,6 +83,17 @@
           {
             "component" : {
               "conditional" : [
+                {
+                  "component" : {
+                    "nilConstant" : null
+                  },
+                  "condition" : {
+                    "comparison" : "equalTo",
+                    "defaultState" : true,
+                    "lhs" : "spO2FiO2Ratio",
+                    "rhs" : 0
+                  }
+                },
                 {
                   "component" : 3,
                   "condition" : {
@@ -609,10 +631,6 @@
   {
     "alternateUnits" : [
       {
-        "conversionScale" : 1,
-        "name" : "mg\/dL"
-      },
-      {
         "conversionScale" : 0.01,
         "name" : "g\/L"
       }
@@ -753,7 +771,6 @@
     },
     "referenceName" : "coagulationScore",
     "startingValue" : 0,
-    "subtitle" : "1 point per lab, max of 2",
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
@@ -868,7 +885,7 @@
         "name" : "x10⁹\/L"
       }
     ],
-    "decimals" : 0,
+    "decimals" : 2,
     "displayName" : "Absolute Neutrophil Count",
     "referenceName" : "immunologicANC",
     "startingValue" : 0,
@@ -884,7 +901,7 @@
         "name" : "x10⁹\/L"
       }
     ],
-    "decimals" : 0,
+    "decimals" : 2,
     "displayName" : "Absolute Lymphocyte Count",
     "referenceName" : "immunologicALC",
     "startingValue" : 0,
