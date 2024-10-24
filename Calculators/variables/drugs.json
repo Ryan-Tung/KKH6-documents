@@ -13,11 +13,11 @@
     "dose" : 0.01,
     "doseUnit" : {
       "conversionScale" : 1,
-      "name" : "mL\/kg"
+      "name" : "mg\/kg"
     },
     "isPreDilutionAmount" : false,
     "maxCalcDose" : 1,
-    "notes" : "Maximum dose: 1mg\/10mL",
+    "notes" : "Maximum dose: 1mg\/10mL\nDose: 0.1mL\/kg (0.01mg\/kg)",
     "referenceName" : "Adrenaline"
   },
   {
