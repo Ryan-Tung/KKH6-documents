@@ -30,7 +30,6 @@
                         },
                         "condition" : {
                           "comparison" : "greaterThanOrEqualTo",
-                          "defaultState" : true,
                           "lhs" : "age",
                           "rhs" : 1
                         }
@@ -42,7 +41,6 @@
                               "component" : 3,
                               "condition" : {
                                 "comparison" : "lessThanOrEqualTo",
-                                "defaultState" : true,
                                 "lhs" : "weight",
                                 "rhs" : 3
                               }
@@ -51,7 +49,6 @@
                               "component" : 3.5,
                               "condition" : {
                                 "comparison" : "lessThanOrEqualTo",
-                                "defaultState" : true,
                                 "lhs" : "weight",
                                 "rhs" : 6
                               }
@@ -60,7 +57,6 @@
                               "component" : 4,
                               "condition" : {
                                 "comparison" : "lessThanOrEqualTo",
-                                "defaultState" : true,
                                 "lhs" : "weight",
                                 "rhs" : 8
                               }
@@ -145,7 +141,6 @@
             },
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
-              "defaultState" : true,
               "lhs" : "age",
               "rhs" : 1
             }
@@ -157,7 +152,6 @@
                   "component" : 8,
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weight",
                     "rhs" : 3
                   }
@@ -166,7 +160,6 @@
                   "component" : 9,
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weight",
                     "rhs" : 4
                   }
@@ -175,7 +168,6 @@
                   "component" : 10,
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weight",
                     "rhs" : 8
                   }
@@ -223,7 +215,6 @@
             },
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
-              "defaultState" : true,
               "lhs" : "age",
               "rhs" : 1
             }
@@ -235,7 +226,6 @@
                   "component" : 10,
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weight",
                     "rhs" : 3
                   }
@@ -244,7 +234,6 @@
                   "component" : 11,
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weight",
                     "rhs" : 4
                   }
@@ -253,7 +242,6 @@
                   "component" : 12,
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weight",
                     "rhs" : 6
                   }
@@ -262,7 +250,6 @@
                   "component" : 13,
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weight",
                     "rhs" : 8
                   }
@@ -309,7 +296,6 @@
             },
             "condition" : {
               "comparison" : "lessThan",
-              "defaultState" : true,
               "lhs" : "age",
               "rhs" : 0.08333333333333333
             }
@@ -318,7 +304,6 @@
             "component" : 1,
             "condition" : {
               "comparison" : "lessThanOrEqualTo",
-              "defaultState" : true,
               "lhs" : "age",
               "rhs" : 2
             }
@@ -356,7 +341,6 @@
             "component" : -1,
             "condition" : {
               "comparison" : "lessThan",
-              "defaultState" : true,
               "lhs" : "age",
               "rhs" : 1
             }
@@ -365,7 +349,6 @@
             "component" : 2,
             "condition" : {
               "comparison" : "lessThanOrEqualTo",
-              "defaultState" : true,
               "lhs" : "age",
               "rhs" : 6
             }
@@ -403,7 +386,6 @@
             "component" : 4,
             "condition" : {
               "comparison" : "lessThan",
-              "defaultState" : true,
               "lhs" : "weight",
               "rhs" : 10
             }
@@ -412,7 +394,6 @@
             "component" : 4.5,
             "condition" : {
               "comparison" : "lessThan",
-              "defaultState" : true,
               "lhs" : "weight",
               "rhs" : 20
             }
@@ -426,7 +407,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "weight",
               "rhs" : 20
             }
@@ -435,7 +415,6 @@
             "component" : 5.5,
             "condition" : {
               "comparison" : "lessThanOrEqualTo",
-              "defaultState" : true,
               "lhs" : "weight",
               "rhs" : 40
             }
@@ -473,7 +452,6 @@
             "component" : 6.5,
             "condition" : {
               "comparison" : "lessThan",
-              "defaultState" : true,
               "lhs" : "weight",
               "rhs" : 6
             }
@@ -487,7 +465,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "weight",
               "rhs" : 6
             }
@@ -496,7 +473,6 @@
             "component" : 8,
             "condition" : {
               "comparison" : "lessThan",
-              "defaultState" : true,
               "lhs" : "weight",
               "rhs" : 15
             }
@@ -510,7 +486,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "weight",
               "rhs" : 15
             }
@@ -524,7 +499,6 @@
             },
             "condition" : {
               "comparison" : "lessThanOrEqualTo",
-              "defaultState" : true,
               "lhs" : "weight",
               "rhs" : 30
             }
@@ -634,7 +608,6 @@
             "component" : 60,
             "condition" : {
               "comparison" : "lessThan",
-              "defaultState" : true,
               "lhs" : "age",
               "rhs" : 0.08333333333333333
             }
@@ -643,7 +616,6 @@
             "component" : 90,
             "condition" : {
               "comparison" : "greaterThan",
-              "defaultState" : true,
               "lhs" : "age",
               "rhs" : 10
             }
@@ -692,7 +664,6 @@
             },
             "condition" : {
               "comparison" : "lessThan",
-              "defaultState" : true,
               "lhs" : "age",
               "rhs" : 0.25
             }
@@ -706,7 +677,6 @@
             },
             "condition" : {
               "comparison" : "lessThan",
-              "defaultState" : true,
               "lhs" : "age",
               "rhs" : 0.5
             }
@@ -720,7 +690,6 @@
             },
             "condition" : {
               "comparison" : "lessThan",
-              "defaultState" : true,
               "lhs" : "age",
               "rhs" : 1
             }
@@ -734,7 +703,6 @@
             },
             "condition" : {
               "comparison" : "lessThan",
-              "defaultState" : true,
               "lhs" : "age",
               "rhs" : 6
             }
@@ -748,7 +716,6 @@
             },
             "condition" : {
               "comparison" : "lessThan",
-              "defaultState" : true,
               "lhs" : "age",
               "rhs" : 10
             }
@@ -796,7 +763,6 @@
             },
             "condition" : {
               "comparison" : "lessThan",
-              "defaultState" : true,
               "lhs" : "age",
               "rhs" : 0.5
             }
@@ -810,7 +776,6 @@
             },
             "condition" : {
               "comparison" : "lessThan",
-              "defaultState" : true,
               "lhs" : "age",
               "rhs" : 1
             }
@@ -824,7 +789,6 @@
             },
             "condition" : {
               "comparison" : "lessThan",
-              "defaultState" : true,
               "lhs" : "age",
               "rhs" : 6
             }
@@ -838,7 +802,6 @@
             },
             "condition" : {
               "comparison" : "lessThan",
-              "defaultState" : true,
               "lhs" : "age",
               "rhs" : 10
             }
@@ -852,7 +815,6 @@
             },
             "condition" : {
               "comparison" : "lessThan",
-              "defaultState" : true,
               "lhs" : "age",
               "rhs" : 15
             }

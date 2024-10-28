@@ -41,7 +41,6 @@
             },
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
-              "defaultState" : true,
               "lhs" : "age",
               "rhs" : 1
             }

@@ -58,7 +58,6 @@
             },
             "condition" : {
               "comparison" : "notEqualTo",
-              "defaultState" : true,
               "lhs" : "fiO2",
               "rhs" : 0
             }
@@ -109,7 +108,6 @@
             },
             "condition" : {
               "comparison" : "notEqualTo",
-              "defaultState" : true,
               "lhs" : "fiO2",
               "rhs" : 0
             }
@@ -150,7 +148,6 @@
             "component" : "paO2FiO2Ratio",
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "respiratoryInputType",
               "rhs" : 0
             }
@@ -159,7 +156,6 @@
             "component" : "spO2FiO2Ratio",
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "respiratoryInputType",
               "rhs" : 1
             }
@@ -201,7 +197,6 @@
             "component" : 0,
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
-              "defaultState" : true,
               "lhs" : "respiratoryRatio",
               "rhs" : 400
             }
@@ -210,7 +205,6 @@
             "component" : 1,
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
-              "defaultState" : true,
               "lhs" : "respiratoryRatio",
               "rhs" : 300
             }
@@ -219,7 +213,6 @@
             "component" : 2,
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
-              "defaultState" : true,
               "lhs" : "respiratoryRatio",
               "rhs" : 200
             }
@@ -231,7 +224,6 @@
                   "component" : 3,
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "respiratoryOnMechanicalVentilation",
                     "rhs" : 1
                   }
@@ -245,7 +237,6 @@
             },
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
-              "defaultState" : true,
               "lhs" : "respiratoryRatio",
               "rhs" : 100
             }
@@ -254,7 +245,6 @@
             "component" : 4,
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "respiratoryOnMechanicalVentilation",
               "rhs" : 1
             }
@@ -295,7 +285,6 @@
             "component" : 0,
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
-              "defaultState" : true,
               "lhs" : "respiratoryRatio",
               "rhs" : 292
             }
@@ -304,7 +293,6 @@
             "component" : 1,
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
-              "defaultState" : true,
               "lhs" : "respiratoryRatio",
               "rhs" : 264
             }
@@ -313,7 +301,6 @@
             "component" : 2,
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
-              "defaultState" : true,
               "lhs" : "respiratoryRatio",
               "rhs" : 221
             }
@@ -325,7 +312,6 @@
                   "component" : 3,
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "respiratoryOnMechanicalVentilation",
                     "rhs" : 1
                   }
@@ -339,7 +325,6 @@
             },
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
-              "defaultState" : true,
               "lhs" : "respiratoryRatio",
               "rhs" : 148
             }
@@ -348,7 +333,6 @@
             "component" : 4,
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "respiratoryOnMechanicalVentilation",
               "rhs" : 1
             }
@@ -405,7 +389,6 @@
             "component" : 0,
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "pSOFARespiratoryAvailable",
               "rhs" : 1
             }
@@ -414,7 +397,6 @@
             "component" : "respiratoryPfScore",
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "respiratoryInputType",
               "rhs" : 0
             }
@@ -471,7 +453,6 @@
             "component" : 0,
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "pSOFACoagulationAvailable",
               "rhs" : 1
             }
@@ -480,7 +461,6 @@
             "component" : 0,
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
-              "defaultState" : true,
               "lhs" : "platelets",
               "rhs" : 150
             }
@@ -489,7 +469,6 @@
             "component" : 1,
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
-              "defaultState" : true,
               "lhs" : "platelets",
               "rhs" : 100
             }
@@ -498,7 +477,6 @@
             "component" : 2,
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
-              "defaultState" : true,
               "lhs" : "platelets",
               "rhs" : 50
             }
@@ -507,7 +485,6 @@
             "component" : 3,
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
-              "defaultState" : true,
               "lhs" : "platelets",
               "rhs" : 20
             }
@@ -516,7 +493,6 @@
             "component" : 4,
             "condition" : {
               "comparison" : "greaterThan",
-              "defaultState" : true,
               "lhs" : "platelets",
               "rhs" : 1
             }
@@ -587,7 +563,6 @@
             "component" : 0,
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "pSOFAHepaticAvailable",
               "rhs" : 1
             }
@@ -596,7 +571,6 @@
             "component" : 4,
             "condition" : {
               "comparison" : "greaterThan",
-              "defaultState" : true,
               "lhs" : "bilirubin",
               "rhs" : 205.2
             }
@@ -605,7 +579,6 @@
             "component" : 3,
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
-              "defaultState" : true,
               "lhs" : "bilirubin",
               "rhs" : 102.6
             }
@@ -614,7 +587,6 @@
             "component" : 2,
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
-              "defaultState" : true,
               "lhs" : "bilirubin",
               "rhs" : 34.2
             }
@@ -623,7 +595,6 @@
             "component" : 1,
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
-              "defaultState" : true,
               "lhs" : "bilirubin",
               "rhs" : 20.5
             }
@@ -632,7 +603,6 @@
             "component" : 0,
             "condition" : {
               "comparison" : "greaterThan",
-              "defaultState" : true,
               "lhs" : "bilirubin",
               "rhs" : 0.1
             }
@@ -703,7 +673,6 @@
             "component" : 0,
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "pSOFACardiovascularAvailable",
               "rhs" : 1
             }
@@ -712,7 +681,6 @@
             "component" : 0,
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "cardiovascularInput",
               "rhs" : 0
             }
@@ -721,7 +689,6 @@
             "component" : 1,
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "cardiovascularInput",
               "rhs" : 1
             }
@@ -730,7 +697,6 @@
             "component" : 2,
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "cardiovascularInput",
               "rhs" : 2
             }
@@ -739,7 +705,6 @@
             "component" : 3,
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "cardiovascularInput",
               "rhs" : 3
             }
@@ -748,7 +713,6 @@
             "component" : 4,
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "cardiovascularInput",
               "rhs" : 4
             }
@@ -805,7 +769,6 @@
             "component" : 0,
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "pSOFANeurologicalAvailable",
               "rhs" : 1
             }
@@ -814,7 +777,6 @@
             "component" : 0,
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "neurologicGCS",
               "rhs" : 15
             }
@@ -823,7 +785,6 @@
             "component" : 1,
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
-              "defaultState" : true,
               "lhs" : "neurologicGCS",
               "rhs" : 13
             }
@@ -832,7 +793,6 @@
             "component" : 2,
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
-              "defaultState" : true,
               "lhs" : "neurologicGCS",
               "rhs" : 10
             }
@@ -841,7 +801,6 @@
             "component" : 3,
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
-              "defaultState" : true,
               "lhs" : "neurologicGCS",
               "rhs" : 6
             }
@@ -850,7 +809,6 @@
             "component" : 4,
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
-              "defaultState" : true,
               "lhs" : "neurologicGCS",
               "rhs" : 3
             }
@@ -905,7 +863,6 @@
             "component" : 0,
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "pSOFARenalAvailable",
               "rhs" : 1
             }
@@ -917,7 +874,6 @@
                   "component" : 4,
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "renalCreatinine",
                     "rhs" : 141.4
                   }
@@ -926,7 +882,6 @@
                   "component" : 3,
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "renalCreatinine",
                     "rhs" : 106.1
                   }
@@ -935,7 +890,6 @@
                   "component" : 2,
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "renalCreatinine",
                     "rhs" : 88.4
                   }
@@ -944,7 +898,6 @@
                   "component" : 1,
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "renalCreatinine",
                     "rhs" : 70.7
                   }
@@ -956,7 +909,6 @@
             },
             "condition" : {
               "comparison" : "lessThan",
-              "defaultState" : true,
               "lhs" : "age",
               "rhs" : 0.08333333333333333
             }
@@ -968,7 +920,6 @@
                   "component" : 4,
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "renalCreatinine",
                     "rhs" : 106.1
                   }
@@ -977,7 +928,6 @@
                   "component" : 3,
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "renalCreatinine",
                     "rhs" : 70.7
                   }
@@ -986,7 +936,6 @@
                   "component" : 2,
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "renalCreatinine",
                     "rhs" : 44.2
                   }
@@ -995,7 +944,6 @@
                   "component" : 1,
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "renalCreatinine",
                     "rhs" : 26.5
                   }
@@ -1007,7 +955,6 @@
             },
             "condition" : {
               "comparison" : "lessThanOrEqualTo",
-              "defaultState" : true,
               "lhs" : "age",
               "rhs" : 0.9166666666666666
             }
@@ -1019,7 +966,6 @@
                   "component" : 4,
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "renalCreatinine",
                     "rhs" : 132.6
                   }
@@ -1028,7 +974,6 @@
                   "component" : 3,
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "renalCreatinine",
                     "rhs" : 97.2
                   }
@@ -1037,7 +982,6 @@
                   "component" : 2,
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "renalCreatinine",
                     "rhs" : 53
                   }
@@ -1046,7 +990,6 @@
                   "component" : 1,
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "renalCreatinine",
                     "rhs" : 35.4
                   }
@@ -1058,7 +1001,6 @@
             },
             "condition" : {
               "comparison" : "lessThanOrEqualTo",
-              "defaultState" : true,
               "lhs" : "age",
               "rhs" : 1.9166666666666667
             }
@@ -1070,7 +1012,6 @@
                   "component" : 4,
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "renalCreatinine",
                     "rhs" : 203.3
                   }
@@ -1079,7 +1020,6 @@
                   "component" : 3,
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "renalCreatinine",
                     "rhs" : 141.4
                   }
@@ -1088,7 +1028,6 @@
                   "component" : 2,
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "renalCreatinine",
                     "rhs" : 79.6
                   }
@@ -1097,7 +1036,6 @@
                   "component" : 1,
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "renalCreatinine",
                     "rhs" : 53
                   }
@@ -1109,7 +1047,6 @@
             },
             "condition" : {
               "comparison" : "lessThanOrEqualTo",
-              "defaultState" : true,
               "lhs" : "age",
               "rhs" : 4.916666666666667
             }
@@ -1121,7 +1058,6 @@
                   "component" : 4,
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "renalCreatinine",
                     "rhs" : 229.8
                   }
@@ -1130,7 +1066,6 @@
                   "component" : 3,
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "renalCreatinine",
                     "rhs" : 159.1
                   }
@@ -1139,7 +1074,6 @@
                   "component" : 2,
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "renalCreatinine",
                     "rhs" : 97.2
                   }
@@ -1148,7 +1082,6 @@
                   "component" : 1,
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "renalCreatinine",
                     "rhs" : 61.9
                   }
@@ -1160,7 +1093,6 @@
             },
             "condition" : {
               "comparison" : "lessThanOrEqualTo",
-              "defaultState" : true,
               "lhs" : "age",
               "rhs" : 11.916666666666666
             }
@@ -1172,7 +1104,6 @@
                   "component" : 4,
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "renalCreatinine",
                     "rhs" : 371.3
                   }
@@ -1181,7 +1112,6 @@
                   "component" : 3,
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "renalCreatinine",
                     "rhs" : 256.4
                   }
@@ -1190,7 +1120,6 @@
                   "component" : 2,
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "renalCreatinine",
                     "rhs" : 150.3
                   }
@@ -1199,7 +1128,6 @@
                   "component" : 1,
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "renalCreatinine",
                     "rhs" : 88.4
                   }
@@ -1211,7 +1139,6 @@
             },
             "condition" : {
               "comparison" : "lessThanOrEqualTo",
-              "defaultState" : true,
               "lhs" : "age",
               "rhs" : 18
             }
@@ -1223,7 +1150,6 @@
                   "component" : 4,
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "renalCreatinine",
                     "rhs" : 442
                   }
@@ -1232,7 +1158,6 @@
                   "component" : 3,
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "renalCreatinine",
                     "rhs" : 309.4
                   }
@@ -1241,7 +1166,6 @@
                   "component" : 2,
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "renalCreatinine",
                     "rhs" : 176.8
                   }
@@ -1250,7 +1174,6 @@
                   "component" : 1,
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "renalCreatinine",
                     "rhs" : 106.1
                   }
@@ -1262,7 +1185,6 @@
             },
             "condition" : {
               "comparison" : "greaterThan",
-              "defaultState" : true,
               "lhs" : "age",
               "rhs" : 18
             }

@@ -146,7 +146,6 @@
             },
             "condition" : {
               "comparison" : "lessThan",
-              "defaultState" : true,
               "lhs" : "pupilReaction",
               "rhs" : 0
             }
@@ -170,7 +169,6 @@
                           },
                           "condition" : {
                             "comparison" : "lessThan",
-                            "defaultState" : true,
                             "lhs" : "electiveAdmission",
                             "rhs" : 0
                           }
@@ -193,7 +191,6 @@
                           },
                           "condition" : {
                             "comparison" : "lessThan",
-                            "defaultState" : true,
                             "lhs" : "mechanicalVentilation",
                             "rhs" : 0
                           }
@@ -219,7 +216,6 @@
                                   "component" : 120,
                                   "condition" : {
                                     "comparison" : "equalTo",
-                                    "defaultState" : true,
                                     "lhs" : "pim3SystolicBloodPressure",
                                     "rhs" : 0
                                   }
@@ -245,7 +241,6 @@
                           "component" : 120,
                           "condition" : {
                             "comparison" : "equalTo",
-                            "defaultState" : true,
                             "lhs" : "pim3SystolicBloodPressure",
                             "rhs" : 0
                           }
@@ -266,7 +261,6 @@
                           "component" : 0.23,
                           "condition" : {
                             "comparison" : "equalTo",
-                            "defaultState" : true,
                             "lhs" : "fiO2",
                             "rhs" : 0
                           }
@@ -275,7 +269,6 @@
                           "component" : 0.23,
                           "condition" : {
                             "comparison" : "equalTo",
-                            "defaultState" : true,
                             "lhs" : "paO2",
                             "rhs" : 0
                           }
@@ -299,7 +292,6 @@
                       "component" : 0,
                       "condition" : {
                         "comparison" : "equalTo",
-                        "defaultState" : true,
                         "lhs" : "recovery",
                         "rhs" : 0
                       }
@@ -308,7 +300,6 @@
                       "component" : -1.516403,
                       "condition" : {
                         "comparison" : "equalTo",
-                        "defaultState" : true,
                         "lhs" : "recovery",
                         "rhs" : 1
                       }
@@ -317,7 +308,6 @@
                       "component" : -0.8761848,
                       "condition" : {
                         "comparison" : "equalTo",
-                        "defaultState" : true,
                         "lhs" : "recovery",
                         "rhs" : 2
                       }
@@ -326,7 +316,6 @@
                       "component" : -1.224559,
                       "condition" : {
                         "comparison" : "equalTo",
-                        "defaultState" : true,
                         "lhs" : "recovery",
                         "rhs" : 3
                       }
@@ -344,7 +333,6 @@
                       "component" : 0,
                       "condition" : {
                         "comparison" : "equalTo",
-                        "defaultState" : true,
                         "lhs" : "weightedDiagnosis",
                         "rhs" : 0
                       }
@@ -353,7 +341,6 @@
                       "component" : -2.176649,
                       "condition" : {
                         "comparison" : "equalTo",
-                        "defaultState" : true,
                         "lhs" : "weightedDiagnosis",
                         "rhs" : 1
                       }
@@ -362,7 +349,6 @@
                       "component" : 1.072542,
                       "condition" : {
                         "comparison" : "equalTo",
-                        "defaultState" : true,
                         "lhs" : "weightedDiagnosis",
                         "rhs" : 2
                       }
@@ -371,7 +357,6 @@
                       "component" : 1.622484,
                       "condition" : {
                         "comparison" : "equalTo",
-                        "defaultState" : true,
                         "lhs" : "weightedDiagnosis",
                         "rhs" : 3
                       }
@@ -389,7 +374,6 @@
                       "component" : 0,
                       "condition" : {
                         "comparison" : "equalTo",
-                        "defaultState" : true,
                         "lhs" : "baseExcess",
                         "rhs" : 0
                       }

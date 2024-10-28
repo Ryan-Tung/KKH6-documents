@@ -49,7 +49,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "serumSodium",
               "rhs" : 0
             }
@@ -60,7 +59,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "glucose",
               "rhs" : 0
             }
@@ -118,7 +116,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "serumSodium",
               "rhs" : 0
             }
@@ -257,7 +254,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "serumSodium",
               "rhs" : 0
             }
@@ -614,7 +610,6 @@
             },
             "condition" : {
               "comparison" : "notEqualTo",
-              "defaultState" : true,
               "lhs" : "baselineCreatinine",
               "rhs" : 0
             }

@@ -409,7 +409,6 @@
             },
             "condition" : {
               "comparison" : "lessThan",
-              "defaultState" : true,
               "lhs" : "ivDexmedetomidineRate",
               "rhs" : 0.2
             }
@@ -423,7 +422,6 @@
             },
             "condition" : {
               "comparison" : "lessThan",
-              "defaultState" : true,
               "lhs" : "ivDexmedetomidineRate",
               "rhs" : 0.4
             }
@@ -442,7 +440,6 @@
             },
             "condition" : {
               "comparison" : "lessThan",
-              "defaultState" : true,
               "lhs" : "ivDexmedetomidineRate",
               "rhs" : 0.6
             }

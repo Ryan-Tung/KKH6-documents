@@ -36,7 +36,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "paO2FiO2Ratio",
                     "rhs" : 0
                   }
@@ -45,7 +44,6 @@
                   "component" : 3,
                   "condition" : {
                     "comparison" : "lessThan",
-                    "defaultState" : true,
                     "lhs" : "paO2FiO2Ratio",
                     "rhs" : 100
                   }
@@ -54,7 +52,6 @@
                   "component" : 2,
                   "condition" : {
                     "comparison" : "lessThan",
-                    "defaultState" : true,
                     "lhs" : "paO2FiO2Ratio",
                     "rhs" : 200
                   }
@@ -63,7 +60,6 @@
                   "component" : 1,
                   "condition" : {
                     "comparison" : "lessThan",
-                    "defaultState" : true,
                     "lhs" : "paO2FiO2Ratio",
                     "rhs" : 400
                   }
@@ -75,7 +71,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "respiratoryInputType",
               "rhs" : 0
             }
@@ -89,7 +84,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "spO2FiO2Ratio",
                     "rhs" : 0
                   }
@@ -98,7 +92,6 @@
                   "component" : 3,
                   "condition" : {
                     "comparison" : "lessThan",
-                    "defaultState" : true,
                     "lhs" : "spO2FiO2Ratio",
                     "rhs" : 148
                   }
@@ -107,7 +100,6 @@
                   "component" : 2,
                   "condition" : {
                     "comparison" : "lessThan",
-                    "defaultState" : true,
                     "lhs" : "spO2FiO2Ratio",
                     "rhs" : 220
                   }
@@ -116,7 +108,6 @@
                   "component" : 1,
                   "condition" : {
                     "comparison" : "lessThan",
-                    "defaultState" : true,
                     "lhs" : "spO2FiO2Ratio",
                     "rhs" : 292
                   }
@@ -159,7 +150,6 @@
             "component" : 0,
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "respiratoryIntermediateScore",
               "rhs" : 0
             }
@@ -171,7 +161,6 @@
                   "component" : 1,
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "respiratorySupport",
                     "rhs" : 1
                   }
@@ -183,7 +172,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "respiratoryIntermediateScore",
               "rhs" : 1
             }
@@ -195,7 +183,6 @@
                   "component" : 2,
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "respiratorySupport",
                     "rhs" : 2
                   }
@@ -207,7 +194,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "respiratoryIntermediateScore",
               "rhs" : 2
             }
@@ -219,7 +205,6 @@
                   "component" : 3,
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "respiratorySupport",
                     "rhs" : 2
                   }
@@ -231,7 +216,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "respiratoryIntermediateScore",
               "rhs" : 3
             }
@@ -323,7 +307,6 @@
                 "component" : 2,
                 "condition" : {
                   "comparison" : "greaterThan",
-                  "defaultState" : true,
                   "lhs" : "cardioVasoactives",
                   "rhs" : 1
                 }
@@ -332,7 +315,6 @@
                 "component" : 1,
                 "condition" : {
                   "comparison" : "greaterThan",
-                  "defaultState" : true,
                   "lhs" : "cardioVasoactives",
                   "rhs" : 0
                 }
@@ -348,7 +330,6 @@
                 "component" : 2,
                 "condition" : {
                   "comparison" : "greaterThanOrEqualTo",
-                  "defaultState" : true,
                   "lhs" : "cardioLactate",
                   "rhs" : 11
                 }
@@ -357,7 +338,6 @@
                 "component" : 1,
                 "condition" : {
                   "comparison" : "greaterThanOrEqualTo",
-                  "defaultState" : true,
                   "lhs" : "cardioLactate",
                   "rhs" : 5
                 }
@@ -376,7 +356,6 @@
                       "component" : 0,
                       "condition" : {
                         "comparison" : "greaterThanOrEqualTo",
-                        "defaultState" : true,
                         "lhs" : "cardioMAP",
                         "rhs" : 31
                       }
@@ -385,7 +364,6 @@
                       "component" : 2,
                       "condition" : {
                         "comparison" : "lessThan",
-                        "defaultState" : true,
                         "lhs" : "cardioMAP",
                         "rhs" : 17
                       }
@@ -397,7 +375,6 @@
                 },
                 "condition" : {
                   "comparison" : "lessThan",
-                  "defaultState" : true,
                   "lhs" : "age",
                   "rhs" : 0.08333333333333333
                 }
@@ -409,7 +386,6 @@
                       "component" : 0,
                       "condition" : {
                         "comparison" : "greaterThanOrEqualTo",
-                        "defaultState" : true,
                         "lhs" : "cardioMAP",
                         "rhs" : 39
                       }
@@ -418,7 +394,6 @@
                       "component" : 2,
                       "condition" : {
                         "comparison" : "lessThan",
-                        "defaultState" : true,
                         "lhs" : "cardioMAP",
                         "rhs" : 25
                       }
@@ -430,7 +405,6 @@
                 },
                 "condition" : {
                   "comparison" : "lessThan",
-                  "defaultState" : true,
                   "lhs" : "age",
                   "rhs" : 1
                 }
@@ -442,7 +416,6 @@
                       "component" : 0,
                       "condition" : {
                         "comparison" : "greaterThanOrEqualTo",
-                        "defaultState" : true,
                         "lhs" : "cardioMAP",
                         "rhs" : 44
                       }
@@ -451,7 +424,6 @@
                       "component" : 2,
                       "condition" : {
                         "comparison" : "lessThan",
-                        "defaultState" : true,
                         "lhs" : "cardioMAP",
                         "rhs" : 31
                       }
@@ -463,7 +435,6 @@
                 },
                 "condition" : {
                   "comparison" : "lessThan",
-                  "defaultState" : true,
                   "lhs" : "age",
                   "rhs" : 2
                 }
@@ -475,7 +446,6 @@
                       "component" : 0,
                       "condition" : {
                         "comparison" : "greaterThanOrEqualTo",
-                        "defaultState" : true,
                         "lhs" : "cardioMAP",
                         "rhs" : 45
                       }
@@ -484,7 +454,6 @@
                       "component" : 2,
                       "condition" : {
                         "comparison" : "lessThan",
-                        "defaultState" : true,
                         "lhs" : "cardioMAP",
                         "rhs" : 32
                       }
@@ -496,7 +465,6 @@
                 },
                 "condition" : {
                   "comparison" : "lessThan",
-                  "defaultState" : true,
                   "lhs" : "age",
                   "rhs" : 5
                 }
@@ -508,7 +476,6 @@
                       "component" : 0,
                       "condition" : {
                         "comparison" : "greaterThanOrEqualTo",
-                        "defaultState" : true,
                         "lhs" : "cardioMAP",
                         "rhs" : 49
                       }
@@ -517,7 +484,6 @@
                       "component" : 2,
                       "condition" : {
                         "comparison" : "lessThan",
-                        "defaultState" : true,
                         "lhs" : "cardioMAP",
                         "rhs" : 36
                       }
@@ -529,7 +495,6 @@
                 },
                 "condition" : {
                   "comparison" : "lessThan",
-                  "defaultState" : true,
                   "lhs" : "age",
                   "rhs" : 12
                 }
@@ -541,7 +506,6 @@
                       "component" : 0,
                       "condition" : {
                         "comparison" : "greaterThanOrEqualTo",
-                        "defaultState" : true,
                         "lhs" : "cardioMAP",
                         "rhs" : 52
                       }
@@ -550,7 +514,6 @@
                       "component" : 2,
                       "condition" : {
                         "comparison" : "lessThan",
-                        "defaultState" : true,
                         "lhs" : "cardioMAP",
                         "rhs" : 38
                       }
@@ -662,7 +625,6 @@
                 "component" : 1,
                 "condition" : {
                   "comparison" : "lessThan",
-                  "defaultState" : true,
                   "lhs" : "platelets",
                   "rhs" : 100
                 }
@@ -678,7 +640,6 @@
                 "component" : 1,
                 "condition" : {
                   "comparison" : "greaterThan",
-                  "defaultState" : true,
                   "lhs" : "coagulationINR",
                   "rhs" : 1.3
                 }
@@ -694,7 +655,6 @@
                 "component" : 1,
                 "condition" : {
                   "comparison" : "greaterThan",
-                  "defaultState" : true,
                   "lhs" : "coagulationDDimer",
                   "rhs" : 2
                 }
@@ -710,7 +670,6 @@
                 "component" : 1,
                 "condition" : {
                   "comparison" : "lessThan",
-                  "defaultState" : true,
                   "lhs" : "coagulationFibrinogen",
                   "rhs" : 100
                 }
@@ -754,7 +713,6 @@
             "component" : 2,
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
-              "defaultState" : true,
               "lhs" : "coagulationScoreRaw",
               "rhs" : 2
             }
@@ -847,7 +805,6 @@
             "component" : 1,
             "condition" : {
               "comparison" : "lessThan",
-              "defaultState" : true,
               "lhs" : "endocrineGlucose",
               "rhs" : 2.775
             }
@@ -856,7 +813,6 @@
             "component" : 1,
             "condition" : {
               "comparison" : "greaterThan",
-              "defaultState" : true,
               "lhs" : "endocrineGlucose",
               "rhs" : 8.325
             }
@@ -926,7 +882,6 @@
             "component" : 1,
             "condition" : {
               "comparison" : "lessThan",
-              "defaultState" : true,
               "lhs" : "immunologicANC",
               "rhs" : 0.5
             }
@@ -935,7 +890,6 @@
             "component" : 1,
             "condition" : {
               "comparison" : "lessThan",
-              "defaultState" : true,
               "lhs" : "immunologicALC",
               "rhs" : 1
             }
@@ -977,7 +931,6 @@
                   "component" : 1,
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "renalCreatinine",
                     "rhs" : 70.72
                   }
@@ -989,7 +942,6 @@
             },
             "condition" : {
               "comparison" : "lessThan",
-              "defaultState" : true,
               "lhs" : "age",
               "rhs" : 0.08333333333333333
             }
@@ -1001,7 +953,6 @@
                   "component" : 1,
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "renalCreatinine",
                     "rhs" : 26.52
                   }
@@ -1013,7 +964,6 @@
             },
             "condition" : {
               "comparison" : "lessThan",
-              "defaultState" : true,
               "lhs" : "age",
               "rhs" : 1
             }
@@ -1025,7 +975,6 @@
                   "component" : 1,
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "renalCreatinine",
                     "rhs" : 35.36
                   }
@@ -1037,7 +986,6 @@
             },
             "condition" : {
               "comparison" : "lessThan",
-              "defaultState" : true,
               "lhs" : "age",
               "rhs" : 2
             }
@@ -1049,7 +997,6 @@
                   "component" : 1,
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "renalCreatinine",
                     "rhs" : 53.04
                   }
@@ -1061,7 +1008,6 @@
             },
             "condition" : {
               "comparison" : "lessThan",
-              "defaultState" : true,
               "lhs" : "age",
               "rhs" : 5
             }
@@ -1073,7 +1019,6 @@
                   "component" : 1,
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "renalCreatinine",
                     "rhs" : 61.88
                   }
@@ -1085,7 +1030,6 @@
             },
             "condition" : {
               "comparison" : "lessThan",
-              "defaultState" : true,
               "lhs" : "age",
               "rhs" : 12
             }
@@ -1097,7 +1041,6 @@
                   "component" : 1,
                   "condition" : {
                     "comparison" : "greaterThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "renalCreatinine",
                     "rhs" : 88.4
                   }
@@ -1155,7 +1098,6 @@
             "component" : 1,
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
-              "defaultState" : true,
               "lhs" : "bilirubin",
               "rhs" : 68.4
             }
@@ -1164,7 +1106,6 @@
             "component" : 1,
             "condition" : {
               "comparison" : "greaterThan",
-              "defaultState" : true,
               "lhs" : "hepaticALT",
               "rhs" : 102
             }

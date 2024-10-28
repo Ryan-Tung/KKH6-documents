@@ -54,7 +54,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedType",
               "rhs" : 0
             }
@@ -70,7 +69,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedType",
               "rhs" : 1
             }
@@ -229,7 +227,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 5
                   }
@@ -243,7 +240,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 8
                   }
@@ -257,7 +253,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 10
                   }
@@ -271,7 +266,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 15
                   }
@@ -285,7 +279,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 20
                   }
@@ -299,7 +292,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 25
                   }
@@ -313,7 +305,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 30
                   }
@@ -327,7 +318,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 35
                   }
@@ -341,7 +331,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 40
                   }
@@ -355,7 +344,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 45
                   }
@@ -369,7 +357,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 50
                   }
@@ -383,7 +370,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 55
                   }
@@ -397,7 +383,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 60
                   }
@@ -411,7 +396,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 70
                   }
@@ -425,7 +409,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 78
                   }
@@ -439,7 +422,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 85
                   }
@@ -453,7 +435,6 @@
             },
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
-              "defaultState" : true,
               "lhs" : "weightRoundedToWhole",
               "rhs" : 2
             }
@@ -502,7 +483,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 5
                   }
@@ -516,7 +496,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 8
                   }
@@ -530,7 +509,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 9
                   }
@@ -544,7 +522,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 10
                   }
@@ -558,7 +535,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 15
                   }
@@ -572,7 +548,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 20
                   }
@@ -586,7 +561,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 25
                   }
@@ -600,7 +574,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 30
                   }
@@ -614,7 +587,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 35
                   }
@@ -628,7 +600,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 40
                   }
@@ -642,7 +613,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 45
                   }
@@ -656,7 +626,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 50
                   }
@@ -670,7 +639,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 55
                   }
@@ -684,7 +652,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 60
                   }
@@ -698,7 +665,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 85
                   }
@@ -712,7 +678,6 @@
             },
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
-              "defaultState" : true,
               "lhs" : "weightRoundedToWhole",
               "rhs" : 2
             }
@@ -753,7 +718,6 @@
             "component" : "energyRequirementNonIntubated",
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "intubationStatus",
               "rhs" : 0
             }
@@ -762,7 +726,6 @@
             "component" : "energyRequirementIntubated",
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "intubationStatus",
               "rhs" : 1
             }
@@ -806,7 +769,6 @@
             },
             "condition" : {
               "comparison" : "lessThan",
-              "defaultState" : true,
               "lhs" : "feedingMilkType",
               "rhs" : 0
             }
@@ -815,7 +777,6 @@
             "component" : 0.68,
             "condition" : {
               "comparison" : "lessThanOrEqualTo",
-              "defaultState" : true,
               "lhs" : "feedingMilkType",
               "rhs" : 1
             }
@@ -824,7 +785,6 @@
             "component" : 0.74,
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedingMilkType",
               "rhs" : 2
             }
@@ -833,7 +793,6 @@
             "component" : 0.7,
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedingMilkType",
               "rhs" : 3
             }
@@ -842,7 +801,6 @@
             "component" : 0.68,
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedingMilkType",
               "rhs" : 4
             }
@@ -851,7 +809,6 @@
             "component" : 0.75,
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedingMilkType",
               "rhs" : 5
             }
@@ -860,7 +817,6 @@
             "component" : 1,
             "condition" : {
               "comparison" : "lessThanOrEqualTo",
-              "defaultState" : true,
               "lhs" : "feedingMilkType",
               "rhs" : 8
             }
@@ -929,7 +885,6 @@
             "component" : "feedingRemainingFluids",
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedingMilkType",
               "rhs" : 0
             }
@@ -938,7 +893,6 @@
             "component" : "feedingRemainingFluids",
             "condition" : {
               "comparison" : "lessThan",
-              "defaultState" : true,
               "lhs" : "weight",
               "rhs" : 10
             }
@@ -947,7 +901,6 @@
             "component" : "feedingRemainingFluids",
             "condition" : {
               "comparison" : "lessThan",
-              "defaultState" : true,
               "lhs" : "feedingRemainingFluids",
               "rhs" : "milkVolumeRequiredPerDay"
             }
@@ -1072,7 +1025,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 5
                   }
@@ -1086,7 +1038,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 10
                   }
@@ -1100,7 +1051,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 11
                   }
@@ -1114,7 +1064,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 12
                   }
@@ -1128,7 +1077,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 13
                   }
@@ -1142,7 +1090,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 14
                   }
@@ -1156,7 +1103,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 15
                   }
@@ -1170,7 +1116,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 16
                   }
@@ -1184,7 +1129,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 17
                   }
@@ -1198,7 +1142,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 18
                   }
@@ -1212,7 +1155,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 19
                   }
@@ -1226,7 +1168,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 20
                   }
@@ -1240,7 +1181,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 21
                   }
@@ -1254,7 +1194,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 22
                   }
@@ -1268,7 +1207,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 23
                   }
@@ -1282,7 +1220,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 24
                   }
@@ -1296,7 +1233,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 25
                   }
@@ -1310,7 +1246,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 26
                   }
@@ -1324,7 +1259,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 27
                   }
@@ -1338,7 +1272,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 28
                   }
@@ -1352,7 +1285,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 29
                   }
@@ -1366,7 +1298,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 30
                   }
@@ -1380,7 +1311,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 31
                   }
@@ -1394,7 +1324,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 32
                   }
@@ -1408,7 +1337,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 33
                   }
@@ -1422,7 +1350,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 34
                   }
@@ -1436,7 +1363,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 35
                   }
@@ -1450,7 +1376,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 36
                   }
@@ -1464,7 +1389,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 37
                   }
@@ -1478,7 +1402,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 38
                   }
@@ -1492,7 +1415,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 39
                   }
@@ -1506,7 +1428,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 40
                   }
@@ -1520,7 +1441,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 41
                   }
@@ -1534,7 +1454,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 43
                   }
@@ -1548,7 +1467,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 44
                   }
@@ -1562,7 +1480,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 46
                   }
@@ -1576,7 +1493,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 48
                   }
@@ -1590,7 +1506,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 49
                   }
@@ -1604,7 +1519,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 51
                   }
@@ -1618,7 +1532,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 53
                   }
@@ -1632,7 +1545,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 56
                   }
@@ -1646,7 +1558,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 58
                   }
@@ -1660,7 +1571,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 61
                   }
@@ -1674,7 +1584,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 64
                   }
@@ -1688,7 +1597,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 67
                   }
@@ -1702,7 +1610,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 71
                   }
@@ -1716,7 +1623,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 75
                   }
@@ -1730,7 +1636,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 80
                   }
@@ -1744,7 +1649,6 @@
                   },
                   "condition" : {
                     "comparison" : "lessThanOrEqualTo",
-                    "defaultState" : true,
                     "lhs" : "weightRoundedToWhole",
                     "rhs" : 85
                   }
@@ -1758,7 +1662,6 @@
             },
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
-              "defaultState" : true,
               "lhs" : "weightRoundedToWhole",
               "rhs" : 2
             }
@@ -1799,7 +1702,6 @@
             "component" : 0,
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedingMilkType",
               "rhs" : 0
             }
@@ -1808,7 +1710,6 @@
             "component" : 0,
             "condition" : {
               "comparison" : "lessThan",
-              "defaultState" : true,
               "lhs" : "weight",
               "rhs" : 10
             }
@@ -1817,7 +1718,6 @@
             "component" : 0,
             "condition" : {
               "comparison" : "lessThan",
-              "defaultState" : true,
               "lhs" : "feedingRemainingFluids",
               "rhs" : "milkVolumeRequiredPerDay"
             }
@@ -2012,7 +1912,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedType",
               "rhs" : 0
             }
@@ -2027,7 +1926,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedType",
               "rhs" : 1
             }
@@ -2072,7 +1970,6 @@
             "component" : -1,
             "condition" : {
               "comparison" : "lessThanOrEqualTo",
-              "defaultState" : true,
               "lhs" : {
                 "division" : {
                   "denominator" : "milkVolumeRequiredPerDay",
@@ -2086,7 +1983,6 @@
             "component" : 1,
             "condition" : {
               "comparison" : "greaterThan",
-              "defaultState" : true,
               "lhs" : {
                 "division" : {
                   "denominator" : "milkVolumeRequiredPerDay",
@@ -2225,7 +2121,6 @@
             },
             "condition" : {
               "comparison" : "notEqualTo",
-              "defaultState" : true,
               "lhs" : "numberOfFeedsPerDay",
               "rhs" : -1
             }
@@ -2271,7 +2166,6 @@
             },
             "condition" : {
               "comparison" : "notEqualTo",
-              "defaultState" : true,
               "lhs" : "continuousFeedHrsPerDay",
               "rhs" : -1
             }
@@ -2333,7 +2227,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedType",
               "rhs" : 0
             }
@@ -2372,7 +2265,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "primingRequired",
                     "rhs" : 1
                   }
@@ -2403,7 +2295,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "primingRequired",
                     "rhs" : 0
                   }
@@ -2417,7 +2308,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedType",
               "rhs" : 1
             }
@@ -2482,7 +2372,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedType",
               "rhs" : 0
             }
@@ -2521,7 +2410,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "primingRequired",
                     "rhs" : 1
                   }
@@ -2552,7 +2440,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "primingRequired",
                     "rhs" : 0
                   }
@@ -2566,7 +2453,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedType",
               "rhs" : 1
             }
@@ -2742,7 +2628,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedType",
               "rhs" : 0
             }
@@ -2781,7 +2666,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "primingRequired",
                     "rhs" : 1
                   }
@@ -2812,7 +2696,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "primingRequired",
                     "rhs" : 0
                   }
@@ -2826,7 +2709,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedType",
               "rhs" : 1
             }
@@ -2891,7 +2773,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedType",
               "rhs" : 0
             }
@@ -2930,7 +2811,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "primingRequired",
                     "rhs" : 1
                   }
@@ -2961,7 +2841,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "primingRequired",
                     "rhs" : 0
                   }
@@ -2975,7 +2854,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedType",
               "rhs" : 1
             }
@@ -3151,7 +3029,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedType",
               "rhs" : 0
             }
@@ -3190,7 +3067,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "primingRequired",
                     "rhs" : 1
                   }
@@ -3221,7 +3097,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "primingRequired",
                     "rhs" : 0
                   }
@@ -3235,7 +3110,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedType",
               "rhs" : 1
             }
@@ -3300,7 +3174,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedType",
               "rhs" : 0
             }
@@ -3339,7 +3212,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "primingRequired",
                     "rhs" : 1
                   }
@@ -3370,7 +3242,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "primingRequired",
                     "rhs" : 0
                   }
@@ -3384,7 +3255,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedType",
               "rhs" : 1
             }
@@ -3555,7 +3425,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedType",
               "rhs" : 0
             }
@@ -3594,7 +3463,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "primingRequired",
                     "rhs" : 1
                   }
@@ -3625,7 +3493,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "primingRequired",
                     "rhs" : 0
                   }
@@ -3639,7 +3506,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedType",
               "rhs" : 1
             }
@@ -3699,7 +3565,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedType",
               "rhs" : 0
             }
@@ -3738,7 +3603,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "primingRequired",
                     "rhs" : 1
                   }
@@ -3769,7 +3633,6 @@
                   },
                   "condition" : {
                     "comparison" : "equalTo",
-                    "defaultState" : true,
                     "lhs" : "primingRequired",
                     "rhs" : 0
                   }
@@ -3783,7 +3646,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedType",
               "rhs" : 1
             }

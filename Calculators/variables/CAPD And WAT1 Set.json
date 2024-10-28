@@ -145,7 +145,6 @@
                 "component" : "capdQuestionOne",
                 "condition" : {
                   "comparison" : "notEqualTo",
-                  "defaultState" : true,
                   "lhs" : "capdQuestionOne",
                   "rhs" : -1
                 }
@@ -163,7 +162,6 @@
                 "component" : "capdQuestionTwo",
                 "condition" : {
                   "comparison" : "notEqualTo",
-                  "defaultState" : true,
                   "lhs" : "capdQuestionTwo",
                   "rhs" : -1
                 }
@@ -181,7 +179,6 @@
                 "component" : "capdQuestionThree",
                 "condition" : {
                   "comparison" : "notEqualTo",
-                  "defaultState" : true,
                   "lhs" : "capdQuestionThree",
                   "rhs" : -1
                 }
@@ -199,7 +196,6 @@
                 "component" : "capdQuestionFour",
                 "condition" : {
                   "comparison" : "notEqualTo",
-                  "defaultState" : true,
                   "lhs" : "capdQuestionFour",
                   "rhs" : -1
                 }
@@ -217,7 +213,6 @@
                 "component" : "capdQuestionFive",
                 "condition" : {
                   "comparison" : "notEqualTo",
-                  "defaultState" : true,
                   "lhs" : "capdQuestionFive",
                   "rhs" : -1
                 }
@@ -235,7 +230,6 @@
                 "component" : "capdQuestionSix",
                 "condition" : {
                   "comparison" : "notEqualTo",
-                  "defaultState" : true,
                   "lhs" : "capdQuestionSix",
                   "rhs" : -1
                 }
@@ -253,7 +247,6 @@
                 "component" : "capdQuestionSeven",
                 "condition" : {
                   "comparison" : "notEqualTo",
-                  "defaultState" : true,
                   "lhs" : "capdQuestionSeven",
                   "rhs" : -1
                 }
@@ -271,7 +264,6 @@
                 "component" : "capdQuestionEight",
                 "condition" : {
                   "comparison" : "notEqualTo",
-                  "defaultState" : true,
                   "lhs" : "capdQuestionEight",
                   "rhs" : -1
                 }
@@ -498,7 +490,6 @@
                 "component" : "wat1QuestionOne",
                 "condition" : {
                   "comparison" : "notEqualTo",
-                  "defaultState" : true,
                   "lhs" : "wat1QuestionOne",
                   "rhs" : -1
                 }
@@ -516,7 +507,6 @@
                 "component" : "wat1QuestionTwo",
                 "condition" : {
                   "comparison" : "notEqualTo",
-                  "defaultState" : true,
                   "lhs" : "wat1QuestionTwo",
                   "rhs" : -1
                 }
@@ -534,7 +524,6 @@
                 "component" : "wat1QuestionThree",
                 "condition" : {
                   "comparison" : "notEqualTo",
-                  "defaultState" : true,
                   "lhs" : "wat1QuestionThree",
                   "rhs" : -1
                 }
@@ -552,7 +541,6 @@
                 "component" : "wat1QuestionFour",
                 "condition" : {
                   "comparison" : "notEqualTo",
-                  "defaultState" : true,
                   "lhs" : "wat1QuestionFour",
                   "rhs" : -1
                 }
@@ -570,7 +558,6 @@
                 "component" : "wat1QuestionFive",
                 "condition" : {
                   "comparison" : "notEqualTo",
-                  "defaultState" : true,
                   "lhs" : "wat1QuestionFive",
                   "rhs" : -1
                 }
@@ -588,7 +575,6 @@
                 "component" : "wat1QuestionSix",
                 "condition" : {
                   "comparison" : "notEqualTo",
-                  "defaultState" : true,
                   "lhs" : "wat1QuestionSix",
                   "rhs" : -1
                 }
@@ -606,7 +592,6 @@
                 "component" : "wat1QuestionSeven",
                 "condition" : {
                   "comparison" : "notEqualTo",
-                  "defaultState" : true,
                   "lhs" : "wat1QuestionSeven",
                   "rhs" : -1
                 }
@@ -624,7 +609,6 @@
                 "component" : "wat1QuestionEight",
                 "condition" : {
                   "comparison" : "notEqualTo",
-                  "defaultState" : true,
                   "lhs" : "wat1QuestionEight",
                   "rhs" : -1
                 }
@@ -642,7 +626,6 @@
                 "component" : "wat1QuestionNine",
                 "condition" : {
                   "comparison" : "notEqualTo",
-                  "defaultState" : true,
                   "lhs" : "wat1QuestionNine",
                   "rhs" : -1
                 }
@@ -660,7 +643,6 @@
                 "component" : "wat1QuestionTen",
                 "condition" : {
                   "comparison" : "notEqualTo",
-                  "defaultState" : true,
                   "lhs" : "wat1QuestionTen",
                   "rhs" : -1
                 }
@@ -678,7 +660,6 @@
                 "component" : "wat1QuestionEleven",
                 "condition" : {
                   "comparison" : "notEqualTo",
-                  "defaultState" : true,
                   "lhs" : "wat1QuestionEleven",
                   "rhs" : -1
                 }

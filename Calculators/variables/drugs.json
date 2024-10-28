@@ -38,6 +38,7 @@
     },
     "isPreDilutionAmount" : false,
     "maxCalcDose" : 0.6,
+    "minCalcDose" : 0.1,
     "notes" : "Minimum dose: 100mcg\nMaximum dose: 600mcg",
     "referenceName" : "Atropine Sulfate"
   },
@@ -100,7 +101,7 @@
       "conversionScale" : 1,
       "name" : "mL\/kg"
     },
-    "isPreDilutionAmount" : true,
+    "isPreDilutionAmount" : false,
     "maxCalcDose" : 100,
     "notes" : "Dilute Dextrose 50% with same amount of WFI (1:1) to get 25% solution.\nMaximum dose: 100ml",
     "referenceName" : "Dextrose"
@@ -164,7 +165,7 @@
       "conversionScale" : 1,
       "name" : "mmol\/kg"
     },
-    "isPreDilutionAmount" : true,
+    "isPreDilutionAmount" : false,
     "maxCalcDose" : 50,
     "notes" : "4.2% - Safe for peripheral vein infusion\nDilute NaHCO3 8.4% with same amount of WFI (1:1) to get 4.2% solution\nMaximum dose: 50mmol",
     "referenceName" : "Sodium Bicarbonate 4.2%"
@@ -189,8 +190,8 @@
       "name" : "mg\/kg"
     },
     "isPreDilutionAmount" : true,
-    "maxCalcDose" : 200,
-    "notes" : "Dilute 2ml (100mg) to final volume of 10ml NS (10mg\/ml)\nMaximum dose: 200mg",
+    "maxCalcDose" : 100,
+    "notes" : "Dilute 2ml (100mg) to final volume of 10ml NS (10mg\/ml)\nMaximum dose: 100mg",
     "referenceName" : "Suxamethonium Chloride"
   },
   {

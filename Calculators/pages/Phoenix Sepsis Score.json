@@ -106,7 +106,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "respiratoryInputType",
               "rhs" : 0
             }
@@ -142,7 +141,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "respiratoryInputType",
               "rhs" : 1
             }
@@ -155,7 +153,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "respiratoryInputType",
               "rhs" : 0
             }
@@ -168,7 +165,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "respiratoryInputType",
               "rhs" : 1
             }

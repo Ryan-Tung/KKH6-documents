@@ -116,7 +116,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedType",
               "rhs" : 0
             }
@@ -202,7 +201,6 @@
             },
             "condition" : {
               "comparison" : "lessThan",
-              "defaultState" : true,
               "lhs" : "numberOfHoursUntil6am",
               "rhs" : 6
             }
@@ -218,7 +216,6 @@
             },
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
-              "defaultState" : true,
               "lhs" : "numberOfHoursUntil6am",
               "rhs" : 6
             }
@@ -510,7 +507,6 @@
             },
             "condition" : {
               "comparison" : "notEqualTo",
-              "defaultState" : true,
               "lhs" : "calculateNumberOfHours",
               "rhs" : 0
             }

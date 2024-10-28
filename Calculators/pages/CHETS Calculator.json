@@ -50,7 +50,6 @@
             },
             "condition" : {
               "comparison" : "lessThan",
-              "defaultState" : true,
               "lhs" : "weight",
               "rhs" : 2
             }
@@ -73,7 +72,6 @@
             },
             "condition" : {
               "comparison" : "greaterThanOrEqualTo",
-              "defaultState" : true,
               "lhs" : "weight",
               "rhs" : 3.5
             }

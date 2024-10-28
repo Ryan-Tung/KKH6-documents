@@ -78,7 +78,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "pSOFARespiratoryAvailable",
               "rhs" : 0
             }
@@ -116,7 +115,6 @@
                 },
                 "condition" : {
                   "comparison" : "equalTo",
-                  "defaultState" : true,
                   "lhs" : "respiratoryInputType",
                   "rhs" : 0
                 }
@@ -124,7 +122,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "pSOFARespiratoryAvailable",
               "rhs" : 0
             }
@@ -162,7 +159,6 @@
                 },
                 "condition" : {
                   "comparison" : "equalTo",
-                  "defaultState" : true,
                   "lhs" : "respiratoryInputType",
                   "rhs" : 1
                 }
@@ -170,7 +166,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "pSOFARespiratoryAvailable",
               "rhs" : 0
             }
@@ -185,7 +180,6 @@
                 },
                 "condition" : {
                   "comparison" : "equalTo",
-                  "defaultState" : true,
                   "lhs" : "respiratoryInputType",
                   "rhs" : 0
                 }
@@ -193,7 +187,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "pSOFARespiratoryAvailable",
               "rhs" : 0
             }
@@ -208,7 +201,6 @@
                 },
                 "condition" : {
                   "comparison" : "equalTo",
-                  "defaultState" : true,
                   "lhs" : "respiratoryInputType",
                   "rhs" : 1
                 }
@@ -216,7 +208,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "pSOFARespiratoryAvailable",
               "rhs" : 0
             }
@@ -249,7 +240,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "pSOFARespiratoryAvailable",
               "rhs" : 0
             }
@@ -300,7 +290,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "pSOFACoagulationAvailable",
               "rhs" : 0
             }
@@ -343,7 +332,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "pSOFAHepaticAvailable",
               "rhs" : 0
             }
@@ -408,7 +396,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "pSOFACardiovascularAvailable",
               "rhs" : 0
             }
@@ -423,7 +410,6 @@
                 },
                 "condition" : {
                   "comparison" : "lessThan",
-                  "defaultState" : true,
                   "lhs" : "age",
                   "rhs" : 0.08333333333333333
                 }
@@ -431,7 +417,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "pSOFACardiovascularAvailable",
               "rhs" : 0
             }
@@ -448,7 +433,6 @@
                     },
                     "condition" : {
                       "comparison" : "lessThanOrEqualTo",
-                      "defaultState" : true,
                       "lhs" : "age",
                       "rhs" : 0.9166666666666666
                     }
@@ -456,7 +440,6 @@
                 },
                 "condition" : {
                   "comparison" : "greaterThanOrEqualTo",
-                  "defaultState" : true,
                   "lhs" : "age",
                   "rhs" : 0.08333333333333333
                 }
@@ -464,7 +447,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "pSOFACardiovascularAvailable",
               "rhs" : 0
             }
@@ -481,7 +463,6 @@
                     },
                     "condition" : {
                       "comparison" : "lessThanOrEqualTo",
-                      "defaultState" : true,
                       "lhs" : "age",
                       "rhs" : 1.9166666666666667
                     }
@@ -489,7 +470,6 @@
                 },
                 "condition" : {
                   "comparison" : "greaterThan",
-                  "defaultState" : true,
                   "lhs" : "age",
                   "rhs" : 0.9166666666666666
                 }
@@ -497,7 +477,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "pSOFACardiovascularAvailable",
               "rhs" : 0
             }
@@ -514,7 +493,6 @@
                     },
                     "condition" : {
                       "comparison" : "lessThanOrEqualTo",
-                      "defaultState" : true,
                       "lhs" : "age",
                       "rhs" : 4.916666666666667
                     }
@@ -522,7 +500,6 @@
                 },
                 "condition" : {
                   "comparison" : "greaterThan",
-                  "defaultState" : true,
                   "lhs" : "age",
                   "rhs" : 1.9166666666666667
                 }
@@ -530,7 +507,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "pSOFACardiovascularAvailable",
               "rhs" : 0
             }
@@ -547,7 +523,6 @@
                     },
                     "condition" : {
                       "comparison" : "lessThanOrEqualTo",
-                      "defaultState" : true,
                       "lhs" : "age",
                       "rhs" : 11.916666666666666
                     }
@@ -555,7 +530,6 @@
                 },
                 "condition" : {
                   "comparison" : "greaterThan",
-                  "defaultState" : true,
                   "lhs" : "age",
                   "rhs" : 4.916666666666667
                 }
@@ -563,7 +537,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "pSOFACardiovascularAvailable",
               "rhs" : 0
             }
@@ -580,7 +553,6 @@
                     },
                     "condition" : {
                       "comparison" : "lessThanOrEqualTo",
-                      "defaultState" : true,
                       "lhs" : "age",
                       "rhs" : 18
                     }
@@ -588,7 +560,6 @@
                 },
                 "condition" : {
                   "comparison" : "greaterThan",
-                  "defaultState" : true,
                   "lhs" : "age",
                   "rhs" : 11.916666666666666
                 }
@@ -596,7 +567,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "pSOFACardiovascularAvailable",
               "rhs" : 0
             }
@@ -611,7 +581,6 @@
                 },
                 "condition" : {
                   "comparison" : "greaterThan",
-                  "defaultState" : true,
                   "lhs" : "age",
                   "rhs" : 18
                 }
@@ -619,7 +588,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "pSOFACardiovascularAvailable",
               "rhs" : 0
             }
@@ -661,7 +629,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "pSOFANeurologicalAvailable",
               "rhs" : 0
             }
@@ -703,7 +670,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "pSOFARenalAvailable",
               "rhs" : 0
             }

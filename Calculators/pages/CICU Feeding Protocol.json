@@ -88,7 +88,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedType",
               "rhs" : 0
             }
@@ -125,7 +124,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedType",
               "rhs" : 0
             }
@@ -162,7 +160,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedType",
               "rhs" : 1
             }
@@ -199,7 +196,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedType",
               "rhs" : 1
             }
@@ -325,7 +321,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedType",
               "rhs" : 1
             }
@@ -341,7 +336,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedType",
               "rhs" : 0
             }
@@ -354,7 +348,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedType",
               "rhs" : 1
             }
@@ -396,7 +389,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedType",
               "rhs" : 0
             }
@@ -432,7 +424,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedType",
               "rhs" : 1
             }
@@ -497,7 +488,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedType",
               "rhs" : 0
             }
@@ -533,7 +523,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedType",
               "rhs" : 1
             }
@@ -598,7 +587,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedType",
               "rhs" : 0
             }
@@ -634,7 +622,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedType",
               "rhs" : 1
             }
@@ -699,7 +686,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedType",
               "rhs" : 0
             }
@@ -735,7 +721,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedType",
               "rhs" : 1
             }
@@ -800,7 +785,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedType",
               "rhs" : 0
             }
@@ -836,7 +820,6 @@
             },
             "condition" : {
               "comparison" : "equalTo",
-              "defaultState" : true,
               "lhs" : "feedType",
               "rhs" : 1
             }
