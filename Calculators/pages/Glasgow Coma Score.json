@@ -159,6 +159,6 @@
   "image" : {
     "sfSymbol" : "eye.circle.fill"
   },
-  "name" : "GCS",
+  "name" : "Glasgow Coma Score",
   "nested" : false
 }
