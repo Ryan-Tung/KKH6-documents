@@ -13,7 +13,8 @@
     "unit" : {
       "conversionScale" : 1,
       "name" : "mcg\/kg\/hr"
-    }
+    },
+    "upperLimit" : 100
   },
   {
     "alternateUnits" : [
@@ -85,12 +86,14 @@
       ],
       "roundingMethod" : "nearest"
     },
+    "lowerLimit" : 0.1,
     "referenceName" : "ivMorphine_poMorphineQ6HDose",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : "mg"
-    }
+    },
+    "upperLimit" : 20
   },
   {
     "alternateUnits" : [
@@ -126,12 +129,14 @@
       ],
       "roundingMethod" : "nearest"
     },
+    "lowerLimit" : 0.1,
     "referenceName" : "ivMorphine_poMorphineQ4HDose",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : "mg"
-    }
+    },
+    "upperLimit" : 20
   },
   {
     "alternateUnits" : [
@@ -147,7 +152,8 @@
     "unit" : {
       "conversionScale" : 1,
       "name" : "mcg\/kg\/hr"
-    }
+    },
+    "upperLimit" : 5
   },
   {
     "alternateUnits" : [
@@ -175,7 +181,8 @@
     "unit" : {
       "conversionScale" : 1,
       "name" : "mcg\/kg\/hr"
-    }
+    },
+    "upperLimit" : 100
   },
   {
     "alternateUnits" : [
@@ -237,12 +244,14 @@
       ],
       "roundingMethod" : "nearest"
     },
+    "lowerLimit" : 0.1,
     "referenceName" : "ivFentanyl_poMorphineQ6HDose",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : "mg"
-    }
+    },
+    "upperLimit" : 20
   },
   {
     "alternateUnits" : [
@@ -273,12 +282,14 @@
       ],
       "roundingMethod" : "nearest"
     },
+    "lowerLimit" : 0.1,
     "referenceName" : "ivFentanyl_poMorphineQ4HDose",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : "mg"
-    }
+    },
+    "upperLimit" : 20
   },
   {
     "alternateUnits" : [
@@ -294,7 +305,8 @@
     "unit" : {
       "conversionScale" : 1,
       "name" : "mcg\/kg\/min"
-    }
+    },
+    "upperLimit" : 24
   },
   {
     "alternateUnits" : [
@@ -368,12 +380,14 @@
       ],
       "roundingMethod" : "nearest"
     },
+    "lowerLimit" : 0.02,
     "referenceName" : "poLorazepamQ6HDose",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : "mg"
-    }
+    },
+    "upperLimit" : 2
   },
   {
     "alternateUnits" : [
@@ -389,7 +403,8 @@
     "unit" : {
       "conversionScale" : 1,
       "name" : "mcg\/kg\/hr"
-    }
+    },
+    "upperLimit" : 0.5
   },
   {
     "alternateUnits" : [
@@ -457,11 +472,13 @@
       ],
       "roundingMethod" : "nearest"
     },
+    "lowerLimit" : 1,
     "referenceName" : "ivPoClonidineQ6HDose",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : "mcg\/kg\/hr"
-    }
+    },
+    "upperLimit" : 150
   }
 ]

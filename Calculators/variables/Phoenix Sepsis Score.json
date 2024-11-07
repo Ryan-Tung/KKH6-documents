@@ -282,12 +282,14 @@
     ],
     "decimals" : 0,
     "displayName" : "Mean Arterial Pressure",
+    "lowerLimit" : 0,
     "referenceName" : "cardioMAP",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : "mmHg"
-    }
+    },
+    "upperLimit" : 100
   },
   {
     "alternateUnits" : [
@@ -552,12 +554,14 @@
     ],
     "decimals" : 0,
     "displayName" : "Platelets",
+    "lowerLimit" : 1,
     "referenceName" : "platelets",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : "x10⁹\/L"
-    }
+    },
+    "upperLimit" : 3000
   },
   {
     "alternateUnits" : [
@@ -568,12 +572,14 @@
     ],
     "decimals" : 1,
     "displayName" : "International Normalized Ratio",
+    "lowerLimit" : 0.7,
     "referenceName" : "coagulationINR",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
-    }
+    },
+    "upperLimit" : 5
   },
   {
     "alternateUnits" : [
@@ -584,12 +590,14 @@
     ],
     "decimals" : 2,
     "displayName" : "D-Dimer",
+    "lowerLimit" : 0.27,
     "referenceName" : "coagulationDDimer",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : "µg\/mg FEU"
-    }
+    },
+    "upperLimit" : 20
   },
   {
     "alternateUnits" : [
@@ -600,12 +608,14 @@
     ],
     "decimals" : 0,
     "displayName" : "Fibrinogen",
+    "lowerLimit" : 0.4,
     "referenceName" : "coagulationFibrinogen",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 0.01,
       "name" : "g\/L"
-    }
+    },
+    "upperLimit" : 10
   },
   {
     "alternateUnits" : [
@@ -743,12 +753,14 @@
     ],
     "decimals" : 0,
     "displayName" : "Glasgow Coma Score",
+    "lowerLimit" : 3,
     "referenceName" : "neurologicGCS",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
-    }
+    },
+    "upperLimit" : 15
   },
   {
     "alternateUnits" : [
@@ -782,12 +794,14 @@
     ],
     "decimals" : 0,
     "displayName" : "Blood Glucose",
+    "lowerLimit" : 0.3,
     "referenceName" : "endocrineGlucose",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : "mmol\/L"
-    }
+    },
+    "upperLimit" : 44
   },
   {
     "alternateUnits" : [
@@ -843,12 +857,14 @@
     ],
     "decimals" : 2,
     "displayName" : "Absolute Neutrophil Count",
+    "lowerLimit" : 0.01,
     "referenceName" : "immunologicANC",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : "x10⁹\/L"
-    }
+    },
+    "upperLimit" : 1000
   },
   {
     "alternateUnits" : [
@@ -859,12 +875,14 @@
     ],
     "decimals" : 2,
     "displayName" : "Absolute Lymphocyte Count",
+    "lowerLimit" : 0.01,
     "referenceName" : "immunologicALC",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : "x10⁹\/L"
-    }
+    },
+    "upperLimit" : 1000
   },
   {
     "alternateUnits" : [
@@ -1075,12 +1093,14 @@
     ],
     "decimals" : 0,
     "displayName" : "Alanine Aminotransferase (ALT)",
+    "lowerLimit" : 7,
     "referenceName" : "hepaticALT",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : "IU\/L"
-    }
+    },
+    "upperLimit" : 16290
   },
   {
     "alternateUnits" : [

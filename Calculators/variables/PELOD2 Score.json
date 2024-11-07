@@ -24,12 +24,14 @@
     ],
     "decimals" : 2,
     "displayName" : "Leucocytes",
+    "lowerLimit" : 0.01,
     "referenceName" : "leucocytes",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : "x10⁹\/L"
-    }
+    },
+    "upperLimit" : 1000
   },
   {
     "alternateUnits" : [
@@ -181,12 +183,14 @@
     ],
     "decimals" : 2,
     "displayName" : "Lactate",
+    "lowerLimit" : 0.18,
     "referenceName" : "pelodLactate",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : "mmol\/L"
-    }
+    },
+    "upperLimit" : 30
   },
   {
     "alternateUnits" : [
@@ -649,12 +653,14 @@
     ],
     "decimals" : 2,
     "displayName" : "Creatinine",
+    "lowerLimit" : 9,
     "referenceName" : "renalCreatinine",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : "µmol\/L"
-    }
+    },
+    "upperLimit" : 2380
   },
   {
     "alternateUnits" : [
@@ -1017,12 +1023,14 @@
       ],
       "roundingMethod" : "nearest"
     },
+    "lowerLimit" : 5,
     "referenceName" : "pcO2Score",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
-    }
+    },
+    "upperLimit" : 200
   },
   {
     "alternateUnits" : [

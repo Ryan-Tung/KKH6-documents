@@ -82,9 +82,34 @@
         },
         {
           "output" : "ettNasalIntubationDepth"
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "output" : "laryngoscopeMiller"
+            },
+            "condition" : {
+              "comparison" : "notEqualTo",
+              "lhs" : "laryngoscopeMiller",
+              "rhs" : -1
+            }
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "output" : "laryngoscopeMacintosh"
+            },
+            "condition" : {
+              "comparison" : "notEqualTo",
+              "lhs" : "laryngoscopeMacintosh",
+              "rhs" : -1
+            }
+          }
         }
       ],
       "name" : "Intubation",
+      "notes" : "*Calculated ETT depth may be underestimated for ages >15 years",
       "showName" : true
     },
     {

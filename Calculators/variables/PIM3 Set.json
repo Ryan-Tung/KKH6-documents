@@ -56,12 +56,14 @@
     ],
     "decimals" : 0,
     "displayName" : "Systolic Blood Pressure",
+    "lowerLimit" : 0,
     "referenceName" : "pim3SystolicBloodPressure",
     "startingValue" : 120,
     "unit" : {
       "conversionScale" : 1,
       "name" : "mmHg"
-    }
+    },
+    "upperLimit" : 220
   },
   {
     "alternateUnits" : [
@@ -73,12 +75,14 @@
     "decimals" : 2,
     "displayName" : "FiO₂",
     "isPercentage" : true,
+    "lowerLimit" : 21,
     "referenceName" : "fiO2",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : "%"
-    }
+    },
+    "upperLimit" : 100
   },
   {
     "alternateUnits" : [
@@ -89,12 +93,14 @@
     ],
     "decimals" : 2,
     "displayName" : "PaO₂",
+    "lowerLimit" : 5,
     "referenceName" : "paO2",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : "mmHg"
-    }
+    },
+    "upperLimit" : 800
   },
   {
     "alternateUnits" : [

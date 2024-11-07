@@ -25,12 +25,14 @@
     "decimals" : 2,
     "displayName" : "SpO₂",
     "isPercentage" : true,
+    "lowerLimit" : 88,
     "referenceName" : "spO2",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : "%"
-    }
+    },
+    "upperLimit" : 97
   },
   {
     "alternateUnits" : [
@@ -540,12 +542,14 @@
     ],
     "decimals" : 2,
     "displayName" : "Bilirubin",
+    "lowerLimit" : 5,
     "referenceName" : "bilirubin",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : "µmol\/L"
-    }
+    },
+    "upperLimit" : 2100
   },
   {
     "alternateUnits" : [

@@ -1,0 +1,294 @@
+[
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Eye Opening",
+    "referenceName" : "eyeOpeningInput",
+    "startingValue" : -1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Eye Opening Score",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : 1,
+            "condition" : {
+              "comparison" : "equalTo",
+              "lhs" : "eyeOpeningInput",
+              "rhs" : 0
+            }
+          },
+          {
+            "component" : 2,
+            "condition" : {
+              "comparison" : "equalTo",
+              "lhs" : "eyeOpeningInput",
+              "rhs" : 1
+            }
+          },
+          {
+            "component" : 3,
+            "condition" : {
+              "comparison" : "equalTo",
+              "lhs" : "eyeOpeningInput",
+              "rhs" : 2
+            }
+          },
+          {
+            "component" : 4,
+            "condition" : {
+              "comparison" : "equalTo",
+              "lhs" : "eyeOpeningInput",
+              "rhs" : 3
+            }
+          },
+          {
+            "component" : {
+              "nilConstant" : null
+            }
+          }
+        ]
+      },
+      "parameters" : [
+        "eyeOpeningInput"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "eyeOpeningOutput",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Motor Response",
+    "referenceName" : "motorResponseInput",
+    "startingValue" : -1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Verbal Response",
+    "referenceName" : "verbalResponseInput",
+    "startingValue" : -1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Motor Response Score",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : 1,
+            "condition" : {
+              "comparison" : "equalTo",
+              "lhs" : "motorResponseInput",
+              "rhs" : 0
+            }
+          },
+          {
+            "component" : 2,
+            "condition" : {
+              "comparison" : "equalTo",
+              "lhs" : "motorResponseInput",
+              "rhs" : 1
+            }
+          },
+          {
+            "component" : 3,
+            "condition" : {
+              "comparison" : "equalTo",
+              "lhs" : "motorResponseInput",
+              "rhs" : 2
+            }
+          },
+          {
+            "component" : 4,
+            "condition" : {
+              "comparison" : "equalTo",
+              "lhs" : "motorResponseInput",
+              "rhs" : 3
+            }
+          },
+          {
+            "component" : 5,
+            "condition" : {
+              "comparison" : "equalTo",
+              "lhs" : "motorResponseInput",
+              "rhs" : 4
+            }
+          },
+          {
+            "component" : 6,
+            "condition" : {
+              "comparison" : "equalTo",
+              "lhs" : "motorResponseInput",
+              "rhs" : 5
+            }
+          },
+          {
+            "component" : {
+              "nilConstant" : null
+            }
+          }
+        ]
+      },
+      "parameters" : [
+        "motorResponseInput"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "motorResponseOutput",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Verbal Response Score",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : 1,
+            "condition" : {
+              "comparison" : "equalTo",
+              "lhs" : "verbalResponseInput",
+              "rhs" : 0
+            }
+          },
+          {
+            "component" : 2,
+            "condition" : {
+              "comparison" : "equalTo",
+              "lhs" : "verbalResponseInput",
+              "rhs" : 1
+            }
+          },
+          {
+            "component" : 3,
+            "condition" : {
+              "comparison" : "equalTo",
+              "lhs" : "verbalResponseInput",
+              "rhs" : 2
+            }
+          },
+          {
+            "component" : 4,
+            "condition" : {
+              "comparison" : "equalTo",
+              "lhs" : "verbalResponseInput",
+              "rhs" : 3
+            }
+          },
+          {
+            "component" : 5,
+            "condition" : {
+              "comparison" : "equalTo",
+              "lhs" : "verbalResponseInput",
+              "rhs" : 4
+            }
+          },
+          {
+            "component" : {
+              "nilConstant" : null
+            }
+          }
+        ]
+      },
+      "parameters" : [
+        "verbalResponseInput"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "verbalResponseOutput",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Cumulative GCS Score",
+    "formula" : {
+      "equation" : {
+        "sum" : [
+          "verbalResponseOutput",
+          "motorResponseOutput",
+          "eyeOpeningOutput"
+        ]
+      },
+      "parameters" : [
+        "eyeOpeningOutput",
+        "motorResponseOutput",
+        "verbalResponseOutput"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "GCSScore",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  }
+]

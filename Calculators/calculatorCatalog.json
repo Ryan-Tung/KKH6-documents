@@ -9,6 +9,7 @@
     },
     {
       "calculators" : [
+        "Glascow Coma Score",
         "Fluids And Electrolytes",
         "Fluids",
         "Electrolytes",

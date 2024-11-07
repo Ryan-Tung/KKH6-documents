@@ -13,7 +13,8 @@
     "unit" : {
       "conversionScale" : 1,
       "name" : "mcg\/kg\/hr"
-    }
+    },
+    "upperLimit" : 100
   },
   {
     "alternateUnits" : [
@@ -267,7 +268,8 @@
     "unit" : {
       "conversionScale" : 1,
       "name" : "mcg\/kg\/min"
-    }
+    },
+    "upperLimit" : 24
   },
   {
     "alternateUnits" : [
@@ -410,6 +412,139 @@
     "referenceName" : "weaningPOLorazepamQ6H10Wean",
     "startingValue" : 0,
     "subtitle" : "Reduce PO dose by:",
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mcg\/kg\/min"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "*Initial IV Dexmedetomidine Infusion Rate",
+    "referenceName" : "initialIVDexmedetomidineInfusionRate",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mcg\/kg\/min"
+    },
+    "upperLimit" : 2
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "20% wean\/day",
+    "formula" : {
+      "equation" : {
+        "product" : [
+          "initialIVDexmedetomidineInfusionRate",
+          0.2
+        ]
+      },
+      "parameters" : [
+        "initialIVDexmedetomidineInfusionRate"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "weaningIVDexmedetomidineInfusion20Wean",
+    "startingValue" : 0,
+    "subtitle" : "Reduce IV dose by:",
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "10% wean\/day",
+    "formula" : {
+      "equation" : {
+        "product" : [
+          "initialIVDexmedetomidineInfusionRate",
+          0.1
+        ]
+      },
+      "parameters" : [
+        "initialIVDexmedetomidineInfusionRate"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "weaningIVDexmedetomidineInfusion10Wean",
+    "startingValue" : 0,
+    "subtitle" : "Reduce IV dose by:",
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "20% wean\/day",
+    "formula" : {
+      "equation" : {
+        "product" : [
+          "ivPoClonidineQ6HDose",
+          0.2
+        ]
+      },
+      "parameters" : [
+        "ivPoClonidineQ6HDose"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "weaningIVPOClonidineInfusion20Wean",
+    "startingValue" : 0,
+    "subtitle" : "Reduce IV\/PO dose by:",
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "10% wean\/day",
+    "formula" : {
+      "equation" : {
+        "product" : [
+          "ivPoClonidineQ6HDose",
+          0.1
+        ]
+      },
+      "parameters" : [
+        "ivPoClonidineQ6HDose"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "weaningIVPOClonidineInfusion10Wean",
+    "startingValue" : 0,
+    "subtitle" : "Reduce IV\/PO dose by:",
     "unit" : {
       "conversionScale" : 1,
       "name" : ""

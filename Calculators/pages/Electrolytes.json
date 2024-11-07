@@ -79,7 +79,7 @@
         }
       ],
       "name" : "Free Water Deficit (if hypernatremic)",
-      "notes" : "Consider replacing free water deficit volume over 2-3 days",
+      "notes" : "Standard weight-based calculations for free water deficit may provide under- or over-estimates in extremes of weight (e.g. a very under- or overweight patient). \nThe calculated free water deficit provides a recommended initial volume for fluid replacement. Always reassess the patient and titrate fluid replacement accordingly.\nExercise caution if the calculation yields a large volume of fluid replacement and consider replacing fluid volume over 2-3 days.",
       "showName" : true
     },
     {
@@ -201,8 +201,18 @@
           }
         },
         {
-          "inputSingle" : {
-            "allowsNegative" : false,
+          "discreteInput" : {
+            "presentationStyle" : "segmented",
+            "values" : [
+              {
+                "displayName" : "3.5 mmol\/L",
+                "value" : 3.5
+              },
+              {
+                "displayName" : "4.0 mmol\/L",
+                "value" : 4
+              }
+            ],
             "variableInfo" : {
               "color" : {
                 "blue" : 0,
@@ -218,6 +228,7 @@
         }
       ],
       "name" : "Potassium",
+      "notes" : "*Corrects to a desired potassium of 4 mmol\/L (Cardiac patients) or 3.5 mmol\/L (Non-cardiac patients)",
       "showName" : true
     }
   ],

@@ -24,12 +24,14 @@
     ],
     "decimals" : 2,
     "displayName" : "Glucose",
+    "lowerLimit" : 0.3,
     "referenceName" : "glucose",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : "mmol\/L"
-    }
+    },
+    "upperLimit" : 44
   },
   {
     "alternateUnits" : [
@@ -91,12 +93,14 @@
       ],
       "roundingMethod" : "nearest"
     },
+    "lowerLimit" : 100,
     "referenceName" : "correctedSodiumLevel",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : "mmol\/L"
-    }
+    },
+    "upperLimit" : 200
   },
   {
     "alternateUnits" : [
@@ -166,12 +170,14 @@
     ],
     "decimals" : 2,
     "displayName" : "Base Deficit",
+    "lowerLimit" : 0,
     "referenceName" : "baseExcess",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : "mmol\/L"
-    }
+    },
+    "upperLimit" : 50
   },
   {
     "alternateUnits" : [
@@ -201,7 +207,8 @@
     "unit" : {
       "conversionScale" : 1,
       "name" : "mmol"
-    }
+    },
+    "upperLimit" : 50
   },
   {
     "alternateUnits" : [
@@ -234,13 +241,14 @@
     "unit" : {
       "conversionScale" : 1,
       "name" : "mL"
-    }
+    },
+    "upperLimit" : 200
   },
   {
     "alternateUnits" : [
       {
         "conversionScale" : 1,
-        "name" : "mmol\/L"
+        "name" : "mmol"
       }
     ],
     "decimals" : 2,
@@ -282,12 +290,14 @@
       ],
       "roundingMethod" : "nearest"
     },
+    "lowerLimit" : 100,
     "referenceName" : "sodiumDeficit",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
-      "name" : "mmol\/L"
-    }
+      "name" : "mmol"
+    },
+    "upperLimit" : 200
   },
   {
     "alternateUnits" : [
@@ -314,12 +324,14 @@
     ],
     "decimals" : 2,
     "displayName" : "Urea",
+    "lowerLimit" : 1.1,
     "referenceName" : "urea",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : "mmol\/L"
-    }
+    },
+    "upperLimit" : 200
   },
   {
     "alternateUnits" : [
@@ -366,12 +378,14 @@
     ],
     "decimals" : 2,
     "displayName" : "Current Potassium",
+    "lowerLimit" : 1,
     "referenceName" : "currentPotassium",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : "mmol\/L"
-    }
+    },
+    "upperLimit" : 4
   },
   {
     "alternateUnits" : [
@@ -632,6 +646,267 @@
     "unit" : {
       "conversionScale" : 1,
       "name" : "ml\/min\/1.73m²"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : ""
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Category",
+    "referenceName" : "category",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : ""
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "Total Fluids\/day",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : {
+              "product" : [
+                "totalFluidOrder",
+                "weight"
+              ]
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "lhs" : "category",
+              "rhs" : 0
+            }
+          },
+          {
+            "component" : {
+              "product" : [
+                "maintenanceFluid_day",
+                0.6
+              ]
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "lhs" : "fluidRestriction",
+              "rhs" : 1
+            }
+          },
+          {
+            "component" : {
+              "product" : [
+                "maintenanceFluid_day",
+                0.7
+              ]
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "lhs" : "fluidRestriction",
+              "rhs" : 2
+            }
+          },
+          {
+            "component" : {
+              "product" : [
+                "maintenanceFluid_day",
+                0.8
+              ]
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "lhs" : "fluidRestriction",
+              "rhs" : 3
+            }
+          },
+          {
+            "component" : {
+              "product" : [
+                "maintenanceFluid_day",
+                0.9
+              ]
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "lhs" : "fluidRestriction",
+              "rhs" : 4
+            }
+          },
+          {
+            "component" : {
+              "product" : [
+                "maintenanceFluid_day",
+                1
+              ]
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "lhs" : "fluidRestriction",
+              "rhs" : 5
+            }
+          }
+        ]
+      },
+      "parameters" : [
+        "category",
+        "fluidRestriction",
+        "maintenanceFluid_day",
+        "totalFluidOrder",
+        "weight"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "totalFluids_day",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL\/kg"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "Total Fluid Order",
+    "referenceName" : "totalFluidOrder",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL\/kg"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "%"
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Fluid Restriction",
+    "isPercentage" : true,
+    "referenceName" : "fluidRestriction",
+    "startingValue" : -1,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "%"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mL"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "Maintenance Fluids\/day",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : {
+              "product" : [
+                "totalFluidOrder",
+                "weight"
+              ]
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "lhs" : "category",
+              "rhs" : 0
+            }
+          },
+          {
+            "component" : {
+              "product" : [
+                "weight",
+                100
+              ]
+            },
+            "condition" : {
+              "comparison" : "lessThanOrEqualTo",
+              "lhs" : "weight",
+              "rhs" : 10
+            }
+          },
+          {
+            "component" : {
+              "sum" : [
+                {
+                  "product" : [
+                    {
+                      "sum" : [
+                        "weight",
+                        {
+                          "negative" : 10
+                        }
+                      ]
+                    },
+                    50
+                  ]
+                },
+                1000
+              ]
+            },
+            "condition" : {
+              "comparison" : "lessThanOrEqualTo",
+              "lhs" : "weight",
+              "rhs" : 20
+            }
+          },
+          {
+            "component" : {
+              "sum" : [
+                {
+                  "product" : [
+                    {
+                      "sum" : [
+                        "weight",
+                        {
+                          "negative" : 20
+                        }
+                      ]
+                    },
+                    20
+                  ]
+                },
+                1500
+              ]
+            },
+            "condition" : {
+              "comparison" : "greaterThan",
+              "lhs" : "weight",
+              "rhs" : 20
+            }
+          }
+        ]
+      },
+      "parameters" : [
+        "category",
+        "totalFluidOrder",
+        "weight"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "maintenanceFluid_day",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mL"
     }
   }
 ]

@@ -176,7 +176,8 @@
     "unit" : {
       "conversionScale" : 1,
       "name" : ":00 hrs"
-    }
+    },
+    "upperLimit" : 24
   },
   {
     "alternateUnits" : [

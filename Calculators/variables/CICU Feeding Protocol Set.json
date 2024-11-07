@@ -13,7 +13,8 @@
     "unit" : {
       "conversionScale" : 1,
       "name" : "ml\/day"
-    }
+    },
+    "upperLimit" : 3000
   },
   {
     "alternateUnits" : [

@@ -82,12 +82,14 @@
       ],
       "roundingMethod" : "nearest"
     },
+    "lowerLimit" : 3,
     "referenceName" : "ettUncuffed",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : "mm"
-    }
+    },
+    "upperLimit" : 8.5
   },
   {
     "alternateUnits" : [
@@ -112,12 +114,14 @@
       ],
       "roundingMethod" : "nearest"
     },
+    "lowerLimit" : 3,
     "referenceName" : "ettCuffed",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : "mm"
-    }
+    },
+    "upperLimit" : 8
   },
   {
     "alternateUnits" : [
@@ -127,7 +131,7 @@
       }
     ],
     "decimals" : 1,
-    "displayName" : "ETT Depth for Oral Intubation",
+    "displayName" : "ETT Depth for Oral Intubation*",
     "formula" : {
       "equation" : {
         "conditional" : [
@@ -186,12 +190,14 @@
       ],
       "roundingMethod" : "nearest"
     },
+    "lowerLimit" : 8,
     "referenceName" : "ettOralIntubationDepth",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : "cm"
-    }
+    },
+    "upperLimit" : 21
   },
   {
     "alternateUnits" : [
@@ -201,7 +207,7 @@
       }
     ],
     "decimals" : 1,
-    "displayName" : "ETT Depth for Nasal Intubation",
+    "displayName" : "ETT Depth for Nasal Intubation*",
     "formula" : {
       "equation" : {
         "conditional" : [
@@ -268,12 +274,14 @@
       ],
       "roundingMethod" : "nearest"
     },
+    "lowerLimit" : 10,
     "referenceName" : "ettNasalIntubationDepth",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : "cm"
-    }
+    },
+    "upperLimit" : 24
   },
   {
     "alternateUnits" : [
@@ -309,7 +317,15 @@
             }
           },
           {
-            "component" : 2
+            "component" : 2,
+            "condition" : {
+              "comparison" : "lessThanOrEqualTo",
+              "lhs" : "age",
+              "rhs" : 16
+            }
+          },
+          {
+            "component" : -1
           }
         ]
       },
@@ -318,12 +334,14 @@
       ],
       "roundingMethod" : "nearest"
     },
+    "lowerLimit" : 0,
     "referenceName" : "laryngoscopeMiller",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
-    }
+    },
+    "upperLimit" : 2
   },
   {
     "alternateUnits" : [
@@ -354,7 +372,15 @@
             }
           },
           {
-            "component" : 3
+            "component" : 3,
+            "condition" : {
+              "comparison" : "lessThanOrEqualTo",
+              "lhs" : "age",
+              "rhs" : 16
+            }
+          },
+          {
+            "component" : 4
           }
         ]
       },
@@ -363,12 +389,14 @@
       ],
       "roundingMethod" : "nearest"
     },
+    "lowerLimit" : 1,
     "referenceName" : "laryngoscopeMacintosh",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
-    }
+    },
+    "upperLimit" : 4
   },
   {
     "alternateUnits" : [
@@ -429,12 +457,14 @@
       ],
       "roundingMethod" : "nearest"
     },
+    "lowerLimit" : 4,
     "referenceName" : "centralVenousCatheterSize",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : "French"
-    }
+    },
+    "upperLimit" : 8
   },
   {
     "alternateUnits" : [
@@ -518,12 +548,14 @@
       ],
       "roundingMethod" : "nearest"
     },
+    "lowerLimit" : 6.5,
     "referenceName" : "vascularCatheterSize",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : "French"
-    }
+    },
+    "upperLimit" : 13
   },
   {
     "alternateUnits" : [
@@ -533,7 +565,7 @@
       }
     ],
     "decimals" : 0,
-    "displayName" : "Defibrillation:",
+    "displayName" : "Defibrillation",
     "formula" : {
       "equation" : {
         "smallest" : [
@@ -551,13 +583,15 @@
       ],
       "roundingMethod" : "nearest"
     },
+    "lowerLimit" : 1,
     "referenceName" : "defibrillation",
     "startingValue" : 0,
     "subtitle" : "Please round up to the nearest available value on the defibrillator",
     "unit" : {
       "conversionScale" : 1,
       "name" : "joules"
-    }
+    },
+    "upperLimit" : 200
   },
   {
     "alternateUnits" : [
@@ -567,7 +601,7 @@
       }
     ],
     "decimals" : 0,
-    "displayName" : "Synchronised Cardioversion:",
+    "displayName" : "Synchronised Cardioversion",
     "formula" : {
       "equation" : {
         "product" : [
@@ -585,12 +619,82 @@
       ],
       "roundingMethod" : "nearest"
     },
+    "lowerLimit" : 1,
     "referenceName" : "synchronisedCardioversion",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : "joules"
-    }
+    },
+    "upperLimit" : 200
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "French"
+      }
+    ],
+    "decimals" : 0,
+    "displayName" : "Chest Tube Size",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : 8,
+            "condition" : {
+              "comparison" : "lessThan",
+              "lhs" : "age",
+              "rhs" : 0.16666666666666666
+            }
+          },
+          {
+            "component" : 10,
+            "condition" : {
+              "comparison" : "lessThan",
+              "lhs" : "age",
+              "rhs" : 1
+            }
+          },
+          {
+            "component" : 12,
+            "condition" : {
+              "comparison" : "lessThan",
+              "lhs" : "age",
+              "rhs" : 6
+            }
+          },
+          {
+            "component" : 16,
+            "condition" : {
+              "comparison" : "lessThan",
+              "lhs" : "age",
+              "rhs" : 12
+            }
+          },
+          {
+            "component" : {
+              "rangeConstant" : {
+                "boundaryValue" : 24,
+                "value" : 16
+              }
+            }
+          }
+        ]
+      },
+      "parameters" : [
+        "age"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "lowerLimit" : 8,
+    "referenceName" : "chestTubeSize",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "French"
+    },
+    "upperLimit" : 24
   },
   {
     "alternateUnits" : [

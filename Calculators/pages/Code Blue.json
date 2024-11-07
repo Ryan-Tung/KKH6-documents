@@ -84,7 +84,16 @@
           "output" : "ettNasalIntubationDepth"
         },
         {
-          "output" : "laryngoscopeMiller"
+          "conditional" : {
+            "component" : {
+              "output" : "laryngoscopeMiller"
+            },
+            "condition" : {
+              "comparison" : "notEqualTo",
+              "lhs" : "laryngoscopeMiller",
+              "rhs" : -1
+            }
+          }
         },
         {
           "conditional" : {
@@ -92,14 +101,15 @@
               "output" : "laryngoscopeMacintosh"
             },
             "condition" : {
-              "comparison" : "greaterThan",
+              "comparison" : "notEqualTo",
               "lhs" : "laryngoscopeMacintosh",
-              "rhs" : 0
+              "rhs" : -1
             }
           }
         }
       ],
       "name" : "Airway Equipment",
+      "notes" : "*Calculated ETT depth may be underestimated for ages >15 years",
       "showName" : true
     },
     {
@@ -118,9 +128,12 @@
         },
         {
           "output" : "synchronisedCardioversion"
+        },
+        {
+          "output" : "chestTubeSize"
         }
       ],
-      "name" : "Circulation",
+      "name" : "Circulation\/Others",
       "showName" : true
     },
     {
@@ -193,7 +206,8 @@
           }
         }
       ],
-      "name" : "Fluids",
+      "name" : "Fluids Resuscitation",
+      "notes" : "If calculated volume exceeds a 250 ml (Albumin 5%) or 500 ml (Sodium Chloride 0.9%) bottle\/bag, it may be practical to serve one bottle\/bag of isotonic fluid at a time before reassessing the patient and administering additional fluids",
       "showName" : true
     },
     {

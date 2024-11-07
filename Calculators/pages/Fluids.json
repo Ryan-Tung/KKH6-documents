@@ -57,10 +57,136 @@
         }
       ],
       "name" : "Glucose",
+      "notes" : "Dextrosity for peripherally administered fluids should not exceed 12.5%.",
       "showName" : true
     },
     {
       "components" : [
+        {
+          "discreteInput" : {
+            "presentationStyle" : "segmented",
+            "values" : [
+              {
+                "displayName" : "Neonatal",
+                "value" : 0
+              },
+              {
+                "displayName" : "Paediatric",
+                "value" : 1
+              }
+            ],
+            "variableInfo" : {
+              "color" : {
+                "blue" : 1,
+                "green" : 0.47843137254901963,
+                "red" : 0
+              },
+              "variableReference" : "category"
+            }
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "inputSingle" : {
+                "allowsNegative" : false,
+                "variableInfo" : {
+                  "color" : {
+                    "blue" : 0.8392156862745098,
+                    "green" : 0.33725490196078434,
+                    "red" : 0.34509803921568627
+                  },
+                  "variableReference" : "totalFluidOrder"
+                }
+              }
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "lhs" : "category",
+              "rhs" : 0
+            }
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "output" : "maintenanceFluid_day"
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "lhs" : "category",
+              "rhs" : 1
+            }
+          }
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "discreteInput" : {
+                "presentationStyle" : "segmented",
+                "values" : [
+                  {
+                    "displayName" : "60%",
+                    "value" : 1
+                  },
+                  {
+                    "displayName" : "70%",
+                    "value" : 2
+                  },
+                  {
+                    "displayName" : "80%",
+                    "value" : 3
+                  },
+                  {
+                    "displayName" : "90%",
+                    "value" : 4
+                  },
+                  {
+                    "displayName" : "None",
+                    "value" : 5
+                  }
+                ],
+                "variableInfo" : {
+                  "color" : {
+                    "blue" : 0,
+                    "green" : 0.5843137254901961,
+                    "red" : 1
+                  },
+                  "variableReference" : "fluidRestriction"
+                }
+              }
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "lhs" : "category",
+              "rhs" : 1
+            }
+          }
+        },
+        {
+          "output" : "totalFluids_day"
+        },
+        {
+          "conditional" : {
+            "component" : {
+              "conditional" : {
+                "component" : {
+                  "text" : "Notes:\n*May be applied to young underweight infants.\nIV fluids should be capped at 100ml\/kg\/day."
+                },
+                "condition" : {
+                  "comparison" : "equalTo",
+                  "lhs" : "category",
+                  "rhs" : 0
+                }
+              }
+            },
+            "condition" : {
+              "comparison" : "equalTo",
+              "lhs" : "category",
+              "rhs" : 0
+            }
+          }
+        },
         {
           "inputSingle" : {
             "allowsNegative" : false,
@@ -79,6 +205,7 @@
         }
       ],
       "name" : "Fluids",
+      "notes" : "Standard weight-based calculations for fluid deficit may provide under- or over-estimates in extremes of weight (e.g. a very under- or overweight patient).\nThe calculated fluid deficit provides a recommended initial volume for fluid replacement. Always reassess the patient and titrate fluid replacement accordingly.\nExercise caution if the calculation yields a large volume of fluid replacement and consider replacing fluid volume over 2-3 days.          ",
       "showName" : true
     },
     {
@@ -114,7 +241,7 @@
         }
       ],
       "name" : "Renal Function",
-      "notes" : "Consider renal dose adjustment if GFR < 60",
+      "notes" : "The updated Schwartz formula (2009) is intended for use between ages 1 to 16 years.\nConsider renal dose adjustment if GFR<60.",
       "showName" : true
     }
   ],

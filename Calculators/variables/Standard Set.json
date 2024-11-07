@@ -12,12 +12,14 @@
     ],
     "decimals" : 1,
     "displayName" : "Age",
+    "lowerLimit" : 0,
     "referenceName" : "age",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : "years"
-    }
+    },
+    "upperLimit" : 18
   },
   {
     "alternateUnits" : [
@@ -61,11 +63,13 @@
       ],
       "roundingMethod" : "nearest"
     },
+    "lowerLimit" : 2,
     "referenceName" : "weight",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : "kg"
-    }
+    },
+    "upperLimit" : 100
   }
 ]

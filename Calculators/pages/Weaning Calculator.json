@@ -138,6 +138,72 @@
       "name" : "Benzodiazepine Weaning Calculator",
       "notes" : "*Midazolam infusion rate at the start of wean",
       "showName" : true
+    },
+    {
+      "components" : [
+        {
+          "inputSingle" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0,
+                "green" : 0.5843137254901961,
+                "red" : 1
+              },
+              "variableReference" : "ivDexmedetomidineRate"
+            }
+          }
+        },
+        {
+          "output" : "ivPoClonidineQ6HDose"
+        },
+        {
+          "inputSingle" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0,
+                "green" : 0.5843137254901961,
+                "red" : 1
+              },
+              "variableReference" : "initialIVDexmedetomidineInfusionRate"
+            }
+          }
+        },
+        {
+          "subsectionTitle" : {
+            "text" : "Weaning IV Dexmedetomidine Infusion:"
+          }
+        },
+        {
+          "nested" : {
+            "output" : "weaningIVDexmedetomidineInfusion20Wean"
+          }
+        },
+        {
+          "nested" : {
+            "output" : "weaningIVDexmedetomidineInfusion10Wean"
+          }
+        },
+        {
+          "subsectionTitle" : {
+            "text" : "Weaning IV\/PO Clonidine (Q6H)"
+          }
+        },
+        {
+          "nested" : {
+            "output" : "weaningIVPOClonidineInfusion20Wean"
+          }
+        },
+        {
+          "nested" : {
+            "output" : "weaningIVPOClonidineInfusion10Wean"
+          }
+        }
+      ],
+      "name" : "Alpha-Agonist Weaning Calculator",
+      "notes" : "*Dexmedetomidine infusion rate at the start of wean",
+      "showName" : true
     }
   ],
   "image" : {

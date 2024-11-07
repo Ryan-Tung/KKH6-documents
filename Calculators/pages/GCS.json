@@ -1,0 +1,164 @@
+{
+  "color" : {
+    "blue" : 0.8705882352941177,
+    "green" : 0.3215686274509804,
+    "red" : 0.6862745098039216
+  },
+  "groups" : [
+    {
+      "components" : [
+        {
+          "discreteInput" : {
+            "presentationStyle" : "segmented",
+            "values" : [
+              {
+                "displayName" : "1",
+                "value" : 0
+              },
+              {
+                "displayName" : "2",
+                "value" : 1
+              },
+              {
+                "displayName" : "3",
+                "value" : 2
+              },
+              {
+                "displayName" : "4",
+                "value" : 3
+              }
+            ],
+            "variableInfo" : {
+              "color" : {
+                "blue" : 1,
+                "green" : 0.47843137254901963,
+                "red" : 0
+              },
+              "variableReference" : "eyeOpeningInput"
+            }
+          }
+        },
+        {
+          "text" : "1) No response\n2) To pain\n3) To speech\n4) Spontaneous"
+        },
+        {
+          "output" : "eyeOpeningOutput"
+        }
+      ],
+      "name" : "Eye Opening",
+      "showName" : true
+    },
+    {
+      "components" : [
+        {
+          "discreteInput" : {
+            "presentationStyle" : "segmented",
+            "values" : [
+              {
+                "displayName" : "1",
+                "value" : 0
+              },
+              {
+                "displayName" : "2",
+                "value" : 1
+              },
+              {
+                "displayName" : "3",
+                "value" : 2
+              },
+              {
+                "displayName" : "4",
+                "value" : 3
+              },
+              {
+                "displayName" : "5",
+                "value" : 4
+              }
+            ],
+            "variableInfo" : {
+              "color" : {
+                "blue" : 1,
+                "green" : 0.47843137254901963,
+                "red" : 0
+              },
+              "variableReference" : "verbalResponseInput"
+            }
+          }
+        },
+        {
+          "text" : "1) No response\n2) Incomprehensible sounds\n3) Cries\/Screams\n4) Inappropriate words\/Disoriented\n5) Appropriate\/Oriented"
+        },
+        {
+          "output" : "verbalResponseOutput"
+        }
+      ],
+      "name" : "Verbal Response",
+      "showName" : true
+    },
+    {
+      "components" : [
+        {
+          "discreteInput" : {
+            "presentationStyle" : "segmented",
+            "values" : [
+              {
+                "displayName" : "1",
+                "value" : 0
+              },
+              {
+                "displayName" : "2",
+                "value" : 1
+              },
+              {
+                "displayName" : "3",
+                "value" : 2
+              },
+              {
+                "displayName" : "4",
+                "value" : 3
+              },
+              {
+                "displayName" : "5",
+                "value" : 4
+              },
+              {
+                "displayName" : "6",
+                "value" : 5
+              }
+            ],
+            "variableInfo" : {
+              "color" : {
+                "blue" : 1,
+                "green" : 0.47843137254901963,
+                "red" : 0
+              },
+              "variableReference" : "motorResponseInput"
+            }
+          }
+        },
+        {
+          "text" : "1) No response\n2) Abnormal extension (Decerebrate)\n3) Abnormal flexion (Decorticate)\n4) Withdraws from pain\n5) Localizes pain\n6) Spontaneous\/Obeys commands"
+        },
+        {
+          "output" : "motorResponseOutput"
+        }
+      ],
+      "name" : "Motor Response",
+      "showName" : true
+    },
+    {
+      "components" : [
+        {
+          "output" : "GCSScore"
+        }
+      ],
+      "name" : "GCS Score",
+      "showName" : true
+    }
+  ],
+  "image" : {
+    "sfSymbol" : "eye.circle.fill"
+  },
+  "name" : "GCS",
+  "nested" : false
+}
