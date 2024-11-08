@@ -334,14 +334,12 @@
       ],
       "roundingMethod" : "nearest"
     },
-    "lowerLimit" : 0,
     "referenceName" : "laryngoscopeMiller",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
     },
-    "upperLimit" : 2
   },
   {
     "alternateUnits" : [
@@ -389,14 +387,12 @@
       ],
       "roundingMethod" : "nearest"
     },
-    "lowerLimit" : 1,
     "referenceName" : "laryngoscopeMacintosh",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : ""
-    },
-    "upperLimit" : 4
+    }
   },
   {
     "alternateUnits" : [
