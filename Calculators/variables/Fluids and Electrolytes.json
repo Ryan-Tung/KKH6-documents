@@ -8,12 +8,14 @@
     ],
     "decimals" : 2,
     "displayName" : "Serum Sodium",
+    "lowerLimit" : 100,
     "referenceName" : "serumSodium",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : "mmol\/L"
-    }
+    },
+    "upperLimit" : 200
   },
   {
     "alternateUnits" : [
@@ -290,14 +292,12 @@
       ],
       "roundingMethod" : "nearest"
     },
-    "lowerLimit" : 100,
     "referenceName" : "sodiumDeficit",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : "mmol"
-    },
-    "upperLimit" : 200
+    }
   },
   {
     "alternateUnits" : [
@@ -308,12 +308,14 @@
     ],
     "decimals" : 2,
     "displayName" : "Sodium",
+    "lowerLimit" : 100,
     "referenceName" : "sodium",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : "mmol\/L"
-    }
+    },
+    "upperLimit" : 200
   },
   {
     "alternateUnits" : [
@@ -456,7 +458,8 @@
     "unit" : {
       "conversionScale" : 1,
       "name" : "%"
-    }
+    },
+    "upperLimit" : 25
   },
   {
     "alternateUnits" : [
@@ -564,7 +567,8 @@
     "unit" : {
       "conversionScale" : 1,
       "name" : "mL"
-    }
+    },
+    "upperLimit" : 15
   },
   {
     "alternateUnits" : [
@@ -575,12 +579,14 @@
     ],
     "decimals" : 2,
     "displayName" : "Height",
+    "lowerLimit" : 40,
     "referenceName" : "height",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : "cm"
-    }
+    },
+    "upperLimit" : 190
   },
   {
     "alternateUnits" : [
@@ -591,12 +597,14 @@
     ],
     "decimals" : 2,
     "displayName" : "Baseline Creatinine",
+    "lowerLimit" : 9,
     "referenceName" : "baselineCreatinine",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : "µmol\/L"
-    }
+    },
+    "upperLimit" : 2380
   },
   {
     "alternateUnits" : [
@@ -770,7 +778,8 @@
     "unit" : {
       "conversionScale" : 1,
       "name" : "mL"
-    }
+    },
+    "upperLimit" : 3000
   },
   {
     "alternateUnits" : [
@@ -781,12 +790,14 @@
     ],
     "decimals" : 2,
     "displayName" : "Total Fluid Order",
+    "lowerLimit" : 50,
     "referenceName" : "totalFluidOrder",
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
       "name" : "mL\/kg"
-    }
+    },
+    "upperLimit" : 200
   },
   {
     "alternateUnits" : [
@@ -907,6 +918,7 @@
     "unit" : {
       "conversionScale" : 1,
       "name" : "mL"
-    }
+    },
+    "upperLimit" : 3000
   }
 ]

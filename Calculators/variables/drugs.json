@@ -739,8 +739,8 @@
       "name" : "mg\/kg"
     },
     "isPreDilutionAmount" : false,
-    "maxCalcDose" : 24,
-    "notes" : "Maximum dose: 24mg\nRoute: IV bolus",
+    "maxCalcDose" : 100,
+    "notes" : "Maximum dose: 100mg\nRoute: IV bolus",
     "referenceName" : "Suxamethonium Chloride First Dose"
   },
   {
@@ -761,7 +761,7 @@
     },
     "isPreDilutionAmount" : false,
     "maxCalcDose" : 10,
-    "notes" : "Maximum dose: 10 puffs\nRoute: 3.6 puffs",
+    "notes" : "Maximum dose: 10 puffs\nRoute: MDI",
     "referenceName" : "Salbutamol Inhaler"
   },
   {

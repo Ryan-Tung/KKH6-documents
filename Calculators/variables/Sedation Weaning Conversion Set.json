@@ -410,7 +410,7 @@
     "alternateUnits" : [
       {
         "conversionScale" : 1,
-        "name" : "mcg\/kg\/hr"
+        "name" : "mcg"
       }
     ],
     "decimals" : 2,
@@ -477,7 +477,7 @@
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
-      "name" : "mcg\/kg\/hr"
+      "name" : "mcg"
     },
     "upperLimit" : 150
   }

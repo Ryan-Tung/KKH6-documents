@@ -126,6 +126,10 @@
                 "presentationStyle" : "segmented",
                 "values" : [
                   {
+                    "displayName" : "None",
+                    "value" : 5
+                  },
+                  {
                     "displayName" : "60%",
                     "value" : 1
                   },
@@ -140,10 +144,6 @@
                   {
                     "displayName" : "90%",
                     "value" : 4
-                  },
-                  {
-                    "displayName" : "None",
-                    "value" : 5
                   }
                 ],
                 "variableInfo" : {
@@ -205,7 +205,7 @@
         }
       ],
       "name" : "Fluids",
-      "notes" : "Standard weight-based calculations for fluid deficit may provide under- or over-estimates in extremes of weight (e.g. a very under- or overweight patient).\nThe calculated fluid deficit provides a recommended initial volume for fluid replacement. Always reassess the patient and titrate fluid replacement accordingly.\nExercise caution if the calculation yields a large volume of fluid replacement and consider replacing fluid volume over 2-3 days.          ",
+      "notes" : "Standard weight-based calculations for fluid deficit may provide under- or over-estimates in extremes of weight (e.g. a very under- or overweight patient).\n\nThe calculated fluid deficit provides a recommended initial volume for fluid replacement. Always reassess the patient and titrate fluid replacement accordingly.\n\nExercise caution if the calculation yields a large volume of fluid replacement and consider replacing fluid volume over 2-3 days.          ",
       "showName" : true
     },
     {
@@ -241,7 +241,7 @@
         }
       ],
       "name" : "Renal Function",
-      "notes" : "The updated Schwartz formula (2009) is intended for use between ages 1 to 16 years.\nConsider renal dose adjustment if GFR<60.",
+      "notes" : "The updated Schwartz formula (2009) is intended for use between ages 1 to 16 years.\n\nConsider renal dose adjustment if GFR<60.",
       "showName" : true
     }
   ],

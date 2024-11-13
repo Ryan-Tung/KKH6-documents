@@ -421,7 +421,7 @@
     "alternateUnits" : [
       {
         "conversionScale" : 1,
-        "name" : "mcg\/kg\/min"
+        "name" : "mcg\/kg\/hr"
       }
     ],
     "decimals" : 2,
@@ -430,7 +430,7 @@
     "startingValue" : 0,
     "unit" : {
       "conversionScale" : 1,
-      "name" : "mcg\/kg\/min"
+      "name" : "mcg\/kg\/hr"
     },
     "upperLimit" : 2
   },
@@ -438,7 +438,7 @@
     "alternateUnits" : [
       {
         "conversionScale" : 1,
-        "name" : ""
+        "name" : "mcg\/kg\/hr"
       }
     ],
     "decimals" : 2,
@@ -460,14 +460,14 @@
     "subtitle" : "Reduce IV dose by:",
     "unit" : {
       "conversionScale" : 1,
-      "name" : ""
+      "name" : "mcg\/kg\/hr"
     }
   },
   {
     "alternateUnits" : [
       {
         "conversionScale" : 1,
-        "name" : ""
+        "name" : "mcg\/kg\/hr"
       }
     ],
     "decimals" : 2,
@@ -489,14 +489,14 @@
     "subtitle" : "Reduce IV dose by:",
     "unit" : {
       "conversionScale" : 1,
-      "name" : ""
+      "name" : "mcg\/kg\/hr"
     }
   },
   {
     "alternateUnits" : [
       {
         "conversionScale" : 1,
-        "name" : ""
+        "name" : "mcg"
       }
     ],
     "decimals" : 2,
@@ -518,14 +518,14 @@
     "subtitle" : "Reduce IV\/PO dose by:",
     "unit" : {
       "conversionScale" : 1,
-      "name" : ""
+      "name" : "mcg"
     }
   },
   {
     "alternateUnits" : [
       {
         "conversionScale" : 1,
-        "name" : ""
+        "name" : "mcg"
       }
     ],
     "decimals" : 2,
@@ -547,7 +547,7 @@
     "subtitle" : "Reduce IV\/PO dose by:",
     "unit" : {
       "conversionScale" : 1,
-      "name" : ""
+      "name" : "mcg"
     }
   }
 ]

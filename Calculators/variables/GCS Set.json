@@ -268,7 +268,7 @@
       }
     ],
     "decimals" : 0,
-    "displayName" : "Cumulative GCS Score",
+    "displayName" : "GCS Score",
     "formula" : {
       "equation" : {
         "sum" : [
