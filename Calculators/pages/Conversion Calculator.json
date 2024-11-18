@@ -43,10 +43,10 @@
           "output" : "ivMorphine_totalPOMorphineDoseOver24Hours"
         },
         {
-          "output" : "ivMorphine_poMorphineQ4HDose"
+          "output" : "ivMorphine_poMorphineQ6HDose"
         },
         {
-          "output" : "ivMorphine_poMorphineQ6HDose"
+          "output" : "ivMorphine_poMorphineQ4HDose"
         }
       ],
       "name" : "IV Morphine to PO Morphine",
