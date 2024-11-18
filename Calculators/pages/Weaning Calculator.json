@@ -150,22 +150,6 @@
                 "green" : 0.5843137254901961,
                 "red" : 1
               },
-              "variableReference" : "ivDexmedetomidineRate"
-            }
-          }
-        },
-        {
-          "output" : "ivPoClonidineQ6HDose"
-        },
-        {
-          "inputSingle" : {
-            "allowsNegative" : false,
-            "variableInfo" : {
-              "color" : {
-                "blue" : 0,
-                "green" : 0.5843137254901961,
-                "red" : 1
-              },
               "variableReference" : "initialIVDexmedetomidineInfusionRate"
             }
           }

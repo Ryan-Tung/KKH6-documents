@@ -500,16 +500,89 @@
       }
     ],
     "decimals" : 2,
+    "displayName" : "IV\/PO Clonidine Q6H Dose",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : {
+              "nilConstant" : null
+            },
+            "condition" : {
+              "comparison" : "lessThan",
+              "lhs" : "initialIVDexmedetomidineInfusionRate",
+              "rhs" : 0.2
+            }
+          },
+          {
+            "component" : {
+              "product" : [
+                2,
+                "weight"
+              ]
+            },
+            "condition" : {
+              "comparison" : "lessThan",
+              "lhs" : "initialIVDexmedetomidineInfusionRate",
+              "rhs" : 0.4
+            }
+          },
+          {
+            "component" : {
+              "product" : [
+                {
+                  "rangeConstant" : {
+                    "boundaryValue" : 5,
+                    "value" : 3
+                  }
+                },
+                "weight"
+              ]
+            },
+            "condition" : {
+              "comparison" : "lessThan",
+              "lhs" : "initialIVDexmedetomidineInfusionRate",
+              "rhs" : 0.6
+            }
+          },
+          {
+            "component" : {
+              "nilConstant" : null
+            }
+          }
+        ]
+      },
+      "parameters" : [
+        "initialIVDexmedetomidineInfusionRate",
+        "weight"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "weaningivPoClonidineQ6HDose",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mcg"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mcg"
+      }
+    ],
+    "decimals" : 2,
     "displayName" : "20% wean\/day",
     "formula" : {
       "equation" : {
         "product" : [
-          "ivPoClonidineQ6HDose",
+          "weaningivPoClonidineQ6HDose",
           0.2
         ]
       },
       "parameters" : [
-        "ivPoClonidineQ6HDose"
+        "weaningivPoClonidineQ6HDose"
       ],
       "roundingMethod" : "nearest"
     },
@@ -533,12 +606,12 @@
     "formula" : {
       "equation" : {
         "product" : [
-          "ivPoClonidineQ6HDose",
+          "weaningivPoClonidineQ6HDose",
           0.1
         ]
       },
       "parameters" : [
-        "ivPoClonidineQ6HDose"
+        "weaningivPoClonidineQ6HDose"
       ],
       "roundingMethod" : "nearest"
     },
