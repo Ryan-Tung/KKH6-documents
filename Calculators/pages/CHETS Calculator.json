@@ -147,9 +147,6 @@
                     }
                   ]
                 }
-              },
-              {
-                "text" : "Maximum dose: 6mg\nRoute: IV rapid bolus\nGive NEAT. RAPID bolus. Follow each bolus with NS flush.\nInitial dose: 0.1mg\/kg (max 6mg).  If initial dose is not effective, increase to 0.2mg\/kg (max 12mg)."
               }
             ],
             "expandedByDefault" : false
@@ -176,9 +173,6 @@
                     }
                   ]
                 }
-              },
-              {
-                "text" : "Maximum dose: 1mg\nRoute: IV bolus"
               }
             ],
             "expandedByDefault" : false
@@ -205,9 +199,6 @@
                     }
                   ]
                 }
-              },
-              {
-                "text" : "Maximum dose: 300mg\nRoute: IV bolus\nPulseless VT\/VF: Give NEAT. Rapid IV bolus.  VT with pulse: Dilute 3mL (150mg) to final volume 25mL D5% (6mg\/mL). Infuse over 20 min."
               }
             ],
             "expandedByDefault" : false
@@ -234,9 +225,6 @@
                     }
                   ]
                 }
-              },
-              {
-                "text" : "Maximum dose: 0.6mg\/600mcg\nRoute: IV rapid bolus\nDilute 1ml (0.6mg) to final volume 6ml N\/S (0.1mg\/mL)"
               }
             ],
             "expandedByDefault" : false
@@ -263,9 +251,6 @@
                     }
                   ]
                 }
-              },
-              {
-                "text" : "Maximum dose: 20mL\nRoute: IV slow bolus\nGive NEAT. SLOW bolus over 5-10 minutes.\nUse Large or Central Vein. **If only peripheral access, Calcium gluconate preferred**\""
               }
             ],
             "expandedByDefault" : false
@@ -292,9 +277,6 @@
                     }
                   ]
                 }
-              },
-              {
-                "text" : "Maximum dose: 30ml\nRoute: IV slow bolus\nGive NEAT. SLOW bolus over 5-10 min.\nUse Large or Central Vein."
               }
             ],
             "expandedByDefault" : false
@@ -321,9 +303,6 @@
                     }
                   ]
                 }
-              },
-              {
-                "text" : "Maximum dose: 250ml\nRoute: IV bolus"
               }
             ],
             "expandedByDefault" : false
@@ -350,9 +329,6 @@
                     }
                   ]
                 }
-              },
-              {
-                "text" : "Maximum dose: 250ml\nRoute: IV bolus\nTo administer over 15-30 min with insulin"
               }
             ],
             "expandedByDefault" : false
@@ -379,9 +355,6 @@
                     }
                   ]
                 }
-              },
-              {
-                "text" : "Maximum dose: 100ml\nRoute: IV bolus\nDilute Dextrose 50% with same volume of WFI to get Dextrose 25%."
               }
             ],
             "expandedByDefault" : false
@@ -408,9 +381,6 @@
                     }
                   ]
                 }
-              },
-              {
-                "text" : "Maximum dose: 10mg\nRoute: IV bolus\nGive NEAT.\nMay repeat once in 5 mins. Infusion rate 1-2 mg\/min."
               }
             ],
             "expandedByDefault" : false
@@ -437,9 +407,6 @@
                     }
                   ]
                 }
-              },
-              {
-                "text" : "Maximum dose: 50mg\nRoute: IV bolus\nGive NEAT.\nDo not exceed MAXimum rate of 25mg\/min."
               }
             ],
             "expandedByDefault" : false
@@ -466,9 +433,6 @@
                     }
                   ]
                 }
-              },
-              {
-                "text" : "Maximum dose: 200mcg\nRoute: IV bolus\nGive over 15sec. Can repeat dose (titrate to effect) at 1 min interval. MAXimum total dose 1000mcg or 50mcg\/kg (whichever is lower)."
               }
             ],
             "expandedByDefault" : false
@@ -495,9 +459,6 @@
                     }
                   ]
                 }
-              },
-              {
-                "text" : "Maximum dose: 100mg\nRoute: IV bolus\nReconstitute 100mg in 2mL WFI (50 mg\/mL)"
               }
             ],
             "expandedByDefault" : false
@@ -524,9 +485,6 @@
                     }
                   ]
                 }
-              },
-              {
-                "text" : "Maximum dose: 100mg\nRoute: IV bolus\nReconstitute 100mg in 2mL WFI (50 mg\/mL)"
               }
             ],
             "expandedByDefault" : false
@@ -553,9 +511,6 @@
                     }
                   ]
                 }
-              },
-              {
-                "text" : "Maximum dose: 50mg\nRoute: IV bolus\nReconstitute 100mg in 2mL WFI (50 mg\/mL)"
               }
             ],
             "expandedByDefault" : false
@@ -582,9 +537,6 @@
                     }
                   ]
                 }
-              },
-              {
-                "text" : "Maximum dose: 5mg\nRoute: IV bolus\nDilute 1mL to final volume 5mL NS (1 mg\/mL)"
               }
             ],
             "expandedByDefault" : false
@@ -611,9 +563,6 @@
                     }
                   ]
                 }
-              },
-              {
-                "text" : "Maximum dose: 5mg\nRoute: IV slow bolus\nDilute 1mL to final volume 2mL NS (5 mg\/mL)\nSLOW bolus over 5 min"
               }
             ],
             "expandedByDefault" : false
@@ -640,9 +589,6 @@
                     }
                   ]
                 }
-              },
-              {
-                "text" : "Maximum dose: 2mg\nRoute: IV bolus\nGive NEAT. Repeat Q2- 3min as required."
               }
             ],
             "expandedByDefault" : false
@@ -669,9 +615,6 @@
                     }
                   ]
                 }
-              },
-              {
-                "text" : "Maximum dose: 1000mg\nRoute: IV intermittent\nDilute 1mL to final volume 10 mL with NS or WFI (20mg\/ml)\nGive loading dose over 20-30 mins."
               }
             ],
             "expandedByDefault" : false
@@ -698,9 +641,6 @@
                     }
                   ]
                 }
-              },
-              {
-                "text" : "Maximum dose: 50mg\nRoute: IV bolus"
               }
             ],
             "expandedByDefault" : false
@@ -727,9 +667,6 @@
                     }
                   ]
                 }
-              },
-              {
-                "text" : "Maximum dose: 50mmol\nRoute: IV slow bolus\n<1yo (central\/peripheral): Dilute 1:1 with WFI to 4.2% (0.5mmoL\/mL)\n>1yo: peripheral - 0.5mmol\/ml; central - NEAT\nSLOW bolus: Max rate 10 mmol\/min"
               }
             ],
             "expandedByDefault" : false
@@ -756,9 +693,6 @@
                     }
                   ]
                 }
-              },
-              {
-                "text" : "Maximum dose: 200ml\nRoute: IV intermittent\nUsual Dose 2-4mL\/kg,  Infuse over 20-30 min. \nPreferably CENTRAL vein; Peripheral in emergencies."
               }
             ],
             "expandedByDefault" : false
@@ -785,9 +719,6 @@
                     }
                   ]
                 }
-              },
-              {
-                "text" : "Maximum dose: 100mg\nRoute: IV bolus\nDilute 2mL (100mg) to final volume of 10ml NS. (10mg\/mL)"
               }
             ],
             "expandedByDefault" : false
@@ -814,9 +745,6 @@
                     }
                   ]
                 }
-              },
-              {
-                "text" : "Maximum dose: 10 puffs\nRoute: MDI\nRounded to the nearest whole puff.\nMin 2 puffs\/dose"
               }
             ],
             "expandedByDefault" : false
@@ -843,9 +771,6 @@
                     }
                   ]
                 }
-              },
-              {
-                "text" : "Maximum dose: 1ml\nRoute: Nebs\nTo mix with NS to a final volume of 4mL"
               }
             ],
             "expandedByDefault" : false

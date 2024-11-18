@@ -362,7 +362,7 @@
     },
     "isPreDilutionAmount" : false,
     "maxCalcDose" : 20,
-    "notes" : "Maximum dose: 20mL\nRoute: IV slow bolus\nGive NEAT. SLOW bolus over 5-10 minutes.\nUse Large or Central Vein. **If only peripheral access, Calcium gluconate preferred**\"",
+    "notes" : "Maximum dose: 20mL\nRoute: IV slow bolus\nGive NEAT. SLOW bolus over 5-10 minutes.\nUse Large or Central Vein. **If only peripheral access, Calcium gluconate preferred**",
     "referenceName" : "Calcium Chloride CHETS"
   },
   {
@@ -522,7 +522,7 @@
       "name" : "mg"
     },
     "conversionFactor" : 0.02,
-    "displayName" : "Hydrocortisone (100mg) (Athsma)",
+    "displayName" : "Hydrocortisone (100mg) (Asthsa)",
     "dose" : 4,
     "doseUnit" : {
       "conversionScale" : 1,
@@ -572,7 +572,7 @@
     },
     "isPreDilutionAmount" : false,
     "maxCalcDose" : 50,
-    "notes" : "Maximum dose: 50mg\nRoute: IV bolus\nReconstitute 100mg in 2mL WFI (50 mg\/mL)",
+    "notes" : "Maximum dose: 50mg\nRoute: IV bolus\nGive NEAT over 2 min",
     "referenceName" : "Ketamine"
   },
   {
@@ -593,7 +593,7 @@
     },
     "isPreDilutionAmount" : false,
     "maxCalcDose" : 5,
-    "notes" : "Maximum dose: 5mg\nRoute: IV bolus\nDilute 1mL to final volume 5mL NS (1 mg\/mL)",
+    "notes" : "Maximum dose: 5mg\nRoute: IV bolus\nDilute 1mL (5mg) to final volume 5mL NS (1mg\/mL).",
     "referenceName" : "Midazolam CHETS"
   },
   {
@@ -614,7 +614,7 @@
     },
     "isPreDilutionAmount" : false,
     "maxCalcDose" : 5,
-    "notes" : "Maximum dose: 5mg\nRoute: IV slow bolus\nDilute 1mL to final volume 2mL NS (5 mg\/mL)\nSLOW bolus over 5 min",
+    "notes" : "Maximum dose: 5mg\nRoute: IV slow bolus\nDilute 1mL (10mg) to final volume 2mL NS (5 mg\/mL). SLOW bolus over 5 min",
     "referenceName" : "Morphine Sulfate CHETS"
   },
   {
@@ -656,7 +656,7 @@
     },
     "isPreDilutionAmount" : false,
     "maxCalcDose" : 1000,
-    "notes" : "Maximum dose: 1000mg\nRoute: IV intermittent\nDilute 1mL to final volume 10 mL with NS or WFI (20mg\/ml)\nGive loading dose over 20-30 mins.",
+    "notes" : "Maximum dose: 1000mg\nRoute: IV intermittent\nDilute 1ml (200mg) to final volume 10 mL with NS or WFI (20mg\/ml)\nGive loading dose over 20-30 mins.",
     "referenceName" : "Phenobarbitone"
   },
   {
@@ -669,7 +669,7 @@
       "name" : "mg"
     },
     "conversionFactor" : 0.1,
-    "displayName" : "Rocuronium Br (50mg\/5mL) *FIRST dose*",
+    "displayName" : "Rocuronium Br (50mg\/5mL)",
     "dose" : 1,
     "doseUnit" : {
       "conversionScale" : 1,
@@ -732,7 +732,7 @@
       "name" : "mg"
     },
     "conversionFactor" : 0.1,
-    "displayName" : "Suxamethonium Chloride (100mg\/2mL) *FIRST Dose*",
+    "displayName" : "Suxamethonium Chloride (100mg\/2mL)",
     "dose" : 1,
     "doseUnit" : {
       "conversionScale" : 1,
@@ -782,7 +782,7 @@
     },
     "isPreDilutionAmount" : false,
     "maxCalcDose" : 1,
-    "notes" : "Maximum dose: 1ml\nRoute: Nebs\nTo mix with NS to a final volume of 4mL",
+    "notes" : "Maximum dose: 1ml\nRoute: Neb\nTo mix with NS to a final volume of 4mL",
     "referenceName" : "Salbutamol Soluation"
   }
 ]
