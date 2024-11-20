@@ -522,7 +522,7 @@
       "name" : "mg"
     },
     "conversionFactor" : 0.02,
-    "displayName" : "Hydrocortisone (100mg) (Asthsa)",
+    "displayName" : "Hydrocortisone (100mg) (Asthma)",
     "dose" : 4,
     "doseUnit" : {
       "conversionScale" : 1,
