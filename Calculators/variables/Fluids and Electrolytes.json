@@ -528,8 +528,7 @@
     "unit" : {
       "conversionScale" : 1,
       "name" : "%"
-    },
-    "upperLimit" : 15
+    }
   },
   {
     "alternateUnits" : [
@@ -568,7 +567,8 @@
     "unit" : {
       "conversionScale" : 1,
       "name" : "mL"
-    }
+    },
+    "upperLimit" : 15
   },
   {
     "alternateUnits" : [

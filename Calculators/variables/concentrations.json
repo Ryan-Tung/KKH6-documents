@@ -472,10 +472,10 @@
     },
     "internalConcentration" : 30,
     "internalToPeripheralConcentrationCF" : 1,
-    "peripheralLineConcentration" : 0.03,
+    "peripheralLineConcentration" : 0.3,
     "peripheralLineConcentrationUnit" : {
       "conversionScale" : 1,
-      "name" : "mg\/mL"
+      "name" : "mcg\/mL"
     },
     "range" : 0.1,
     "rangeUnit" : {
