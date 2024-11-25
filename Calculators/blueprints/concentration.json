@@ -1,0 +1,783 @@
+{
+  "blueprintID" : "concentration",
+  "instances" : [
+    {
+      "numerics" : {
+        "activationWeight" : 5,
+        "doseIn50mL" : 1.5,
+        "internalConcentration" : 30,
+        "internalToPeripheralConcentrationCF" : 1000,
+        "peripheralLineConcentration" : 30,
+        "range" : 0.1,
+        "unitMultiplier" : 60,
+        "weightBasedConversionFactor" : 0.1,
+        "weightBasedFormulaConcentration" : 0.3
+      },
+      "referenceName" : "adrenalineConcentration",
+      "strings" : {
+        "displayName" : "Adrenaline",
+        "doseIn50mLUnit" : "mg",
+        "notes" : "Note: Weight based formula used for weight ≤ 5kg\n((0.3*Weight)mg in 50mL = 1mL\/hour = 0.1mcg\/kg\/min)",
+        "peripheralLineConcentrationUnit" : "mcg\/mL",
+        "rangeUnit" : "mcg\/kg\/min"
+      }
+    },
+    {
+      "numerics" : {
+        "activationWeight" : 0,
+        "doseIn50mL" : 125,
+        "internalConcentration" : 2.5,
+        "internalToPeripheralConcentrationCF" : 1,
+        "peripheralLineConcentration" : 2.5,
+        "range" : 1,
+        "unitMultiplier" : 1,
+        "weightBasedConversionFactor" : 0,
+        "weightBasedFormulaConcentration" : 0
+      },
+      "referenceName" : "aminophyllineConcentration",
+      "strings" : {
+        "displayName" : "Aminophylline",
+        "doseIn50mLUnit" : "mg",
+        "notes" : "",
+        "peripheralLineConcentrationUnit" : "mg\/mL",
+        "rangeUnit" : "mg\/kg\/hr"
+      }
+    },
+    {
+      "numerics" : {
+        "activationWeight" : 0,
+        "doseIn50mL" : 250,
+        "internalConcentration" : 5,
+        "internalToPeripheralConcentrationCF" : 1,
+        "peripheralLineConcentration" : 5,
+        "range" : 0.01,
+        "unitMultiplier" : 60,
+        "weightBasedConversionFactor" : 0,
+        "weightBasedFormulaConcentration" : 0
+      },
+      "referenceName" : "alprostadilConcentration",
+      "strings" : {
+        "displayName" : "Alprostadil",
+        "doseIn50mLUnit" : "mcg",
+        "notes" : "",
+        "peripheralLineConcentrationUnit" : "mcg\/mL",
+        "rangeUnit" : "mcg\/kg\/min"
+      }
+    },
+    {
+      "numerics" : {
+        "activationWeight" : 0,
+        "doseIn50mL" : 100,
+        "internalConcentration" : 2000,
+        "internalToPeripheralConcentrationCF" : 1,
+        "peripheralLineConcentration" : 2,
+        "range" : 15,
+        "unitMultiplier" : 60,
+        "weightBasedConversionFactor" : 0,
+        "weightBasedFormulaConcentration" : 0
+      },
+      "referenceName" : "amiodaroneConcentration",
+      "strings" : {
+        "displayName" : "Amiodarone",
+        "doseIn50mLUnit" : "mg",
+        "notes" : "",
+        "peripheralLineConcentrationUnit" : "mg\/mL",
+        "rangeUnit" : "mcg\/kg\/min"
+      }
+    },
+    {
+      "numerics" : {
+        "activationWeight" : 0,
+        "doseIn50mL" : 25,
+        "internalConcentration" : 500,
+        "internalToPeripheralConcentrationCF" : 1,
+        "peripheralLineConcentration" : 0.5,
+        "range" : 10,
+        "unitMultiplier" : 60,
+        "weightBasedConversionFactor" : 0,
+        "weightBasedFormulaConcentration" : 0
+      },
+      "referenceName" : "atracuriumConcentration",
+      "strings" : {
+        "displayName" : "Atracurium",
+        "doseIn50mLUnit" : "mg",
+        "notes" : "",
+        "peripheralLineConcentrationUnit" : "mg\/mL",
+        "rangeUnit" : "mcg\/kg\/min"
+      }
+    },
+    {
+      "numerics" : {
+        "activationWeight" : 8,
+        "doseIn50mL" : 250,
+        "internalConcentration" : 5000,
+        "internalToPeripheralConcentrationCF" : 1,
+        "peripheralLineConcentration" : 5,
+        "range" : 20,
+        "unitMultiplier" : 60,
+        "weightBasedConversionFactor" : 10,
+        "weightBasedFormulaConcentration" : 30
+      },
+      "referenceName" : "dobutamineConcentration",
+      "strings" : {
+        "displayName" : "Dobutamine",
+        "doseIn50mLUnit" : "mg",
+        "notes" : "Note: Weight based formula used for weight ≤ 8kg\n((30*Weight)mg in 50mL = 1mL\/hour = 10mcg\/kg\/min)",
+        "peripheralLineConcentrationUnit" : "mg\/mL",
+        "rangeUnit" : "mcg\/kg\/min"
+      }
+    },
+    {
+      "numerics" : {
+        "activationWeight" : 5,
+        "doseIn50mL" : 160,
+        "internalConcentration" : 3200,
+        "internalToPeripheralConcentrationCF" : 1,
+        "peripheralLineConcentration" : 3.2,
+        "range" : 20,
+        "unitMultiplier" : 60,
+        "weightBasedConversionFactor" : 10,
+        "weightBasedFormulaConcentration" : 30
+      },
+      "referenceName" : "dopamineConcentration",
+      "strings" : {
+        "displayName" : "Dopamine",
+        "doseIn50mLUnit" : "mg",
+        "notes" : "Note: Weight based formula used for weight ≤ 5kg\n((30*Weight)mg in 50mL = 1mL\/hour = 10mcg\/kg\/min)",
+        "peripheralLineConcentrationUnit" : "mg\/mL",
+        "rangeUnit" : "mcg\/kg\/min"
+      }
+    },
+    {
+      "numerics" : {
+        "activationWeight" : 0,
+        "doseIn50mL" : 200,
+        "internalConcentration" : 4,
+        "internalToPeripheralConcentrationCF" : 1,
+        "peripheralLineConcentration" : 4,
+        "range" : 1,
+        "unitMultiplier" : 1,
+        "weightBasedConversionFactor" : 0,
+        "weightBasedFormulaConcentration" : 0
+      },
+      "referenceName" : "dexmedetomidineConcentration",
+      "strings" : {
+        "displayName" : "Dexmedetomidine",
+        "doseIn50mLUnit" : "mcg",
+        "notes" : "",
+        "peripheralLineConcentrationUnit" : "mcg\/mL",
+        "rangeUnit" : "mcg\/kg\/hr"
+      }
+    },
+    {
+      "numerics" : {
+        "activationWeight" : 25,
+        "doseIn50mL" : 2500,
+        "internalConcentration" : 50,
+        "internalToPeripheralConcentrationCF" : 1,
+        "peripheralLineConcentration" : 50,
+        "range" : 5,
+        "unitMultiplier" : 1,
+        "weightBasedConversionFactor" : 2,
+        "weightBasedFormulaConcentration" : 100
+      },
+      "referenceName" : "fentanylConcentration",
+      "strings" : {
+        "displayName" : "Fentanyl",
+        "doseIn50mLUnit" : "mcg",
+        "notes" : "Note: Weight based formula used for weight ≤ 25kg\n(100mcg*Weight in 50mL = 1mL\/hour = 2mcg\/kg\/hr)",
+        "peripheralLineConcentrationUnit" : "mcg\/mL",
+        "rangeUnit" : "mcg\/kg\/hr"
+      }
+    },
+    {
+      "numerics" : {
+        "activationWeight" : 0,
+        "doseIn50mL" : 20,
+        "internalConcentration" : 400,
+        "internalToPeripheralConcentrationCF" : 1,
+        "peripheralLineConcentration" : 0.4,
+        "range" : 10,
+        "unitMultiplier" : 60,
+        "weightBasedConversionFactor" : 0,
+        "weightBasedFormulaConcentration" : 0
+      },
+      "referenceName" : "glycerylTrinitrateConcentration",
+      "strings" : {
+        "displayName" : "Glyceryl Trinitrate",
+        "doseIn50mLUnit" : "mg",
+        "notes" : "",
+        "peripheralLineConcentrationUnit" : "mg\/mL",
+        "rangeUnit" : "mcg\/kg\/min"
+      }
+    },
+    {
+      "numerics" : {
+        "activationWeight" : 0,
+        "doseIn50mL" : 5000,
+        "internalConcentration" : 100,
+        "internalToPeripheralConcentrationCF" : 1,
+        "peripheralLineConcentration" : 100,
+        "range" : 10,
+        "unitMultiplier" : 1,
+        "weightBasedConversionFactor" : 0,
+        "weightBasedFormulaConcentration" : 0
+      },
+      "referenceName" : "heparinConcentration",
+      "strings" : {
+        "displayName" : "Heparin",
+        "doseIn50mLUnit" : "units",
+        "notes" : "",
+        "peripheralLineConcentrationUnit" : "unit\/mL",
+        "rangeUnit" : "units\/kg\/hr"
+      }
+    },
+    {
+      "numerics" : {
+        "activationWeight" : 0,
+        "doseIn50mL" : 50,
+        "internalConcentration" : 1000,
+        "internalToPeripheralConcentrationCF" : 1,
+        "peripheralLineConcentration" : 1,
+        "range" : 6,
+        "unitMultiplier" : 60,
+        "weightBasedConversionFactor" : 0,
+        "weightBasedFormulaConcentration" : 0
+      },
+      "referenceName" : "hydralazineConcentration",
+      "strings" : {
+        "displayName" : "Hydralazine",
+        "doseIn50mLUnit" : "mg",
+        "notes" : "",
+        "peripheralLineConcentrationUnit" : "mg\/mL",
+        "rangeUnit" : "mcg\/kg\/min"
+      }
+    },
+    {
+      "numerics" : {
+        "activationWeight" : 0,
+        "doseIn50mL" : 50,
+        "internalConcentration" : 1,
+        "internalToPeripheralConcentrationCF" : 1,
+        "peripheralLineConcentration" : 1,
+        "range" : 0.1,
+        "unitMultiplier" : 1,
+        "weightBasedConversionFactor" : 0,
+        "weightBasedFormulaConcentration" : 0
+      },
+      "referenceName" : "insulinConcentration",
+      "strings" : {
+        "displayName" : "Insulin",
+        "doseIn50mLUnit" : "units",
+        "notes" : "",
+        "peripheralLineConcentrationUnit" : "unit\/mL",
+        "rangeUnit" : "units\/kg\/hr"
+      }
+    },
+    {
+      "numerics" : {
+        "activationWeight" : 0,
+        "doseIn50mL" : 50,
+        "internalConcentration" : 1000,
+        "internalToPeripheralConcentrationCF" : 1,
+        "peripheralLineConcentration" : 1,
+        "range" : 20,
+        "unitMultiplier" : 60,
+        "weightBasedConversionFactor" : 0,
+        "weightBasedFormulaConcentration" : 0
+      },
+      "referenceName" : "ketamineConcentration",
+      "strings" : {
+        "displayName" : "Ketamine",
+        "doseIn50mLUnit" : "mg",
+        "notes" : "",
+        "peripheralLineConcentrationUnit" : "mg\/mL",
+        "rangeUnit" : "mcg\/kg\/min"
+      }
+    },
+    {
+      "numerics" : {
+        "activationWeight" : 0,
+        "doseIn50mL" : 50,
+        "internalConcentration" : 1,
+        "internalToPeripheralConcentrationCF" : 1,
+        "peripheralLineConcentration" : 1,
+        "range" : 3,
+        "unitMultiplier" : 1,
+        "weightBasedConversionFactor" : 0,
+        "weightBasedFormulaConcentration" : 0
+      },
+      "referenceName" : "labetalolConcentration",
+      "strings" : {
+        "displayName" : "Labetalol",
+        "doseIn50mLUnit" : "mg",
+        "notes" : "",
+        "peripheralLineConcentrationUnit" : "mg\/mL",
+        "rangeUnit" : "mg\/kg\/hr"
+      }
+    },
+    {
+      "numerics" : {
+        "activationWeight" : 0,
+        "doseIn50mL" : 50,
+        "internalConcentration" : 1000,
+        "internalToPeripheralConcentrationCF" : 1,
+        "peripheralLineConcentration" : 1,
+        "range" : 50,
+        "unitMultiplier" : 60,
+        "weightBasedConversionFactor" : 0,
+        "weightBasedFormulaConcentration" : 0
+      },
+      "referenceName" : "lignocaineConcentration",
+      "strings" : {
+        "displayName" : "Lignocaine",
+        "doseIn50mLUnit" : "mg",
+        "notes" : "",
+        "peripheralLineConcentrationUnit" : "mg\/mL",
+        "rangeUnit" : "mcg\/kg\/min"
+      }
+    },
+    {
+      "numerics" : {
+        "activationWeight" : 16,
+        "doseIn50mL" : 50,
+        "internalConcentration" : 1000,
+        "internalToPeripheralConcentrationCF" : 1,
+        "peripheralLineConcentration" : 1,
+        "range" : 1,
+        "unitMultiplier" : 60,
+        "weightBasedConversionFactor" : 1,
+        "weightBasedFormulaConcentration" : 3
+      },
+      "referenceName" : "midazolamConcentration",
+      "strings" : {
+        "displayName" : "Midazolam",
+        "doseIn50mLUnit" : "mg",
+        "notes" : "Note: Weight based formula used for weight ≤ 16kg\n((3*Weight)mg in 50mL = 1mL\/hour = 1mcg\/kg\/min)",
+        "peripheralLineConcentrationUnit" : "mg\/mL",
+        "rangeUnit" : "mcg\/kg\/min"
+      }
+    },
+    {
+      "numerics" : {
+        "activationWeight" : 0,
+        "doseIn50mL" : 10,
+        "internalConcentration" : 200,
+        "internalToPeripheralConcentrationCF" : 1,
+        "peripheralLineConcentration" : 0.2,
+        "range" : 1,
+        "unitMultiplier" : 60,
+        "weightBasedConversionFactor" : 0,
+        "weightBasedFormulaConcentration" : 0
+      },
+      "referenceName" : "milrinoneConcentration",
+      "strings" : {
+        "displayName" : "Milrinone",
+        "doseIn50mLUnit" : "mg",
+        "notes" : "",
+        "peripheralLineConcentrationUnit" : "mg\/mL",
+        "rangeUnit" : "mcg\/kg\/min"
+      }
+    },
+    {
+      "numerics" : {
+        "activationWeight" : 50,
+        "doseIn50mL" : 50,
+        "internalConcentration" : 1000,
+        "internalToPeripheralConcentrationCF" : 1,
+        "peripheralLineConcentration" : 1,
+        "range" : 20,
+        "unitMultiplier" : 1,
+        "weightBasedConversionFactor" : 20,
+        "weightBasedFormulaConcentration" : 1
+      },
+      "referenceName" : "morphineConcentration",
+      "strings" : {
+        "displayName" : "Morphine",
+        "doseIn50mLUnit" : "mg",
+        "notes" : "Note: Weight based formula used for weight ≤ 50kg\n((1*Weight)mg in 50mL = 1mL\/hour = 20mcg\/kg\/hour)",
+        "peripheralLineConcentrationUnit" : "mg\/mL",
+        "rangeUnit" : "mcg\/kg\/hr"
+      }
+    },
+    {
+      "numerics" : {
+        "activationWeight" : 0,
+        "doseIn50mL" : 10,
+        "internalConcentration" : 200,
+        "internalToPeripheralConcentrationCF" : 1,
+        "peripheralLineConcentration" : 0.2,
+        "range" : 0.5,
+        "unitMultiplier" : 60,
+        "weightBasedConversionFactor" : 0,
+        "weightBasedFormulaConcentration" : 0
+      },
+      "referenceName" : "nitroprussideConcentration",
+      "strings" : {
+        "displayName" : "Nitroprusside",
+        "doseIn50mLUnit" : "mg",
+        "notes" : "",
+        "peripheralLineConcentrationUnit" : "mg\/mL",
+        "rangeUnit" : "mcg\/kg\/min"
+      }
+    },
+    {
+      "numerics" : {
+        "activationWeight" : 0,
+        "doseIn50mL" : 1.5,
+        "internalConcentration" : 30,
+        "internalToPeripheralConcentrationCF" : 1,
+        "peripheralLineConcentration" : 0.3,
+        "range" : 0.1,
+        "unitMultiplier" : 60,
+        "weightBasedConversionFactor" : 0,
+        "weightBasedFormulaConcentration" : 0
+      },
+      "referenceName" : "noradrenalineConcentration",
+      "strings" : {
+        "displayName" : "Noradrenaline",
+        "doseIn50mLUnit" : "mg",
+        "notes" : "",
+        "peripheralLineConcentrationUnit" : "mcg\/mL",
+        "rangeUnit" : "mcg\/kg\/min"
+      }
+    },
+    {
+      "numerics" : {
+        "activationWeight" : 10,
+        "doseIn50mL" : 250,
+        "internalConcentration" : 5,
+        "internalToPeripheralConcentrationCF" : 1,
+        "peripheralLineConcentration" : 5,
+        "range" : 1,
+        "unitMultiplier" : 1,
+        "weightBasedConversionFactor" : 1,
+        "weightBasedFormulaConcentration" : 50
+      },
+      "referenceName" : "rocuroniumConcentration",
+      "strings" : {
+        "displayName" : "Rocuronium",
+        "doseIn50mLUnit" : "mg",
+        "notes" : "Note: Weight based formula used for weight ≤ 10kg\n(50mg*Weight in 50mL = 1mL\/hour = 1mg\/kg\/hr)",
+        "peripheralLineConcentrationUnit" : "mg\/mL",
+        "rangeUnit" : "mg\/kg\/hr"
+      }
+    },
+    {
+      "numerics" : {
+        "activationWeight" : 0,
+        "doseIn50mL" : 10,
+        "internalConcentration" : 200,
+        "internalToPeripheralConcentrationCF" : 1,
+        "peripheralLineConcentration" : 0.2,
+        "range" : 5,
+        "unitMultiplier" : 60,
+        "weightBasedConversionFactor" : 0,
+        "weightBasedFormulaConcentration" : 0
+      },
+      "referenceName" : "salbutamolConcentration",
+      "strings" : {
+        "displayName" : "Salbutamol",
+        "doseIn50mLUnit" : "mg",
+        "notes" : "",
+        "peripheralLineConcentrationUnit" : "mg\/mL",
+        "rangeUnit" : "mcg\/kg\/min"
+      }
+    },
+    {
+      "numerics" : {
+        "activationWeight" : 0,
+        "doseIn50mL" : 200,
+        "internalConcentration" : 4,
+        "internalToPeripheralConcentrationCF" : 1,
+        "peripheralLineConcentration" : 4,
+        "range" : 5,
+        "unitMultiplier" : 1,
+        "weightBasedConversionFactor" : 0,
+        "weightBasedFormulaConcentration" : 0
+      },
+      "referenceName" : "thiopentalConcentration",
+      "strings" : {
+        "displayName" : "Thiopental",
+        "doseIn50mLUnit" : "mg",
+        "notes" : "",
+        "peripheralLineConcentrationUnit" : "mg\/mL",
+        "rangeUnit" : "mg\/kg\/hr"
+      }
+    },
+    {
+      "numerics" : {
+        "activationWeight" : 0,
+        "doseIn50mL" : 1000,
+        "internalConcentration" : 20,
+        "internalToPeripheralConcentrationCF" : 1,
+        "peripheralLineConcentration" : 20,
+        "range" : 10,
+        "unitMultiplier" : 1,
+        "weightBasedConversionFactor" : 0,
+        "weightBasedFormulaConcentration" : 0
+      },
+      "referenceName" : "vasopressinConcentration",
+      "strings" : {
+        "displayName" : "Vasopressin (Diabetes Insipidus)",
+        "doseIn50mLUnit" : "milliunits",
+        "notes" : "",
+        "peripheralLineConcentrationUnit" : "milliunit\/mL",
+        "rangeUnit" : "milliunits\/kg\/hr"
+      }
+    }
+  ],
+  "numericDefaults" : {
+
+  },
+  "numericIDs" : [
+    "doseIn50mL",
+    "internalConcentration",
+    "peripheralLineConcentration",
+    "range",
+    "unitMultiplier",
+    "internalToPeripheralConcentrationCF",
+    "activationWeight",
+    "weightBasedFormulaConcentration",
+    "weightBasedConversionFactor"
+  ],
+  "stringDefaults" : {
+
+  },
+  "stringIDs" : [
+    "displayName",
+    "notes",
+    "doseIn50mLUnit",
+    "peripheralLineConcentrationUnit",
+    "rangeUnit"
+  ],
+  "uiRepresentation" : {
+    "disclosure" : {
+      "component" : {
+        "subsectionTitle" : {
+          "subtitle" : "[[notes]]",
+          "text" : "[[displayName]]"
+        }
+      },
+      "details" : [
+        {
+          "gridInputOutput" : {
+            "columnCount" : 2,
+            "items" : [
+              {
+                "output" : "doseIn50mL_Formatted"
+              },
+              {
+                "output" : "concentrationOfPeripheralLine"
+              },
+              {
+                "input" : {
+                  "color" : {
+                    "blue" : 0.8705882352941177,
+                    "green" : 0.3215686274509804,
+                    "red" : 0.6862745098039216
+                  },
+                  "variableReference" : "calculatedRange"
+                }
+              },
+              {
+                "output" : "calculatedRate"
+              }
+            ]
+          }
+        }
+      ],
+      "expandedByDefault" : false
+    }
+  },
+  "variables" : [
+    {
+      "alternateUnits" : [
+        {
+          "conversionScale" : 1,
+          "name" : "[[doseIn50mLUnit]]"
+        }
+      ],
+      "decimals" : 2,
+      "displayName" : "Dose in 50mL",
+      "formula" : {
+        "equation" : {
+          "conditional" : [
+            {
+              "component" : {
+                "product" : [
+                  "weightBasedFormulaConcentration",
+                  "weight"
+                ]
+              },
+              "condition" : {
+                "comparison" : "lessThanOrEqualTo",
+                "lhs" : "weight",
+                "rhs" : "activationWeight"
+              }
+            },
+            {
+              "component" : "doseIn50mL"
+            }
+          ]
+        },
+        "parameters" : [
+          "activationWeight",
+          "doseIn50mL",
+          "weight",
+          "weightBasedFormulaConcentration"
+        ],
+        "roundingMethod" : "nearest"
+      },
+      "referenceName" : "doseIn50mL_Formatted",
+      "startingValue" : 0,
+      "unit" : {
+        "conversionScale" : 1,
+        "name" : "[[doseIn50mLUnit]]"
+      }
+    },
+    {
+      "alternateUnits" : [
+        {
+          "conversionScale" : 1,
+          "name" : "[[peripheralLineConcentrationUnit]]"
+        }
+      ],
+      "decimals" : 2,
+      "displayName" : "Concentration",
+      "formula" : {
+        "equation" : {
+          "conditional" : [
+            {
+              "component" : {
+                "division" : {
+                  "denominator" : 50,
+                  "numerator" : {
+                    "product" : [
+                      "doseIn50mL_Formatted",
+                      "internalToPeripheralConcentrationCF"
+                    ]
+                  }
+                }
+              },
+              "condition" : {
+                "comparison" : "lessThanOrEqualTo",
+                "lhs" : "weight",
+                "rhs" : "activationWeight"
+              }
+            },
+            {
+              "component" : "peripheralLineConcentration"
+            }
+          ]
+        },
+        "parameters" : [
+          "activationWeight",
+          "doseIn50mL_Formatted",
+          "internalToPeripheralConcentrationCF",
+          "peripheralLineConcentration",
+          "weight"
+        ],
+        "roundingMethod" : "nearest"
+      },
+      "referenceName" : "concentrationOfPeripheralLine",
+      "startingValue" : 0,
+      "unit" : {
+        "conversionScale" : 1,
+        "name" : "[[peripheralLineConcentrationUnit]]"
+      }
+    },
+    {
+      "alternateUnits" : [
+        {
+          "conversionScale" : 1,
+          "name" : "[[rangeUnit]]"
+        }
+      ],
+      "decimals" : 2,
+      "displayName" : "Infusion Dose",
+      "formula" : {
+        "equation" : {
+          "conditional" : [
+            {
+              "component" : "weightBasedConversionFactor",
+              "condition" : {
+                "comparison" : "lessThanOrEqualTo",
+                "lhs" : "weight",
+                "rhs" : "activationWeight"
+              }
+            },
+            {
+              "component" : "range"
+            }
+          ]
+        },
+        "parameters" : [
+          "activationWeight",
+          "range",
+          "weight",
+          "weightBasedConversionFactor"
+        ],
+        "roundingMethod" : "nearest"
+      },
+      "referenceName" : "calculatedRange",
+      "startingValue" : 0,
+      "unit" : {
+        "conversionScale" : 1,
+        "name" : "[[rangeUnit]]"
+      }
+    },
+    {
+      "alternateUnits" : [
+        {
+          "conversionScale" : 1,
+          "name" : "ml\/hr"
+        }
+      ],
+      "decimals" : 2,
+      "displayName" : "Infusion Rate",
+      "formula" : {
+        "equation" : {
+          "conditional" : [
+            {
+              "component" : 1,
+              "condition" : {
+                "comparison" : "lessThanOrEqualTo",
+                "lhs" : "weight",
+                "rhs" : "activationWeight"
+              }
+            },
+            {
+              "component" : {
+                "division" : {
+                  "denominator" : "internalConcentration",
+                  "numerator" : {
+                    "product" : [
+                      "weight",
+                      "calculatedRange",
+                      "unitMultiplier"
+                    ]
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "parameters" : [
+          "activationWeight",
+          "calculatedRange",
+          "internalConcentration",
+          "unitMultiplier",
+          "weight"
+        ],
+        "roundingMethod" : "nearest"
+      },
+      "referenceName" : "calculatedRate",
+      "startingValue" : 0,
+      "unit" : {
+        "conversionScale" : 1,
+        "name" : "ml\/hr"
+      }
+    }
+  ]
+}
