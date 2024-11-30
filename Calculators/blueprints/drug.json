@@ -728,26 +728,20 @@
       "displayName" : "Calculated Dose",
       "formula" : {
         "equation" : {
-          "round" : {
-            "decimals" : 0,
-            "roundingMethod" : "up",
-            "value" : {
-              "largest" : [
-                "minCalcDose",
+          "largest" : [
+            "minCalcDose",
+            {
+              "smallest" : [
                 {
-                  "smallest" : [
-                    {
-                      "product" : [
-                        "weight",
-                        "dose"
-                      ]
-                    },
-                    "maxCalcDose"
+                  "product" : [
+                    "weight",
+                    "dose"
                   ]
-                }
+                },
+                "maxCalcDose"
               ]
             }
-          }
+          ]
         },
         "parameters" : [
           "dose",
