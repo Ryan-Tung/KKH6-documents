@@ -1,0 +1,814 @@
+{
+  "blueprintID" : "drug",
+  "instances" : [
+    {
+      "numerics" : {
+        "conversionFactor" : 10,
+        "dose" : 0.01,
+        "maxCalcDose" : 1,
+        "minCalcDose" : 0
+      },
+      "referenceName" : "Adrenaline",
+      "strings" : {
+        "calcAmountUnit" : "mL",
+        "calcDoseUnit" : "mg",
+        "displayName" : "Adrenaline [Epinephrine] 1:10,000 (1mg\/10ml)",
+        "doseUnit" : "mg\/kg",
+        "notes" : "Maximum dose: 1mg\/10mL\nDose: 0.1mL\/kg (0.01mg\/kg)",
+        "predilutionMarker" : ""
+      }
+    },
+    {
+      "numerics" : {
+        "conversionFactor" : 1.6666666666666667,
+        "dose" : 0.02,
+        "maxCalcDose" : 0.6,
+        "minCalcDose" : 0.1
+      },
+      "referenceName" : "Atropine Sulfate",
+      "strings" : {
+        "calcAmountUnit" : "mL",
+        "calcDoseUnit" : "mg",
+        "displayName" : "Atropine Sulfate 600mcg\/mL",
+        "doseUnit" : "mg\/kg",
+        "notes" : "Minimum dose: 100mcg\nMaximum dose: 600mcg",
+        "predilutionMarker" : ""
+      }
+    },
+    {
+      "numerics" : {
+        "conversionFactor" : 1,
+        "dose" : {
+          "boundaryValue" : 20,
+          "value" : 10
+        },
+        "maxCalcDose" : 9.223372036854776e+18,
+        "minCalcDose" : 0
+      },
+      "referenceName" : "Albumin",
+      "strings" : {
+        "calcAmountUnit" : "mL",
+        "calcDoseUnit" : "mL",
+        "displayName" : "Albumin 5%",
+        "doseUnit" : "mL\/kg",
+        "notes" : "",
+        "predilutionMarker" : ""
+      }
+    },
+    {
+      "numerics" : {
+        "conversionFactor" : 1,
+        "dose" : 0.2,
+        "maxCalcDose" : 20,
+        "minCalcDose" : 0
+      },
+      "referenceName" : "Calcium Chloride",
+      "strings" : {
+        "calcAmountUnit" : "mL",
+        "calcDoseUnit" : "mL",
+        "displayName" : "Calcium Chloride 10% (5.5mmol\/10mL)",
+        "doseUnit" : "mL\/kg",
+        "notes" : "Use Large or Central vein.\nMaximum dose: 20ml",
+        "predilutionMarker" : ""
+      }
+    },
+    {
+      "numerics" : {
+        "conversionFactor" : 1,
+        "dose" : 2,
+        "maxCalcDose" : 100,
+        "minCalcDose" : 0
+      },
+      "referenceName" : "Dextrose",
+      "strings" : {
+        "calcAmountUnit" : "mL",
+        "calcDoseUnit" : "mL",
+        "displayName" : "Dextrose 25%",
+        "doseUnit" : "mL\/kg",
+        "notes" : "Dilute Dextrose 50% with same amount of WFI (1:1) to get 25% solution.\nMaximum dose: 100ml",
+        "predilutionMarker" : ""
+      }
+    },
+    {
+      "numerics" : {
+        "conversionFactor" : 1,
+        "dose" : {
+          "boundaryValue" : 20,
+          "value" : 10
+        },
+        "maxCalcDose" : 9.223372036854776e+18,
+        "minCalcDose" : 0
+      },
+      "referenceName" : "Sodium Chloride",
+      "strings" : {
+        "calcAmountUnit" : "mL",
+        "calcDoseUnit" : "mL",
+        "displayName" : "Sodium Chloride 0.9%",
+        "doseUnit" : "mL\/kg",
+        "notes" : "",
+        "predilutionMarker" : ""
+      }
+    },
+    {
+      "numerics" : {
+        "conversionFactor" : 1,
+        "dose" : 1,
+        "maxCalcDose" : 50,
+        "minCalcDose" : 0
+      },
+      "referenceName" : "Sodium Bicarbonate 8.4%",
+      "strings" : {
+        "calcAmountUnit" : "mL",
+        "calcDoseUnit" : "mmol",
+        "displayName" : "Sodium Bicarbonate 8.4% (1mmol\/mL)",
+        "doseUnit" : "mmol\/kg",
+        "notes" : "8.4% - Infuse in Central Vein only\nMaximum dose: 50mmol",
+        "predilutionMarker" : ""
+      }
+    },
+    {
+      "numerics" : {
+        "conversionFactor" : 2,
+        "dose" : 1,
+        "maxCalcDose" : 50,
+        "minCalcDose" : 0
+      },
+      "referenceName" : "Sodium Bicarbonate 4.2%",
+      "strings" : {
+        "calcAmountUnit" : "mL",
+        "calcDoseUnit" : "mmol",
+        "displayName" : "Sodium Bicarbonate 4.2% (0.5mmol\/mL)",
+        "doseUnit" : "mmol\/kg",
+        "notes" : "4.2% - Safe for peripheral vein infusion\nDilute NaHCO3 8.4% with same amount of WFI (1:1) to get 4.2% solution\nMaximum dose: 50mmol",
+        "predilutionMarker" : ""
+      }
+    },
+    {
+      "numerics" : {
+        "conversionFactor" : 0.02,
+        "dose" : {
+          "boundaryValue" : 2,
+          "value" : 1
+        },
+        "maxCalcDose" : 100,
+        "minCalcDose" : 0
+      },
+      "referenceName" : "Suxamethonium Chloride",
+      "strings" : {
+        "calcAmountUnit" : "mL",
+        "calcDoseUnit" : "mg",
+        "displayName" : "Suxamethonium Chloride 100mg\/2mL",
+        "doseUnit" : "mg\/kg",
+        "notes" : "Dilute 2ml (100mg) to final volume of 10ml NS (10mg\/ml)\nMaximum dose: 100mg",
+        "predilutionMarker" : "Pre-Dilution "
+      }
+    },
+    {
+      "numerics" : {
+        "conversionFactor" : 0.2,
+        "dose" : {
+          "boundaryValue" : 0.3,
+          "value" : 0.1
+        },
+        "maxCalcDose" : 5,
+        "minCalcDose" : 0
+      },
+      "referenceName" : "Midazolam",
+      "strings" : {
+        "calcAmountUnit" : "mL",
+        "calcDoseUnit" : "mg",
+        "displayName" : "Midazolam 5mg\/mL",
+        "doseUnit" : "mg\/kg",
+        "notes" : "Dilute 1ml (5mg) to final volume 5ml NS (1mg\/ml)\nMaximum dose: 5mg",
+        "predilutionMarker" : "Pre-Dilution "
+      }
+    },
+    {
+      "numerics" : {
+        "conversionFactor" : 0.1,
+        "dose" : 0.1,
+        "maxCalcDose" : 5,
+        "minCalcDose" : 0
+      },
+      "referenceName" : "Morphine Sulfate",
+      "strings" : {
+        "calcAmountUnit" : "mL",
+        "calcDoseUnit" : "mg",
+        "displayName" : "Morphine Sulfate 10mg\/mL",
+        "doseUnit" : "mg\/kg",
+        "notes" : "Dilute 1ml (10mg) to final volume 10ml NS (1mg\/ml)\nMaximum dose: 5mg",
+        "predilutionMarker" : "Pre-Dilution "
+      }
+    },
+    {
+      "numerics" : {
+        "conversionFactor" : 0.1,
+        "dose" : 1,
+        "maxCalcDose" : 50,
+        "minCalcDose" : 0
+      },
+      "referenceName" : "Rocuronium",
+      "strings" : {
+        "calcAmountUnit" : "mL",
+        "calcDoseUnit" : "mg",
+        "displayName" : "Rocuronium Br 50mg\/5mL",
+        "doseUnit" : "mg\/kg",
+        "notes" : "Maximum dose: 50mg",
+        "predilutionMarker" : ""
+      }
+    },
+    {
+      "numerics" : {
+        "conversionFactor" : 0.3333333333333333,
+        "dose" : 0.1,
+        "maxCalcDose" : 6,
+        "minCalcDose" : 0
+      },
+      "referenceName" : "Adenosine",
+      "strings" : {
+        "calcAmountUnit" : "mL",
+        "calcDoseUnit" : "mg",
+        "displayName" : "Adenosine (6mg\/2mL)",
+        "doseUnit" : "mg\/kg",
+        "notes" : "Maximum dose: 6mg\nRoute: IV rapid bolus\nGive NEAT. RAPID bolus. Follow each bolus with NS flush.\nInitial dose: 0.1mg\/kg (max 6mg).  If initial dose is not effective, increase to 0.2mg\/kg (max 12mg).",
+        "predilutionMarker" : ""
+      }
+    },
+    {
+      "numerics" : {
+        "conversionFactor" : 10,
+        "dose" : 0.01,
+        "maxCalcDose" : 1,
+        "minCalcDose" : 0
+      },
+      "referenceName" : "Adrenaline CHETS",
+      "strings" : {
+        "calcAmountUnit" : "mL",
+        "calcDoseUnit" : "mg",
+        "displayName" : "Adrenaline [Ephinephrine] 0.1mg\/ml (1 : 10,000)",
+        "doseUnit" : "mg\/kg",
+        "notes" : "Maximum dose: 1mg\nRoute: IV bolus",
+        "predilutionMarker" : ""
+      }
+    },
+    {
+      "numerics" : {
+        "conversionFactor" : 0.02,
+        "dose" : 5,
+        "maxCalcDose" : 300,
+        "minCalcDose" : 0
+      },
+      "referenceName" : "Amiodarone",
+      "strings" : {
+        "calcAmountUnit" : "mL",
+        "calcDoseUnit" : "mg",
+        "displayName" : "Amiodarone (150mg\/3mL)",
+        "doseUnit" : "mg\/kg",
+        "notes" : "Maximum dose: 300mg\nRoute: IV bolus\nPulseless VT\/VF: Give NEAT. Rapid IV bolus.  VT with pulse: Dilute 3mL (150mg) to final volume 25mL D5% (6mg\/mL). Infuse over 20 min.",
+        "predilutionMarker" : ""
+      }
+    },
+    {
+      "numerics" : {
+        "conversionFactor" : 10,
+        "dose" : 0.02,
+        "maxCalcDose" : 0.6,
+        "minCalcDose" : 0
+      },
+      "referenceName" : "Atropine Sulfate CHETS",
+      "strings" : {
+        "calcAmountUnit" : "mL",
+        "calcDoseUnit" : "mg",
+        "displayName" : "Atropine Sulfate 600mcg\/mL",
+        "doseUnit" : "mg\/kg",
+        "notes" : "Maximum dose: 0.6mg\/600mcg\nRoute: IV rapid bolus\nDilute 1ml (0.6mg) to final volume 6ml N\/S (0.1mg\/mL)",
+        "predilutionMarker" : ""
+      }
+    },
+    {
+      "numerics" : {
+        "conversionFactor" : 1,
+        "dose" : 0.2,
+        "maxCalcDose" : 20,
+        "minCalcDose" : 0
+      },
+      "referenceName" : "Calcium Chloride CHETS",
+      "strings" : {
+        "calcAmountUnit" : "mL",
+        "calcDoseUnit" : "mL",
+        "displayName" : "Calcium Chloride 10% (6.8mmol\/10mL)",
+        "doseUnit" : "mL\/kg",
+        "notes" : "Maximum dose: 20mL\nRoute: IV slow bolus\nGive NEAT. SLOW bolus over 5-10 minutes.\nUse Large or Central Vein. **If only peripheral access, Calcium gluconate preferred**",
+        "predilutionMarker" : ""
+      }
+    },
+    {
+      "numerics" : {
+        "conversionFactor" : 1,
+        "dose" : 0.5,
+        "maxCalcDose" : 30,
+        "minCalcDose" : 0
+      },
+      "referenceName" : "Calcium Gluconate",
+      "strings" : {
+        "calcAmountUnit" : "mL",
+        "calcDoseUnit" : "mL",
+        "displayName" : "Calcium Gluconate 10% (2.3mmol\/10mL)",
+        "doseUnit" : "mL\/kg",
+        "notes" : "Maximum dose: 30ml\nRoute: IV slow bolus\nGive NEAT. SLOW bolus over 5-10 min.\nUse Large or Central Vein.",
+        "predilutionMarker" : ""
+      }
+    },
+    {
+      "numerics" : {
+        "conversionFactor" : 1,
+        "dose" : 2,
+        "maxCalcDose" : 250,
+        "minCalcDose" : 0
+      },
+      "referenceName" : "Dextrose Hypoglycemia",
+      "strings" : {
+        "calcAmountUnit" : "mL",
+        "calcDoseUnit" : "mL",
+        "displayName" : "Dextrose 10% (Hypoglycemia)",
+        "doseUnit" : "mL\/kg",
+        "notes" : "Maximum dose: 250ml\nRoute: IV bolus",
+        "predilutionMarker" : ""
+      }
+    },
+    {
+      "numerics" : {
+        "conversionFactor" : 1,
+        "dose" : 5,
+        "maxCalcDose" : 250,
+        "minCalcDose" : 0
+      },
+      "referenceName" : "Dextrose Hyperkalemia",
+      "strings" : {
+        "calcAmountUnit" : "mL",
+        "calcDoseUnit" : "mL",
+        "displayName" : "Dextrose 10% (Hyperkalemia)",
+        "doseUnit" : "mL\/kg",
+        "notes" : "Maximum dose: 250ml\nRoute: IV bolus\nTo administer over 15-30 min with insulin",
+        "predilutionMarker" : ""
+      }
+    },
+    {
+      "numerics" : {
+        "conversionFactor" : 1,
+        "dose" : 2,
+        "maxCalcDose" : 100,
+        "minCalcDose" : 0
+      },
+      "referenceName" : "Dextrose CHETS",
+      "strings" : {
+        "calcAmountUnit" : "mL",
+        "calcDoseUnit" : "mL",
+        "displayName" : "Dextrose 25%",
+        "doseUnit" : "mL\/kg",
+        "notes" : "Maximum dose: 100ml\nRoute: IV bolus\nDilute Dextrose 50% with same volume of WFI to get Dextrose 25%.",
+        "predilutionMarker" : ""
+      }
+    },
+    {
+      "numerics" : {
+        "conversionFactor" : 0.2,
+        "dose" : 0.25,
+        "maxCalcDose" : 10,
+        "minCalcDose" : 0
+      },
+      "referenceName" : "Diazepam",
+      "strings" : {
+        "calcAmountUnit" : "mL",
+        "calcDoseUnit" : "mg",
+        "displayName" : "Diazepam (10mg\/2mL)",
+        "doseUnit" : "mg\/kg",
+        "notes" : "Maximum dose: 10mg\nRoute: IV bolus\nGive NEAT.\nMay repeat once in 5 mins. Infusion rate 1-2 mg\/min.",
+        "predilutionMarker" : ""
+      }
+    },
+    {
+      "numerics" : {
+        "conversionFactor" : 0.02,
+        "dose" : 1,
+        "maxCalcDose" : 50,
+        "minCalcDose" : 0
+      },
+      "referenceName" : "Diphenydramine",
+      "strings" : {
+        "calcAmountUnit" : "mL",
+        "calcDoseUnit" : "mg",
+        "displayName" : "Diphenydramine (50mg\/mL)",
+        "doseUnit" : "mg\/kg",
+        "notes" : "Maximum dose: 50mg\nRoute: IV bolus\nGive NEAT.\nDo not exceed MAXimum rate of 25mg\/min.",
+        "predilutionMarker" : ""
+      }
+    },
+    {
+      "numerics" : {
+        "conversionFactor" : 0.01,
+        "dose" : 10,
+        "maxCalcDose" : 200,
+        "minCalcDose" : 0
+      },
+      "referenceName" : "Flumazenil",
+      "strings" : {
+        "calcAmountUnit" : "mL",
+        "calcDoseUnit" : "mcg",
+        "displayName" : "Flumazenil (0.5mg\/5mL)",
+        "doseUnit" : "mcg\/kg",
+        "notes" : "Maximum dose: 200mcg\nRoute: IV bolus\nGive over 15sec. Can repeat dose (titrate to effect) at 1 min interval. MAXimum total dose 1000mcg or 50mcg\/kg (whichever is lower).",
+        "predilutionMarker" : ""
+      }
+    },
+    {
+      "numerics" : {
+        "conversionFactor" : 0.02,
+        "dose" : 4,
+        "maxCalcDose" : 100,
+        "minCalcDose" : 0
+      },
+      "referenceName" : "Hydrocortisone",
+      "strings" : {
+        "calcAmountUnit" : "mL",
+        "calcDoseUnit" : "mg",
+        "displayName" : "Hydrocortisone (100mg) (Asthma)",
+        "doseUnit" : "mg\/kg",
+        "notes" : "Maximum dose: 100mg\nRoute: IV bolus\nReconstitute 100mg in 2mL WFI (50 mg\/mL)",
+        "predilutionMarker" : ""
+      }
+    },
+    {
+      "numerics" : {
+        "conversionFactor" : 0.02,
+        "dose" : 2,
+        "maxCalcDose" : 100,
+        "minCalcDose" : 0
+      },
+      "referenceName" : "Hydrocortisone Stress Dose",
+      "strings" : {
+        "calcAmountUnit" : "mL",
+        "calcDoseUnit" : "mg",
+        "displayName" : "Hydrocortisone (100mg) [PHYSIOLOGICAL STRESS DOSE]",
+        "doseUnit" : "mg\/kg",
+        "notes" : "Maximum dose: 100mg\nRoute: IV bolus\nReconstitute 100mg in 2mL WFI (50 mg\/mL)",
+        "predilutionMarker" : ""
+      }
+    },
+    {
+      "numerics" : {
+        "conversionFactor" : 0.02,
+        "dose" : 1,
+        "maxCalcDose" : 50,
+        "minCalcDose" : 0
+      },
+      "referenceName" : "Ketamine",
+      "strings" : {
+        "calcAmountUnit" : "mL",
+        "calcDoseUnit" : "mg",
+        "displayName" : "Ketamine (100mg\/2mL)",
+        "doseUnit" : "mg\/kg",
+        "notes" : "Maximum dose: 50mg\nRoute: IV bolus\nGive NEAT over 2 min",
+        "predilutionMarker" : ""
+      }
+    },
+    {
+      "numerics" : {
+        "conversionFactor" : 1,
+        "dose" : 0.1,
+        "maxCalcDose" : 5,
+        "minCalcDose" : 0
+      },
+      "referenceName" : "Midazolam CHETS",
+      "strings" : {
+        "calcAmountUnit" : "mL",
+        "calcDoseUnit" : "mg",
+        "displayName" : "Midazolam (15mg\/3mL)",
+        "doseUnit" : "mg\/kg",
+        "notes" : "Maximum dose: 5mg\nRoute: IV bolus\nDilute 1mL (5mg) to final volume 5mL NS (1mg\/mL).",
+        "predilutionMarker" : ""
+      }
+    },
+    {
+      "numerics" : {
+        "conversionFactor" : 0.2,
+        "dose" : 0.1,
+        "maxCalcDose" : 5,
+        "minCalcDose" : 0
+      },
+      "referenceName" : "Morphine Sulfate CHETS",
+      "strings" : {
+        "calcAmountUnit" : "mL",
+        "calcDoseUnit" : "mg",
+        "displayName" : "Morphine Sulfate (10mg\/mL)",
+        "doseUnit" : "mg\/kg",
+        "notes" : "Maximum dose: 5mg\nRoute: IV slow bolus\nDilute 1mL (10mg) to final volume 2mL NS (5 mg\/mL). SLOW bolus over 5 min",
+        "predilutionMarker" : ""
+      }
+    },
+    {
+      "numerics" : {
+        "conversionFactor" : 2.5,
+        "dose" : 0.1,
+        "maxCalcDose" : 2,
+        "minCalcDose" : 0
+      },
+      "referenceName" : "Naloxone",
+      "strings" : {
+        "calcAmountUnit" : "mL",
+        "calcDoseUnit" : "mg",
+        "displayName" : "Naloxone (0.4mg\/mL) *OPIOID OVERDOSE*",
+        "doseUnit" : "mg\/kg",
+        "notes" : "Maximum dose: 2mg\nRoute: IV bolus\nGive NEAT. Repeat Q2- 3min as required.",
+        "predilutionMarker" : ""
+      }
+    },
+    {
+      "numerics" : {
+        "conversionFactor" : 0.05,
+        "dose" : 20,
+        "maxCalcDose" : 1000,
+        "minCalcDose" : 0
+      },
+      "referenceName" : "Phenobarbitone",
+      "strings" : {
+        "calcAmountUnit" : "mL",
+        "calcDoseUnit" : "mg",
+        "displayName" : "Phenobarbitone (200mg\/mL) *LOADING dose*",
+        "doseUnit" : "mg\/kg",
+        "notes" : "Maximum dose: 1000mg\nRoute: IV intermittent\nDilute 1ml (200mg) to final volume 10 mL with NS or WFI (20mg\/ml)\nGive loading dose over 20-30 mins.",
+        "predilutionMarker" : ""
+      }
+    },
+    {
+      "numerics" : {
+        "conversionFactor" : 0.1,
+        "dose" : 1,
+        "maxCalcDose" : 50,
+        "minCalcDose" : 0
+      },
+      "referenceName" : "Rocuronium CHETS",
+      "strings" : {
+        "calcAmountUnit" : "mL",
+        "calcDoseUnit" : "mg",
+        "displayName" : "Rocuronium Br (50mg\/5mL)",
+        "doseUnit" : "mg\/kg",
+        "notes" : "Maximum dose: 50mg\nRoute: IV bolus",
+        "predilutionMarker" : ""
+      }
+    },
+    {
+      "numerics" : {
+        "conversionFactor" : 2,
+        "dose" : 1,
+        "maxCalcDose" : 50,
+        "minCalcDose" : 0
+      },
+      "referenceName" : "Sodium Bicarbonate 8.4% CHETS",
+      "strings" : {
+        "calcAmountUnit" : "mL",
+        "calcDoseUnit" : "mmol",
+        "displayName" : "Sodium Bicarbonate 8.4% (1mmol\/mL)",
+        "doseUnit" : "mmol\/kg",
+        "notes" : "Maximum dose: 50mmol\nRoute: IV slow bolus\n<1yo (central\/peripheral): Dilute 1:1 with WFI to 4.2% (0.5mmoL\/mL)\n>1yo: peripheral - 0.5mmol\/ml; central - NEAT\nSLOW bolus: Max rate 10 mmol\/min",
+        "predilutionMarker" : ""
+      }
+    },
+    {
+      "numerics" : {
+        "conversionFactor" : 1,
+        "dose" : 3,
+        "maxCalcDose" : 200,
+        "minCalcDose" : 0
+      },
+      "referenceName" : "Sodium Chloride 3%",
+      "strings" : {
+        "calcAmountUnit" : "mL",
+        "calcDoseUnit" : "mL",
+        "displayName" : "Sodium Chloride 3%",
+        "doseUnit" : "mL\/kg",
+        "notes" : "Maximum dose: 200ml\nRoute: IV intermittent\nUsual Dose 2-4mL\/kg,  Infuse over 20-30 min. \nPreferably CENTRAL vein; Peripheral in emergencies.",
+        "predilutionMarker" : ""
+      }
+    },
+    {
+      "numerics" : {
+        "conversionFactor" : 0.1,
+        "dose" : 1,
+        "maxCalcDose" : 100,
+        "minCalcDose" : 0
+      },
+      "referenceName" : "Suxamethonium Chloride First Dose",
+      "strings" : {
+        "calcAmountUnit" : "mL",
+        "calcDoseUnit" : "mg",
+        "displayName" : "Suxamethonium Chloride (100mg\/2mL)",
+        "doseUnit" : "mg\/kg",
+        "notes" : "Maximum dose: 100mg\nRoute: IV bolus\nDilute 2mL (100mg) to final volume of 10ml NS. (10mg\/mL)",
+        "predilutionMarker" : ""
+      }
+    },
+    {
+      "numerics" : {
+        "conversionFactor" : 1,
+        "dose" : 0.3,
+        "maxCalcDose" : 10,
+        "minCalcDose" : 0
+      },
+      "referenceName" : "Salbutamol Inhaler",
+      "strings" : {
+        "calcAmountUnit" : "puffs",
+        "calcDoseUnit" : "puffs",
+        "displayName" : "Salbutamol Inhaler",
+        "doseUnit" : "puff\/kg",
+        "notes" : "Maximum dose: 10 puffs\nRoute: MDI\nRounded to the nearest whole puff.\nMin 2 puffs\/dose",
+        "predilutionMarker" : ""
+      }
+    },
+    {
+      "numerics" : {
+        "conversionFactor" : 1,
+        "dose" : 0.03,
+        "maxCalcDose" : 1,
+        "minCalcDose" : 0
+      },
+      "referenceName" : "Salbutamol Soluation",
+      "strings" : {
+        "calcAmountUnit" : "mL",
+        "calcDoseUnit" : "mL",
+        "displayName" : "Salbutamol 0.5% NEBULIZER Solution",
+        "doseUnit" : "mL\/kg",
+        "notes" : "Maximum dose: 1ml\nRoute: Neb\nTo mix with NS to a final volume of 4mL",
+        "predilutionMarker" : ""
+      }
+    }
+  ],
+  "numericDefaults" : {
+    "maxCalcDose" : 4294967295,
+    "minCalcDose" : 0
+  },
+  "numericIDs" : [
+    "dose",
+    "minCalcDose",
+    "maxCalcDose",
+    "conversionFactor"
+  ],
+  "stringDefaults" : {
+
+  },
+  "stringIDs" : [
+    "displayName",
+    "notes",
+    "doseUnit",
+    "calcDoseUnit",
+    "calcAmountUnit",
+    "predilutionMarker"
+  ],
+  "uiRepresentation" : {
+    "disclosure" : {
+      "component" : {
+        "output" : "Summary"
+      },
+      "details" : [
+        {
+          "gridInputOutput" : {
+            "columnCount" : 3,
+            "items" : [
+              {
+                "output" : "Dose_Formatted"
+              },
+              {
+                "output" : "Calc_Dose"
+              },
+              {
+                "output" : "Calc_Amt"
+              }
+            ]
+          }
+        },
+        {
+          "text" : "[[notes]]"
+        }
+      ],
+      "expandedByDefault" : false
+    }
+  },
+  "variables" : [
+    {
+      "alternateUnits" : [
+        {
+          "conversionScale" : 1,
+          "name" : "[[doseUnit]]"
+        }
+      ],
+      "decimals" : 2,
+      "displayName" : "Dose",
+      "formula" : {
+        "equation" : "dose",
+        "parameters" : [
+          "dose"
+        ],
+        "roundingMethod" : "nearest"
+      },
+      "referenceName" : "Dose_Formatted",
+      "startingValue" : 0,
+      "unit" : {
+        "conversionScale" : 1,
+        "name" : "[[doseUnit]]"
+      }
+    },
+    {
+      "alternateUnits" : [
+        {
+          "conversionScale" : 1,
+          "name" : "[[calcDoseUnit]]"
+        }
+      ],
+      "decimals" : 2,
+      "displayName" : "Calculated Dose",
+      "formula" : {
+        "equation" : {
+          "largest" : [
+            "minCalcDose",
+            {
+              "smallest" : [
+                {
+                  "product" : [
+                    "weight",
+                    "dose"
+                  ]
+                },
+                "maxCalcDose"
+              ]
+            }
+          ]
+        },
+        "parameters" : [
+          "dose",
+          "maxCalcDose",
+          "minCalcDose",
+          "weight"
+        ],
+        "roundingMethod" : "nearest"
+      },
+      "referenceName" : "Calc_Dose",
+      "startingValue" : 0,
+      "unit" : {
+        "conversionScale" : 1,
+        "name" : "[[calcDoseUnit]]"
+      }
+    },
+    {
+      "alternateUnits" : [
+        {
+          "conversionScale" : 1,
+          "name" : "[[calcAmountUnit]]"
+        }
+      ],
+      "decimals" : 2,
+      "displayName" : "[[predilutionMarker]]Calculated Amount",
+      "formula" : {
+        "equation" : {
+          "product" : [
+            "Calc_Dose",
+            "conversionFactor"
+          ]
+        },
+        "parameters" : [
+          "Calc_Dose",
+          "conversionFactor"
+        ],
+        "roundingMethod" : "nearest"
+      },
+      "referenceName" : "Calc_Amt",
+      "startingValue" : 0,
+      "unit" : {
+        "conversionScale" : 1,
+        "name" : "[[calcAmountUnit]]"
+      }
+    },
+    {
+      "alternateUnits" : [
+        {
+          "conversionScale" : 1,
+          "name" : "[[calcAmountUnit]]"
+        }
+      ],
+      "decimals" : 2,
+      "displayName" : "[[displayName]]",
+      "formula" : {
+        "equation" : "Calc_Amt",
+        "parameters" : [
+          "Calc_Amt"
+        ],
+        "roundingMethod" : "nearest"
+      },
+      "referenceName" : "Summary",
+      "startingValue" : 0,
+      "unit" : {
+        "conversionScale" : 1,
+        "name" : "[[calcAmountUnit]]"
+      }
+    }
+  ]
+}

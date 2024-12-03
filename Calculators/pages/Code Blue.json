@@ -154,55 +154,12 @@
     {
       "components" : [
         {
-          "disclosure" : {
-            "component" : {
-              "output" : "Albumin_Summary"
-            },
-            "details" : [
-              {
-                "gridInputOutput" : {
-                  "columnCount" : 3,
-                  "items" : [
-                    {
-                      "output" : "Albumin_Dose"
-                    },
-                    {
-                      "output" : "Albumin_Calc_Dose"
-                    },
-                    {
-                      "output" : "Albumin_Calc_Amt"
-                    }
-                  ]
-                }
-              }
-            ],
-            "expandedByDefault" : false
-          }
-        },
-        {
-          "disclosure" : {
-            "component" : {
-              "output" : "Sodium Chloride_Summary"
-            },
-            "details" : [
-              {
-                "gridInputOutput" : {
-                  "columnCount" : 3,
-                  "items" : [
-                    {
-                      "output" : "Sodium Chloride_Dose"
-                    },
-                    {
-                      "output" : "Sodium Chloride_Calc_Dose"
-                    },
-                    {
-                      "output" : "Sodium Chloride_Calc_Amt"
-                    }
-                  ]
-                }
-              }
-            ],
-            "expandedByDefault" : false
+          "blueprint" : {
+            "blueprintId" : "drug",
+            "ids" : [
+              "Albumin",
+              "Sodium Chloride"
+            ]
           }
         }
       ],
@@ -213,263 +170,20 @@
     {
       "components" : [
         {
-          "disclosure" : {
-            "component" : {
-              "output" : "Adrenaline_Summary"
-            },
-            "details" : [
-              {
-                "gridInputOutput" : {
-                  "columnCount" : 3,
-                  "items" : [
-                    {
-                      "output" : "Adrenaline_Dose"
-                    },
-                    {
-                      "output" : "Adrenaline_Calc_Dose"
-                    },
-                    {
-                      "output" : "Adrenaline_Calc_Amt"
-                    }
-                  ]
-                }
-              }
-            ],
-            "expandedByDefault" : false
-          }
-        },
-        {
-          "disclosure" : {
-            "component" : {
-              "output" : "Atropine Sulfate_Summary"
-            },
-            "details" : [
-              {
-                "gridInputOutput" : {
-                  "columnCount" : 3,
-                  "items" : [
-                    {
-                      "output" : "Atropine Sulfate_Dose"
-                    },
-                    {
-                      "output" : "Atropine Sulfate_Calc_Dose"
-                    },
-                    {
-                      "output" : "Atropine Sulfate_Calc_Amt"
-                    }
-                  ]
-                }
-              }
-            ],
-            "expandedByDefault" : false
-          }
-        },
-        {
-          "disclosure" : {
-            "component" : {
-              "output" : "Calcium Chloride_Summary"
-            },
-            "details" : [
-              {
-                "gridInputOutput" : {
-                  "columnCount" : 3,
-                  "items" : [
-                    {
-                      "output" : "Calcium Chloride_Dose"
-                    },
-                    {
-                      "output" : "Calcium Chloride_Calc_Dose"
-                    },
-                    {
-                      "output" : "Calcium Chloride_Calc_Amt"
-                    }
-                  ]
-                }
-              }
-            ],
-            "expandedByDefault" : false
-          }
-        },
-        {
-          "disclosure" : {
-            "component" : {
-              "output" : "Dextrose_Summary"
-            },
-            "details" : [
-              {
-                "gridInputOutput" : {
-                  "columnCount" : 3,
-                  "items" : [
-                    {
-                      "output" : "Dextrose_Dose"
-                    },
-                    {
-                      "output" : "Dextrose_Calc_Dose"
-                    },
-                    {
-                      "output" : "Dextrose_Calc_Amt"
-                    }
-                  ]
-                }
-              }
-            ],
-            "expandedByDefault" : false
-          }
-        },
-        {
-          "disclosure" : {
-            "component" : {
-              "output" : "Sodium Bicarbonate 8.4%_Summary"
-            },
-            "details" : [
-              {
-                "gridInputOutput" : {
-                  "columnCount" : 3,
-                  "items" : [
-                    {
-                      "output" : "Sodium Bicarbonate 8.4%_Dose"
-                    },
-                    {
-                      "output" : "Sodium Bicarbonate 8.4%_Calc_Dose"
-                    },
-                    {
-                      "output" : "Sodium Bicarbonate 8.4%_Calc_Amt"
-                    }
-                  ]
-                }
-              }
-            ],
-            "expandedByDefault" : false
-          }
-        },
-        {
-          "disclosure" : {
-            "component" : {
-              "output" : "Sodium Bicarbonate 4.2%_Summary"
-            },
-            "details" : [
-              {
-                "gridInputOutput" : {
-                  "columnCount" : 3,
-                  "items" : [
-                    {
-                      "output" : "Sodium Bicarbonate 4.2%_Dose"
-                    },
-                    {
-                      "output" : "Sodium Bicarbonate 4.2%_Calc_Dose"
-                    },
-                    {
-                      "output" : "Sodium Bicarbonate 4.2%_Calc_Amt"
-                    }
-                  ]
-                }
-              }
-            ],
-            "expandedByDefault" : false
-          }
-        },
-        {
-          "disclosure" : {
-            "component" : {
-              "output" : "Suxamethonium Chloride_Summary"
-            },
-            "details" : [
-              {
-                "gridInputOutput" : {
-                  "columnCount" : 3,
-                  "items" : [
-                    {
-                      "output" : "Suxamethonium Chloride_Dose"
-                    },
-                    {
-                      "output" : "Suxamethonium Chloride_Calc_Dose"
-                    },
-                    {
-                      "output" : "Suxamethonium Chloride_Calc_Amt"
-                    }
-                  ]
-                }
-              }
-            ],
-            "expandedByDefault" : false
-          }
-        },
-        {
-          "disclosure" : {
-            "component" : {
-              "output" : "Midazolam_Summary"
-            },
-            "details" : [
-              {
-                "gridInputOutput" : {
-                  "columnCount" : 3,
-                  "items" : [
-                    {
-                      "output" : "Midazolam_Dose"
-                    },
-                    {
-                      "output" : "Midazolam_Calc_Dose"
-                    },
-                    {
-                      "output" : "Midazolam_Calc_Amt"
-                    }
-                  ]
-                }
-              }
-            ],
-            "expandedByDefault" : false
-          }
-        },
-        {
-          "disclosure" : {
-            "component" : {
-              "output" : "Morphine Sulfate_Summary"
-            },
-            "details" : [
-              {
-                "gridInputOutput" : {
-                  "columnCount" : 3,
-                  "items" : [
-                    {
-                      "output" : "Morphine Sulfate_Dose"
-                    },
-                    {
-                      "output" : "Morphine Sulfate_Calc_Dose"
-                    },
-                    {
-                      "output" : "Morphine Sulfate_Calc_Amt"
-                    }
-                  ]
-                }
-              }
-            ],
-            "expandedByDefault" : false
-          }
-        },
-        {
-          "disclosure" : {
-            "component" : {
-              "output" : "Rocuronium_Summary"
-            },
-            "details" : [
-              {
-                "gridInputOutput" : {
-                  "columnCount" : 3,
-                  "items" : [
-                    {
-                      "output" : "Rocuronium_Dose"
-                    },
-                    {
-                      "output" : "Rocuronium_Calc_Dose"
-                    },
-                    {
-                      "output" : "Rocuronium_Calc_Amt"
-                    }
-                  ]
-                }
-              }
-            ],
-            "expandedByDefault" : false
+          "blueprint" : {
+            "blueprintId" : "drug",
+            "ids" : [
+              "Adrenaline",
+              "Atropine Sulfate",
+              "Calcium Chloride",
+              "Dextrose",
+              "Sodium Bicarbonate 8.4%",
+              "Sodium Bicarbonate 4.2%",
+              "Suxamethonium Chloride",
+              "Midazolam",
+              "Morphine Sulfate",
+              "Rocuronium"
+            ]
           }
         }
       ],
