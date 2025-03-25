@@ -37,17 +37,15 @@
     {
       "components" : [
         {
-          "floating" : {
-            "inputPrimary" : {
-              "allowsNegative" : false,
-              "variableInfo" : {
-                "color" : {
-                  "blue" : 0.8392156862745098,
-                  "green" : 0.33725490196078434,
-                  "red" : 0.34509803921568627
-                },
-                "variableReference" : "weight"
-              }
+          "inputPrimary" : {
+            "allowsNegative" : false,
+            "variableInfo" : {
+              "color" : {
+                "blue" : 0.8392156862745098,
+                "green" : 0.33725490196078434,
+                "red" : 0.34509803921568627
+              },
+              "variableReference" : "weight"
             }
           }
         }
