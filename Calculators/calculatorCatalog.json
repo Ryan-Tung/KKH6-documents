@@ -9,6 +9,7 @@
     },
     {
       "calculators" : [
+        "Hypertension Thresholds",
         "Glasgow Coma Score",
         "Fluids And Electrolytes",
         "Fluids",
