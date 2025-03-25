@@ -18,29 +18,27 @@
     {
       "components" : [
         {
-          "floating" : {
-            "inputDual" : {
-              "lhs" : {
-                "allowsNegative" : false,
-                "variableInfo" : {
-                  "color" : {
-                    "blue" : 0.9019607843137255,
-                    "green" : 0.6784313725490196,
-                    "red" : 0.19607843137254902
-                  },
-                  "variableReference" : "age"
-                }
-              },
-              "rhs" : {
-                "allowsNegative" : false,
-                "variableInfo" : {
-                  "color" : {
-                    "blue" : 0.8392156862745098,
-                    "green" : 0.33725490196078434,
-                    "red" : 0.34509803921568627
-                  },
-                  "variableReference" : "weight"
-                }
+          "inputDual" : {
+            "lhs" : {
+              "allowsNegative" : false,
+              "variableInfo" : {
+                "color" : {
+                  "blue" : 0.9019607843137255,
+                  "green" : 0.6784313725490196,
+                  "red" : 0.19607843137254902
+                },
+                "variableReference" : "age"
+              }
+            },
+            "rhs" : {
+              "allowsNegative" : false,
+              "variableInfo" : {
+                "color" : {
+                  "blue" : 0.8392156862745098,
+                  "green" : 0.33725490196078434,
+                  "red" : 0.34509803921568627
+                },
+                "variableReference" : "weight"
               }
             }
           }
