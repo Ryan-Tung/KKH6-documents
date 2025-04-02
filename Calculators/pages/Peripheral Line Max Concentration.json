@@ -47,7 +47,46 @@
               "insulinConcentration",
               "ketamineConcentration",
               "labetalolConcentration",
-              "lignocaineConcentration",
+              "lignocaineConcentration"
+            ]
+          }
+        },
+        {
+          "disclosure" : {
+            "component" : {
+              "subsectionTitle" : {
+                "subtitle" : "Note: Weight based formula for all weights",
+                "text" : "Magnesium Sulphate"
+              }
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 2,
+                  "items" : [
+                    {
+                      "output" : "magnesiumSulphateConcentrationDose"
+                    },
+                    {
+                      "output" : "magnesiumSulphateConcentrationConcentration"
+                    },
+                    {
+                      "output" : "magnesiumSulphateConcentrationInfusionDose"
+                    },
+                    {
+                      "output" : "magnesiumSulphateConcentrationInfusionRate"
+                    }
+                  ]
+                }
+              }
+            ],
+            "expandedByDefault" : false
+          }
+        },
+        {
+          "blueprint" : {
+            "blueprintId" : "concentration",
+            "ids" : [
               "midazolamConcentration",
               "milrinoneConcentration",
               "morphineConcentration",
