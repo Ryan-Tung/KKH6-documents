@@ -1,0 +1,161 @@
+[
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mg"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "Dose in 50mL",
+    "formula" : {
+      "equation" : {
+        "conditional" : [
+          {
+            "component" : {
+              "product" : [
+                "weight",
+                500
+              ]
+            },
+            "condition" : {
+              "comparison" : "lessThanOrEqualTo",
+              "lhs" : "weight",
+              "rhs" : 20
+            }
+          },
+          {
+            "component" : {
+              "product" : [
+                "weight",
+                250
+              ]
+            },
+            "condition" : {
+              "comparison" : "lessThan",
+              "lhs" : "weight",
+              "rhs" : 41
+            }
+          },
+          {
+            "component" : {
+              "product" : [
+                "weight",
+                125
+              ]
+            },
+            "condition" : {
+              "comparison" : "lessThan",
+              "lhs" : "weight",
+              "rhs" : 81
+            }
+          },
+          {
+            "component" : {
+              "product" : [
+                "weight",
+                65
+              ]
+            }
+          }
+        ]
+      },
+      "parameters" : [
+        "weight"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "magnesiumSulphateConcentrationDose",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mg"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mg\/mL"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "Concentration",
+    "formula" : {
+      "equation" : {
+        "division" : {
+          "denominator" : 50,
+          "numerator" : "magnesiumSulphateConcentrationDose"
+        }
+      },
+      "parameters" : [
+        "magnesiumSulphateConcentrationDose"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "magnesiumSulphateConcentrationConcentration",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mg\/mL"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "mg\/kg\/hr"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "Infusion Dose",
+    "formula" : {
+      "equation" : 20,
+      "parameters" : [
+
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "magnesiumSulphateConcentrationInfusionDose",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "mg\/kg\/hr"
+    }
+  },
+  {
+    "alternateUnits" : [
+      {
+        "conversionScale" : 1,
+        "name" : "ml\/hr"
+      }
+    ],
+    "decimals" : 2,
+    "displayName" : "Infusion Rate",
+    "formula" : {
+      "equation" : {
+        "division" : {
+          "denominator" : "magnesiumSulphateConcentrationConcentration",
+          "numerator" : {
+            "product" : [
+              "magnesiumSulphateConcentrationInfusionDose",
+              "weight"
+            ]
+          }
+        }
+      },
+      "parameters" : [
+        "magnesiumSulphateConcentrationConcentration",
+        "magnesiumSulphateConcentrationInfusionDose",
+        "weight"
+      ],
+      "roundingMethod" : "nearest"
+    },
+    "referenceName" : "magnesiumSulphateConcentrationInfusionRate",
+    "startingValue" : 0,
+    "unit" : {
+      "conversionScale" : 1,
+      "name" : "ml\/hr"
+    }
+  }
+]

@@ -8,15 +8,17 @@
     {
       "components" : [
         {
-          "inputPrimary" : {
-            "allowsNegative" : false,
-            "variableInfo" : {
-              "color" : {
-                "blue" : 0.8392156862745098,
-                "green" : 0.33725490196078434,
-                "red" : 0.34509803921568627
-              },
-              "variableReference" : "weight"
+          "floating" : {
+            "inputPrimary" : {
+              "allowsNegative" : false,
+              "variableInfo" : {
+                "color" : {
+                  "blue" : 0.8392156862745098,
+                  "green" : 0.33725490196078434,
+                  "red" : 0.34509803921568627
+                },
+                "variableReference" : "weight"
+              }
             }
           }
         }
@@ -45,7 +47,46 @@
               "insulinConcentration",
               "ketamineConcentration",
               "labetalolConcentration",
-              "lignocaineConcentration",
+              "lignocaineConcentration"
+            ]
+          }
+        },
+        {
+          "disclosure" : {
+            "component" : {
+              "subsectionTitle" : {
+                "subtitle" : "Note: Weight based formula for all weights",
+                "text" : "Magnesium Sulphate"
+              }
+            },
+            "details" : [
+              {
+                "gridInputOutput" : {
+                  "columnCount" : 2,
+                  "items" : [
+                    {
+                      "output" : "magnesiumSulphateConcentrationDose"
+                    },
+                    {
+                      "output" : "magnesiumSulphateConcentrationConcentration"
+                    },
+                    {
+                      "output" : "magnesiumSulphateConcentrationInfusionDose"
+                    },
+                    {
+                      "output" : "magnesiumSulphateConcentrationInfusionRate"
+                    }
+                  ]
+                }
+              }
+            ],
+            "expandedByDefault" : false
+          }
+        },
+        {
+          "blueprint" : {
+            "blueprintId" : "concentration",
+            "ids" : [
               "midazolamConcentration",
               "milrinoneConcentration",
               "morphineConcentration",
