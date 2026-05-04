@@ -1,8 +1,8 @@
 {
   "color" : {
-    "blue" : 0.8392156862745098,
-    "green" : 0.33725490196078434,
-    "red" : 0.34509803921568627
+    "blue" : 0.9607843137254902,
+    "green" : 0.3333333333333333,
+    "red" : 0.3803921568627451
   },
   "groups" : [
     {
@@ -41,8 +41,8 @@
         {
           "toggle" : {
             "color" : {
-              "blue" : 0.18823529411764706,
-              "green" : 0.23137254901960785,
+              "blue" : 0.23529411764705882,
+              "green" : 0.2196078431372549,
               "red" : 1
             },
             "variableReference" : "pelod2LactateAvailable"
@@ -55,9 +55,9 @@
                 "allowsNegative" : false,
                 "variableInfo" : {
                   "color" : {
-                    "blue" : 0.8392156862745098,
-                    "green" : 0.33725490196078434,
-                    "red" : 0.34509803921568627
+                    "blue" : 0.9607843137254902,
+                    "green" : 0.3333333333333333,
+                    "red" : 0.3803921568627451
                   },
                   "variableReference" : "pelodLactate"
                 }
@@ -76,8 +76,8 @@
         {
           "toggle" : {
             "color" : {
-              "blue" : 0.18823529411764706,
-              "green" : 0.23137254901960785,
+              "blue" : 0.23529411764705882,
+              "green" : 0.2196078431372549,
               "red" : 1
             },
             "variableReference" : "pelod2MAPAvailable"
@@ -90,9 +90,9 @@
                 "allowsNegative" : false,
                 "variableInfo" : {
                   "color" : {
-                    "blue" : 0.8392156862745098,
-                    "green" : 0.33725490196078434,
-                    "red" : 0.34509803921568627
+                    "blue" : 0.9607843137254902,
+                    "green" : 0.3333333333333333,
+                    "red" : 0.3803921568627451
                   },
                   "variableReference" : "cardioMAP"
                 }
@@ -123,9 +123,9 @@
             ],
             "variableInfo" : {
               "color" : {
-                "blue" : 0.8392156862745098,
-                "green" : 0.33725490196078434,
-                "red" : 0.34509803921568627
+                "blue" : 0.9607843137254902,
+                "green" : 0.3333333333333333,
+                "red" : 0.3803921568627451
               },
               "variableReference" : "cyanoticHeartDisease"
             }
@@ -140,8 +140,8 @@
         {
           "toggle" : {
             "color" : {
-              "blue" : 0.18823529411764706,
-              "green" : 0.23137254901960785,
+              "blue" : 0.23529411764705882,
+              "green" : 0.2196078431372549,
               "red" : 1
             },
             "variableReference" : "pelod2GCSAvailable"
@@ -155,7 +155,7 @@
                 "variableInfo" : {
                   "color" : {
                     "blue" : 1,
-                    "green" : 0.47843137254901963,
+                    "green" : 0.5333333333333333,
                     "red" : 0
                   },
                   "variableReference" : "neurologicGCS"
@@ -175,8 +175,8 @@
         {
           "toggle" : {
             "color" : {
-              "blue" : 0.18823529411764706,
-              "green" : 0.23137254901960785,
+              "blue" : 0.23529411764705882,
+              "green" : 0.2196078431372549,
               "red" : 1
             },
             "variableReference" : "pelod2PupilReactionAvailable"
@@ -199,8 +199,8 @@
                 ],
                 "variableInfo" : {
                   "color" : {
-                    "blue" : 0.18823529411764706,
-                    "green" : 0.23137254901960785,
+                    "blue" : 0.23529411764705882,
+                    "green" : 0.2196078431372549,
                     "red" : 1
                   },
                   "variableReference" : "pupilReaction"
@@ -239,8 +239,8 @@
             ],
             "variableInfo" : {
               "color" : {
-                "blue" : 0.18823529411764706,
-                "green" : 0.23137254901960785,
+                "blue" : 0.23529411764705882,
+                "green" : 0.2196078431372549,
                 "red" : 1
               },
               "variableReference" : "mechanicalVentilation"
@@ -253,8 +253,8 @@
         {
           "toggle" : {
             "color" : {
-              "blue" : 0.18823529411764706,
-              "green" : 0.23137254901960785,
+              "blue" : 0.23529411764705882,
+              "green" : 0.2196078431372549,
               "red" : 1
             },
             "variableReference" : "pelod2RatioAvailable"
@@ -313,8 +313,8 @@
         {
           "toggle" : {
             "color" : {
-              "blue" : 0.18823529411764706,
-              "green" : 0.23137254901960785,
+              "blue" : 0.23529411764705882,
+              "green" : 0.2196078431372549,
               "red" : 1
             },
             "variableReference" : "pelod2PCO2Available"
@@ -328,7 +328,7 @@
                 "variableInfo" : {
                   "color" : {
                     "blue" : 1,
-                    "green" : 0.47843137254901963,
+                    "green" : 0.5333333333333333,
                     "red" : 0
                   },
                   "variableReference" : "pCO2"
@@ -354,8 +354,8 @@
         {
           "toggle" : {
             "color" : {
-              "blue" : 0.18823529411764706,
-              "green" : 0.23137254901960785,
+              "blue" : 0.23529411764705882,
+              "green" : 0.2196078431372549,
               "red" : 1
             },
             "variableReference" : "pelod2LeucocytesAvailable"
@@ -369,7 +369,7 @@
                 "variableInfo" : {
                   "color" : {
                     "blue" : 1,
-                    "green" : 0.47843137254901963,
+                    "green" : 0.5333333333333333,
                     "red" : 0
                   },
                   "variableReference" : "leucocytes"
@@ -389,8 +389,8 @@
         {
           "toggle" : {
             "color" : {
-              "blue" : 0.18823529411764706,
-              "green" : 0.23137254901960785,
+              "blue" : 0.23529411764705882,
+              "green" : 0.2196078431372549,
               "red" : 1
             },
             "variableReference" : "pelod2PlateletsAvailable"
@@ -404,7 +404,7 @@
                 "variableInfo" : {
                   "color" : {
                     "blue" : 1,
-                    "green" : 0.47843137254901963,
+                    "green" : 0.5333333333333333,
                     "red" : 0
                   },
                   "variableReference" : "platelets"
@@ -430,8 +430,8 @@
         {
           "toggle" : {
             "color" : {
-              "blue" : 0.18823529411764706,
-              "green" : 0.23137254901960785,
+              "blue" : 0.23529411764705882,
+              "green" : 0.2196078431372549,
               "red" : 1
             },
             "variableReference" : "pelod2RenalCreatinineAvailable"
@@ -444,8 +444,8 @@
                 "allowsNegative" : false,
                 "variableInfo" : {
                   "color" : {
-                    "blue" : 0,
-                    "green" : 0.5843137254901961,
+                    "blue" : 0.1568627450980392,
+                    "green" : 0.5529411764705883,
                     "red" : 1
                   },
                   "variableReference" : "renalCreatinine"

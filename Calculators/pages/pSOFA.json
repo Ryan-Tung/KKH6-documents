@@ -1,7 +1,7 @@
 {
   "color" : {
-    "blue" : 0.18823529411764706,
-    "green" : 0.23137254901960785,
+    "blue" : 0.23529411764705882,
+    "green" : 0.2196078431372549,
     "red" : 1
   },
   "groups" : [
@@ -27,9 +27,9 @@
             "allowsNegative" : false,
             "variableInfo" : {
               "color" : {
-                "blue" : 0.8392156862745098,
-                "green" : 0.33725490196078434,
-                "red" : 0.34509803921568627
+                "blue" : 0.9607843137254902,
+                "green" : 0.3333333333333333,
+                "red" : 0.3803921568627451
               },
               "variableReference" : "age"
             }
@@ -44,8 +44,8 @@
         {
           "toggle" : {
             "color" : {
-              "blue" : 0.18823529411764706,
-              "green" : 0.23137254901960785,
+              "blue" : 0.23529411764705882,
+              "green" : 0.2196078431372549,
               "red" : 1
             },
             "variableReference" : "pSOFARespiratoryAvailable"
@@ -68,9 +68,9 @@
                 ],
                 "variableInfo" : {
                   "color" : {
-                    "blue" : 0.9019607843137255,
-                    "green" : 0.6784313725490196,
-                    "red" : 0.19607843137254902
+                    "blue" : 0.9098039215686274,
+                    "green" : 0.7529411764705882,
+                    "red" : 0
                   },
                   "variableReference" : "respiratoryInputType"
                 }
@@ -231,7 +231,7 @@
                 "variableInfo" : {
                   "color" : {
                     "blue" : 1,
-                    "green" : 0.47843137254901963,
+                    "green" : 0.5333333333333333,
                     "red" : 0
                   },
                   "variableReference" : "respiratoryOnMechanicalVentilation"
@@ -266,8 +266,8 @@
         {
           "toggle" : {
             "color" : {
-              "blue" : 0.18823529411764706,
-              "green" : 0.23137254901960785,
+              "blue" : 0.23529411764705882,
+              "green" : 0.2196078431372549,
               "red" : 1
             },
             "variableReference" : "pSOFACoagulationAvailable"
@@ -281,7 +281,7 @@
                 "variableInfo" : {
                   "color" : {
                     "blue" : 1,
-                    "green" : 0.47843137254901963,
+                    "green" : 0.5333333333333333,
                     "red" : 0
                   },
                   "variableReference" : "platelets"
@@ -308,8 +308,8 @@
         {
           "toggle" : {
             "color" : {
-              "blue" : 0.18823529411764706,
-              "green" : 0.23137254901960785,
+              "blue" : 0.23529411764705882,
+              "green" : 0.2196078431372549,
               "red" : 1
             },
             "variableReference" : "pSOFAHepaticAvailable"
@@ -323,7 +323,7 @@
                 "variableInfo" : {
                   "color" : {
                     "blue" : 1,
-                    "green" : 0.47843137254901963,
+                    "green" : 0.5333333333333333,
                     "red" : 0
                   },
                   "variableReference" : "bilirubin"
@@ -350,8 +350,8 @@
         {
           "toggle" : {
             "color" : {
-              "blue" : 0.18823529411764706,
-              "green" : 0.23137254901960785,
+              "blue" : 0.23529411764705882,
+              "green" : 0.2196078431372549,
               "red" : 1
             },
             "variableReference" : "pSOFACardiovascularAvailable"
@@ -387,7 +387,7 @@
                 "variableInfo" : {
                   "color" : {
                     "blue" : 1,
-                    "green" : 0.47843137254901963,
+                    "green" : 0.5333333333333333,
                     "red" : 0
                   },
                   "variableReference" : "cardiovascularInput"
@@ -605,8 +605,8 @@
         {
           "toggle" : {
             "color" : {
-              "blue" : 0.18823529411764706,
-              "green" : 0.23137254901960785,
+              "blue" : 0.23529411764705882,
+              "green" : 0.2196078431372549,
               "red" : 1
             },
             "variableReference" : "pSOFANeurologicalAvailable"
@@ -620,7 +620,7 @@
                 "variableInfo" : {
                   "color" : {
                     "blue" : 1,
-                    "green" : 0.47843137254901963,
+                    "green" : 0.5333333333333333,
                     "red" : 0
                   },
                   "variableReference" : "neurologicGCS"
@@ -646,8 +646,8 @@
         {
           "toggle" : {
             "color" : {
-              "blue" : 0.18823529411764706,
-              "green" : 0.23137254901960785,
+              "blue" : 0.23529411764705882,
+              "green" : 0.2196078431372549,
               "red" : 1
             },
             "variableReference" : "pSOFARenalAvailable"
@@ -661,7 +661,7 @@
                 "variableInfo" : {
                   "color" : {
                     "blue" : 1,
-                    "green" : 0.47843137254901963,
+                    "green" : 0.5333333333333333,
                     "red" : 0
                   },
                   "variableReference" : "renalCreatinine"

@@ -23,7 +23,7 @@
             "variableInfo" : {
               "color" : {
                 "blue" : 1,
-                "green" : 0.47843137254901963,
+                "green" : 0.5333333333333333,
                 "red" : 0
               },
               "variableReference" : "feedType"
@@ -42,9 +42,9 @@
               "allowsNegative" : false,
               "variableInfo" : {
                 "color" : {
-                  "blue" : 0.8392156862745098,
-                  "green" : 0.33725490196078434,
-                  "red" : 0.34509803921568627
+                  "blue" : 0.9607843137254902,
+                  "green" : 0.3333333333333333,
+                  "red" : 0.3803921568627451
                 },
                 "variableReference" : "weight"
               }
@@ -63,7 +63,7 @@
             "variableInfo" : {
               "color" : {
                 "blue" : 1,
-                "green" : 0.47843137254901963,
+                "green" : 0.5333333333333333,
                 "red" : 0
               },
               "variableReference" : "feedingTotalFluids"
@@ -76,7 +76,7 @@
             "variableInfo" : {
               "color" : {
                 "blue" : 1,
-                "green" : 0.47843137254901963,
+                "green" : 0.5333333333333333,
                 "red" : 0
               },
               "variableReference" : "amountSubstrateForIVMed"
@@ -117,7 +117,7 @@
                 "variableInfo" : {
                   "color" : {
                     "blue" : 1,
-                    "green" : 0.47843137254901963,
+                    "green" : 0.5333333333333333,
                     "red" : 0
                   },
                   "variableReference" : "numberOfFeedsPerDay"
@@ -153,7 +153,7 @@
                 "variableInfo" : {
                   "color" : {
                     "blue" : 1,
-                    "green" : 0.47843137254901963,
+                    "green" : 0.5333333333333333,
                     "red" : 0
                   },
                   "variableReference" : "continuousFeedHrsPerDay"
@@ -189,7 +189,7 @@
                 "variableInfo" : {
                   "color" : {
                     "blue" : 1,
-                    "green" : 0.47843137254901963,
+                    "green" : 0.5333333333333333,
                     "red" : 0
                   },
                   "variableReference" : "primingRequired"
@@ -251,7 +251,7 @@
             "variableInfo" : {
               "color" : {
                 "blue" : 1,
-                "green" : 0.47843137254901963,
+                "green" : 0.5333333333333333,
                 "red" : 0
               },
               "variableReference" : "feedingMilkType"
@@ -278,7 +278,7 @@
             "variableInfo" : {
               "color" : {
                 "blue" : 1,
-                "green" : 0.47843137254901963,
+                "green" : 0.5333333333333333,
                 "red" : 0
               },
               "variableReference" : "intubationStatus"

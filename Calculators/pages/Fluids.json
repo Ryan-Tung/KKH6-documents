@@ -1,7 +1,7 @@
 {
   "color" : {
     "blue" : 1,
-    "green" : 0.47843137254901963,
+    "green" : 0.5333333333333333,
     "red" : 0
   },
   "groups" : [
@@ -13,9 +13,9 @@
               "allowsNegative" : false,
               "variableInfo" : {
                 "color" : {
-                  "blue" : 0.8392156862745098,
-                  "green" : 0.33725490196078434,
-                  "red" : 0.34509803921568627
+                  "blue" : 0.9607843137254902,
+                  "green" : 0.3333333333333333,
+                  "red" : 0.3803921568627451
                 },
                 "variableReference" : "weight"
               }
@@ -33,8 +33,8 @@
             "allowsNegative" : false,
             "variableInfo" : {
               "color" : {
-                "blue" : 0,
-                "green" : 0.5843137254901961,
+                "blue" : 0.1568627450980392,
+                "green" : 0.5529411764705883,
                 "red" : 1
               },
               "variableReference" : "dextrosity"
@@ -46,8 +46,8 @@
             "allowsNegative" : false,
             "variableInfo" : {
               "color" : {
-                "blue" : 0,
-                "green" : 0.5843137254901961,
+                "blue" : 0.1568627450980392,
+                "green" : 0.5529411764705883,
                 "red" : 1
               },
               "variableReference" : "fluidInfusionRate"
@@ -80,7 +80,7 @@
             "variableInfo" : {
               "color" : {
                 "blue" : 1,
-                "green" : 0.47843137254901963,
+                "green" : 0.5333333333333333,
                 "red" : 0
               },
               "variableReference" : "category"
@@ -94,9 +94,9 @@
                 "allowsNegative" : false,
                 "variableInfo" : {
                   "color" : {
-                    "blue" : 0.8392156862745098,
-                    "green" : 0.33725490196078434,
-                    "red" : 0.34509803921568627
+                    "blue" : 0.9607843137254902,
+                    "green" : 0.3333333333333333,
+                    "red" : 0.3803921568627451
                   },
                   "variableReference" : "totalFluidOrder"
                 }
@@ -150,8 +150,8 @@
                 ],
                 "variableInfo" : {
                   "color" : {
-                    "blue" : 0,
-                    "green" : 0.5843137254901961,
+                    "blue" : 0.1568627450980392,
+                    "green" : 0.5529411764705883,
                     "red" : 1
                   },
                   "variableReference" : "fluidRestriction"
@@ -194,8 +194,8 @@
             "allowsNegative" : false,
             "variableInfo" : {
               "color" : {
-                "blue" : 0,
-                "green" : 0.5843137254901961,
+                "blue" : 0.1568627450980392,
+                "green" : 0.5529411764705883,
                 "red" : 1
               },
               "variableReference" : "dehydration"
@@ -217,8 +217,8 @@
             "allowsNegative" : false,
             "variableInfo" : {
               "color" : {
-                "blue" : 0,
-                "green" : 0.5843137254901961,
+                "blue" : 0.1568627450980392,
+                "green" : 0.5529411764705883,
                 "red" : 1
               },
               "variableReference" : "height"
@@ -230,8 +230,8 @@
             "allowsNegative" : false,
             "variableInfo" : {
               "color" : {
-                "blue" : 0,
-                "green" : 0.5843137254901961,
+                "blue" : 0.1568627450980392,
+                "green" : 0.5529411764705883,
                 "red" : 1
               },
               "variableReference" : "baselineCreatinine"

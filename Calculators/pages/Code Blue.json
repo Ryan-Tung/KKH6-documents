@@ -1,7 +1,7 @@
 {
   "color" : {
     "blue" : 1,
-    "green" : 0.47843137254901963,
+    "green" : 0.5333333333333333,
     "red" : 0
   },
   "groups" : [
@@ -24,9 +24,9 @@
                 "allowsNegative" : false,
                 "variableInfo" : {
                   "color" : {
-                    "blue" : 0.9019607843137255,
-                    "green" : 0.6784313725490196,
-                    "red" : 0.19607843137254902
+                    "blue" : 0.9098039215686274,
+                    "green" : 0.7529411764705882,
+                    "red" : 0
                   },
                   "variableReference" : "age"
                 }
@@ -35,9 +35,9 @@
                 "allowsNegative" : false,
                 "variableInfo" : {
                   "color" : {
-                    "blue" : 0.8392156862745098,
-                    "green" : 0.33725490196078434,
-                    "red" : 0.34509803921568627
+                    "blue" : 0.9607843137254902,
+                    "green" : 0.3333333333333333,
+                    "red" : 0.3803921568627451
                   },
                   "variableReference" : "weight"
                 }
@@ -178,6 +178,7 @@
               "Adrenaline",
               "Atropine Sulfate",
               "Calcium Chloride",
+              "Calcium Gluconate",
               "Dextrose",
               "Sodium Bicarbonate 8.4%",
               "Sodium Bicarbonate 4.2%",

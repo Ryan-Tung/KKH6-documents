@@ -1,8 +1,8 @@
 {
   "color" : {
-    "blue" : 0.8705882352941177,
-    "green" : 0.3215686274509804,
-    "red" : 0.6862745098039216
+    "blue" : 0.8784313725490196,
+    "green" : 0.18823529411764706,
+    "red" : 0.796078431372549
   },
   "groups" : [
     {
@@ -31,7 +31,7 @@
             "variableInfo" : {
               "color" : {
                 "blue" : 1,
-                "green" : 0.47843137254901963,
+                "green" : 0.5333333333333333,
                 "red" : 0
               },
               "variableReference" : "eyeOpeningInput"
@@ -78,7 +78,7 @@
             "variableInfo" : {
               "color" : {
                 "blue" : 1,
-                "green" : 0.47843137254901963,
+                "green" : 0.5333333333333333,
                 "red" : 0
               },
               "variableReference" : "verbalResponseInput"
@@ -129,7 +129,7 @@
             "variableInfo" : {
               "color" : {
                 "blue" : 1,
-                "green" : 0.47843137254901963,
+                "green" : 0.5333333333333333,
                 "red" : 0
               },
               "variableReference" : "motorResponseInput"
